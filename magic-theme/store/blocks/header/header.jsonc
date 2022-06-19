@@ -1,0 +1,109 @@
+{
+  "header": {
+    "blocks": ["header-layout.mobile"]
+  },
+
+  "header.full": {
+    "blocks": ["header-layout.mobile"]
+  },
+
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#2-mobile",
+      "sticky-layout#1-mobile"
+     // "flex-layout.row#4-mobile"
+    ]
+  },
+
+  "sticky-layout#1-mobile": {
+    "children": [
+      "flex-layout.row#3-mobile"
+    ]
+  },
+
+  "flex-layout.row#1-mobile": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#2-mobile" : {
+    "children": [
+      "notification.bar"
+    ],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+
+  "flex-layout.row#3-mobile":{
+    "children":[
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "overlay-trigger",
+      "minicart.v2",
+      "drawer"
+    ],
+
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "overlay-trigger": {
+    "children":[
+      "rich-text#lupaBusca",
+      "overlay-layout"  
+    ]
+  },
+
+  "overlay-layout": {
+    "props": {
+      "placement": "bottom",
+      "offsets":{ "skidding": -100, "distance": -20 }
+    },
+    "children": [
+      "flex-layout.row#4-mobile"
+    ]
+  },
+
+  "flex-layout.row#4-mobile":{
+    "children":[
+      "search-bar"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "searchBar"
+    }
+  },
+
+  "rich-text#lupaBusca": {
+    "props": {
+      "text": "lupinha",
+      "blockClass": "question",
+      "backdrop": "visible"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/logo.svg",
+      "height": "30",
+      "blockClass": "logoMagic"
+    }
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  }
+
+}
