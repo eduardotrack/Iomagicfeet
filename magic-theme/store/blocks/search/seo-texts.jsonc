@@ -1,0 +1,74 @@
+{
+  "rich-text#category-top": {
+    "title": "Panda | Texto SEO - Categoria - Topo da página",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "",
+      "blockClass": ["panda-search__seo", "category-seo-text"]
+    }
+  },
+  "rich-text#category": {
+    "title": "Panda | Texto SEO - Categoria",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "",
+      "blockClass": ["panda-search__seo-bottom", "category-seo-text"]
+    }
+  },
+  "rich-text#subcategory-top": {
+    "title": "Panda | Texto SEO - Subcategoria - Topo da página",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "",
+      "blockClass": ["panda-search__seo", "subcategory-seo-text"]
+    }
+  },
+  "rich-text#subcategory": {
+    "title": "Panda | Texto SEO - Subcategoria",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "",
+      "blockClass": ["panda-search__seo-bottom", "subcategory-seo-text"]
+    }
+  },
+  "rich-text#department-top": {
+    "title": "Panda | Texto SEO - Departamento - Topo da página",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "",
+      "blockClass": ["panda-search__seo", "department-seo-text"]
+    }
+  },
+  "rich-text#department": {
+    "title": "Panda | Texto SEO - Departamento",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "",
+      "blockClass": ["panda-search__seo-bottom", "department-seo-text"]
+    }
+  },
+  "rich-text#brand-top": {
+    "title": "Panda | Texto SEO - Marca - Topo da página",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "",
+      "blockClass": ["panda-search__seo", "brand-seo-text"]
+    }
+  },
+  "rich-text#brand": {
+    "title": "Panda | Texto SEO - Marca",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "",
+      "blockClass": ["panda-search__seo-bottom", "brand-seo-text"]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+    //controle de visibilidade do carrossel
+    "experimental__visibility-layout#black-header-tag-v2": {
+      "title": "Controle de visibilidade - Header BF - Elemento do dia 18/11",
+      "children": ["flex-layout.row#black-header-tag-v2"],
+      "props": {
+        "visible": false,
+        "blockClass": "black-header-tag"
+      }
+    },
+
+    "flex-layout.row#black-header-tag-v2": {
+        "title": "Panda | Header BF",
+        "props": {
+          "blockClass": "black-header-tag" ,
+          "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.col#black-header-tag-v2-text"
+        ]
+      },
+
+      "flex-layout.col#black-header-tag-v2-text": {
+        "title": "Panda | Logo BF",
+        "children": ["rich-text#black-header-tag-v2-text", "link#black-header-tag-v2-cta"],
+        "props":{
+        "blockClass":"black-header-tag"
+        } 
+    },
+
+    "rich-text#black-header-tag-v2-text": {
+      "title": "Panda | Texto BF",
+      "props": {
+        "text": "_DESCONTOS PROGRESSIVOS*_  **BLACK** *FRIDAY*  \n * _2 ITENS_ +20% OFF \n *_3 ITENS_ +30% OFF \n *_4 ITENS_ +40% OFF",
+        "blockClass":"bf-main-tag-v2"
+      }
+    },
+ 
+    "link#black-header-tag-v2-cta": {
+        "props": {
+          "href": "/black-friday",
+          "label": "CONFIRA",
+          "blockClass": "black-header-tag" 
+        }
+      }
+}

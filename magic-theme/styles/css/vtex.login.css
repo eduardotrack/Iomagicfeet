@@ -1,0 +1,290 @@
+.label {
+    color: transparent;
+}
+
+.container :global(.vtex-button) {
+    width: 34px;
+    height: 34px;
+    padding: 0px;
+    margin: 0px 10px;
+}
+
+.container :global(.vtex-button__label) {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    width: 34px;
+    height: 34px;
+    padding: 0px;
+    color: transparent;
+}
+
+.container :global(.vtex-login-2-x-profile) {
+    display: none;
+}
+
+.loginOptionsContainer :global(.vtex-login-2-x-formTitle) {
+    display: none;
+}
+
+.loginOptionsContainer :global(.vtex-button) {
+    border: none;
+    text-align: left;
+    background: transparent;
+    min-height: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.loginOptionsContainer :global(.vtex-button__label) {
+    font-family: 'WorkSans-Regular';
+    font-weight: 400;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #353535;
+}
+
+.oauthLabel {
+    font-family: 'WorkSans-Regular';
+    font-weight: 400;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #353535;
+    margin: 0 5px!important;
+}
+
+.contentContainer {
+    border-radius: 8px;
+}
+
+.options {
+    min-width: 15rem;
+}
+
+.content {
+    margin-top: 120px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding-top: 30px;
+    margin-bottom: 120px;
+}
+
+.box :global(.vtex-login-2-x-content) {
+    padding-top: 0px;
+    margin-top: 0;
+    border: 1px solid #FFFFFF;
+    /* Drop hover vitrine */
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.accessCodeOptionBtn::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' transform='translate(0.989258)' fill='white'/%3E%3Cpath d='M4.32292 3.33333H17.6562C18.5729 3.33333 19.3229 4.08333 19.3229 4.99999V15C19.3229 15.9167 18.5729 16.6667 17.6562 16.6667H4.32292C3.40625 16.6667 2.65625 15.9167 2.65625 15V4.99999C2.65625 4.08333 3.40625 3.33333 4.32292 3.33333Z' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19.3229 5L10.9896 10.8333L2.65625 5' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 20px cover;
+    width: 20px;
+    height: 20px;
+    display: block;
+    content: '.';
+    font-size: 0;
+    margin-right: 5px;
+}
+
+.emailPasswordOptionBtn::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' transform='translate(0.989258)' fill='white'/%3E%3Cpath d='M19.3229 1.66667L10.1562 10.8333' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19.3229 1.66667L13.4896 18.3333L10.1562 10.8333L2.65625 7.5L19.3229 1.66667Z' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 20px cover;
+    width: 20px;
+    height: 20px;
+    display: block;
+    content: '.';
+    font-size: 0;
+    margin-right: 5px;
+}
+
+.sendButton :global(.vtex-button) {
+    background: #1C1C1C;
+    border-radius: 10px;
+    padding: 0px 10px;
+    border: none;
+}
+
+.sendButton :global(.vtex-button__label) {
+    font-family: 'RobotoCondensed-Bold' !important;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    color: #fff;
+    padding: 0;
+}
+
+.backButton :global(.vtex-button__label) {
+    font-size: 14px;
+    line-height: 21px;
+    color: #353535;
+    padding: 0;
+}
+
+.formTitle {
+    font-family: 'WorkSans-Regular';
+    font-weight: 400;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #353535;
+}
+
+.inputContainer :global(.vtex-styleguide-9-x-input) {
+    font-size: 14px;
+}
+
+.forgotPasswordLink {
+    font-family: 'WorkSans-Regular';
+    font-weight: 400;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #353535;
+}
+
+.dontHaveAccount {
+    font-family: 'WorkSans-Regular';
+    font-weight: 400;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #353535;
+}
+
+.contentForm {
+    padding: 0;
+}
+
+.accountOptionsSectionTitle {
+    display: none;
+}
+
+.accountOptions>div>a {
+    text-decoration: none;
+}
+
+.accountOptions :global(.vtex-login-2-x-button)>span {
+    font-family: 'WorkSans-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #363636;
+    text-decoration: none;
+}
+
+.accountOptions :global(.vtex-button__label)>span {
+    font-family: 'WorkSans-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #363636;
+    text-decoration: none;
+}
+
+.minha-conta {
+    display: flex;
+    align-items: center;
+}
+
+.minha-conta::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6663 17.5V15.8333C16.6663 14.9493 16.3151 14.1014 15.69 13.4763C15.0649 12.8512 14.2171 12.5 13.333 12.5L6.66634 12.5C5.78229 12.5 4.93444 12.8512 4.30932 13.4763C3.6842 14.1014 3.33301 14.9493 3.33301 15.8333V17.5' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.0003 9.16667C11.8413 9.16667 13.3337 7.67428 13.3337 5.83333C13.3337 3.99238 11.8413 2.5 10.0003 2.5C8.15938 2.5 6.66699 3.99238 6.66699 5.83333C6.66699 7.67428 8.15938 9.16667 10.0003 9.16667Z' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 20px cover;
+    width: 20px;
+    height: 20px;
+    display: block;
+    content: '.';
+    font-size: 0;
+    margin-right: 5px;
+}
+
+.meus-pedidos {
+    display: flex;
+    align-items: center;
+}
+
+.meus-pedidos::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.6663 10V18.3333H3.33301V10' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M18.3337 5.83333H1.66699V9.99999H18.3337V5.83333Z' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 18.3333V5.83333' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 5.83334H13.75C14.3025 5.83334 14.8324 5.61384 15.2231 5.22314C15.6138 4.83244 15.8333 4.30254 15.8333 3.75C15.8333 3.19747 15.6138 2.66757 15.2231 2.27687C14.8324 1.88617 14.3025 1.66667 13.75 1.66667C10.8333 1.66667 10 5.83334 10 5.83334Z' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.0003 5.83334H6.25033C5.69779 5.83334 5.16789 5.61384 4.77719 5.22314C4.38649 4.83244 4.16699 4.30254 4.16699 3.75C4.16699 3.19747 4.38649 2.66757 4.77719 2.27687C5.16789 1.88617 5.69779 1.66667 6.25033 1.66667C9.16699 1.66667 10.0003 5.83334 10.0003 5.83334Z' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 20px cover;
+    width: 20px;
+    height: 20px;
+    display: block;
+    content: '.';
+    font-size: 0;
+    margin-right: 5px;
+}
+
+.meus-favoritos {
+    display: flex;
+    align-items: center;
+}
+
+.meus-favoritos::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.3671 3.84166L16.9427 4.26583L16.9429 4.26603L17.3671 3.84166ZM14.1254 2.49847V3.09847V2.49847ZM10.8838 3.84166L11.308 4.26593L11.3081 4.26583L10.8838 3.84166ZM10.0004 4.725L9.57616 5.14926C9.81048 5.38357 10.1904 5.38357 10.4247 5.14926L10.0004 4.725ZM9.11709 3.84166L8.69283 4.26593V4.26593L9.11709 3.84166ZM2.63376 10.325L2.20949 10.7493H2.20949L2.63376 10.325ZM10.0004 17.6917L9.57616 18.1159C9.81048 18.3502 10.1904 18.3502 10.4247 18.1159L10.0004 17.6917ZM17.3671 10.325L16.9429 9.90063L16.9428 9.90073L17.3671 10.325ZM17.7915 3.4175C17.3101 2.93592 16.7386 2.5539 16.1096 2.29326L15.6502 3.40187C16.1336 3.60216 16.5728 3.89574 16.9427 4.26583L17.7915 3.4175ZM16.1096 2.29326C15.4805 2.03263 14.8063 1.89847 14.1254 1.89847V3.09847C14.6487 3.09847 15.1668 3.20157 15.6502 3.40187L16.1096 2.29326ZM14.1254 1.89847C13.4445 1.89847 12.7703 2.03263 12.1413 2.29326L12.6006 3.40187C13.084 3.20157 13.6022 3.09847 14.1254 3.09847V1.89847ZM12.1413 2.29326C11.5123 2.5539 10.9407 2.93592 10.4594 3.4175L11.3081 4.26583C11.678 3.89574 12.1172 3.60216 12.6006 3.40187L12.1413 2.29326ZM10.4595 3.4174L9.57616 4.30073L10.4247 5.14926L11.308 4.26593L10.4595 3.4174ZM10.4247 4.30073L9.54136 3.4174L8.69283 4.26593L9.57616 5.14926L10.4247 4.30073ZM9.54136 3.4174C8.56909 2.44513 7.25042 1.89892 5.87542 1.89892V3.09892C6.93216 3.09892 7.94561 3.5187 8.69283 4.26593L9.54136 3.4174ZM5.87542 1.89892C4.50043 1.89892 3.18176 2.44513 2.20949 3.4174L3.05802 4.26593C3.80524 3.5187 4.81869 3.09892 5.87542 3.09892V1.89892ZM2.20949 3.4174C1.23723 4.38966 0.691016 5.70834 0.691016 7.08333H1.89102C1.89102 6.0266 2.3108 5.01315 3.05802 4.26593L2.20949 3.4174ZM0.691016 7.08333C0.691016 8.45832 1.23723 9.77699 2.20949 10.7493L3.05802 9.90073C2.3108 9.15351 1.89102 8.14006 1.89102 7.08333H0.691016ZM17.7913 10.7494C18.2728 10.268 18.6549 9.6965 18.9155 9.06747L17.8069 8.60812C17.6066 9.09152 17.313 9.53072 16.9429 9.90063L17.7913 10.7494ZM18.9155 9.06747C19.1761 8.43844 19.3103 7.76422 19.3103 7.08333H18.1103C18.1103 7.60658 18.0072 8.12471 17.8069 8.60812L18.9155 9.06747ZM19.3103 7.08333C19.3103 6.40244 19.1761 5.72822 18.9155 5.09919L17.8069 5.55854C18.0072 6.04194 18.1103 6.56007 18.1103 7.08333H19.3103ZM18.9155 5.09919C18.6549 4.47016 18.2728 3.89865 17.7913 3.4173L16.9429 4.26603C17.313 4.63594 17.6066 5.07514 17.8069 5.55854L18.9155 5.09919ZM2.20949 10.7493L9.57616 18.1159L10.4247 17.2674L3.05802 9.90073L2.20949 10.7493ZM10.4247 18.1159L17.7914 10.7493L16.9428 9.90073L9.57616 17.2674L10.4247 18.1159Z' fill='%23363636'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 20px cover;
+    width: 20px;
+    height: 20px;
+    display: block;
+    content: '.';
+    font-size: 0;
+    margin-right: 5px;
+}
+
+.logoutButton {
+    display: flex;
+    align-items: center;
+}
+
+.logoutButton::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.333 14.1667L17.4997 10L13.333 5.83334' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17.5 10H7.5' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.5 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V4.16667C2.5 3.72464 2.67559 3.30072 2.98816 2.98816C3.30072 2.67559 3.72464 2.5 4.16667 2.5H7.5' stroke='%23363636' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 20px cover;
+    width: 20px;
+    height: 20px;
+    display: block;
+    content: '.';
+    font-size: 0;
+    margin-right: 5px;
+}
+
+.minha-conta:hover,
+.logoutButton:hover,
+.meus-favoritos:hover,
+.meus-pedidos:hover {
+    color: #5DFF49;
+}
+
+.content--accountOptions :global(.vtex-login-2-x-button),
+.content--accountOptions :global(.vtex-button__label) {
+    padding: 5px 0;
+}

@@ -1,0 +1,19 @@
+{
+  "gallery": {
+    "title": "Panda | Galeria de produtos",
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "desktop": 4,
+            "tablet": 4,
+            "phone": 2
+          }
+        }
+      ],
+      "GridSummary": "product-summary.shelf#product-search"
+    }
+  }
+}

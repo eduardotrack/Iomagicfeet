@@ -1,0 +1,43 @@
+{
+  "search-result-layout": {
+    "title": "Panda | Layout da busca - Genérico",
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout#brand": {
+    "title": "Panda | Layout da busca - Marca",
+    "blocks": [
+      "search-result-layout.desktop#brand",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout#department": {
+    "title": "Panda | Layout da busca - Departamento",
+    "blocks": [
+      "search-result-layout.desktop#department",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout#category": {
+    "title": "Panda | Layout da busca - Categoria",
+    "blocks": [
+      "search-result-layout.desktop#category",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout#subcategory": {
+    "title": "Panda | Layout da busca - Subcategoria",
+    "blocks": [
+      "search-result-layout.desktop#subcategory",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  }
+}

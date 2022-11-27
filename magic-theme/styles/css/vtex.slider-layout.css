@@ -1,0 +1,132 @@
+.paginationDotsContainer--home__slider {
+    bottom: 20px;
+}
+
+.paginationDot--carousel {
+    background: #FFFFFF;
+}
+
+.paginationDot--home__slider {
+    background: #fff;
+}
+
+.paginationDot--isActive {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    transform: matrix(0.86, 0.49, -0.53, 0.86, 0, 0);
+    height: 20px !important;
+    margin-top: -6px;
+}
+
+.imageElement--home__slider {
+    max-height: 100% !important
+}
+
+.sliderArrows--carousel-procura {
+    top: -55px;
+}
+
+.sliderLeftArrow--carousel-procura {
+    right: 45px;
+    left: unset;
+}
+
+.sliderLayoutContainer--shelf {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.paginationDotsContainer--shelf {
+    bottom: -30px;
+}
+
+.paginationDotsContainer--carousel-exclusivos {
+    bottom: 30px;
+}
+
+.paginationDot--carousel-exclusivos,
+.paginationDot--shelf {
+    background: #1C1C1C;
+}
+
+.paginationDot--shelf--isActive {
+    border: 2px solid #1C1C1C;
+    background: #fff;
+}
+
+.paginationDot--carousel-exclusivos--isActive {
+    border: 2px solid #1C1C1C;
+    background: transparent;
+}
+
+.slide--carousel-exclusivos {
+    width: 100% !important;
+}
+
+.slideChildrenContainer--carousel-exclusivos {
+    display: block;
+}
+
+.slide--slider-menu-desk {
+    padding: 0px 25px;
+}
+
+@media (max-width: 767px) {
+    .slideChildrenContainer--carousel-procura {
+        display: flex;
+        align-items: flex-start;
+        padding: 0px 4px;
+    }
+    .paginationDotsContainer--carousel-exclusivos {
+        bottom: 10px;
+    }
+    .slideChildrenContainer--carousel-exclusivos {
+        margin-bottom: 30px;
+    }
+    .caretIcon--tips_home_slider {
+        width: 7px;
+        height: 11px;
+    }
+}
+
+.sliderLayoutContainer--quemsomos__slider {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.paginationDotsContainer--quemsomos__slider {
+    display: flex;
+    justify-content: flex-start;
+    transform: rotate(90deg);
+    position: relative;
+    left: 19%;
+}
+
+.paginationDotsContainer--quemsomos__slider :global(.vtex-slider-layout-0-x-paginationDot--quemsomos__slider) {
+    background: #1C1C1C;
+}
+
+.paginationDotsContainer--quemsomos__slider :global(.vtex-slider-layout-0-x-paginationDot--isActive) {
+    border: 2px solid #1C1C1C;
+    background: #FFF;
+}
+
+@media (max-width: 767px) {
+    .sliderLayoutContainer--quemsomos__slider {
+        display: flex;
+        flex-direction: column;
+    }
+    .paginationDotsContainer--quemsomos__slider {
+        display: flex;
+        justify-content: center;
+        transform: unset;
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+    }
+    .sliderLayoutContainer--home__slider {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}

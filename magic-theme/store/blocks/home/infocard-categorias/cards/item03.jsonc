@@ -1,0 +1,29 @@
+{
+  "link#procura-item-03": {
+    "title": "Panda | Link Card 03",
+      "props": {
+        "href": "/",
+        "blockClass": "infocard-procura-wrapper"
+      },
+      "children": [
+          "image#procura-item-03",
+          "rich-text#procura-item-03"
+      ]
+    },
+
+    "image#procura-item-03": {
+      "title": "Panda | Imagem Card 03",
+      "props": {
+        "src": "assets/img/procura-home-demo.png",
+        "blockClass": "infocard-procura-wrapper"
+      }
+    },
+
+    "rich-text#procura-item-03": {
+      "title": "Panda | Texto Card 03",
+      "props": {
+        "text": "camisetas",
+        "blockClass": "infocard-procura-wrapper"
+      }
+    }
+}

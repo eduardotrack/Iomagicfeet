@@ -1,0 +1,155 @@
+{
+     "flex-layout.row#sub-main-sejafranqueado": {
+        "title": "Panda | Conteudo Principal",
+        "children": ["flex-layout.col#sub-main-text-franqueado", "flex-layout.col#sub-main-box-franqueado"],
+        "props":{
+          "blockClass":"sub-main-sejafranqueado-row" 
+        } 
+      },
+
+      "flex-layout.col#sub-main-text-franqueado": {
+        "title": "Panda | Texto Principal",
+        "children": ["rich-text#sub-main-text-franqueado"],
+        "props":{
+          "blockClass":"sub-main-sejafranqueado-text",
+          "width": "50%"
+        } 
+      },
+
+      "rich-text#sub-main-text-franqueado": {
+        "title": "Panda | Texto Principal",
+        "props": {
+          "text": "# Faça parte da **maior rede de sneaker store** do Brasil \n  Fundada em 2006, a **magicfeet** é a maior rede de sneaker store do Brasil. Possui atualmente 40 lojas físicas, em 17 cidades do país, além da loja virtual (www.magicfeet.com.br). \n ## Público-alvo \n Seu público-alvo é formado tanto pelos clientes mais aficionados pela cultura sneaker, os chamados sneakerheads, como pelos clientes que simplesmente querem usar tênis estilosos no dia a dia. São pessoas jovens de espírito, que escolhem as marcas para firmarem sua personalidade, têm atitude, autoconfiança, são antenados, criativos, urbanos e gostam de arte e cultura.",
+          "blockClass":"sub-main-sejafranqueado-text"
+        }
+      },
+
+      "flex-layout.col#sub-main-box-franqueado": {
+        "title": "Panda | Box Cinza",
+        "children": ["rich-text#sub-main-box-franqueado-title","flex-layout.row#sub-main-box-franqueado-topics"],
+        "props":{
+          "blockClass":"sub-main-box-franqueado",
+          "width": "50%"
+        } 
+      },
+
+      "rich-text#sub-main-box-franqueado-title": {
+        "title": "Panda | Titulo",
+        "props": {
+          "text": "# nossos\n# **diferenciais**",
+          "blockClass":"sub-main-box-franqueado-title"
+        }
+      },
+
+      "flex-layout.row#sub-main-box-franqueado-topics": {
+        "title": "Panda | Topicos",
+        "children": ["flex-layout.col#sub-main-box-franqueado-topic-1", "flex-layout.col#sub-main-box-franqueado-topic-2", "flex-layout.col#sub-main-box-franqueado-topic-3", "flex-layout.col#sub-main-box-franqueado-topic-4"],
+        "props":{
+          "blockClass":"sub-main-sejafranqueado-topics" 
+        } 
+      },
+      
+      // Topico 01
+      "flex-layout.col#sub-main-box-franqueado-topic-1": {
+        "title": "Panda | Topico 01",
+        "children": ["image#sub-main-box-franqueado-topic-1", "rich-text#sub-main-box-franqueado-topic-1"],
+        "props":{
+          "blockClass":"sub-main-box-franqueado-topic"
+        } 
+      },
+
+      "image#sub-main-box-franqueado-topic-1": {
+        "title": "Panda | Imagem",
+        "props": {
+          "src": "assets/img/seja-franqueado-icon-demo.png",
+          "blockClass":"sub-main-box-franqueado"
+        }
+      },
+
+      "rich-text#sub-main-box-franqueado-topic-1": {
+        "title": "Panda | Titulo",
+        "props": {
+          "text": "presente em mais de **15 CIDADES**",
+          "blockClass":"sub-main-box-franqueado-topic"
+        }
+      },
+      // Fim Topico 01
+
+            // Topico 02
+      "flex-layout.col#sub-main-box-franqueado-topic-2": {
+        "title": "Panda | Topico 02",
+        "children": ["image#sub-main-box-franqueado-topic-2", "rich-text#sub-main-box-franqueado-topic-2"],
+        "props":{
+          "blockClass":"sub-main-box-franqueado-topic"
+        } 
+      },
+
+      "image#sub-main-box-franqueado-topic-2": {
+        "title": "Panda | Imagem",
+        "props": {
+          "src": "assets/img/seja-franqueado-icon-demo.png",
+          "blockClass":"sub-main-box-franqueado"
+        }
+      },
+
+      "rich-text#sub-main-box-franqueado-topic-2": {
+        "title": "Panda | Titulo",
+        "props": {
+          "text": "presente em mais de **15 CIDADES**",
+          "blockClass":"sub-main-box-franqueado-topic"
+        }
+      },
+      // Fim Topico 02
+
+            // Topico 03
+            "flex-layout.col#sub-main-box-franqueado-topic-3": {
+              "title": "Panda | Topico 03",
+              "children": ["image#sub-main-box-franqueado-topic-3", "rich-text#sub-main-box-franqueado-topic-3"],
+              "props":{
+                "blockClass":"sub-main-box-franqueado-topic"
+              } 
+            },
+      
+            "image#sub-main-box-franqueado-topic-3": {
+              "title": "Panda | Imagem",
+              "props": {
+                "src": "assets/img/seja-franqueado-icon-demo.png",
+                "blockClass":"sub-main-box-franqueado"
+              }
+            },
+      
+            "rich-text#sub-main-box-franqueado-topic-3": {
+              "title": "Panda | Titulo",
+              "props": {
+                "text": "presente em mais de **15 CIDADES**",
+                "blockClass":"sub-main-box-franqueado-topic"
+              }
+            },
+            // Fim Topico 03
+
+      // Topico 04
+      "flex-layout.col#sub-main-box-franqueado-topic-4": {
+        "title": "Panda | Topico 04",
+        "children": ["image#sub-main-box-franqueado-topic-4", "rich-text#sub-main-box-franqueado-topic-4"],
+        "props":{
+          "blockClass":"sub-main-box-franqueado-topic"
+        } 
+      },
+
+      "image#sub-main-box-franqueado-topic-4": {
+        "title": "Panda | Imagem",
+        "props": {
+          "src": "assets/img/seja-franqueado-icon-demo.png",
+          "blockClass":"sub-main-box-franqueado"
+        }
+      },
+
+      "rich-text#sub-main-box-franqueado-topic-4": {
+        "title": "Panda | Titulo",
+        "props": {
+          "text": "presente em mais de **15 CIDADES**",
+          "blockClass":"sub-main-box-franqueado-topic"
+        }
+      }
+      // Fim Topico 04
+}

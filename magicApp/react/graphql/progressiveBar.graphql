@@ -1,0 +1,10 @@
+query progressiveBar($reference: [ID!]) {
+  productsByIdentifier(field: reference, values: $reference){
+    productName
+    productClusters {
+      id,
+    	name
+   }
+  }
+}
+ 

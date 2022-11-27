@@ -1,0 +1,65 @@
+{
+    "flex-layout.row#shelf-nike-02": {
+      "title": "Panda | Vitrine 02",
+      "children": ["flex-layout.col#shelf-nike-02"],
+      "props": {
+        "blockClass": ["shelf", "bg__gray"]
+      }
+    },
+  
+    "flex-layout.col#shelf-nike-02": {
+      "children": ["rich-text#shelf-nike-02", "flex-layout.row#shelf-nike-slider-02"],
+      "props": {
+        "blockClass": "shelf--col"
+      }
+    },
+  
+    "rich-text#shelf-nike-02": {
+      "title": "Panda | Vitrine 02 - Título",
+      "props": {
+        "text": "## **destaques** da semana",
+        "blockClass": "Panda__title"
+      }
+    },
+  
+    "flex-layout.row#shelf-nike-slider-02": {
+      "title": "Panda | Vitrine 02 - Produtos",
+      "children": ["list-context.product-list#shelf-nike-slider-02"],
+      "props": {
+        "blockClass": "shelf--col"
+      }
+    },
+  
+    "list-context.product-list#shelf-nike-slider-02": {
+      "blocks": [ "product-summary.shelf#product-search"],
+      "children": ["slider-layout#shelf-nike-slider-02"],
+      "props": {
+        "orderBy": "OrderByReleaseDateDESC",
+        "collection": "",
+        "category": "",
+        "hideUnavailableItems": false,
+        "maxItems": 10
+      }
+    },
+ 
+    "slider-layout#shelf-nike-slider-02": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 2,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "showNavigationArrows": "desktopOnly",
+        "showPaginationDots": "always",
+        "blockClass": "shelf",
+        "centerMode": {
+          "desktop": "disabled",
+          "mobile": "center"
+        },
+        "centerModeSlidesGap": "0"
+      }
+    }
+  }
+  

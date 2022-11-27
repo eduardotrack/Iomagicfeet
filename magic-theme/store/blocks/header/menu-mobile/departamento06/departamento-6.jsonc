@@ -1,0 +1,153 @@
+{
+  "drawer#dep6-mobile": {
+    "title": "Panda | Menu Departamento 06 - Nivel 02",
+    "children": [
+      "flex-layout.row#dep6-1-mobile-nivel-2-head",
+      "vtex.menu@2.x:menu#dep6-mobile",
+      "vtex.menu@2.x:menu#dep6-mobile-nivel-3"
+    ],
+    "blocks": ["drawer-header#header-mobile", "drawer-trigger#dep6-mobile"],
+    "props": {
+      "blockClass": ["menu-mobile-nivel01", "department-bf-temp-submenu"]
+    }
+  },
+
+  "flex-layout.row#dep6-1-mobile-nivel-2-head": 
+  {
+    "title": "Panda | Menu Departamento 06 - Nivel 02 - Header",
+    "props": {
+      "blockClass": "header__nivel3--mob"
+    },
+    "children": ["flex-layout.col#dep6-1-mobile-nivel-2-head", "flex-layout.row#dep6-1-mobile-nivel-2-headsub"]
+  },
+
+  "flex-layout.col#dep6-1-mobile-nivel-2-head": {
+    "title": "Panda | Menu Departamento 06 - Nivel 02 - Header",
+    "props": {
+      "blockClass": "header__nivel3--mob"
+    },
+    "children": ["rich-text#dep6-1-mobile-nivel-2-head"]
+  },
+
+  "flex-layout.row#dep6-1-mobile-nivel-2-headsub": {
+    "title": "Panda | Menu Departamento 06 - Nivel 2 - Header",
+    "props": {
+      "blockClass": "headsub__nivel3--mob"
+    },
+    "children": ["drawer-close-button"]
+  },
+
+  "rich-text#dep6-1-mobile-nivel-2-head": {
+    "title": "Panda | Menu Departamento 06 - Nivel 2 - Header Titulo",
+    "props": {
+      "text": "Tênis e calçados",
+      "blockClass": "header__nivel3--mob"
+    }
+  },
+  
+  "drawer-trigger#dep6-mobile": {
+    "children": ["rich-text#dep6-mobile"],
+    "props": {
+      "blockClass": "menu-mobile-nivel01"
+    }
+  },
+  
+  "rich-text#dep6-mobile": {
+    "title": "Panda | Menu Departamento 06 - Nivel 02 - Texto",
+    "props": {
+      "text": "novidades",
+      "blockClass": "menu-mobile-nivel01"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dep6-mobile": {
+    "title": "Panda | Menu Departamento 06 - Nivel 02 - Menu",
+    "props": {
+      "blockClass": ["menu-mobile", "submenu-mobile-subcategory"],
+      "orientation": "vertical",
+      "items": [
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        }
+      ]
+    }
+  },
+
+  "vtex.menu@2.x:menu#dep6-mobile-nivel-3": {
+    "title": "Panda | Menu Departamento 06 - Nivel 02 - Submenu",
+    "props": {
+      "blockClass": ["menu-mobile-wrapper"],
+      "orientation": "vertical",
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "experimental__visibility-layout#dep6-1-mobile-nivel-3",
+      "experimental__visibility-layout#dep6-2-mobile-nivel-3",
+      "experimental__visibility-layout#dep6-3-mobile-nivel-3",
+      "experimental__visibility-layout#dep6-4-mobile-nivel-3"
+    ]
+  }
+}

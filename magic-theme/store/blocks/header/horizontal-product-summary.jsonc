@@ -1,0 +1,35 @@
+{
+  "product-summary.shelf#search": {
+    "title": "Panda | Sumário de produto - Busca",
+    "children": ["flex-layout.row#product-summary-search"],
+    "props": { "priceBehavior": "default", "trackListName": true }
+  },
+  "flex-layout.row#product-summary-search": {
+    "children": [
+      "product-summary-image#search",
+      "flex-layout.col#product-summary-search-details"
+    ],
+    "props": {
+      "blockClass": "product-summary-search",
+      "horizontalAlign": "left",
+      "colSizing": "auto",
+      "colGap": 2
+    }
+  },
+
+  "flex-layout.col#product-summary-search-details": {
+    "children": [
+      "product-summary-name#search",
+      "product-summary-space",
+      "product-selling-price#search"
+    ],
+    "props": {
+      "marginLeft": 4
+    }
+  },
+  "product-summary-image#search": {
+    "props": { "blockClass": "product-summary-search-image", "height": 65 }
+  },
+  "product-summary-name#search": {},
+  "product-selling-price#search": {}
+}

@@ -1,0 +1,92 @@
+{
+    "flex-layout.row#ace1-prefooter": {
+        "title": "Panda | Informações pré rodapé ACE1",
+        "props": {
+          "blockClass": "ace1-prefooter" 
+        },
+        "children": [
+            "flex-layout.col#ace1-prefooter-text",
+            "flex-layout.col#ace1-prefooter-img"
+        ]
+      },
+
+      "flex-layout.col#ace1-prefooter-img": {
+        "title": "Panda | Imagem ACE1",
+        "children": ["image#ace1-prefooter-img"],
+        "props":{
+        "blockClass":["ace1-prefooter", "ace1-prefooterimg"]
+        } 
+    },
+
+    "image#ace1-prefooter-img": {
+        "props": {
+          "src": "assets/img/ace1/prefooter-img-section.png",
+          "blockClass":"ace1-prefooter"
+        }
+    },
+
+    "flex-layout.col#ace1-prefooter-text": {
+        "title": "Panda | Informações ACE1",
+        "children": [
+            "rich-text#ace1-prefooter-text",
+            "list-context.media-list#ace1-prefooter-text",
+            "rich-text#ace1-prefooter-text-list"
+            ],
+        "props":{
+        "blockClass":"ace1-prefooter"
+        } 
+    },
+
+    "rich-text#ace1-prefooter-text": {
+        "title": "Panda | Texto ACE1",
+        "props": {
+          "text": "# Comprar tênis quase novos é  **seguro, prático e sustentável** com a ACE1",
+          "blockClass":"ace1-prefooter"
+        }
+      },
+
+      "rich-text#ace1-prefooter-text-list": {
+        "title": "Panda | Texto ACE1",
+        "props": {
+          "text": "* Compre produtos gentilmente usados de milhares de vendedores \n* Venda seus tênis em poucos cliques \n* Tudo com a confiança da ACE1 e Grupo AFEET",
+          "blockClass":"ace1-prefooter"
+        }
+      },
+
+      "list-context.media-list#ace1-prefooter-text": {
+        "title": "Panda | Links ACE1",
+        "children": ["list-context-renderer#ace1-prefooter-text"],
+        "props": {
+            "blockClass":"ace1-prefooter",
+            "mediaList": [
+                {
+                "image": "assets/img/ace1/btn-download-apple.png",
+                "mobileImage": "assets/img/ace1/btn-download-apple.png",
+                "link": {
+                    "url" : "https://ace1br.app.link/afeetlp",
+                    "noFollow" : true,
+                    "openNewTab": true
+                }
+                },
+                
+                {
+                "image": "assets/img/ace1/btn-download-google.png",
+                "mobileImage": "assets/img/ace1/btn-download-google.png",
+                "link": {
+                    "url" : "https://ace1br.app.link/afeetlp",
+                    "noFollow" : true,
+                    "openNewTab": true
+                }
+                }
+            ]
+        }
+      },
+
+      "list-context-renderer#ace1-prefooter-text": {
+        "props": {
+        "blockClass":"ace1-prefooter",
+          "listElement": "ul",
+          "itemElement": "li"
+        }
+      }
+}

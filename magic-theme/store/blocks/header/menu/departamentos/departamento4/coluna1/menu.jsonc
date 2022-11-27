@@ -1,0 +1,112 @@
+{
+  "experimental__visibility-layout#brands-dep4-col1": {
+    "title": "Menu (On/Off)",
+    "props": {
+      "visible": true
+    },
+    "children": ["flex-layout.col#brands-dep4-col1"]
+  },
+  "flex-layout.col#brands-dep4-col1": {
+    "props": {
+      "blockClass": [
+        "main-menu-brands"
+      ]
+    },
+    "children": ["list-context.media-list#brands-menu-list"]
+  },
+  "list-context.media-list#brands-menu-list": {
+    "children": ["list-context-renderer#wrapped-menu-brands"],
+    "props": {
+      "blockClass":"list-brands-menu",
+      "mediaList": [
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png"
+        }
+      ]
+    }
+  },
+
+  "list-context-renderer#wrapped-menu-brands": {
+    "props": {
+        "blockClass":"list-brands-menu",
+      "listElement": "ul",
+      "itemElement": "li"
+    }
+  }
+}

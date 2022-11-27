@@ -1,0 +1,32 @@
+{
+    "store.custom#busca-generica-black": { 
+      "blocks": ["flex-layout.row#black-row"]
+    },
+ 
+    "search-result-layout.customQuery#black": {
+      "props": {
+        "querySchema": {
+          "orderByField": "OrderByReleaseDateDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 24,
+          "queryField": "Teste",
+          "mapField": "?map=productClusterIds"
+        },
+        "blockClass": "blackFriday"
+      },
+      "blocks": [
+        "search-result-layout.desktop#category",
+        "search-result-layout.mobile",
+        "search-not-found-layout"
+      ]
+    },
+
+    "flex-layout.row#black-row": {
+      "title": "Panda | Black Friday",
+      "children": [ "search-result-layout.customQuery#black"],
+      "props":{
+        "blockClass": "blackFriday",
+        "fullWidth": true
+      } 
+    }
+  }

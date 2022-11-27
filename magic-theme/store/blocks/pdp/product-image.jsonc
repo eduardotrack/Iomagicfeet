@@ -1,0 +1,21 @@
+{
+  "flex-layout.row#product-image": {
+    "title": "Panda | Imagem do produto",
+    "children": ["flex-layout.col#product-image"]
+  },
+  "flex-layout.col#product-image": {
+    "children": ["product-images"]
+  },
+
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "displayThumbnailsArrows": true,
+      "showNavigationArrows": true,
+      "showPaginationDots": false
+    }
+  }
+}

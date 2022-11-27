@@ -1,0 +1,34 @@
+ {
+    "flex-layout.row#main-banner-sejafranqueado": {
+        "title": "Panda | Imagem Principal",
+        "children": ["responsive-layout.desktop#main-banner-sejafranqueado", "responsive-layout.phone#main-banner-sejafranqueado"],
+        "props":{
+          "blockClass":"main-banner-quemsomos-row",
+          "fullWidth": true
+        } 
+      },
+
+      "responsive-layout.desktop#main-banner-sejafranqueado": {
+        "title": "Panda | Imagem Principal - Desktop",
+        "children": ["image#main-banner-sejafranqueado-desk"]
+      },
+ 
+      "responsive-layout.phone#main-banner-sejafranqueado": {
+        "title": "Panda | Imagem Principal - Mobile",
+        "children": ["image#main-banner-sejafranqueado-mob"]
+      },
+
+      "image#main-banner-sejafranqueado-desk": {
+        "props": {
+          "src": "assets/img/main-sejafranqueado-desk.png",
+          "blockClass":"main-banner-quemsomos-row"
+        }
+      },
+
+      "image#main-banner-sejafranqueado-mob": {
+        "props": {
+          "src": "assets/img/main-sejafranqueado-mob.png",
+          "blockClass":"main-banner-quemsomos-row"
+        }
+      }
+ }

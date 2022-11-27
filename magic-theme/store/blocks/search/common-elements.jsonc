@@ -1,0 +1,204 @@
+{
+  // COMMON - FETCH BTNS
+
+  "flex-layout.row#fetchprevious": {
+    "title": "Panda | Resultados anteriores",
+    "props": {
+      "blockClass": "panda-search__fetch--previous"
+    },
+    "children": ["search-fetch-previous"]
+  },
+  "flex-layout.row#fetchmore": {
+    "title": "Panda | Resultados seguintes",
+    "props": {
+      "blockClass": "panda-search__fetch--more"
+    },
+    "children": ["search-fetch-more"]
+  },
+
+  // COMMON - GALLERY
+  "search-content": {
+    "title": "Panda | Conteúdo da busca",
+    "blocks": ["gallery", "not-found"]
+  },
+
+  // COMMON - TITLE
+  "flex-layout.row#searchtitle": {
+    "title": "Panda | Título da busca",
+    "children": ["search-title.v2"],
+    "props": {
+      "blockClass": "panda-search__main-title"
+    }
+  },
+  // COMMON - SEO TITLE
+  "flex-layout.row#search-seo-title": {
+    "title": "Panda | Título da busca - SEO",
+    "children": ["search-title.v2#seo-title"],
+    "props": {
+      "blockClass": ["panda-search__main-title", "panda-search__main-title--seo"]
+    }
+  },
+  "search-title.v2#seo-title": {
+    "props": {
+      "blockClass": "panda-search__main-title--seo"
+    }
+  },
+
+  // SEARCH BANNER
+  "flex-layout.row#banner-one": {
+    "title": "Panda | Banner da busca",
+    "children": ["search-banner#one"]
+  },
+  "search-banner#one": {
+    "props": {
+      "area": "one",
+      "blockClass": "panda-search__banner",
+      "horizontalAlignment": "center"
+    }
+  },
+  //controle de visibilidade do carrossel
+  "experimental__visibility-layout#search-banner-top": {
+    "title": "Controle de visibilidade - Banner superior - Busca",
+    "children": ["list-context.image-list#slider-full-search"],
+    "props": {
+      "visible": false,
+      "blockClass": "panda-search__carousel"
+    }
+  },
+
+  // BREADCRUMB
+  "flex-layout.row#searchbread": {
+    "title": "Panda | Rastros de navegação - busca",
+    "children": ["breadcrumb.search"],
+    "props": {
+      "blockClass": [
+        "panda-search__breadcrumb",
+        "panda-breadcrumb__style",
+        "breadcrumb",
+        "product__breadcrumb"
+      ],
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "breadcrumb.search": {
+    "props": {
+      "showOnMobile": true,
+      "blockClass": "panda-breadcrumb__style"
+    }
+  },
+
+  // SUGGESTIONS
+  "flex-layout.row#search-suggestions": {
+    "title": "Panda | Sugestões da busca",
+    "children": ["search-suggestions"],
+    "props": {
+      "blockClass": "panda-search__suggestions",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+
+  // RESULT
+  "flex-layout.row#result": {
+    "title": "Panda | Resultados da busca",
+    "children": ["flex-layout.col#filter", "flex-layout.col#content"],
+    "props": {
+      "blockClass": "panda-search__main",
+      "preventHorizontalStretch": false,
+      "fullWidth": true
+    }
+  },
+
+  // RESULT FILTER
+  "flex-layout.col#filter": {
+    "title": "Panda | Filtros",
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "width": "15%",
+      "blockClass": "panda-search__filter"
+    }
+  },
+
+  "filter-navigator.v3": {
+    "props": {
+      "priceRangeLayout": "slider",
+      "appliedFiltersOverview": "hide"
+    }
+  },
+
+  // RESULT CONTENT
+  "flex-layout.col#content": {
+    "title": "Panda | Conteúdo da busca",
+    "children": [
+      "flex-layout.row#retail-rocket-category",
+      "flex-layout.row#searchinfo",
+      "flex-layout.row#products",
+      "flex-layout.row#progress-bar",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width": "85%",
+      "preventVerticalStretch": true,
+      "blockClass": "panda-search__result"
+    }
+  },
+
+  // SEARCH INFO
+  "flex-layout.row#searchinfo": {
+    "title": "Panda | Informações da busca",
+    "children": [
+      "flex-layout.col#productCount",
+      "order-by.v2"
+    ],
+    "props": {
+      "blockClass": "panda-search__count"
+    }
+  },
+
+  // SEARCH INFO - NUMBER
+  "flex-layout.col#productCount": {
+    "title": "Panda | Número de produtos encontrados",
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "panda-search__count--col"
+    }
+  },
+  "flex-layout.col#products-per-page": {
+    "children": ["search-products-count-per-page#per-page"],
+    "props": {
+      "blockClass": "panda-search__count--col-page"
+    }
+  },
+  "search-products-count-per-page#per-page": {
+    "props": {
+      "blockClass": "panda-search__count--per-page"
+    }
+  },
+
+  // SEARCH INFO - ORDER BY
+
+  // PRODUCTS
+  "flex-layout.row#products": {
+    "title": "Panda | Lista de produtos",
+    "children": ["search-content"],
+    "props": {
+      "blockClass": ["panda-search__products", "panda-search__products--desktop"]
+    }
+  },
+
+  // PROGRESS BAR
+  "flex-layout.row#progress-bar": {
+    "title": "Panda | Barra de progresso",
+    "children": ["search-products-progress-bar#search-progress"],
+    "props": {
+      "blockClass": "panda-search__progress-bar-wrapper"
+    }
+  },
+  "search-products-progress-bar#search-progress": {
+    "props": {
+      "blockClass": "panda-search__progress-bar"
+    }
+  }
+}

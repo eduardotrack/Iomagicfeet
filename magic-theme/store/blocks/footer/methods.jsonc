@@ -1,0 +1,397 @@
+{
+  "flex-layout.row#footer-3-desktop": {
+    "title": "Panda | Footer - Selos",
+    "children": [
+      "flex-layout.col#seo-footer-flags",
+      "flex-layout.col#payment-flags",
+      "flex-layout.col#security-badges"
+    ],
+    "props": {
+      "blockClass": "footer_methods"
+    }
+  },
+
+  "flex-layout.row#footer-3-mobile": {
+    "title": "Panda | Footer - Selos",
+    "children": [
+      "flex-layout.col#seo-footer-flags"
+    ],
+    "props": {
+      "blockClass": "footer_methods"
+    }
+  },
+
+  "rich-text#footer-payment-title": {
+    "title": "Panda | Footer - Selos - Pagamento - Título",
+    "props": {
+      "text": "### Formas de pagamento",
+      "blockClass": ["footer_methods--title", "footer_methods_icon--title"]
+    }
+  },
+
+  // Editable list of payment methods
+  "flex-layout.col#payment-flags": {
+    "title": "Panda | Footer - Selos - Pagamento",
+    "children": [
+      "rich-text#footer-payment-title",
+      "flex-layout.row#payment-methods-top",
+      "flex-layout.row#payment-methods-bottom",
+      "flex-layout.row#footer-developed-powered"
+    ],
+    "props": {
+      "blockClass": "payment-flags-wrapper",
+      "horizontalAlign": "left",
+      "marginLeft": 0,
+      "marginRight": 0,
+      "paddingLeft": 0,
+      "paddingRight": 2,
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "verticalAlign": "top",
+      "width": "33%"
+    }
+  },
+
+  "flex-layout.row#payment-methods-top": {
+    "title": "Panda | Footer - Selos - Pagamento",
+    "children": ["list-context.image-list#payment-methods-top"],
+    "props": {
+      "blockClass": "payment-methods-flags",
+      "colGap": 0,
+      "colSizing": "equal",
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "marginBottom": 1,
+      "marginTop": 0,
+      "paddingBottom": 1,
+      "paddingTop": 0,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#payment-methods-bottom": {
+    "children": ["list-context.image-list#payment-methods-bottom"],
+    "props": {
+      "blockClass": "payment-methods-flags",
+      "colGap": 0,
+      "colSizing": "equal",
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "marginBottom": 1,
+      "marginTop": 0,
+      "paddingBottom": 1,
+      "paddingTop": 1,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "list-context.image-list#payment-methods-top": {
+    "title": "Panda | Bandeiras - Linha superior",
+    "children": ["slider-layout#payment-methods-images-top"],
+    "props": {
+      "blockClass": ["payment-methods-flags", "payment-methods-flags--top"],
+      "preload": false,
+      "height": 30,
+      "images": [
+        {
+          "image": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "mobileImage": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "mobileImage": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "mobileImage": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "mobileImage": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "mobileImage": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "description": "bandeira",
+          "width": "50px"
+        }
+      ]
+    }
+  },
+  "list-context.image-list#payment-methods-bottom": {
+    "title": "Panda | Bandeiras - Linha inferior",
+    "children": ["slider-layout#payment-methods-images-bottom"],
+
+    "props": {
+      "blockClass": ["payment-methods-flags", "payment-methods-flags--bottom"],
+      "preload": false,
+      "height": 30,
+      "images": [
+        {
+          "image": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "mobileImage": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "mobileImage": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "mobileImage": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "mobileImage": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "description": "bandeira",
+          "width": "50px"
+        },
+        {
+          "image": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "mobileImage": "https://via.placeholder.com/50x25/2B2B2B/2B2B2B?Text=bandeira",
+          "description": "bandeira",
+          "width": "50px"
+        }
+      ]
+    }
+  },
+  "slider-layout#payment-methods-images-top": {
+    "title": "Panda | Imagens - Bandeiras superiores",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 5,
+        "phone": 5
+      },
+      "infinite": false,
+      "label": "payment-flags-slider",
+      "fullWidth": false,
+      "centerMode": "to-the-left",
+      "centerModeSlidesGap": 6
+    }
+  },
+  "slider-layout#payment-methods-images-bottom": {
+    "title": "Panda | Imagens - Bandeiras inferiores",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 5,
+        "phone": 5
+      },
+      "infinite": false,
+      "label": "payment-flags-slider",
+      "fullWidth": false,
+      "centerMode": "to-the-left",
+      "centerModeSlidesGap": 6
+    }
+  },
+  // Editable security badges list
+  "flex-layout.col#security-badges": {
+    "title": "Panda | Selos de segurança",
+    "children": [
+      "rich-text#footer-lights-title",
+      "flex-layout.row#footer-highlights",
+      "rich-text#footer-lights-text"
+    ],
+    "props": {
+      "blockClass": "security-badges",
+      "horizontalAlign": "left",
+      "marginLeft": 0,
+      "marginRight": 0,
+      "paddingLeft": 0,
+      "paddingRight": 2,
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "verticalAlign": "top",
+      "width": "40%"
+    }
+  },
+  "rich-text#footer-lights-title": {
+    "title": "Panda | Título - Selos de segurança",
+    "props": {
+      "text": "### Selos de Segurança",
+      "blockClass": ["footer_methods--title" , "footer_lights_icon--title"]
+    }
+  },
+
+  "rich-text#footer-lights-text": {
+    "title": "Panda | Texto - Selos de segurança",
+    "props": {
+      "text": "Rua do Curtume, 499 - Andar 02 \n Lapa de Baixo - SP. CEP: 05065-001 \n CNPJ: 00.267.685/0027-76 relacionamento@magicfeet.com.br",
+      "blockClass": ["footer_lights--text"]
+    }
+  },
+
+  "flex-layout.row#footer-highlights": {
+    "children": ["list-context.image-list#highlight-images"],
+    "props": {
+      "blockClass": "home__footer--high",
+      "colGap": 0,
+      "colSizing": "equal",
+      "fullWidth": true,
+      "horizontalAlign": "left",
+      "marginBottom": 0,
+      "marginTop": 0,
+      "paddingBottom": 0,
+      "paddingTop": 0,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+
+  "list-context.image-list#highlight-images": {
+    "title": "Panda | Lista - Selos de segurança",
+    "children": ["slider-layout#highlight-images"],
+    "props": {
+      "preload": false,
+      "height": 44,
+      "images": [
+        {
+          "image": "https://via.placeholder.com/44x44/2B2B2B/2B2B2B?Text=brasão",
+          "mobileImage": "https://via.placeholder.com/44x44/2B2B2B/2B2B2B?Text=brasão",
+          "description": "brasão",
+          "width": "44px"
+        },
+        {
+          "image": "https://via.placeholder.com/44x44/2B2B2B/2B2B2B?Text=brasão",
+          "mobileImage": "https://via.placeholder.com/44x44/2B2B2B/2B2B2B?Text=brasão",
+          "description": "brasão",
+          "width": "44px"
+        },
+        {
+          "image": "https://via.placeholder.com/44x44/2B2B2B/2B2B2B?Text=brasão",
+          "mobileImage": "https://via.placeholder.com/44x44/2B2B2B/2B2B2B?Text=brasão",
+          "description": "brasão",
+          "width": "44px"
+        },
+        {
+          "image": "https://via.placeholder.com/44x44/2B2B2B/2B2B2B?Text=brasão",
+          "mobileImage": "https://via.placeholder.com/44x44/2B2B2B/2B2B2B?Text=brasão",
+          "description": "brasão",
+          "width": "44px"
+        }
+      ]
+    }
+  },
+  "slider-layout#highlight-images": {
+    "title": "Panda | Imagens - selos de segurança",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 4,
+        "phone": 4
+      },
+      "infinite": false,
+      "label": "highlight-badges-slider",
+      "fullWidth": false,
+      "centerMode": "to-the-left",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": "security-slider"
+    }
+  },
+
+  // POWERED BY AND DEVELOPED BY SECTION
+  "flex-layout.row#footer-developed-powered": {
+    "title": "Panda |  Developed/Powered",
+    "children": [
+      "flex-layout.col#footer-powered",
+      "flex-layout.col#footer-developed"
+    ],
+    "props": {
+      "blockClass": "home__footer--developed-powered-wrapper",
+      "colGap": 6,
+      "colSizing": "equal",
+      "fullWidth": false,
+      "horizontalAlign": "left",
+      "preserveLayoutOnMobile": false,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": false
+    }
+  },
+
+  "flex-layout.col#footer-developed": {
+    "children": ["rich-text#footer-developed", "image#developed"],
+    "props": {
+      "blockClass": "home__footer--developed",
+      "props": {
+        "horizontalAlign": "left",
+        "marginLeft": 0,
+        "marginRight": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "preventVerticalStretch": true,
+        "rowGap": 0,
+        "verticalAlign": "top"
+      }
+    }
+  },
+  "flex-layout.col#footer-powered": {
+    "children": ["rich-text#footer-powered", "image#powered"],
+    "props": {
+      "blockClass": "home__footer--powered"
+    }
+  },
+  "rich-text#footer-developed": {
+    "props": {
+      "text": "###### Developed by",
+      "blockClass": [
+        "footer__developed-powered--title",
+        "footer_methods--title"
+      ]
+    }
+  },
+
+  "image#developed": {
+    "props": {
+      "src": "assets/img/footer-01.png",
+      "link": {
+        "url": "https://wwww.vtex.com",
+        "openNewTab": true,
+        "title": "vtex"
+      },
+
+      "blockClass": "home__footer-developed--image"
+    }
+  },
+
+  "rich-text#footer-powered": {
+    "props": {
+      "text": "###### Powered by",
+      "blockClass": [
+        "footer__developed-powered--title",
+        "footer_methods--title"
+      ]
+    }
+  },
+  "image#powered": {
+    "props": {
+      "src": "assets/img/footer-02.png",
+      "link": {
+        "url": "https://www.vtex.com",
+        "openNewTab": true,
+        "title": "VTEX"
+      },
+      "blockClass": "home__footer-powered--image"
+    }
+  }
+}

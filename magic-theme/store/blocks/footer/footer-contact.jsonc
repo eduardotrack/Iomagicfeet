@@ -1,0 +1,52 @@
+{
+  "rich-text#footer-contact-title": {
+    "title": "Panda | Footer - Menu - Título - Contato",
+    "props": {
+      "text": "### Atendimento",
+      "blockClass": "footer__tooltip--text"
+    }
+  },
+  "vtex.menu@2.x:menu#footer-contact-tooltip": {
+    "title": "Panda | Footer - Menu - Contato",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__tooltip--text"
+    },
+    "children": [
+      "menu-item#contact-footer",
+      "menu-item#contact-time"
+    ]
+  },
+  "menu-item#contact-footer": {
+    "props": {
+      "id": "menu-item-contact",
+      "blockClass": ["footer__tooltip--link", "footer__tooltip--link-lojas-fisicas"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "tel:+5599999999999",
+        "noFollow": false,
+        "tagTitle": "lojas físicas",
+        "text": "lojas físicas"
+      }
+    }
+  },
+  "menu-item#contact-time": {
+    "props": {
+      "id": "menu-item-contact",
+      "blockClass": ["footer__tooltip--link", "footer__tooltip--link-contato"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "(11) 3664-3822",
+        "text": "(11) 3664-3822"
+      }
+    }
+  }
+}

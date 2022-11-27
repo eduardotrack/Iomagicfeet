@@ -1,0 +1,109 @@
+{
+    "store.custom#retirada-em-loja": {
+      "blocks": [ 
+            "flex-layout.row#retirada-em-loja-topo", 
+            "flex-layout.row#main-banner-retirada-em-loja",
+            "rich-text#title-retirada-em-loja-title-faq",
+            "flex-layout.row#retirada-em-loja-faq",
+            "flex-layout.row#retirada-em-loja-title", 
+            "flex-layout.row#retirada-em-loja"
+        ]
+    },
+
+    "flex-layout.row#retirada-em-loja-topo": {
+      "props": {
+        "blockClass": "panda-retirada-em-loja-topo",
+        "fullWidth": true
+      },
+      "children": [
+        "rich-text#title-retirada-em-loja-topo"
+      ]
+    },
+
+    "rich-text#title-retirada-em-loja-topo": {
+      "props": {
+        "blockClass": "panda-retirada-em-loja__topo",
+        "text": "# AQUI NA MAGICFEET \n ## VOCÊ TEM A OPÇÃO DE COMPRAR ONLINE \n ### E RETIRAR EM UMA LOJA FÍSICA \n *consulte as lojas disponíveis"
+      },
+      "title": "Título - Titulo principal da Página"
+    },
+
+    "flex-layout.row#retirada-em-loja-title": {
+        "props": {
+          "blockClass": "panda-retirada-em-loja" 
+        },
+        "children": [
+          "rich-text#title-retirada-em-loja"
+        ]
+      },
+
+    "flex-layout.row#retirada-em-loja": {
+      "props": {
+        "blockClass": "panda-retirada-em-loja",
+        "preventHorizontalStretch": true
+      },
+      "children": [
+        "flex-layout.col#content-retirada-em-loja-1",
+        "flex-layout.col#content-retirada-em-loja-2"
+      ]
+    },
+
+    "rich-text#title-retirada-em-loja-title-faq": {
+      "props": {
+        "blockClass": "panda-retirada-em-loja__title",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "# PERGUNTAS FREQUENTES"
+      },
+      "title": "Título - FAQ"
+    },
+  
+    "rich-text#title-retirada-em-loja": {
+      "props": {
+        "blockClass": "panda-retirada-em-loja__title",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "# CONFIRA OUTRAS FORMAS DE ENTREGA"
+      },
+      "title": "Título - Outras formas de entrega"
+    },
+
+    // Tipo 1
+    "flex-layout.col#content-retirada-em-loja-1": {
+        "title": "Panda | Texto Missão",
+        "children": ["rich-text#content-retirada-em-loja-1"],
+        "props":{
+          "blockClass":["entrega-container-text", "retirada-em-loja-card"],
+        "width": "100%"
+        } 
+    },
+
+    "rich-text#content-retirada-em-loja-1": {
+        "props": {
+          "blockClass": "panda-retirada-em-loja__content",
+          "text": "## FRETE EXPRESSO \n O frete expresso é rapidinho, seu pedido chega o quanto antes. \n Consulte o seu CEP para maiores Informações. "
+        },
+        "title": "Conteúdo - Tipos de Entrega -  Bloco 1"
+      },
+    // Tipo 1
+
+    // Tipo 2
+    "flex-layout.col#content-retirada-em-loja-2": {
+        "title": "Panda | Texto Missão",
+        "children": ["rich-text#content-retirada-em-loja-2"],
+        "props":{
+        "blockClass":["entrega-container-text", "retirada-em-loja-card"],
+        "width": "100%"
+        } 
+    },
+
+    "rich-text#content-retirada-em-loja-2": {
+        "props": {
+          "blockClass": "panda-retirada-em-loja__content",
+          "text": "## FRETE GRÁTIS \n Frete Grátis nas compras: \n * acima de R$100,00 Sudeste, \n * acima de R$150,00 para o Sul, \n * acima de R$200,00 para o Centro-oeste e Nordeste, \n * acima de R$400,00 para o Norte"
+        },
+        "title": "Conteúdo - Tipos de Entrega -  Bloco 2"
+      }
+    // Tipo 2
+  }
+  

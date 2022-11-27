@@ -1,0 +1,42 @@
+{
+  "flex-layout.col#tips-item-03": {
+      "title": "Panda | Tips 03",
+      "children": ["link#tips-item-03"],
+      "props":{
+          "blockClass": "tips-item-wrapper" 
+      }
+  },
+
+  "link#tips-item-03": {
+      "title": "Panda | Link Tips 03",
+      "children": ["experimental__visibility-layout#tips-item-03", "rich-text#tips-item-03"],
+      "props": {
+        "href": "/institucional/nossas-lojas",
+        "blockClass": "tips-item-link"
+      }
+    },
+
+    "experimental__visibility-layout#tips-item-03": {
+      "title": "Icone Tips 03 (On/Off)",
+      "props": {
+        "visible": true
+      },
+      "children": ["image#tips-item-03"]
+    },
+
+    "image#tips-item-03": {
+      "title": "Panda | Imagem Tips 03",
+      "props": {
+        "src": "https://magicfeet.vtexassets.com/assets/vtex.file-manager-graphql/images/0caf9eb4-44bb-43a0-a868-f792ac757097___481732b345c1296c3e2916fec2345879.png",
+        "blockClass": "tips-item-img"
+      }
+    },
+
+    "rich-text#tips-item-03": {
+      "title": "Panda | Texto Tips 03",
+      "props": {
+        "text": "**+ de 40 lojas pelo brasil** \n encontre a  mais próxima",
+        "blockClass": "tips-item-text"
+      }
+    }
+}

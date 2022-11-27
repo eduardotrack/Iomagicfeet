@@ -1,0 +1,102 @@
+{
+  "flex-layout.row#ace1-footer": {
+      "title": "Panda | Área principal ACE1",
+      "props": {
+        "blockClass": "ace1-footer" 
+      },
+      "children": [
+          "flex-layout.col#ace1-footer-text",
+          "flex-layout.col#ace1-footer-links"
+      ]
+    },
+
+    "flex-layout.col#ace1-footer-links": {
+      "title": "Panda | Imagem ACE1",
+      "children": ["rich-text#ace1-footer-text-list"],
+      "props":{
+      "blockClass":"ace1-footer"
+      } 
+  },
+
+  "image#ace1-footer-img": {
+      "props": {
+        "src": "assets/img/ace1/logo-ace1.png",
+        "blockClass":"ace1-footer-logo"
+      }
+  },
+
+  "flex-layout.col#ace1-footer-text": {
+      "title": "Panda | Informações ACE1",
+      "children": [
+          "image#ace1-footer-img",
+          "rich-text#ace1-footer-text",
+          "list-context.media-list#ace1-footer-social"
+          ],
+      "props":{
+      "blockClass":"ace1-footer"
+      } 
+  },
+
+  "rich-text#ace1-footer-text": {
+      "title": "Panda | Texto ACE1",
+      "props": {
+        "text": "**ACE1 - 100% original, 100% das vezes.** \n ACE1 INTERMEDIACAO DE NEGOCIOS LTDA \n 30.462.823/0001-08 \n Avenida Ibirapuera, 1753 sala 1 cj 62 Indianópolis. São Paulo, SP. \n 2022 - Todos os direitos reservados. \n\n\n _Siga-nos_",
+        "blockClass":"ace1-footer"
+      }
+    },
+
+    "rich-text#ace1-footer-text-list": {
+      "title": "Panda | Texto ACE1",
+      "props": {
+        "text": "#### Produto \n [App iOS](https://ace1br.app.link/afeetlp)  \n [App Android](https://ace1br.app.link/afeetlp)",
+        "blockClass":"ace1-footer"
+      }
+    },
+
+    "list-context.media-list#ace1-footer-social": {
+      "title": "Panda | Links ACE1",
+      "children": ["list-context-renderer#ace1-footer-social"],
+      "props": {
+          "blockClass":"ace1-footer",
+          "mediaList": [
+              {
+              "image": "assets/img/ace1/linkedin-in.png",
+              "mobileImage": "assets/img/ace1/linkedin-in.png",
+              "link": {
+                  "url" : "https://www.linkedin.com/company/ace1/",
+                  "noFollow" : true,
+                  "openNewTab": true
+              }
+              },
+              
+              {
+              "image": "assets/img/ace1/instagram-social.png",
+              "mobileImage": "assets/img/ace1/instagram-social.png",
+              "link": {
+                  "url" : "https://www.instagram.com/ace1br/",
+                  "noFollow" : true,
+                  "openNewTab": true
+              }
+              },
+              
+              {
+              "image": "assets/img/ace1/youtube.png",
+              "mobileImage": "assets/img/ace1/youtube.png",
+              "link": {
+                  "url" : "https://www.youtube.com/channel/UCB5QzroCVaadh3fe3jy_nCQ",
+                  "noFollow" : true,
+                  "openNewTab": true
+              }
+              }
+          ]
+      }
+    },
+
+    "list-context-renderer#ace1-footer-social": {
+      "props": {
+      "blockClass":"ace1-footer",
+        "listElement": "ul",
+        "itemElement": "li"
+      }
+    }
+}

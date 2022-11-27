@@ -1,0 +1,143 @@
+.boxContainer {
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+}
+
+.dataEntryLabel {
+    font-family: 'WorkSans-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.boxContainerFooter :global(.vtex-button__label) {
+    font-family: 'WorkSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.boxContainerFooter {
+    margin-top: -98px;
+    margin-bottom: 20px;
+}
+
+.dataEntryChildren {
+    font-family: 'WorkSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.newsletterContainerTitle {
+    font-family: 'WorkSans-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.newsletterContainerMessage {
+    font-family: 'WorkSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.newsletterBoxContainer :global(.vtex-checkbox__label) {
+    font-family: 'WorkSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.newsletterBoxContainer :global(.vtex-checkbox__line-container) {
+    display: flex;
+    align-items: center;
+}
+
+.boxContainerBody :global(.vtex-button) {
+    background: #1C1C1C;
+    border-radius: 10px;
+    padding: 0px 10px;
+    border: none;
+}
+
+.boxContainerBody :global(.vtex-button__label) {
+    font-family: 'RobotoCondensed-Bold'!important;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    padding: 0;
+}
+
+.boxContainerBody :global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper) :global(.vtex-button) {
+    background: transparent;
+    border-radius: 0px;
+    padding: 0px 30px;
+    font-family: 'RobotoCondensed-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 16px */
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.userGreeting {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #353535;
+}
+
+.userName {
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 27px;
+    color: #353535;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        text-align: center;
+    }
+    .userInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .userImage {
+        margin: 0;
+        margin-bottom: 14px;
+        width: 80px;
+        height: 80px;
+    }
+    .menuLink,
+    .menuLinks :global(.vtex-account_menu-link) {
+        padding: 0;
+        margin: 0;
+        border-width: 0;
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #353535;
+    }
+}

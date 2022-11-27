@@ -1,0 +1,122 @@
+{
+  "flex-layout.row#brands-home": {
+    "title": "Panda | Marcas 01",
+    "children": ["flex-layout.col#brands-home"],
+    "props":{
+      "blockClass":"brands-home-row"
+    } 
+  },
+
+  "flex-layout.col#brands-home": {
+    "children": ["rich-text#brands-home", "flex-layout.row#brands-home-list"] 
+  },
+
+  "rich-text#brands-home": {
+    "title": "Panda | Marcas - Título",
+    "props": {
+      "text": "## navegue pelas **marcas**",
+      "blockClass": "Panda__title"
+    }
+  },
+
+  "flex-layout.row#brands-home-list": {
+    "title": "Panda | Marcas",
+    "children": ["list-context.media-list#brands-home-list"] 
+  },
+
+    "list-context.media-list#brands-home-list": {
+        "children": ["list-context-renderer#wrapped-brands"],
+        "props": {
+          "blockClass":"list-brands-home",
+          "mediaList": [
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            }
+          ]
+        }
+      },
+
+      "list-context-renderer#wrapped-brands": {
+        "props": {
+            "blockClass":"list-brands-home",
+          "listElement": "ul",
+          "itemElement": "li"
+        }
+      }
+}

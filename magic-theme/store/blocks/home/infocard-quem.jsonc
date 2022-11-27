@@ -1,0 +1,145 @@
+{
+    "flex-layout.row#quem-home": {
+        "title": "Panda | Para quem?",
+        "children": ["flex-layout.col#quem-home"],
+        "props":{
+          "blockClass":"quem-home-row"
+        } 
+      },
+    
+      "flex-layout.col#quem-home": {
+        "children": ["rich-text#quem-home", "flex-layout.row#quem-home-list"] 
+      },
+    
+      "rich-text#quem-home": {
+        "title": "Panda | Para quem? - Título",
+        "props": {
+          "text": "## para **quem** você compra?",
+          "blockClass": "Panda__title"
+        }
+      },
+    
+      "flex-layout.row#quem-home-list": {
+        "title": "Panda | Para quem?",
+        "children": ["flex-layout.col#col-quem-infocard-maior",  "flex-layout.col#col-quem-infocard-menor"],
+        "props":{
+          "blockClass":"quem-home-cols"
+        } 
+      },
+
+      "flex-layout.col#col-quem-infocard-maior": {
+        "title": "Panda | Link Card Grande",
+        "children": [
+          "responsive-layout.desktop#quem-infocard-maior",
+          "responsive-layout.phone#quem-infocard-maior"
+        ],
+        "props": {
+          "blockClass": "infocard-quem-wrapper",
+          "horizontalAlign": "left",
+          "marginLeft": 0,
+          "marginRight": 0,
+          "paddingLeft": 0,
+          "paddingRight": 5,
+          "preventVerticalStretch": true,
+          "rowGap": 0,
+          "verticalAlign": "top",
+          "width": "60%"
+        }
+      },
+
+      "responsive-layout.desktop#quem-infocard-maior": {
+        "title": "Panda | Link Card Grande",
+        "children": [ "link#quem-maior"]
+      },
+ 
+      "responsive-layout.phone#quem-infocard-maior": {
+        "title": "Panda | Link Card Grande - Mobile",
+        "children": [ "link#quem-maior-mobile"]
+      },
+
+      "flex-layout.col#col-quem-infocard-menor": {
+        "title": "Panda | Link Card Menor",
+        "children": [
+            "responsive-layout.desktop#quem-infocard-maior",
+            "responsive-layout.phone#quem-infocard-maior"
+        ],
+        "props": {
+          "blockClass": "infocard-quem-wrapper",
+          "horizontalAlign": "left",
+          "marginLeft": 0,
+          "marginRight": 0,
+          "paddingLeft": 5,
+          "paddingRight": 0,
+          "preventVerticalStretch": true,
+          "rowGap": 0,
+          "verticalAlign": "top",
+          "width": "40%"
+        }
+      },
+
+      "responsive-layout.desktop#quem-infocard-menor": {
+        "title": "Panda | Link Card Menor",
+        "children": [ "link#quem-menor"]
+      },
+ 
+      "responsive-layout.phone#quem-infocard-menor": {
+        "title": "Panda | Link Card Menor - Mobile",
+        "children": ["link#quem-menor-mobile"]
+      },
+
+      "link#quem-maior": {
+        "title": "Panda | Link Card Grande",
+        "props": {
+          "href": "/",
+          "blockClass": "infocard-quem-wrapper"
+        },
+        "children": [
+            "image#quem-maior",
+            "rich-text#quem-maior"
+        ]
+      },
+
+      "image#quem-maior": {
+        "title": "Panda | Imagem Card Grande",
+        "props": {
+          "src": "assets/img/quem-home-1.png",
+          "blockClass": "infocard-quem-wrapper"
+        }
+      },
+
+      "rich-text#quem-maior": {
+        "title": "Panda | Texto Card Grande",
+        "props": {
+          "text": "para **meninos**",
+          "blockClass": "infocard-quem-wrapper"
+        }
+      },
+
+      "link#quem-menor": {
+        "title": "Panda | Link Card Pequeno",
+        "props": {
+          "href": "/",
+          "blockClass": "infocard-quem-wrapper"
+        },
+        "children": [
+            "image#quem-menor",
+            "rich-text#quem-menor"
+        ]
+      },
+
+      "image#quem-menor": {
+        "title": "Panda | Imagem Card Pequeno",
+        "props": {
+          "src": "assets/img/quem-home-2.png",
+          "blockClass": "infocard-quem-wrapper"
+        }
+      },
+
+      "rich-text#quem-menor": {
+        "title": "Panda | Texto Card Pequeno",
+        "props": {
+          "text": "para **meninas**",
+          "blockClass": "infocard-quem-wrapper"
+        }
+      }
+}

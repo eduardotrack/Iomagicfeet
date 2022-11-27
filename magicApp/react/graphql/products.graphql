@@ -1,0 +1,17 @@
+query products($term: String) {
+  products(specificationFilters: [$term]){
+    productName
+    linkText
+    productReference
+    items {
+      itemId
+      name
+      images {
+        imageUrl
+        imageText
+        imageLabel
+      }
+    }
+  }
+}
+ 

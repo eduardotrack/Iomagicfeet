@@ -1,0 +1,66 @@
+{
+  //  COL 1
+  "vtex.menu@2.x:menu#footer-all-categories": {
+    "title": "Panda | Footer - Menu - Coluna 1",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__menu_main"
+    } 
+  },
+ 
+  //  COL 2
+  "vtex.menu@2.x:menu#footer-all-categories-2": {
+    "title": "Panda | Footer - Menu - Coluna 2",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__menu"
+    },
+    "children": [
+      "menu-item#footer-all-categories-2-col-1"
+    ]
+  },
+  "menu-item#footer-all-categories-2-col-1": {
+    "props": {
+      "id": "menu-item-all-categories-2-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "blockClass": "footer__menu_title_sub",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Titulo do Menu",
+        "text": "Titulo do Menu"
+      }
+    }
+  },
+ 
+  //  COL 3
+  "vtex.menu@2.x:menu#footer-all-categories-3": {
+    "title": "Panda | Footer - Menu - Coluna 3",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "footer__menu"
+    },
+    "children": [
+      "menu-item#footer-all-categories-3-col-1"
+    ]
+  },
+  "menu-item#footer-all-categories-3-col-1": {
+    "props": {
+      "id": "menu-item-all-categories-3-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "blockClass": "footer__menu_title_sub",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Titulo do Menu",
+        "text": "Titulo do Menu"
+      }
+    }
+  }
+}

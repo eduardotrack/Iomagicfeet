@@ -1,0 +1,93 @@
+.hiddenContainer {
+    overflow: unset;
+    padding-right: 0px !important;
+}
+
+.modal--modal-primeira-compra {
+    position: fixed;
+    inset: 0px;
+    z-index: 1300;
+    width: 30%;
+    height: 300px;
+    margin-top: 90px;
+}
+
+@media (max-width: 767px) {
+    .modal--modal-primeira-compra {
+        width: 100%;
+    }
+}
+
+.paper--modal-primeira-compra {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 14px;
+    padding-top: 0px;
+    max-width: 400px;
+}
+
+.paper--modal-primeira-compra :global(.vtex-modal-layout-0-x-headerContainer) {
+    border: none;
+    margin-bottom: -30px;
+    z-index: 1;
+    position: relative;
+}
+
+.paper--modal-primeira-compra :global(.vtex-modal-layout-0-x-headerContainer) :global(.vtex-modal-layout-0-x-closeIcon) {
+    width: 20px;
+}
+
+.paper--modal-primeira-compra :global(.vtex-rich-text-0-x-heading) {
+    font-family: 'WorkSans-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 81% */
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .paper--modal-primeira-compra :global(.vtex-rich-text-0-x-heading) {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.paper--modal-primeira-compra :global(.vtex-rich-text-0-x-paragraph) {
+    font-family: 'WorkSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 86% */
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+@media (max-width: 767px) {
+    .paper--modal-primeira-compra :global(.vtex-rich-text-0-x-paragraph) {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+
+.paper--modal-primeira-compra :global(.vtex-store-link-0-x-link) {
+    display: block;
+    text-align: center;
+    margin-top: 3px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 12px;
+}

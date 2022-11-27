@@ -1,0 +1,54 @@
+{
+  "search-result-layout.mobile": {
+    "title": "Panda | Layout da Busca - Mobile",
+    "children": [
+      "experimental__visibility-layout#search-banner-top",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchtitle",
+      "experimental__visibility-layout#categories-banner-search",
+      "total-products.v2",
+      "flex-layout.row#retail-rocket-category",
+      "flex-layout.row#searchinfomobile",
+      
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+
+      "flex-layout.row#search-seo-title",
+      "rich-text#category"
+    ],
+    "props": {
+      "blockClass": "panda-search",
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid",
+      "hiddenFacets": {
+        "priceRange": false
+      }
+    }
+  },
+
+  // INFO
+  "flex-layout.row#searchinfomobile": {
+    "title": "Panda | Informações da busca - Mobile",
+    "children": ["order-by.v2", "flex-layout.col#filter"],
+    "props": {
+      "blockClass": "panda-search__order--mobile",
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "colJustify": "around"
+    }
+  },
+
+  // RESULT
+  "flex-layout.row#contentmobile": {
+    "title": "Panda | Conteúdo da busca - Mobile",
+    "children": ["search-content"],
+    "props": {
+      "blockClass": ["panda-search__products", "panda-search__products--mobile"],
+      "preserveLayoutOnMobile": true
+    }
+  }
+}

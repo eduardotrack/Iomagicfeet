@@ -1,109 +1,328 @@
 {
   "header": {
-    "blocks": ["header-layout.mobile"]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
-
   "header.full": {
-    "blocks": ["header-layout.mobile"]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
+ 
 
-  "header-layout.mobile": {
+  // HEADER DESKTOP START
+  "header-layout.desktop": {
+    "title": "Panda | Header - Desktop",
     "children": [
-      "flex-layout.row#1-mobile",
-      "flex-layout.row#2-mobile",
-      "sticky-layout#1-mobile"
-     // "flex-layout.row#4-mobile"
+      "retail-rocket-container#global",
+      "flex-layout.row#3-desktop",
+      "sticky-layout#4-desktop",
+      "experimental__visibility-layout#black-header-tag",
+      "experimental__visibility-layout#black-header-tag-v2",
+      "modal-trigger#primeira-compra"
     ]
   },
-
-  "sticky-layout#1-mobile": {
-    "children": [
-      "flex-layout.row#3-mobile"
-    ]
-  },
-
-  "flex-layout.row#1-mobile": {
-    "children": ["telemarketing"],
+  "flex-layout.row#3-desktop": {
+    "title": "Panda | Header - Topbar - Desktop",
     "props": {
-      "fullWidth": true
-    }
-  },
-
-  "flex-layout.row#2-mobile" : {
+      "blockClass": "header__tooltip",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true 
+    },
     "children": [
-      "notification.bar"
-    ],
-    "props": {
-      "fullWidth": "true"
-    }
-  },
-
-  "flex-layout.row#3-mobile":{
-    "children":[
-      "logo#mobile",
+      "rich-text#tooltip-01",
       "flex-layout.col#spacer",
-      "overlay-trigger",
-      "minicart.v2",
-      "drawer"
-    ],
-
+      "vtex.menu@2.x:menu#tooltip"
+    ]
+  },
+  "flex-layout.col#spacer": {
     "props": {
-      "blockClass": "main-header-mobile",
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "header__sticky"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "title": "Panda | Header - Conteúdo - Desktop",
+    "props": {
+      "blockClass": "header__main",
+      "horizontalAlign": "center",
+      "verticalAlign": "center"
+    },
+    "children": ["disposition-layout#row-4"]
+  },
+  "disposition-layout#row-4": {
+    "title": "Panda | Header - Disposição do conteúdo",
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.row#5-desktop",
+      "flex-layout.col#search-desktop",
+      "flex-layout.col#links-desktop"
+    ],
+    "props": {
+      "blockClass": "header__main--order",
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        }
+      ]
+    }
+  },
+  "flex-layout.col#search-desktop": {
+    "title": "Panda | Header - Busca",
+    "props": {
+      "verticalAlign": "middle",
+      "width": "40%"
+    },
+    "children": ["search-bar"]
+  },
+  "flex-layout.col#logo-desktop": {
+    "title": "Panda | Header - Logo",
+    "props": {
+      "verticalAlign": "middle",
+      "width": "20%"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#links-desktop": {
+    "title": "Panda | Header - Links",
+    "children": ["flex-layout.row#links-desktop"],
+    "props": {
+      "verticalAlign": "middle",
+      "width": "30%"
+    }
+  },
+  "flex-layout.row#links-desktop": {
+    "title": "Panda | Header - Links - Desktop",
+    "props":{ 
+      "blockClass": "header-itens__menu"
+    },
+    "children": [
+      "login#header",
+      "menu#wishlist",
+      "minicart.v2#main-header"
+    ]
+  },
+  // WISH LIST
+  "menu#wishlist": {
+    "children": ["menu-item#wishlist"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "Panda-product__wishlist"
+    },
+    "title": "Panda | Header - Link - Wishlist"
+  },
+  "menu-item#wishlist": {
+    "props": {
+      "id": "menu-item-icone",
+      "blockClass": "Panda-product__wishlist--item",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "href": "/account/#/wishlist",
+        "noFollow": false,
+        "tagTitle": "Favoritos",
+        "text": ""
+      },
+      "iconProps": {
+        "id": "hpa-heart-full",
+        "size": 18,
+        "viewBox": "0 0 24 24",
+        "mutedClassName": "c-action-primary"
+      }
+    }
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "O que você procura hoje?",
+      "openAutocompleteOnFocus": true,
+      "blockClass": "header__search"
+    },
+    "blocks": ["autocomplete-result-list.v2"]
+  },
+  "autocomplete-result-list.v2": {
+    "props": {
+      "horizontalProductSummary": "product-summary.shelf#search",
+      "productLayout": "HORIZONTAL",
+      "simulationBehavior": "default"
+    },
+    "blocks": ["product-summary.shelf#search"]
+  },
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo da Panda Store",
+      "href": "/",
+      "url": "assets/img/header-logo.png",
+      "width": "200",
+      "blockClass": "header__logo"
+    }
+  },
+  "login#header": {
+    "title": "Panda | Header - Link - Login",
+    "props": {
+      "showIconProfile": false,
+      "blockClass": "header__login"
+    }
+  },
+  "flex-layout.row#5-desktop": {
+    "title": "Panda | Header - Menu Principal - Desktop",
+    "props": {
+      "blockClass": "header__menu",
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["vtex.menu@2.x:menu#main-menu"]
+  },
+  // HEADER DESKTOP END
+
+  // HEADER MOBILE START
+  "header-layout.mobile": {
+    "title": "Panda | Header - Mobile",
+    "children": [
+      "retail-rocket-container#global",
+      "flex-layout.row#0-mobile", 
+      "sticky-layout#1-mobile",
+      "experimental__visibility-layout#black-header-tag",
+      "experimental__visibility-layout#black-header-tag-v2",
+      "modal-trigger#primeira-compra"
+    ]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#0-mobile": {
+    "title": "Panda | Header - Topbar - Mobile",
+    "props": {
+      "blockClass": "header__tooltip",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["rich-text#tooltip-01"]
+  },
+  "flex-layout.row#1-mobile": {
+    "title": "Panda | Header - Conteúdo - Mobile",
+    "children": [
+      
+      "logo#mobile",
+      "flex-layout.row#mob-list"
+    ],
+    "props": {
+      "blockClass": "header__main",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
   },
-
-  "overlay-trigger": {
-    "children":[
-      "rich-text#lupaBusca",
-      "overlay-layout"  
-    ]
-  },
-
-  "overlay-layout": {
+  "flex-layout.row#mob-list": {
     "props": {
-      "placement": "bottom",
-      "offsets":{ "skidding": -100, "distance": -20 }
+      "blockClass": "header__main--mob"
     },
-    "children": [
-      "flex-layout.row#4-mobile"
-    ]
+    "children": ["drawer#search-mobile", "minicart.v2#main-header", "drawer#header-mobile"]
   },
 
-  "flex-layout.row#4-mobile":{
-    "children":[
-      "search-bar"
-    ],
+  "drawer#search-mobile": {
+    "title": "Panda | Header - Busca - Mobile",
     "props": {
-      "fullWidth": true,
-      "blockClass": "searchBar"
-    }
-  },
-
-  "rich-text#lupaBusca": {
-    "props": {
-      "text": "lupinha",
-      "blockClass": "question",
-      "backdrop": "visible"
-    }
+      "isFullWidth": true,
+      "slideDirection": "horizontal",
+      "blockClass": "header__drawer--search"
+    },
+    "children": ["search-bar"]
   },
 
   "logo#mobile": {
+    "title": "Panda | Header Logo - Mobile",
     "props": {
-      "title": "Logo",
       "href": "/",
-      "url": "assets/logo.svg",
-      "height": "30",
-      "blockClass": "logoMagic"
+      "url": "assets/img/header-logo.png",
+      "width": "150",
+      "blockClass": "header__logo"
     }
   },
 
-  "flex-layout.col#spacer": {
+  "drawer#header-mobile": {
+    "title": "Panda | Header - Menu Principal - Mobile",
     "props": {
-      "width": "grow"
+      "isFullWidth": true,
+      "backdropMode": "none",
+      "slideDirection": "horizontal",
+      "blockClass":"footer__nivel1--mob"
+    },
+    "blocks": ["drawer-header#header-mobile"],
+    "children": ["menu#drawer-nv1-mobile", "flex-layout.row#dep1-1-mobile-nivel-1-footer"]
+  },
+
+  "drawer-header#header-mobile": {
+    "children": ["pd-welcomeControl", "vtex.menu@2.x:menu#account-mobile", "drawer-close-button"],
+    "props": {
+      "blockClass": "Panda-drawer__menu--mobile"
+    }
+  },
+
+  "rich-text#header-mobile": {
+    "title": "Panda | Header - Boas vindas - Mobile",
+    "props": {
+      "text": "Olá, **visitante**",
+      "blockClass": "Panda-drawer__menu--mobile"
+    }
+  },
+
+  "vtex.menu@2.x:menu#account-mobile": {
+    "title": "Panda | Header - Minha Conta - Mobile",
+    "props": {
+      "blockClass": ["account-drawer__menu--mobile", "account-drawer__menu--mobile"],
+      "orientation": "vertical",
+      "items": [
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/login",
+            "tagTitle": "ENTRAR",
+            "text": "ENTRAR"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/account#/orders",
+            "tagTitle": "MEUS PEDIDOS",
+            "text": "MEUS PEDIDOS"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu#drawer-nv1-mobile": {
+    "title": "Panda | Header - Menu Principal - Mobile",
+    "children": ["vtex.menu@2.x:menu#menu-mobile"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "header_menu--mob"
     }
   }
-
+  // HEADER MOBILE END
 }

@@ -1,0 +1,36 @@
+{
+  "menu-item#dep4": {
+    "props": {
+      "blockClass": ["header__menu", "main-menu-department"],
+      "id": "menu-item-dep4",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "marcas",
+        "type": "internal",
+        "href": "#"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dep4"]
+  },
+  "vtex.menu@2.x:submenu#dep4": {
+    "title": "marcas",
+    "props": {
+      "blockClass": ["main-menu-department-submenu"],
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-dep4"]
+  },
+  "flex-layout.row#menu-dep4": {
+    "props": {
+      "blockClass": ["main-menu-department-block"],
+      "colSizing": "auto",
+      "fullWidth": true,
+      "colGap": 4,
+      "experimentalHideEmptyCols": true
+    },
+    "children": [
+      "experimental__visibility-layout#brands-dep4-col1"
+    ]
+  }
+}

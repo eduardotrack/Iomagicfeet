@@ -1,0 +1,15 @@
+{
+  "menu-item#dep10-bf": {
+    "props": {
+      "blockClass": [ "main-menu-department-bf-mobile"],
+      "id": "menu-item-dep10",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "Black Friday",
+        "type": "internal",
+        "href": "/black-friday"
+      }
+    }
+  }
+}

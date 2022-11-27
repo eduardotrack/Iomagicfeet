@@ -1,0 +1,83 @@
+{
+  "flex-layout.row#social-networks-wrapper": {
+    "title": "Panda | Redes Sociais",
+    "children": ["flex-layout.col#social-networks"],
+    "props": {
+      "blockClass": ["social-networks"]
+    }
+  },
+  "flex-layout.col#social-networks": {
+    "title": "Panda | Redes Sociais",
+    "children": ["flex-layout.row#social-networks"],
+    "props": {
+      "blockClass": "social-networks-wrapper",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "flex-layout.row#social-networks": {
+    "children": ["list-context.image-list#social-networks"],
+    "props": {
+      "blockClass": "social-networks-badges",
+      "colGap": 0,
+      "colSizing": "equal",
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    }
+  },
+  "list-context.image-list#social-networks": {
+    "title": "Panda | Lista Redes Sociais",
+    "children": ["list-context-renderer#social-networks"],
+    "props": {
+      "blockClass": ["social-networks-badges"],
+      "preload": true,
+      "height": 20,
+      "images": [
+        {
+          "image": "assets/svg/facebook-brands.svg",
+          "mobileImage": "assets/svg/facebook-brands.svg",
+          "description": "Facebook",
+          "link": {
+            "url": "https://pt-br.facebook.com/",
+            "openNewTab": true,
+            "title": "Facebook"
+          }
+        },
+        {
+          "image": "assets/svg/instagram-brands.svg",
+          "mobileImage": "assets/svg/instagram-brands.svg",
+          "description": "Instagram",
+          "link": {
+            "url": "https://www.instagram.com/",
+            "openNewTab": true,
+            "title": "Instagram"
+          }
+        },
+        {
+          "image": "assets/svg/spotify-brands.svg",
+          "mobileImage": "assets/svg/spotify-brands.svg",
+          "description": "Spotify",
+          "link": {
+            "url": "https://www.spotify.com/",
+            "openNewTab": true,
+            "title": "Spotify"
+          }
+        }
+      ]
+    }
+  },
+  "list-context-renderer#social-networks": {
+    "props": {
+      "listElement": "ul",
+      "itemElement": "li",
+      "blockClass": "social-networks-renderer"
+    }
+  }
+}

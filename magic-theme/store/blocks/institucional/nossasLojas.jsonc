@@ -1,0 +1,38 @@
+{
+    "store.custom#nossas-lojas": {
+      "blocks": [
+        "flex-layout.row#nossas-lojas-title",
+        "flex-layout.row#nossas-lojas"
+      ]
+    },
+
+
+    "flex-layout.row#nossas-lojas-title": {
+      "props": {
+        "blockClass": "panda-tipo-entrega" 
+      },
+      "children": [
+        "rich-text#nossas-lojas-title"
+      ]
+    },
+
+    "rich-text#nossas-lojas-title": {
+      "props": {
+        "blockClass": "panda-tipo-entrega__title",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "# NOSSAS **LOJAS** \n Ei, deixa a gente te ajudar, selecione o estado desejado e iremos separar as lojas mais próximas!"
+      },
+      "title": "Título - Nossas Lojas"
+    },
+
+    "flex-layout.row#nossas-lojas": {
+      "props": {
+        "blockClass": "panda-nossas-lojas" 
+      },
+      "children": [
+        "pd-nossasLojas"
+      ]
+    }
+  }
+  

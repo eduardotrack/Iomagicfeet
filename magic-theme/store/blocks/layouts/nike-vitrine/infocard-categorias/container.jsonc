@@ -1,0 +1,41 @@
+{
+    "flex-layout.row#procura-nike": {
+        "title": "Panda | o que você procura?",
+        "children": ["flex-layout.col#procura-nike"],
+        "props":{
+          "blockClass":"procura-nike-row"
+        } 
+      },
+    
+      "flex-layout.col#procura-nike": {
+        "children": ["rich-text#procura-nike", "slider-layout#procura-nike"] 
+      },
+    
+      "rich-text#procura-nike": {
+        "title": "Panda | o que você procura? - Título",
+        "props": {
+          "text": "## o que **você** procura?",
+          "blockClass": "Panda__title"
+        }
+      },
+
+      "slider-layout#procura-nike": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 4,
+            "phone": 2
+          },
+          "infinite": false,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "never",
+          "blockClass": "carousel-procura",
+          "centerMode": {
+            "desktop": "disabled",
+            "mobile": "to-the-left"
+          },
+          "centerModeSlidesGap": "0"
+        },
+        "children": ["link#procura-item-01", "link#procura-item-02", "link#procura-item-03","link#procura-item-04","link#procura-item-05","link#procura-item-06", "link#procura-item-07", "link#procura-item-08"]
+      }
+}

@@ -1,0 +1,40 @@
+{
+    "flex-layout.row#slider-loja-sejafranqueado": {
+        "title": "Panda | Imagens da Loja",
+        "children": ["list-context.image-list#slider-loja-sejafranqueado"],
+        "props":{
+          "blockClass":"slider-loja-sejafranqueado" 
+        } 
+      },
+
+      "list-context.image-list#slider-loja-sejafranqueado": {
+        "title": "Panda | Imagens da Loja",
+        "children": ["slider-layout#slider-loja-sejafranqueado"],
+        "props": {
+          "images": [
+            {
+              "image": "assets/img/loja-franqueado-demo.png",
+              "mobileImage": "assets/img/loja-franqueado-demo.png"
+            },
+            {
+              "image": "assets/img/loja-franqueado-demo.png",
+              "mobileImage": "assets/img/loja-franqueado-demo.png"
+            }
+          ]
+        }
+      },
+
+      "slider-layout#slider-loja-sejafranqueado": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": false,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "always",
+          "blockClass": "carousel-exclusivos"
+        }
+      }
+}

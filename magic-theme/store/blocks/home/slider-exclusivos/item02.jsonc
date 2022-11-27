@@ -1,0 +1,18 @@
+{
+    "info-card#item-exlusivo-2": {
+      "title": "Panda | Slide 02",
+        "props": {
+          "isFullModeStyle": true,
+          "textPosition": "right",
+          "textMode": "rich-text",
+          "callToActionMode": "link",
+          "imageUrl": "assets/img/box-destaque-demo.png",
+          "headline": "## **Vans** Sk8-Hi Zip \n ## PS Infantil",
+          "subhead":"Para homenagear à família favorita da América, os Simpsons, a Vans oferece um calçado ideal para os dias de passeio e brincadeiras da criançada. \n ###### benefícios \n * Zíper no calcanhar para facilitar o calce \n * Maior durabilidade  \n *  Ótima aderência",
+          "callToActionText": "conheça agora",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-exlusivo",
+          "textAlignment": "left"
+        }
+    }
+}

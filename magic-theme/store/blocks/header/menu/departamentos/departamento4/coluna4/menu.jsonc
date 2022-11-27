@@ -1,0 +1,97 @@
+{
+  "experimental__visibility-layout#menu-dep4-col4": {
+    "title": "Menu (On/Off)",
+    "props": {
+      "visible": false
+    },
+    "children": ["flex-layout.col#menu-dep4-col4"]
+  },
+  "flex-layout.col#menu-dep4-col4": {
+    "props": {
+      "blockClass": [
+        "main-menu-menu",
+        "main-menu-column",
+        "main-menu-column-fourth"
+      ]
+    },
+    "children": ["vtex.menu@2.x:menu#menu-dep4-col4"]
+  },
+  "vtex.menu@2.x:menu#menu-dep4-col4": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "main-menu-menu",
+        "main-menu-column",
+        "main-menu-column-fourth"
+      ],
+      "title": {
+        "itemProps": {
+          "text": ""
+        },
+        "type": "custom"
+      },
+      "items": [
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Subcategoria"
+          }
+        }
+      ]
+    }
+  }
+}

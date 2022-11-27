@@ -1,0 +1,57 @@
+{
+    "link#quem-maior-mobile": {
+        "title": "Panda | Link Card Grande",
+        "props": {
+          "href": "/",
+          "blockClass": "infocard-quem-wrapper"
+        },
+        "children": [
+            "image#quem-maior-mobile",
+            "rich-text#quem-maior-mobile"
+        ]
+      },
+
+      "image#quem-maior-mobile": {
+        "title": "Panda | Imagem Card Grande",
+        "props": {
+          "src": "assets/img/quem-home-1-demo.png",
+          "blockClass": "infocard-quem-wrapper"
+        }
+      },
+
+      "rich-text#quem-maior-mobile": {
+        "title": "Panda | Texto Card Grande",
+        "props": {
+          "text": "para **meninos**",
+          "blockClass": "infocard-quem-wrapper"
+        }
+      },
+
+      "link#quem-menor-mobile": {
+        "title": "Panda | Link Card Pequeno",
+        "props": {
+          "href": "/",
+          "blockClass": "infocard-quem-wrapper"
+        },
+        "children": [
+            "image#quem-menor",
+            "rich-text#quem-menor"
+        ]
+      },
+
+      "image#quem-menor-mobile": {
+        "title": "Panda | Imagem Card Pequeno",
+        "props": {
+          "src": "assets/img/quem-home-2.png",
+          "blockClass": "infocard-quem-wrapper"
+        }
+      },
+
+      "rich-text#quem-menor-mobile": {
+        "title": "Panda | Texto Card Pequeno",
+        "props": {
+          "text": "para **meninas**",
+          "blockClass": "infocard-quem-wrapper"
+        }
+      }
+}

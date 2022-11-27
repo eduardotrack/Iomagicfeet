@@ -1,0 +1,16 @@
+query suggestion($term: [String], $category: String) {
+  products(category: $category, specificationFilters: $term, hideUnavailableItems:true, to: 2, orderBy: "OrderByTopSaleDESC") {
+    productName
+    linkText,
+    items {
+      itemId
+      name
+      images {
+        imageUrl
+        imageText
+        imageLabel
+      }
+    }
+  }
+}
+ 

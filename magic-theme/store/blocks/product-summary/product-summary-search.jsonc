@@ -1,0 +1,246 @@
+{
+  "product-summary.shelf#product-search": {
+    "title": "Panda | Sumário do produto",
+    "children": [
+      "add-to-list-btn",
+      "stack-layout#prodsum-search",
+      "flex-layout.row#highlights-wrapper-search",
+      "vtex.store-components:product-brand#brand-search",
+      "product-summary-name#name-search",
+      "flex-layout.row#summary-shelf-price-savings-search" ,
+      "product-price-savings#search-discount"
+    ],
+    "props": {
+      "blockClass": ["product__summary-search", "product__summary--shelf-search"],
+      "priceBehavior": "default",
+      "trackListName": true
+    }
+  },
+
+  "vtex.store-components:product-brand#brand-search":{
+    "props": {
+      "blockClass": "product-brand-tag-search",
+      "displayMode": "text"
+    }
+  },
+
+  "product-price-savings#search-discount":{
+    "props": {
+      "blockClass": "product-discount-tag-search",
+      "percentageStyle": "compact",
+      "message": "{savingsPercentage} OFF"
+      
+    }
+  },
+
+  "product-summary-name#name-search":{
+    "props": {
+      "blockClass": "product__summary-name-search" 
+    }
+  },
+
+  "stack-layout#prodsum-search": {
+    "children": [ 
+      "product-summary-image#shelf-search"
+    ],
+    "props": {
+      "blockClass": ["shelf__price-search", "prodsum-search-stack-shelf-search"]
+    }
+  },
+ 
+  "product-summary-image#shelf-search": {
+    "props": {
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 300,
+      "mainImageLabel": "",
+      "blockClass": "shelf__image-search-search"
+    }
+  },
+  "flex-layout.row#highlights-wrapper-search": {
+    "children": ["flex-layout.col#hightlights-search"],
+    "props": {
+      "blockClass": ["highlights-stack-wrapper-search-search"],
+      "colJustify": "around",
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#hightlights-search": {
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#promotion-search",
+      "vtex.product-highlights@2.x:product-highlights#collection-search",
+      "vtex.product-highlights@2.x:product-highlights#teaser-search"
+    ],
+    "props": {
+      "blockClass": ["highlights-stack-search"],
+      "horizontalAlign": "center",
+      "width": "100%"
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights#promotion-search": {
+    "props": {
+      "type": "promotion"
+    },
+    "children": ["product-highlight-wrapper#promotion-search"]
+  },
+  "product-highlight-wrapper#promotion-search": {
+    "props": {
+      "blockClass": "promotion-search"
+    },
+    "children": ["product-highlight-text#promotion-search"]
+  },
+  "product-highlight-text#promotion-search": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": ["promotion-highlight-tag-search"]
+    }
+  },
+  "vtex.product-highlights@2.x:product-highlights#collection-search": {
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-wrapper#collection-search"]
+  },
+  "product-highlight-wrapper#collection-search": {
+    "props": {
+      "blockClass": "collection-search"
+    },
+    "children": ["product-highlight-text#collection-search"]
+  },
+  "product-highlight-text#collection-search": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": ["collection-highlight-tag-search"]
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#teaser-search": {
+    "props": {
+      "type": "teaser"
+    },
+    "children": ["product-highlight-wrapper#teaser"]
+  },
+  "product-highlight-wrapper#teaser-search": {
+    "props": {
+      "blockClass": "teaser-search"
+    },
+    "children": ["product-highlight-text#teaser"]
+  },
+  "product-highlight-text#teaser-search": {
+    "props": {
+      "message": "{highlightName}",
+      "blockClass": ["teaser-highlight-tag-search"]
+    }
+  },
+  "flex-layout.row#summary-shelf-price-savings-search": {
+    "children": ["flex-layout.col#price-summary-search"],
+    "props": { "blockClass": "shelf-summary-price-wrapper-search", "fullWidth": true }
+  },
+  "flex-layout.col#price-summary-search": {
+    "children": ["flex-layout.row#selling-price-savings-search"],
+    "props": { "blockClass": "shelf-summary-price-search" }
+  },
+
+  "product-price-savings#summaryPercentage-shelf-search": {
+    "props": {
+      "message": "{savingsPercentage}",
+      "blockClass": ["summary-percentage-shelf-search"],
+      "percentageStyle": "compact"
+    }
+  },
+  "flex-layout.row#installments-summary-search": {
+    "children": ["product-installments#summary"]
+  },
+
+  "flex-layout.row#selling-price-savings-search": {
+    "props": {
+      "fullWidth":true,
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": ["shelf__price-search", "shelf__price-and-savings-search"]
+    },
+    "children": [
+      "condition-layout.product#availability-summary-pre-search"
+    ]
+  },
+ 
+  "condition-layout.product#availability-summary-pre-search": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#list-price-search",
+      "Else": "flex-layout.row#actions-shelf-indisponivel-search"
+    }
+  },
+
+  "flex-layout.row#actions-shelf-indisponivel-search": {
+    "children": ["rich-text#unavaible-search"],
+    "props": {
+      "fullWidth": true,
+      //"preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "experimentalHideEmptyCols": true,
+      "blockClass": ["shelf__actions-indisponivel"]
+    }
+  },
+
+  "rich-text#unavaible-search": {
+    "title": "Panda | Produto indisponível - Mensagem",
+    "props": {
+      "text": "**Indisponível**",
+      "blockClass": "product__unavaible"
+    }
+  },
+
+  "flex-layout.row#list-price-search": {
+    "props": {
+      "blockClass": "shelf__price-search",
+      "preventHorizontalStretch": true
+    },
+    "children": ["product-list-price", "product-selling-price#summary-search", "flex-layout.row#installments-summary-search"]
+  },
+ 
+  "flex-layout.col#price-savings-search": {
+    "props": {
+      "blockClass": "shelf__price-search"
+    },
+    "children": ["product-price-savings#summary-search"]
+  },
+  "product-list-price#summary-search": {
+    "props": {
+      "blockClass": "summary-search",
+      "message": "{listPriceValue}"
+    }
+  },
+  "product-installments#summary-search": {
+    "props": {
+      "message": "{installmentsNumber}x {installmentValue}",
+      "blockClass": ["summary-search", "Panda-summary-price-search"]
+    }
+  },
+
+  "product-selling-price#summary-search": {
+    "props": {
+      "blockClass": "summary-search",
+      "message": "{sellingPriceValue}"
+    }
+  },
+  "product-price-savings#summary-search": {
+    "props": {
+      "markers": ["discount"],
+      "blockClass": "summary-search",
+      "percentageStyle": "compact"
+    }
+  },
+  "flex-layout.col#productRating-search": {
+    "props": {
+      "blockClass": "productRating-search"
+    },
+    "children": ["product-rating-inline"]
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "flex-layout.row#exclusivo-nike": {
+        "title": "Panda | Slide Exlusivos",
+        "children": ["flex-layout.col#exclusivo-nike"],
+        "props":{
+            "blockClass":"exclusivo-nike-row",
+            "fullWidth": true 
+        } 
+      },
+    
+      "flex-layout.col#exclusivo-nike": {
+        "children": ["slider-layout#exclusivo-nike"] 
+      },
+
+      "slider-layout#exclusivo-nike": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": false,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "always",
+          "blockClass": "carousel-exclusivos"
+        },
+        "children": ["info-card#item-exlusivo-1", "info-card#item-exlusivo-2", "info-card#item-exlusivo-3"]
+      }
+}

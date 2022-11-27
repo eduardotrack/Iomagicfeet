@@ -1,0 +1,21 @@
+{
+  "vtex.menu@2.x:menu#main-menu": {
+    "title": "Menu Header - Desktop",
+    "props": {
+      "blockClass": ["main-menu-wrapper", "header__menu"],
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      //"menu-item#all-categories",
+      "menu-item#dep1",
+      "menu-item#dep2",
+      "menu-item#dep7",
+      "menu-item#dep3",
+      "menu-item#dep8",
+      "menu-item#dep4",
+      "menu-item#dep5",
+      "menu-item#dep6"
+      
+    ]
+  }
+}

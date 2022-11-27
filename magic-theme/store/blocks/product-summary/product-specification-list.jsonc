@@ -1,13 +1,10 @@
 {
   "product-specification-group#summary": {
-    "children": [
-      "product-specification#summary"
-    ]
+    "title": "Panda | Sumário de produto - Tabela de especificações",
+    "children": ["product-specification#summary"]
   },
   "product-specification#summary": {
-    "children": [
-      "flex-layout.row#summarySpecificationValues"
-    ]
+    "children": ["flex-layout.row#summarySpecificationValues"]
   },
   "flex-layout.row#summarySpecificationValues": {
     "props": {

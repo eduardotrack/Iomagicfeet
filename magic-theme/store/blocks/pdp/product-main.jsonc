@@ -1,0 +1,209 @@
+{
+  "flex-layout.row#product-main": {
+    "title": "Panda | Produto",
+    "props": {
+      "blockClass": "product"
+    },
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+  },
+
+  // LEFT
+  "flex-layout.col#stack": {
+    "title": "Panda | Produto - Esquerda",
+    "children": ["stack-layout"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "stack-layout": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": ["flex-layout.row#product-image", "product-bookmark"]
+  },
+
+  // RIGHT
+  "flex-layout.col#right-col": {
+    "title": "Panda | Produto - Direita",
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "product__main"
+    },
+    "children": ["disposition-layout#product-main"]
+  },
+  "disposition-layout#product-main": {
+    "children": [
+      "flex-layout.row#wishlist",
+      "vtex.store-components:product-name",
+      "product-identifier.product",
+      "flex-layout.row#list-price-savings",
+      "flex-layout.row#highlights-wrapper",
+      "product-rating-summary",     
+      "pd-skuSimilar",
+      "sku-selector#pdp-core",
+      "flex-layout.row#product-qqt",
+      "product-availability",
+
+      "product-separator",
+      "shipping-simulator",
+     
+      "flex-layout.row#description",
+ 
+      "product-reviews",
+      "product-questions-and-answers",
+      "share#default"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        },
+        {
+          "order": 11
+        },
+        {
+          "order": 12
+        },
+        {
+          "order": 13
+        },
+        {
+          "order": 14
+        },
+        {
+          "order": 15
+        },
+        {
+          "order": 16
+        },
+        {
+          "order": 17
+        },
+        {
+          "order": 18
+        },
+        {
+          "order": 19
+        }
+      ]
+    }
+  },
+
+  "product-availability": {
+    "props": {
+      "threshold": "10",
+      "lowStockMessage": "{quantity}  últimos pares!",
+      "highStockMessage": "",
+      "blockClass":"pd_disponibilidade_estoque"
+    }
+  },
+
+  "shipping-simulator":{
+    "props": {
+      "pricingMode": "grouped"
+    }
+  },
+
+  // WISH "LIST"
+  "flex-layout.row#wishlist": {
+    "title": "Panda | Produto - Wishlist",
+    "props": {
+      "blockClass": "mz-product__wishlist"
+    },
+    "children": ["vtex.store-components:product-brand", "add-to-list-btn"]
+  },
+
+  "flex-layout.row#highlights": {
+    "title": "Panda | Produto - Destaques",
+    "props": {
+      "blockClass": "product__highlight",
+      "colSizing": "auto",
+
+      "colGap": 2,
+      "horizontalAlign": "left"
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#collection",
+      "vtex.product-highlights@2.x:product-highlights#promotion",
+      "vtex.product-highlights@2.x:product-highlights#teaser"
+    ]
+  },
+  "rich-text#description-see-more": {
+    "title": "Panda | Descrição Curta (Ver Mais)",
+    "props": {
+      "blockClass": "shortDescription",
+      "text": "[Ver mais](#descricao)"
+    }
+  },
+
+  "sku-selector#pdp-core": {
+    "title": "Panda | Produto - Seleção de SKU",
+    "props": {
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true,
+      "sortVariationsByLabel": false
+      // "displayMode": "select",
+ 
+    }
+  },
+  "flex-layout.row#product-qqt": {
+    "title": "Panda | Produto - Quantidade e Botão de compra",
+    "props": {
+      "blockClass": "product__main--btn"
+    },
+    "children": ["add-to-cart-button#product"]
+  },
+
+  "add-to-cart-button#product": {
+    "props": {
+      "text": "ADICIONAR AO CARRINHO",
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button"
+    }
+  },
+
+  "share#default": {
+    "title": "Panda | Produto - Compartilhar",
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": true,
+        "Pinterest": true
+      }
+    }
+  },
+
+  "flex-layout.row#buy-button": {
+    "children": ["add-to-cart-button#product"]
+  }
+}

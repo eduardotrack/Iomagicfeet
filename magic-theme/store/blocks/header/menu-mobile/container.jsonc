@@ -1,0 +1,21 @@
+{
+  "vtex.menu@2.x:menu#menu-mobile": {
+    "title": "Panda | Menu Departamentos - Nivel 01",
+    "props": {
+      "blockClass": ["menu-mobile-wrapper"],
+      "orientation": "vertical",
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "drawer#dep1-mobile",
+      "drawer#dep2-mobile",
+      "drawer#dep8-mobile",
+      "drawer#dep3-mobile",
+      "drawer#dep7-mobile",
+      "drawer#dep4-mobile",
+      "drawer#dep5-mobile",
+      "drawer#dep6-mobile",
+      "menu-item#dep10-bf"
+    ]
+  }
+}

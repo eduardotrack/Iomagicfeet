@@ -1,0 +1,244 @@
+{
+    //controle de visibilidade do carrossel
+    "experimental__visibility-layout#categories-banner-search": {
+      "title": "Controle de visibilidade - Banners - Busca",
+      "children": ["flex-layout.row#categories-banner-search"],
+      "props": {
+        "visible": false,
+        "blockClass": "panda-search__carousel"
+      }
+    },
+
+  "flex-layout.row#categories-banner-search": {
+    "title": "Panda | Banners de Categorias da Busca",
+    "children": ["flex-layout.col#categories-banner-search"],
+    "props": {
+      "blockClass": [
+        "search__categories-banner",
+        "home__categories-banner",
+        "home__slider"
+      ]
+    }
+  },
+  "flex-layout.col#categories-banner-search": {
+    "children": [
+      "rich-text#categories-banner-search",
+      "flex-layout.row#categories-banner-search-inner"
+    ],
+    "props": {
+      "blockClass": [
+        "search__categories-banner-col",
+        "home__categories-banner--col"
+      ]
+    }
+  },
+  "rich-text#categories-banner-search": {
+    "props": {
+      "text": "Conheça nossa variedade de produtos, com a melhor qualidade, para qualquer fase da vida feitos especialmente para você.",
+      "blockClass": "search__categories-banner"
+    }
+  },
+  "flex-layout.row#categories-banner-search-inner": {
+    "children": [ "list-context.image-list#categories-banners-search"],
+    "props": {
+      "blockClass": [
+        "search__categories-banner-row",
+        "home__categories-banner--row"
+      ]
+    }
+  },
+  "list-context.image-list#categories-banners-search": {
+    "title": "Lista de cards - Carrossel - Categoria/Modelo",
+    "children": ["slider-layout#categories-banners-search"],
+    "props": {
+      "blockClass": ["search__categories-banner", "home__categories-banner"],
+      "height": 191,
+      "images": [
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        }, {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        },
+         
+        {
+          "image": "assets/img/brand-demo.png",
+          "mobileImage": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/teste",
+            "openNewTab": true,
+            "title": "Teste"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#categories-banners-search": {
+    "title": "Panda | Carrossel de Categorias/Modelos",
+    "props": {
+      "blockClass": ["home__categories-banner", "search-category-carousel"],
+      "itemsPerPage": {
+        "desktop": 8,
+        "tablet": 4,
+        "phone": 3
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "fullWidth": true,
+      "label": "category-slider",
+      "usePagination": true
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+        "flex-layout.row#mvv-container": {
+            "title": "Panda | Missão, Visão, Valores",
+            "children": ["flex-layout.col#missao-container", "flex-layout.col#visao_container", "flex-layout.col#valores-container"],
+            "props":{
+            "blockClass":"mvv-container-row" 
+            } 
+        },
+
+        "flex-layout.col#missao-container": {
+            "title": "Panda | Texto Missão",
+            "children": ["rich-text#missao-title-quemsomos",  "rich-text#missao-text-quemsomos"],
+            "props":{
+            "blockClass":"mvv-container-text",
+            "width": "100%"
+            } 
+        },
+
+        "flex-layout.col#visao_container": {
+            "title": "Panda | Texto Visão",
+            "children": ["rich-text#visao-text-quemsomos", "rich-text#visao-title-quemsomos"],
+            "props":{
+            "blockClass":["mvv-container-text", "mvv-container-text-center"],
+            "width": "100%"
+            } 
+        },
+
+        "flex-layout.col#valores-container": {
+            "title": "Panda | Texto Valores",
+            "children": ["rich-text#valores-title-quemsomos",  "rich-text#valores-text-quemsomos"],
+            "props":{
+            "blockClass":"mvv-container-text",
+            "width": "100%"
+            } 
+        },
+
+        //  MISSÃO
+        "rich-text#missao-title-quemsomos": {
+            "title": "Panda | Titulo Missão",
+            "props": {
+            "text": "missão",
+            "blockClass":"title-mvv-text"
+            }
+        },
+
+        "rich-text#missao-text-quemsomos": {
+            "title": "Panda | Texto Missão",
+            "props": {
+            "text": "Calçar nossos clientes, com **qualidade e design**, superando expectativas, proporcionando **maior estilo e qualidade de vida através de seu calçado.**",
+            "blockClass":["body-mvv-text", "body-mvv-text-center"]
+            }
+        },
+        //  FIM MISSÃO
+
+        //  VISÃO
+        "rich-text#visao-title-quemsomos": {
+            "title": "Panda | Titulo Visão",
+            "props": {
+                "text": "visão",
+                "blockClass":"title-mvv-text"
+            }
+        },
+        
+        "rich-text#visao-text-quemsomos": {
+            "title": "Panda | Texto Visão",
+            "props": {
+            "text": "Calçar nossos clientes, com **qualidade e design**, superando expectativas, proporcionando **maior estilo e qualidade de vida através de seu calçado.**",
+            "blockClass":"body-mvv-text"
+            }
+        },
+        //  FIM VISÃO
+
+        //  VALORES
+        "rich-text#valores-title-quemsomos": {
+            "title": "Panda | Titulo Valores",
+            "props": {
+            "text": "valores",
+            "blockClass":"title-mvv-text"
+            }
+        },
+
+        "rich-text#valores-text-quemsomos": {
+            "title": "Panda | Texto Valores",
+            "props": {
+            "text": "Calçar nossos clientes, com **qualidade e design**, superando expectativas, proporcionando **maior estilo e qualidade de vida através de seu calçado.**",
+            "blockClass":["body-mvv-text", "body-mvv-text-center"]
+            }
+        }
+        //  FIM VALORES
+        
+}

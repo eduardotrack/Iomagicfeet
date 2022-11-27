@@ -1,0 +1,88 @@
+{
+  "experimental__visibility-layout#menu-dep3-col1": {
+    "title": "Menu (On/Off)",
+    "props": {
+      "visible": true
+    },
+    "children": ["flex-layout.col#menu-dep3-col1"]
+  },
+  "flex-layout.col#menu-dep3-col1": {
+    "props": {
+      "blockClass": [
+        "main-menu-menu-principal",
+        "main-menu-principal-column",
+        "main-menu-principal-column-first"
+      ]
+    },
+    "children": ["vtex.menu@2.x:menu#menu-dep3-col1"]
+  },
+  "vtex.menu@2.x:menu#menu-dep3-col1": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "main-menu-menu-principal",
+        "main-menu-principal-column",
+        "main-menu-principal-column-first"
+      ],
+      "title": {
+        "itemProps": {
+          "text": "novidades em"
+        },
+        "type": "custom"
+      },
+      "items": [
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "roupas e acessórios"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "tênis e calçados"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "coleções especiais"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "exclusivos magicfeet"
+          }
+        },
+        {
+          "type": "custom",
+          "iconId": null,
+          "highlight": true,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "ver todas as novidades"
+          }
+        }
+      ]
+    }
+  }
+}

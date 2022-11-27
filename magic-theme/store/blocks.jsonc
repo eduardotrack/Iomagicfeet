@@ -36,11 +36,27 @@
   },
 
   "store.not-found#product": {
-    "blocks": ["rich-text#not-found"]
+    "blocks": ["rich-text#not-found", "flex-layout.row#retail-rocket-category-not-found"]
   },
 
   "store.not-found#search": {
-    "blocks": ["rich-text#not-found"]
+    "blocks": ["rich-text#not-found", "flex-layout.row#retail-rocket-category-not-found"]
+  },
+
+  "flex-layout.row#retail-rocket-category-not-found": {
+    "props": {
+      "blockClass": "retail-rocket"
+    },
+    "children": [
+      "retail-rocket-container#category-not-found"
+    ]
+  },
+
+  "retail-rocket-container#category-not-found": {
+    "props": {
+      "type": "PLP",
+      "markupBlock": "635abf46020e5a151a7ecede"
+    }
   },
 
   "rich-text#not-found": {

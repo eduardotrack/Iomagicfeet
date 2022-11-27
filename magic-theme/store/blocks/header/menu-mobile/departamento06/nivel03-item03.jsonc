@@ -1,0 +1,186 @@
+{
+  "experimental__visibility-layout#dep6-3-mobile-nivel-3": {
+    "title": "Menu (On/Off)",
+    "props": {
+      "visible": true
+    },
+    "children": [ "drawer#dep6-3-mobile-nivel-3"]
+  },
+
+    "drawer#dep6-3-mobile-nivel-3": {
+        "title": "Panda | Menu Departamento 06 - Nivel 03",
+        "children": [
+          "flex-layout.row#dep6-3-mobile-nivel-3-head",
+          "vtex.menu@2.x:menu#dep6-3-mobile-nivel-3",
+          "flex-layout.row#dep6-3-mobile-nivel-3-footer"
+        ],
+        "blocks": ["drawer-header#header-mobile", "drawer-trigger#dep6-3-mobile-nivel-3"],
+        "props": {
+          "blockClass": "menu-mobile-nivel03"
+        }
+      },
+      
+      "drawer-trigger#dep6-3-mobile-nivel-3": {
+        "children": ["rich-text#dep6-3-mobile-nivel-3"],
+        "props": {
+          "blockClass": "menu-mobile-nivel03"
+        }
+      },
+      
+      "rich-text#dep6-3-mobile-nivel-3": {
+        "title": "Panda | Menu Departamento 06 - Nivel 03 - Texto",
+        "props": {
+          "text": "por tamanho",
+          "blockClass": "menu-mobile-nivel03"
+        }
+      },
+    
+      "flex-layout.row#dep6-3-mobile-nivel-3-head": 
+      {
+        "title": "Panda | Menu Departamento 06 - Nivel 03 - Header",
+        "props": {
+          "blockClass": "header__nivel3--mob"
+        },
+        "children": ["flex-layout.col#dep6-3-mobile-nivel-3-head", "flex-layout.row#dep6-3-mobile-nivel-3-headsub"]
+      },
+
+      "flex-layout.col#dep6-3-mobile-nivel-3-head": {
+        "title": "Panda | Menu Departamento 06 - Nivel 03 - Header",
+        "props": {
+          "blockClass": "header__nivel3--mob"
+        },
+        "children": ["rich-text#dep6-3-mobile-nivel-3-head"]
+      },
+
+      "flex-layout.row#dep6-3-mobile-nivel-3-headsub": {
+        "title": "Panda | Menu Departamento 06 - Nivel 03 - Header",
+        "props": {
+          "blockClass": "headsub__nivel3--mob"
+        },
+        "children": ["drawer-close-button", "rich-text#dep6-3-mobile-nivel-3-headsub"]
+      },
+
+      "rich-text#dep6-3-mobile-nivel-3-head": {
+        "title": "Panda | Menu Departamento 06 - Nivel 03 - Header Titulo",
+        "props": {
+          "text": "Tênis e calçados",
+          "blockClass": "header__nivel3--mob"
+        }
+      },
+        
+      "rich-text#dep6-3-mobile-nivel-3-headsub": {
+        "title": "Panda | Menu Departamento 06 - Nivel 03 - Header Subtitulo",
+          "props": {
+            "text": "por tamanho",
+            "blockClass": "headsub__nivel3--mob"
+          }
+        },
+
+      "vtex.menu@2.x:menu#dep6-3-mobile-nivel-3": {
+        "title": "Panda | Menu Departamento 06 - Nivel 03 - Menu",
+        "props": {
+          "blockClass": ["menu-mobile", "submenu-mobile-subcategory"],
+          "orientation": "vertical",
+          "items": [
+            {
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
+              }
+            },
+            {
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
+              }
+            },
+            {
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
+              }
+            },
+            {
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
+              }
+            },
+            {
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
+              }
+            },
+            {
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
+              }
+            }
+          ]
+        }
+      },
+
+      "flex-layout.row#dep6-3-mobile-nivel-3-footer": {
+        "title": "Panda | Menu Departamento 06 - Nivel 03 - Footer",
+        "props": {
+          "blockClass": "footer__nivel3--mob"
+        },
+        "children": ["flex-layout.col#dep6-3-mobile-nivel-3-footer", "flex-layout.col#dep3-2-mobile-nivel-3-footer"]
+      },
+
+      "flex-layout.col#dep6-3-mobile-nivel-3-footer": {
+        "title": "Panda | Menu Departamento 06 - Nivel 03 - Footer Social",
+        "props": {
+          "blockClass": "footer__nivel3--mob"
+        },
+        "children": ["list-context.image-list#social-networks"]
+      },
+
+      "flex-layout.col#dep3-2-mobile-nivel-3-footer": {
+        "title": "Panda | Menu Departamento 06 - Nivel 03 - Footer",
+        "props": {
+          "blockClass": "footer__nivel3--mob"
+        },
+        "children": ["rich-text#dep6-3-mobile-nivel-3-footer"]
+      },
+
+      "rich-text#dep6-3-mobile-nivel-3-footer": {
+        "title": "Panda | Menu Departamento 06 - Nivel 03 - Footer Texto",
+        "props": {
+          "text": "compre também por \n _telefone_ e **retire na loja** \n ###### (11) 3664-3822",
+          "blockClass": "footer__nivel3--mob"
+        }
+      }
+}

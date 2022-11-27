@@ -1,0 +1,94 @@
+{
+    "flex-layout.row#ace1-main": {
+       
+        "title": "Panda | Área principal ACE1",
+        "props": {
+          "blockClass": "ace1-main" 
+        },
+        "children": [
+            "flex-layout.col#ace1-main-text",
+            "flex-layout.col#ace1-main-img"
+        ]
+      },
+
+      "flex-layout.col#ace1-main-img": {
+        "title": "Panda | Imagem ACE1",
+        "children": ["image#ace1-main-img"],
+        "props":{
+        "blockClass":"ace1-main"
+        } 
+    },
+
+    "image#ace1-main-img": {
+        "props": {
+          "src": "assets/img/ace1/main-img-section.png",
+          "blockClass":"ace1-main"
+        }
+    },
+
+    "flex-layout.col#ace1-main-text": {
+        "title": "Panda | Informações ACE1",
+        "children": [
+            "rich-text#ace1-main-text",
+            "list-context.media-list#ace1-main-text",
+            "rich-text#ace1-main-text-list"
+            ],
+        "props":{
+        "blockClass":"ace1-main"
+        } 
+    },
+
+    "rich-text#ace1-main-text": {
+        "title": "Panda | Texto ACE1",
+        "props": {
+          "text": "# Comprar tênis quase novos é  **seguro, prático e sustentável** com a ACE1",
+          "blockClass":"ace1-main"
+        }
+      },
+
+      "rich-text#ace1-main-text-list": {
+        "title": "Panda | Texto ACE1",
+        "props": {
+          "text": "* Compre produtos gentilmente usados de milhares de vendedores \n* Venda seus tênis em poucos cliques \n* Tudo com a confiança da ACE1 e Grupo AFEET",
+          "blockClass":"ace1-main"
+        }
+      },
+
+      "list-context.media-list#ace1-main-text": {
+        "title": "Panda | Links ACE1",
+        "children": ["list-context-renderer#ace1-main-text"],
+        "props": {
+            "blockClass":"ace1-main",
+            "mediaList": [
+                {
+                "image": "assets/img/ace1/btn-download-apple.png",
+                "mobileImage": "assets/img/ace1/btn-download-apple.png",
+                "link": {
+                    "url" : "https://ace1br.app.link/afeetlp",
+                    "noFollow" : true,
+                    "openNewTab": true
+                }
+
+                },
+                
+                {
+                "image": "assets/img/ace1/btn-download-google.png",
+                "mobileImage": "assets/img/ace1/btn-download-google.png",
+                  "link": {
+                    "url" : "https://ace1br.app.link/afeetlp",
+                    "noFollow" : true,
+                    "openNewTab": true
+                }
+                }
+            ]
+        }
+      },
+
+      "list-context-renderer#ace1-main-text": {
+        "props": {
+        "blockClass":"ace1-main",
+          "listElement": "ul",
+          "itemElement": "li"
+        }
+      }
+}

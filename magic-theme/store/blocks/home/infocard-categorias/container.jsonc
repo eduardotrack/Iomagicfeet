@@ -1,0 +1,41 @@
+{
+    "flex-layout.row#procura-home": {
+        "title": "Panda | o que você procura?",
+        "children": ["flex-layout.col#procura-home"],
+        "props":{
+          "blockClass":"procura-home-row"
+        } 
+      },
+    
+      "flex-layout.col#procura-home": {
+        "children": ["rich-text#procura-home", "slider-layout#procura-home"] 
+      },
+    
+      "rich-text#procura-home": {
+        "title": "Panda | o que você procura? - Título",
+        "props": {
+          "text": "## o que **você** procura?",
+          "blockClass": "Panda__title"
+        }
+      },
+
+      "slider-layout#procura-home": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 4,
+            "tablet": 4,
+            "phone": 2
+          },
+          "infinite": false,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "never",
+          "blockClass": "carousel-procura",
+          "centerMode": {
+            "desktop": "disabled",
+            "mobile": "to-the-left"
+          },
+          "centerModeSlidesGap": "0"
+        },
+        "children": ["link#procura-item-01", "link#procura-item-02", "link#procura-item-03","link#procura-item-04"]
+      }
+}

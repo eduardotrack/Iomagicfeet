@@ -1,0 +1,29 @@
+{
+  // FULL
+  "list-context.image-list#slider-full-search": {
+    "children": ["slider-layout#slider-full-search"],
+    "props": {
+      "images": [
+        {
+          "image": "https://fakeimg.pl/1280x219/",
+          "mobileImage": "https://fakeimg.pl/360x219/"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-full-search": {
+    "title": "Panda | Carrossel - Categorias",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": ["home__slider", "slider-full-search"],
+      "showPaginationDots": "never",
+      "fullWidth": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "flex-layout.row#main-banner-retirada-em-loja": {
+        "title": "Panda | Imagem Principal",
+        "children": ["responsive-layout.desktop#main-banner-retirada-em-loja", "responsive-layout.phone#main-banner-retirada-em-loja"],
+        "props":{
+          "blockClass":"main-banner-quemsomos-row",
+          "fullWidth": false
+        } 
+      },
+
+      "responsive-layout.desktop#main-banner-retirada-em-loja": {
+        "title": "Panda | Imagem Principal - Desktop",
+        "children": ["image#main-banner-retirada-em-loja-desk"]
+      },
+ 
+      "responsive-layout.phone#main-banner-retirada-em-loja": {
+        "title": "Panda | Imagem Principal - Mobile",
+        "children": ["image#main-banner-retirada-em-loja-mob"]
+      },
+
+      "image#main-banner-retirada-em-loja-desk": {
+        "props": {
+          "src": "assets/img/aw-retirada.png",
+          "blockClass":"main-banner-quemsomos-row"
+        }
+      },
+
+      "image#main-banner-retirada-em-loja-mob": {
+        "props": {
+          "src": "assets/img/aw-retirada.png",
+          "blockClass":"main-banner-quemsomos-row"
+        }
+      }
+ }

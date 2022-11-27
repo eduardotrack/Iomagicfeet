@@ -1,0 +1,29 @@
+{
+  "experimental__visibility-layout#banner-dep4-col1": {
+    "title": "Banner (On/Off)",
+    "props": {
+      "visible": true
+    },
+    "children": ["flex-layout.col#banner-dep4-col1"]
+  },
+  "flex-layout.col#banner-dep4-col1": {
+    "props": {
+      "blockClass": [
+        "main-menu-banner",
+        "main-menu-column",
+        "main-menu-column-first"
+      ]
+    },
+    "children": ["image-new#banner-dep4-col1"]
+  },
+  "image-new#banner-dep4-col1": {
+    "title": "Imagem - Banner",
+    "props": {
+      "blockClass": "main-menu-banner",
+      "src": "https://via.placeholder.com/250x350",
+      "link": {
+        "url": "#"
+      }
+    }
+  }
+}

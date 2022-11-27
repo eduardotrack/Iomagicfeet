@@ -1,0 +1,114 @@
+{
+  "flex-layout.row#brands-nike": {
+    "title": "Panda | Marcas 01",
+    "children": ["flex-layout.col#brands-nike"],
+    "props":{
+      "blockClass":"brands-nike-row"
+    } 
+  },
+
+  "flex-layout.col#brands-nike": {
+    "children": ["rich-text#brands-nike", "flex-layout.row#brands-nike-list"] 
+  },
+
+  "rich-text#brands-nike": {
+    "title": "Panda | Marcas - Título",
+    "props": {
+      "text": "## navegue pelas **marcas**",
+      "blockClass": "Panda__title"
+    }
+  },
+
+  "flex-layout.row#brands-nike-list": {
+    "title": "Panda | Marcas",
+    "children": ["list-context.media-list#brands-nike-list"] 
+  },
+
+    "list-context.media-list#brands-nike-list": {
+        "children": ["list-context-renderer#wrapped-brands"],
+        "props": {
+          "blockClass":"list-brands-nike",
+          "mediaList": [
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            },
+             
+            {
+              "image": "assets/img/brand-demo.png",
+              "mobileImage": "assets/img/brand-demo.png"
+            }
+          ]
+        }
+      } 
+}

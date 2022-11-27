@@ -1,0 +1,29 @@
+{
+    "flex-layout.row#quem-nike": {
+        "title": "Panda | Para quem?",
+        "children": ["flex-layout.col#quem-nike"],
+        "props":{
+          "blockClass":"quem-home-row"
+        } 
+      },
+    
+      "flex-layout.col#quem-nike": {
+        "children": ["rich-text#quem-nike", "flex-layout.row#quem-nike-list"] 
+      },
+    
+      "rich-text#quem-nike": {
+        "title": "Panda | Para quem? - Título",
+        "props": {
+          "text": "## para **quem** você compra?",
+          "blockClass": "Panda__title"
+        }
+      },
+    
+      "flex-layout.row#quem-nike-list": {
+        "title": "Panda | Para quem?",
+        "children": ["flex-layout.col#col-quem-infocard-maior",  "flex-layout.col#col-quem-infocard-menor"],
+        "props":{
+          "blockClass":"quem-home-cols"
+        } 
+      }
+}

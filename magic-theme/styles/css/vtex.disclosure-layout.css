@@ -1,0 +1,30 @@
+.trigger--panda-retirada-em-loja-faq {
+    background: #5DFF49;
+    border: none;
+    padding: 0px 20px;
+    border-top-right-radius: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.content--panda-retirada-em-loja-faq {
+    background: #E8E8E8;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 30px;
+    padding: 0px 20px;
+}
+
+.content--panda-retirada-em-loja-faq :global(.vtex-rich-text-0-x-paragraph) {
+    font-family: 'WorkSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.trigger--panda-retirada-em-loja-faq :global(.vtex-rich-text-0-x-paragraph) {
+    font-family: 'WorkSans-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}

@@ -1,0 +1,43 @@
+{
+    "pd-skuSimilar": {
+        "component": "skuSimilar"
+    },
+
+    "pd-nossasLojas": {
+        "component": "nossasLojas"
+    },
+
+    "pd-coreForm": {
+        "component": "coreForm"
+    },
+
+    "pd-newsForm": {
+        "component": "newsForm"
+    },
+
+    "pd-NeoassistCentral": {
+        "component": "NeoassistCentral"
+    },
+
+    "pd-SkuSuggestion": {
+        "component": "SkuSuggestionCore"
+    },
+
+    "pd-welcomeControl": {
+        "component": "welcomeControl"
+    },
+
+    "pd-skuFormatDesc": {
+        "component": "skuFormatDesc"
+    },
+
+    "pd-popupFirstBuy": {
+        "component": "popupFirstBuy"
+    },
+
+    "pd-progressiveBar": {
+        "component": "progressiveBar"
+    }
+
+
+}

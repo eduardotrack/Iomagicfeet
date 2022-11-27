@@ -1,0 +1,42 @@
+{
+  "flex-layout.col#tips-item-04": {
+      "title": "Panda | Tips 04",
+      "children": ["link#tips-item-04"],
+      "props":{
+          "blockClass": "tips-item-wrapper" 
+      }
+  },
+
+  "link#tips-item-04": {
+      "title": "Panda | Link Tips 04",
+      "children": ["experimental__visibility-layout#tips-item-04", "rich-text#tips-item-04"],
+      "props": {
+        "href": "/formas-de-pagamento",
+        "blockClass": "tips-item-link"
+      }
+    },
+
+    "experimental__visibility-layout#tips-item-04": {
+      "title": "Icone Tips 04 (On/Off)",
+      "props": {
+        "visible": true
+      },
+      "children": ["image#tips-item-04"]
+    },
+
+    "image#tips-item-04": {
+      "title": "Panda | Imagem Tips 04",
+      "props": {
+        "src": "https://magicfeet.vtexassets.com/assets/vtex.file-manager-graphql/images/f64fc3fd-c74e-481f-b51e-dbd0ae7d16fa___53d48771edd6220b9718a8b4a586c40d.png",
+        "blockClass": "tips-item-img"
+      }
+    },
+
+    "rich-text#tips-item-04": {
+      "title": "Panda | Texto Tips 04",
+      "props": {
+        "text": "**5% de desconto no pix** \n confira as regras",
+        "blockClass": "tips-item-text"
+      }
+    }
+}

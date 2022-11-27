@@ -1,0 +1,121 @@
+{
+    "experimental__visibility-layout#brands-dep7-col4": {
+      "title": "Menu Lista de Marcas (On/Off)",
+      "props": {
+        "visible": true
+      },
+      "children": ["flex-layout.col#brands-dep7-col4"]
+    },
+    "flex-layout.col#brands-dep7-col4": {
+      "props": {
+        "blockClass": [
+          "main-menu-brands"
+        ]
+      },
+      "children": ["rich-text#brands-menu-list-dep7-col4", "list-context.media-list#brands-menu-list-dep7-col4"]
+    },
+
+    "rich-text#brands-menu-list-dep7-col4": {
+        "props": {
+          "text": "por marca",
+          "blockClass":"list-brands-menu"
+        }
+      },
+
+    "list-context.media-list#brands-menu-list-dep7-col4": {
+      "children": ["list-context-renderer#wrapped-menu-brands-dep7-col4"],
+      "props": {
+        "blockClass":"list-brands-menu",
+        "mediaList": [
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          },
+           
+          {
+            "image": "assets/img/brand-demo.png",
+            "mobileImage": "assets/img/brand-demo.png"
+          }
+        ]
+      }
+    },
+  
+    "list-context-renderer#wrapped-menu-brands-dep7-col4": {
+      "props": {
+          "blockClass":["list-brands-menu", "list-brands-menu-outlet"],
+        "listElement": "ul",
+        "itemElement": "li"
+      }
+    }
+  }
+  

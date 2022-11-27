@@ -1,0 +1,42 @@
+{
+    "flex-layout.col#tips-item-01": {
+        "title": "Panda | Tips 01",
+        "children": ["link#tips-item-01"],
+        "props":{
+            "blockClass": "tips-item-wrapper" 
+        }
+    },
+
+    "link#tips-item-01": {
+        "title": "Panda | Link Tips 01",
+        "children": ["experimental__visibility-layout#tips-item-01", "rich-text#tips-item-01"],
+        "props": {
+          "href": "/tipos-de-entrega",
+          "blockClass": "tips-item-link"
+        }
+      },
+
+      "experimental__visibility-layout#tips-item-01": {
+        "title": "Icone Tips 01 (On/Off)",
+        "props": {
+          "visible": true
+        },
+        "children": ["image#tips-item-01"]
+      },
+
+      "image#tips-item-01": {
+        "title": "Panda | Imagem Tips 01",
+        "props": {
+          "src": "assets/img/tips-demo.png",
+          "blockClass": "tips-item-img"
+        }
+      },
+
+      "rich-text#tips-item-01": {
+        "title": "Panda | Texto Tips 01",
+        "props": {
+          "text": "**frete grátis*** \n a partir de R$100",
+          "blockClass": "tips-item-text"
+        }
+      }
+}

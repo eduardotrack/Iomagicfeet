@@ -1,0 +1,54 @@
+{
+    "flex-layout.row#tips-home": {
+        "title": "Panda | Tips",
+        "children": [ "flex-layout.col#tips-item-01", "flex-layout.col#tips-item-02", "flex-layout.col#tips-item-03", "flex-layout.col#tips-item-04"],
+        "props":{
+          "blockClass":"tips-home-row" 
+        } 
+      },
+
+      "responsive-layout.desktop#tips-home": {
+        "title": "Panda | Tips - Desktop",
+        "children": ["flex-layout.row#tips-home"]
+      },
+ 
+      "responsive-layout.phone#tips-home": {
+        "title": "Panda | Tips - Mobile",
+        "children": ["slider-layout#tips-home",  "flex-layout.row#tips-home-mobile"]
+      },
+
+      "flex-layout.row#tips-home-mobile": {
+        "title": "Panda | Tips Texto",
+        "children": [ "rich-text#tips-home"],
+        "props":{
+          "blockClass":"tips-home-row" 
+        } 
+      },
+
+      "rich-text#tips-home": {
+        "props": {
+          "text": "### entre no\n### *mundo* ***magic*** \npoder da cabeça aos pés",
+          "blockClass": "tips_home_text_mobile"
+        }
+      },
+
+      "slider-layout#tips-home": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "autoplay":{
+            "timeout": 3000,
+            "stopOnHover": true
+          },
+          "infinite": true,
+          "showNavigationArrows": "mobileOnly",
+          "showPaginationDots":"never",
+          "blockClass": "tips_home_slider"
+        },
+        "children": [ "link#tips-item-01", "link#tips-item-02", "link#tips-item-03", "link#tips-item-04"]
+      }
+}
+

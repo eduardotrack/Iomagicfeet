@@ -1,0 +1,29 @@
+{
+    "flex-layout.row#exclusivo-home": {
+        "title": "Panda | Slide Exlusivos",
+        "children": ["flex-layout.col#exclusivo-home"],
+        "props":{
+            "blockClass":"exclusivo-home-row",
+            "fullWidth": true 
+        } 
+      },
+    
+      "flex-layout.col#exclusivo-home": {
+        "children": ["slider-layout#exclusivo-home"] 
+      },
+
+      "slider-layout#exclusivo-home": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": false,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "always",
+          "blockClass": "carousel-exclusivos"
+        },
+        "children": ["info-card#item-exlusivo-1", "info-card#item-exlusivo-2", "info-card#item-exlusivo-3"]
+      }
+}

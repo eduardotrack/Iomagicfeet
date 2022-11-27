@@ -1,0 +1,158 @@
+{
+
+    "flex-layout.row#ace1-beneficios-core": {
+        "title": "Panda | Beneficios ACE1",
+        "props": {
+          "blockClass": "ace1-beneficios" 
+        },
+        "children": [
+            "flex-layout.row#ace1-beneficios-title",
+            "flex-layout.row#ace1-beneficios"
+        ]
+      },
+
+    "flex-layout.row#ace1-beneficios-title": {
+        "title": "Panda | Beneficios Titulo -  ACE1",
+        "props": {
+          "blockClass": "ace1-beneficios" 
+        },
+        "children": [
+          "rich-text#title-ace1-beneficios"
+        ]
+      },
+
+    "flex-layout.row#ace1-beneficios": {
+      "title": "Panda | Beneficios ACE1",
+      "props": {
+        "blockClass": "ace1-beneficios-cols" 
+      },
+      "children": [
+        "flex-layout.col#ace1-beneficios-1",
+        "flex-layout.col#ace1-beneficios-2",
+        "flex-layout.col#ace1-beneficios-3",
+        "flex-layout.col#ace1-beneficios-4"
+      ]
+    },
+  
+    "rich-text#title-ace1-beneficios": {
+    "title": "Panda | Beneficios Titulo -  ACE1",
+      "props": {
+        "blockClass": "ace1-beneficios__title",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "A maneira **mais fácil e barata**  de conseguir o sneaker dos seus sonhos"
+      }
+    },
+
+    // Tipo 1
+    "flex-layout.col#ace1-beneficios-1": {
+        "title": "Panda | Texto Beneficio 01",
+        "children": ["image#ace1-beneficios-1","rich-text#ace1-beneficios-1"],
+        "props":{
+        "blockClass":"beneficios-container-text",
+        "width": "100%"
+        } 
+    },
+
+    "image#ace1-beneficios-1": {
+      "title": "Imagem | Texto Beneficio 01",
+      "props": {
+        "src": "assets/img/ace1/beneficios1.png",
+        "blockClass":"beneficios-container-img"
+      }
+    },
+
+    "rich-text#ace1-beneficios-1": {
+        "title": "Panda | Texto Beneficio 01",
+        "props": {
+          "blockClass": "ace1-beneficios__content",
+          "text": "## 100% ORIGINAL \n Preço bom + confiança. Todos os produtos vendidos na ACE1 têm garantia de originalidade"
+        }
+      },
+    // Tipo 1
+
+    // Tipo 2
+    "flex-layout.col#ace1-beneficios-2": {
+        "title": "Panda | Texto Beneficio 02",
+        "children": ["image#ace1-beneficios-2", "rich-text#ace1-beneficios-2"],
+        "props":{
+        "blockClass":"beneficios-container-text",
+        "width": "100%"
+        } 
+    },
+
+
+    "image#ace1-beneficios-2": {
+      "title": "Imagem | Texto Beneficio 02",
+      "props": {
+        "src": "assets/img/ace1/beneficios2.png",
+        "blockClass":"beneficios-container-img"
+      }
+    },
+
+    "rich-text#ace1-beneficios-2": {
+        "title": "Panda | Texto Beneficio 02",
+        "props": {
+          "blockClass": "ace1-beneficios__content",
+          "text": "## OS MELHORES PREÇOS \n Tênis quase novos e preços lá embaixo. Quer ainda mais barato? Experimente enviar uma oferta no app"
+        }
+      },
+    // Tipo 2
+
+    // Tipo 3
+        "flex-layout.col#ace1-beneficios-3": {
+            "title": "Panda | Texto Beneficio 03",
+            "children": ["image#ace1-beneficios-3", "rich-text#ace1-beneficios-3"],
+            "props":{
+            "blockClass":"beneficios-container-text",
+            "width": "100%"
+            } 
+        },
+
+        "image#ace1-beneficios-3": {
+          "title": "Imagem | Texto Beneficio 03",
+          "props": {
+            "src": "assets/img/ace1/beneficios3.png",
+            "blockClass":"beneficios-container-img"
+          }
+        },
+    
+        "rich-text#ace1-beneficios-3": {
+            "title": "Panda | Texto Beneficio 03",
+            "props": {
+              "blockClass": "ace1-beneficios__content",
+              "text": "## A MAIOR VARIEDADE \n Milhares de modelos de Jordan, Nike, Yeezy e muito mais na palma das suas mãos"
+            }
+          },
+        // Tipo 3
+
+
+    // Tipo 4
+    "flex-layout.col#ace1-beneficios-4": {
+        "title": "Panda | Texto Beneficio 04",
+        "children": ["image#ace1-beneficios-4", "rich-text#ace1-beneficios-4"],
+        "props":{
+        "blockClass":"beneficios-container-text",
+        "width": "100%"
+        } 
+    },
+
+    "image#ace1-beneficios-4": {
+      "title": "Imagem | Texto Beneficio 04",
+      "props": {
+        "src": "assets/img/ace1/beneficios4.png",
+        "blockClass":"beneficios-container-img"
+      }
+    },
+
+    "rich-text#ace1-beneficios-4": {
+        "title": "Panda | Texto Beneficio 04",
+        "props": {
+          "blockClass": "ace1-beneficios__content",
+          "text": "## COMPRA SUSTENTÁVEL \n Cada tênis usado vendido significa a economia de 20 mil litros de água que seriam usados produzindo um par novo"
+        }
+      }
+    // Tipo 4
+
+  }
+  

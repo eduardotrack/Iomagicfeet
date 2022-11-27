@@ -1,0 +1,77 @@
+.emailInputContainer--footer__newsletter :global(.vtex-input-prefix__group) {
+    border: none;
+    background: none;
+    border-radius: 0px;
+}
+
+.emailInputContainer--footer__newsletter :global(.vtex-styleguide-9-x-input) {
+    font-family: 'WorkSans-Regular';
+    background: none;
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1C1C1C;
+    mix-blend-mode: normal;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .emailInputContainer--footer__newsletter :global(.vtex-styleguide-9-x-input) {
+        min-width: 50vw;
+    }
+}
+
+.emailInputContainer--footer__newsletter :global(.vtex-styleguide-9-x-input)::placeholder {
+    font-family: 'WorkSans-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1C1C1C;
+}
+
+.formSubmitContainer :global(.vtex-button) {
+    font-size: 0;
+    color: transparent;
+    width: 100%;
+    background: transparent;
+    border: none;
+    margin-top: 1px;
+}
+
+.formSubmitContainer :global(.vtex-button)::after {
+    content: '.';
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='17' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 15.3184L17.8672 9.86285C18.7109 9.00523 18.7109 7.61474 17.8672 6.75712L12.5165 1.31836M0 8.31836L18.5 8.31836' stroke='%231C1C1C' stroke-width='2'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 18px auto;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+.confirmationCheckboxContainer :global(.vtex-checkbox__line-container) {
+    display: flex;
+    align-items: center;
+}
+
+.confirmationCheckboxContainer :global(.vtex-checkbox__label) {
+    font-family: 'WorkSans-Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1C1C1C;
+}
+
+.confirmationCheckboxContainer :global(.vtex-checkbox__box) {
+    border: 2px solid #1C1C1C;
+}
+
+.confirmationCheckboxContainer :global(.vtex__icon-check) {
+    fill: #5DFF49;
+    color: #5DFF49;
+    stroke: #1C1C1C;
+    background: #1C1C1C;
+    border: 2px solid #1C1C1C;
+}

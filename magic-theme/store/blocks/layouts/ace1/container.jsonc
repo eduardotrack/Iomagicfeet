@@ -1,0 +1,18 @@
+{
+    "store.custom#ace1": {
+        "blocks": [ 
+              "flex-layout.row#ace1-header",
+              "flex-layout.row#ace1-main",
+              "flex-layout.row#ace1-beneficios-core",
+              "flex-layout.row#ace1-infocards1",
+              "flex-layout.row#ace1-infocards2",
+              "flex-layout.row#ace1-beneficios2-core",
+              "flex-layout.row#ace1-prefooter",
+              "flex-layout.row#ace1-text-footer",
+              "flex-layout.row#ace1-footer"
+          ],
+          "props": {
+            "blockClass":"beneficios-container-img"
+          }
+      }
+}

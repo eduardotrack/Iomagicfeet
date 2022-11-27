@@ -1,0 +1,32 @@
+{
+    "store.custom#seja-franqueado": {
+      "title": "Panda | Seja Franqueado",
+      "blocks": ["disposition-layout#seja-franqueado"]
+    },
+  
+    "disposition-layout#seja-franqueado": {
+      "title": "Panda | Seja Franqueado - Disposição do conteúdo",
+      "children": [
+        "flex-layout.row#main-banner-sejafranqueado",
+        "flex-layout.row#sub-main-sejafranqueado",
+        "flex-layout.row#slider-loja-sejafranqueado",
+        "flex-layout.row#end-section-sejafranqueado"
+      ],
+      "props": {
+        "disposition": [
+          {
+            "order": 1
+          }, 
+          {
+            "order": 2
+          }, 
+          {
+            "order": 3
+          }, 
+          {
+            "order": 4
+          }
+        ]
+      }
+    } 
+  }

@@ -1,5 +1,6 @@
 {
   "product-summary.shelf#listLayout": {
+    "title": "Panda | Sumário de produto - Em Lista",
     "props": {
       "blockClass": "listLayout"
     },
@@ -9,14 +10,10 @@
     ]
   },
   "responsive-layout.desktop#productSummaryList": {
-    "children": [
-      "flex-layout.row#summaryListDesktop"
-    ]
+    "children": ["flex-layout.row#summaryListMobile"]
   },
   "responsive-layout.mobile#productSummaryList": {
-    "children": [
-      "flex-layout.row#summaryListMobile"
-    ]
+    "children": ["flex-layout.row#summaryListMobile"]
   },
   "product-price-savings#summaryPercentage": {
     "props": {
@@ -36,7 +33,7 @@
     ]
   },
   "flex-layout.row#summaryListDesktop": {
-    "props":{
+    "props": {
       "fullWidth": true,
       "colSizing": "auto",
       "blockClass": "summaryListDesktop"
@@ -69,9 +66,7 @@
     ]
   },
   "flex-layout.row#productSpecifications": {
-    "children": [
-      "product-specification-group#summary"
-    ]
+    "children": ["product-specification-group#summary"]
   },
   "product-summary-name#summaryListDesktop": {
     "props": {
@@ -100,18 +95,13 @@
       "colSizing": "auto",
       "colGap": 5
     },
-    "children": [
-      "add-to-cart-button",
-      "flex-layout.row#buyNowButton"
-    ]
+    "children": ["add-to-cart-button", "flex-layout.row#buyNowButton"]
   },
   "flex-layout.row#buyNowButton": {
     "props": {
       "blockClass": "buyNowButton"
     },
-    "children": [
-      "add-to-cart-button#buyNow"
-    ]
+    "children": ["add-to-cart-button#buyNow"]
   },
 
   "add-to-cart-button#buyNow": {
@@ -123,10 +113,7 @@
     }
   },
   "flex-layout.col#priceSummaryListDesktop": {
-    "children": [
-      "product-selling-price#summary",
-      "product-list-price#summary"
-    ]
+    "children": ["product-selling-price#summary", "product-list-price#summary"]
   },
   "stack-layout#summaryListDesktop": {
     "children": [
@@ -144,7 +131,7 @@
     }
   },
   "flex-layout.row#summaryListMobile": {
-    "props":{
+    "props": {
       "preserveLayoutOnMobile": true,
       "colSizing": "auto",
       "blockClass": "summaryListMobile",
@@ -157,9 +144,7 @@
   },
   "stack-layout#summaryListMobile": {
     "children": [
-      "product-summary-image#summaryListMobile",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "product-summary-image#summaryListMobile" 
     ]
   },
   "product-summary-image#summaryListMobile": {

@@ -1,0 +1,83 @@
+{
+    "flex-layout.row#sub-main-quemsomos": {
+        "title": "Panda | Conteudo Principal",
+        "children": ["flex-layout.col#sub-main-text", "flex-layout.col#sub-main-slider"],
+        "props":{
+          "blockClass":"sub-main-quemsomos-row",
+          "fullWidth": true
+        } 
+      },
+
+      "flex-layout.col#sub-main-text": {
+        "title": "Panda | Texto Principal",
+        "children": ["rich-text#sub-main-text"],
+        "props":{
+          "blockClass":"sub-main-quemsomos-text",
+          "width": "50%"
+        } 
+      },
+
+      "rich-text#sub-main-text": {
+        "title": "Panda | Texto Principal",
+        "props": {
+          "text": "# **poder** da \n ## _cabeça_ \n ### aos **pés** \n  Especialistas em tênis. Uma das maiores redes de lojas de calçados do Brasil. Atualmente estamos presentes nos melhores shoppings de todo o Brasil.\n \n **São mais de 40 lojas físicas e agora também atendemos a você no comércio eletrônico. 24 horas por dia na loja virtual e 7 dias por semana em todos os shoppings.**\n \n Você sabe [onde nos encontrar](/).",
+          "blockClass":"sub-main-quemsomos-text"
+        }
+      },
+
+      "flex-layout.col#sub-main-slider": {
+        "title": "Panda | Slider Principal",
+        "children": [ "list-context.image-list#sub-main-slider"],
+        "props":{
+          "blockClass":"sub-main-quemsomos-slider",
+          "width": "50%"
+        } 
+      },
+
+      "list-context.image-list#sub-main-slider": {
+        "title": "Panda | Imagens da Loja",
+        "children": ["slider-layout#sub-main-slider"],
+        "props": {
+          "images": [
+            {
+              "image": "assets/img/quemsomos-desk.png",
+              "mobileImage": "assets/img/quemsomos-desk.png"
+            },
+            {
+              "image": "assets/img/quemsomos-desk.png",
+              "mobileImage": "assets/img/quemsomos-desk.png"
+            },
+            {
+              "image": "assets/img/quemsomos-desk.png",
+              "mobileImage": "assets/img/quemsomos-desk.png"
+            },
+            {
+              "image": "assets/img/quemsomos-desk.png",
+              "mobileImage": "assets/img/quemsomos-desk.png"
+            },
+            {
+              "image": "assets/img/quemsomos-desk.png",
+              "mobileImage": "assets/img/quemsomos-desk.png"
+            },
+            {
+              "image": "assets/img/quemsomos-desk.png",
+              "mobileImage": "assets/img/quemsomos-desk.png"
+            }
+          ]
+        }
+      },
+      "slider-layout#sub-main-slider": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          }, 
+          "infinite": true,
+          "showNavigationArrows": "never",
+          "blockClass": "quemsomos__slider"
+        }
+      }
+
+      
+}

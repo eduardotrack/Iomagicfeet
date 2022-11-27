@@ -1,0 +1,68 @@
+{
+  "flex-layout.row#newsletter-wrapper": {
+    "props": {
+      "blockClass": ["newsletter-wrapper"]
+    },
+    //"children": ["newsletter-form#footer"]
+    "children": ["pd-newsForm"]
+  },
+  "newsletter-form#footer": {
+    "title": "Panda | Footer - Newsletter",
+    "props": {
+      "blockClass": "footer__newsletter"
+    },
+    "children": ["rich-text#footer-newsletter", "flex-layout.row#newsletter",  "newsletter-checkbox-confirmation#footer"]
+  },
+  "rich-text#footer-newsletter": {
+    "title": "Panda | Footer - Newsletter - Texto",
+    "props": {
+      "text": "Fique por dentro de todos os  \n ## Lançamentos \n ##  **e Novidades**",
+      "blockClass": "footer__newsletter"
+    }
+  },
+  "flex-layout.row#newsletter": {
+    "props": {
+      "blockClass": "footer__newsletter"
+    },
+    "children": [
+      "flex-layout.col#newsletter-col-1",
+      "flex-layout.col#newsletter-col-2"
+    ]
+  },
+  "flex-layout.col#newsletter-col-1": {
+    "props": {
+      "blockClass": "footer__newsletter",
+      "width": "90%"
+    },
+    "children": [
+      "newsletter-input-email#footer"
+    ]
+  },
+  "flex-layout.col#newsletter-col-2": {
+    "props": {
+      "blockClass": "footer__newsletter",
+      "width": "10%"
+    },
+    "children": ["newsletter-submit#footer"]
+  },
+
+  "newsletter-input-email#footer": {
+    "title": "Panda | Campo de email",
+    "props": {
+      "placeholderText": "insira aqui seu melhor e-mail",
+      "blockClass": "footer__newsletter"
+    }
+  },
+  "newsletter-checkbox-confirmation#footer": {
+    "title": "Panda | Campo de confirmação",
+    "props": {
+      "checkboxLabel": "Eu aceito receber informes em meu e-mail"
+    }
+  },
+  "newsletter-submit#footer": {
+    "title": "Panda | Botão enviar",
+    "props": {
+      "submitButtonLabel": "Enviar"
+    }
+  }
+}

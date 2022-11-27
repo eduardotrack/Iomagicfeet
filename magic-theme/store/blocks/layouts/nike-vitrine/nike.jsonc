@@ -1,0 +1,51 @@
+{
+  "store.custom#nike-vitrine": {
+    "title": "Panda | Nike",
+    "blocks": ["disposition-layout#nike"]
+ 
+  },
+
+  "disposition-layout#nike": {
+    "title": "Panda | Nike - Disposição do conteúdo",
+    "children": [
+      "list-context.image-list#slider-full-nike",
+      "flex-layout.row#procura-nike",
+      "flex-layout.row#shelf-nike-01",
+      "flex-layout.row#shelf-nike-02",
+      "flex-layout.row#quem-nike",
+      "flex-layout.row#exclusivo-nike",
+      "flex-layout.row#calendario-nike"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        } 
+      ]
+    }
+  } 
+}

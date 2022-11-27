@@ -1,0 +1,17 @@
+{
+    "store.custom#central-relacionamento": {
+      "blocks": [
+        "flex-layout.row#central-relacionamento"
+      ]
+    },
+
+    "flex-layout.row#central-relacionamento": {
+      "props": {
+        "blockClass": "panda-central-relacionamento" 
+      },
+      "children": [
+        "pd-NeoassistCentral"
+      ]
+    }
+  }
+  

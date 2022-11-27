@@ -1,0 +1,29 @@
+.container--pd_disponibilidade_estoque {
+    display: flex;
+    text-align: left;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.container--pd_disponibilidade_estoque::before {
+    content: '.';
+    background-image: url("data:image/svg+xml,%3Csvg width='41' height='31' viewBox='0 0 41 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.8929 15.7623C22.6621 15.7623 23.2857 15.1387 23.2857 14.3694C23.2857 13.6002 22.6621 12.9766 21.8929 12.9766C21.1236 12.9766 20.5 13.6002 20.5 14.3694C20.5 15.1387 21.1236 15.7623 21.8929 15.7623Z' stroke='%231C1C1C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20.5 24.1196C25.1155 24.1196 28.8571 20.3779 28.8571 15.7624C28.8571 11.1469 25.1155 7.40527 20.5 7.40527C15.8844 7.40527 12.1428 11.1469 12.1428 15.7624C12.1428 20.3779 15.8844 24.1196 20.5 24.1196Z' stroke='%231C1C1C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1 15.7623C1 15.7623 7.96429 1.83374 20.5 1.83374C33.0357 1.83374 40 15.7623 40 15.7623C40 15.7623 33.0357 29.6909 20.5 29.6909C7.96429 29.6909 1 15.7623 1 15.7623Z' stroke='%231C1C1C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 19px auto;
+    width: 30px;
+    height: auto;
+    display: inline-grid;
+    margin-right: -3px;
+    color: transparent;
+}
+
+.lowStockHighlight,
+.lowStockText--pd_disponibilidade_estoque {
+    font-family: 'RobotoCondensed-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}

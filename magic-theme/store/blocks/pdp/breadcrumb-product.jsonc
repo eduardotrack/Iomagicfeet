@@ -1,0 +1,17 @@
+{
+  "flex-layout.row#product-breadcrumb": {
+    "title": "Panda | Breadcrumb de produto",
+    "props": {
+      "blockClass": "product__breadcrumb"
+      
+    },
+    "children": ["breadcrumb"]
+  },
+
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true,
+      "blockClass": "product__breadcrumb"
+    }
+  }
+}

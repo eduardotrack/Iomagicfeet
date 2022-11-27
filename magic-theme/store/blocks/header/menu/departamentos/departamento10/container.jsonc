@@ -1,0 +1,46 @@
+{
+  "menu-item#dep10": {
+    "props": {
+      "blockClass": ["header__menu", "main-menu-department"],
+      "id": "menu-item-dep10",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "Categoria 10",
+        "type": "internal",
+        "href": "#"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dep10"]
+  },
+  "vtex.menu@2.x:submenu#dep10": {
+    "title": "Categoria 10",
+    "props": {
+      "blockClass": ["main-menu-department-submenu"],
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-dep10"]
+  },
+  "flex-layout.row#menu-dep10": {
+    "props": {
+      "blockClass": ["main-menu-department-block"],
+      "colSizing": "auto",
+      "fullWidth": true,
+      "colGap": 4,
+      "experimentalHideEmptyCols": true
+    },
+    "children": [
+      "experimental__visibility-layout#menu-dep10-col1",
+      "experimental__visibility-layout#banner-dep10-col1",
+
+      "experimental__visibility-layout#menu-dep10-col2",
+      "experimental__visibility-layout#banner-dep10-col2",
+
+      "experimental__visibility-layout#menu-dep10-col3",
+      "experimental__visibility-layout#banner-dep10-col3",
+
+      "experimental__visibility-layout#menu-dep10-col4",
+      "experimental__visibility-layout#banner-dep10-col4"
+    ]
+  }
+}

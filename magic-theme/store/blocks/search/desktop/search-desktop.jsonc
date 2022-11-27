@@ -1,0 +1,37 @@
+{
+  "search-result-layout.desktop": {
+    "title": "Panda | Layout da Busca - Desktop",
+    "children": [
+      "flex-layout.row#banner-one",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchtitle",
+      "experimental__visibility-layout#categories-banner-search",
+      "flex-layout.row#search-suggestions",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "blockClass": "panda-search",
+      "pagination": "show-more",
+      "preventRouteChange": false,
+      "defaultGalleryLayout": "grid",
+      "hiddenFacets": {
+        "priceRange": false
+      }
+    }
+  },
+
+  "flex-layout.row#retail-rocket-category": {
+    "props": {
+      "blockClass": "retail-rocket"
+    },
+    "children": [
+      "retail-rocket-container#category"
+    ]
+  },
+  "retail-rocket-container#category": {
+    "props": {
+      "type": "PLP",
+      "markupBlock": "635abf08cf114781944b4d2a"
+    }
+  }
+}

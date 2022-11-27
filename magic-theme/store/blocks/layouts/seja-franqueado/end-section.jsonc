@@ -1,0 +1,43 @@
+{
+    "flex-layout.row#end-section-sejafranqueado": {
+       "title": "Panda | Conteudo Final",
+       "children": ["flex-layout.col#end-section-sejafranqueado", "flex-layout.col#end-section-sejafranqueado-imagem-franqueado"],
+       "props":{
+         "blockClass":"end-section-sejafranqueado-row" 
+       } 
+     },
+
+     "flex-layout.col#end-section-sejafranqueado": {
+       "title": "Panda | Texto",
+       "children": ["rich-text#end-section-sejafranqueado"],
+       "props":{
+         "blockClass":"end-section-sejafranqueado-text",
+         "width": "50%"
+       } 
+     },
+
+     "rich-text#end-section-sejafranqueado": {
+       "title": "Panda | Texto",
+       "props": {
+         "text": "# Conte com a gente! \n  A franquia faz parte do Grupo Afeet, um dos maiores players do mercado de calçados esportivos, com mais de 20 anos de atuação e presente em todas as regiões do país. A sede da franqueadora é completa e moderna, estruturada para oferecer aos seus franqueados todo o suporte necessário para a operação. \n Estamos selecionando franqueados para todo o Brasil. Para mais informações, preencha seu cadastro abaixo que entraremos em contato. \n **Junte-se a Magic Feet e fazer parte dessa história de sucesso!**",
+         "blockClass":"end-section-sejafranqueado-text"
+       }
+     },
+
+     "flex-layout.col#end-section-sejafranqueado-imagem-franqueado": {
+        "title": "Panda | Imagem",
+       "children": ["image#end-section-sejafranqueado-imagem-franqueado"],
+       "props":{
+         "blockClass":"end-section-franqueado",
+         "width": "50%"
+       } 
+     },
+
+     "image#end-section-sejafranqueado-imagem-franqueado": {
+       "title": "Panda | Imagem",
+       "props": {
+         "src": "assets/img/footer-franqueado-img.png",
+         "blockClass":"end-section-franqueado"
+       }
+     }
+}

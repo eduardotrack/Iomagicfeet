@@ -1,0 +1,53 @@
+{
+    "experimental__visibility-layout#slider-dep1-col4": {
+      "title": "Slider (On/Off)",
+      "props": {
+        "visible": true
+      },
+      "children": ["flex-layout.col#slider-dep1-col4"]
+    },
+    "flex-layout.col#slider-dep1-col4": {
+      "props": {
+        "blockClass": [
+          "main-slider-banner" 
+        ]
+      },
+      "children": ["list-context.image-list#banner-dep1-col4", "link#banner-dep1-col4"]
+    },
+
+    "link#banner-dep1-col4": {
+        "props": {
+          "href": "/login?returnUrl={queryString.returnUrl}",
+          "label": "veja o calendário completo",
+          "blockClass": "main-slider-banner"
+        }
+      },
+
+    "list-context.image-list#banner-dep1-col4": {
+        "children": ["slider-layout#banner-dep1-col4-images"],
+        "props": {
+          "height": 650,
+          "images": [
+            {
+              "image": "assets/img/menu-demo-calendario.png"
+            },
+            {
+                "image": "assets/img/menu-demo-calendario.png"
+            }
+          ]
+        }
+      },
+      "slider-layout#banner-dep1-col4-images": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showPaginationDots": "never",
+          "blockClass": "slider-menu-desk"
+        }
+      }
+  }
+  

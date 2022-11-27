@@ -1,0 +1,16 @@
+{
+  "flex-layout.row#footer-4-desktop": {
+    "title": "Panda | Footer - Informações legais",
+    "children": ["rich-text#footer-legal-information"],
+    "props": {
+      "blockClass": "credits"
+    }
+  },
+  "rich-text#footer-legal-information": {
+    "title": "Panda | Footer - Créditos finais - Texto",
+    "props": {
+      "text": "LOREMIPSUM LTDA - ME - CNPJ: 20.315.9000/0001-68 © Todos os direitos reservados. 2018 -LOREMIPSUM LTDA - ME - CNPJ: 20.315.9000/0001-68 © Todos os direitos reservados. 2018",
+      "blockClass": "footer__legal-information"
+    }
+  }
+}

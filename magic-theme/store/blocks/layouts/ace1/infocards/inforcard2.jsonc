@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#ace1-infocards2": {
+        "title": "Panda | Área de Informações 2 - ACE1",
+        "props": {
+          "blockClass": "ace1-infocards2" 
+        },
+        "children": [
+            "flex-layout.col#ace1-infocards2-text",
+            "flex-layout.col#ace1-infocards2-img"
+        ]
+      },
+
+      "flex-layout.col#ace1-infocards2-img": {
+        "title": "Panda | Imagem ACE1",
+        "children": ["image#ace1-infocards2-img"],
+        "props":{
+        "blockClass":"ace1-infocards2"
+        } 
+    },
+
+    "image#ace1-infocards2-img": {
+        "props": {
+          "src": "assets/img/ace1/infocard2.png",
+          "blockClass":"ace1-infocards2"
+        }
+    },
+
+    "flex-layout.col#ace1-infocards2-text": {
+        "title": "Panda | Informações ACE1",
+        "children": [
+            "rich-text#ace1-infocards2-text"
+            ],
+        "props":{
+        "blockClass":"ace1-infocards2"
+        } 
+    },
+
+    "rich-text#ace1-infocards2-text": {
+        "title": "Panda | Texto ACE1",
+        "props": {
+          "text": "## Com a ACE1 **seu armário vale muito** \n Milhares de compradores estão atrás daquele sneaker esquecido no seu armário, **seja adulto ou infantil**. \n\n Hora de botar o armário para girar e fazer uma grana vendendo em poucos cliques na ACE1",
+          "blockClass":"ace1-infocards2"
+        }
+      }
+}

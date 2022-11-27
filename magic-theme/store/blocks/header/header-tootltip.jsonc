@@ -1,0 +1,45 @@
+{
+  "rich-text#tooltip-01": {
+    "title": "Panda | Header - Topbar - Texto",
+    "props": {
+      "text": "novos prazos de entrega para __todo brasil__",
+      "blockClass": "header__tooltip--text"
+    }
+  },
+  "vtex.menu@2.x:menu#tooltip": {
+    "title": "Panda | Header - Topbar - Contato",
+    "children": ["menu-item#contact", "menu-item#atend"]
+  },
+  "menu-item#contact": {
+    "props": {
+      "id": "menu-item-contact",
+      "blockClass": ["header__tooltip--link", "header__tooltip--link-icon"],
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "seja um franqueado",
+        "text": "seja um franqueado"
+      }
+    }
+  },
+  "menu-item#atend": {
+    "props": {
+      "id": "menu-item-atend",
+      "blockClass": "header__tooltip--link",
+      "type": "custom",
+      "iconId": "hpa-chat",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/atendimento",
+        "noFollow": false,
+        "tagTitle": "entre em contato",
+        "text": "entre em contato"
+      }
+    }
+  }
+}

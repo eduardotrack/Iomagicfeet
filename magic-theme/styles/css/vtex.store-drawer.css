@@ -1,0 +1,68 @@
+.openIconContainer {
+    padding: 0px;
+}
+
+.openIconContainer--header__drawer--search::after {
+    content: '.';
+    color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.2588 17.6091L13.4376 13.6999M15.3112 8.58449C15.3112 12.4369 12.1655 15.5599 8.285 15.5599C4.40453 15.5599 1.25879 12.4369 1.25879 8.58449C1.25879 4.73211 4.40453 1.60913 8.285 1.60913C12.1655 1.60913 15.3112 4.73211 15.3112 8.58449Z' stroke='%231C1C1C' stroke-width='2'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: 18px;
+    display: block;
+    width: 18px;
+}
+
+.openIconContainer--header__drawer--search :global(.vtex-store-drawer-0-x-menuIcon--header__drawer--search) {
+    display: none;
+}
+
+.drawerHeader--Panda-drawer__menu--mobile {
+    display: flex;
+    flex-direction: column;
+    background: #1C1C1C;
+    padding: 25px 20px;
+}
+
+.drawerHeader--Panda-drawer__menu--mobile :global(.vtex-store-drawer-0-x-closeIconButton) {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.drawerHeader--Panda-drawer__menu--mobile :global(.vtex-store-drawer-0-x-closeIcon) {
+    fill: #696969;
+    color: #696969;
+    stroke: #696969;
+}
+
+.childrenContainer--menu-mobile-nivel03,
+.childrenContainer--footer__nivel1--mob,
+.childrenContainer--menu-mobile-nivel01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.opened--menu-mobile-nivel03,
+.opened--menu-mobile-nivel02,
+.opened--footer__nivel1--mob {
+    min-height: 100vh;
+    display: block;
+    overflow: auto;
+}
+
+.drawerContent--menu-mobile-nivel03,
+.drawerContent--menu-mobile-nivel02,
+.drawerContent--footer__nivel1--mob {
+    display: flex;
+    min-height: 100%;
+    background: #E8E8E8;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.openIconContainer--department-bf-temp-submenu {
+    display: none;
+}

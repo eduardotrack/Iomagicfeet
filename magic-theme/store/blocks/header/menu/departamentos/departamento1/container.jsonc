@@ -1,0 +1,42 @@
+{
+  "menu-item#dep1": {
+    "props": {
+      "blockClass": ["header__menu", "main-menu-department"],
+      "id": "menu-item-dep1",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "NOVIDADES",
+        "type": "internal",
+        "href": "#"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dep1"]
+  },
+  "vtex.menu@2.x:submenu#dep1": {
+    "title": "NOVIDADES",
+    "props": {
+      "blockClass": ["main-menu-department-submenu"],
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-dep1"]
+  },
+  "flex-layout.row#menu-dep1": {
+    "props": {
+      "blockClass": ["main-menu-department-block"],
+      "colSizing": "auto",
+      "fullWidth": false,
+      "colGap": 4,
+      "experimentalHideEmptyCols": true
+    },
+    "children": [
+      "experimental__visibility-layout#menu-dep1-col1",
+      "experimental__visibility-layout#number-dep1-col1",
+
+      "experimental__visibility-layout#menu-dep1-col2",
+      "experimental__visibility-layout#banner-dep1-col2",
+ 
+      "experimental__visibility-layout#slider-dep1-col4"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+    "flex-layout.row#footer-2-mobile": {
+      "title": "Panda | Footer - Menu - Mobile",
+      "children": [
+        "flex-layout.col#logo-mobile-footer",
+        "vtex.menu@2.x:menu#footer-menu-mobile-institucional",
+        "flex-layout.col#footer-social",
+        "flex-layout.col#payment-flags-mobile",
+        "flex-layout.col#security-badges-mobile"
+      ],
+      "props": {
+        "blockClass": "footer__menu_mobile",
+        "paddingTop": 6,
+        "paddingBottom": 3
+      }
+    },
+
+    "flex-layout.col#logo-mobile-footer": {
+        "title": "Panda | Header - Logo",
+        "props": {
+          "verticalAlign": "middle",
+          "width": "20%"
+        },
+        "children": ["logo#logo-mobile-footer"]
+      },
+
+    "logo#logo-mobile-footer": {
+        "props": {
+          "title": "Logo da Panda Store",
+          "href": "/",
+          "url": "assets/img/footer-mobile-logo.png",
+          "width": "175",
+          "blockClass": "footer__logo"
+        }
+      },
+
+    "flex-layout.col#payment-flags-mobile": {
+        "title": "Panda | Footer - Selos - Pagamento",
+        "children": [
+          "rich-text#footer-payment-title",
+          "flex-layout.row#payment-methods-top",
+          "flex-layout.row#payment-methods-bottom"
+        ],
+        "props": {
+          "blockClass": "payment-flags-wrapper",
+          "horizontalAlign": "left",
+          "marginLeft": 0,
+          "marginRight": 0,
+          "paddingLeft": 0,
+          "paddingRight": 2,
+          "preventVerticalStretch": true,
+          "rowGap": 0,
+          "verticalAlign": "top",
+          "width": "33%"
+        }
+      },
+
+      "flex-layout.col#security-badges-mobile": {
+        "title": "Panda | Selos de segurança",
+        "children": [
+          "rich-text#footer-lights-title",
+          "flex-layout.row#footer-highlights" 
+        ],
+        "props": {
+          "blockClass": "security-badges",
+          "horizontalAlign": "left",
+          "marginLeft": 0,
+          "marginRight": 0,
+          "paddingLeft": 0,
+          "paddingRight": 2,
+          "preventVerticalStretch": true,
+          "rowGap": 0,
+          "verticalAlign": "top",
+          "width": "40%"
+        }
+      }
+  }
+  

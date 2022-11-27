@@ -1,0 +1,43 @@
+{
+    "flex-layout.row#ace1-header": {
+        "title": "Panda | Header ACE1",
+        "props": {
+          "blockClass": "ace1-header" 
+        },
+        "children": [
+            "flex-layout.col#ace1-header-img",
+            "flex-layout.col#ace1-header-cta"
+        ]
+      },
+
+      "flex-layout.col#ace1-header-img": {
+        "title": "Panda | Logo ACE1",
+        "children": ["image#ace1-header-img"],
+        "props":{
+        "blockClass":"ace1-header"
+        } 
+    },
+
+    "image#ace1-header-img": {
+        "props": {
+          "src": "assets/img/ace1/logo-ace1.png",
+          "blockClass":"ace1-header"
+        }
+    },
+
+    "flex-layout.col#ace1-header-cta": {
+        "title": "Panda | Link ACE1",
+        "children": ["link#ace1-header-cta"],
+        "props":{
+        "blockClass":"ace1-header"
+        } 
+    },
+
+    "link#ace1-header-cta": {
+        "props": {
+          "href": "https://ace1br.app.link/afeetlp",
+          "label": "Baixar App",
+          "blockClass": "ace1-header" 
+        }
+      }
+}

@@ -1,0 +1,45 @@
+{
+  "flex-layout.row#selling-price": {
+    "title": "Panda | Preço de venda",
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4
+    },
+    "children": ["product-selling-price"]
+  },
+
+  "flex-layout.row#list-price-savings": {
+    "title": "Panda | Preço de lista e desconto",
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "product__price",
+      "colGap": 2
+    },
+    "children": [
+      "flex-layout.col#prices-pdp",
+      "product-installments#summary"
+    ]
+  },
+  "flex-layout.col#prices-pdp": {
+    "children": ["product-list-price#pdp", "product-selling-price#pdp"],
+    "props": {}
+  },
+  "product-list-price#pdp": {
+    "props": {
+      "message": "{listPriceValue}"
+    }
+  },
+  "product-selling-price#pdp": {
+    "props": {
+      "message": "{sellingPriceValue}"
+    }
+  },
+  "product-price-savings#pdp": {
+    "props": {
+      "blockClass": "product__price-savings-pdp"
+    }
+  }
+}

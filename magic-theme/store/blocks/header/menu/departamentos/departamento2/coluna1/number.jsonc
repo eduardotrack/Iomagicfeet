@@ -1,0 +1,98 @@
+{
+    "experimental__visibility-layout#number-dep2-col1": {
+      "title": "Menu Numérico (On/Off)",
+      "props": {
+        "visible": true
+      },
+      "children": ["flex-layout.col#number-dep2-col1"]
+    },
+    "flex-layout.col#number-dep2-col1": {
+      "props": {
+        "blockClass": [
+          "main-number-menu",
+          "main-number-column",
+          "main-number-column-first"
+        ]
+      },
+      "children": ["vtex.menu@2.x:menu#number-dep2-col1"]
+    },
+    "vtex.menu@2.x:menu#number-dep2-col1": {
+      "props": {
+        "orientation": "vertical",
+        "blockClass": [
+          "main-number-menu",
+          "main-number-column",
+          "main-number-column-first"
+        ],
+        "title": {
+          "itemProps": {
+            "text": "por tamanho"
+          },
+          "type": "custom"
+        },
+        "items": [
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          }
+        ]
+      }
+    }
+  }
+  

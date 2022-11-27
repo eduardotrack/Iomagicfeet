@@ -1,0 +1,135 @@
+{
+    "flex-layout.row#retirada-em-loja-faq": {
+        "props": {
+          "blockClass": "panda-retirada-em-loja-faq" 
+        },
+        "children": [
+            "disclosure-layout-group#group-faq"
+        ]
+      },
+ 
+
+    "disclosure-layout-group#group-faq": {
+      "children": ["disclosure-layout#first-faq", "disclosure-layout#second-faq", "disclosure-layout#third-faq", "disclosure-layout#fourth-faq"],
+      "props": {
+        "blockClass": "panda-retirada-em-loja-faq" 
+      }
+    },
+  
+    "disclosure-layout#first-faq": {
+      "children": ["disclosure-trigger#first-faq", "disclosure-content#first-faq"],
+      "props": {
+        "blockClass": "panda-retirada-em-loja-faq" 
+      }
+    },
+    "disclosure-trigger#first-faq": {
+      "children": ["rich-text#question1-faq"],
+      "props": {
+        "blockClass": "panda-retirada-em-loja-faq" 
+      }
+    },
+    "disclosure-content#first-faq": {
+      "children": ["rich-text#answer1-faq"],
+      "props": {
+        "blockClass": "panda-retirada-em-loja-faq" 
+      }
+    },
+    "rich-text#question1-faq": {
+      "props": {
+        "text": "Posso retirar em todas as lojas físicas da Artwalk?"
+      }
+    },
+    "rich-text#answer1-faq": {
+      "props": {
+        "text": "No momento esse serviço está disponível apenas em São Paulo Capital e Rio de Janeiro, na página de produto você pode consultar o seu CEP."
+      }
+    },
+  
+    "disclosure-layout#second-faq": {
+      "children": ["disclosure-trigger#second-faq", "disclosure-content#second-faq"],
+      "props": {
+        "blockClass": "panda-retirada-em-loja-faq" 
+      }
+    },
+    "disclosure-trigger#second-faq": {
+      "children": ["rich-text#question2-faq"],
+      "props": {
+        "blockClass": "panda-retirada-em-loja-faq" 
+      }
+    },
+    "disclosure-content#second-faq": {
+      "children": ["rich-text#answer2-faq"],
+      "props": {
+        "blockClass": "panda-retirada-em-loja-faq" 
+      }
+    },
+    "rich-text#question2-faq": {
+      "props": {
+        "text": "Qual é o prazo da retirada?"
+      }
+    },
+    "rich-text#answer2-faq": {
+      "props": {
+        "text": "Para fazer uma simulação do prazo de entrega, basta escolher um produto desejado, selecionado cor e tamanho e clicar em comprar. No carrinho de compras, basta digitar o seu CEP e clicar em calcular o frete. O prazo de entrega é contado após a confirmação de pagamento e varia de acordo com o local solicitado para entrega e a forma de pagamento escolhida. Lembrando que o prazo de entrega passa a ser considerado a partir da aprovação do pedido pela instituição financeira e a Artwalk, após a confirmação de dados cadastrais, e é contado em dias úteis."
+      }
+    },
+
+    "disclosure-layout#third-faq": {
+        "children": ["disclosure-trigger#third-faq", "disclosure-content#third-faq"],
+        "props": {
+          "blockClass": "panda-retirada-em-loja-faq" 
+        }
+      },
+      "disclosure-trigger#third-faq": {
+        "children": ["rich-text#question3-faq"],
+        "props": {
+          "blockClass": "panda-retirada-em-loja-faq" 
+        }
+      },
+      "disclosure-content#third-faq": {
+        "children": ["rich-text#answer3-faq"],
+        "props": {
+          "blockClass": "panda-retirada-em-loja-faq" 
+        }
+      },
+      "rich-text#question3-faq": {
+        "props": {
+          "text": "Quanto custa para retirar na loja?"
+        }
+      },
+      "rich-text#answer3-faq": {
+        "props": {
+          "text": "A retirada em loja física é gratuita."
+        }
+      },
+
+
+    "disclosure-layout#fourth-faq": {
+        "children": ["disclosure-trigger#fourth-faq", "disclosure-content#fourth-faq"],
+        "props": {
+          "blockClass": "panda-retirada-em-loja-faq" 
+        }
+      },
+      "disclosure-trigger#fourth-faq": {
+        "children": ["rich-text#question4-faq"],
+        "props": {
+          "blockClass": "panda-retirada-em-loja-faq" 
+        }
+      },
+      "disclosure-content#fourth-faq": {
+        "children": ["rich-text#answer4-faq"],
+        "props": {
+          "blockClass": "panda-retirada-em-loja-faq" 
+        }
+      },
+      "rich-text#question4-faq": {
+        "props": {
+          "text": "Outra pessoa pode retirar por mim?"
+        }
+      },
+      "rich-text#answer4-faq": {
+        "props": {
+          "text": "Não, a retirada deve ser feita pelo titular da compra mediante a apresentação de um documento com foto e o cartão utilizado na compra."
+        }
+      }
+  }

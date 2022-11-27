@@ -1,0 +1,38 @@
+{
+    "store.custom#formulario-direito": {
+      "blocks": [
+        "flex-layout.row#formulario-direito-title",
+        "flex-layout.row#formulario-direito"
+      ]
+    },
+
+
+    "flex-layout.row#formulario-direito-title": {
+      "props": {
+        "blockClass": "panda-tipo-entrega" 
+      },
+      "children": [
+        "rich-text#formulario-direito-title"
+      ]
+    },
+
+    "rich-text#formulario-direito-title": {
+      "props": {
+        "blockClass": "panda-tipo-entrega__title",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "# Solicite seus **Dados** \n Exerça seus direitos enquanto titular de dados pessoais. \n\n Este espaço é destinado para as solicitações que envolvem os seus dados pessoais, em atendimento ao que dispõe a Lei Geral de Proteção de Dados - LGPD. \n\n  Se as suas dúvidas se referem a um produto ou a um pedido realizado, entre em contato com a nossa Central de Relacionamento: \n https://www.magicfeet.com.br/institucional/central-de-relacionamento \n\n  Se você deseja trocar ou devolver um produto, acesse o Formulário de Troca: \n https://www.magicfeet.com.br/formulario-de-troca"
+      },
+      "title": "Título - Formulário de Direito"
+    },
+
+    "flex-layout.row#formulario-direito": {
+      "props": {
+        "blockClass": "panda-formulario-direito" 
+      },
+      "children": [
+        "pd-coreForm"
+      ]
+    }
+  }
+  

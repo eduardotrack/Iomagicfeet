@@ -1,0 +1,43 @@
+{
+  "menu-item#dep7": {
+    "props": {
+      "blockClass": ["header__menu", "main-menu-department"],
+      "id": "menu-item-dep7",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "calçados",
+        "type": "internal",
+        "href": "#"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#dep7"]
+  },
+  "vtex.menu@2.x:submenu#dep7": {
+    "title": "calçados",
+    "props": {
+      "blockClass": ["main-menu-department-submenu"],
+      "width": "100%"
+    },
+    "children": ["flex-layout.row#menu-dep7"]
+  },
+  "flex-layout.row#menu-dep7": {
+    "props": {
+      "blockClass": ["main-menu-department-block"],
+      "colSizing": "auto",
+      "fullWidth": true,
+      "colGap": 4,
+      "experimentalHideEmptyCols": true
+    },
+    "children": [
+      "experimental__visibility-layout#menu-dep7-col1",
+      "experimental__visibility-layout#number-dep7-col1",
+
+      "experimental__visibility-layout#menu-dep7-col2",
+    
+
+      "experimental__visibility-layout#banner-dep7-col3",
+      "experimental__visibility-layout#brands-dep7-col4"
+    ]
+  }
+}

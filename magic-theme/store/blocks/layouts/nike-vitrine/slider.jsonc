@@ -1,0 +1,31 @@
+{
+    "list-context.image-list#slider-full-nike": {
+      "title": "Panda | Banner Nike",
+      "children": ["slider-layout#slider-full-nike"],
+      "props": {
+        "images": [
+          {
+            "image": "assets/img/nike-banner-desk.png",
+            "mobileImage": "assets/img/nike-banner.png"
+          },
+          {
+            "image": "assets/img/nike-banner-desk.png",
+            "mobileImage": "assets/img/nike-banner.png"
+          }
+        ]
+      }
+    },
+    "slider-layout#slider-full-nike": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        }, 
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "blockClass": "home__slider"
+      }
+    }
+  }
+  

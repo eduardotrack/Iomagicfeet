@@ -1,0 +1,95 @@
+.currencyContainer--summary {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #1C1C1C;
+}
+
+@media (max-width: 767px) {
+    .currencyContainer--summary {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        color: #1C1C1C;
+    }
+}
+
+.installments--Panda-summary-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #1C1C1C;
+}
+
+@media (max-width: 767px) {
+    .installments--Panda-summary-price {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        color: #1C1C1C;
+    }
+}
+
+.currencyContainer--Panda-summary-price {
+    font-weight: 700;
+}
+
+.sellingPrice--summary-search {
+    font-family: 'Roboto-Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #1C1C1C;
+}
+
+.savings--product-discount-tag-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 6px;
+    width: 65px;
+    height: 20px;
+    background: #1C1C1C;
+    font-family: 'WorkSans-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.listPriceValue {
+    font-family: 'Roboto-Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.sellingPrice {
+    font-family: 'Roboto-Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    color: #1C1C1C;
+}
+
+@media (max-width: 767px) {
+    .savings--product-discount-tag-search {
+        font-size: 10px;
+        width: 55px;
+    }
+}

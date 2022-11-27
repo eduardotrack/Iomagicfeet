@@ -1,0 +1,21 @@
+{
+  "flex-layout.row#shelf-view": {
+    "title": "Panda | Shelf de produtos vistos",
+    "children": ["shelf.relatedProducts#option-1"],
+    "props": {
+      "blockClass": "shelf__product"
+    }
+  },
+  "shelf.relatedProducts#option-1": {
+    "blocks": ["product-summary.shelf#product-search"],
+    "props": {
+      "recommendation": "view",
+      "blockClass": "shelf",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 4,
+        "titleText": "produtos relacionados"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+    "modal-trigger#primeira-compra": {
+        "title": "Panda | Popup - Primera Compra",
+        "props": {
+            "trigger": "load-session"
+         
+        },
+        "children": [
+            "modal-layout#primeira-compra"
+        ]
+      },
+ 
+      "modal-layout#primeira-compra": {
+        "props":{
+            "blockClass": "modal-primeira-compra",
+            "backdrop": "none",
+            "scroll": "body"
+        },
+        "children": [
+            "modal-header",
+            "rich-text#primeira-compra-content",
+            "pd-popupFirstBuy",
+            "link#primeira-compra-content"
+        ]
+      },
+
+      "rich-text#primeira-compra-content": {
+        "props": {
+          "text": "### CUPOM DE PRIMEIRA COMPRA \n É novo por aqui? Ganhe 10% de desconto\n em sua primeira compra!"
+        }
+      },
+
+      "link#primeira-compra-content": {
+        "props": {
+          "href": "/regulamentocupom",
+          "label": "* Confira as regras de utilização "
+        }
+      }
+}

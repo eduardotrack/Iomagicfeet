@@ -1,37 +1,64 @@
 {
   "store.home": {
-    "blocks": [
-      "slider-layout#text-test"
-    ]
+    "title": "Panda | Home",
+    "blocks": ["disposition-layout#home"]
+ 
   },
 
-  "slider-layout#text-test": {
+  "retail-rocket-container#home": {
     "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
-    },
-    "children": ["rich-text#1", "rich-text#2", "rich-text#3"]
+      "markupBlock": "635abf00cf114781944b4d29",
+      "type": "HOME"
+    }
   },
 
-  "rich-text#1": {
+  "disposition-layout#home": {
+    "title": "Panda | Home - Disposição do conteúdo",
+    "children": [
+      "list-context.image-list#slider-full-home",
+      "responsive-layout.desktop#tips-home",
+      "responsive-layout.phone#tips-home",
+      "retail-rocket-container#home",
+      "flex-layout.row#procura-home",
+      "flex-layout.row#shelf-home-01",
+      "flex-layout.row#quem-home",
+      "flex-layout.row#exclusivo-home",
+      "flex-layout.row#calendario-home",
+      "flex-layout.row#brands-home"
+    ],
     "props": {
-      "text": "Test1"
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        } 
+      ]
     }
-  },
-  "rich-text#2": {
-    "props": {
-      "text": "Test2"
-    }
-  },
-  "rich-text#3": {
-    "props": {
-      "text": "Test3"
-    }
-  }
+  } 
 }

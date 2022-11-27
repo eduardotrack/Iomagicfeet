@@ -1,0 +1,75 @@
+{
+    "flex-layout.row#calendario-home": {
+        "title": "Panda | Calendario",
+        "children": [
+          "responsive-layout.desktop#calendario-home",
+          "responsive-layout.phone#calendario-home-mobile"
+        ],
+
+        "props":{
+          "blockClass":"calendario-home-row"
+        } 
+      },
+
+      "responsive-layout.desktop#calendario-home": {
+        "title": "Panda | Calendario - Desktop",
+        "children": ["image#calendario-home"]
+      },
+ 
+      "responsive-layout.phone#calendario-home-mobile": {
+        "title": "Panda | Calendario - Mobile",
+        "children": [ "flex-layout.col#calendario-home-mobile"]
+      },
+
+    "image#calendario-home": {
+        "title": "Panda | Imagem Calendario",
+        "props": {
+          "src": "assets/img/em-breve-home.png",
+          "blockClass":"calendario-home-row"
+        }
+      },
+
+      "flex-layout.col#calendario-home-mobile": {
+        "props": {
+          "blockClass": [
+            "main-slider-banner" 
+          ]
+        },
+        "children": ["list-context.image-list#calendario-home-mobile", "link#calendario-home-mobile"]
+      },
+  
+      "link#calendario-home-mobile": {
+          "props": {
+            "href": "/login?returnUrl={queryString.returnUrl}",
+            "label": "veja o calendário completo",
+            "blockClass": "main-slider-banner"
+          }
+        },
+  
+      "list-context.image-list#calendario-home-mobile": {
+          "children": ["slider-layout#calendario-home-mobile"],
+          "props": {
+            "height": 650,
+            "images": [
+              {
+                "image": "assets/img/menu-demo-calendario.png"
+              },
+              {
+                  "image": "assets/img/menu-demo-calendario.png"
+              }
+            ]
+          }
+        },
+        "slider-layout#calendario-home-mobile": {
+          "props": {
+            "itemsPerPage": {
+              "desktop": 1,
+              "tablet": 1,
+              "phone": 1
+            },
+            "infinite": true,
+            "showPaginationDots": "never",
+            "blockClass": "slider-menu-desk"
+          }
+        }
+}

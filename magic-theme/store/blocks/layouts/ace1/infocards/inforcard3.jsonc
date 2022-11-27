@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#ace1-infocards3": {
+        "title": "Panda | Área de Informações 2 - ACE1",
+        "props": {
+          "blockClass": "ace1-infocards3" 
+        },
+        "children": [
+          "flex-layout.col#ace1-infocards3-text",
+          "flex-layout.col#ace1-infocards3-img"
+        ]
+      },
+
+      "flex-layout.col#ace1-infocards3-img": {
+        "title": "Panda | Imagem ACE1",
+        "children": ["image#ace1-infocards3-img"],
+        "props":{
+        "blockClass":"ace1-infocards3"
+        } 
+    },
+
+    "image#ace1-infocards3-img": {
+        "props": {
+          "src": "assets/img/ace1/main-img-section.png",
+          "blockClass":"ace1-infocards3"
+        }
+    },
+
+    "flex-layout.col#ace1-infocards3-text": {
+        "title": "Panda | Informações ACE1",
+        "children": [
+            "rich-text#ace1-infocards3-text"
+            ],
+        "props":{
+        "blockClass":"ace1-infocards3"
+        } 
+    },
+
+    "rich-text#ace1-infocards3-text": {
+        "title": "Panda | Texto ACE1",
+        "props": {
+          "text": "## 100% original.100% das vezes. \n A originalidade é o maior compromisso da ACE1. Todos os produtos vendidos pela plataforma **são avaliados em mãos por um time de especialistas** antes de serem enviados para o comprador \n Todo produto é acompanhado de um Certificado Digital de Autenticidade NFT",
+          "blockClass":"ace1-infocards3"
+        }
+      }
+}

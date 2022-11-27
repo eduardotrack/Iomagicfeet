@@ -1,0 +1,42 @@
+{
+  "flex-layout.col#tips-item-02": {
+      "title": "Panda | Tips 02",
+      "children": ["link#tips-item-02"],
+      "props":{
+          "blockClass": "tips-item-wrapper" 
+      }
+  },
+
+  "link#tips-item-02": {
+      "title": "Panda | Link Tips 02",
+      "children": ["experimental__visibility-layout#tips-item-02", "rich-text#tips-item-02"],
+      "props": {
+        "href": "",
+        "blockClass": "tips-item-link"
+      }
+    },
+
+    "experimental__visibility-layout#tips-item-02": {
+      "title": "Icone Tips 02 (On/Off)",
+      "props": {
+        "visible": true
+      },
+      "children": ["image#tips-item-02"]
+    },
+
+    "image#tips-item-02": {
+      "title": "Panda | Imagem Tips 02",
+      "props": {
+        "src": "https://magicfeet.vtexassets.com/assets/vtex.file-manager-graphql/images/7dca9b0d-2b39-4d8b-928a-574cb57b5341___9ead77491c2c8b303ba418116184edf3.png",
+        "blockClass": "tips-item-img"
+      }
+    },
+
+    "rich-text#tips-item-02": {
+      "title": "Panda | Texto Tips 02",
+      "props": {
+        "text": "**solicite sua troca** \n até 30 dias após a compra",
+        "blockClass": "tips-item-text"
+      }
+    }
+}

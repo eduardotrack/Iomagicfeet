@@ -1,0 +1,24 @@
+.title {
+    display: block;
+    font-family: 'WorkSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: #000000;
+    margin-top: 80px;
+    margin-left: 15px;
+}
+
+.dot {
+    background: #1C1C1C;
+}
+
+.dot--isActive--shelf {
+    border: 2px solid #1C1C1C;
+    background: #fff;
+    transform: matrix(0.86, 0.49, -0.53, 0.86, 0, 0);
+    height: 20px!important;
+    margin-top: -6px;
+    border-radius: 50px;
+}

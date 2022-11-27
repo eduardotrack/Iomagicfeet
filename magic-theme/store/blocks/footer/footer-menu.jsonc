@@ -1,0 +1,56 @@
+{
+  "flex-layout.row#footer-2-desktop": {
+    "title": "Panda | Footer - Menu - Desktop",
+    "children": [
+      "vtex.menu@2.x:menu#footer-all-categories",
+      "vtex.menu@2.x:menu#footer-all-categories-2",
+      "vtex.menu@2.x:menu#footer-all-categories-3",
+      "flex-layout.col#footer-social",
+      "flex-layout.col#footer-contact"
+    ],
+    "props": {
+      "blockClass": "footer__menu",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+
+  "rich-text#footer-social-networks": {
+    "title": "Panda | Footer - Menu - Título - Redes Sociais",
+    "props": {
+      "text": "### fique ligado",
+      "blockClass": "footer__title"
+    }
+  },
+  "flex-layout.col#footer-social": {
+    "title": "Panda | Footer - Menu - Social",
+    "children": [
+      "rich-text#footer-social-networks",
+      "flex-layout.row#social-networks-wrapper"
+    ],
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#footer-contact":{
+    "title": "Panda | Footer - Menu - Contato",
+    "children": [
+      "vtex.menu@2.x:menu#footer-contact-tooltip"
+    ],
+
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#footer-contact": {
+    "children": [
+      "vtex.menu@2.x:menu#footer-contact-tooltip",
+      "rich-text#footer-social-networks",
+      "flex-layout.row#social-networks-wrapper"
+    ],
+    "props": {
+      "blockClass": "footer__menu"
+    }
+  }
+}

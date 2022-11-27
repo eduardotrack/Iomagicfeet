@@ -1,0 +1,28 @@
+{
+    "store.custom#quem-somos": {
+      "title": "Panda | Quem Somos",
+      "blocks": ["disposition-layout#quem-somos"]
+    },
+  
+    "disposition-layout#quem-somos": {
+      "title": "Panda | Quem Somos - Disposição do conteúdo",
+      "children": [
+        "flex-layout.row#main-banner-quemsomos",
+        "flex-layout.row#sub-main-quemsomos",
+        "flex-layout.row#mvv-container"
+      ],
+      "props": {
+        "disposition": [
+          {
+            "order": 1
+          }, 
+          {
+            "order": 2
+          }, 
+          {
+            "order": 3
+          }
+        ]
+      }
+    } 
+  }

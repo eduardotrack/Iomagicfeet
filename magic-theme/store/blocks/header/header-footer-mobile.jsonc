@@ -1,0 +1,87 @@
+{
+    "flex-layout.row#dep1-1-mobile-nivel-1-footer": {
+        "title": "Panda | Header - Menu Principal - Footer",
+        "props": {
+          "blockClass": "footer__nivel1--mob"
+        },
+        "children": ["flex-layout.col#dep1-1-mobile-nivel-1-footer", "flex-layout.col#dep1-2-mobile-nivel-1-footer"]
+      },
+    
+      "flex-layout.col#dep1-1-mobile-nivel-1-footer": {
+        "title": "Panda | Menu Departamento 01 - Nivel 01 - Footer Social",
+        "props": {
+          "blockClass": "footer__nivel1--mob"
+        },
+        "children": [ "logo#mobile", "vtex.menu@2.x:menu#dep-inst-mobile-nivel-1"]
+      },
+
+      "vtex.menu@2.x:menu#dep-inst-mobile-nivel-1": {
+        "title": "Panda | Menu Departamento 01 - Nivel 01 - Footer",
+        "props": {
+          "blockClass": ["menu-mobile-footer", "submenu-mobile-footer"],
+          "orientation": "vertical",
+          "items": [
+            {
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
+              }
+            },
+            {
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
+              }
+            },
+            {
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
+              }
+            },
+            {
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+                "type": "internal",
+                "href": "#",
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
+              }
+            } 
+          ]
+        }
+      },
+    
+      "flex-layout.col#dep1-2-mobile-nivel-1-footer": {
+        "title": "Panda | Menu - Nivel 01 - Footer",
+        "props": {
+          "blockClass": "footer__nivel1--mob-2"
+        },
+        "children": ["list-context.image-list#social-networks", "rich-text#dep1-1-mobile-nivel-1-footer"]
+      },
+    
+      "rich-text#dep1-1-mobile-nivel-1-footer": {
+        "title": "Panda | Menu - Nivel 1 - Footer Texto",
+        "props": {
+          "text": "FALE CONOSCO \n ###### (11) 3664-3822",
+          "blockClass": "footer__nivel1--mob"
+        }
+      }
+}

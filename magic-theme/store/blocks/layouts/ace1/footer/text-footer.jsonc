@@ -1,0 +1,76 @@
+{
+  "flex-layout.row#ace1-text-footer": {
+      "title": "Panda | Área principal ACE1",
+      "props": {
+        "blockClass": "ace1-text-footer" 
+      },
+      "children": [
+          "flex-layout.col#ace1-text-footer-text"
+      ]
+    },
+
+  "flex-layout.col#ace1-text-footer-text": {
+      "title": "Panda | Informações ACE1",
+      "children": [
+          "rich-text#ace1-text-footer-text",
+          "list-context.media-list#ace1-text-footer-text",
+          "rich-text#ace1-text-footer-text-list"
+          ],
+      "props":{
+      "blockClass":"ace1-text-footer"
+      } 
+  },
+
+  "rich-text#ace1-text-footer-text": {
+      "title": "Panda | Texto ACE1",
+      "props": {
+        "text": "#### A ACE1 agora é grupo AFEET",
+        "blockClass":"ace1-text-footer"
+      }
+    },
+
+    "rich-text#ace1-text-footer-text-list": {
+      "title": "Panda | Texto ACE1",
+      "props": {
+        "text": "Há mais de 3 anos a ACE1 está conectada ao mercado de sneakers brasileiro. Neste tempo, nos esforçamos pelo crescimento da cultura e do interesse dos brasileiros por tênis. \n\n  Nos últimos anos, o mercado de revendas afastou quem gosta de sneakers com valores extras sobre os produtos. Nós da ACE1, não acreditamos que apenas um nicho deve ter acesso aos tênis. Acreditamos na democratização e iremos defendê-la. \n\n Buscando fornecer cada vez mais acesso aos amantes dessa cultura e valorizando a sustentabilidade e a economia circular, anunciamos que a ACE1 agora é Grupo Afeet! \n\n  A nossa nova plataforma surge com o novo propósito de vender apenas produtos quase novos e de ótima qualidade por preços mais acessíveis. Agora você que compra na Artwalk, Authentic Feet e magicfeet, pode vender seus tênis de maneira rápida e fácil pela ACE1, ou até mesmo ganhar saldo para usar em sneakers novos nas lojas do Grupo Afeet. \n\n  Não achou aquele tênis especial pelo precinho que você queria? Compre um modelo quase novo com certificação de originalidade na ACE1 - agora fortalecida pela visão de mercado, logística, expertise e presença nacional da Afeet. \n\n Em breve traremos mais novidades para oferecer cada vez mais segurança e acessibilidade para você que compra e vende tênis no Brasil.",
+        "blockClass":"ace1-text-footer"
+      }
+    },
+
+    "list-context.media-list#ace1-text-footer-text": {
+      "title": "Panda | Links ACE1",
+      "children": ["list-context-renderer#ace1-text-footer-text"],
+      "props": {
+          "blockClass":"ace1-text-footer",
+          "mediaList": [
+              {
+              "image": "assets/img/ace1/footer-logo-1.png",
+              "mobileImage": "assets/img/ace1/footer-logo-1.png"
+              },
+              
+              {
+              "image": "assets/img/ace1/footer-logo-2.png",
+              "mobileImage": "assets/img/ace1/footer-logo-2.png"
+              },
+              
+              {
+              "image": "assets/img/ace1/footer-logo-3.png",
+              "mobileImage": "assets/img/ace1/footer-logo-3.png"
+              },
+
+              {
+                "image": "assets/img/ace1/footer-logo-4.png",
+                "mobileImage": "assets/img/ace1/footer-logo-4.png"
+              }
+          ]
+      }
+    },
+
+    "list-context-renderer#ace1-text-footer-text": {
+      "props": {
+      "blockClass":"ace1-text-footer",
+        "listElement": "ul",
+        "itemElement": "li"
+      }
+    }
+}

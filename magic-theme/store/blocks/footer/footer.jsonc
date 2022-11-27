@@ -1,0 +1,32 @@
+{
+  "footer": {
+    "title": "Panda | Footer",
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "title": "Panda | Footer - Desktop",
+    "children": [
+      "flex-layout.row#newsletter-wrapper",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop"
+    ]
+  },
+
+  // FOOTER MOBILE
+  "footer-layout.mobile": {
+    "title": "Panda | Footer - Mobile",
+    "children": [
+      "flex-layout.row#newsletter-wrapper",
+      "flex-layout.row#footer-2-mobile",
+      "flex-layout.row#footer-3-mobile",
+      "flex-layout.row#footer-developed-powered"
+     
+    ]
+  },
+
+  "retail-rocket-container#global": {
+    "props": {
+      "markupBlock": "635abef6cf114781944b4d28"
+    }
+  }
+}

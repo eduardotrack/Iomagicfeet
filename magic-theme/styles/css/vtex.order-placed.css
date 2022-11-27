@@ -1,0 +1,53 @@
+.confirmationIconWrapper {
+    color: #5dff49;
+}
+
+.orderPlacedHeader :global(.vtex-flex-layout-0-x-flexRowContent--confirmationButtons) {
+    display: none;
+}
+
+.noticeListItem {
+    border: none;
+}
+
+.orderWrapper :global(.vtex-button),
+.orderPlacedHeader :global(.vtex-button) {
+    background: #1c1c1c;
+    border-radius: 8px;
+    padding: 0px 30px;
+    border: none;
+    overflow: hidden;
+}
+
+.noticeListItem :global(.vtex-button) {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderWrapper :global(.vtex-button__label),
+.orderPlacedHeader :global(.vtex-button__label) {
+    font-family: 'WorkSans-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    padding: 0;
+}
+
+.cancelOrderButton :global(.vtex-button) {
+    background: transparent;
+}
+
+.cancelOrderButton :global(.vtex-button__label) {
+    text-decoration: underline;
+}
+
+.cancelOrderButton,
+.updateOrderButton {
+    display: none !important;
+}
