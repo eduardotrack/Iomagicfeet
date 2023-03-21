@@ -575,3 +575,8 @@
     text-align: center;
     margin: 0 auto;
 }
+
+.imageElement--list-brands-footer{
+    min-height: 19px;
+    width: auto !important;
+}

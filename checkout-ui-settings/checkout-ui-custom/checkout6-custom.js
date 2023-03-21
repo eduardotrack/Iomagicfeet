@@ -810,401 +810,6 @@
  */
 //
 
-/** 
- progress Bar
-*/
-
-function progressiveBar_getCookie(chave) {
-    var chaveIgual = chave + "=";
-    var pares = document.cookie.split(";");
-    for (let i = 0; i < pares.length; i++) {
-        var par = pares[i];
-        while (par.charAt(0) == " ") {
-            par = par.substring(1);
-        }
-        if (par.indexOf(chaveIgual) == 0) {
-            return par.substring(chaveIgual.length);
-        }
-    }
-    return "";
-}
-
-function progressiveBar_checkCookie() {
-
-    var progressiveBar = this.progressiveBar_getCookie('progressiveBar');
-    if (progressiveBar) {
-        return true
-    } else {
-        return false
-    }
-
-}
-
-function progressiveBar_create() {
-    // Mudanças da label inicial
-    const labelHeader = "APROVEITE NOSSO DESCONTO PROGRESSIVO"
-    const subTitle = "MAIS PRODUTOS <b>MAIS DESCONTOS</b>"
-    const paragraphText = "Adicione em seu carrinho produtos com <b>selo de Black Friday</b> e ganhe até <b>40% de desconto</b>"
-
-    const listPercentage = [{
-            "percentage": "0%",
-            "itens": 0
-        },
-
-        {
-            "percentage": "20%",
-            "itens": 2
-        },
-
-        {
-            "percentage": "30%",
-            "itens": 3
-        },
-
-        {
-            "percentage": "40%",
-            "itens": 4
-        }
-    ]
-
-    const tooltipBar = `Adicione mais ${listPercentage[1].itens} produtos com selo e ganhe 20% de Desconto!`
-
-    // Criar LI customizada
-    var listItens = ""
-
-    for (var i = 0; listPercentage.length > i; i++) {
-        listItens += `<li class="progressiveBar_popup--number ${i == 0 ? "progressiveBar_popup--number-active" : ""}" data-itens-value="${listPercentage[i].itens}"><span>${listPercentage[i].percentage}</span></li>`
-    }
-
-    // Cria o componente visual caso a APP esteja ativa
-    $('body').append(`
-        <div id="progressiveBar_popup" class="progressiveBar_popup progressiveBar_popup--closed">
-            <div class="progressiveBar_popup--header">
-                <h5>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22.239" height="12.619" viewBox="0 0 22.239 12.619">
-                        <g id="Icon_feather-arrow-up" data-name="Icon feather-arrow-up" transform="translate(-5.379 -6)">
-                        <path id="Caminho_2" data-name="Caminho 2" d="M7.5,16.5l9-9,9,9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
-                        </g>
-                    </svg>
-
-                    ${labelHeader}
-                </h5>
-            </div>
-
-            <div class="progressiveBar_popup--body">
-                <h6>${subTitle}</h6>
-                <p>${paragraphText}</p>
-
-                <div class="progressiveBar_popup--bar">
-                    <div>
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                                <g id="Grupo_1" data-name="Grupo 1" transform="translate(-1517 -988)">
-                                    <g id="Elipse_4" data-name="Elipse 4" transform="translate(1517 988)" fill="none" stroke="#fff" stroke-width="1">
-                                    <circle cx="9" cy="9" r="9" stroke="none"/>
-                                    <circle cx="9" cy="9" r="8.5" fill="none"/>
-                                    </g>
-                                    <text id="_" data-name="!" transform="translate(1524 1001)" fill="#fff" font-size="11" font-family="Lato-Black, Lato" font-weight="800"><tspan x="0" y="0">!</tspan></text>
-                                </g>
-                            </svg>
-
-                            ${tooltipBar}
-                        </p>
-
-                        <div class="progressiveBar_popup--arrow" style="margin-left: 1%;"></div>
-                    </div>
-
-                    <ul>
-                        ${listItens}
-                    </ul>
-
-                    <strong style="background: linear-gradient(90deg, #5dff49 0%, #ddd 0%);"></strong>
-                </div>
-            </div>
-        </div>
-    `)
-
-    $(".progressiveBar_popup--header").on("click", function() {
-        if ($(".progressiveBar_popup").hasClass("progressiveBar_popup--closed")) {
-            $(`.progressiveBar_popup`).removeClass("progressiveBar_popup--closed");
-        } else {
-            $(`.progressiveBar_popup`).addClass("progressiveBar_popup--closed");
-        }
-    });
-
-    progressiveBar_popup();
-}
-
-function progressiveBar_cart() {
-    // Função para tratar o carrinho antigo
-    function oldCart(orderForm) {
-        // Iniciar a leitura do carrinho antigo para migrar os dados
-        const itens = orderForm.items
-
-        if (itens.length > 0) {
-            var checkItens = '';
-
-            for (var i = 0; i < itens.length; i++) {
-                // Checa por produto os dados de Clusters
-                var url = `/api/catalog_system/pub/products/search/?fq=productId:${itens[i].productId}`
-
-                $.ajax({
-                    url: url,
-                    type: "GET",
-                    async: false,
-                    success: function(data) {
-                        const productClusters = JSON.stringify(data[0].productClusters)
-
-                        // Caso exista o cluster criaremos um objeto com alguns dados de indentificação
-                        if (productClusters.indexOf('Black Friday 2022') > -1) {
-                            checkItens += `{"productId": "${data[0].productId}", "productName": "${data[0].productName}", "productReference": "${data[0].productReference}" },`
-                            window.localStorage.setItem('progressiveCart', checkItens)
-                        }
-                    }
-                })
-            }
-
-            // Checagem dos itens adicionados
-            const itensControl = window.localStorage.getItem('progressiveCart') || null
-            if (itensControl) {
-                const cartProgressive = JSON.parse(`[${itensControl.substring(0, itensControl.length - 1)}]`)
-
-                // Se algum dos produtos durante a leitura foi enquadrado no desconto progressivo carregamos a interface
-                if (cartProgressive.length > 0) {
-                    progressiveBar_popup()
-                }
-            }
-
-        } else {
-            return
-        }
-    }
-
-    // Checar carrinho - Ao iniciar o APP de desconto progressivo, precisamos verificar se existe algum carrinho antigo sem leitura
-    vtexjs.checkout.getOrderForm().done(function(orderForm) {
-        const hasCart = window.localStorage.getItem('progressiveCart') || null
-
-        if (!hasCart) {
-            // É um antigo carrinho e precisa de tratamento
-            oldCart(orderForm)
-        }
-    });
-}
-
-function progressiveBar_popup() {
-    const hasCart = window.localStorage.getItem('progressiveCart') || null
-
-    if (hasCart) {
-        const itensControl = window.localStorage.getItem('progressiveCart') || null
-
-        const cartProgressive = JSON.parse(`[${itensControl.substring(0, itensControl.length - 1)}]`)
-
-        if (cartProgressive.length > 0) {
-            // Carregar quantidade de itens ja sincronizados
-            const itensCount = cartProgressive.length
-
-            const stepsPercentage = document.querySelectorAll('.progressiveBar_popup--bar ul li')
-
-            var checkSteps = ''
-
-            stepsPercentage.forEach(function(item) {
-                const stepValue = $(item).attr("data-itens-value")
-
-                if (stepValue > itensCount) {
-                    const step = {}
-                    step.item = stepValue
-                    step.status = false
-
-                    checkSteps += `${JSON.stringify(step)},`
-                } else {
-                    const step = {}
-                    step.item = stepValue
-                    step.status = true
-
-                    checkSteps += `${JSON.stringify(step)},`
-                }
-            });
-
-            // Aplicar os efeitos visuais as etapas 
-            const arraySteps = JSON.parse(`[${checkSteps.substring(0, checkSteps.length - 1)}]`)
-
-            for (var i = 0; arraySteps.length > i; i++) {
-                if (arraySteps[i].status == true) {
-                    // Controles visuais 
-                    var t = i + 1
-
-                    var greyBar = 35 * t
-                    var arrow = 32 * t
-
-                    if (i == (arraySteps.length - 1)) {
-                        greyBar = 35 * i
-                        arrow = 32 * i
-                    }
-
-                    var next = ''
-
-                    if (i == 0) {
-                        var t = i + 1
-                        next = arraySteps[t].item - 1
-                    } else if (i == (arraySteps.length - 1)) {
-                        next = 0
-                    } else {
-                        var t = i + 1
-                        next = arraySteps[t].item - arraySteps[i].item
-                    }
-
-                    var plural
-
-                    if (next > 1) {
-                        plural = "produtos"
-                    } else {
-                        plural = "produto"
-                    }
-
-                    var tooltipBar = ``
-
-                    if (i == (arraySteps.length - 1)) {
-                        tooltipBar = `Quantidade necessária atingida!`
-                    } else {
-                        var t = i + 1
-                        var stepPercentage = $(`.progressiveBar_popup--number[data-itens-value="${arraySteps[t].item}"] span`).html()
-                        tooltipBar = `Adicione mais ${next} ${plural} com selo e ganhe ${stepPercentage} de Desconto!`
-                        $(`.progressiveBar_popup--number[data-itens-value="${arraySteps[t].item}"] span`).css("border", `1px solid #000`);
-                    }
-
-                    $(".progressiveBar_popup--arrow").css("margin-left", `${arrow}%`);
-                    $(".progressiveBar_popup--bar strong").css("background", `linear-gradient(90deg, #5dff49 ${greyBar}%, #ddd ${greyBar}%)`);
-                    $(`.progressiveBar_popup--number[data-itens-value="${arraySteps[i].item}"]`).addClass("progressiveBar_popup--number-active");
-
-                    $(".progressiveBar_popup--bar div p").html(`
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                        <g id="Grupo_1" data-name="Grupo 1" transform="translate(-1517 -988)">
-                            <g id="Elipse_4" data-name="Elipse 4" transform="translate(1517 988)" fill="none" stroke="#fff" stroke-width="1">
-                            <circle cx="9" cy="9" r="9" stroke="none"/>
-                            <circle cx="9" cy="9" r="8.5" fill="none"/>
-                            </g>
-                            <text id="_" data-name="!" transform="translate(1524 1001)" fill="#fff" font-size="11" font-family="Lato-Black, Lato" font-weight="800"><tspan x="0" y="0">!</tspan></text>
-                        </g>
-                    </svg>
-
-                    ${tooltipBar}`)
-                } else {
-                    $(`.progressiveBar_popup--number[data-itens-value="${arraySteps[i].item}"]`).removeClass("progressiveBar_popup--number-active");
-                }
-            }
-
-            let checkCookies = progressiveBar_checkCookie();
-
-            if (!checkCookies) {
-                $(`.progressiveBar_popup`).removeClass("progressiveBar_popup--closed");
-
-                var d = new Date();
-                d.setTime(d.getTime() + (minutes * 60 * 1000));
-                var minutes = 40;
-                var expires = "expires=" + d.toUTCString();
-                document.cookie = "progressiveBar=carregado;" + expires + ";path=/";
-            }
-
-        }
-    }
-}
-
-
-function addProduct(newProduct) {
-    const ativarDemo = window.localStorage.getItem('progressiveCart--demo') || null
-
-    if (ativarDemo == 'true') {
-        // Checagem dos itens adicionados
-        var url = `/api/catalog_system/pub/products/search/?fq=productId:${newProduct}`
-
-        $.ajax({
-            url: url,
-            type: "GET",
-            async: false,
-            success: function(data) {
-                const productClusters = JSON.stringify(data[0].productClusters)
-
-                // Caso exista o cluster criaremos um objeto com alguns dados de indentificação
-                if (productClusters.indexOf('Black Friday 2022') > -1) {
-                    var checkItens = `{"productId": "${data[0].productId}", "productName": "${data[0].productName}", "productReference": "${data[0].productReference}" },`
-                    const itensControl = window.localStorage.getItem('progressiveCart') || null
-
-                    var newProductQuery = ''
-                    if (itensControl) {
-                        newProductQuery = itensControl + checkItens
-                    } else {
-                        newProductQuery = checkItens
-                    }
-
-                    window.localStorage.setItem('progressiveCart', newProductQuery)
-                    const cartProgressive = JSON.parse(`[${newProductQuery.substring(0, newProductQuery.length - 1)}]`)
-
-                    // Se algum dos produtos durante a leitura foi enquadrado no desconto progressivo carregamos a interface
-                    if (cartProgressive.length > 0) {
-                        progressiveBar_popup()
-                        $(`.progressiveBar_popup`).removeClass("progressiveBar_popup--closed");
-                    }
-                }
-            }
-        })
-    }
-}
-
-function isProductFlagBF() {
-    vtexjs.checkout.getOrderForm()
-        .done(function(orderForm) {
-
-            var products = orderForm.items;
-            var progressBarProduct = window.localStorage.getItem('progressiveCart') || null;
-            if (progressBarProduct) {
-                var cartProgressive = JSON.parse(`[${progressBarProduct.substring(0, progressBarProduct.length - 1)}]`)
-                cartProgressive.forEach(element => {
-                    console.log(element.productId);
-                    var productIdd = element.productId
-                    products.forEach(item => {
-                        console.log('item:', item.productId)
-                        if (item.productId == productIdd) {
-                            $(`.product-item[data-sku="${item.id}"] .black-friday`).remove();
-                            $(`tr.product-item[data-sku="${item.id}"]`).find('.product-name').append('<div class="black-friday"></div>')
-
-                        }
-                    })
-                });
-            }
-
-        });
-}
-
-
-$(window).on("load", function() {
-    var urlatual = window.location.href
-    var re = new RegExp('cart')
-    if (urlatual.match(re)) {
-        progressiveBar_create()
-        progressiveBar_cart()
-        isProductFlagBF()
-
-
-
-        $("body").on('click', '.item-link-remove', function() {
-            window.localStorage.removeItem('progressiveCart');
-            progressiveBar_cart()
-        });
-    } else {
-        window.localStorage.removeItem('progressiveCart');
-    }
-
-
-});
-
-
-
-/**
- * *****************************
- * ProgressBar
- * *****************************
- */
-//
 
 /**
  * *****************************
@@ -1264,3 +869,71 @@ $(window).load(function() {
  * *****************************
  */
 //
+
+/* TAGS */
+
+$(window).on('orderFormUpdated.vtex', function(evt, orderForm) {
+    setTimeout(function() {
+        const shippingData = orderForm.shippingData.logisticsInfo
+
+        $.each(shippingData, function(index, value) {
+            let tipoEntrega = value.selectedSla
+            let sku = value.itemId
+           
+            if (tipoEntrega == null) {
+                var checSla = value.slas
+    
+                if(checSla.length != 0){
+                    if(value.selectedSla == null){
+                        textoFinal = 'Retirar na loja'
+                    }else{
+                        var textoFinal = value.selectedSla.split(' (')[0]
+                    }
+                }else{
+                    textoFinal = 'Informe seu CEP'
+                }
+            } else if (tipoEntrega == "Normal") {
+                var textoFinal = 'Receber em Casa'
+            }else{
+                var textoFinal =  value.selectedSla.split(' (')[0]
+            }
+    
+            var url_atual = window.location.href;
+    
+            if (url_atual.indexOf('cart') != -1) {
+                var dataIncertTable = document.querySelectorAll('.cart-items tr[data-sku="' + sku + '"]')
+                
+                $.each(dataIncertTable, function(index, value) {
+                   var verificaBox = value.children[1]?.children[2]?.children[3]?.classList?.value
+          
+                    if (verificaBox == 'box-delivery') {
+                        $(value.children[1]?.children[2].lastChild).remove()
+                        $(value.children[1]?.children[2].lastChild).remove()
+                    }
+
+                    console.log(value.children[0]?.children[1]?.childNodes[4])
+
+                    var LocalInsert =value.children[0]?.children[1]
+                    $(LocalInsert).append('<br /><span class="box-delivery">' + textoFinal + '</span>')
+                })
+            }
+    
+            if ((url_atual.indexOf('email') != -1) || (url_atual.indexOf('shipping') != -1) || (url_atual.indexOf('payment') != -1)) {
+                var dataIncertTable = document.querySelectorAll('.cart-items li[data-sku="' + sku + '"]')
+                
+                $.each(dataIncertTable, function(index, value) {
+                    var verificaBox = value.lastChild?.classList?.value
+
+                    if (verificaBox == 'box-delivery') {
+                        $(value.lastChild).remove()
+                    }
+
+                    var LocalInsert = value
+                    $(LocalInsert).append('<br /><span class="box-delivery">' + textoFinal + '</span>')
+                })
+            }
+        });
+    }, 3000)
+});
+
+/* TAGS */

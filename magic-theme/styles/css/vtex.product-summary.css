@@ -5,7 +5,7 @@
 
 .containerNormal {
     max-width: 100% !important;
-    margin: 0px 16px;
+    margin: 0px;
 }
 
 @media (max-width: 767px) {

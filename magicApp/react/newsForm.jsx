@@ -6,12 +6,13 @@ import style from "./styles.css"
 function newsForm() {
     const [formData, updateFormData] = useState();
  
-    const [msg, setMsg] = useState();
+    const [msg, setMsg] = useState('Obrigado! Fique de olho no e-mail, você receberá ótimas novidades por lá.');
     const [show, setShow] = useState(false);
     const [type, setType] = useState(false);
 
     const handleChange = (e) => {
         updateFormData({
+          
           ...formData,
           [e.target.name]: e.target.value.trim()
         });
@@ -19,14 +20,13 @@ function newsForm() {
 
       const handleSubmit = (e) => {
         e.preventDefault()
- 
+
         api.post("integracao", formData,{
           headers: {
             'Content-Type': 'multipart/form-data'
           }
         })
         .then((response) => {
-            console.log(response)
 
             document.getElementById("form-news").reset();
  
@@ -34,19 +34,17 @@ function newsForm() {
             setShow(true)
             setType(true)
 
-            (window["rrApiOnReady"] = window["rrApiOnReady"] || []).push(function() { rrApi.setEmail( formData.email ); });
+            rrApi.setEmail(formData.email);
         })
         .catch((err) => {
-            const errType = err.response.data.Message
+            const errType = err.message
 
-            console.lor(err)
-
-            if(errType == 'duplicated entry'){
-                setMsg('Obrigado! Fique de olho no e-mail, você receberá ótimas novidades por lá.')
+            if(errType == 'Erro ao inserir os dados, tente novamente'){
+                setMsg('Erro ao inserir os dados, tente novamente.')
                 setShow(true)
                 setType(false)
             }else{
-                setMsg('Ops, parece que algo deu errado.')
+               
                 setShow(true)
                 setType(false)
             }   
@@ -63,12 +61,12 @@ function newsForm() {
                 <div className={`${style.formNews_grid}`}>
                   <div className={`${style.formNews_row_input}`}>
                       <input className={`${style.defaultNews}`} id="email" type="email" name="email" placeholder="insira aqui seu melhor e-mail" onChange={handleChange} required="required" />
-                      <input style={{display: show ? 'none' : 'block' }} className={`${style.buttonNews}`} type="submit" value="Enviar" />
+                      <input style={{display: show ? 'block' : 'block' }} className={`${style.buttonNews}`} type="submit" value="Enviar" />
                   </div>
 
                   <div className={`${style.formNews_row_check}`}>
                     <input  id="newsletter-checkbox-confirmation" name="newsletter-confirmation" type="checkbox" tabindex="0" value="" required="required" />
-                    <label  for="newsletter-checkbox-confirmation">Eu aceito receber informes em meu e-mail</label>
+                    <label  for="newsletter-checkbox-confirmation">Eu aceito receber informações em meu e-mail</label>
                   </div>  
                 </div>
 

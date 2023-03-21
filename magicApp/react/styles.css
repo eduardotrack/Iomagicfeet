@@ -769,3 +769,123 @@
          font-size: 45px;
      }
  }
+
+ .sucessBoxNews{
+    max-width: 400px;
+    margin-top: 10px;
+    background: #5DFF49;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: WorkSans-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+ }
+
+ .errorBoxNews{
+    max-width: 400px;
+    margin-top: 10px;
+    background: #DA3B35;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: WorkSans-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+ }
+
+ /* MODAL NEWS APP */
+
+ .overlayModalnews{
+    background-color: #000000ad;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: none;
+ }
+
+ .coreModalnews{
+    background-color: #fff;
+    position: fixed;
+    z-index: 1001;
+    width: 340px;
+    margin-left: calc(50% - 170px);
+    top: 20%;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 100%;
+    display: none;
+ }
+
+ .headerModalnews{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    flex-wrap: nowrap;
+ }
+
+ .closeModalnews{
+    width: 15px;
+    display: block;
+    float: right;
+    margin-top: -25px;
+ }
+
+ .headerModalnews h5{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    font-family: WorkSans-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #000;
+ }
+
+ .headerModalnews h6{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    font-family: WorkSans-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 0;
+ }
+
+ .bodyModalnews label{
+    font-size: 10px;
+ }
+
+ .politicaModalnews{
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-family: WorkSans-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: underline;
+ }

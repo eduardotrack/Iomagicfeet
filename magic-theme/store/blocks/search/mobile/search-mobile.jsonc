@@ -7,8 +7,11 @@
       "flex-layout.row#searchtitle",
       "experimental__visibility-layout#categories-banner-search",
       "total-products.v2",
-      "flex-layout.row#retail-rocket-category",
+
       "flex-layout.row#searchinfomobile",
+      
+      "flex-layout.row#retail-rocket-category-search",
+      "flex-layout.row#retail-rocket-category",
       
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore",

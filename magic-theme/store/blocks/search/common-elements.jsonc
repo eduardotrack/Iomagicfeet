@@ -132,7 +132,6 @@
   "flex-layout.col#content": {
     "title": "Panda | Conteúdo da busca",
     "children": [
-      "flex-layout.row#retail-rocket-category",
       "flex-layout.row#searchinfo",
       "flex-layout.row#products",
       "flex-layout.row#progress-bar",

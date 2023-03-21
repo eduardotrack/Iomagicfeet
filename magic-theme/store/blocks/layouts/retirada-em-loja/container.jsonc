@@ -39,12 +39,13 @@
 
     "flex-layout.row#retirada-em-loja": {
       "props": {
-        "blockClass": "panda-retirada-em-loja",
-        "preventHorizontalStretch": true
+        "blockClass": "panda-tipo-entrega"
       },
       "children": [
         "flex-layout.col#content-retirada-em-loja-1",
-        "flex-layout.col#content-retirada-em-loja-2"
+        "flex-layout.col#content-retirada-em-loja-2",
+        "flex-layout.col#content-retirada-em-loja-3",
+        "flex-layout.col#content-retirada-em-loja-4"
       ]
     },
 
@@ -68,20 +69,20 @@
       "title": "Título - Outras formas de entrega"
     },
 
-    // Tipo 1
-    "flex-layout.col#content-retirada-em-loja-1": {
+       // Tipo 1
+       "flex-layout.col#content-retirada-em-loja-1": {
         "title": "Panda | Texto Missão",
         "children": ["rich-text#content-retirada-em-loja-1"],
         "props":{
-          "blockClass":["entrega-container-text", "retirada-em-loja-card"],
+          "blockClass":"entrega-container-text",
         "width": "100%"
         } 
     },
 
     "rich-text#content-retirada-em-loja-1": {
         "props": {
-          "blockClass": "panda-retirada-em-loja__content",
-          "text": "## FRETE EXPRESSO \n O frete expresso é rapidinho, seu pedido chega o quanto antes. \n Consulte o seu CEP para maiores Informações. "
+          "blockClass": "panda-tipo-entrega__content",
+          "text": "## Frete Grátis \n Frete Grátis nas compras: \n * acima de R$100,00 Sudeste, \n * acima de R$150,00 para o Sul, \n * acima de R$200,00 para o Centro-oeste e Nordeste, \n * acima de R$400,00 para o Norte "
         },
         "title": "Conteúdo - Tipos de Entrega -  Bloco 1"
       },
@@ -92,18 +93,57 @@
         "title": "Panda | Texto Missão",
         "children": ["rich-text#content-retirada-em-loja-2"],
         "props":{
-        "blockClass":["entrega-container-text", "retirada-em-loja-card"],
+        "blockClass":"entrega-container-text",
         "width": "100%"
         } 
     },
 
     "rich-text#content-retirada-em-loja-2": {
         "props": {
-          "blockClass": "panda-retirada-em-loja__content",
-          "text": "## FRETE GRÁTIS \n Frete Grátis nas compras: \n * acima de R$100,00 Sudeste, \n * acima de R$150,00 para o Sul, \n * acima de R$200,00 para o Centro-oeste e Nordeste, \n * acima de R$400,00 para o Norte"
+          "blockClass": "panda-tipo-entrega__content",
+          "text": "## ENTREGA NO MESMO DIA \n De SEG a SEX os pedidos com pagamentos aprovados até às 11h serão **entregues no mesmo dia** até às 22h. Pedidos com pagamento aprovado após às 11h serão entregues no próximo dia útil até às 22h. Modalidade de entrega válida para São Paulo Capital, para mais informações consulte o seu CEP."
         },
         "title": "Conteúdo - Tipos de Entrega -  Bloco 2"
-      }
+      },
     // Tipo 2
+
+    // Tipo 3
+        "flex-layout.col#content-retirada-em-loja-3": {
+            "title": "Panda | Texto Missão",
+            "children": ["rich-text#content-retirada-em-loja-3"],
+            "props":{
+            "blockClass":"entrega-container-text",
+            "width": "100%"
+            } 
+        },
+    
+        "rich-text#content-retirada-em-loja-3": {
+            "props": {
+              "blockClass": "panda-tipo-entrega__content",
+              "text": "## FRETE EXPRESSO \n O frete expresso é rapidinho, seu pedido chega o quanto antes. \n  Consulte o seu CEP para maiores informações. \n _Prazo é valido após aprovação do pagamento._"
+            },
+            "title": "Conteúdo - Tipos de Entrega -  Bloco 3"
+          },
+        // Tipo 3
+
+
+    // Tipo 4
+    "flex-layout.col#content-retirada-em-loja-4": {
+        "title": "Panda | Texto Missão",
+        "children": ["rich-text#content-retirada-em-loja-4"],
+        "props":{
+        "blockClass":"entrega-container-text",
+        "width": "100%"
+        } 
+    },
+
+    "rich-text#content-retirada-em-loja-4": {
+        "props": {
+          "blockClass": "panda-tipo-entrega__content",
+          "text": "## RETIRADA EM LOJA FÍSICA \n Você pode escolher uma de nossas **lojas físicas** para **retirar seu pedido** com Frete Grátis! Consulte o seu CEP na página de produto. \n _Prazo é valido após aprovação do pagamento._"
+        },
+        "title": "Conteúdo - Tipos de Entrega -  Bloco 4"
+      }
+    // Tipo 4
   }
   

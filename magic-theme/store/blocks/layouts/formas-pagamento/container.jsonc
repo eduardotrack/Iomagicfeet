@@ -1,0 +1,96 @@
+{
+    "store.custom#forma-pagamento": {
+      "blocks": [ 
+            "flex-layout.row#forma-pagamento-title", 
+            "flex-layout.row#forma-pagamento"
+        ]
+    },
+
+    "flex-layout.row#forma-pagamento-title": {
+        "props": {
+          "blockClass": "panda-tipo-entrega" 
+        },
+        "children": [
+          "rich-text#title-forma-pagamento"
+        ]
+      },
+
+    "flex-layout.row#forma-pagamento": {
+      "props": {
+        "blockClass": "panda-tipo-entrega" 
+      },
+      "children": [
+        "flex-layout.col#content-forma-pagamento-1",
+        "flex-layout.col#content-forma-pagamento-2",
+        "flex-layout.col#content-forma-pagamento-3"
+      ]
+    },
+  
+    "rich-text#title-forma-pagamento": {
+      "props": {
+        "blockClass": "panda-tipo-entrega__title",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "# formas de **pagamento**"
+      },
+      "title": "Título - Formas de Pagamento"
+    },
+
+    // Tipo 1
+    "flex-layout.col#content-forma-pagamento-1": {
+        "title": "Panda | Texto Missão",
+        "children": ["rich-text#content-forma-pagamento-1"],
+        "props":{
+        "blockClass":"entrega-container-text",
+        "width": "100%"
+        } 
+    },
+
+    "rich-text#content-forma-pagamento-1": {
+        "props": {
+          "blockClass": "panda-tipo-entrega__content",
+          "text": "## pix \n 5% DE DESCONTO \n * Esse desconto não é aplicado para itens promocionais \n * O desconto não é cumulativo para compras que utilizem cashback"
+        },
+        "title": "Conteúdo - Formas de Pagamento -  Bloco 1"
+      },
+    // Tipo 1
+
+    // Tipo 2
+    "flex-layout.col#content-forma-pagamento-2": {
+        "title": "Panda | Texto Missão",
+        "children": ["rich-text#content-forma-pagamento-2"],
+        "props":{
+        "blockClass":"entrega-container-text",
+        "width": "100%"
+        } 
+    },
+
+    "rich-text#content-forma-pagamento-2": {
+        "props": {
+          "blockClass": "panda-tipo-entrega__content",
+          "text": "## cartão de crédito \n * Aceitamos as principais bandeiras de cartão de crédito: Hipercard, Visa, Mastercard, American Express e Elo. \n * Parcelamos em 10x sem juros, com parcela mínima de R$19,99"
+        },
+        "title": "Conteúdo - Formas de Pagamento -  Bloco 2"
+      },
+    // Tipo 2
+
+    // Tipo 3
+        "flex-layout.col#content-forma-pagamento-3": {
+            "title": "Panda | Texto Missão",
+            "children": ["rich-text#content-forma-pagamento-3"],
+            "props":{
+            "blockClass":"entrega-container-text",
+            "width": "100%"
+            } 
+        },
+    
+        "rich-text#content-forma-pagamento-3": {
+            "props": {
+              "blockClass": "panda-tipo-entrega__content",
+              "text": "## pagleve \n * Pix parcelado em 4x sem juros \n * Não se aplica o cupom de 5% desconto em pagamentos no pix"
+            },
+            "title": "Conteúdo - Formas de Pagamento -  Bloco 3"
+          }
+        // Tipo 3
+  }
+  

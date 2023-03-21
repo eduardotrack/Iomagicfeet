@@ -1,7 +1,7 @@
 {
     //controle de visibilidade do carrossel
-    "experimental__visibility-layout#black-header-tag": {
-      "title": "Controle de visibilidade - Header BF - Elemento do dia 10/11",
+    "experimental__visibility-layout#banner-header-tag": {
+      "title": "Controle de visibilidade - Banner Customizavel",
       "children": ["flex-layout.row#black-header-tag"],
       "props": {
         "visible": false,
@@ -10,7 +10,7 @@
     },
 
     "flex-layout.row#black-header-tag": {
-        "title": "Panda | Header BF",
+        "title": "Panda | Banner Customizavel",
         "props": {
           "blockClass": "black-header-tag" ,
           "preventHorizontalStretch": true
@@ -21,7 +21,7 @@
       },
 
       "flex-layout.col#black-header-tag-text": {
-        "title": "Panda | Logo BF",
+        "title": "Panda | Conteudo do Banner",
         "children": ["rich-text#black-header-tag-text", "link#black-header-tag-cta"],
         "props":{
         "blockClass":"black-header-tag"
@@ -29,17 +29,18 @@
     },
 
     "rich-text#black-header-tag-text": {
-      "title": "Panda | Texto BF",
+      "title": "Panda | Texto",
       "props": {
-        "text": "COMEÇOU A **BLACK** *FRIDAY* APROVEITE OS MELHORES DESCONTOS",
+        "text": "Compre a partir de R$600 e **ganhe R$100**. Use o cupom: **NATALCOM-MF**",
         "blockClass":"bf-main-tag"
       }
     },
  
     "link#black-header-tag-cta": {
+        "title": "Panda | Link",
         "props": {
-          "href": "/black-friday",
-          "label": "CONFIRA",
+          "href": "/",
+          "label": "Saiba mais",
           "blockClass": "black-header-tag" 
         }
       }

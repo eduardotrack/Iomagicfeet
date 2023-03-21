@@ -21,7 +21,6 @@
 
 .flexRowContent--shelf__actions :global(.vtex-button) {
     background: #5DFF49;
-    border: 2px solid #1C1C1C;
     border-radius: 10px;
     padding: 4px 16px;
 }
@@ -242,37 +241,41 @@
 }
 
 .flexRow--newsletter-wrapper {
-    background: url("https://magicfeet.vteximg.com.br/arquivos/_newsletter-desk-full.jpg") no-repeat 0%;
+    background: url("https://magicfeet.vteximg.com.br/arquivos/_newsletter-desk-full.jpg?v=1") no-repeat 0%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 450px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    
 }
 
 @media (max-width: 767px) {
     .flexRow--newsletter-wrapper {
-        background: url("https://magicfeet.vteximg.com.br/arquivos/_newsletter-mob.jpg") no-repeat top center;
+        background: url("https://magicfeet.vteximg.com.br/arquivos/_newsletter-desk-full.jpg?v=1") no-repeat 0%;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 100vh;
+        height: auto;
         display: flex;
         align-items: center;
     }
 }
 
 .flexRowContent--newsletter-wrapper {
-    margin-left: 50%;
+    gap: 40px;
+    max-width: 1300px;
+    width: 100%;
 }
 
 @media (max-width: 767px) {
     .flexRowContent--newsletter-wrapper {
-        margin-left: 0%;
-        margin-top: 150px;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 50px;
     }
     .flexRowContent--footer__newsletter {
         display: flex;
@@ -818,9 +821,7 @@
         margin-bottom: 50px;
         flex-direction: column;
     }
-    .flexRow--tips-home-row {
-        margin-bottom: -50px;
-    }
+ 
 }
 
 .flexRowContent--panda-nossas-lojas {
@@ -1030,8 +1031,8 @@
 }
 
 .flexRow--black-header-tag {
-    background: #DA3B35;
-    padding: 10px 0px;
+    background: #5DFF49;
+    padding: 13px 0px;
 }
 
 .flexCol--black-header-tag {
@@ -1049,9 +1050,15 @@
 
 @media (max-width: 767px) {
     .flexRow--black-header-tag {
-        background: #DA3B35;
-        ;
-        padding: 13px 0px;
+        background: #5DFF49;
+        padding: 7px 0px;
+    }
+
+    .flexColChild--black-header-tag {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        margin-right: 0%;
     }
 }
 
@@ -1120,8 +1127,7 @@
 
 .flexRow--highlights-stack-wrapper-search-search {
     position: absolute;
-    bottom: 0;
-    left: 75px;
+    
 }
 
 .flexColChild--product__main :global(.vtex-flex-layout-0-x-flexCol--highlights-stack) {
@@ -1133,8 +1139,7 @@
 @media (max-width: 767px) {
     .flexRow--highlights-stack-wrapper-search-search {
         position: absolute;
-        bottom: 0;
-        left: 65px;
+         
     }
 }
 
@@ -1187,4 +1192,22 @@
 .flexRow--newsletter-wrapper :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     display: flex;
     flex-direction: column;
+}
+
+
+.flexColChild--main-menu-brands{
+    height: auto !important;
+}
+
+.flexRowContent--shelf :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf){
+    margin-left: -40px;
+}
+
+.flexRowContent--shelf :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf){
+    margin-right: -40px;
+}
+
+.flexRowContent--shelf :global(.vtex-store-components-3-x-discountInsideContainer){
+    background-color: #000;
+    font-family: 'WorkSans-Bold';
 }

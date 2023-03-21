@@ -8,7 +8,7 @@
     ],
     "blocks": ["drawer-header#header-mobile", "drawer-trigger#dep6-mobile"],
     "props": {
-      "blockClass": ["menu-mobile-nivel01", "department-bf-temp-submenu"]
+      "blockClass": ["menu-mobile-nivel01"]
     }
   },
 

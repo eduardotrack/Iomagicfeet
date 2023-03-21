@@ -6,7 +6,9 @@
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "experimental__visibility-layout#categories-banner-search",
+      
       "flex-layout.row#search-suggestions",
+      "flex-layout.row#retail-rocket-category-search",
       "flex-layout.row#result"
     ],
     "props": {
@@ -32,6 +34,21 @@
     "props": {
       "type": "PLP",
       "markupBlock": "635abf08cf114781944b4d2a"
+    }
+  },
+
+  "flex-layout.row#retail-rocket-category-search": {
+    "props": {
+      "blockClass": "retail-rocket"
+    },
+    "children": [
+      "retail-rocket-container#category-search"
+    ]
+  },
+  "retail-rocket-container#category-search": {
+    "props": {
+      "type": "PLP",
+      "markupBlock": "635abf46020e5a151a7ecede"
     }
   }
 }

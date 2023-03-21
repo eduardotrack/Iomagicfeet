@@ -16,7 +16,9 @@
     },
 
     "pd-NeoassistCentral": {
-        "component": "NeoassistCentral"
+        "component": "NeoassistCentral",
+        "render": "server",
+        "hydration": "always"
     },
 
     "pd-SkuSuggestion": {
@@ -37,6 +39,10 @@
 
     "pd-progressiveBar": {
         "component": "progressiveBar"
+    },
+
+    "pd-popupNewsletter": {
+        "component": "popupNewsletter"
     }
 
 

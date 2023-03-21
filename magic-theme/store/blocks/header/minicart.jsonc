@@ -127,7 +127,6 @@
   "flex-layout.col#minicart-footer": {
     "children": [
       "minicart-summary#minicart",
-      "pd-progressiveBar",
       "minicart-checkout-button#minicart"
     ]
   },

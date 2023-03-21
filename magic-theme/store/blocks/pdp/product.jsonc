@@ -36,7 +36,7 @@
       "condition-layout.product#availability",
       "retail-rocket-container#pdp1",
       "retail-rocket-container#pdp2",
-      "flex-layout.row#shelf-view"
+      "flex-layout.row#product-faq"
     ],
     "props": {
       "disposition": [
@@ -66,6 +66,9 @@
         },
         {
           "order": 9
+        },
+        {
+          "order": 10
         }
       ]
     }
@@ -87,5 +90,10 @@
       "text": "##### Avaliação do Produto",
       "blockClass": "product__description"
     }
+  },
+
+  "flex-layout.row#product-faq": {
+    "title": "Panda | Produto - FAQ",
+    "children": ["pd-categoriaFaq"]
   }
 }

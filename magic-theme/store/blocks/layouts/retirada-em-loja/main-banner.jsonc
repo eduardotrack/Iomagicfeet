@@ -20,14 +20,14 @@
 
       "image#main-banner-retirada-em-loja-desk": {
         "props": {
-          "src": "assets/img/aw-retirada.png",
+          "src": "assets/img/mg-retirada-loja.png",
           "blockClass":"main-banner-quemsomos-row"
         }
       },
 
       "image#main-banner-retirada-em-loja-mob": {
         "props": {
-          "src": "assets/img/aw-retirada.png",
+          "src": "assets/img/mg-retirada-loja.png",
           "blockClass":"main-banner-quemsomos-row"
         }
       }

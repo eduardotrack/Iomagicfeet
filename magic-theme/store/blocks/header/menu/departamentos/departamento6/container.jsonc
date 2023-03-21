@@ -1,7 +1,7 @@
 {
   "menu-item#dep6": {
     "props": {
-      "blockClass": ["header__menu", "main-menu-department", "main-menu-department-bf-temp"],
+      "blockClass": ["header__menu", "main-menu-department"],
       "id": "menu-item-dep6",
       "type": "custom",
       "iconId": null,
@@ -16,7 +16,7 @@
   "vtex.menu@2.x:submenu#dep6": {
     "title": "OUTLET",
     "props": {
-      "blockClass": ["main-menu-department-submenu", "main-menu-department-bf-temp-submenu"],
+      "blockClass": ["main-menu-department-submenu"],
       "width": "100%"
     },
     "children": ["flex-layout.row#menu-dep6"]

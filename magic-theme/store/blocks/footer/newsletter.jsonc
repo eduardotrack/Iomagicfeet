@@ -4,8 +4,17 @@
       "blockClass": ["newsletter-wrapper"]
     },
     //"children": ["newsletter-form#footer"]
-    "children": ["pd-newsForm"]
+    "children": ["image#newsletter-image-core", "pd-newsForm"]
   },
+
+  "image#newsletter-image-core": {
+    "title": "Panda | Footer - Imagem Newsletter",
+    "props": {
+      "src": "assets/img/news-img-col.png",
+      "blockClass": "home__footer-powered--image"
+    }
+  },
+
   "newsletter-form#footer": {
     "title": "Panda | Footer - Newsletter",
     "props": {
@@ -56,7 +65,7 @@
   "newsletter-checkbox-confirmation#footer": {
     "title": "Panda | Campo de confirmação",
     "props": {
-      "checkboxLabel": "Eu aceito receber informes em meu e-mail"
+      "checkboxLabel": "Eu aceito receber informações em meu e-mail"
     }
   },
   "newsletter-submit#footer": {

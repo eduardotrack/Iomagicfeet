@@ -14,9 +14,9 @@
       "retail-rocket-container#global",
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop",
-      "experimental__visibility-layout#black-header-tag",
-      "experimental__visibility-layout#black-header-tag-v2",
-      "modal-trigger#primeira-compra"
+      "experimental__visibility-layout#banner-header-tag",
+      "modal-trigger#primeira-compra",
+      "pd-popupNewsletter"
     ]
   },
   "flex-layout.row#3-desktop": {
@@ -197,9 +197,9 @@
       "retail-rocket-container#global",
       "flex-layout.row#0-mobile", 
       "sticky-layout#1-mobile",
-      "experimental__visibility-layout#black-header-tag",
-      "experimental__visibility-layout#black-header-tag-v2",
-      "modal-trigger#primeira-compra"
+      "experimental__visibility-layout#banner-header-tag",
+      "modal-trigger#primeira-compra",
+      "pd-popupNewsletter"
     ]
   },
   "sticky-layout#1-mobile": {

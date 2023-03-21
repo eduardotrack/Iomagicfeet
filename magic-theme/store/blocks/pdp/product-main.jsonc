@@ -113,6 +113,9 @@
         },
         {
           "order": 19
+        },
+        {
+          "order": 20
         }
       ]
     }
@@ -169,6 +172,7 @@
     "title": "Panda | Produto - Seleção de SKU",
     "props": {
       "variationsSpacing": 3,
+      "maxItems": 30,
       "showValueNameForImageVariation": true,
       "sortVariationsByLabel": false
       // "displayMode": "select",

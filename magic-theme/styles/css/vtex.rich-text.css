@@ -600,7 +600,7 @@
 .container--sub-main-quemsomos-text {
     padding-top: 35px;
     padding-bottom: 35px;
-    padding-left: 70px;
+    padding-left: 0px;
 }
 
 .heading--sub-main-quemsomos-text {
@@ -611,6 +611,7 @@
     line-height: 100%;
     color: #000000;
     margin: 5px 0;
+    padding-left: 100px;
 }
 
 .strong--sub-main-quemsomos-text {
@@ -624,8 +625,8 @@
 }
 
 .paragraph--sub-main-quemsomos-text {
-    padding-left: 165px;
-    padding-right: 128px;
+    padding-left: 100px;
+    padding-right: 100px;
     font-family: 'WorkSans-Regular';
     font-style: normal;
     font-weight: 400;
@@ -1196,44 +1197,21 @@
     font-family: 'WorkSans-Regular';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 13px;
-    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
     margin: 0px;
-    display: flex;
-    gap: 5px;
-    align-items: center;
 }
 
-.paragraph--bf-main-tag-v2 {
-    font-family: 'WorkSans-Regular';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 13px;
-    color: #FFFFFF;
-    margin: 0px;
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
+ 
 .strong--bf-main-tag {
     font-family: 'WorkSans-Bold';
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
-    line-height: 13px;
+    font-size: 16px;
+    line-height: 16px;
 }
-
-.strong--bf-main-tag-v2 {
-    font-family: 'WorkSans-Bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 13px;
-}
-
+ 
 .italic--bf-main-tag {
     font-family: 'WorkSans-Light';
     font-style: normal;
@@ -1242,52 +1220,7 @@
     line-height: 13px;
     margin-left: -5px;
 }
-
-.italic--bf-main-tag-v2 {
-    font-family: 'WorkSans-Light';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 13px;
-    margin-left: -5px;
-}
-
-.wrapper--bf-main-tag-v2 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-
-.list--bf-main-tag-v2 {
-    list-style: none;
-    padding: 0;
-    margin: 0 10px;
-    display: flex;
-    gap: 15px;
-}
-
-.listItem--bf-main-tag-v2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-content: center;
-    gap: 5px;
-    font-family: 'WorkSans-Regular';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 13px;
-    color: #fff;
-}
-
-.listItem--bf-main-tag-v2 :global(.vtex-rich-text-0-x-italic--bf-main-tag-v2) {
-    font-size: 14px;
-}
-
+ 
 .link--product__unavaible {
     font-family: 'WorkSans-Regular';
     font-style: normal;
@@ -1296,77 +1229,21 @@
     line-height: 140%;
     color: rgb(0, 0, 0);
 }
-
-.paragraph--bf-main-tag-v2 :global(.vtex-rich-text-0-x-italic--bf-main-tag-v2):first-child {
-    font-family: 'WorkSans-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 13px;
-}
+ 
 
 @media (max-width: 767px) {
     .paragraph--bf-main-tag {
-        font-family: 'WorkSans-Bold';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 13px;
-        line-height: 16px;
-        color: #FFFFFF;
-        margin: 0px;
-        display: block;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .italic--bf-main-tag,
-    .strong--bf-main-tag {
-        font-size: 13px;
-    }
-    .paragraph--bf-main-tag-v2 {
-        display: flex;
-        gap: 5px;
-        align-items: center;
-        flex-direction: column;
-    }
-    .paragraph--bf-main-tag-v2 :global(.vtex-rich-text-0-x-italic--bf-main-tag-v2):first-child {
-        display: none;
-    }
-    .strong--bf-main-tag-v2,
-    .italic--bf-main-tag-v2 {
-        font-size: 13px;
-    }
-    .listItem--bf-main-tag-v2 :global(.vtex-rich-text-0-x-italic--bf-main-tag-v2) {
-        font-size: 13px;
-        text-transform: uppercase;
         font-family: 'WorkSans-Regular';
         font-style: normal;
         font-weight: 500;
-    }
-    .listItem--bf-main-tag-v2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: nowrap;
-        align-content: center;
-        gap: 5px;
-        font-family: 'WorkSans-Bold';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
+        font-size: 10px;
         line-height: 13px;
-        color: #fff;
-        align-items: center;
-        text-transform: lowercase;
+        color: #000000;
     }
-    .list--bf-main-tag-v2 {
-        list-style: none;
-        padding: 0;
-        margin: -5px 10px;
-        display: flex;
-        gap: 5px;
-    }
-    .italic--bf-main-tag-v2 {
-        margin-left: 0px;
+    .italic--bf-main-tag,
+    .strong--bf-main-tag {
+        font-size: 10px;
+        line-height: 13px;
     }
 }
 

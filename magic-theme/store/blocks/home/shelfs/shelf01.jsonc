@@ -51,7 +51,7 @@
         },
         "infinite": true,
         "fullWidth": false,
-        "showNavigationArrows": "never",
+        "showNavigationArrows": "desktopOnly",
         "showPaginationDots": "always",
         "blockClass": "shelf",
         "centerMode": {

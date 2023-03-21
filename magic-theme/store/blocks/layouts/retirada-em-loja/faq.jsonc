@@ -36,7 +36,7 @@
     },
     "rich-text#question1-faq": {
       "props": {
-        "text": "Posso retirar em todas as lojas físicas da Artwalk?"
+        "text": "Posso retirar em todas as lojas físicas da Magicfeet?"
       }
     },
     "rich-text#answer1-faq": {
@@ -70,7 +70,7 @@
     },
     "rich-text#answer2-faq": {
       "props": {
-        "text": "Para fazer uma simulação do prazo de entrega, basta escolher um produto desejado, selecionado cor e tamanho e clicar em comprar. No carrinho de compras, basta digitar o seu CEP e clicar em calcular o frete. O prazo de entrega é contado após a confirmação de pagamento e varia de acordo com o local solicitado para entrega e a forma de pagamento escolhida. Lembrando que o prazo de entrega passa a ser considerado a partir da aprovação do pedido pela instituição financeira e a Artwalk, após a confirmação de dados cadastrais, e é contado em dias úteis."
+        "text": "Para fazer uma simulação do prazo de entrega, basta escolher um produto desejado, selecionado cor e tamanho e clicar em comprar. No carrinho de compras, basta digitar o seu CEP e clicar em calcular o frete. O prazo de entrega é contado após a confirmação de pagamento e varia de acordo com o local solicitado para entrega e a forma de pagamento escolhida. Lembrando que o prazo de entrega passa a ser considerado a partir da aprovação do pedido pela instituição financeira e a Magicfeet, após a confirmação de dados cadastrais, e é contado em dias úteis."
       }
     },
 

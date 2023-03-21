@@ -13,7 +13,7 @@
         "children": ["rich-text#sub-main-text"],
         "props":{
           "blockClass":"sub-main-quemsomos-text",
-          "width": "50%"
+          "width": "55%"
         } 
       },
 
@@ -30,7 +30,7 @@
         "children": [ "list-context.image-list#sub-main-slider"],
         "props":{
           "blockClass":"sub-main-quemsomos-slider",
-          "width": "50%"
+          "width": "45%"
         } 
       },
 
