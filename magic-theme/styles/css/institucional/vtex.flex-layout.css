@@ -1,0 +1,81 @@
+.flexRow--mid-banner-pap {
+    background-image: url(
+        "/arquivos/background-pap-desktop-magic.png"
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.flexRow--texto-topo-intro-cashback {
+    background-image: url(
+        "/arquivos/background-topo-cashback-desk.png"
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 448px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+}
+
+.flexRow--text-regras-cashback {
+    background-color: #1c1c1c;
+}
+
+.flexColChild--mid-banner-pap{
+    text-align: center;
+}
+
+.flexRowContent--text-regras-cashback,
+.flexColChild--text-regras-cashback {
+    display: flex;
+    justify-content: center;
+}
+
+.flexCol--text-regras-cashback{
+    padding: 60px 0px;
+}
+
+@media (max-width: 767px) {
+    .flexRow--mid-banner-pap {
+        background-image: url(
+            "/arquivos/background-pap-mobile-magic.png"
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .flexRowContent--mid-banner-pap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flexRowContent--mid-banner-pap::before{
+            content: "";
+            display: block;
+            background-image: url("https://authenticfeet.vteximg.com.br/arquivos/Icon-seta-pap-cashback-mob.png");
+            width: 26px;
+            height: 35px;
+            background-repeat: no-repeat;
+            margin-bottom: 13px;
+            margin-top: 13px;
+    }
+
+    .flexRow--texto-topo-intro-cashback {
+        background-image: url(
+            "/arquivos/background-topo-cashback-mobile.png"
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        background-position: center;
+    }
+    
+}

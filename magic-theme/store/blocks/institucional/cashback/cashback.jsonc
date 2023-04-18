@@ -1,0 +1,15 @@
+{
+  "store.custom#cashback": {
+    "blocks": [
+      "flex-layout.row#texto-topo-intro-cashback",
+      "rich-text#range-text-01",
+      "responsive-layout.desktop#mid-banner-text-01",
+      "responsive-layout.phone#mid-banner-text-01",
+      "rich-text#range-text-02",
+      "responsive-layout.desktop#mid-banner-pap-02",
+      "responsive-layout.phone#mid-banner-pap-02",
+      "flex-layout.row#mid-banner-text-03",
+      "flex-layout.row#text-regras-cashback"
+    ]
+  }
+}

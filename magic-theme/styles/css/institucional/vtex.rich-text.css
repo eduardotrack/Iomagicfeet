@@ -1,0 +1,200 @@
+.container--range-text-cashbak-02,
+.container--range-text-cashbak{
+    background-color: #1C1C1C;
+}
+.paragraph--range-text-cashbak {
+    font-size: 25px;
+    color: #f1f1f1;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+}
+
+.paragraph--range-text-cashbak-02 {
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-size: 25px;
+
+}
+
+.paragraph--text-regras-cashback {
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    letter-spacing: 0.1em;
+    line-height: 100%;
+    margin: 15px 0px;
+}
+
+.strong--text-regras-cashback,
+.strong--range-text-cashbak {
+    color: #5dff49;
+}
+
+.strong--range-text-cashbak-02 {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #5dff49;
+    text-transform: uppercase;
+
+}
+
+.wrapper--mid-banner-text {
+    margin: 0px 135px;
+}
+
+.wrapper--text-regras-cashback {
+    color: #f1f1f1;
+}
+
+
+.paragraph--mid-banner-pap {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-top: 40px;
+}
+
+.container--mid-text-top{
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.wrapper--mid-text-top::after{
+    content: "";
+    width: 40%;
+    display: block;
+    border: 1px solid #000000;
+    margin: 30px 0px 15px;
+}
+
+.heading--mid-text-top {
+    line-height: 15%;
+    font-size: 40px;
+}
+
+
+.listItem--text-regras-cashback {
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+.headingLevel2--mid-banner-text{
+    text-transform: uppercase;
+}
+
+.wrapper--svg-quem-amou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper--svg-quem-amou::after {
+    content: '';
+    background-image: url("https://authenticfeet.vteximg.com.br/arquivos/setas-cashback.png");
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+
+.container--bg-black{
+    background-color: #1c1c1c;
+    margin-bottom: 15px;
+}
+
+.container--bg-gray{
+    background-color: #c1c1c1;
+    margin-bottom: 15px;
+}
+
+.wrapper--block-pap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.headingLevel2--block-pap{
+    width: 20%;
+    text-align: center;
+}
+
+.paragraph--block-pap {
+    width: 80%;
+    padding-right: 40px;
+}
+
+.wrapper--bg-black {
+    color: white;
+}
+
+.wrapper--bg-gray {
+    color: black;
+}
+
+.paragraph--texto-topo-intro-cashback {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    margin-top: 0px;
+}
+
+
+.paragraph--texto-topo-intro-cashback-top{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .paragraph--range-text-cashbak {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .wrapper--text-regras-cashback,
+    .wrapper--mid-banner-text {
+        margin: 15px 40px;
+    }    
+
+    .paragraph--range-text-cashbak-02 {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+
+    .paragraph--mid-banner-pap {
+        font-size: 10px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .paragraph--text-regras-cashback {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .headingLevel2--mid-banner-text,
+    .headingLevel2--text-regras-cashback{
+        font-size: 24px;
+    }
+
+    .listItem--text-regras-cashback {
+        font-size: 15px;
+    }
+ 
+    .paragraph--texto-topo-intro-cashback-top{
+        font-size: 32px;
+    }
+
+    .paragraph--texto-topo-intro-cashback {
+        font-size: 20px;
+    }
+
+}

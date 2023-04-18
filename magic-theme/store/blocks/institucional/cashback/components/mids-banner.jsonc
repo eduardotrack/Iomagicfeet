@@ -1,0 +1,86 @@
+{
+  "responsive-layout.desktop#mid-banner-text-01": {
+    "title": "Panda | Banner e texto 01 - Desktop",
+    "children": ["flex-layout.row#mid-banner-text-01-desk"]
+  },
+  "responsive-layout.phone#mid-banner-text-01": {
+    "title": "Panda | Banner e texto 01 - Mobile",
+    "children": ["flex-layout.row#mid-banner-text-01-mob"]
+  },
+
+  "flex-layout.row#mid-banner-text-01-mob": {
+    "title": "Panda | Banner e texto 01 - cashback",
+    "children": ["rich-text#mid-text-01","image#mid-banner-01"],
+    "props": {
+      "blockClass": "mid-banner-text",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#mid-banner-text-01-desk": {
+    "title": "Panda | Banner e texto 01 - cashback",
+    "children": ["image#mid-banner-01","rich-text#mid-text-01"],
+    "props": {
+      "blockClass": "mid-banner-text",
+      "fullWidth": true
+    }
+  },
+  "image#mid-banner-01": {
+    "title": "Panda | Imagem do banner 01 - cashback",
+    "props": {
+      "src": "/arquivos/mid-banner-01.png",
+        "blockClass": "mid-banner-text"
+    }
+  },
+  "rich-text#mid-text-01": {
+    "title": "Panda | Texto 01 - cashback",
+    "props": {
+      "text": "Sabe quando você compra aquele produto que amou?\n Com essa novidade, agora a gente te garante **até 10% do valor total da sua compra em créditos para usar depois!**\n \n E tem mais: **respondendo a nossa pesquisa de atendimento e satisfação, você pode garantir mais 5% de crédito.**\n\n\n ## Incrível, né?",
+      "blockClass": "mid-banner-text",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "width":"50%"
+    }
+  },
+
+  "flex-layout.row#mid-banner-text-03": {
+    "title": "Panda | Banner e texto 03 - cashback",
+    "children": ["flex-layout.col#mid-text-03-column","image#mid-banner-03"],
+    "props": {
+      "blockClass": "mid-banner-text",
+      "fullWidth": true
+    }
+  },
+  "image#mid-banner-03": {
+    "title": "Panda | Imagem do banner 03 - cashback",
+    "props": {
+      "src": "/arquivos/banner-mid-03-cashback.png",
+        "blockClass": "mid-banner-text"
+    }
+  },
+  "flex-layout.col#mid-text-03-column": {
+    "title": "Panda | Coluna Texto 03 - cashback",
+    "children": ["rich-text#mid-text-03-top","rich-text#mid-text-03-bottom"],
+    "props": {
+      "blockClass": "mid-banner-pap",
+      "width":"45%"
+    }
+  },
+  "rich-text#mid-text-03-top": {
+    "title": "Panda | Texto 03 - cashback",
+    "props": {
+      "text": "O desconto estará disponível para ser aplicado durante\n ## 30 dias\n corridos que serão contados a partir de **2 dias** após a data de confirmação da compra, portanto, **fique atento!**",
+      "blockClass": ["mid-banner-text", "mid-text-top"],
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#mid-text-03-bottom": {
+    "title": "Panda | Texto 03 - cashback",
+    "props": {
+      "text": "Mas como nós da **magicfeet** vamos amar te receber de volta, você receberá um lembrete via **SMS**, 03 (três) dias antes do vencimento de seus créditos, e poderá receber, ainda, um lembrete via **WhatsApp**, 07 (sete) dias antes do **vencimento** de seus créditos.",
+      "blockClass": "mid-banner-text",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  }
+}

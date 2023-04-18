@@ -1,0 +1,100 @@
+{
+  "flex-layout.row#texto-topo-intro-cashback": {
+    "title": "Panda | Texto topo intro - cashback",
+    "children": ["flex-layout.col#texto-topo-intro-cashback"],
+    "props": {
+      "blockClass": "texto-topo-intro-cashback",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#texto-topo-intro-cashback": {
+    "title": "Panda | Texto topo intro - cashback",
+    "children": [
+      "rich-text#texto-topo-intro-cashback-top",
+      "rich-text#texto-topo-intro-cashback-bottom"
+    ],
+    "props": {
+      "blockClass": "texto-topo-intro-cashback",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#texto-topo-intro-cashback-top": {
+    "title": "Panda | Texto topo intro - cashback",
+    "props": {
+      "text": " CASH**BACK**",
+      "blockClass": "texto-topo-intro-cashback-top",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#texto-topo-intro-cashback-bottom": {
+    "title": "Panda | Texto topo intro - cashback",
+    "props": {
+      "text": " Tuuudo o que a\n gente precisava!",
+      "blockClass": "texto-topo-intro-cashback",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#range-text-01": {
+    "title": "Panda | Faixa de texto 01 - cashback",
+    "props": {
+      "text": "**Quer saber como funciona?** \n a gente te explica!",
+      "blockClass": "range-text-cashbak",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#range-text-02": {
+    "title": "Panda | Faixa de texto 02 - cashback",
+    "props": {
+      "text": "A gente garante pra você que é suuuper fácil \n receber esse benefício! Dá uma olhada nesse \n **passo a passo:**",
+      "blockClass": "range-text-cashbak-02",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#text-regras-cashback": {
+    "title": "Panda | Textos de regras - cashback",
+    "children": ["flex-layout.col#text-regras-cashback"],
+    "props": {
+      "blockClass": "text-regras-cashback",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#text-regras-cashback": {
+    "title": "Panda | Textos de regras - cashback",
+    "children": [
+      "rich-text#text-regras-cashback-01",
+      "rich-text#text-regras-cashback-02"
+    ],
+    "props": {
+      "blockClass": "text-regras-cashback",
+      "width": "70%"
+    }
+  },
+  "rich-text#text-regras-cashback-01": {
+    "title": "Panda | Textos regras 01 - cashback",
+    "props": {
+      "text": "Quem amou?\n\n\n **Já confere nossos \n lançamentos e aproveite\n este super benefício!**",
+      "blockClass": ["text-regras-cashback", "svg-quem-amou"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#text-regras-cashback-02": {
+    "title": "Panda | Textos regras 02 - cashback",
+    "props": {
+      "text": "## Regras: \n\n - O desconto tem o limite máximo de 30% na próxima compra;\n - Os créditos não são cumulativos com outras promoções vigentes em qualquer das marcas do Grupo Afeet: Authentic Feet, Artwalk e magicfeet;\n - Os créditos não poderão ser utilizados em drops (produtos de edição limitada, que não possuem reposição e são de grande demanda pelos consumidores); QS (quick strike, lançamentos de produtos especiais e limitados); produtos promocionais (já com desconto em seu valor original);pedidos realizados no e-commerce com a opção de “retirada em loja” ou de “entrega pela loja ; e pedidos de marketplace;\n - Os créditos não poderão ser utilizados junto com cupom de troca;\n - O resgate do valor só poderá ser efetuado na loja em que foi realizada a compra;\n - O resgate do valor se inicia 2 dias após a data da compra, com validade de 30 dias.",
+      "blockClass": "text-regras-cashback",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  }
+}

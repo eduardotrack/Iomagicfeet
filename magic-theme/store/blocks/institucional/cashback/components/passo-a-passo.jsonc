@@ -1,0 +1,110 @@
+{
+  "responsive-layout.desktop#mid-banner-pap-02": {
+    "title": "Panda | Banner passo a passo 02 - desktop",
+    "children": ["flex-layout.row#mid-banner-pap-02-desk"]
+  },
+  "responsive-layout.phone#mid-banner-pap-02": {
+    "title": "Panda | Banner passo a passo 02 - mobile",
+    "children": ["flex-layout.row#mid-banner-pap-02-mob"]
+  },
+
+  "flex-layout.row#mid-banner-pap-02-desk": {
+    "title": "Panda | Banner passo a passo 02 - cashback",
+    "children": ["flex-layout.col#mid-banner-pap-02"],
+    "props": {
+      "blockClass": "mid-banner-pap"
+    }
+  },
+
+  "flex-layout.col#mid-banner-pap-02": {
+    "title": "Panda | Banner passo a passo 02 - cashback",
+    "children": ["image#mid-banner-pap-02", "rich-text#mid-text-pap-02"],
+    "props": {
+      "blockClass": "mid-banner-pap"
+    }
+  },
+
+  "image#mid-banner-pap-02": {
+    "title": "Panda | Imagem do banner passo a passo 02 - cashback",
+    "props": {
+      "src": "/arquivos/banner-pap-desktop-magic.png",
+      "blockClass": "mid-banner-pap"
+    }
+  },
+  "rich-text#mid-text-pap-02": {
+    "title": "Panda | Texto passo a passo 02 - cashback",
+    "props": {
+      "text": "CONFIRA AS REGRAS NO FINAL DA PÁGINA",
+      "blockClass": "mid-banner-pap",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#mid-banner-pap-02-mob": {
+    "title": "Panda | Banner passo a passo 02 Mobile - cashback",
+    "children": ["flex-layout.col#mid-banner-pap-02-mob"],
+    "props": {
+      "blockClass": "mid-banner-pap"
+    }
+  },
+  "flex-layout.col#mid-banner-pap-02-mob": {
+    "title": "Panda | Banner passo a passo 02 - Mobile",
+    "children": [
+      "rich-text#block-pap-01",
+      "rich-text#block-pap-02",
+      "rich-text#block-pap-03",
+      "rich-text#block-pap-04",
+      "rich-text#block-pap-05",
+      "rich-text#mid-text-pap-02"
+    ],
+    "props": {
+      "blockClass": "mid-banner-pap"
+    }
+  },
+
+  "rich-text#block-pap-01": {
+    "title": "Panda | Bloco passo a passo 01 - Mobile",
+    "props": {
+      "text": "## 1 \n Selecione o **produto** que vai comprar.",
+      "blockClass": ["block-pap", "bg-black"],
+      "textPosition": "CENTER",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#block-pap-02": {
+    "title": "Panda | Bloco passo a passo 02 - Mobile",
+    "props": {
+      "text": "## 2 \n No momento de encerramento da compra, atente-se ao **fornecimento dos seus dados!** É muito importante que você informe seu celular corretamente para envio do cashback via **SMS**, ok?",
+      "blockClass": ["block-pap", "bg-gray"],
+      "textPosition": "CENTER",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#block-pap-03": {
+    "title": "Panda | Bloco passo a passo 03 - Mobile",
+    "props": {
+      "text": "## 3 \n Quando o **pagamento for confirmado**, você receberá automaticamente um SMS com o benefício que poderá ser utilizado na próxima compra.",
+      "blockClass": ["block-pap", "bg-black"],
+      "textPosition": "CENTER",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#block-pap-04": {
+    "title": "Panda | Bloco passo a passo 04 - Mobile",
+    "props": {
+      "text": "## 4 \n **Tudo certo!** A partir daí é só escolher seu próximo look e arrasar!",
+      "blockClass": ["block-pap", "bg-black"],
+      "textPosition": "CENTER",
+      "textAlignment": "LEFT"
+    }
+  },
+  "rich-text#block-pap-05": {
+    "title": "Panda | Bloco passo a passo 05 - Mobile",
+    "props": {
+      "text": "## 5 \n Ah, lembrando que o desconto será válido apenas para a **próxima compra, tá?**",
+      "blockClass": ["block-pap", "bg-gray"],
+      "textPosition": "CENTER",
+      "textAlignment": "LEFT"
+    }
+  }
+}
