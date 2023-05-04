@@ -43,7 +43,9 @@
 
     "pd-popupNewsletter": {
         "component": "popupNewsletter"
+    },
+
+    "pd-save1": {
+        "component": "save1"
     }
-
-
 }
