@@ -47,5 +47,9 @@
 
     "pd-save1": {
         "component": "save1"
+    },
+
+    "pd-categoriaFaq": {
+        "component": "categoriaFaq"
     }
 }

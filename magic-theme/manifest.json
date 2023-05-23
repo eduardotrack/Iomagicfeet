@@ -78,8 +78,7 @@
     "vtex.admin-search": "1.x",
     "vtex.search-resolver": "1.x",
     "vtex.product-availability": "0.x",
-    "magicfeet.magicapp": "0.x",
-    "magicfeet.pandafaq": "0.x"
+    "magicfeet.magicapp": "0.x"
   },
   "peerDependencies": {
     "vtex.availability-notify": "1.x",

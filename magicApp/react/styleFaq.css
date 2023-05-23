@@ -1,0 +1,151 @@
+.conteiner_faq input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+.conteiner_faq .tabs {
+	overflow: hidden;
+}
+.conteiner_faq .tab {
+	width: 100%;
+	color: white;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.conteiner_faq .tab_label {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px;
+	background: #fff 0% 0% no-repeat padding-box;
+	border: 1px solid #eee;
+	font-weight: bold;
+	cursor: pointer;
+	font: normal normal bold 16px/19px 'WorkSans-Bold';
+	letter-spacing: 0px;
+	color: #333;
+	align-items: center;
+	padding-left: 20px;
+	transition: all 0.5s;
+}
+@media (max-width: 660px) {
+	.conteiner_faq .tab_label {
+		font: normal normal bold 13px/19px 'WorkSans-Bold';
+   }
+}
+.conteiner_faq .tab_label:hover {
+	opacity: 0.8;
+}
+.conteiner_faq .control_close {
+	background: #fff 0% 0% no-repeat padding-box;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+.conteiner_faq .control_close::after {
+	content: " ";
+	text-align: center;
+	transition: all 0.35s;
+	line-height: 40px;
+	font-size: 26px;
+	font-weight: 400;
+	display: inline-block;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg aria-hidden='true' focusable='false' data-prefix='far' data-icon='chevron-down' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' class='svg-inline--fa fa-chevron-down fa-w-14'%3e%3cpath fill='currentColor' d='M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z' class=''%3e%3c/path%3e%3c/svg%3e");
+	background-size: 15px;
+	background-position: center center;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	transform: rotate(270deg);
+}
+.conteiner_faq .tab_content {
+	max-height: 0;
+	padding: 0 1em;
+	color: #2c3e50;
+	background: white;
+	transition: all 0.35s;
+	word-break: break-word;
+}
+.conteiner_faq .tab_content a {
+	color: #000;
+	text-decoration: underline;
+}
+.conteiner_faq .tab_close {
+	display: none;
+}
+.conteiner_faq .contet-text-center {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.conteiner_faq .contet-text-center h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 30px;
+	margin-bottom: 30px;
+}
+.conteiner_faq .contet-text-center p {
+	margin-bottom: 10px;
+	font-weight: 300;
+}
+.conteiner_faq .tab_close:hover {
+	background: transparent;
+}
+.conteiner_faq input:checked + .tab_label {
+	background: #fff;
+}
+.conteiner_faq input:checked + .tab_label .control_close::after {
+	transform: rotate(0deg);
+}
+.conteiner_faq input:checked ~ .tab_content {
+    max-height: 100vh;
+    padding: 1em;
+    border: 1px solid #eee;
+    border-top: unset;
+}
+
+.seo_header{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.seo_header h2{
+    font: normal normal 300 24px/29px 'WorkSans-Bold';
+    letter-spacing: 0px;
+    color: #333333;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+.seo_header h2 b{
+    font-family: 'WorkSans-Light';
+}
+
+.seo_header .voltar{
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DDDDDD;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    padding: 6px 14px;
+    font: normal normal bold 10px/15px 'WorkSans-Bold';
+    letter-spacing: 0px;
+    color: #333333;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+	text-decoration: none;
+}
+ 
