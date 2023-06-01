@@ -51,14 +51,16 @@
         },
         "infinite": true,
         "fullWidth": false,
+        "navigationStep": 1,
         "showNavigationArrows": "desktopOnly",
         "showPaginationDots": "always",
         "blockClass": "shelf",
         "centerMode": {
           "desktop": "disabled",
-          "mobile": "center"
-        },
-        "centerModeSlidesGap": "0"
+          "tablet": "disabled",
+          "phone": "disabled"
+      },
+      "centerModeSlidesGap": "0"
       }
     }
   }

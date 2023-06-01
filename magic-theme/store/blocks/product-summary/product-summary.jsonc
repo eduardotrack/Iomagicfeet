@@ -56,7 +56,8 @@
     "props": {
       "showBadge": true,
       "aspectRatio": "1:1",
-      "maxHeight": 300,
+      "width": 330,
+      "height": 330,
       "mainImageLabel": "",
       "blockClass": "shelf__image"
     }
