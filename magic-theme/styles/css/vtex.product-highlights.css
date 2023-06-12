@@ -18,10 +18,11 @@
     
 }
  
-
-.productHighlightText--collection-highlight-tag {
-    margin-bottom: 20px;
+.productHighlightText--collection-highlight-tag{
+    background: #5DFF49;
+    color: #000000;
 }
+ 
 
 @media (max-width: 767px) {
     .productHighlightText--collection-highlight-tag-search::before,

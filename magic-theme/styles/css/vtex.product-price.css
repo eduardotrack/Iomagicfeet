@@ -93,3 +93,18 @@
         width: 55px;
     }
 }
+
+.savings--product__price-savings-pdp {
+    display: block;
+    width: 64px !important;
+    height: 20px;
+    background: #5DFF49;
+    color: #000000;
+    padding: 4px 15px 3px 10px;
+    font-weight: 700;
+    font-family: 'WorkSans-Bold';
+}
+
+.savingsPercentage--product__price-savings-pdp {
+    margin-right: 5px;
+}

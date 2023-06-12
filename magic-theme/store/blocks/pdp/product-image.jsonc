@@ -4,7 +4,10 @@
     "children": ["flex-layout.col#product-image"]
   },
   "flex-layout.col#product-image": {
-    "children": ["product-images"]
+    "props": {
+      "blockClass": "block-image__product-pdp"
+    },
+    "children": [ "flex-layout.row#highlights-wrapper__flags-pdp" , "product-images"]
   },
 
   "product-images": {
@@ -16,6 +19,24 @@
       "displayThumbnailsArrows": true,
       "showNavigationArrows": true,
       "showPaginationDots": false
+    }
+  },
+  "flex-layout.row#block-flags-pdp": {
+    "title": "Panda | Imagem do produto",
+    "props": {
+      "blockClass": "block-flags-pdp"
+    },
+    "children": ["product-price-savings#pdp","flex-layout.row#highlights-wrapper"]
+  },
+  
+  "flex-layout.row#highlights-wrapper__flags-pdp": {
+    "children": ["product-price-savings#pdp","flex-layout.col#hightlights"],
+    "props": {
+      "blockClass": ["highlights-stack-wrapper", "block-flags-pdp"],
+      "colJustify": "around",
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "fullWidth": true
     }
   }
 }
