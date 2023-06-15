@@ -31,6 +31,60 @@
      */
     //
 
+    $('body').on("click", "#ship-complement", function() {
+        const contador = document.querySelector('.the-counter') || null
+     
+        if(!contador){
+           console.log('Tentando carregar')
+           addContador()
+        }else{
+           console.log('Já carregou')
+        }
+     });
+
+    window.addEventListener("popstate", function () {
+      if (window.location.href.includes("shipping")) {
+        addContador();
+      }
+    });
+    
+    function addContador() {
+      var campo = document.getElementById("ship-complement");
+      if (campo) {
+        var campoMax = 130;
+        campo.maxLength = campoMax;
+    
+        var contadorSpan = document.querySelector(".the-counter");
+    
+        if (!contadorSpan) {
+          contadorSpan = document.createElement("span");
+          contadorSpan.className = "the-counter";
+          contadorSpan.innerHTML = '<span id="counter">' + campo.value.length + '</span>/<span id="total">' + campoMax + '</span>';
+    
+          campo.parentNode.insertBefore(contadorSpan, campo.nextSibling);
+        }
+    
+        campo.addEventListener("input", contadorCaracteres);
+    
+        function contadorCaracteres() {
+          var contadorSpan = document.getElementById("counter");
+          var contadorCampo = campo.value.length;
+    
+          contadorSpan.textContent = contadorCampo;
+    
+          if (contadorCampo === campoMax) {
+            contadorSpan.style.color = "#fb7185";
+          } else {
+            contadorSpan.style.color = "";
+          }
+        }
+      }
+    }
+    
+    $(window).on("orderFormUpdated.vtex", function (evt, orderForm) {
+      addContador();
+    });
+      
     function getQueryParams(qs) {
         qs = (qs || window.location.search).split("+").join(" ");
 
