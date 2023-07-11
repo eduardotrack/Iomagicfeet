@@ -241,7 +241,7 @@
 }
 
 .flexRow--newsletter-wrapper {
-    background: url("https://magicfeet.vteximg.com.br/arquivos/_newsletter-desk-full.jpg?v=1") no-repeat 0%;
+   /*  background: url("https://magicfeet.vteximg.com.br/arquivos/_newsletter-desk-full.jpg?v=1") no-repeat 0%;  */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -249,12 +249,17 @@
     height: 450px;
     display: flex;
     align-items: flex-end;
+    background-color: #cecfd3; 
     
 }
 
+.flexRowContent--newsletter-wrapper :global(.vtex-store-components-3-x-imageElement--home__footer-powered--image){
+    max-width: 485px;
+} 
+
 @media (max-width: 767px) {
     .flexRow--newsletter-wrapper {
-        background: url("https://magicfeet.vteximg.com.br/arquivos/_newsletter-desk-full.jpg?v=1") no-repeat 0%;
+       /*  background: url("https://magicfeet.vteximg.com.br/arquivos/_newsletter-desk-full.jpg?v=1") no-repeat 0%; */
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -262,6 +267,11 @@
         height: auto;
         display: flex;
         align-items: center;
+        background-color: #cecfd3; 
+    }
+
+    .flexRowContent--newsletter-wrapper :global(.vtex-store-components-3-x-imageElement--home__footer-powered--image){
+        max-width: 100%;
     }
 }
 
