@@ -1,7 +1,8 @@
 {
     "store.custom#central-relacionamento": {
       "blocks": [
-        "flex-layout.row#central-relacionamento"
+        "flex-layout.row#central-relacionamento",
+        "flex-layout.row#boasPraticas-TrocaeDevolucoes"
       ]
     },
 
@@ -12,6 +13,28 @@
       "children": [
         "pd-NeoassistCentral"
       ]
+    },
+
+    "flex-layout.row#boasPraticas-TrocaeDevolucoes": {
+      "props": {
+        "blockClass": "boasPraticas-TrocaeDevolucoes" 
+      },
+      "children": [
+        "video#boasPraticas-TrocaeDevolucoes"
+      ]
+    },
+
+    "video#boasPraticas-TrocaeDevolucoes": {
+      "props": {
+        "width": "100%",
+        "height": "380px",
+        "loop": false,
+        "autoPlay": true,
+        "muted": false,
+        "src": "https://www.youtube.com/watch?v=elPiqIQ0kYk",
+        "blockClass": "video-BoasPraticas"
+      }
     }
+
   }
   

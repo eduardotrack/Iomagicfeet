@@ -1,0 +1,77 @@
+.flexRow--bannerPrincipal-crm {
+  height: 100vh;
+  content: "";
+  background-image: url(/arquivos/banner-principal-MF-desktop-01CRM.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 100%;
+}
+
+.flexRowContent--bannerPrincipal-crm {
+  height: 100%;
+}
+
+.flexRow--stepDownload-crm {
+  margin: 0px 20px;
+}
+
+.flexCol--block-stepDownload-crm {
+  width: 650px !important;
+  height: 520px;
+  background-color: #f7f7f7;
+  border-radius: 40px;
+}
+
+.flexRowContent--image-stepDownload-crm {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.flexRowContent--block-lojas-crm {
+  background-color: #f2f2f2;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .flexRow--bannerPrincipal-crm {
+    height: 465px;
+    content: "";
+    background-image: url(/arquivos/banner-principal-MF-mobile-01CRM.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+  }
+  .flexRowContent--bannerPrincipal-crm {
+    display: flex;
+  }
+
+  .flexCol--block-stepDownload-crm {
+    height: 340px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flexCol--block-stepDownload-crm-Arrow-mob::after {
+    content: "";
+    background-image: url(/arquivos/seta-mobile-crm.png);
+    width: 35px;
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 19px;
+    flex-direction: column;
+    align-items: center;
+    background-position: bottom center;
+  }
+
+  .flexRowContent--bottomPhone-04 {
+    margin-bottom: 30px;
+  }
+}

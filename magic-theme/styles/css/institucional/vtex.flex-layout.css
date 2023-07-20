@@ -39,6 +39,11 @@
     padding: 60px 0px;
 }
 
+.flexRowContent--boasPraticas-TrocaeDevolucoes {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
 @media (max-width: 767px) {
     .flexRow--mid-banner-pap {
         background-image: url(

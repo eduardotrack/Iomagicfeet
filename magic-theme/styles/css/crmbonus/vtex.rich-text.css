@@ -1,0 +1,195 @@
+.wrapper--texto-intro-crm {
+  width: 1050px;
+  height: 128px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-radius: 60px;
+  background-color: #ceffc8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  padding: 0px 30px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.span--texto-intro-crm {
+  font-weight: 900;
+}
+
+.wrapper--texto-stepDownload-crm-02,
+.wrapper--texto-stepDownload-crm-03,
+.wrapper--texto-stepDownload-crm-04,
+.wrapper--texto-stepDownload-crm {
+  font-size: 28px;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  text-align: left;
+}
+
+.wrapper--texto-stepDownload-crm::before {
+  content: "1";
+  font-style: normal;
+  width: 13%;
+  display: block;
+  height: 75px;
+  background-color: #def4db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  font-weight: bold;
+}
+
+.wrapper--texto-stepDownload-crm-02::before {
+  content: "2";
+  font-style: normal;
+  width: 13%;
+  display: block;
+  height: 75px;
+  background-color: #def4db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  font-weight: bold;
+}
+
+.wrapper--texto-stepDownload-crm-03::before {
+  content: "3";
+  font-style: normal;
+  width: 13%;
+  display: block;
+  height: 75px;
+  background-color: #def4db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  font-weight: bold;
+}
+
+.wrapper--texto-stepDownload-crm-04::before {
+  content: "4";
+  font-style: normal;
+  width: 13%;
+  display: block;
+  height: 75px;
+  background-color: #def4db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  font-weight: bold;
+}
+
+.paragraph--texto-stepDownload-crm-02,
+.paragraph--texto-stepDownload-crm-03,
+.paragraph--texto-stepDownload-crm-04,
+.paragraph--texto-stepDownload-crm {
+  width: 93%;
+  margin-left: 15px;
+  line-height: 1.2;
+}
+
+.listItem--texto-lojas-crm {
+  text-align: left;
+}
+
+.list--texto-lojas-crm {
+  color: black;
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.container--bannerPrincipal-crm{
+  width: 80% !important;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.wrapper--bannerPrincipal-crm{
+  font-weight: 500;
+  font-size: 65px;
+  color: #474646;
+  text-transform: uppercase;
+}
+
+.strong--bannerPrincipal-crm{
+  font-weight: 900;
+}
+
+@media (max-width: 767px) {
+
+  .container--bannerPrincipal-crm{
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .wrapper--bannerPrincipal-crm{
+
+    font-size: 37px;
+
+  }
+  .paragraph--texto-intro-crm {
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .wrapper--texto-intro-crm {
+    width: 100%;
+    height: 100px;
+    padding: 0px 25px;
+    color: black;
+    margin: 36px 20px;
+  }
+
+  .paragraph--texto-stepDownload-crm-02,
+  .paragraph--texto-stepDownload-crm-03,
+  .paragraph--texto-stepDownload-crm-04,
+  .paragraph--texto-stepDownload-crm {
+    font-size: 13px;
+    width: 80%;
+    margin-bottom: 0px;
+  }
+  .wrapper--texto-stepDownload-crm-02::before {
+    width: 17%;
+    height: 50px;
+    margin-top: 25px;
+    font-size: 24px;
+  }
+  .wrapper--texto-stepDownload-crm-03::before {
+    width: 17%;
+    height: 50px;
+    margin-top: 25px;
+    font-size: 24px;
+  }
+  .wrapper--texto-stepDownload-crm-04::before {
+    width: 17%;
+    height: 50px;
+    margin-top: 25px;
+    font-size: 24px;
+  }
+  .wrapper--texto-stepDownload-crm::before {
+    width: 17%;
+    height: 50px;
+    margin-top: 25px;
+    font-size: 24px;
+  }
+
+  .wrapper--cta-confira-crm {
+    width: 215px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .list--texto-lojas-crm{
+    padding: 20px 0px;
+    font-size: 18px;
+  }
+}

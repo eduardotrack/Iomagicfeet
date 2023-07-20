@@ -1,0 +1,60 @@
+{
+    "rich-text#texto-intro-crm": {
+        "title": "Panda | Texto intro download - crm",
+        "props": {
+          "text": "AGORA VOCÊ PODE CONSULTAR O **CASHBACK** PELO **APP MVP!** \n QUER SABER COMO FUNCIONA?",
+          "blockClass": "texto-intro-crm",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+
+      "responsive-layout.desktop#texto-crm-store-Desk": {
+        "title": "Panda | Texto intro loja Desktop - crm",
+        "children": ["rich-text#texto-crm-store-Desk"]
+      },
+  
+      "responsive-layout.phone#texto-crm-store-Mob": {
+        "title": "Panda | Texto intro loja Desktop Mobile - crm",
+        "children": [ "rich-text#texto-crm-store-Mob"]
+      },
+
+      "rich-text#texto-crm-store-Desk": {
+        "title": "Panda | Texto intro loja Desktop - crm",
+        "props": {
+          "text": "FEZ COMPRA NO **SITE** E **RECEBEU CASHBACK?** \n SAIBA QUAIS SÃO NOSSAS **LOJAS** PARA UTILIZAR O SEU BÔNUS",
+          "blockClass": "texto-intro-crm",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+
+      "rich-text#texto-crm-store-Mob": {
+        "title": "Panda | Texto intro loja Desktop Mobile - crm",
+        "props": {
+          "text": "FEZ COMPRA NO **SITE** E **RECEBEU CASHBACK?** SAIBA QUAIS SÃO NOSSAS **LOJAS** PARA UTILIZAR O SEU BÔNUS",
+          "blockClass": "texto-intro-crm",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      },
+
+      "link#cta-confira-regras-crm": {
+        "title": "Panda | cta confira as regras - crm",
+        "props": {
+          "href": "/regulamentocrm",
+          "label": "confira as regras",
+          "blockClass": "cta-confira-crm"
+        }
+      },
+
+      "rich-text#cta-confira-regras-crm": {
+        "title": "Panda | cta confira as regras - crm",
+        "props": {
+          "text": "confira as regras",
+          "blockClass": "cta-confira-crm",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER"
+        }
+      }
+}

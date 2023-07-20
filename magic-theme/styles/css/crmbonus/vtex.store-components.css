@@ -1,0 +1,36 @@
+.imageElement--image-lojas-crm,
+.imageElement--bannerPrincipal-crm {
+    width: 100%;
+    height: auto;
+}
+
+.imageElement--image-stepDownload-crm-phone {
+    width: 169px !important;
+    height: 339px;
+    padding-bottom: 25px;
+}
+
+.imageElement--image-stepDownload-crm-01 {
+    height: 365px;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 767px) {
+    .imageElement--image-stepDownload-crm {
+        display: none;
+    }
+
+    .imageElement--image-stepDownload-crm-01 {
+        height: 225px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .imageElement--image-stepDownload-crm-phone{
+        height: 210px;
+        width: 109px !important;
+        margin-top: 15px;
+        padding: 0px;
+    }
+
+}
