@@ -40,8 +40,13 @@
 }
 
 .flexRowContent--boasPraticas-TrocaeDevolucoes {
-    max-width: 680px;
+    max-width: 780px;
     margin: 0 auto;
+}
+
+.flexRow--panda-central-relacionamento,
+.flexRow--boasPraticas-TrocaeDevolucoes {
+    background-color: #ececec;
 }
 
 @media (max-width: 767px) {
