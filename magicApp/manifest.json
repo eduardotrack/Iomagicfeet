@@ -13,7 +13,8 @@
   "dependencies": {
     "vtex.order-manager": "0.x",
     "vtex.product-context": "0.x",
-    "vtex.search-graphql": "0.x"
+    "vtex.search-graphql": "0.x",
+    "vtex.orders-graphql": "0.x"
   },
   "registries": ["smartcheckout"],
   "policies": [],

@@ -5,9 +5,15 @@
 }
 
 .imageElement--image-stepDownload-crm-phone {
-    width: 169px !important;
-    height: 339px;
+    width: 155px !important;
+    height: 314px;
     padding-bottom: 25px;
+}
+
+.imageElement--image-stepDownload-crm-phone-05 {
+    width: 155px !important;
+    height: 314px;
+    padding-bottom: 30px;
 }
 
 .imageElement--image-stepDownload-crm-01 {
@@ -29,8 +35,14 @@
     .imageElement--image-stepDownload-crm-phone{
         height: 210px;
         width: 109px !important;
-        margin-top: 15px;
+        margin-top: -70px;
         padding: 0px;
     }
 
+    .imageElement--image-stepDownload-crm-phone-05 {
+        height: 210px;
+        width: 109px !important;
+        margin-top: -70px;
+        padding: 0px;
+    }
 }

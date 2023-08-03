@@ -5,7 +5,6 @@
         "rich-text#texto-intro-crm",
         "flex-layout.row#passo-01-crm",
         "flex-layout.row#passo-02-crm",
-        "flex-layout.row#passo-03-crm",
         "flex-layout.row#passo-04-crm",
         "link#cta-confira-regras-crm",
         "responsive-layout.desktop#texto-crm-store-Desk",
@@ -14,16 +13,6 @@
         "responsive-layout.phone#store-crm-Mob"
       ]
     },
-
-/*     "responsive-layout.desktop#bannerpincipal-crm": {
-      "title": "Panda | Banner topo principal Desktop - crm",
-      "children": ["flex-layout.row#bannerpincipal-crm-Desk"]
-    },
-
-    "responsive-layout.phone#bannerpincipal-crm": {
-      "title": "Panda | Banner topo principal Mobile - crm",
-      "children": [ "flex-layout.row#bannerpincipal-crm-Mob"]
-    }, */
 
     "flex-layout.row#bannerpincipal-crm": {
         "title": "Panda | Banner topo principal - crm",
@@ -44,34 +33,4 @@
         }
       }
       
-  /*   "flex-layout.row#bannerpincipal-crm-Deskadas": {
-      "title": "Panda | Banner topo principal Desktop - crm",
-      "children": ["image#image-bannerPrincipal-crm-Desk"],
-      "props": {
-        "blockClass": "bannerPrincipal-crm",
-        "fullWidth": true
-      }
-    },
-      "flex-layout.row#bannerpincipal-crm-Mob": {
-        "title": "Panda | Banner topo principal Mobile - crm",
-        "children": ["image#image-bannerPrincipal-crm-Mob"],
-        "props": {
-          "blockClass": "bannerPrincipal-crm",
-          "fullWidth": true
-        }
-      },
-      "image#image-bannerPrincipal-crm-Desk": {
-        "title": "Panda | Imagem do banner principal Desktop - crm",
-        "props": {
-          "src": "/arquivos/banner-principal-MF-desktop-01CRM.jpg",
-            "blockClass": "bannerPrincipal-crm"
-        }
-      },
-      "image#image-bannerPrincipal-crm-Mob": {
-        "title": "Panda | Imagem do banner principal Mobile - crm",
-        "props": {
-          "src": "/arquivos/banner-principal-MF-mobile-01CRM.jpg",
-            "blockClass": "bannerPrincipal-crm"
-        }
-      } */
   }

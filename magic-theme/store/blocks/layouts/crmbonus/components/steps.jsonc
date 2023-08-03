@@ -3,7 +3,7 @@
   /* Passo 01 */
   "flex-layout.row#passo-01-crm": {
     "title": "Panda | Passo 01 download - crm",
-    "children": ["flex-layout.col#block-passo-01-crm","flex-layout.row#arrow-passo-01-crm"],
+    "children": ["flex-layout.col#block-passo-01-crm"],
     "props": {
       "blockClass": "stepDownload-crm",
       "fullWidth": true
@@ -39,7 +39,7 @@
       "src": "/arquivos/phone-03-CRM.png",
       "blockClass": "image-stepDownload-crm-01"
     }
-  },
+  },/* 
 
   "flex-layout.row#arrow-passo-01-crm": {
     "title": "Panda | Seta direita passo 01 download - crm",
@@ -57,7 +57,7 @@
       "blockClass": "image-stepDownload-crm"
     }
   },
-
+ */
   "image#arrow-passo-01-crm-Mob": {
     "title": "Panda | Seta direita passo 01 download Mobile- crm",
     "props": {
@@ -65,10 +65,11 @@
       "blockClass": "image-stepDownload-crm"
     }
   },
+
 /* Passo 02 */
   "flex-layout.row#passo-02-crm": {
     "title": "Panda | Passo 02 download - crm",
-    "children": ["flex-layout.row#arrow-passo-02-crm","flex-layout.col#block-passo-02-crm"],
+    "children": ["flex-layout.col#block-passo-02-crm","flex-layout.row#passo-03-crm"],
     "props": {
       "blockClass": "stepDownload-crm",
       "fullWidth": true
@@ -105,7 +106,7 @@
       "blockClass": "image-stepDownload-crm-phone"
     }
   },
-  "flex-layout.row#arrow-passo-02-crm": {
+/*   "flex-layout.row#arrow-passo-02-crm": {
     "title": "Panda | Seta direita passo 02 download - crm",
     "children": ["image#arrow-passo-02-crm"],
     "props": {
@@ -119,11 +120,13 @@
       "src": "/arquivos/seta-esquerda-CRM.png",
       "blockClass": "image-stepDownload-crm"
     }
-  },
+  }, */
+
+
   /* Passo 03 */
   "flex-layout.row#passo-03-crm": {
     "title": "Panda | Passo 03 download - crm",
-    "children": ["flex-layout.col#block-passo-03-crm","flex-layout.row#arrow-passo-03-crm"],
+    "children": ["flex-layout.col#block-passo-03-crm"],
     "props": {
       "blockClass": "stepDownload-crm",
       "fullWidth": true
@@ -160,7 +163,7 @@
       "blockClass": "image-stepDownload-crm-phone"
     }
   },
-  "flex-layout.row#arrow-passo-03-crm": {
+/*   "flex-layout.row#arrow-passo-03-crm": {
     "title": "Panda | Seta direita passo 03 download - crm",
     "children": ["image#arrow-passo-03-crm"],
     "props": {
@@ -174,12 +177,12 @@
       "src": "/arquivos/seta-direita-CRM.png",
       "blockClass": "image-stepDownload-crm"
     }
-  },
+  }, */
   
   /* Passo 04 */
   "flex-layout.row#passo-04-crm": {
     "title": "Panda | Passo 04 download - crm",
-    "children": ["flex-layout.row#arrow-passo-04-crm","flex-layout.col#block-passo-04-crm"],
+    "children": ["flex-layout.col#block-passo-04-crm","flex-layout.row#passo-05-crm"],
     "props": {
       "blockClass": "stepDownload-crm",
       "fullWidth": true
@@ -189,7 +192,7 @@
     "title": "Panda | Bloco Passo 04 download - crm",
     "children": ["rich-text#texto-passo-04-crm", "flex-layout.row#image-passo-04-crm"],
     "props": {
-      "blockClass": "block-stepDownload-crm"
+      "blockClass": ["block-stepDownload-crm", "block-stepDownload-crm-Arrow-mob"]
     }
   },
   "rich-text#texto-passo-04-crm": {
@@ -205,7 +208,7 @@
     "title": "Panda | Imagem passo 04 download - crm",
     "children": ["image#image-passo-04-crm"],
     "props": {
-      "blockClass": ["block-stepDownload-crm-phone", "bottomPhone-04"],
+      "blockClass": ["block-stepDownload-crm-phone"],
       "fullWidth": true
     }
   },
@@ -216,7 +219,7 @@
       "blockClass": "image-stepDownload-crm-phone"
     }
   },
-  "flex-layout.row#arrow-passo-04-crm": {
+/*   "flex-layout.row#arrow-passo-04-crm": {
     "title": "Panda | Seta direita passo 04 download - crm",
     "children": ["image#arrow-passo-04-crm"],
     "props": {
@@ -227,8 +230,65 @@
   "image#arrow-passo-04-crm": {
     "title": "Panda | Seta direita passo 04 download - crm",
     "props": {
-      "src": "",
-      "blockClass": "image-stepDownload-crm "
+      "src": "/arquivos/seta-esquerda-CRM.png",
+      "blockClass": "image-stepDownload-crm"
     }
-  }
+  }, */
+
+
+  /* Passo 05 */
+  "flex-layout.row#passo-05-crm": {
+    "title": "Panda | Passo 05 download - crm",
+    "children": ["flex-layout.col#block-passo-05-crm"],
+    "props": {
+      "blockClass": "stepDownload-crm",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#block-passo-05-crm": {
+    "title": "Panda | Bloco Passo 05 download - crm",
+    "children": ["rich-text#texto-passo-05-crm", "flex-layout.row#image-passo-05-crm"],
+    "props": {
+      "blockClass": ["block-stepDownload-crm"]
+    }
+  },
+  "rich-text#texto-passo-05-crm": {
+    "title": "Panda | Texto passo 05 download - crm",
+    "props": {
+      "text": "Você pode verificar também as **lojas disponíveis** para **utilizar** o seu **cashback**",
+      "blockClass": "texto-stepDownload-crm-05",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.row#image-passo-05-crm": {
+    "title": "Panda | Imagem passo 05 download - crm",
+    "children": ["image#image-passo-05-crm"],
+    "props": {
+      "blockClass": ["block-stepDownload-crm-phone","bottomPhone-04"],
+      "fullWidth": true
+    }
+  },
+  "image#image-passo-05-crm": {
+    "title": "Panda | Imagem passo 05 download - crm",
+    "props": {
+      "src": "/arquivos/quinto-celular-min.png",
+      "blockClass": "image-stepDownload-crm-phone-05"
+    }
+  }/* ,
+  "flex-layout.row#arrow-passo-05-crm": {
+    "title": "Panda | Seta direita passo 05 download - crm",
+    "children": ["image#arrow-passo-05-crm"],
+    "props": {
+      "blockClass": "image-stepDownload-crm",
+      "fullWidth": true
+    }
+  },
+  "image#arrow-passo-05-crm": {
+    "title": "Panda | Seta direita passo 05 download - crm",
+    "props": {
+      "src": "",
+      "blockClass": "image-stepDownload-crm"
+    }
+  } */
 }
