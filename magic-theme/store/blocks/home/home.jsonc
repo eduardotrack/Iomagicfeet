@@ -18,7 +18,7 @@
       "list-context.image-list#slider-full-home",
       "responsive-layout.desktop#tips-home",
       "responsive-layout.phone#tips-home",
-      "flex-layout.row#shelf-home-01",
+ /*      "flex-layout.row#shelf-home-01", */
       "retail-rocket-container#home",
       "flex-layout.row#procura-home",
  
