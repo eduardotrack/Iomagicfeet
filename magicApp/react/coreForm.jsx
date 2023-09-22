@@ -20,7 +20,7 @@ function coreForm() {
         {value: 'Portabilidade dos dados a outro fornecedor de serviço ou produto', text: 'Portabilidade dos dados a outro fornecedor de serviço ou produto'},
         {value: 'Eliminação dos dados pessoais', text: 'Eliminação dos dados pessoais'},
         {value: 'Informação das entidades públicas e privadas com as quais os dados foram compartilhados', text: 'Informação das entidades públicas e privadas com as quais os dados foram compartilhados'},
-        {value: 'Informação sobre a possibilidade de não fornecedor o consentimento e suas consequência', text: 'Informação sobre a possibilidade de não fornecedor o consentimento e suas consequência'},
+        {value: 'Informação sobre a possibilidade de não fornecer o consentimento e suas consequências', text: 'Informação sobre a possibilidade de não fornecer o consentimento e suas consequências'},
         {value: 'Revogação do consentimento', text: 'Revogação do consentimento'},
         {value: 'Revisão de decisões tomadas com base no tratamento automatizado (perfil pessoal, profissional , de consumo, de crédito ou de aspectos de sua personalidade).', text: 'Revisão de decisões tomadas com base no tratamento automatizado (perfil pessoal, profissional , de consumo, de crédito ou de aspectos de sua personalidade).'},
       ];

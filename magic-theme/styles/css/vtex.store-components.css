@@ -580,3 +580,8 @@
     min-height: 19px;
     width: auto !important;
 }
+
+.imageElement--infocard-chances-wrapper{
+    width: 98%;
+    margin-bottom: 10px;
+}

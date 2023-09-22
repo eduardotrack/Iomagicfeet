@@ -1260,4 +1260,21 @@
     .flexRow--block-flags-pdp {
         width: 100%;
     }
+
+    .flexCol--infocard-chances-wrapper-menor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .flexCol--infocard-chances-wrapper-menor :global(.vtex-store-link-0-x-childrenContainer--infocard-chances-wrapper){
+        width: 46vw
+    }
+}
+
+
+.flexRowContent--novidades-home-rowTtitle{
+    margin-top: 100px;
 }

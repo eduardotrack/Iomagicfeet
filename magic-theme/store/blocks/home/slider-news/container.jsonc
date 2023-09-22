@@ -1,0 +1,47 @@
+{
+    "flex-layout.row#novidades-home": {
+        "title": "Panda | Slide novidades",
+        "children": ["flex-layout.col#novidades-home"],
+        "props":{
+            "blockClass":"exclusivos-home-row",
+            "fullWidth": true 
+        } 
+      },
+
+      "flex-layout.row#novidadesTitle-home": {
+        "title": "Panda | Slide novidades",
+        "children": ["rich-text#novidade-home"],
+        "props":{
+            "blockClass":"novidades-home-rowTtitle",
+            "fullWidth": false 
+        } 
+      },
+
+      
+      "rich-text#novidade-home": {
+        "title": "Panda | Ultimas novidade para você - Título",
+        "props": {
+          "text": "## vem ver as **novidades**",
+          "blockClass": "Panda__title"
+        }
+      },
+    
+      "flex-layout.col#novidades-home": {
+        "children": ["slider-layout#novidades-home"] 
+      },
+
+      "slider-layout#novidades-home": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": false,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "always",
+          "blockClass": "carousel-exclusivos"
+        },
+        "children": ["info-card#item-novidade-1", "info-card#item-novidade-2", "info-card#item-novidade-3"]
+      }
+}

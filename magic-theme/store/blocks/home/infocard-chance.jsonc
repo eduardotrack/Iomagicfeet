@@ -1,0 +1,152 @@
+{
+    "flex-layout.row#chances-home": {
+        "title": "Panda | Ultimas chances para você",
+        "children": ["flex-layout.col#chances-home"],
+        "props":{
+          "blockClass":"chances-home-row"
+        } 
+      },
+    
+      "flex-layout.col#chances-home": {
+        "children": ["rich-text#chances-home", "flex-layout.row#chances-home-list"] 
+      },
+    
+      "rich-text#chances-home": {
+        "title": "Panda | Ultimas chances para você - Título",
+        "props": {
+          "text": "## últimas chances para **você**",
+          "blockClass": "Panda__title"
+        }
+      },
+    
+      "flex-layout.row#chances-home-list": {
+        "title": "Panda | Ultimas chances para você",
+        "children": ["flex-layout.col#col-chances-infocard-maior",  "flex-layout.col#col-chances-infocard-menor"],
+        "props":{
+          "blockClass":"chances-home-cols"
+        } 
+      },
+
+      "flex-layout.col#col-chances-infocard-maior": {
+        "title": "Panda | Link Card Grande",
+        "children": [
+          "responsive-layout.desktop#chances-infocard-maior",
+          "responsive-layout.phone#chances-infocard-maior"
+        ],
+        "props": {
+          "blockClass": "infocard-chances-wrapper",
+          "horizontalAlign": "left",
+          "marginLeft": 0,
+          "marginRight": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "preventVerticalStretch": true,
+          "rowGap": 0,
+          "verticalAlign": "top",
+          "width": "65%"
+        }
+      },
+
+      "responsive-layout.desktop#chances-infocard-maior": {
+        "title": "Panda | Link Card Grande",
+        "children": [ "link#chances-maior"]
+      },
+ 
+      "responsive-layout.phone#chances-infocard-maior": {
+        "title": "Panda | Link Card Grande - Mobile",
+        "children": [ "link#chances-maior-mobile"]
+      },
+
+      "flex-layout.col#col-chances-infocard-menor": {
+        "title": "Panda | Link Card Menor",
+        "children": [
+            "responsive-layout.desktop#chances-infocard-menor",
+            "responsive-layout.phone#chances-infocard-menor",
+            "responsive-layout.phone#chances-infocard-menor2"
+        ],
+        "props": {
+          "blockClass": "infocard-chances-wrapper-menor",
+          "horizontalAlign": "left",
+          "marginLeft": 0,
+          "marginRight": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "preventVerticalStretch": true,
+          "rowGap": 0,
+          "verticalAlign": "top",
+          "width": "47%"
+        }
+      },
+
+      "responsive-layout.desktop#chances-infocard-menor": {
+        "title": "Panda | Link Card Menor",
+        "children": [ "link#chances-menor",  "link#chances-menor2"]
+      },
+ 
+      "responsive-layout.phone#chances-infocard-menor": {
+        "title": "Panda | Link Card Menor - Mobile",
+        "children": ["link#chances-menor-mobile"]
+      },
+
+      "responsive-layout.phone#chances-infocard-menor2": {
+        "title": "Panda | Link Card Menor - Mobile",
+        "children": ["link#chances-menor2-mobile"]
+      },
+
+      "link#chances-maior": {
+        "title": "Panda | Link Card Grande",
+        "props": {
+          "href": "/",
+          "blockClass": "infocard-chances-wrapper"
+        },
+        "children": [
+            "image#chances-maior"
+        ]
+      },
+
+      "image#chances-maior": {
+        "title": "Panda | Imagem Card Grande",
+        "props": {
+          "src": "assets/img/chance/1.jpg",
+          "blockClass": "infocard-chances-wrapper"
+        }
+      },
+
+      "link#chances-menor": {
+        "title": "Panda | Link Card Pequeno 1",
+        "props": {
+          "href": "/",
+          "blockClass": "infocard-chances-wrapper"
+        },
+        "children": [
+            "image#chances-menor"
+        ]
+      },
+
+      "image#chances-menor": {
+        "title": "Panda | Imagem Card Pequeno 1",
+        "props": {
+          "src": "assets/img/chance/2.jpg",
+          "blockClass": "infocard-chances-wrapper"
+        }
+      },
+
+      "link#chances-menor2": {
+        "title": "Panda | Link Card Pequeno 2",
+        "props": {
+          "href": "/",
+          "blockClass": "infocard-chances-wrapper"
+        },
+        "children": [
+            "image#chances-menor2"
+        ]
+      },
+
+      "image#chances-menor2": {
+        "title": "Panda | Imagem Card Pequeno 2",
+        "props": {
+          "src": "assets/img/chance/3.jpg",
+          "blockClass": "infocard-chances-wrapper"
+        }
+      }
+}

@@ -9,7 +9,6 @@
     "docs": "0.x",
     "assets": "0.x"
   },
-  
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
