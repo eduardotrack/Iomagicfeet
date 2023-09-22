@@ -33,7 +33,7 @@
         "title": "Panda | Imagem Card Pequeno 1",
         "props": {
           "src": "assets/img/chance/2-mobile.jpg",
-          "blockClass": "infocard-chances-wrapper"
+          "blockClass":  ["infocard-chances-wrapper", "infocard-chances-wrapper-last"]
         }
       },
 
@@ -52,7 +52,7 @@
         "title": "Panda | Imagem Card Pequeno 2",
         "props": {
           "src": "assets/img/chance/3-mobile.jpg",
-          "blockClass": "infocard-chances-wrapper"
+          "blockClass": ["infocard-chances-wrapper", "infocard-chances-wrapper-last"]
         }
       }
 }

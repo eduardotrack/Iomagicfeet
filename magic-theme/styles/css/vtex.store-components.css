@@ -541,6 +541,12 @@
     .portalWrapper--header__search :global(.vtex-search-2-x-biggy-autocomplete) {
         box-shadow: none;
     }
+
+    .imageElement--infocard-chances-wrapper-last{
+        margin-left: -2px;
+        margin-top: -10px;
+        width: 97% !important;
+    }
 }
 
 .skuSelectorTextContainer {
