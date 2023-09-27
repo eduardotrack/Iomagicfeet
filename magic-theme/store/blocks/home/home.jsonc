@@ -23,10 +23,10 @@
 
       "flex-layout.row#chances-home",
       "flex-layout.row#procura-home",
-      "flex-layout.row#novidadesTitle-home",
-      "flex-layout.row#novidades-home",
+     
       "flex-layout.row#quem-home",
       
+      "flex-layout.row#novidadesTitle-home",
       "flex-layout.row#exclusivo-home",
       "flex-layout.row#calendario-home",
       "flex-layout.row#brands-home"

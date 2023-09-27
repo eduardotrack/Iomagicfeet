@@ -96,7 +96,7 @@
       "link#chances-maior": {
         "title": "Panda | Link Card Grande",
         "props": {
-          "href": "/",
+          "href": "/tenis-infantil?initialMap=c&initialQuery=tenis-infantil&map=category-1&priceRange=99%20TO%20199.99",
           "blockClass": "infocard-chances-wrapper"
         },
         "children": [
@@ -115,7 +115,7 @@
       "link#chances-menor": {
         "title": "Panda | Link Card Pequeno 1",
         "props": {
-          "href": "/",
+          "href": "/tenis-infantil?initialMap=c&initialQuery=tenis-infantil&map=category-1&priceRange=99%20TO%20299.99",
           "blockClass": "infocard-chances-wrapper"
         },
         "children": [
@@ -134,7 +134,7 @@
       "link#chances-menor2": {
         "title": "Panda | Link Card Pequeno 2",
         "props": {
-          "href": "/",
+          "href": "/tenis-infantil?initialMap=c&initialQuery=tenis-infantil&map=category-1&priceRange=99%20TO%20399.99",
           "blockClass": "infocard-chances-wrapper"
         },
         "children": [
