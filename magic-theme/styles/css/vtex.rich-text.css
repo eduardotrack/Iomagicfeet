@@ -498,6 +498,15 @@
 }
 
 @media (max-width: 767px) {
+    .paragraph--tips-item-text {
+   
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+
+    }
+    
+    
     .wrapper--panda-search__seo-bottom,
     .paragraph--category-seo-text {
         padding-left: 0;
@@ -1237,7 +1246,7 @@
         font-family: 'WorkSans-Regular';
         font-style: normal;
         font-weight: 500;
-        font-size: 10px;
+        font-size: 13px;
         line-height: 13px;
         color: #000000;
     }

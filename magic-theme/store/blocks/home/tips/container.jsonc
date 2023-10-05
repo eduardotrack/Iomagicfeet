@@ -36,19 +36,15 @@
         "props": {
           "itemsPerPage": {
             "desktop": 1,
-            "tablet": 1,
-            "phone": 1
+            "tablet": 3,
+            "phone": 3
           },
-          "autoplay":{
-            "timeout": 3000,
-            "stopOnHover": true
-          },
-          "infinite": true,
-          "showNavigationArrows": "mobileOnly",
+          "infinite": false,
+          "showNavigationArrows": "never",
           "showPaginationDots":"never",
           "blockClass": "tips_home_slider"
         },
-        "children": [ "link#tips-item-01", "link#tips-item-02", "link#tips-item-03", "link#tips-item-04"]
+        "children": [ "link#tips-item-01", "link#tips-item-02", "link#tips-item-03"]
       }
 }
 

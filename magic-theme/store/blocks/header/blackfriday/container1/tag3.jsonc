@@ -1,0 +1,38 @@
+{
+    "flex-layout.row#black-header-tag-3": {
+        "title": "Panda | Banner Customizavel",
+        "props": {
+          "blockClass": "black-header-tag" ,
+          "preventHorizontalStretch": true,
+          "fullWidth": true
+        },
+        "children": [
+            "flex-layout.col#black-header-tag-text-3"
+        ]
+      },
+
+      "flex-layout.col#black-header-tag-text-3": {
+        "title": "Panda | Conteudo do Banner",
+        "children": ["rich-text#black-header-tag-text-3", "link#black-header-tag-cta-3"],
+        "props":{
+        "blockClass":"black-header-tag"
+        } 
+    },
+
+    "rich-text#black-header-tag-text-3": {
+      "title": "Panda | Texto",
+      "props": {
+        "text": "looks incríveis com **converse chuck taylor all star**",
+        "blockClass":"bf-main-tag"
+      }
+    },
+ 
+    "link#black-header-tag-cta-3": {
+        "title": "Panda | Link",
+        "props": {
+          "href": "/",
+          "label": "veja mais!",
+          "blockClass": "black-header-tag" 
+        }
+      }
+}

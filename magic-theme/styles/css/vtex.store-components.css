@@ -96,6 +96,10 @@
 }
 
 @media (max-width: 767px) {
+    .imageElement--tips-item-img {
+        width: auto;
+        height: 22px;
+    }
     .infoCardTextContainer--info-card-exlusivo {
         padding: 55px 0;
         text-align: center;

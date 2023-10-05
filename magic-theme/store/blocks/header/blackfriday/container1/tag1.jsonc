@@ -1,19 +1,10 @@
 {
-    //controle de visibilidade do carrossel
-    "experimental__visibility-layout#banner-header-tag": {
-      "title": "Controle de visibilidade - Banner Customizavel",
-      "children": ["flex-layout.row#black-header-tag"],
-      "props": {
-        "visible": false,
-        "blockClass": "black-header-tag"
-      }
-    },
-
     "flex-layout.row#black-header-tag": {
         "title": "Panda | Banner Customizavel",
         "props": {
           "blockClass": "black-header-tag" ,
-          "preventHorizontalStretch": true
+          "preventHorizontalStretch": true,
+          "fullWidth": true
         },
         "children": [
             "flex-layout.col#black-header-tag-text"
@@ -31,7 +22,7 @@
     "rich-text#black-header-tag-text": {
       "title": "Panda | Texto",
       "props": {
-        "text": "Compre a partir de R$600 e **ganhe R$100**. Use o cupom: **NATALCOM-MF**",
+        "text": "produtos com até **60% off**",
         "blockClass":"bf-main-tag"
       }
     },
@@ -40,7 +31,7 @@
         "title": "Panda | Link",
         "props": {
           "href": "/",
-          "label": "Saiba mais",
+          "label": "vem ver!",
           "blockClass": "black-header-tag" 
         }
       }

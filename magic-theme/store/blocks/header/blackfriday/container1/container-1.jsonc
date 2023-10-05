@@ -1,0 +1,35 @@
+{
+  //controle de visibilidade do carrossel
+  "experimental__visibility-layout#banner-header-tag": {
+    "title": "Controle de visibilidade - Faixa rotativa",
+    "children": ["slider-layout#faixaRotativa-header"],
+    "props": {
+      "visible": false,
+      "blockClass": "black-header-tag"
+    }
+  },
+
+  "slider-layout#faixaRotativa-header": {
+    "title": "Controle de visibilidade - Faixa rotativa",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "faixaRotativa_header",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#black-header-tag-2",
+      "flex-layout.row#black-header-tag-3"
+    ]
+  }
+}

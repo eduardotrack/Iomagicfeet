@@ -73,6 +73,31 @@
 }
 
 @media (max-width: 767px) {
+    .slide--tips_home_slider--firstVisible::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%; 
+        width: 2px; 
+        height: 25%;
+        background: #C4C4C4;
+        transform: translateY(-50%);
+    }
+
+    .slide--tips_home_slider--lastVisible::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%; 
+        width: 2px; 
+        height: 25%;
+        background: #C4C4C4;
+        transform: translateY(-50%);
+    }
+    .sliderLayoutContainer--tips_home_slider{
+        background: #F2F2F2;
+        padding: 7px;
+    }
     .slideChildrenContainer--carousel-procura {
         display: flex;
         align-items: flex-start;

@@ -198,7 +198,7 @@
     "children": [
       "cep-controller",
       "retail-rocket-container#global",
-      "flex-layout.row#0-mobile", 
+  /*     "flex-layout.row#0-mobile",  */
       "sticky-layout#1-mobile",
       "experimental__visibility-layout#banner-header-tag",
     

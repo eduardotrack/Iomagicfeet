@@ -58,6 +58,7 @@
     line-height: 16px;
     color: #000000;
     text-decoration: underline;
+    font-weight: 700;
 }
 
 @media (max-width: 767px) {
@@ -69,5 +70,15 @@
         line-height: 16px;
         color: #000000;
         text-decoration: underline;
+        font-weight: 700;
+    }
+
+    .childrenContainer--tips-item-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        flex-direction: column;
+        padding: 3px;
     }
 }

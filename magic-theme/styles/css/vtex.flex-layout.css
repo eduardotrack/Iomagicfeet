@@ -1043,6 +1043,7 @@
 .flexRow--black-header-tag {
     background: #5DFF49;
     padding: 13px 0px;
+    width: 100%;
 }
 
 .flexCol--black-header-tag {
