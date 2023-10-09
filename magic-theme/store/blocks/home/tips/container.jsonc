@@ -44,7 +44,7 @@
           "showPaginationDots":"never",
           "blockClass": "tips_home_slider"
         },
-        "children": [ "link#tips-item-01", "link#tips-item-02", "link#tips-item-03"]
+        "children": [  "link#tips-item-02", "link#tips-item-01", "link#tips-item-03"]
       }
 }
 

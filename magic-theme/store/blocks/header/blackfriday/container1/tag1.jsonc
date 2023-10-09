@@ -22,16 +22,16 @@
     "rich-text#black-header-tag-text": {
       "title": "Panda | Texto",
       "props": {
-        "text": "produtos com até **60% off**",
-        "blockClass":"bf-main-tag"
+        "text": "seleção de   **jordan para você**",
+        "blockClass":["faixaHeader_iconJordan","bf-main-tag"]
       }
     },
  
     "link#black-header-tag-cta": {
         "title": "Panda | Link",
         "props": {
-          "href": "/",
-          "label": "vem ver!",
+          "href": "/tenis-infantil/jordan-brand",
+          "label": "clique aqui!",
           "blockClass": "black-header-tag" 
         }
       }

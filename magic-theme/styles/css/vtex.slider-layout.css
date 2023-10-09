@@ -137,7 +137,14 @@
     background: #FFF;
 }
 
+.sliderTrack--faixaRotativa_header{
+    height: 30px;
+}
+
 @media (max-width: 767px) {
+    .sliderTrack--faixaRotativa_header{
+        height: 25px;
+    }
     .sliderLayoutContainer--quemsomos__slider {
         display: flex;
         flex-direction: column;
@@ -155,3 +162,4 @@
         padding-right: 0px !important;
     }
 }
+

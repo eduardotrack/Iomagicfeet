@@ -28,6 +28,7 @@
       "fullWidth": true
     },
     "children": [
+      "flex-layout.row#black-header-tag",
       "flex-layout.row#black-header-tag-2",
       "flex-layout.row#black-header-tag-3"
     ]

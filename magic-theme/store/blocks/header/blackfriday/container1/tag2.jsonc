@@ -30,7 +30,7 @@
     "link#black-header-tag-cta-2": {
         "title": "Panda | Link",
         "props": {
-          "href": "/",
+          "href": "/fila",
           "label": "vem ver!",
           "blockClass": "black-header-tag" 
         }
