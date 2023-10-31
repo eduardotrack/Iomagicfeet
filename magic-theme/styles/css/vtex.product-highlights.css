@@ -17,6 +17,18 @@
     justify-content: center;
     
 }
+
+.productHighlightText--collection-highlight-tag-search[data-highlight-id="317"],
+.productHighlightText--collection-highlight-tag[data-highlight-id="317"]{
+    background-image: url("/arquivos/tag-magicBlack2023.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    display: block;
+    width: 34px;
+    height: 33px;
+    background-color: transparent;
+    font-size: 0;
+}
  
 .productHighlightText--collection-highlight-tag{
     background: #5DFF49;
