@@ -22,15 +22,15 @@
     "rich-text#black-header-tag-text-2": {
       "title": "Panda | Texto",
       "props": {
-        "text": "dia das crianças com  **fila kids**",
-        "blockClass":"bf-main-tag"
+        "text": "aproveite os produtos  **especiais**",
+        "blockClass": ["bf-main-tag", "black-tag-hd"]
       }
     },
  
     "link#black-header-tag-cta-2": {
         "title": "Panda | Link",
         "props": {
-          "href": "/fila",
+          "href": "/black-friday",
           "label": "vem ver!",
           "blockClass": "black-header-tag" 
         }

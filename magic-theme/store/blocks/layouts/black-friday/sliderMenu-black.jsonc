@@ -1,0 +1,72 @@
+{
+  "experimental__visibility-layout#sliderMenu-blackFriday": {
+    "title": "Panda | Controle Slider menu Black Friday",
+    "children": ["flex-layout.row#sliderMenu-blackFriday"],
+    "props": {
+      "visible": true,
+      "blockClass": "sliderMenu-blackFriday"
+    }
+  },
+
+  "flex-layout.row#sliderMenu-blackFriday": {
+    "title": "Panda | Slider menu Black Friday",
+    "children": ["slider-layout#sliderMenu-blackFriday"],
+    "props": {
+      "blockClass": "sliderMenu-blackFriday",
+      "fullWidth": true
+    }
+  },
+
+  "slider-layout#sliderMenu-blackFriday": {
+    "title": "Panda | Items slider menu Black Friday",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "sliderMenu-blackFriday"
+    },
+    "children": [
+      "link#itemMenu--blackFrida01",
+      "link#itemMenu--blackFrida02",
+      "link#itemMenu--blackFrida03",
+      "link#itemMenu--blackFrida04"
+    ]
+  },
+  "link#itemMenu--blackFrida01": {
+    "title": "Panda | Item slider menu Black Friday 01",
+    "props": {
+      "href": "/busca-generica-black?initialMap=productClusterIds&initialQuery=317&map=category-1,productclusternames&query=/tenis-infantil/black-friday-2023&searchState",
+      "label": "tênis",
+      "blockClass": "itemMenu--blackFriday"
+    }
+  },
+  "link#itemMenu--blackFrida02": {
+    "title": "Panda | Item slider menu Black Friday 02",
+    "props": {
+      "href": "/busca-generica-black?initialMap=productClusterIds&initialQuery=317&map=category-1,productclusternames&query=/roupas-infantis/black-friday-2023&searchState",
+      "label": "Roupas",
+      "blockClass": "itemMenu--blackFriday"
+    }
+  },
+  "link#itemMenu--blackFrida03": {
+    "title": "Panda | Item slider menu Black Friday 03",
+    "props": {
+      "href": "/busca-generica-black?initialMap=productClusterIds&initialQuery=317&map=category-1,productclusternames&query=/acessorios-infantis/black-friday-2023&searchState",
+      "label": "Acessórios",
+      "blockClass": "itemMenu--blackFriday"
+    }
+  },
+  "link#itemMenu--blackFrida04": {
+    "title": "Panda | Item slider menu Black Friday 04",
+    "props": {
+      "href": "/busca-generica-black?initialMap=productClusterIds&initialQuery=317&map=category-1,productclusternames&query=/calcados-infantis/black-friday-2023&searchState",
+      "label": "Calçados",
+      "blockClass": "itemMenu--blackFriday"
+    }
+  }
+}

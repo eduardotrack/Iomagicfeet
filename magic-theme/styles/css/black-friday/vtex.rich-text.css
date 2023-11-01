@@ -1,0 +1,59 @@
+.paragraph--itemBeneficios--blackFrida03,
+.paragraph--itemBeneficios--blackFrida02,
+.paragraph--itemBeneficios--blackFrida01{
+    display: flex;
+    align-items: center;
+}
+
+.paragraph--itemBeneficios--blackFrida01::before{
+    content: '';
+    background-image: url("/arquivos/transitoFreter-black.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.paragraph--itemBeneficios--blackFrida02::before{
+    content: '';
+    background-image: url("/arquivos/cartao-debito-black.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.paragraph--itemBeneficios--blackFrida03::before{
+    content: '';
+    background-image: url("/arquivos/pixBlack-slide.png");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .paragraph--itemBeneficios--blackFrida03,
+    .paragraph--itemBeneficios--blackFrida02,
+    .paragraph--itemBeneficios--blackFrida01{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}

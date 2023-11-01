@@ -1,0 +1,61 @@
+{
+  "experimental__visibility-layout#blackFriday--banner": {
+    "title": "Panda | Controle Banner Black friday ",
+    "children": [
+      "responsive-layout.desktop#blackFriday--banner-Desk",
+      "responsive-layout.mobile#blackFriday--banner-Mob"
+    ],
+    "props": {
+      "visible": true,
+      "blockClass": "blackFriday--banner"
+    }
+  },
+
+  "responsive-layout.desktop#blackFriday--banner-Desk": {
+    "title": "Panda | Banner Black friday - Desktop",
+    "children": ["flex-layout.row#blackFriday--banner-Desk"]
+  },
+
+  
+  "responsive-layout.mobile#blackFriday--banner-Mob": {
+    "title": "Panda | Banner Black friday - Mobile",
+    "children": ["flex-layout.row#blackFriday--banner-Mob"]
+  },
+
+  "flex-layout.row#blackFriday--banner-Desk": {
+    "title": "Panda | Slider menu Black Friday",
+    "children": ["image#blackFriday--banner-Desk"],
+    "props": {
+      "blockClass": "blackFriday--banner",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#blackFriday--banner-Mob": {
+    "title": "Panda | Slider menu Black Friday",
+    "children": ["image#blackFriday--banner-Mob"],
+    "props": {
+      "blockClass": "blackFriday--banner",
+      "fullWidth": true
+    }
+  },
+
+  "image#blackFriday--banner-Desk": {
+    "title": "Panda | Imagem Banner Black friday - Desktop",
+    "props": {
+      "src": "/arquivos/bannerBlackFriday-desktop-ful.png",
+      "maxHeight": 410,
+      "blockClass": "blackFriday--banner"
+    }
+  },
+
+  "image#blackFriday--banner-Mob": {
+    "title": "Panda | Imagem Banner Black friday - Mobile",
+    "props": {
+      "src": "/arquivos/bannerBlackFriday-mobile-ful.png",
+      "maxHeight": 408,
+      "width": "100%",
+      "blockClass": "blackFriday--banner"
+    }
+  }
+}

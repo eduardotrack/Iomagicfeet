@@ -1,0 +1,15 @@
+.flexRow--sliderMenu-blackFriday{
+    background-color: #000;
+    height: 60px;
+
+}
+
+.flexRowContent--sliderMenu-blackFriday{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.flexRowContent--sliderBeneficios-blackFriday{
+    padding: 35px 0px;
+}

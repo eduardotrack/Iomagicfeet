@@ -17,6 +17,10 @@
         "tablet": 1,
         "phone": 1
       },
+      "autoplay":{
+        "timeout": 5000,
+        "stopOnHover": true
+      },
       "infinite": true,
       "showNavigationArrows": "never",
       "showPaginationDots": "never",
@@ -24,7 +28,8 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.row#black-header-tag-3"
+      "flex-layout.row#black-header-tag-3",
+      "flex-layout.row#black-header-tag-2"
       
     ]
   }

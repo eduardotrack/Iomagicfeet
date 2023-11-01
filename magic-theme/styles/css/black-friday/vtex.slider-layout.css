@@ -1,0 +1,12 @@
+.paginationDotsContainer--sliderMenu-blackFriday{
+    top: 50px
+}
+
+.paginationDot--sliderMenu-blackFriday{
+    background: #000;
+}
+
+.paginationDot--sliderMenu-blackFriday--isActive{
+    border: 2px solid #000;
+    background: transparent;
+}
