@@ -1,0 +1,15 @@
+{
+  "menu-item#dep11": {
+    "props": {
+      "blockClass": ["header__menu", "main-menu-department"],
+      "id": "menu-item-dep11",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "Black Friday",
+        "type": "internal",
+        "href": "/black-friday"
+      }
+    }
+  }
+}

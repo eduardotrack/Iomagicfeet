@@ -1,6 +1,9 @@
 {
   "store.custom#busca-generica-black": {
-    "blocks": ["flex-layout.row#black-row"]
+    "blocks": [
+      "flex-layout.row#black-row",
+      "search-result-layout.customQuery#black"
+    ]
   },
 
   "flex-layout.row#black-row": {
@@ -11,14 +14,13 @@
       "fullWidth": true
     }
   },
-  
+
   "flex-layout.col#black-row": {
     "title": "Panda | Black Friday",
     "children": [
       "experimental__visibility-layout#blackFriday--banner",
       "experimental__visibility-layout#sliderMenu-blackFriday",
-      "experimental__visibility-layout#sliderBeneficios-blackFriday",
-      "search-result-layout.customQuery#black"
+      "experimental__visibility-layout#sliderBeneficios-blackFriday"
     ],
     "props": {
       "blockClass": "blackFriday",
@@ -47,7 +49,6 @@
   "search-result-layout.desktop#busca-generica-blackDesktop": {
     "title": "Panda | Layout da Busca Black Friday - Desktop",
     "children": [
-      
       "flex-layout.row#banner-one",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
@@ -78,7 +79,7 @@
       "total-products.v2",
 
       "flex-layout.row#searchinfomobile",
-      
+
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore",
 

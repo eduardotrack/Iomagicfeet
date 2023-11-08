@@ -1,5 +1,5 @@
 .paginationDotsContainer--sliderMenu-blackFriday{
-    top: 50px
+    top: 70px
 }
 
 .paginationDot--sliderMenu-blackFriday{
@@ -9,4 +9,21 @@
 .paginationDot--sliderMenu-blackFriday--isActive{
     border: 2px solid #000;
     background: transparent;
+}
+
+.sliderTrack--sliderMenu-blackFriday{
+    height: 60px;
+}
+
+.slideChildrenContainer--sliderMenu-blackFriday{
+    border-right: 1px solid #fff;
+}
+
+.slide--sliderMenu-blackFriday[data-index="4"] :global(.vtex-slider-layout-0-x-slideChildrenContainer--sliderMenu-blackFriday){
+    border-right: none;
+}
+
+.slideChildrenContainer--sliderMenu-blackFriday,
+.slide--sliderMenu-blackFriday{
+    height: 100%;
 }
