@@ -40,7 +40,7 @@
   "rich-text#itemBeneficios--blackFrida01": {
     "title": "Panda | Item slider beneficios Black Friday 01",
     "props": {
-      "text": "frete grátis confira as regras",
+      "text": "[frete grátis confira as regras](https://www.magicfeet.com.br/tipos-de-entrega)",
       "blockClass": "itemBeneficios--blackFrida01"
     }
   },

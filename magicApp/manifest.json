@@ -1,7 +1,7 @@
 {
   "vendor": "magicfeet",
   "name": "magicapp",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "title": "panda + magicApp",
   "description": "panda + magicApp",
   "builders": {
@@ -16,9 +16,7 @@
     "vtex.search-graphql": "0.x",
     "vtex.orders-graphql": "0.x"
   },
-  "registries": [
-    "smartcheckout"
-  ],
+  "registries": ["smartcheckout"],
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

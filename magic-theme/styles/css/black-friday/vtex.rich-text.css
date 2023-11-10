@@ -47,6 +47,12 @@
     align-items: center;
 }
 
+.link--itemBeneficios--blackFrida01{
+    text-decoration: none;
+    color: #3f3f40;;
+    cursor: pointer;
+}
+
 @media (max-width: 767px) {
     .paragraph--itemBeneficios--blackFrida03,
     .paragraph--itemBeneficios--blackFrida02,

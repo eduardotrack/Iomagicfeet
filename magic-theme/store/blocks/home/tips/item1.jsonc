@@ -9,7 +9,7 @@
 
     "link#tips-item-01": {
         "title": "Panda | Link Tips 01",
-        "children": ["experimental__visibility-layout#tips-item-01", "rich-text#tips-item-01"],
+        "children": ["experimental__visibility-layout#tips-item-01", "rich-text#tips-item-001"],
         "props": {
           "href": "/tipos-de-entrega",
           "blockClass": "tips-item-link"
@@ -32,10 +32,10 @@
         }
       },
 
-      "rich-text#tips-item-01": {
+      "rich-text#tips-item-001": {
         "title": "Panda | Texto Tips 01",
         "props": {
-          "text": "**frete grátis*** \n a partir de R$100",
+          "text": "**frete grátis*** \n a partir de R$399,00",
           "blockClass": "tips-item-text"
         }
       }
