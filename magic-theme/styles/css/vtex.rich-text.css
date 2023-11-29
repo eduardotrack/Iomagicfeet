@@ -1210,6 +1210,13 @@
     font-size: 16px;
     color: #000000;
     margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.image--bf-main-tag{
+    margin-right: 7px;
+    margin-left: 7px;
 }
 
 .paragraph--black-tag-hd {
@@ -1217,19 +1224,6 @@ display: flex;
 align-items: center;
 }
 
-.paragraph--black-tag-hd::after {
-    content: '';
-    background-image: url("/arquivos/magic-header-textBF.png");
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: block;
-    width: 45px;
-    height: 22px;
-    margin-left: 8px;
-    display: flex;
-    align-items: center;
-}
 
 .paragraph--faixaHeader_iconJordan::before{
     content: '';

@@ -22,8 +22,8 @@
     "rich-text#black-header-tag-text-2": {
       "title": "Panda | Texto",
       "props": {
-        "text": "aproveite os produtos  **especiais**",
-        "blockClass": ["bf-main-tag", "black-tag-hd"]
+        "text": " aproveite os produtos  **especiais**",
+        "blockClass": ["bf-main-tag"]
       }
     },
  
