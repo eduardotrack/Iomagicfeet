@@ -138,13 +138,24 @@
 }
 
 .sliderTrack--faixaRotativa_header{
-    height: 30px;
+    background-color: #5eff49;
+}
+
+.imageElementLink--faixaRotativa_header {
+    display: flex;
+}
+
+.imageElement--faixaRotativa_header {
+    width: auto !important;
+}
+
+
+.sliderLeftArrow--faixaRotativa_header,
+.sliderRightArrow--faixaRotativa_header {
+    display: none;
 }
 
 @media (max-width: 767px) {
-    .sliderTrack--faixaRotativa_header{
-        height: 25px;
-    }
     .sliderLayoutContainer--quemsomos__slider {
         display: flex;
         flex-direction: column;

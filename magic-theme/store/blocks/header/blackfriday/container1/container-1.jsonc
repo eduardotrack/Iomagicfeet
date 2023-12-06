@@ -2,30 +2,42 @@
   //controle de visibilidade do carrossel
   "experimental__visibility-layout#banner-header-tag": {
     "title": "Controle de visibilidade - Faixa rotativa",
-    "children": ["slider-layout#faixaRotativa-header"],
+    "children": ["list-context.image-list#faixaRotativa-header"],
     "props": {
       "visible": false,
       "blockClass": "black-header-tag"
     }
   },
 
+  "list-context.image-list#faixaRotativa-header": {
+    "title": "Controle de visibilidade - Lista de imagens Faixa rotativa",
+    "children": ["slider-layout#faixaRotativa-header"],
+    "props": {
+      "images": [
+        {
+          "image": "/arquivos/faixa-mf.png",
+          "mobileImage": "/arquivos/faixa-mf-mobile.png"
+        }
+      ]
+    }
+  },
+
   "slider-layout#faixaRotativa-header": {
-    "title": "Controle de visibilidade - Faixa rotativa",
+    "title": "Controle de visibilidade - Slider Faixa rotativa",
     "props": {
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
         "phone": 1
       },
+      "autoplay":{
+        "timeout": 5000,
+        "stopOnHover": true
+      },
       "infinite": true,
       "showNavigationArrows": "never",
       "showPaginationDots": "never",
-      "blockClass": "faixaRotativa_header",
-      "fullWidth": true
-    },
-    "children": [
-      "flex-layout.row#black-header-tag-2" 
-      
-    ]
+      "blockClass": "faixaRotativa_header"
+    }
   }
 }
