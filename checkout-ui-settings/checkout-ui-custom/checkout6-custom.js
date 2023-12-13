@@ -991,3 +991,16 @@ $(window).on('orderFormUpdated.vtex', function(evt, orderForm) {
 });
 
 /* TAGS */
+
+$(window).on("orderFormUpdated.vtex", function(evt, orderForm) {
+    let checkCart = orderForm.items.length || null
+  
+    if(checkCart == 0){
+      $('*[data-retailrocket-markup-block="635abf30020e5a151a7ecedc"]').removeAttr("initialized");
+      $('*[data-retailrocket-markup-block="635abf26020e5a151a7ecedb"]').removeAttr("initialized");
+    
+      delete retailrocket.modules.duplicates;
+      retailrocket.markup.render();
+    }
+  })
+  
