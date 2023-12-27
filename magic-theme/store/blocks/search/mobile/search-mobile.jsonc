@@ -2,7 +2,8 @@
   "search-result-layout.mobile": {
     "title": "Panda | Layout da Busca - Mobile",
     "children": [
-      "experimental__visibility-layout#search-banner-top",
+      "experimental__visibility-layout#bannerTop-full",
+      /* "experimental__visibility-layout#search-banner-top", */
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "experimental__visibility-layout#categories-banner-search",

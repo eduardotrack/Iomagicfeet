@@ -58,7 +58,7 @@
   },
   //controle de visibilidade do carrossel
   "experimental__visibility-layout#search-banner-top": {
-    "title": "Controle de visibilidade - Banner superior - Busca",
+    "title": "Controle de visibilidade - Banner superior Slider - Busca",
     "children": ["list-context.image-list#slider-full-search"],
     "props": {
       "visible": false,

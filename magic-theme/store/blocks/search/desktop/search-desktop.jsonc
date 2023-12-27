@@ -2,6 +2,8 @@
   "search-result-layout.desktop": {
     "title": "Panda | Layout da Busca - Desktop",
     "children": [
+      "experimental__visibility-layout#bannerTop-full",
+      /* "experimental__visibility-layout#search-banner-top", */
       "flex-layout.row#banner-one",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
@@ -20,6 +22,15 @@
         "priceRange": false
       }
     }
+  },
+
+  "flex-layout.row#conteiner-resultado-busca": {
+    "props": {
+      "blockClass": "retail-rocket"
+    },
+    "children": [
+      "retail-rocket-container#category"
+    ]
   },
 
   "flex-layout.row#retail-rocket-category": {

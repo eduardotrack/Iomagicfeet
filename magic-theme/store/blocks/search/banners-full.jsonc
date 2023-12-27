@@ -1,0 +1,41 @@
+{
+  "experimental__visibility-layout#bannerTop-full": {
+    "title": "Controle de visibilidade - Banners Superior Full - Busca",
+    "children": ["flex-layout.row#bannerTop-full"],
+    "props": {
+      "visible": false,
+      "blockClass": "bannerTop-full_controle"
+    }
+  },
+
+  "flex-layout.row#bannerTop-full": {
+    "title": "Panda | Banners Superior Full - busca",
+    "children": ["list-context.image-list#demo1"],
+    "props": {
+      "blockClass": ["bannerTop-full"],
+      "fullWidth": true
+    }
+  },
+
+  "list-context.image-list#demo1": {
+    "title": "Panda | Lista imagens - banner superior full",
+    "children": ["list-context-renderer#wrapped"],
+    "props": {
+      "blockClass": "imagens_bannerTopFull",
+      "images": [
+        {
+          "image": "https://fakeimg.pl/1280x219/",
+          "mobileImage": "https://fakeimg.pl/360x219/"
+        }
+      ]
+    }
+  },
+  "list-context-renderer#wrapped": {
+    "title": "Panda | Lista imagens - banner superior full",
+    "props": {
+      "blockClass": "lista-imagens_bannerTop-Full",
+      "listElement": "ul",
+      "itemElement": "li"
+    }
+  }
+}

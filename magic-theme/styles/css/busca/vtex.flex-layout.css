@@ -1,0 +1,28 @@
+.flexRow--panda-search__breadcrumb :global(.vtex-breadcrumb-1-x-container) {
+  max-width: 1300px;
+}
+
+.flexRow--panda-search__suggestions,
+.flexRow--panda-search__main {
+  display: flex;
+  justify-content: center;
+}
+
+.flexRowContent--panda-search__suggestions,
+.flexRowContent--panda-search__main {
+  max-width: 1300px;
+}
+
+.flexRow--bannerTop-full {
+  margin-top: -1rem;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+}
+
+@media (max-width: 767px) {
+  .flexRow--bannerTop-full {
+    margin-top: 0rem;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
