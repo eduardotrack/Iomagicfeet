@@ -35,7 +35,7 @@
       "rich-text#tips-item-001": {
         "title": "Panda | Texto Tips 01",
         "props": {
-          "text": "**frete grátis*** \n a partir de R$399,00",
+          "text": "**frete grátis** \n confira as regras",
           "blockClass": "tips-item-text"
         }
       }
