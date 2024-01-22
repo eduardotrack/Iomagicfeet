@@ -51,5 +51,9 @@
 
     "pd-categoriaFaq": {
         "component": "categoriaFaq"
+    },
+
+    "pd-cupomField": {
+        "component": "cupomField"
     }
 }

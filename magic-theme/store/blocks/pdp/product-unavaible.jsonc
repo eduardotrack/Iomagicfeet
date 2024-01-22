@@ -37,7 +37,6 @@
       "vtex.store-components:product-name",
       "product-identifier.product",
       "flex-layout.row#list-price-savings",
- 
       "product-rating-summary",     
       "pd-skuSimilar",
       "sku-selector#pdp-core",

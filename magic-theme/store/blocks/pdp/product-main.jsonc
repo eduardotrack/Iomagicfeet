@@ -39,6 +39,8 @@
       "vtex.store-components:product-name",
       "product-identifier.product",
       "flex-layout.row#list-price-savings",
+      "pd-cupomField",
+
       "product-rating-summary",     
       "pd-skuSimilar",
       "sku-selector#pdp-core",
@@ -115,6 +117,9 @@
         },
         {
           "order": 20
+        },
+        {
+          "order": 21
         }
       ]
     }

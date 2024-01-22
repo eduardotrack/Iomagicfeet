@@ -6,7 +6,6 @@ const skuFormatDesc = () => {
     const productContext = useProduct() || null
 
     const productDescription = (productContext?.product?.description).replace(/(?:\r\n|\r|\n)/g, '<br>') || ''
-    console.log(productContext)
 
     return ( 
         <>

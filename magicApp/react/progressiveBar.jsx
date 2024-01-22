@@ -66,7 +66,6 @@ const progressiveBar = () => {
             arrowCount = 63
         }
 
-        console.log(step)
      }
 
       return ( 

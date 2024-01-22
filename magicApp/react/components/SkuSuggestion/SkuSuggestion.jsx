@@ -47,7 +47,6 @@ const SkuSuggestion = () => {
         }
     });
 
-    console.log(productContext)
  
 
     var urlSearchSuggestion = categoryListUrl + '/' + sizeSelected + '?map=' + mapCategory + 'selecione-o-tamanho'
