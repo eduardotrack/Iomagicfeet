@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import api from "./services/api"
+import api from "./services/api";
+import axios from "axios";
 
 import styles from "../react/styles.css"
 
@@ -21,20 +22,23 @@ const nossasLojas = () => {
         {value: 'SP', text: 'SP'},
       ];
 
-      
-    const handleChange = event => {
-        api.get(`dataentities/SL/search?_where=state=${event.target.value}&_fields=id,store,name,phone,address,number,complement,neighborhood,postalCode,city,state,latitude,longitude,email`)
+      const handleChange = event => {
+        api.get(`dataentities/SL/search?_where=state=${event.target.value}&_fields=id,store,name,phone,address,number,complement,neighborhood,postalCode,city,state,latitude,longitude,email`, {
+            headers: {
+              "rest-range": "resources=0-100"
+            }
+        })
         .then((response) => {
-            console.log(response)
-            updateFormData(response.data)
+            console.log(response);
+            updateFormData(response.data);
             setSelected(event.target.value);
         })
         .catch((err) => {
-            console.log(err)
+            console.log(err);
         });
     };
 
-    return ( 
+    return (
         <>
             <div className={styles.coreLojas}>
                 <div>
@@ -50,15 +54,15 @@ const nossasLojas = () => {
                 <div>
                     {
                         formData && formData.map((item) => {
-                            return (    
+                            return (
                                 <>
                                     <div className={styles.cardLojas}>
                                         <h4>{item.name}</h4>
-                                        <p>{item.address} {item.number} -  {item.complement} - {item.neighborhood}</p>  
+                                        <p>{item.address} {item.number} -  {item.complement} - {item.neighborhood}</p>
                                         <h5>{item.city}/{item.state}</h5>
-                                        <h6>{item.phone}</h6>       
+                                        <h6>{item.phone}</h6>
                                     </div>
-                                </>                      
+                                </>
                             )
                         })
                     }
