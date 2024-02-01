@@ -55,5 +55,9 @@
 
     "pd-cupomField": {
         "component": "cupomField"
+    },
+
+    "pd-cupomFieldGrid": {
+        "component": "cupomFieldGrid"
     }
 }

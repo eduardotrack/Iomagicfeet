@@ -1,7 +1,7 @@
 {
   "vendor": "magicfeet",
   "name": "magicapp",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "title": "panda + magicApp",
   "description": "panda + magicApp",
   "builders": {
