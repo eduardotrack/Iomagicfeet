@@ -5,7 +5,7 @@
       //"add-to-list-btn",
       "stack-layout#prodsum",
       "flex-layout.row#highlights-wrapper",
-      "pd-cupomFieldGrid",
+   
       "product-summary-name",
       "flex-layout.row#summary-shelf-price-savings" 
     ],

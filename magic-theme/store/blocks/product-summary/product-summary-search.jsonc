@@ -5,7 +5,7 @@
       "add-to-list-btn",
       "stack-layout#prodsum-search",
       "flex-layout.row#highlights-wrapper-search",
-      "pd-cupomFieldGrid",
+      
       "vtex.store-components:product-brand#brand-search",
       "product-summary-name#name-search",
       "flex-layout.row#summary-shelf-price-savings-search" ,
