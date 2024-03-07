@@ -125,6 +125,15 @@
     padding-top: 50px;
 }
 
+.flexRow--exclusivo-home-row{
+    display: flex;
+    justify-content: center;
+}
+
+.flexRowContent--exclusivo-home-row{
+    max-width: 1300px;
+}
+
 .flexRowContent--header__main :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     display: flex;
     align-items: center;
