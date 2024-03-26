@@ -1,0 +1,42 @@
+{
+  "flex-layout.row#middle-text": {
+    "title": "Panda | Página app MVP - Texto sobre o App",
+    "children": ["rich-text#middle-text"],
+    "props": {
+      "blockClass": "middle-text",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#middle-text": {
+    "title": "Panda | Página app MVP - Texto",
+    "props": {
+      "text": "O **MVP** é a **maior plataforma multimarcas de lançamentos exclusivos** da América Latina. Ele traz **segurança, acesso e centraliza todas as suas compras realizadas com a magicfeet,** independente do canal: App, site ou lojas físicas. \n\n Em seu perfil você consegue **acompanhar o status** do seu pedido em tempo real, consultar o **cashback** gerado nas suas compras que estão **disponíveis** para resgate, além de poder **solicitar a sua troca ou devolução** por lá.",
+      "blockClass": "middle-text",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "100%"
+    }
+  },
+
+  "flex-layout.row#qrCode-text": {
+    "title": "Panda | Página app MVP - Texto QR CODE",
+    "children": ["rich-text#qrCode-text"],
+    "props": {
+      "blockClass": "qrcode-text",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#qrCode-text": {
+    "title": "Panda | Página app MVP - Texto",
+    "props": {
+      "text": "No calendário de próximos lançamentos você consegue favoritar seus \nprodutos preferidos. Acompanhe e fique por dentro das novidades! \n\n **Todas essas facilidades na palma \n da sua mão, baixe agora!**",
+      "blockClass": "qrcode-text",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "100%"
+    }
+  }
+
+}

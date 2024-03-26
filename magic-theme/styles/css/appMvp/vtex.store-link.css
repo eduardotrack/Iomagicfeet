@@ -1,0 +1,75 @@
+.link--qrcode-mvp-link {
+  display: flex;
+  width: 200px;
+  height: 35px;
+  background-color: #5dff49;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.label--qrcode-mvp-link {
+  font-size: 17px;
+  font-weight: 300;
+  color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.label--qrcode-mvp-link_android::before {
+  content: "";
+  background-image: url("/arquivos/icon-playstore-mvp.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: 23px;
+  width: 23px;
+  height: 23px;
+  display: block;
+  margin-right: 15px;
+}
+
+.label--qrcode-mvp-link_apple::before {
+  content: "";
+  background-image: url("/arquivos/icon-apple-mvp.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+  .imageElement--mockupCelular-mvp {
+    width: 189px;
+    height: 377px;
+  }
+  .imageElement--bannerSecundario-mvp_Mob {
+    width: 100%;
+    height: auto;
+  }
+
+  .imageElement--qrcode-mvp-link {
+    display: none;
+  }
+
+  .link--qrcode-mvp-link {
+    background-color: #000;
+    text-decoration-color: #fff;
+  }
+
+  .label--qrcode-mvp-link {
+    color: #fff;
+  }
+
+  .label--qrcode-mvp-link_android::before {
+    filter: invert(1);
+  }
+
+  .label--qrcode-mvp-link_apple::before {
+    filter: invert(1);
+  }
+}

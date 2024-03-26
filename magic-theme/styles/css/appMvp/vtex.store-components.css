@@ -1,0 +1,20 @@
+.imageElement--qrcode-mvp-link {
+  width: 200px;
+  height: auto;
+  border-radius: 25px;
+}
+
+@media (max-width: 767px) {
+  .imageElement--mockupCelular-mvp {
+    width: 189px;
+    height: 377px;
+  }
+  .imageElement--bannerSecundario-mvp_Mob {
+    width: 100%;
+    height: auto;
+  }
+
+  .imageElement--qrcode-mvp-link {
+    display: none;
+  }
+}

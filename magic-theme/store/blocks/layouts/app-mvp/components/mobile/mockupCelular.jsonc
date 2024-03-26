@@ -1,0 +1,18 @@
+{
+  "flex-layout.row#mockupCelular-mobile": {
+    "title": "Panda | Página app MVP - Mockup Celular Mobile",
+    "children": ["image#mockupCelular-mobile"],
+    "props": {
+      "blockClass": "mockupCelular-mvp",
+      "fullWidth": true
+    }
+  },
+
+  "image#mockupCelular-mobile": {
+    "title": "Panda | Página app MVP - Imagem Mockup",
+    "props": {
+      "src": "/arquivos/mockupCelularAppMvp.png",
+      "blockClass": "mockupCelular-mvp"
+    }
+  }
+}

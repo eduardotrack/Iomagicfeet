@@ -1,0 +1,35 @@
+{
+  "flex-layout.row#comousar_mvp-mob": {
+    "title": "Panda | Página app MVP - Veja como usar Mobile",
+    "children": [
+      "rich-text#comousar_mvp-mob",
+      "rich-text#comousar_mvp-mob-button"
+    ],
+    "props": {
+      "blockClass": "comousar_mvp-mob",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#comousar_mvp-mob": {
+    "title": "Panda | Página app MVP - Texto ",
+    "props": {
+      "text": "Nada de perder a chance de \n aproveitar seus bônus ativos \n com as melhores marcas!",
+      "blockClass": "comousar_mvp-mob",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "100%"
+    }
+  },
+
+  "rich-text#comousar_mvp-mob-button": {
+    "title": "Panda | Página app MVP - Texto Botão",
+    "props": {
+      "text": "Veja como usar!",
+      "blockClass": "comousar_mvp-mob_button",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "100%"
+    }
+  }
+}

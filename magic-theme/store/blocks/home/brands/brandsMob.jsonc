@@ -1,0 +1,122 @@
+{
+  "responsive-layout.phone#brands-home-Mob": {
+    "children": ["flex-layout.row#brands-home-Mob"]
+  },
+
+  "flex-layout.row#brands-home-Mob": {
+    "title": "Panda | Marcas 01",
+    "children": ["flex-layout.col#brands-home-Mob"],
+    "props": {
+      "blockClass": "brands-home-row"
+    }
+  },
+
+  "flex-layout.col#brands-home-Mob": {
+    "children": ["rich-text#brands-home", "flex-layout.row#brands-home-list-Mob"]
+  },
+
+  "flex-layout.row#brands-home-list-Mob": {
+    "title": "Panda | Marcas",
+    "children": ["list-context.media-list#brands-home-list-Mob"]
+  },
+
+  "list-context.media-list#brands-home-list-Mob": {
+    "children": ["slider-layout#brands-home-list_Slider"],
+    "props": {
+      "blockClass": "list-brands-home",
+      "mediaList": [
+        {
+          "image": "/arquivos/nike-brands.png",
+          "mobileImage": "/arquivos/nike-brands.png"
+        },
+
+        {
+          "image": "/arquivos/jordan-brands.png",
+          "mobileImage": "/arquivos/jordan-brands.png"
+        },
+
+        {
+          "image": "/arquivos/adidas-brands.png",
+          "mobileImage": "/arquivos/adidas-brands.png"
+        },
+
+        {
+          "image": "/arquivos/puma-brands.png",
+          "mobileImage": "/arquivos/puma-brands.png"
+        },
+
+        {
+          "image": "/arquivos/converse-brands.png",
+          "mobileImage": "/arquivos/converse-brands.png"
+        },
+
+        {
+          "image": "/arquivos/vans-brands.png",
+          "mobileImage": "/arquivos/vans-brands.png"
+        },
+
+        {
+          "image": "/arquivos/fila-brands.png",
+          "mobileImage": "/arquivos/fila-brands.png"
+        },
+
+        {
+          "image": "/arquivos/crocs-brands.png",
+          "mobileImage": "/arquivos/crocs-brands.png"
+        },
+
+        {
+          "image": "/arquivos/asics-brands.png",
+          "mobileImage": "/arquivos/asics-brands.png"
+        },
+
+        {
+          "image": "/arquivos/skechers-brands.png",
+          "mobileImage": "/arquivos/skechers-brands.png"
+        },
+
+        {
+          "image": "/arquivos/rider-brands.png",
+          "mobileImage": "/arquivos/rider-brands.png"
+        },
+
+        {
+          "image": "/arquivos/Umbro_logo-brands.png",
+          "mobileImage": "/arquivos/Umbro_logo-brands.png"
+        },
+
+        {
+          "image": "/arquivos/olympikus-brands.png",
+          "mobileImage": "/arquivos/olympikus-brands.png"
+        },
+
+        {
+          "image": "/arquivos/nba-brands.png",
+          "mobileImage": "/arquivos/nba-brands.png"
+        },
+
+        {
+          "image": "/arquivos/jansport-brands.png",
+          "mobileImage": "/arquivos/jansport-brands.png"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#brands-home-list_Slider": {
+    "title": "Panda | Marcas - Slider",
+    "props": {
+      "itemsPerPage": {
+        "phone": 5
+      },
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": ["list-brands-home", "carousel-exclusivos"]
+    }
+  }
+}

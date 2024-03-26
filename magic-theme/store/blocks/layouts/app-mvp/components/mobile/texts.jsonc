@@ -1,0 +1,61 @@
+{
+  "flex-layout.row#middle-text_mob": {
+    "title": "Panda | Página app MVP - Texto sobre o App Mobile",
+    "children": ["rich-text#middle-text_mob"],
+    "props": {
+      "blockClass": "middle-text",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#middle-text_mob": {
+    "title": "Panda | Página app MVP - Texto",
+    "props": {
+      "text": "O **MVP** foi criado com a intenção de minimizar a ação de máquinas programadas (bots), permitindo que **consumidores reais possam comprar os lançamentos mais disputados e exclusivos do mercado, proporcionando uma experiência diferenciada e segura** aos amantes do lifestyle esportivo.",
+      "blockClass": "middle-text",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "100%"
+    }
+  },
+
+  "flex-layout.row#bonus-text_mob01": {
+    "title": "Panda | Página app MVP - Texto sobre o App Mobile 02",
+    "children": ["rich-text#bonus-text_mob01"],
+    "props": {
+      "blockClass": "bonus-text",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#bonus-text_mob01": {
+    "title": "Panda | Página app MVP - Texto",
+    "props": {
+      "text": "**E agora você fica por dentro de todos os seus bônus em tempo real.**",
+      "blockClass": "bonus-text",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "100%"
+    }
+  },
+
+  "flex-layout.row#bonus-text_mob02": {
+    "title": "Panda | Página app MVP - Texto sobre o App Mobile 02",
+    "children": ["rich-text#bonus-text_mob02"],
+    "props": {
+      "blockClass": "Mvptext",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#bonus-text_mob02": {
+    "title": "Panda | Página app MVP - Texto",
+    "props": {
+      "text": "De um jeito simples e intuitivo, pelo **App MVP** é possível saber exatamente quanto já acumulou nas compras online e nas lojas físicas.",
+      "blockClass": "Mvptext",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "100%"
+    }
+  }
+}

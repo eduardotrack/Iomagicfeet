@@ -1,0 +1,38 @@
+{
+  "flex-layout.row#bannerpincipal-mvp_mob": {
+    "title": "Panda | Página app MVP - Banner principal Mobile",
+    "children": ["rich-text#bannerpincipal-mvp"],
+    "props": {
+      "blockClass": "bannerPrincipal-mvp_Mob",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#bannerpincipal-mvp_mob": {
+    "title": "Panda | Página app MVP - Texto Mobile",
+    "props": {
+      "text": "Baixe o \n **App MVP**",
+      "blockClass": "bannerPrincipal-mvp_Mob",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "100%"
+    }
+  },
+
+  "flex-layout.row#bannerSecundario-mvp_mob": {
+    "title": "Panda | Página app MVP - Banner Secundario Mobile",
+    "children": ["image#bannerSecundario-mvp_mob"],
+    "props": {
+      "blockClass": "bannerSecundario-mvp_Mob",
+      "fullWidth": true
+    }
+  },
+
+  "image#bannerSecundario-mvp_mob": {
+    "title": "Panda | Página app MVP - Banner",
+    "props": {
+      "src": "/arquivos/bannerSecundario-mvp_mobile.png",
+      "blockClass": "bannerSecundario-mvp_Mob"
+    }
+  }
+}

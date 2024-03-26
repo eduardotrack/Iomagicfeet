@@ -1,0 +1,29 @@
+{
+  "store.custom#aplicativo-mvp": {
+    "blocks": [
+      "responsive-layout.desktop#aplicativo-mvp",
+      "responsive-layout.mobile#aplicativo-mvp"
+    ]
+  },
+
+  "responsive-layout.desktop#aplicativo-mvp": {
+    "children": [
+      "flex-layout.row#bannerpincipal-mvp",
+      "flex-layout.row#middle-text",
+      "flex-layout.row#qrCode"
+    ]
+  },
+  "responsive-layout.mobile#aplicativo-mvp": {
+    "children": [
+      "flex-layout.row#bannerpincipal-mvp_mob",
+      "flex-layout.row#mockupCelular-mobile",
+      "flex-layout.row#middle-text_mob",
+      "flex-layout.row#bonus-text_mob01",
+      "flex-layout.row#bannerSecundario-mvp_mob",
+      "flex-layout.row#bonus-text_mob02",
+      "flex-layout.row#comousar_mvp-mob",
+      "flex-layout.col#qrCode-block-Apple",
+      "flex-layout.row#qrCode-block"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "flex-layout.row#qrCode": {
+    "title": "Panda | Página app MVP - QR code",
+    "children": ["flex-layout.col#qrCode"],
+    "props": {
+      "blockClass": "qrcode-mvp",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#qrCode": {
+    "title": "Panda | Página app MVP - QR code",
+    "children": ["flex-layout.row#qrCode-text","rich-text#qrcode-button","flex-layout.row#qrCode-block"],
+    "props": {
+      "blockClass": "qrcode-mvp",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#qrcode-button": {
+    "title": "Panda | Página app MVP - texto button",
+    "props": {
+      "text": "Resgate seu cashback!",
+      "blockClass": "qrcode-mvp",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "height": "100%"
+    }
+  },
+
+  "flex-layout.row#qrCode-block": {
+    "title": "Panda | Página app MVP - QR code Blocos",
+    "children": ["flex-layout.col#qrCode-block-Android","flex-layout.col#qrCode-block-Apple"],
+    "props": {
+      "blockClass": "qrcode-mvp-block",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#qrCode-block-Android": {
+    "title": "Panda | Página app MVP - QR code Bloco Android",
+    "children": ["image#qrCode-link-Android","link#qrCode-link-Android"],
+    "props": {
+      "blockClass": "qrcode-mvp-block",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#qrCode-block-Apple": {
+    "title": "Panda | Página app MVP - QR code Bloco Apple",
+    "children": ["image#qrCode-link-Apple","link#qrCode-link-Apple"],
+    "props": {
+      "blockClass": "qrcode-mvp-block",
+      "fullWidth": true
+    }
+  },
+
+  "image#qrCode-link-Android": {
+    "props": {
+      "src": "/arquivos/playstore-QRCODE-mvp.png",
+      "blockClass": "qrcode-mvp-link"
+    }
+  },
+  "image#qrCode-link-Apple": {
+    "props": {
+      "src": "/arquivos/apple-QRCODE-mvp.png",
+      "blockClass": "qrcode-mvp-link"
+    }
+  },
+
+  "link#qrCode-link-Android": {
+    "props": {
+      "href": "https://play.google.com/store/apps/details?id=br.com.afeet.appsneakers",
+      "label": "Baixe agora",
+      "blockClass": ["qrcode-mvp-link", "qrcode-mvp-link_android"]
+    }
+  },
+
+  "link#qrCode-link-Apple": {
+    "props": {
+      "href": "https://apps.apple.com/br/app/mvp/id1561788199",
+      "label": "Baixe agora",
+      "blockClass": ["qrcode-mvp-link", "qrcode-mvp-link_apple" ]
+    }
+  }
+}
