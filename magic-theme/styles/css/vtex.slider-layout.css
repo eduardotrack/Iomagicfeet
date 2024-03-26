@@ -106,6 +106,9 @@
     .paginationDotsContainer--carousel-exclusivos {
         bottom: 10px;
     }
+    .paginationDotsContainer--list-brands-home {
+        bottom: 0px;
+    }
     .slideChildrenContainer--carousel-exclusivos {
         margin-bottom: 30px;
     }
