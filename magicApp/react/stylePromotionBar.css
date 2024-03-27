@@ -1,0 +1,132 @@
+/* Config slides */
+.sliderTrackContainer{
+    overflow: hidden;
+}
+
+.boxSlickBanner{
+  background-color: #000;
+}
+
+.linkMedia button{
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+
+
+.mediaSize{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.modalPostImage{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+.modalBox{
+    display: flex;
+    justify-content: center;
+}
+
+.modalOverlay{
+    background-color: #000000bf;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.modalBody{
+    margin: 0 auto;
+    display: block;
+    width: 50vw;
+    height: auto;
+    overflow: hidden;
+    z-index: 999;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+}
+
+.modalClose{
+    background-color: #000000;
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: Amiko;
+    border: none;
+    position: absolute;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+  .boxSlickBanner :global(.slick-dots){
+    bottom: 16px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  .boxSlickBanner :global(.slick-dots) li button::before{
+    content: '';
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+
+  .boxSlickBanner :global(.slick-dots) li{
+    width: 10px;
+    height: 4px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .boxSlickBanner :global(.slick-dots) :global(.slick-active){
+    width: 20px;
+  }
+
+
+  .boxSlickBanner :global(.slick-dots) li button{
+    width: 10px;
+    height: 4px;
+    background: #FFF;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .boxSlickBanner :global(.slick-dots) :global(.slick-active) button{
+    width: 20px;
+    height: 4px;
+    background: #000;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .modalBody{
+    width: 85vw;
+  }
+}

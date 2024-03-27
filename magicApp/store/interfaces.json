@@ -59,5 +59,10 @@
 
     "pd-cupomFieldGrid": {
         "component": "cupomFieldGrid"
+    },
+
+    "pd-promotionBar": {
+        "component": "promotionBar"
     }
+    
 }

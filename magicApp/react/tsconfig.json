@@ -14,6 +14,9 @@
     "./**/*.tsx",
     "./**/*.ts",
     "skuSimilar.tsx",
-    "defaults.jsx"
-, "nossasLojas.jsx", "SkuSuggestionCore.jsx", "components/SkuSuggestion/SkuSuggestion.jsx"  ]
+    "defaults.jsx",
+    "nossasLojas.jsx",
+    "SkuSuggestionCore.jsx",
+    "components/SkuSuggestion/SkuSuggestion.jsx"
+  ]
 }

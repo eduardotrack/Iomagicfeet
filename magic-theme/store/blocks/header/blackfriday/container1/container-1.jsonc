@@ -2,9 +2,9 @@
   //controle de visibilidade do carrossel
   "experimental__visibility-layout#banner-header-tag": {
     "title": "Controle de visibilidade - Faixa rotativa",
-    "children": ["list-context.image-list#faixaRotativa-header"],
+    "children": ["pd-promotionBar"],
     "props": {
-      "visible": false,
+      "visible": true,
       "blockClass": "black-header-tag"
     }
   },
