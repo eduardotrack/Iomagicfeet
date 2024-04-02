@@ -21,7 +21,7 @@
     "@vtex/tsconfig": "^0.6.0",
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
-    "magicfeet.magicapp": "https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.7+build1711550366/public/@types/magicfeet.magicapp",
+    "magicfeet.magicapp": "http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.7/public/@types/magicfeet.magicapp",
     "typescript": "3.9.7",
     "vtex.device-detector": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.6/public/@types/vtex.device-detector",
     "vtex.order-manager": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager",

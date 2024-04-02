@@ -109,27 +109,29 @@
 }
 .flexRow--shelf,
 .flexRow--brands-home-row {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 767px) {
   .flexRow--shelf,
   .flexRow--brands-home-row {
     padding-top: 6px;
-    padding-bottom: 0px;
+    padding-bottom: 15px;
   }
 }
 
 .flexRow--exclusivo-home-row,
 .flexRow--procura-home-row,
 .flexRow--quem-home-row {
-  padding-top: 0px;
+  padding-top: 25px;
 }
 
 .flexRow--exclusivo-home-row {
   display: flex;
   justify-content: center;
+
+  padding: 0;
 }
 
 .flexRowContent--exclusivo-home-row {
@@ -1229,5 +1231,5 @@
 }
 
 .flexRowContent--novidades-home-rowTtitle {
-  margin-top: 0px;
+  margin-top: 25px;
 }

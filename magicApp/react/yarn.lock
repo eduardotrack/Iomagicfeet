@@ -3911,9 +3911,9 @@ lz-string@^1.4.4:
   resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
   integrity sha512-0ckx7ZHRPqb0oUm8zNr+90mtf9DQB60H1wMCjBtfi62Kl3a7JbHob6gA2bC+xRvZoOL+1hzUK8jeuEIQE8svEQ==
 
-"magicfeet.magicapp@https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.7+build1711550366/public/@types/magicfeet.magicapp":
+"magicfeet.magicapp@http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.7/public/@types/magicfeet.magicapp":
   version "0.3.7"
-  resolved "https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.7+build1711550366/public/@types/magicfeet.magicapp#9b19cd5159626a57850f776d64f2aa5daeeaf589"
+  resolved "http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.7/public/@types/magicfeet.magicapp#185fd43c84d4240a950f509ef678d775056df8e7"
 
 make-dir@^3.0.0:
   version "3.1.0"
