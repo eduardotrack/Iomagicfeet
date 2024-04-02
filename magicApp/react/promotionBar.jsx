@@ -58,6 +58,24 @@ function promotionBar(elementCore){
               )
             }
 
+{
+              bannerPosts && bannerPosts?.length == 1 && (
+                bannerPosts?.map((item) => (
+                  <CardPost
+                  radioMedia = {item.radioMedia}
+                  urlImage = {item.urlImage}
+                  urlImageMobile = {item.urlImageMobile}
+                  linkMedia = {item.linkMedia || null}
+                  urlImageModal = {item.urlImageModal || null}
+                  urlImageMobileModal = {item.urlImageMobileModal || null}     
+                  textAlt={item.textAlt || ''}
+                  setModalStatus={alterarStatusModal}
+                  setModalList={alterarListModal}
+                />
+                ))
+              )
+            }
+
             {openModal == true && (
                 <CardModal
                     dadosModal = {infosModal}

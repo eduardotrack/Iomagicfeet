@@ -30,6 +30,7 @@
 .modalBox{
     display: flex;
     justify-content: center;
+    margin-top: -10vh;
 }
 
 .modalOverlay{
@@ -128,5 +129,9 @@
 
   .modalBody{
     width: 85vw;
+  }
+
+  .modalBox{
+    margin-top: -3vh;
   }
 }
