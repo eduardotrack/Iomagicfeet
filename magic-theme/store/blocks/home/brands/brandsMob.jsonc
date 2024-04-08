@@ -107,6 +107,7 @@
     "title": "Panda | Marcas - Slider",
     "props": {
       "itemsPerPage": {
+        "desktop": 6,
         "phone": 5
       },
       "autoplay": {
@@ -114,8 +115,8 @@
         "stopOnHover": true
       },
       "infinite": true,
-      "showNavigationArrows": "never",
-      "showPaginationDots": "mobileOnly",
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
       "blockClass": ["list-brands-home", "carousel-exclusivos"]
     }
   }

@@ -45,6 +45,10 @@
     bottom: 30px;
 }
 
+.paginationDotsContainer--list-brands-home {
+    bottom: -20px;
+}
+
 .paginationDot--carousel-exclusivos,
 .paginationDot--shelf {
     background: #1C1C1C;
@@ -66,6 +70,11 @@
 
 .slideChildrenContainer--carousel-exclusivos {
     display: block;
+}
+
+.slideChildrenContainer--list-brands-home {
+    display: flex;
+    justify-content: center;
 }
 
 .slide--slider-menu-desk {

@@ -110,7 +110,7 @@
 .flexRow--shelf,
 .flexRow--brands-home-row {
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
 }
 
 @media (max-width: 767px) {

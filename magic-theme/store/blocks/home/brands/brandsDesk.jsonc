@@ -25,7 +25,7 @@
 
   "flex-layout.row#brands-home-list": {
     "title": "Panda | Marcas",
-    "children": ["list-context.media-list#brands-home-list"]
+    "children": ["list-context.media-list#brands-home-list-Mob"]
   },
 
   "list-context.media-list#brands-home-list": {
