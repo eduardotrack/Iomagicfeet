@@ -17,6 +17,25 @@
     padding: 0;
 }
 
+.defaultSuccessMessage--footer__newsletter{
+    max-width: 400px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: lowercase;
+    font-family: WorkSans-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    background: #5dff49;
+}
+
+.defaultSuccessMessage--footer__newsletter::after{
+   content: 'Fique de olho no e-mail, você receberá ótimas novidades por lá.';
+   margin-left: 5px;
+}
+
 @media (max-width: 767px) {
     .emailInputContainer--footer__newsletter :global(.vtex-styleguide-9-x-input) {
         min-width: 50vw;

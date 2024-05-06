@@ -3,8 +3,8 @@
     "props": {
       "blockClass": ["newsletter-wrapper"]
     },
-    //"children": ["newsletter-form#footer"]
-    "children": ["image#newsletter-image-core", "pd-newsForm"]
+    "children": ["image#newsletter-image-core", "newsletter-form#footer"]
+    //"children": ["image#newsletter-image-core", "pd-newsForm"]
   },
 
   "image#newsletter-image-core": {
@@ -14,14 +14,15 @@
       "blockClass": "home__footer-powered--image"
     }
   },
-
   "newsletter-form#footer": {
     "title": "Panda | Footer - Newsletter",
     "props": {
       "blockClass": "footer__newsletter"
+      
     },
     "children": ["rich-text#footer-newsletter", "flex-layout.row#newsletter",  "newsletter-checkbox-confirmation#footer"]
   },
+
   "rich-text#footer-newsletter": {
     "title": "Panda | Footer - Newsletter - Texto",
     "props": {
