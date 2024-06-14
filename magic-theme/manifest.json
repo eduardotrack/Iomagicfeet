@@ -1,7 +1,7 @@
 {
   "vendor": "magicfeet",
   "name": "magictheme",
-  "version": "3.9.922",
+  "version": "4.0.0",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -86,7 +86,8 @@
     "vtex.quickorder": "3.x",
     "vtex.reviews-and-ratings": "3.x",
     "vtex.wish-list": "1.x",
-    "retailrocketcl.tracking": "0.x"
+    "retailrocketcl.tracking": "0.x",
+    "sizebay.sizebay": "3.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

@@ -39,19 +39,19 @@
       "vtex.store-components:product-name",
       "product-identifier.product",
       "flex-layout.row#list-price-savings",
-      
 
-      "product-rating-summary",     
+      "product-rating-summary",
       "pd-skuSimilar",
       "sku-selector#pdp-core",
+      "sizebay",
       "flex-layout.row#product-qqt",
       "product-availability",
 
       "product-separator",
       "shipping-simulator",
-     
+
       "flex-layout.row#description",
- 
+
       "product-reviews",
       "product-questions-and-answers",
       "share#default"
@@ -130,11 +130,11 @@
       "threshold": "10",
       "lowStockMessage": "{quantity}  últimos pares!",
       "highStockMessage": "",
-      "blockClass":"pd_disponibilidade_estoque"
+      "blockClass": "pd_disponibilidade_estoque"
     }
   },
 
-  "shipping-simulator":{
+  "shipping-simulator": {
     "props": {
       "pricingMode": "grouped"
     }
@@ -180,7 +180,6 @@
       "showValueNameForImageVariation": true,
       "sortVariationsByLabel": false
       // "displayMode": "select",
- 
     }
   },
   "flex-layout.row#product-qqt": {
