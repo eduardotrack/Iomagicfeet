@@ -49,17 +49,29 @@
     display: flex;
     padding: 0;
     list-style: none;
-    gap: 60px;
+    gap: 30px !important;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
     justify-content: center;
+
+    > li {
+        max-width: 130px;
+
+        img {
+            width: 100%;
+        }
+    }
+    
 }
 
 .list--list-brands-menu-outlet {
-    gap: 30px;
-    width: 450px;
+    gap: 15px !important;
+    /* width: 450px; */
+    > li {
+        max-width: 90px;
+    }
 }
 
 .list--mz-wishlist__list {
