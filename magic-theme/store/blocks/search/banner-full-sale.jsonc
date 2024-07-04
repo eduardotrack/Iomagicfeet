@@ -1,0 +1,42 @@
+{
+    "experimental__visibility-layout#bannerTop-full-sale": {
+      "title": "Controle de visibilidade - Banners Superior Full - Para usar junto com o carrosel de Menu",
+      "children": ["flex-layout.row#bannerTop-full-sale"],
+      "props": {
+        "visible": false,
+        "blockClass": "bannerTop-full_controle"
+      }
+    },
+  
+    "flex-layout.row#bannerTop-full-sale": {
+      "title": "Panda | Banners Superior Full - Para usar junto com o carrosel de Menu",
+      "children": ["list-context.image-list#demo1-sale"],
+      "props": {
+        "blockClass": ["bannerTop-full", "bannerTop-full-sale"],
+        "fullWidth": true
+      }
+    },
+  
+    "list-context.image-list#demo1-sale": {
+      "title": "Panda | Lista imagens - banner superior full - Para usar junto com o carrosel de Menu",
+      "children": ["list-context-renderer#wrapped-sale"],
+      "props": {
+        "blockClass": "imagens_bannerTopFull",
+        "images": [
+          {
+            "image": "https://fakeimg.pl/1280x219/",
+            "mobileImage": "https://fakeimg.pl/360x219/"
+          }
+        ]
+      }
+    },
+    "list-context-renderer#wrapped-sale": {
+      "title": "Panda | Lista imagens - banner superior full - Para usar junto com o carrosel de Menu",
+      "props": {
+        "blockClass": "lista-imagens_bannerTop-Full",
+        "listElement": "ul",
+        "itemElement": "li"
+      }
+    }
+  }
+  

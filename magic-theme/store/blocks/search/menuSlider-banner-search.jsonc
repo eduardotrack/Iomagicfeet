@@ -1,0 +1,121 @@
+{
+  //controle de visibilidade do carrossel Menu
+  "experimental__visibility-layout#menu-banner-search": {
+    "title": "Controle de visibilidade - Carrosel Menu",
+    "children": ["flex-layout.row#menu-banner-search"],
+    "props": {
+      "visible": true,
+      "blockClass": "panda-search__carousel"
+    }
+  },
+  "flex-layout.row#menu-banner-search": {
+    "title": "Panda | Banners do Menu",
+    "children": ["flex-layout.col#menu-banner-search"],
+    "props": {
+      "blockClass": [
+        "search__categories-banner",
+        "home__categories-banner",
+        "home__slider"
+      ]
+    }
+  },
+  "flex-layout.col#menu-banner-search": {
+    "children": ["flex-layout.row#menu-banner-search-inner"],
+    "props": {
+      "blockClass": [
+        "search__categories-banner-col",
+        "home__categories-banner--col"
+      ]
+    }
+  },
+  "flex-layout.row#menu-banner-search-inner": {
+    "children": ["list-context.image-list#menu-banners-search01"],
+    "props": {
+      "blockClass": [
+        "search__categories-banner-row",
+        "home__categories-banner--row"
+      ]
+    }
+  },
+  "list-context.image-list#menu-banners-search01": {
+    "title": "Lista de cards - Carrossel - Menu",
+    "children": ["slider-layout#menu-banners-search01"],
+    "props": {
+      "blockClass": ["search__categories-banner", "home__categories-banner","search__menu-banner"],
+      "height": 120,
+      "images": [
+        {
+          "image": "/arquivos/filtroTenis-imgNew.svg",
+          "mobileImage": "/arquivos/filtroTenis-imgNew.svg",
+          "link": {
+            "url": "/tenis-infantil/promocao?initialMap=specificationFilter_11&initialQuery=promocao&map=category-1,colecao",
+            "openNewTab": false,
+            "title": "Teste"
+          }
+        },
+        {
+          "image": "/arquivos/filtroRoupas-imgNew.svg",
+          "mobileImage": "/arquivos/filtroRoupas-imgNew.svg",
+          "link": {
+            "url": "/roupas-infantis/promocao?initialMap=specificationFilter_11&initialQuery=promocao&map=category-1,colecao",
+            "openNewTab": false,
+            "title": "Teste"
+          }
+        },
+        {
+          "image": "/arquivos/filtroCalcados-imgNew.svg",
+          "mobileImage": "/arquivos/filtroCalcados-imgNew.svg",
+          "link": {
+            "url": "/calcados-infantis/promocao?initialMap=specificationFilter_11&initialQuery=promocao&map=category-1,colecao",
+            "openNewTab": false,
+            "title": "Teste"
+          }
+        },
+        {
+          "image": "/arquivos/filtroAcessorios-imgNew.svg",
+          "mobileImage": "/arquivos/filtroAcessorios-imgNew.svg",
+          "link": {
+            "url": "/acessorios-infantis/promocao?initialMap=specificationFilter_11&initialQuery=promocao&map=category-1,colecao",
+            "openNewTab": false,
+            "title": "Teste"
+          }
+        },
+        {
+          "image": "/arquivos/filtroMeninos-imgNew.svg",
+          "mobileImage": "/arquivos/filtroMeninos-imgNew.svg",
+          "link": {
+            "url": "/masculino/promocao?initialMap=specificationFilter_11&initialQuery=promocao&map=category-2,colecao",
+            "openNewTab": false,
+            "title": "Teste"
+          }
+        },
+        {
+          "image": "/arquivos/filtroMeninas-imgNew.svg",
+          "mobileImage": "/arquivos/filtroMeninas-imgNew.svg",
+          "link": {
+            "url": "/feminino/promocao?initialMap=specificationFilter_11&initialQuery=promocao&map=category-2,colecao",
+            "openNewTab": false,
+            "title": "Teste"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#menu-banners-search01": {
+    "title": "Panda | Configuração Carrossel Menu",
+    "props": {
+      "blockClass": ["home__categories-banner", "search-category-carousel", "search-menu-carousel"],
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 4
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "mobileOnly",
+      "fullWidth": true,
+      "label": "category-slider",
+      "usePagination": true
+    }
+  }
+}

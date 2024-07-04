@@ -2,13 +2,14 @@
   "search-result-layout.desktop#category": {
     "title": "Panda | Layout da Busca por Categoria - Desktop",
     "children": [
+      "experimental__visibility-layout#bannerTop-full-sale",
       "experimental__visibility-layout#bannerTop-full",
       "experimental__visibility-layout#search-banner-top",
       "flex-layout.row#banner-one",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "experimental__visibility-layout#categories-banner-search",
-      
+      "experimental__visibility-layout#menu-banner-search",
       "flex-layout.row#search-suggestions",
       "flex-layout.row#retail-rocket-category",
       "flex-layout.row#result-category"

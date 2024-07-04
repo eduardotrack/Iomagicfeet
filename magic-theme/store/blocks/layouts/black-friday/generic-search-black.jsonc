@@ -49,11 +49,12 @@
   "search-result-layout.desktop#busca-generica-blackDesktop": {
     "title": "Panda | Layout da Busca Black Friday - Desktop",
     "children": [
+      "experimental__visibility-layout#bannerTop-full-sale",
       "flex-layout.row#banner-one",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "experimental__visibility-layout#categories-banner-search",
-
+"experimental__visibility-layout#menu-banner-search",
       "flex-layout.row#search-suggestions",
       "flex-layout.row#retail-rocket-category-search",
       "flex-layout.row#result"
@@ -72,10 +73,12 @@
   "search-result-layout.mobile#busca-generica-blackMobile": {
     "title": "Panda | Layout da Busca Black Friday - Mobile",
     "children": [
+      "experimental__visibility-layout#bannerTop-full-sale",
       "experimental__visibility-layout#search-banner-top",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "experimental__visibility-layout#categories-banner-search",
+      "experimental__visibility-layout#menu-banner-search",
       "total-products.v2",
 
       "flex-layout.row#searchinfomobile",
