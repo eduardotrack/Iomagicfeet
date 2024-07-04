@@ -4,7 +4,7 @@
     "title": "Controle de visibilidade - Carrosel Menu",
     "children": ["flex-layout.row#menu-banner-search"],
     "props": {
-      "visible": true,
+      "visible": false,
       "blockClass": "panda-search__carousel"
     }
   },
