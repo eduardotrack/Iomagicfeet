@@ -2,7 +2,7 @@
   "rich-text#tooltip-01": {
     "title": "Panda | Header - Topbar - Texto",
     "props": {
-      "text": "novos prazos de entrega para __todo brasil__",
+      "text": "# novos prazos de entrega para __todo brasil__",
       "blockClass": "header__tooltip--text"
     }
   },

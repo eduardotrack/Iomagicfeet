@@ -5,7 +5,6 @@
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
- 
 
   // HEADER DESKTOP START
   "header-layout.desktop": {
@@ -16,8 +15,8 @@
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop",
       "experimental__visibility-layout#banner-header-tag",
- 
-      "pd-popupNewsletter"/* ,
+      "pd-ChangeTagLogin",
+      "pd-popupNewsletter" /* ,
       "pd-buttonVerNota" */
     ]
   },
@@ -27,13 +26,9 @@
       "blockClass": "header__tooltip",
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true 
+      "preventVerticalStretch": true
     },
-    "children": [
-      "rich-text#tooltip-01",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#tooltip"
-    ]
+    "children": ["rich-text#tooltip-01", "flex-layout.col#spacer", "vtex.menu@2.x:menu#tooltip"]
   },
   "flex-layout.col#spacer": {
     "props": {
@@ -107,14 +102,10 @@
   },
   "flex-layout.row#links-desktop": {
     "title": "Panda | Header - Links - Desktop",
-    "props":{ 
+    "props": {
       "blockClass": "header-itens__menu"
     },
-    "children": [
-      "login#header",
-      "menu#wishlist",
-      "minicart.v2#main-header"
-    ]
+    "children": ["login#header", "menu#wishlist", "minicart.v2#main-header"]
   },
   // WISH LIST
   "menu#wishlist": {
@@ -198,11 +189,11 @@
     "children": [
       "cep-controller",
       "retail-rocket-container#global",
-  /*     "flex-layout.row#0-mobile",  */
+      /*     "flex-layout.row#0-mobile",  */
       "sticky-layout#1-mobile",
       "experimental__visibility-layout#banner-header-tag",
-    
-      "pd-popupNewsletter"/* ,
+      "pd-ChangeTagLogin",
+      "pd-popupNewsletter" /* ,
       "pd-buttonVerNota" */
     ]
   },
@@ -222,11 +213,7 @@
   },
   "flex-layout.row#1-mobile": {
     "title": "Panda | Header - Conteúdo - Mobile",
-    "children": [
-      
-      "logo#mobile",
-      "flex-layout.row#mob-list"
-    ],
+    "children": ["logo#mobile", "flex-layout.row#mob-list"],
     "props": {
       "blockClass": "header__main",
       "preventHorizontalStretch": true,
@@ -267,7 +254,7 @@
       "isFullWidth": true,
       "backdropMode": "none",
       "slideDirection": "horizontal",
-      "blockClass":"footer__nivel1--mob"
+      "blockClass": "footer__nivel1--mob"
     },
     "blocks": ["drawer-header#header-mobile"],
     "children": ["menu#drawer-nv1-mobile", "flex-layout.row#dep1-1-mobile-nivel-1-footer"]

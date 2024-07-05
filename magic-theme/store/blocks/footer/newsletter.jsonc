@@ -18,9 +18,8 @@
     "title": "Panda | Footer - Newsletter",
     "props": {
       "blockClass": "footer__newsletter"
-      
     },
-    "children": ["rich-text#footer-newsletter", "flex-layout.row#newsletter",  "newsletter-checkbox-confirmation#footer"]
+    "children": ["rich-text#footer-newsletter", "flex-layout.row#newsletter", "newsletter-checkbox-confirmation#footer"]
   },
 
   "rich-text#footer-newsletter": {
@@ -34,19 +33,14 @@
     "props": {
       "blockClass": "footer__newsletter"
     },
-    "children": [
-      "flex-layout.col#newsletter-col-1",
-      "flex-layout.col#newsletter-col-2"
-    ]
+    "children": ["flex-layout.col#newsletter-col-1", "flex-layout.col#newsletter-col-2"]
   },
   "flex-layout.col#newsletter-col-1": {
     "props": {
       "blockClass": "footer__newsletter",
       "width": "90%"
     },
-    "children": [
-      "newsletter-input-email#footer"
-    ]
+    "children": ["newsletter-input-email#footer"]
   },
   "flex-layout.col#newsletter-col-2": {
     "props": {

@@ -63,6 +63,9 @@
 
     "pd-promotionBar": {
         "component": "promotionBar"
+    },
+    "pd-ChangeTagLogin":{
+        "component": "ChangeTagLogin"
     }
-    
+
 }

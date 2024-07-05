@@ -12,14 +12,14 @@
       "total-products.v2",
 
       "flex-layout.row#searchinfomobile",
-      
+
       "flex-layout.row#retail-rocket-category-search",
       "flex-layout.row#retail-rocket-category",
-      
+
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore",
 
-      "flex-layout.row#search-seo-title",
+      // "flex-layout.row#search-seo-title",
       "rich-text#category"
     ],
     "props": {

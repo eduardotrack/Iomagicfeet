@@ -47,9 +47,7 @@
     "props": {
       "blockClass": "retail-rocket"
     },
-    "children": [
-      "retail-rocket-container#category-not-found"
-    ]
+    "children": ["retail-rocket-container#category-not-found"]
   },
 
   "retail-rocket-container#category-not-found": {
@@ -63,8 +61,9 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "**PAGE NOT FOUND**",
-      "font": "t-heading-1"
+      "text": "## Página 404",
+      "font": "t-heading-1",
+      "blockClass": "not-found"
     }
   }
 }

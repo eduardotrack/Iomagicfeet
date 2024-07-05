@@ -28,10 +28,7 @@
   // RESULT
   "flex-layout.row#result-department": {
     "title": "Panda | Resultados da busca",
-    "children": [
-      "flex-layout.col#filter",
-      "flex-layout.col#content-department"
-    ],
+    "children": ["flex-layout.col#filter", "flex-layout.col#content-department"],
     "props": {
       "blockClass": "panda-search__main",
       "preventHorizontalStretch": false,
@@ -43,12 +40,11 @@
   "flex-layout.col#content-department": {
     "title": "Panda | Conteúdo da busca",
     "children": [
-      
       "flex-layout.row#searchinfo",
-      
+
       "flex-layout.row#products",
       "flex-layout.row#fetchmore",
-      "flex-layout.row#search-seo-title",
+      // "flex-layout.row#search-seo-title",
       "rich-text#department"
     ],
     "props": {

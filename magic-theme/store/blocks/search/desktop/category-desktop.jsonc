@@ -40,12 +40,11 @@
   "flex-layout.col#content-category": {
     "title": "Conteúdo da busca",
     "children": [
-      
       "flex-layout.row#searchinfo",
-      
+
       "flex-layout.row#products",
       "flex-layout.row#fetchmore",
-      "flex-layout.row#search-seo-title",
+      // "flex-layout.row#search-seo-title",
       "rich-text#category"
     ],
     "props": {

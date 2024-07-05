@@ -13,9 +13,7 @@
 
   "flex-layout.row#footer-3-mobile": {
     "title": "Panda | Footer - Selos",
-    "children": [
-      "flex-layout.col#seo-footer-flags"
-    ],
+    "children": ["flex-layout.col#seo-footer-flags"],
     "props": {
       "blockClass": "footer_methods"
     }
@@ -205,11 +203,7 @@
   // Editable security badges list
   "flex-layout.col#security-badges": {
     "title": "Panda | Selos de segurança",
-    "children": [
-      "rich-text#footer-lights-title",
-      "flex-layout.row#footer-highlights",
-      "rich-text#footer-lights-text"
-    ],
+    "children": ["rich-text#footer-lights-title", "flex-layout.row#footer-highlights", "rich-text#footer-lights-text"],
     "props": {
       "blockClass": "security-badges",
       "horizontalAlign": "left",
@@ -227,7 +221,7 @@
     "title": "Panda | Título - Selos de segurança",
     "props": {
       "text": "### Selos de Segurança",
-      "blockClass": ["footer_methods--title" , "footer_lights_icon--title"]
+      "blockClass": ["footer_methods--title", "footer_lights_icon--title"]
     }
   },
 
@@ -313,10 +307,7 @@
   // POWERED BY AND DEVELOPED BY SECTION
   "flex-layout.row#footer-developed-powered": {
     "title": "Panda |  Developed/Powered",
-    "children": [
-      "flex-layout.col#footer-powered",
-      "flex-layout.col#footer-developed"
-    ],
+    "children": ["flex-layout.col#footer-powered", "flex-layout.col#footer-developed"],
     "props": {
       "blockClass": "home__footer--developed-powered-wrapper",
       "colGap": 6,
@@ -354,10 +345,7 @@
   "rich-text#footer-developed": {
     "props": {
       "text": "###### Developed by",
-      "blockClass": [
-        "footer__developed-powered--title",
-        "footer_methods--title"
-      ]
+      "blockClass": ["footer__developed-powered--title", "footer_methods--title"]
     }
   },
 
@@ -377,10 +365,7 @@
   "rich-text#footer-powered": {
     "props": {
       "text": "###### Powered by",
-      "blockClass": [
-        "footer__developed-powered--title",
-        "footer_methods--title"
-      ]
+      "blockClass": ["footer__developed-powered--title", "footer_methods--title"]
     }
   },
   "image#powered": {
