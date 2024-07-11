@@ -1,7 +1,7 @@
 {
   "vendor": "magicfeet",
   "name": "magictheme",
-  "version": "4.0.6",
+  "version": "4.0.7",
   "builders": {
     "styles": "2.x",
     "store": "0.x",

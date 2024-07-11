@@ -71,12 +71,7 @@
     "title": "Panda | Rastros de navegação - busca",
     "children": ["breadcrumb.search"],
     "props": {
-      "blockClass": [
-        "panda-search__breadcrumb",
-        "panda-breadcrumb__style",
-        "breadcrumb",
-        "product__breadcrumb"
-      ],
+      "blockClass": ["panda-search__breadcrumb", "panda-breadcrumb__style", "breadcrumb", "product__breadcrumb"],
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
@@ -147,10 +142,7 @@
   // SEARCH INFO
   "flex-layout.row#searchinfo": {
     "title": "Panda | Informações da busca",
-    "children": [
-      "flex-layout.col#productCount",
-      "order-by.v2"
-    ],
+    "children": ["flex-layout.col#productCount", "order-by.v2"],
     "props": {
       "blockClass": "panda-search__count"
     }

@@ -12,7 +12,7 @@
       "total-products.v2",
 
       "flex-layout.row#searchinfomobile",
-
+      "rich-text#title-ADD",
       "flex-layout.row#retail-rocket-category-search",
       "flex-layout.row#retail-rocket-category",
 
@@ -33,6 +33,16 @@
       "hiddenFacets": {
         "priceRange": false
       }
+    }
+  },
+  "rich-text#title-ADD": {
+    "props": {
+      "text": "",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-1",
+      "blockClass": "panda-search__main-title-ADD",
+      "title": "Panda | Título ADD - Mobile"
     }
   },
 

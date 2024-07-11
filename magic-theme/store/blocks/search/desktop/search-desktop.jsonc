@@ -7,10 +7,13 @@
       /* "experimental__visibility-layout#search-banner-top", */
       "flex-layout.row#banner-one",
       "flex-layout.row#searchbread",
+
       "flex-layout.row#searchtitle",
+
       "experimental__visibility-layout#categories-banner-search",
       "experimental__visibility-layout#menu-banner-search",
       "flex-layout.row#search-suggestions",
+      "rich-text#title-ADD",
       "flex-layout.row#retail-rocket-category-search",
       "flex-layout.row#result"
     ],
@@ -24,23 +27,29 @@
       }
     }
   },
+  "rich-text#title-ADD": {
+    "props": {
+      "text": "",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-1",
+      "blockClass": "panda-search__main-title-ADD",
+      "title": "Panda | Título ADD - Desktop"
+    }
+  },
 
   "flex-layout.row#conteiner-resultado-busca": {
     "props": {
       "blockClass": "retail-rocket"
     },
-    "children": [
-      "retail-rocket-container#category"
-    ]
+    "children": ["retail-rocket-container#category"]
   },
 
   "flex-layout.row#retail-rocket-category": {
     "props": {
       "blockClass": "retail-rocket"
     },
-    "children": [
-      "retail-rocket-container#category"
-    ]
+    "children": ["retail-rocket-container#category"]
   },
   "retail-rocket-container#category": {
     "props": {
@@ -53,9 +62,7 @@
     "props": {
       "blockClass": "retail-rocket"
     },
-    "children": [
-      "retail-rocket-container#category-search"
-    ]
+    "children": ["retail-rocket-container#category-search"]
   },
   "retail-rocket-container#category-search": {
     "props": {

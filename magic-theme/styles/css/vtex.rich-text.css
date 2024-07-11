@@ -1367,3 +1367,31 @@
   margin-top: 30px;
   display: block;
 }
+
+.container--panda-search__main-title-ADD {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container--panda-search__main-title-ADD {
+    padding: 0 15px;
+  }
+}
+
+.heading--panda-search__main-title-ADD {
+  font-family: "WorkSans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .heading--panda-search__main-title-ADD {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+}

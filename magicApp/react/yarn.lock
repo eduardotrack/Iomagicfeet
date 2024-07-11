@@ -3911,9 +3911,9 @@ lz-string@^1.4.4:
   resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
   integrity sha512-0ckx7ZHRPqb0oUm8zNr+90mtf9DQB60H1wMCjBtfi62Kl3a7JbHob6gA2bC+xRvZoOL+1hzUK8jeuEIQE8svEQ==
 
-"magicfeet.magicapp@http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.8/public/@types/magicfeet.magicapp":
-  version "0.3.8"
-  resolved "http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.8/public/@types/magicfeet.magicapp#037d0ecc7c164641ae26a8f3e6005276dff56b0a"
+"magicfeet.magicapp@https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.9+build1720708381/public/@types/magicfeet.magicapp":
+  version "0.3.9"
+  resolved "https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.9+build1720708381/public/@types/magicfeet.magicapp#bb0adb7dad9ff734684cdaf77e9c26d0687cfa2a"
 
 make-dir@^3.0.0:
   version "3.1.0"
@@ -5298,9 +5298,9 @@ verror@1.10.0:
   version "0.12.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager#2cf6a9d2a31bc503b783c257695b0d17c09b5696"
 
-"vtex.orders-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.103.1/public/@types/vtex.orders-graphql":
-  version "0.103.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.103.1/public/@types/vtex.orders-graphql#b0483855b59dd7ada29bf6d7c78b58ca75c27e82"
+"vtex.orders-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.103.2/public/@types/vtex.orders-graphql":
+  version "0.103.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.103.2/public/@types/vtex.orders-graphql#074c7d65338d56eb37fbf132a12f48ee6dc4389f"
 
 "vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context":
   version "0.10.1"
@@ -5310,9 +5310,9 @@ verror@1.10.0:
   version "8.134.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.2/public/@types/vtex.render-runtime#ae69e2b2a471291c6c6b155e17510150fbfc2d0e"
 
-"vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.60.1/public/@types/vtex.search-graphql":
-  version "0.60.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.60.1/public/@types/vtex.search-graphql#4e59e3577351d967e4b5c9594d4970783ee543bb"
+"vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.61.0/public/@types/vtex.search-graphql":
+  version "0.61.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.61.0/public/@types/vtex.search-graphql#f0a3f360f0a74fd380363e1565a9c1efb86aa03c"
 
 "vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.24.4/public/@types/vtex.slider-layout":
   version "0.24.4"

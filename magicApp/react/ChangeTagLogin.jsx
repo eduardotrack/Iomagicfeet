@@ -1,30 +1,13 @@
-import { useEffect } from "react";
 
+import style from "./styles.css";
 const ChangeTagLogin = () => {
-useEffect(() => {
 
-    const handleTransformTitle = () => {
-      if (window.location.pathname === '/login') {
-
-        const h3Element = document.querySelector('.vtex-login-2-x-contentForm h3.vtex-login-2-x-formTitle');
-        if (h3Element) {
-          const h1Element = document.createElement('h1');
-          h1Element.className = h3Element.className;
-          h1Element.textContent = h3Element.textContent;
-          h3Element.parentNode.replaceChild(h1Element, h3Element);
-        }
+      if (window.location?.pathname === '/login') {
+        return <h1 className={`${style.titleLogin}`}>Faça seu Login</h1>;
       }
-    };
 
 
-    setTimeout(() => {
-      handleTransformTitle();
-    }
-    , 2000);
-  }, []);
-
-
-  return <></>;
+    return <></>;
 }
 
 export default ChangeTagLogin;
