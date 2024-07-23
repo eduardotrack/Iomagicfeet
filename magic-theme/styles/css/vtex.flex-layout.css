@@ -186,9 +186,9 @@
 
 .flexRowContent--shelf__price-and-savings-search :global(.vtex-product-price-1-x-installments--Panda-summary-price),
 .flexRowContent--shelf__price-and-savings-search :global(.vtex-product-price-1-x-currencyContainer--summary) {
-  font-family: "RobotoCondensed-Bold";
+  font-family: "Roboto-Condensed";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   line-height: 120%;
   color: #1c1c1c;
@@ -489,13 +489,24 @@
   .flexRowContent--panda-search__main-title--seo {
     padding-left: 0;
   }
+
 }
 
 .flexRowContent--product__price {
   margin: 16px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
+@media (max-width: 767px) {
+  .flexRowContent--product__price {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
 
 .flexRowContent--product__main--btn :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
   width: 50% !important;
@@ -803,7 +814,7 @@
 
 .flexColChild--product__main :global(.vtex-product-price-1-x-installments--Panda-summary-price)::before {
   content: "até";
-  display: block;
+  display: none;
 }
 
 .flexColChild--product__main :global(.vtex-product-price-1-x-installments--Panda-summary-price),

@@ -205,7 +205,13 @@
     },
     "children": ["product-list-price", "product-selling-price#summary-search", "flex-layout.row#installments-summary-search"]
   },
- 
+  
+  "product-spot-price#summary-search": {
+    "props": {
+      "blockClass": "product__spot-price-search",
+      "message": "{spotPriceValue} no pix à vista"
+    }
+  },
   "flex-layout.col#price-savings-search": {
     "props": {
       "blockClass": "shelf__price-search"
@@ -218,6 +224,7 @@
       "message": "{listPriceValue}"
     }
   },
+
   "product-installments#summary-search": {
     "props": {
       "message": "{installmentsNumber}x {installmentValue}",

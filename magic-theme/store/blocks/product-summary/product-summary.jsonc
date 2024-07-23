@@ -189,7 +189,7 @@
       "blockClass": "shelf__price",
       "preventHorizontalStretch": true
     },
-    "children": ["product-selling-price#summary", "flex-layout.row#installments-summary"]
+    "children": [ "product-selling-price-range", "flex-layout.row#installments-summary"]
   },
  
   "flex-layout.col#price-savings": {
@@ -197,6 +197,13 @@
       "blockClass": "shelf__price"
     },
     "children": ["product-price-savings#summary"]
+  },
+
+  "product-selling-price-range": {
+    "props": {
+      "blockClass": "summary",
+      "message": "{minPriceValue}"
+    }
   },
   "product-list-price#summary": {
     "props": {
@@ -206,7 +213,7 @@
   },
   "product-installments#summary": {
     "props": {
-      "message": "{installmentsNumber}x de {installmentValue}",
+      "message": "ou {installmentsNumber}x de {installmentValue}",
       "blockClass": ["summary", "Panda-summary-price"]
     }
   },
