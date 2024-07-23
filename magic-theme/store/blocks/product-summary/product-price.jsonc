@@ -24,7 +24,7 @@
     ]
   },
   "flex-layout.col#prices-pdp": {
-    "children": ["product-list-price#pdp",  "product-spot-price#pdp" /* ,"product-selling-price#pdp" */],
+    "children": ["product-list-price#pdp",  "product-selling-price#pdp" /* ,"product-selling-price#pdp" */],
     "props": {}
   },
   "product-list-price#pdp": {
