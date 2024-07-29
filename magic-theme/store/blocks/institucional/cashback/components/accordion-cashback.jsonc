@@ -1,0 +1,314 @@
+{
+  "flex-layout.row#container-accordion-cashback": {
+    "title": "Panda | Accordion Cashback - Container",
+    "children": ["flex-layout.col#accordion-cashback-col-text", "disclosure-layout-group#group"],
+
+    "props": {
+      "blockClass": "container-accordion-cashback",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#accordion-cashback-col-text": {
+    "title": "Panda | Accordion Cashback - Texto",
+    "children": ["rich-text#accordion-cashback-text"],
+    "props": {
+      "blockClass": "accordion-cashback-col-text",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#accordion-cashback-text": {
+    "title": "Panda | Accordion Cashback - Texto",
+    "props": {
+      "text": "### FAQ ",
+      "blockClass": "accordion-cashback-text"
+    }
+  },
+
+  "disclosure-layout-group#group": {
+    "title": "Panda | Accordion Cashback - Group",
+    "children": [
+      "disclosure-layout#primeiro",
+      "disclosure-layout#segundo",
+      "disclosure-layout#terceiro",
+      "disclosure-layout#quarto",
+      "disclosure-layout#quinto",
+      "disclosure-layout#sexto",
+      "disclosure-layout#setimo"
+    ],
+    "props": {
+      "blockClass": "accordion-cashback-group"
+    }
+  },
+
+  "disclosure-layout#primeiro": {
+    "title": "Panda | Accordion Cashback - Layout",
+    "children": ["disclosure-trigger#primeiro", "disclosure-content#primeiro"],
+    "props": {
+      "blockClass": "accordion-cashback-layout"
+    }
+  },
+  "disclosure-trigger#primeiro": {
+    "title": "Panda | Accordion Cashback - Trigger 1",
+    "children": ["rich-text#question1"],
+    "props": {
+      "blockClass": "accordion-cashback-trigger"
+    }
+  },
+  "disclosure-content#primeiro": {
+    "title": "Panda | Accordion Cashback - Content 1",
+    "children": ["rich-text#answer1"],
+    "props": {
+      "blockClass": "accordion-cashback-content"
+    }
+  },
+  "rich-text#question1": {
+    "title": "Panda | Accordion Cashback - Question 1",
+    "props": {
+      "text": "O que é Cashback?",
+      "blockClass": "accordion-cashback-question"
+    }
+  },
+  "rich-text#answer1": {
+    "title": "Panda | Accordion Cashback - Answer 1",
+    "props": {
+      "text": "O cashback é o valor que você recebe de volta para utilizar em uma nova compra com a gente.",
+      "blockClass": "accordion-cashback-answer"
+    }
+  },
+
+  "disclosure-layout#segundo": {
+    "title": "Panda | Accordion Cashback - Layout",
+    "children": ["disclosure-trigger#segundo", "disclosure-content#segundo"],
+    "props": {
+      "blockClass": "accordion-cashback-layout"
+    }
+  },
+  "disclosure-trigger#segundo": {
+    "title": "Panda | Accordion Cashback - Trigger 2",
+    "children": ["rich-text#question2"],
+    "props": {
+      "blockClass": "accordion-cashback-trigger"
+    }
+  },
+  "disclosure-content#segundo": {
+    "title": "Panda | Accordion Cashback - Content 2",
+    "children": ["rich-text#answer2"],
+    "props": {
+      "blockClass": "accordion-cashback-content"
+    }
+  },
+  "rich-text#question2": {
+    "title": "Panda | Accordion Cashback - Question 2",
+    "props": {
+      "text": "Como uso meu cashback?",
+      "blockClass": "accordion-cashback-question"
+    }
+  },
+  "rich-text#answer2": {
+    "props": {
+      "text": "O cashback é liberado em até 7 dias após a compra e você pode usá-lo em até 45 dias após a compra.",
+      "blockClass": "accordion-cashback-answer"
+    }
+  },
+
+  "disclosure-layout#terceiro": {
+    "title": "Panda | Accordion Cashback - Layout",
+    "children": ["disclosure-trigger#terceiro", "disclosure-content#terceiro"],
+    "props": {
+      "blockClass": "accordion-cashback-layout"
+    }
+  },
+
+  "disclosure-trigger#terceiro": {
+    "title": "Panda | Accordion Cashback - Trigger 3",
+    "children": ["rich-text#question3"],
+    "props": {
+      "blockClass": "accordion-cashback-trigger"
+    }
+  },
+
+  "disclosure-content#terceiro": {
+    "title": "Panda | Accordion Cashback - Content 3",
+    "children": ["rich-text#answer3"],
+    "props": {
+      "blockClass": "accordion-cashback-content"
+    }
+  },
+
+  "rich-text#question3": {
+    "title": "Panda | Accordion Cashback - Question 3",
+    "props": {
+      "text": "O cashback é cumulativo?",
+      "blockClass": "accordion-cashback-question"
+    }
+  },
+
+  "rich-text#answer3": {
+    "title": "Panda | Accordion Cashback - Answer 3",
+    "props": {
+      "text": "Sim, o cashback é cumulativo com outras promoções vigentes.",
+      "blockClass": "accordion-cashback-answer"
+    }
+  },
+
+  "disclosure-layout#quarto": {
+    "title": "Panda | Accordion Cashback - Layout",
+    "children": ["disclosure-trigger#quarto", "disclosure-content#quarto"],
+    "props": {
+      "blockClass": "accordion-cashback-layout"
+    }
+  },
+
+  "disclosure-trigger#quarto": {
+    "title": "Panda | Accordion Cashback - Trigger 4",
+    "children": ["rich-text#question4"],
+    "props": {
+      "blockClass": "accordion-cashback-trigger"
+    }
+  },
+
+  "disclosure-content#quarto": {
+    "title": "Panda | Accordion Cashback - Content 4",
+    "children": ["rich-text#answer4"],
+    "props": {
+      "blockClass": "accordion-cashback-content"
+    }
+  },
+
+  "rich-text#question4": {
+    "title": "Panda | Accordion Cashback - Question 4",
+    "props": {
+      "text": "Como consulto o meu saldo de cashback?",
+      "blockClass": "accordion-cashback-question"
+    }
+  },
+
+  "rich-text#answer4": {
+    "title": "Panda | Accordion Cashback - Answer 4",
+    "props": {
+      "text": "Você pode consultar o seu saldo de cashback no nosso aplicativo MVP.",
+      "blockClass": "accordion-cashback-answer"
+    }
+  },
+
+  "disclosure-layout#quinto": {
+    "title": "Panda | Accordion Cashback - Layout",
+    "children": ["disclosure-trigger#quinto", "disclosure-content#quinto"],
+    "props": {
+      "blockClass": "accordion-cashback-layout"
+    }
+  },
+
+  "disclosure-trigger#quinto": {
+    "title": "Panda | Accordion Cashback - Trigger 5",
+    "children": ["rich-text#question5"],
+    "props": {
+      "blockClass": "accordion-cashback-trigger"
+    }
+  },
+
+  "disclosure-content#quinto": {
+    "title": "Panda | Accordion Cashback - Content 5",
+    "children": ["rich-text#answer5"],
+    "props": {
+      "blockClass": "accordion-cashback-content"
+    }
+  },
+
+  "rich-text#question5": {
+    "title": "Panda | Accordion Cashback - Question 5",
+    "props": {
+      "text": "Qual é o valor recebido de cashback em cada compra?",
+      "blockClass": "accordion-cashback-question"
+    }
+  },
+
+  "rich-text#answer5": {
+    "title": "Panda | Accordion Cashback - Answer 5",
+    "props": {
+      "text": "Em cada compra você ganha 10% de cashback sobre o valor total, e mais 5% se você responder à pesquisa de satisfação.",
+      "blockClass": "accordion-cashback-answer"
+    }
+  },
+
+  "disclosure-layout#sexto": {
+    "title": "Panda | Accordion Cashback - Layout",
+    "children": ["disclosure-trigger#sexto", "disclosure-content#sexto"],
+    "props": {
+      "blockClass": "accordion-cashback-layout"
+    }
+  },
+
+  "disclosure-trigger#sexto": {
+    "title": "Panda | Accordion Cashback - Trigger 6",
+    "children": ["rich-text#question6"],
+    "props": {
+      "blockClass": "accordion-cashback-trigger"
+    }
+  },
+
+  "disclosure-content#sexto": {
+    "title": "Panda | Accordion Cashback - Content 6",
+    "children": ["rich-text#answer6"],
+    "props": {
+      "blockClass": "accordion-cashback-content"
+    }
+  },
+
+  "rich-text#question6": {
+    "title": "Panda | Accordion Cashback - Question 6",
+    "props": {
+      "text": "Em quais produtos posso usar o cashback?",
+      "blockClass": "accordion-cashback-question"
+    }
+  },
+
+  "rich-text#answer6": {
+    "title": "Panda | Accordion Cashback - Answer 6",
+    "props": {
+      "text": "O cashback pode ser usado em todos os produtos que estão à venda, exceto, produtos que são lançamento, sendo necessário aguardar o prazo de 48 horas após o lançamento.",
+      "blockClass": "accordion-cashback-answer"
+    }
+  },
+
+  "disclosure-layout#setimo": {
+    "title": "Panda | Accordion Cashback - Layout",
+    "children": ["disclosure-trigger#setimo", "disclosure-content#setimo"],
+    "props": {
+      "blockClass": "accordion-cashback-layout"
+    }
+  },
+
+  "disclosure-trigger#setimo": {
+    "title": "Panda | Accordion Cashback - Trigger 7",
+    "children": ["rich-text#question7"],
+    "props": {
+      "blockClass": "accordion-cashback-trigger"
+    }
+  },
+
+  "disclosure-content#setimo": {
+    "title": "Panda | Accordion Cashback - Content 7",
+    "children": ["rich-text#answer7"],
+    "props": {
+      "blockClass": "accordion-cashback-content"
+    }
+  },
+
+  "rich-text#question7": {
+    "title": "Panda | Accordion Cashback - Question 7",
+    "props": {
+      "text": "O cashback tem vencimento?",
+      "blockClass": "accordion-cashback-question"
+    }
+  },
+
+  "rich-text#answer7": {
+    "title": "Panda | Accordion Cashback - Answer 7",
+    "props": {
+      "text": "O cashback tem o limite máximo de 30% na próxima compra.",
+      "blockClass": "accordion-cashback-answer"
+    }
+  }
+}

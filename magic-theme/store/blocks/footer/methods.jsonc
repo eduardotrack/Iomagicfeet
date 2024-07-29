@@ -22,7 +22,7 @@
   "rich-text#footer-payment-title": {
     "title": "Panda | Footer - Selos - Pagamento - Título",
     "props": {
-      "text": "### Formas de pagamento",
+      "text": "Formas de pagamento",
       "blockClass": ["footer_methods--title", "footer_methods_icon--title"]
     }
   },
@@ -220,7 +220,7 @@
   "rich-text#footer-lights-title": {
     "title": "Panda | Título - Selos de segurança",
     "props": {
-      "text": "### Selos de Segurança",
+      "text": "Selos de Segurança",
       "blockClass": ["footer_methods--title", "footer_lights_icon--title"]
     }
   },

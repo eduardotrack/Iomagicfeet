@@ -10,10 +10,7 @@
 
   "flex-layout.col#texto-topo-intro-cashback": {
     "title": "Panda | Texto topo intro - cashback",
-    "children": [
-      "rich-text#texto-topo-intro-cashback-top",
-      "rich-text#texto-topo-intro-cashback-bottom"
-    ],
+    "children": ["rich-text#texto-topo-intro-cashback-top", "rich-text#texto-topo-intro-cashback-bottom"],
     "props": {
       "blockClass": "texto-topo-intro-cashback",
       "fullWidth": true
@@ -70,10 +67,7 @@
   },
   "flex-layout.col#text-regras-cashback": {
     "title": "Panda | Textos de regras - cashback",
-    "children": [
-      "rich-text#text-regras-cashback-01",
-      "rich-text#text-regras-cashback-02"
-    ],
+    "children": ["rich-text#text-regras-cashback-01", "rich-text#text-regras-cashback-02"],
     "props": {
       "blockClass": "text-regras-cashback",
       "width": "70%"
@@ -95,6 +89,89 @@
       "blockClass": "text-regras-cashback",
       "textAlignment": "LEFT",
       "textPosition": "CENTER"
+    }
+  },
+
+  "responsive-layout.desktop#conteudo-principal-topo": {
+    "title": "Panda | Banner e texto 01 - Desktop",
+    "children": ["flex-layout.row#conteudo-principal-topo"],
+    "props": {
+      "blockClass": "conteudo-principal-topo-desktop",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#conteudo-principal-topo": {
+    "title": "Panda | Conteúdo principal topo - cashback",
+    "children": ["flex-layout.row#banner-principal-topo"],
+    "props": {
+      "blockClass": "conteudo-principal-topo",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#banner-principal-topo": {
+    "title": "Panda | Banner principal topo - cashback",
+    "children": ["image#banner-principal-topo"],
+    "props": {
+      "blockClass": "banner-principal-topo",
+      "colSizing": "auto",
+      "fullWidth": true
+    }
+  },
+
+  "image#banner-principal-topo": {
+    "title": "Panda | Banner principal topo - cashback",
+    "props": {
+      "src": "assets/img/banner_cashback-topo.svg",
+      "alt": "Banner principal topo - cashback",
+      "blockClass": "banner-principal-topo",
+      "link": {
+        "url": "#regras-cashback-id",
+        "target": "_self"
+      }
+    }
+  },
+
+  "responsive-layout.mobile#conteudo-principal-topo": {
+    "title": "Panda | Banner e texto 01 - Mobile",
+    "children": ["image#banner-principal-topo-mobile", "flex-layout.row#texto-topo-intro-cashback"],
+    "props": {
+      "blockClass": "conteudo-principal-topo-desktop",
+      "fullWidth": true
+    }
+  },
+
+  "image#banner-principal-topo-mobile": {
+    "title": "Panda | Banner principal topo - cashback",
+    "props": {
+      "src": "assets/img/banner_cashback-topo-mobile.svg",
+      "alt": "Banner principal topo - cashback",
+      "blockClass": "banner-principal-topo"
+    }
+  },
+
+  "flex-layout.row#texto-topo-intro-cashback": {
+    "title": "Panda | Texto topo intro - cashback",
+    "children": ["rich-text#texto-topo-intro-cashback-top-mobile-cashback", "link#botao-link-cashback"],
+    "props": {
+      "blockClass": "texto-topo-intro-cashback-mobile",
+      "fullWidth": true
+    }
+  },
+  "rich-text#texto-topo-intro-cashback-top-mobile-cashback": {
+    "title": "Panda | Texto topo intro - cashback",
+    "props": {
+      "text": "## O que é Cashback? \nA cada pedido realizado você __ganha 10% em bônus__\n para sua próxima compra.",
+      "blockClass": "texto-topo-intro-cashback-top-mobile-cashback"
+    }
+  },
+
+  "link#botao-link-cashback": {
+    "title": "Panda | Botão link - cashback",
+    "props": {
+      "label": "Veja as regras",
+      "href": "#regras-cashback-id",
+      "blockClass": "botao-link-cashback"
     }
   }
 }

@@ -1,30 +1,75 @@
 .trigger--panda-retirada-em-loja-faq {
-    background: #5DFF49;
-    border: none;
-    padding: 0px 20px;
-    border-top-right-radius: 30px;
-    margin-bottom: 10px;
-    cursor: pointer;
+  background: #5dff49;
+  border: none;
+  padding: 0px 20px;
+  border-top-right-radius: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .content--panda-retirada-em-loja-faq {
-    background: #E8E8E8;
-    margin-top: -10px;
-    margin-bottom: 20px;
-    border-bottom-left-radius: 30px;
-    padding: 0px 20px;
+  background: #e8e8e8;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  border-bottom-left-radius: 30px;
+  padding: 0px 20px;
 }
 
 .content--panda-retirada-em-loja-faq :global(.vtex-rich-text-0-x-paragraph) {
-    font-family: 'WorkSans-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+  font-family: "WorkSans-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .trigger--panda-retirada-em-loja-faq :global(.vtex-rich-text-0-x-paragraph) {
-    font-family: 'WorkSans-Bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
+  font-family: "WorkSans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.trigger--accordion-cashback-trigger {
+  padding: 0;
+  background: #fff;
+  height: fit-content;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trigger--accordion-cashback-trigger--hidden {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.trigger--accordion-cashback-trigger--hidden::after {
+  content: "";
+
+  width: 12px;
+  height: 12px;
+  background-image: url("assets/img/plus-cashback.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: bold;
+}
+
+.trigger--accordion-cashback-trigger--visible {
+  border: none;
+  margin-bottom: 0;
+}
+.trigger--accordion-cashback-trigger--visible::after {
+  content: "";
+
+  width: 12px;
+  height: 6px;
+  background-image: url("assets/img/minus-cashback.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: bold;
+}
+
+.content--accordion-cashback-content--visible {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }

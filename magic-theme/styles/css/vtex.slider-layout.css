@@ -1,187 +1,225 @@
 .paginationDotsContainer--home__slider {
-    bottom: 20px;
+  bottom: 20px;
 }
 
 .paginationDot--carousel {
-    background: #FFFFFF;
+  background: #ffffff;
 }
 
 .paginationDot--home__slider {
-    background: #fff;
+  background: #fff;
 }
 
 .paginationDot--isActive {
-    background: transparent;
-    border: 2px solid #FFFFFF;
-    border-radius: 50px;
-    transform: matrix(0.86, 0.49, -0.53, 0.86, 0, 0);
-    height: 20px !important;
-    margin-top: -6px;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  transform: matrix(0.86, 0.49, -0.53, 0.86, 0, 0);
+  height: 20px !important;
+  margin-top: -6px;
 }
 
 .imageElement--home__slider {
-    max-height: 100% !important
+  max-height: 100% !important;
 }
 
 .sliderArrows--carousel-procura {
-    top: -55px;
+  top: -55px;
 }
 
 .sliderLeftArrow--carousel-procura {
-    right: 45px;
-    left: unset;
+  right: 45px;
+  left: unset;
 }
 
 .sliderLayoutContainer--shelf {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .paginationDotsContainer--shelf {
-    bottom: -30px;
+  bottom: -30px;
 }
 
 .paginationDotsContainer--carousel-exclusivos {
-    bottom: 30px;
+  bottom: 30px;
 }
 
 .paginationDotsContainer--list-brands-home {
-    bottom: -20px;
+  bottom: -20px;
 }
 
 .paginationDot--carousel-exclusivos,
 .paginationDot--shelf {
-    background: #1C1C1C;
+  background: #1c1c1c;
 }
 
 .paginationDot--shelf--isActive {
-    border: 2px solid #1C1C1C;
-    background: #fff;
+  border: 2px solid #1c1c1c;
+  background: #fff;
 }
 
 .paginationDot--carousel-exclusivos--isActive {
-    border: 2px solid #1C1C1C;
-    background: transparent;
+  border: 2px solid #1c1c1c;
+  background: transparent;
 }
 
 .slide--carousel-exclusivos {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .slideChildrenContainer--carousel-exclusivos {
-    display: block;
+  display: block;
 }
 
 .slideChildrenContainer--list-brands-home {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .slide--slider-menu-desk {
-    padding: 0px 25px;
+  padding: 0px 25px;
 }
 
 @media (max-width: 767px) {
-    .slide--tips_home_slider--firstVisible::after{
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 50%; 
-        width: 2px; 
-        height: 25%;
-        background: #C4C4C4;
-        transform: translateY(-50%);
-    }
+  .slide--tips_home_slider--firstVisible::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 2px;
+    height: 25%;
+    background: #c4c4c4;
+    transform: translateY(-50%);
+  }
 
-    .slide--tips_home_slider--lastVisible::before{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 50%; 
-        width: 2px; 
-        height: 25%;
-        background: #C4C4C4;
-        transform: translateY(-50%);
-    }
-    .sliderLayoutContainer--tips_home_slider{
-        background: #F2F2F2;
-        padding: 7px;
-    }
-    .slideChildrenContainer--carousel-procura {
-        display: flex;
-        align-items: flex-start;
-        padding: 0px 4px;
-    }
-    .paginationDotsContainer--carousel-exclusivos {
-        bottom: 10px;
-    }
-    .paginationDotsContainer--list-brands-home {
-        bottom: 0px;
-    }
-    .slideChildrenContainer--carousel-exclusivos {
-        margin-bottom: 30px;
-    }
-    .caretIcon--tips_home_slider {
-        width: 7px;
-        height: 11px;
-    }
+  .slide--tips_home_slider--lastVisible::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 2px;
+    height: 25%;
+    background: #c4c4c4;
+    transform: translateY(-50%);
+  }
+  .sliderLayoutContainer--tips_home_slider {
+    background: #f2f2f2;
+    padding: 7px;
+  }
+  .slideChildrenContainer--carousel-procura {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px 4px;
+  }
+  .paginationDotsContainer--carousel-exclusivos {
+    bottom: 10px;
+  }
+  .paginationDotsContainer--list-brands-home {
+    bottom: 0px;
+  }
+  .slideChildrenContainer--carousel-exclusivos {
+    margin-bottom: 30px;
+  }
+  .caretIcon--tips_home_slider {
+    width: 7px;
+    height: 11px;
+  }
 }
 
 .sliderLayoutContainer--quemsomos__slider {
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .paginationDotsContainer--quemsomos__slider {
-    display: flex;
-    justify-content: flex-start;
-    transform: rotate(90deg);
-    position: relative;
-    left: 19%;
+  display: flex;
+  justify-content: flex-start;
+  transform: rotate(90deg);
+  position: relative;
+  left: 19%;
 }
 
 .paginationDotsContainer--quemsomos__slider :global(.vtex-slider-layout-0-x-paginationDot--quemsomos__slider) {
-    background: #1C1C1C;
+  background: #1c1c1c;
 }
 
 .paginationDotsContainer--quemsomos__slider :global(.vtex-slider-layout-0-x-paginationDot--isActive) {
-    border: 2px solid #1C1C1C;
-    background: #FFF;
+  border: 2px solid #1c1c1c;
+  background: #fff;
 }
 
-
 .imageElementLink--faixaRotativa_header {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .imageElement--faixaRotativa_header {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
-
 
 .sliderLeftArrow--faixaRotativa_header,
 .sliderRightArrow--faixaRotativa_header {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 767px) {
-    .sliderLayoutContainer--quemsomos__slider {
-        display: flex;
-        flex-direction: column;
-    }
-    .paginationDotsContainer--quemsomos__slider {
-        display: flex;
-        justify-content: center;
-        transform: unset;
-        position: absolute;
-        left: 0;
-        bottom: 10px;
-    }
-    .sliderLayoutContainer--home__slider {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-    }
+  .sliderLayoutContainer--quemsomos__slider {
+    display: flex;
+    flex-direction: column;
+  }
+  .paginationDotsContainer--quemsomos__slider {
+    display: flex;
+    justify-content: center;
+    transform: unset;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+  }
+  .sliderLayoutContainer--home__slider {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }
 
+.sliderLeftArrow--slider-passos-cashback {
+  left: -4%;
+}
+
+.sliderRightArrow--slider-passos-cashback {
+  right: -4%;
+}
+
+.paginationDotsContainer--slider-passos-cashback {
+  bottom: -14%;
+}
+
+@media (max-width: 767px) {
+  .paginationDotsContainer--slider-passos-cashback {
+    bottom: -10%;
+  }
+}
+
+.paginationDot--slider-passos-cashback,
+.paginationDot--beneficios-cashback-slider {
+  background-color: #000000;
+}
+.paginationDot--beneficios-cashback-slider--isActive,
+.paginationDot--slider-passos-cashback--isActive {
+  border-color: #000000;
+  background-color: #ffffff;
+}
+
+.paginationDotsContainer--beneficios-cashback-slider {
+  bottom: -35px;
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 768px) {
+  .slide--slider-passos-cashback {
+    width: 18% !important;
+  }
+}

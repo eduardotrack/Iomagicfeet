@@ -489,7 +489,6 @@
   .flexRowContent--panda-search__main-title--seo {
     padding-left: 0;
   }
-
 }
 
 .flexRowContent--product__price {
@@ -506,7 +505,6 @@
     gap: 5px;
   }
 }
-
 
 .flexRowContent--product__main--btn :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
   width: 50% !important;
@@ -1243,4 +1241,198 @@
 
 .flexRowContent--novidades-home-rowTtitle {
   margin-top: 25px;
+}
+
+.flexRowContent--banner-principal-topo :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 100vw !important;
+}
+
+.flexRow--beneficios-cashback {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
+@media screen and (max-width: 768px) {
+  .flexRow--beneficios-cashback {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+  }
+}
+
+.flexRow--beneficios-cashback :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+  width: 100% !important;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flexRow--beneficios-cashback
+  .flexRowContent--beneficios-cashback-slider
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 100% !important;
+}
+.flexRowContent--beneficios-cashback {
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexRow--beneficios-cashback-slider {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .flexRow--beneficios-cashback-slider {
+    margin-top: 30px;
+  }
+}
+
+.flexRowContent--como-usar-cashback {
+  flex-direction: column;
+}
+
+.flexRowContent--como-usar-cashback :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 100% !important;
+}
+
+.flexRowContent--como-usar-cashback :global(.vtex-store-link-0-x-link) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5dff49;
+  height: 78px;
+  color: #000;
+  text-align: center;
+  font-family: "WorkSans-Bold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.flexRowContent--como-usar-cashback .flexRowContent--container-como-usar-cashback {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 90px;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+}
+@media screen and (max-width: 768px) {
+  .flexRowContent--como-usar-cashback .flexRowContent--container-como-usar-cashback {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+}
+
+.flexRowContent--como-usar-cashback
+  .flexRowContent--container-como-usar-cashback
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+  width: 35% !important;
+}
+@media screen and (max-width: 768px) {
+  .flexRowContent--como-usar-cashback
+    .flexRowContent--container-como-usar-cashback
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    width: 100% !important;
+  }
+}
+.flexRow--regras-cashback {
+  background-image: url("assets/img/bg-cashback-regras.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .flexRow--regras-cashback {
+    padding: 20px 0;
+    background-image: url("assets/img/bg-cashback-regras-mobile.svg");
+  }
+}
+
+.flexRowContent--container-regras-cashback {
+  flex-direction: column;
+  align-items: center;
+}
+.flexRowContent--container-regras-cashback :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 100% !important;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.flexColChild--regras-cashback-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.flexColChild--regras-cashback-link :global(.vtex-store-link-0-x-link) {
+  color: #000;
+  text-align: center;
+  font-family: "WorkSans-Regular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 26px;
+  background: #5dff49;
+  width: 187px;
+  height: 38px;
+}
+
+.flexRowContent--container-accordion-cashback {
+  max-width: 1280px;
+  margin: 0 auto;
+  flex-direction: column;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .flexRowContent--container-accordion-cashback {
+    padding-bottom: 24px;
+  }
+}
+
+.flexRowContent--container-accordion-cashback :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 100% !important;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flexRowContent--texto-topo-intro-cashback-mobile {
+  flex-direction: column;
+  padding: 24px 20px;
+}
+
+.flexRowContent--texto-topo-intro-cashback-mobile :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 767px) {
+  .flexColChild--beneficios-cashback-col-text {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flexColChild--conteudo-como-usaqr-cashback {
+    padding: 0 10px;
+  }
 }

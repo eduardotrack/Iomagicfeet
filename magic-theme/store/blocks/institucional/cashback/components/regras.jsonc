@@ -1,0 +1,53 @@
+{
+  "flex-layout.row#regras-cashback": {
+    "title": "Panda | Regras do cashback",
+    "children": ["flex-layout.row#container-regras-cashback"],
+    "props": {
+      "blockClass": "regras-cashback",
+      "fullWidth": true,
+      "htmlId": "regras-cashback-id"
+    }
+  },
+
+  "flex-layout.row#container-regras-cashback": {
+    "title": "Panda | Regras do cashback - Container",
+    "children": ["flex-layout.col#regras-cashback-col-text", "flex-layout.col#regras-cashback-link"],
+    "props": {
+      "blockClass": "container-regras-cashback",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#regras-cashback-col-text": {
+    "title": "Panda | Regras do cashback - Texto",
+    "children": ["rich-text#regras-cashback-text"],
+    "props": {
+      "blockClass": "regras-cashback-col-text",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#regras-cashback-text": {
+    "title": "Panda | Regras do cashback - Texto",
+    "props": {
+      "text": "### Confira as regras para você usar seu cashback: \n1. O desconto tem o limite máximo de 30% na próxima compra.\n2. Em cada compra você ganha 10% de cashback sobre o valor total, e mais 5% se você responder à pesquisa de satisfação.\n3. A liberação do cashback é feita em 7 dias corridos contados da data de compra. O prazo máximo de resgate é de até 45 dias contados da data de compra.\n4. O cashback só pode ser utilizado em lojas físicas. Vamos enviar um SMS para você indicando em quais lojas você pode usar o seu benefício.\n5. O cashback é cumulativo com outras promoções vigentes.\n6. O cashback não pode ser usado com o cupom de troca.\n7. O cashback pode ser usado em todos os produtos que estão à venda, exceto, produtos que são lançamento, sendo necessário aguardar o prazo de 48 horas após o lançamento.\n8. Os produtos HARD LAUNCH (lançamentos com datas definidas pelas marcas - fornecedoras, exemplos: Air Jordan Retrô, Yeezy, Puma Ripndip, Adidas Ivy Park, produtos de linha de basquete com assinaturas e colaborações, etc.) estarão disponíveis para compra com a utilização de créditos 48 (quarenta e oito) horas após a data do lançamento, caso houver disponibilidade de estoque. ",
+      "blockClass": "regras-cashback-text"
+    }
+  },
+  "flex-layout.col#regras-cashback-link": {
+    "title": "Panda | Regras do cashback - Link",
+    "children": ["link#regras-cashback-link"],
+    "props": {
+      "blockClass": "regras-cashback-link",
+      "fullWidth": true
+    }
+  },
+
+  "link#regras-cashback-link": {
+    "title": "Panda | Regras do cashback - Link",
+    "props": {
+      "href": "/regulamentocrm",
+      "label": "Veja as regras"
+    }
+  }
+}

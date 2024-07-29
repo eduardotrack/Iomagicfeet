@@ -59,7 +59,7 @@
   padding-left: 5rem;
 }
 
-.heading--footer_methods--title {
+.paragraph--footer_methods--title {
   font-family: "WorkSans-Regular";
   font-style: normal;
   font-weight: 400;
@@ -69,12 +69,12 @@
 }
 
 @media (max-width: 767px) {
-  .heading--footer_methods--title {
+  .paragraph--footer_methods--title {
     color: #fff;
   }
 }
 
-.heading--seo-footer-flags-title {
+.paragraph--seo-footer-flags-title {
   font-family: "WorkSans-Bold";
   font-weight: 700;
   font-size: 16px;
@@ -82,7 +82,7 @@
   color: #1c1c1c;
 }
 
-.heading--seo-footer-flags-text {
+.paragraph--seo-footer-flags-text {
   font-family: "WorkSans-Bold";
   font-style: normal;
   font-weight: 700;
@@ -107,12 +107,18 @@
   text-transform: uppercase;
 }
 
+.strong--seo-footer-flags-text:first-child {
+  font-size: 18px;
+  margin-bottom: 1px;
+  display: block;
+}
+
 .link--seo-footer-flags-text {
   color: #000000;
   text-decoration: underline;
 }
 
-.heading--footer_methods_icon--title::before {
+.paragraph--footer_methods_icon--title::before {
   content: ".";
   color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='23' viewBox='0 0 24 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.3501 11.3183V11.4683H19.5001H20.5001H20.6501V11.3183C20.6501 6.54106 16.7773 2.66832 12.0001 2.66832H11.8501V2.81832V3.81832V3.96832H12.0001C16.0594 3.96832 19.3501 7.25903 19.3501 11.3183ZM4.65008 11.3183V11.1683H4.50008H3.50008H3.35008V11.3183C3.35008 16.0956 7.22282 19.9683 12.0001 19.9683H12.1501V19.8183V18.8183V18.6683H12.0001C7.94079 18.6683 4.65008 15.3776 4.65008 11.3183ZM10.1168 15.0622L10.1168 15.0623L10.1189 15.0633C10.4855 15.2488 10.9105 15.3671 11.3911 15.421V16.0628C11.3911 16.1693 11.4245 16.2695 11.5026 16.347C11.5834 16.4272 11.685 16.4683 11.7985 16.4683H12.2239C12.334 16.4683 12.4337 16.4294 12.5089 16.3472C12.5917 16.2726 12.6314 16.1731 12.6314 16.0628V15.4322C13.3723 15.3502 13.9743 15.1245 14.4251 14.7441L14.4251 14.7441L14.4262 14.7432C14.9095 14.3274 15.15 13.7773 15.15 13.1072C15.15 12.6716 15.056 12.2997 14.8564 12.0022C14.6595 11.7011 14.3643 11.4594 13.9809 11.2729C13.6026 11.0814 13.0923 10.9008 12.4543 10.7294C11.9129 10.5747 11.5062 10.4399 11.231 10.325C10.9612 10.205 10.7705 10.0725 10.6481 9.93252C10.5408 9.80156 10.4821 9.63039 10.4821 9.40724C10.4821 9.07487 10.6064 8.83897 10.8515 8.67677C11.1092 8.50624 11.4757 8.41279 11.9665 8.41279C12.4067 8.41279 12.7598 8.5113 13.0353 8.69806L13.0353 8.69808L13.0374 8.69946C13.3138 8.88012 13.4595 9.10059 13.4971 9.36194L13.4983 9.37057L13.5006 9.37901C13.5261 9.47534 13.5761 9.56076 13.6582 9.62032C13.7392 9.67906 13.8363 9.70168 13.9366 9.70168H14.5299C14.633 9.70168 14.7348 9.67041 14.8081 9.58684C14.8763 9.51699 14.915 9.42925 14.915 9.32946H14.9152L14.9148 9.32152C14.8983 9.01028 14.7912 8.70455 14.6012 8.40567C14.4147 8.10035 14.1385 7.84052 13.7798 7.6237C13.4543 7.42278 13.0703 7.28973 12.6314 7.22122V6.5739C12.6314 6.46362 12.5917 6.36413 12.5089 6.28947C12.4337 6.20733 12.334 6.16835 12.2239 6.16835H11.7985C11.6849 6.16835 11.5833 6.20949 11.5026 6.28966C11.4245 6.36715 11.3911 6.46736 11.3911 6.5739V7.20711C10.7066 7.29745 10.1512 7.53153 9.73748 7.91958C9.29714 8.32511 9.07392 8.82766 9.07392 9.41835C9.07392 9.85346 9.16398 10.2275 9.35426 10.5313C9.54227 10.8315 9.82112 11.0776 10.1826 11.2726C10.5392 11.465 11.0131 11.6425 11.6002 11.8069C12.1955 11.9842 12.6378 12.1307 12.9298 12.2466C13.2172 12.3608 13.4196 12.4878 13.5485 12.6222L13.5485 12.6222L13.5511 12.6248C13.6754 12.7482 13.7418 12.9115 13.7418 13.1295C13.7418 13.4743 13.608 13.7353 13.3359 13.9286C13.0587 14.1182 12.6282 14.2239 12.0224 14.2239C11.4643 14.2239 11.0554 14.1155 10.7771 13.9182C10.487 13.7126 10.3186 13.4746 10.2541 13.2056L10.2523 13.198L10.2497 13.1907C10.2171 13.0983 10.1671 13.0158 10.0924 12.9564C10.0158 12.8957 9.92487 12.8683 9.8284 12.8683H9.24631C9.13557 12.8683 9.03891 12.9129 8.96153 12.9897C8.89042 13.0603 8.85004 13.1497 8.85004 13.2517H8.84989L8.85019 13.2584C8.86639 13.6203 8.98015 13.9609 9.18799 14.2783L9.18793 14.2783L9.19044 14.2819C9.40838 14.5944 9.71961 14.8535 10.1168 15.0622ZM21.85 11.3184C21.85 16.7584 17.44 21.1684 12 21.1684C6.56 21.1684 2.15 16.7584 2.15 11.3184C2.15 5.87835 6.56 1.46836 12 1.46836C17.44 1.46836 21.85 5.87835 21.85 11.3184ZM12 22.4684C18.158 22.4684 23.15 17.4763 23.15 11.3184C23.15 5.16038 18.158 0.168359 12 0.168359C5.84202 0.168359 0.85 5.16038 0.85 11.3184C0.85 17.4763 5.84202 22.4684 12 22.4684Z' fill='%231C1C1C' stroke='%235DFF49' stroke-width='0.3'/%3E%3C/svg%3E%0A");
@@ -124,7 +130,7 @@
   margin-right: 5px;
 }
 
-.heading--footer_lights_icon--title::before {
+.paragraph--footer_lights_icon--title::before {
   content: ".";
   color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='23' viewBox='0 0 20 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.9523 8.52365V6.44165V4.01911C10.9523 2.39916 9.63905 1.08594 8.01911 1.08594V1.08594C6.39916 1.08594 5.08594 2.39916 5.08594 4.01911V6.44165V8.52365' stroke='%231C1C1C'/%3E%3Cpath d='M19.4361 10.1631L15.3927 14.2066C15.0021 14.5971 14.369 14.5972 13.9784 14.2066L12.5222 12.7504' stroke='%231C1C1C'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.35213 16.8924C7.35118 16.9143 7.35222 16.9357 7.35507 16.9565C7.37536 17.1041 7.48723 17.2184 7.62341 17.2184H8.20465C8.34084 17.2184 8.45271 17.1041 8.47299 16.9565C8.47585 16.9357 8.47689 16.9143 8.47593 16.8924L8.39844 15.1213C8.5568 15.0373 8.69567 14.9135 8.80517 14.761C8.96838 14.5338 9.06635 14.243 9.06635 13.926C9.06635 13.9123 9.06617 13.8986 9.0658 13.8849C9.05146 13.35 8.75795 12.8953 8.34615 12.7048C8.21271 12.6431 8.06685 12.6091 7.91404 12.6091C7.76122 12.6091 7.61536 12.6431 7.48191 12.7048C7.07012 12.8953 6.77661 13.35 6.76227 13.8849C6.7619 13.8986 6.76172 13.9123 6.76172 13.926C6.76172 14.243 6.85968 14.5337 7.0229 14.761C7.1324 14.9135 7.27127 15.0373 7.42962 15.1213L7.35213 16.8924Z' fill='%231C1C1C' stroke='%231C1C1C'/%3E%3Cpath d='M14.7322 16.0661C14.1836 19.336 11.3397 21.8276 7.9139 21.8276C4.09546 21.8276 1 18.7322 1 14.9137C1 11.0953 4.09546 7.99984 7.9139 7.99984C10.3188 7.99984 12.4368 9.22764 13.6755 11.0906' stroke='%231C1C1C'/%3E%3C/svg%3E%0A");
@@ -137,13 +143,13 @@
 }
 
 @media (max-width: 767px) {
-  .heading--footer_lights_icon--title::before,
-  .heading--footer_methods_icon--title::before {
+  .paragraph--footer_lights_icon--title::before,
+  .paragraph--footer_methods_icon--title::before {
     filter: contrast(0.75) brightness(9.3);
   }
 }
 
-.heading--footer__developed-powered--title {
+.paragraph--footer__developed-powered--title {
   font-family: "WorkSans-Bold";
   font-style: normal;
   font-weight: 700;
@@ -1393,5 +1399,204 @@
   .heading--panda-search__main-title-ADD {
     font-size: 24px;
     margin-bottom: 0;
+  }
+}
+
+.headingLevel1--beneficios-cashback-text-titulo {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-align: center;
+
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 112% */
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .headingLevel1--beneficios-cashback-text-titulo {
+    font-size: 20px;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+}
+
+.headingLevel2--beneficios-cashback-subtitulo {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "WorkSans-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .headingLevel2--beneficios-cashback-subtitulo {
+    text-align: left;
+    line-height: unset;
+  }
+}
+
+.container--beneficios-cashback-slider-item-01,
+.container--beneficios-cashback-slider-item-02,
+.container--beneficios-cashback-slider-item-03 {
+  border-radius: 30px;
+  border: 2px solid #5dff49;
+  background: #fff;
+  padding: 50px 40px 60px;
+  height: 100%;
+  transition: all 0.1s;
+}
+
+.container--beneficios-cashback-slider-item-01:hover,
+.container--beneficios-cashback-slider-item-02:hover,
+.container--beneficios-cashback-slider-item-03:hover {
+  background-color: #5dff49;
+}
+
+@media screen and (max-width: 768px) {
+  .container--beneficios-cashback-slider-item-01:hover,
+  .container--beneficios-cashback-slider-item-02:hover,
+  .container--beneficios-cashback-slider-item-03:hover {
+    background: none;
+  }
+}
+
+.paragraph--beneficios-cashback-slider-item-01,
+.paragraph--beneficios-cashback-slider-item-02,
+.paragraph--beneficios-cashback-slider-item-03 {
+  font-family: "WorkSans-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  margin: 0;
+}
+
+.headingLevel2--conteudo-como-usar-cashback {
+  color: #000;
+  font-family: "WorkSans-Bold";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .headingLevel2--conteudo-como-usar-cashback {
+    font-size: 20px;
+    margin-left: 0;
+    display: block;
+    text-align: center;
+  }
+}
+
+.headingLevel3--regras-cashback-text {
+  color: #fff;
+  font-family: "WorkSans-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 17.6px */
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .headingLevel3--regras-cashback-text {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "WorkSans-Bold";
+    font-size: 20px;
+  }
+}
+
+.listOrdered--regras-cashback-text {
+  padding: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.listItem--regras-cashback-text {
+  color: #fff;
+  font-family: "WorkSans-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.paragraph--accordion-cashback-question {
+  color: #000;
+  font-family: "WorkSans-Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
+.paragraph--accordion-cashback-answer {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "WorkSans-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
+.headingLevel2--texto-topo-intro-cashback-top-mobile-cashback {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "WorkSans-Bold";
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.paragraph--texto-topo-intro-cashback-top-mobile-cashback {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "WorkSans-Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 117.118%;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.wrapper--conteudo-como-usar-cashback {
+  width: 100%;
+}
+
+.wrapper--regras-cashback-text {
+  padding: 0 26px;
+}
+
+@media screen and (max-width: 768px) {
+  .headingLevel3--accordion-cashback-text {
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
   }
 }

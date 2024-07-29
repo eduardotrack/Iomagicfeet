@@ -66,6 +66,9 @@
     },
     "pd-ChangeTagLogin":{
         "component": "ChangeTagLogin"
-    }
+    },
+      "pd-scrollCashback": {
+    "component": "ScrollCashback"
+  }
 
 }

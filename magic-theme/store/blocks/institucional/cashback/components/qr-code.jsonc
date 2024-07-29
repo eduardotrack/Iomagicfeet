@@ -1,0 +1,20 @@
+{
+  "responsive-layout.desktop#qrCode-cashback": {
+    "title": "Panda | QR Code - cashback",
+    "children": ["image#qrCode-cashback"],
+    "props": {
+      "blockClass": "qrCode-cashback"
+    }
+  },
+
+  "image#qrCode-cashback": {
+    "title": "Panda | QR Code - cashback",
+    "props": {
+      "src": "assets/img/qr-code-cashback.png",
+      "blockClass": "qrCode-cashback-img",
+      "alt": "QR Code - cashback",
+      "maxWidth": "125px",
+      "maxHeight": "125px"
+    }
+  }
+}

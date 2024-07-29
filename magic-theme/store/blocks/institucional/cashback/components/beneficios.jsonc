@@ -1,0 +1,102 @@
+{
+  "flex-layout.row#beneficios-cashback": {
+    "title": "Panda | Benefícios do cashback",
+    "children": ["flex-layout.col#beneficios-cashback-col-text", "flex-layout.row#beneficios-cashback-slider"],
+    "props": {
+      "blockClass": "beneficios-cashback",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#beneficios-cashback-col-text": {
+    "title": "Panda | Benefícios do cashback - Texto",
+    "children": ["rich-text#beneficios-cashback-text-titulo", "rich-text#beneficios-cashback-subtitulo"],
+    "props": {
+      "blockClass": "beneficios-cashback-col-text",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#beneficios-cashback-text-titulo": {
+    "title": "Panda | Benefícios do cashback - Título",
+    "props": {
+      "text": "# Benefícios do cashback",
+      "blockClass": "beneficios-cashback-text-titulo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "width": "100%"
+    }
+  },
+
+  "rich-text#beneficios-cashback-subtitulo": {
+    "title": "Panda | Benefícios do cashback - Subtítulo",
+    "props": {
+      "text": "## O nosso sistema de cashback tem diversos benefícios, dá uma olhada:",
+      "blockClass": "beneficios-cashback-subtitulo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#beneficios-cashback-slider": {
+    "title": "Panda | Benefícios do cashback - Slider",
+    "children": ["slider-layout#beneficios-cashback-slider"],
+    "props": {
+      "blockClass": "beneficios-cashback-slider",
+      "fullWidth": true
+    }
+  },
+
+  "slider-layout#beneficios-cashback-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "mobileOnly",
+      "usePagination": true,
+
+      "blockClass": "beneficios-cashback-slider"
+    },
+
+    "children": [
+      "rich-text#beneficios-cashback-slider-item-01",
+      "rich-text#beneficios-cashback-slider-item-02",
+      "rich-text#beneficios-cashback-slider-item-03"
+    ]
+  },
+
+  "rich-text#beneficios-cashback-slider-item-01": {
+    "props": {
+      "text": "**Economia** \n Com o cashback você pode ter **até 15%** do valor total da compra de volta para usar em **compras futuras**, ou seja, você compra mais gastando menos.",
+      "blockClass": "beneficios-cashback-slider-item-01",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "width": "100%"
+    }
+  },
+
+  "rich-text#beneficios-cashback-slider-item-02": {
+    "props": {
+      "text": "**Transparência**\n Com o nosso **aplicativo MVP** você sabe exatamente o **saldo de cashback disponível e onde usar** o seu benefícios, sim, simples assim.",
+      "blockClass": "beneficios-cashback-slider-item-02",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "width": "100%"
+    }
+  },
+
+  "rich-text#beneficios-cashback-slider-item-03": {
+    "props": {
+      "text": "**Variedade e flexibilidade**\n Temos diversos produtos incríveis em nossas lojas e você pode usar seu cashback.",
+      "blockClass": "beneficios-cashback-slider-item-03",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER",
+      "width": "100%"
+    }
+  }
+}

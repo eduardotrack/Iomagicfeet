@@ -1,29 +1,34 @@
-.paginationDotsContainer--sliderMenu-blackFriday{
-    top: 70px
+.paginationDotsContainer--sliderMenu-blackFriday {
+  top: 70px;
 }
 
-.paginationDot--sliderMenu-blackFriday{
-    background: #000;
+.paginationDot--sliderMenu-blackFriday {
+  background: #000;
 }
 
-.paginationDot--sliderMenu-blackFriday--isActive{
-    border: 2px solid #000;
-    background: transparent;
+.paginationDot--sliderMenu-blackFriday--isActive {
+  border: 2px solid #000;
+  background: transparent;
 }
 
-.sliderTrack--sliderMenu-blackFriday{
-    height: 60px;
+.sliderTrack--sliderMenu-blackFriday {
+  height: 60px;
 }
 
-.slideChildrenContainer--sliderMenu-blackFriday{
-    border-right: 1px solid #fff;
+.slideChildrenContainer--sliderMenu-blackFriday {
+  border-right: 1px solid #fff;
 }
 
-.slide--sliderMenu-blackFriday[data-index="4"] :global(.vtex-slider-layout-0-x-slideChildrenContainer--sliderMenu-blackFriday){
-    border-right: none;
+.slide--sliderMenu-blackFriday[data-index="4"]
+  :global(.vtex-slider-layout-0-x-slideChildrenContainer--sliderMenu-blackFriday) {
+  border-right: none;
 }
 
 .slideChildrenContainer--sliderMenu-blackFriday,
-.slide--sliderMenu-blackFriday{
-    height: 100%;
+.slide--sliderMenu-blackFriday {
+  height: 100%;
+}
+
+.sliderTrack--beneficios-cashback-slider {
+  gap: 40px;
 }

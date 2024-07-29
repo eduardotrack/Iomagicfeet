@@ -8,6 +8,7 @@
      margin: 0;
      text-transform: lowercase;
      margin-top: 40px;
+     display: block;
  }
 
  .productLink {

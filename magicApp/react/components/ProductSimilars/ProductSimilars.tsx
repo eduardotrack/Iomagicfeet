@@ -1,12 +1,11 @@
-import React from "react";
 import { useQuery } from "react-apollo";
-import { useProduct } from "vtex.product-context"
+import { useProduct } from "vtex.product-context";
 import ProductSimilarsItem from "./ProductSimilarsItem";
 
-import GET_PRODUCTS from "../../graphql/products.graphql"
 import { Product } from "vtex.product-context/react/ProductTypes";
+import GET_PRODUCTS from "../../graphql/products.graphql";
 
-import styles from "../../styles.css"
+import styles from "../../styles.css";
 
 const ProductSimilars = () => {
     const productContext = useProduct() || null
@@ -34,7 +33,7 @@ const ProductSimilars = () => {
 
     return (
         <>
-            <h6 className={styles.title}>escolha a <b>cor: {cor}</b></h6>
+            <span className={styles.title}>escolha a <b>cor: {cor}</b></span>
             <div className={styles.cardNormal}>
 
                 {

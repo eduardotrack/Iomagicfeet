@@ -1,0 +1,103 @@
+{
+  "flex-layout.row#como-usar-cashback": {
+    "title": "Panda | Como usar o cashback",
+    "children": ["responsive-layout.phone#baixe-app-mvp", "flex-layout.row#container-como-usar-cashback"],
+    "props": {
+      "blockClass": "como-usar-cashback",
+      "fullWidth": true
+    }
+  },
+
+  "responsive-layout.phone#baixe-app-mvp": {
+    "title": "Panda | Baixe o app MVP",
+    "children": ["link#baixe-app-mvp"],
+    "props": {
+      "blockClass": "baixe-app-mvp",
+      "fullWidth": true
+    }
+  },
+
+  "link#baixe-app-mvp": {
+    "title": "Panda | Baixe o app MVP",
+    "props": {
+      "href": "https://appmvp.page.link/mvp",
+      "label": "Baixe o app MVP"
+    }
+  },
+  "flex-layout.row#container-como-usar-cashback": {
+    "title": "Panda | Container Como usar o cashback",
+    "children": ["flex-layout.col#container-vide-qrcode", "flex-layout.col#conteudo-como-usaqr-cashback"],
+    "props": {
+      "blockClass": "container-como-usar-cashback",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#container-vide-qrcode": {
+    "title": "Panda | Container Video QR Code",
+    "children": ["video#video-qrcode"],
+    "props": {
+      "blockClass": "container-vide-qrcode"
+    }
+  },
+  "video#video-qrcode": {
+    "title": "Panda | Video QR Code",
+    "props": {
+      "width": "100%",
+      "height": "503px",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=SjbU98xxSMg",
+      "blockClass": "videoEl"
+    }
+  },
+
+  "flex-layout.col#conteudo-como-usaqr-cashback": {
+    "title": "Panda | Passo a passo de  como usar o cashback",
+    "children": ["rich-text#conteudo-como-usar-cashback", "list-context.image-list#slider-passos-cashback"],
+    "props": {
+      "blockClass": "conteudo-como-usaqr-cashback"
+    }
+  },
+
+  "rich-text#conteudo-como-usar-cashback": {
+    "title": "Panda | Conteúdo Como usar o cashback",
+    "props": {
+      "text": "## Como usar o meu cashback?",
+      "blockClass": "conteudo-como-usar-cashback"
+    }
+  },
+
+  "list-context.image-list#slider-passos-cashback": {
+    "title": "Panda | Slider Passos Cashback",
+    "children": ["slider-layout#slider-passos-cashback"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/img/passo-1-cash.svg"
+        },
+        {
+          "image": "assets/img/passo-2-cash.svg"
+        },
+        {
+          "image": "assets/img/passo-3-cash.svg"
+        }
+      ],
+      "blockClass": "slider-passos-cashback"
+    }
+  },
+  "slider-layout#slider-passos-cashback": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": "slider-passos-cashback"
+    }
+  }
+}
