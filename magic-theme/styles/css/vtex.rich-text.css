@@ -505,13 +505,15 @@
   color: #000000;
 }
 
-.paragraph--panda-search__seo-bottom {
+.paragraph--panda-search__seo-bottom,
+.listItem--panda-search__seo-bottom {
   font-family: "WorkSans-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
   color: #000000;
+  padding: 0;
 }
 
 @media (max-width: 767px) {

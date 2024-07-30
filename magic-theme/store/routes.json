@@ -1,4 +1,7 @@
 {
+  "store.custom#cashback": {
+    "path": "/cashback"
+  },
   "store.custom#crmbonus": {
     "path": "/crmbonus"
   },
