@@ -995,9 +995,3 @@ $(window).on("orderFormUpdated.vtex", function(evt, orderForm) {
 //   }, 2000)
 // });
 
-// Pagaleve cart-script start
-$( document ).ready(function() {
-  var e,t;e=document,(t=e.createElement("script")).src="https://ads-tks-script.pagaleve.com.br/pagaleve-ads-tks-script.js?v="+Date.now(),e.head.appendChild(t)
- });
-
-// Pagaleve cart-script end
