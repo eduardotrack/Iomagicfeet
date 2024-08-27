@@ -879,31 +879,31 @@ $(window).on('orderFormUpdated.vtex', function (evt, orderForm) {
 })
 
 // Alerta sobre entregas
-$(document).ready(function () {
-  setTimeout(function () {
-    var boxData = document.querySelectorAll('.srp-data') || null
+// $(document).ready(function () {
+//   setTimeout(function () {
+//     var boxData = document.querySelectorAll('.srp-data') || null
 
-    if (boxData) {
-      boxData.forEach(function (item) {
-        $(item).prepend(`
-            <div class="boxDataAlert">
-                <div class="boxDataAlert--image">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <rect width="12" height="12" fill="url(#pattern0_19_642)"/>
-                        <defs>
-                        <pattern id="pattern0_19_642" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0_19_642" transform="scale(0.01)"/>
-                        </pattern>
-                        <image id="image0_19_642" width="100" height="100" xlink:href="data:image/png;base64,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"/>
-                        </defs>
-                    </svg>
-                </div>
+//     if (boxData) {
+//       boxData.forEach(function (item) {
+//         $(item).prepend(`
+//             <div class="boxDataAlert">
+//                 <div class="boxDataAlert--image">
+//                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+//                         <rect width="12" height="12" fill="url(#pattern0_19_642)"/>
+//                         <defs>
+//                         <pattern id="pattern0_19_642" patternContentUnits="objectBoundingBox" width="1" height="1">
+//                         <use xlink:href="#image0_19_642" transform="scale(0.01)"/>
+//                         </pattern>
+//                         <image id="image0_19_642" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGF0lEQVR4nO2de4xdQxzHv1vVsp5bSrW6FitEI0ITGiQeIZ5RoUhQIUFJJVKEREuIiiaeaRNKQqL8QTRZiUeaCuIRjyBEqPeuCko9qktttdUjw2wcP79znXPPzPxm5/w+yfnn3ntm5n6/957HzPfMAIqiKIqiKIpSxI4AugrfVYIyC8B6ABsBzFbtZdnLmpHZ7XcA+6gpcjyRM2N461NDZDiGMWN4O15NCcsWAN5rYcgHALZUU8Ixmxiw2W751/QEH4guAD8Q8ZcAeJi89hOAnUI1qsksIsKvA9ANYBKAX8h7C6Ubmzr7A9hARJ+be38eeW8TgAME25s8y4jgXwLozL2/FYAB8pnnBNubNKcxV1MzmM+dyXxuukB7k2YMgE+IyC8D6Cj4/Avks58DGBu4zUlzLRH4DwBTW3z+QHv+yO9zTcD2Js2uAH4m4i4usd99ZJ9BALsFaG/yPEiEXQtgQon9xgNYQ/Z9IEB7k+Zge3jKizqnwv5XMoe6Qzy2N2k6ALxEBP3UnuDLYvqzPiJlvNriYkBpwbnM5etJbSh2MlPOOap8NbYGsJKIuLyGiM+Qsr4CsI2aUp6biIBmeHZKDQH3Y7pcblRDyjHZdhjmxbvTgXh3kTJ/A9Cjpvw/jxHhfgQwzlEyZTUp+1E1pDWHMwNNJlXiikuZE/yRagrPKABvErHeBzDa8dDvu6SOd+zrCuFi5td7nAeVjmbquUjd+DfbAVhFRHrco0hLSV3fAdhBTfmH24lA6wH0ehRoTwBDpM7b1JC/6SXpwwzA/ADi3ELqNKnHfdUU4CkizCoA2wcQZlsAX5O6n2y6IccyJ9iZAes/n6n/BDQU0xO7gojxesWe2Ml25DC/7V5h/w5bZ74NK5qaeryCCLEZwLSKZfzK/MLNa1WYxtyMmrY1inFM+vChNsrJCraqLGFSjzujQdxLBFhnDz9ShnCpx3vQEKbY7vSi9KGEIUWpR5NeSZ7l5IuvJOlDKUNM6rGflPM8EucMRjzzGiIwBDYJScs6HYky1oYUyqYPJQzhUo/99t+THHMrpg+lDOFSj9chMSbYgFv+S5orLURoCGwyMl+euQKbiISg1/lrbUQ0VkPGM6nHdu6TomRqzfShhCFc6tHczR+KEY45Yb9SM30oZQiXenxtpKceud7UEx2Wn3k0BDYpKdkb7X28oU76UMIQLvUYarzG+4hc3fShlCFc6jHEiKb3Mes7PNSTBTAENjkZcszfe6rDVfpQyhAu9egzFeM99+QyfShhSFHq0UduzClcMtB1+lDKkNDfzQmXMeKYIAMSMMRwFFOX+edEOynM94GPs1lgQ4rOj1FOcnM3aeiQvdpKzZBu5vkV8+xJVEhdq2cChoS6x6oF9wyfuVNP1ZBOO/FNvs5nEQmnCPb3ZEKGFPXTmSd+RRkj3COaCRpS1JMtOsnN1cJjBpmgIUVjPVdBiF2YSWFCj6plwoZwo6GDJedicc79EYw7ZxEYwuUFzExEQTmISWa0mz6swyBjhhFHOlGzyWoUjBdJAwaEsksTmccRJNIh3FyPRqMgnO04fZgKMxhdzgoxKcxA0/KvNXLLdNZU59zQ1IR4jWT/9fDEJOaJJRfpw9RYzExyYzoknfMIqWiNTfhJTzjQRTZzWJWESz0a7ZxyGPMcnqv0YZ0vvpE5kQ5FsB7VHKYHw2jobFKYN0gFH0bwpGpPixtD6XmwRtvh3Xyb3rZa1uZCz+nDFA2BDUDQdl0AB8fob0ihZuaFGOiJ3BDD06Rd39ZNPS4gBW6IaD6QnhFgSK+dQyXftlvbLWxvZlIYF3MfumKPFoaY92KBSz0abSvTRwpabRN8sTDKPsq8gGzzXJ08PaYe+1wsSXeJn/Y2gll1lvbjlqQziT2dl7B9zD/2LWZpv1Kpx8sZN01iT6nHEe0s7SeRPmwSS6su7bdIIH3YJLqZ1OPCKkvS3Ry2vY1gftml/ZYJpQ+bRiez8sN/lvabzpzIz5NpbyOYyeh9aj59+HFqz2NHDpd6/Gw49UiXpNMNYhr8tbQfPZ7pBjENjBdqCOL5EX4B26dCp7bTDcE16K/Sv6UoiqIoiqKgAn8C7/hW31qpwO4AAAAASUVORK5CYII="/>
+//                         </defs>
+//                     </svg>
+//                 </div>
 
-                <div class="boxDataAlert--text">
-                    <p><strong>Aviso</strong>: Pedidos enviados pelos <strong>Correios</strong> podem sofrer atrasos devido à greve geral, com impacto em todos os estados.</p>
-                </div>
-            </div>`)
-      })
-    }
-  }, 2000)
-})
+//                 <div class="boxDataAlert--text">
+//                     <p><strong>Aviso</strong>: Pedidos enviados pelos <strong>Correios</strong> podem sofrer atrasos devido à greve geral, com impacto em todos os estados.</p>
+//                 </div>
+//             </div>`)
+//       })
+//     }
+//   }, 2000)
+// })
