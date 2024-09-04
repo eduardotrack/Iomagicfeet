@@ -67,8 +67,11 @@
     "pd-ChangeTagLogin":{
         "component": "ChangeTagLogin"
     },
-      "pd-scrollCashback": {
-    "component": "ScrollCashback"
-  }
+    "pd-scrollCashback": {
+      "component": "ScrollCashback"
+    },
+    "pd-familiesMenu": {
+      "component": "familiesMenu"
+    }
 
 }
