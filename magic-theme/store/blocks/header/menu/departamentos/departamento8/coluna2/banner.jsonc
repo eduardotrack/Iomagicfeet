@@ -8,31 +8,24 @@
   },
   "flex-layout.col#banner-dep8-col2": {
     "props": {
-      "blockClass": [
-        "main-menu-banner",
-        "main-menu-column",
-        "main-menu-column-first"
-      ]
+      "blockClass": ["main-menu-banner", "main-menu-column", "main-menu-column-first"]
     },
-    "children": [
-      "image-new#banner-dep8-col2",
-      "link#banner-dep8-col2-see-all"
-    ]
+    "children": ["image-new#banner-dep8-col2", "link#banner-dep8-col2-see-all"]
   },
   "image-new#banner-dep8-col2": {
     "title": "Panda | Imagem Banner Departamento 08 - Coluna 02",
     "props": {
-      "blockClass": "main-menu-banner",
-      "src": "assets/img/banner-menu-demo.png",
+      "blockClass": "main-menu-banner-meia",
+      "src": "assets/img/main-menu-banner-meia.png",
       "link": {
-        "url": "#"
+        "url": "/acessorios-infantis/meia-infantil"
       }
     }
   },
   "link#banner-dep8-col2-see-all": {
     "title": "Panda | Link Banner Departamento 08 - Coluna 02",
     "props": {
-      "href": "#",
+      "href": "/acessorios-infantis/meia-infantil",
       "blockClass": ["main-menu-banner-see-all", "menu-link", "menu-link--acessorios"],
       "label": "meias"
     }

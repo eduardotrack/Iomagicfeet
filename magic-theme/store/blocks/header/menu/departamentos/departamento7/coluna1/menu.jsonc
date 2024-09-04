@@ -8,28 +8,17 @@
   },
   "flex-layout.col#menu-dep7-col1": {
     "props": {
-      "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
-      ]
+      "blockClass": ["main-menu-menu-principal", "main-menu-principal-column", "main-menu-principal-column-first"]
     },
-    "children": [
-      "vtex.menu@2.x:menu#menu-dep7-col1",
-      "link#menu-dep7-col1-see-all"
-    ]
+    "children": ["vtex.menu@2.x:menu#menu-dep7-col1", "link#menu-dep7-col1-see-all"]
   },
   "vtex.menu@2.x:menu#menu-dep7-col1": {
     "props": {
       "orientation": "vertical",
-      "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
-      ],
+      "blockClass": ["main-menu-menu-principal", "main-menu-principal-column", "main-menu-principal-column-first"],
       "title": {
         "itemProps": {
-          "text": "feminino"
+          "text": "marcas"
         },
         "type": "custom"
       },
@@ -38,7 +27,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/chinelos-e-sandalias/rider",
             "tagTitle": "Subcategoria",
             "text": "rider"
           }
@@ -47,7 +36,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/chinelos-e-sandalias/nike",
             "tagTitle": "Subcategoria",
             "text": "nike"
           }
@@ -56,7 +45,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/chinelos-e-sandalias/adidas",
             "tagTitle": "Subcategoria",
             "text": "adidas"
           }
@@ -65,7 +54,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/chinelos-e-sandalias/vans",
             "tagTitle": "Subcategoria",
             "text": "vans"
           }
@@ -74,7 +63,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/chinelos-e-sandalias/crocs",
             "tagTitle": "Subcategoria",
             "text": "crocs"
           }
@@ -83,7 +72,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/chinelos-e-sandalias/puma",
             "tagTitle": "Subcategoria",
             "text": "puma"
           }
@@ -92,7 +81,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/chinelos-e-sandalias/fila",
             "tagTitle": "Subcategoria",
             "text": "fila"
           }
@@ -101,7 +90,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/chinelos-e-sandalias/jordan",
             "tagTitle": "Subcategoria",
             "text": "jordan"
           }
@@ -112,8 +101,8 @@
   "link#menu-dep7-col1-see-all": {
     "props": {
       "blockClass": "menu-see-all",
-      "href": "#",
-      "label": "todos em feminino"
+      "href": "/chinelos-e-sandalias",
+      "label": "todos em marcas"
     },
     "title": "Panda | Link ver todos"
   }

@@ -448,7 +448,7 @@
 }
 
 .wrapper--menu-mobile-nivel03 {
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   background-color: #5dff49;
 }
 
@@ -1602,7 +1602,7 @@
 }
 
 .wrapper--list-brands-menu {
-  padding: .25rem 0;
+  padding: 0.25rem 0;
 }
 
 .paragraph--main-menu-banner-text {
@@ -1623,4 +1623,8 @@
   color: #1c1c1c;
   margin-bottom: 22px;
   margin-top: 0;
+}
+
+.container--accordion-cashback-question {
+  width: 100%;
 }

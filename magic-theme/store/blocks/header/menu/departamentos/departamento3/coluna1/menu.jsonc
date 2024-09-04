@@ -8,25 +8,14 @@
   },
   "flex-layout.col#menu-dep3-col1": {
     "props": {
-      "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
-      ]
+      "blockClass": ["main-menu-menu-principal", "main-menu-principal-column", "main-menu-principal-column-first"]
     },
-    "children": [
-      "vtex.menu@2.x:menu#menu-dep3-col1",
-      "link#menu-dep3-col1-see-all"
-    ]
+    "children": ["vtex.menu@2.x:menu#menu-dep3-col1", "link#menu-dep3-col1-see-all"]
   },
   "vtex.menu@2.x:menu#menu-dep3-col1": {
     "props": {
       "orientation": "vertical",
-      "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
-      ],
+      "blockClass": ["main-menu-menu-principal", "main-menu-principal-column", "main-menu-principal-column-first"],
       "title": {
         "itemProps": {
           "text": "feminino"
@@ -38,7 +27,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/roupa-infantil/feminino/bermuda-e-shorts",
             "tagTitle": "Subcategoria",
             "text": "bermuda e shorts"
           }
@@ -47,7 +36,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/roupa-infanti/feminino/moletom",
             "tagTitle": "Subcategoria",
             "text": "moletom"
           }
@@ -56,7 +45,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/roupa-infanti/feminino/body",
             "tagTitle": "Subcategoria",
             "text": "body"
           }
@@ -65,7 +54,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/roupa-infantil/feminino/calca",
             "tagTitle": "Subcategoria",
             "text": "calça"
           }
@@ -74,7 +63,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/roupa-infantil/feminino/camiseta",
             "tagTitle": "Subcategoria",
             "text": "camiseta"
           }
@@ -83,7 +72,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/roupa-infantil/feminino/conjunto",
             "tagTitle": "Subcategoria",
             "text": "conjunto"
           }
@@ -92,7 +81,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/roupa-infantil/feminino/jaqueta",
             "tagTitle": "Subcategoria",
             "text": "jaqueta"
           }
@@ -101,7 +90,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/roupa-infantil/feminino/macacao",
             "tagTitle": "Subcategoria",
             "text": "macacão"
           }
@@ -110,7 +99,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/roupa-infantil/feminino/vestido-e-saia",
             "tagTitle": "Subcategoria",
             "text": "vestido e saia"
           }
@@ -121,7 +110,7 @@
   "link#menu-dep3-col1-see-all": {
     "props": {
       "blockClass": "menu-see-all",
-      "href": "#",
+      "href": "/roupa-infantil/feminino",
       "label": "todos em feminino"
     },
     "title": "Panda | Link ver todos"

@@ -8,25 +8,14 @@
   },
   "flex-layout.col#menu-dep1-col2": {
     "props": {
-      "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
-      ]
+      "blockClass": ["main-menu-menu-principal", "main-menu-principal-column", "main-menu-principal-column-first"]
     },
-    "children": [
-      "vtex.menu@2.x:menu#menu-dep1-col2",
-      "link#menu-dep1-col2-see-all"
-    ]
+    "children": ["vtex.menu@2.x:menu#menu-dep1-col2", "link#menu-dep1-col2-see-all"]
   },
   "vtex.menu@2.x:menu#menu-dep1-col2": {
     "props": {
       "orientation": "vertical",
-      "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
-      ],
+      "blockClass": ["main-menu-menu-principal", "main-menu-principal-column", "main-menu-principal-column-first"],
       "title": {
         "itemProps": {
           "text": "novidades em masculino"
@@ -39,7 +28,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/novidades-masculino-tenis",
             "tagTitle": "Subcategoria",
             "text": "tênis"
           }
@@ -49,7 +38,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/novidades-masculino-chinelos-e-sandalias",
             "tagTitle": "Subcategoria",
             "text": "chinelos e sandálias"
           }
@@ -59,7 +48,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/novidades-masculino-chuteiras",
             "tagTitle": "Subcategoria",
             "text": "chuteiras"
           }
@@ -69,7 +58,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/novidades-masculino-roupas",
             "tagTitle": "Subcategoria",
             "text": "roupas"
           }
@@ -79,7 +68,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/novidades-masculino-acessorios",
             "tagTitle": "Subcategoria",
             "text": "acessórios"
           }
@@ -102,7 +91,7 @@
   "link#menu-dep1-col2-see-all": {
     "props": {
       "blockClass": "menu-see-all",
-      "href": "#",
+      "href": "/novidades-masculino",
       "label": "todos em masculino"
     },
     "title": "Panda | Link ver todos"

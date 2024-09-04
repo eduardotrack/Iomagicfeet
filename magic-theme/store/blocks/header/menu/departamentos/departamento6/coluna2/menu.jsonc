@@ -8,25 +8,14 @@
   },
   "flex-layout.col#menu-dep6-col2": {
     "props": {
-      "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
-      ]
+      "blockClass": ["main-menu-menu-principal", "main-menu-principal-column", "main-menu-principal-column-first"]
     },
-    "children": [
-      "vtex.menu@2.x:menu#menu-dep6-col2",
-      "link#menu-dep6-col2-see-all"
-    ]
+    "children": ["vtex.menu@2.x:menu#menu-dep6-col2", "link#menu-dep6-col2-see-all"]
   },
   "vtex.menu@2.x:menu#menu-dep6-col2": {
     "props": {
       "orientation": "vertical",
-      "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
-      ],
+      "blockClass": ["main-menu-menu-principal", "main-menu-principal-column", "main-menu-principal-column-first"],
       "title": {
         "itemProps": {
           "text": "outlet em masculino"
@@ -38,7 +27,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/outlet-masculino-tenis",
             "tagTitle": "Subcategoria",
             "text": "tênis"
           }
@@ -47,7 +36,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/outlet-masculino-chinelos-e-sandalias",
             "tagTitle": "Subcategoria",
             "text": "chinelos e sandálias"
           }
@@ -56,7 +45,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/outlet-masculino-chuteiras",
             "tagTitle": "Subcategoria",
             "text": "chuteiras"
           }
@@ -66,7 +55,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/outlet-masculino-roupas",
             "tagTitle": "Subcategoria",
             "text": "roupas"
           }
@@ -76,7 +65,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/outlet-masculino-acessorios",
             "tagTitle": "Subcategoria",
             "text": "acessórios"
           }

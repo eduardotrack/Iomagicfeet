@@ -8,25 +8,17 @@
   },
   "flex-layout.col#banner-dep5-col2": {
     "props": {
-      "blockClass": [
-        "main-menu-banner",
-        "main-menu-column",
-        "main-menu-column-second"
-      ]
+      "blockClass": ["main-menu-banner", "main-menu-column", "main-menu-column-second"]
     },
-    "children": [
-      "image-new#banner-dep5-col2",
-      "rich-text#banner-dep5-col2",
-      "flex-layout.row#banner-dep5-col2-links"
-    ]
+    "children": ["image-new#banner-dep5-col2", "rich-text#banner-dep5-col2", "flex-layout.row#banner-dep5-col2-links"]
   },
   "image-new#banner-dep5-col2": {
     "title": "Panda | Imagem Departamento 05 - Banner 2",
     "props": {
       "blockClass": "main-menu-banner",
-      "src": "assets/img/banner-menu-demo.png",
+      "src": "assets/img/banner-para-escola.png",
       "link": {
-        "url": "#"
+        "url": "/ocasioes-para-escola"
       }
     }
   },
@@ -45,15 +37,12 @@
       "colGap": 6,
       "colJustify": "left"
     },
-    "children": [
-      "link#banner-dep5-col2-link1",
-      "link#banner-dep5-col2-link2"
-    ]
+    "children": ["link#banner-dep5-col2-link1", "link#banner-dep5-col2-link2"]
   },
 
   "link#banner-dep5-col2-link1": {
     "props": {
-      "href": "#",
+      "href": "/ocasioes-feminino-para-escola",
       "blockClass": ["main-menu-banner-link", "menu-link"],
       "label": "feminino"
     },
@@ -61,11 +50,10 @@
   },
   "link#banner-dep5-col2-link2": {
     "props": {
-      "href": "#",
+      "href": "/ocasioes-masculino-para-escola",
       "blockClass": ["main-menu-banner-link", "menu-link"],
       "label": "masculino"
     },
     "title": "Panda | Link 02 Departamento 05 - Banner 2"
   }
-
 }

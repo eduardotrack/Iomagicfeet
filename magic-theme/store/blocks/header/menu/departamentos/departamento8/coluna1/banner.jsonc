@@ -8,16 +8,9 @@
   },
   "flex-layout.col#banner-dep8-col1": {
     "props": {
-      "blockClass": [
-        "main-menu-banner",
-        "main-menu-column",
-        "main-menu-column-first"
-      ]
+      "blockClass": ["main-menu-banner", "main-menu-column", "main-menu-column-first"]
     },
-    "children": [
-      "image-new#banner-dep8-col1",
-      "link#banner-dep8-col1-see-all"
-    ]
+    "children": ["image-new#banner-dep8-col1", "link#banner-dep8-col1-see-all"]
   },
   "image-new#banner-dep8-col1": {
     "title": "Panda | Imagem Banner Departamento 08 - Coluna 01",
@@ -25,14 +18,14 @@
       "blockClass": "main-menu-banner",
       "src": "assets/img/banner-menu-demo.png",
       "link": {
-        "url": "#"
+        "url": "/acessorios-infantis/jibbitz"
       }
     }
   },
   "link#banner-dep8-col1-see-all": {
     "title": "Panda | Link Banner Departamento 08 - Coluna 01",
     "props": {
-      "href": "#",
+      "href": "/acessorios-infantis/jibbitz",
       "blockClass": ["main-menu-banner-see-all", "menu-link", "menu-link--acessorios"],
       "label": "jibbitz"
     }

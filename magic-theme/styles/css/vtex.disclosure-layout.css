@@ -39,6 +39,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 5px;
 }
 .trigger--accordion-cashback-trigger--hidden {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -80,7 +81,7 @@
   background-color: transparent;
   border: 1px solid #000;
   border-radius: 8px;
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .trigger--header-menu-accordion--visible {
@@ -91,15 +92,15 @@
 .content--header-menu-accordion {
   max-width: 20.5rem;
   margin-left: 1.5rem;
-  padding: .5rem .25rem 1rem;
+  padding: 0.5rem 0.25rem 1rem;
 
   border-radius: 0 0 8px 8px;
   border: 1px solid #000;
   border-top: transparent;
 
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .trigger--header-menu-accordion--hidden {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }

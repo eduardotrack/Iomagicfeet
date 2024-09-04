@@ -8,25 +8,14 @@
   },
   "flex-layout.col#menu-dep2-col1": {
     "props": {
-      "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
-      ]
+      "blockClass": ["main-menu-menu-principal", "main-menu-principal-column", "main-menu-principal-column-first"]
     },
-    "children": [
-      "vtex.menu@2.x:menu#menu-dep2-col1",
-      "link#menu-dep2-col1-see-all"
-    ]
+    "children": ["vtex.menu@2.x:menu#menu-dep2-col1", "link#menu-dep2-col1-see-all"]
   },
   "vtex.menu@2.x:menu#menu-dep2-col1": {
     "props": {
       "orientation": "vertical",
-      "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
-      ],
+      "blockClass": ["main-menu-menu-principal", "main-menu-principal-column", "main-menu-principal-column-first"],
       "title": {
         "itemProps": {
           "text": "feminino"
@@ -38,7 +27,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/tenis-infantil/feminino/adidas",
             "tagTitle": "Subcategoria",
             "text": "adidas"
           }
@@ -47,7 +36,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/tenis-infantil/feminino/nike",
             "tagTitle": "Subcategoria",
             "text": "nike"
           }
@@ -56,7 +45,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "tenis-infantil/feminino/jordan",
             "tagTitle": "Subcategoria",
             "text": "jordan"
           }
@@ -65,7 +54,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/tenis-infantil/feminino/puma",
             "tagTitle": "Subcategoria",
             "text": "puma"
           }
@@ -74,7 +63,35 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/tenis-infantil/feminino/converse",
+            "tagTitle": "Subcategoria",
+            "text": "converse"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/tenis-infantil/feminino/vans",
+            "tagTitle": "Subcategoria",
+            "text": "vans"
+          }
+        },
+
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/tenis-infantil/feminino/fila",
+            "tagTitle": "Subcategoria",
+            "text": "fila"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/tenis-infantil/feminino/asics",
             "tagTitle": "Subcategoria",
             "text": "asics"
           }
@@ -83,7 +100,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/tenis-infantil/feminino/olympikus",
             "tagTitle": "Subcategoria",
             "text": "olympikus"
           }
@@ -92,7 +109,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/tenis-infantil/feminino/new-balance",
             "tagTitle": "Subcategoria",
             "text": "new balance"
           }
@@ -101,7 +118,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/tenis-infantil/feminino/mizuno",
             "tagTitle": "Subcategoria",
             "text": "mizuno"
           }
@@ -110,7 +127,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/tenis-infantil/feminino/under-armor",
             "tagTitle": "Subcategoria",
             "text": "under armor"
           }
@@ -119,7 +136,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/tenis-infantil/feminino/skechers",
             "tagTitle": "Subcategoria",
             "text": "skechers"
           }
@@ -128,7 +145,7 @@
           "type": "custom",
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/tenis-infantil/feminino/on",
             "tagTitle": "Subcategoria",
             "text": "on running"
           }
@@ -139,7 +156,7 @@
   "link#menu-dep2-col1-see-all": {
     "props": {
       "blockClass": "menu-see-all",
-      "href": "#",
+      "href": "/tenis-infantil/feminino",
       "label": "todos em feminino"
     },
     "title": "Panda | Link ver todos"

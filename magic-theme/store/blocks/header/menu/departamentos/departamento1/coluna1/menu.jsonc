@@ -8,17 +8,10 @@
   },
   "flex-layout.col#menu-dep1-col1": {
     "props": {
-      "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
-      ],
+      "blockClass": ["main-menu-menu-principal", "main-menu-principal-column", "main-menu-principal-column-first"],
       "preventVerticalStretch": true
     },
-    "children": [
-      "vtex.menu@2.x:menu#menu-dep1-col1",
-      "link#menu-dep1-col1-see-all"
-    ]
+    "children": ["vtex.menu@2.x:menu#menu-dep1-col1", "link#menu-dep1-col1-see-all"]
   },
   "vtex.menu@2.x:menu#menu-dep1-col1": {
     "props": {
@@ -41,7 +34,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/novidades-feminino-tenis",
             "tagTitle": "Subcategoria",
             "text": "tênis"
           }
@@ -51,7 +44,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/novidades-feminino-chinelos-e-sandalias",
             "tagTitle": "Subcategoria",
             "text": "chinelos e sandálias"
           }
@@ -61,7 +54,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/novidades-feminino-chuteiras",
             "tagTitle": "Subcategoria",
             "text": "chuteiras"
           }
@@ -71,7 +64,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/novidades-feminino-roupas",
             "tagTitle": "Subcategoria",
             "text": "roupas"
           }
@@ -81,7 +74,7 @@
           "iconId": null,
           "itemProps": {
             "type": "internal",
-            "href": "#",
+            "href": "/novidades-feminino-acessorios",
             "tagTitle": "Subcategoria",
             "text": "acessórios"
           }
@@ -104,7 +97,7 @@
   "link#menu-dep1-col1-see-all": {
     "props": {
       "blockClass": "menu-see-all",
-      "href": "#",
+      "href": "/novidades-feminino",
       "label": "todos em feminino"
     },
     "title": "Panda | Link ver todos"
