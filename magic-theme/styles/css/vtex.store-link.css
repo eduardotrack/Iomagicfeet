@@ -126,3 +126,89 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.link--menu-see-all {
+  padding: 1rem 1.5rem 0;
+  font-size: .75rem;
+  color: #1c1c1c;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #f2f2f2;
+
+  &::before {
+    content: 'ver ';
+    font-weight: 400;
+    margin-right: 4px;
+  }
+
+  &::after {
+    content: '';
+    width: 6px;
+    height: 10px;
+    background-image: url('data:image/svg+xml,<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    display: inline-block;
+    margin-left: .625rem;
+  }
+}
+
+.link--main-menu-banner-see-all {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+.link--menu-link{
+  display: flex;
+  align-items: center;
+  
+  &::after {
+    content: '';
+    width: 6px;
+    height: 10px;
+    background-image: url('data:image/svg+xml,<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    display: inline-block;
+    margin-left: .625rem;
+  }
+}
+
+.link--main-menu-banner-link {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: .75rem;
+}
+
+.link--menu-link--acessorios {
+  width: 100%;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+.link--menu-see-all-mobile {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 0;
+  padding-left: 30px;
+
+  border-top: 1px solid #CBCBCB;
+
+  &::after {
+    content: '';
+    width: 6px;
+    height: 10px;
+    background-image: url('data:image/svg+xml,<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    display: inline-block;
+    margin-left: .625rem;
+  }
+
+  &::before {
+    content: 'ver ';
+    font-weight: 400;
+  }
+}

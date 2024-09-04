@@ -7,14 +7,22 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "drawer#dep1-mobile",
+      "rich-text#title-menu",
+      "drawer#dep1-mobile-1",
       "drawer#dep2-mobile",
-      "drawer#dep8-mobile",
-      "drawer#dep3-mobile",
-      "drawer#dep7-mobile",
-      "drawer#dep4-mobile",
-      "drawer#dep5-mobile",
-      "drawer#dep6-mobile"
+      "drawer#dep3-mobile-1",
+      "drawer#dep4-mobile-1",
+      "drawer#dep5-mobile-1",
+      "drawer#dep6-mobile-1",
+      "drawer#dep7-mobile-1",
+      "drawer#dep8-mobile-1"
     ]
+  },
+  "rich-text#title-menu": {
+    "title": "Panda | Título Menu Mobile",
+    "props": {
+      "text": "o que **você** procura?",
+      "blockClass": "header__menu-title"
+    }
   }
 }

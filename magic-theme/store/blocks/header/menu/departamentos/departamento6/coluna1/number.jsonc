@@ -1,6 +1,6 @@
 {
     "experimental__visibility-layout#number-dep6-col1": {
-      "title": "Menu Numérico (On/Off)",
+      "title": "Panda | Menu Departamento 06 - Coluna numérica",
       "props": {
         "visible": true
       },
@@ -14,7 +14,10 @@
           "main-number-column-first"
         ]
       },
-      "children": ["vtex.menu@2.x:menu#number-dep6-col1"]
+      "children": [
+        "vtex.menu@2.x:menu#number-dep6-col1",
+        "link#number-dep6-col1-see-all"
+      ]
     },
     "vtex.menu@2.x:menu#number-dep6-col1": {
       "props": {
@@ -26,14 +29,13 @@
         ],
         "title": {
           "itemProps": {
-            "text": "por tamanho"
+            "text": "tamanhos de tênis"
           },
           "type": "custom"
         },
         "items": [
           {
             "type": "custom",
-            "iconId": null,
             "itemProps": {
               "type": "internal",
               "href": "#",
@@ -43,7 +45,6 @@
           },
           {
             "type": "custom",
-            "iconId": null,
             "itemProps": {
               "type": "internal",
               "href": "#",
@@ -53,7 +54,6 @@
           },
           {
             "type": "custom",
-            "iconId": null,
             "itemProps": {
               "type": "internal",
               "href": "#",
@@ -63,7 +63,6 @@
           },
           {
             "type": "custom",
-            "iconId": null,
             "itemProps": {
               "type": "internal",
               "href": "#",
@@ -73,7 +72,6 @@
           },
           {
             "type": "custom",
-            "iconId": null,
             "itemProps": {
               "type": "internal",
               "href": "#",
@@ -83,7 +81,6 @@
           },
           {
             "type": "custom",
-            "iconId": null,
             "itemProps": {
               "type": "internal",
               "href": "#",
@@ -93,6 +90,14 @@
           }
         ]
       }
+    },
+    "link#number-dep6-col1-see-all": {
+      "props": {
+        "blockClass": "menu-see-all",
+        "href": "#",
+        "label": "todos os tamanhos"
+      },
+      "title": "Panda | Link ver todos"
     }
   }
   

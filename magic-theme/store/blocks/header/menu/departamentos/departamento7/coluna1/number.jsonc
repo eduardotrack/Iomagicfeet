@@ -1,6 +1,6 @@
 {
     "experimental__visibility-layout#number-dep7-col1": {
-      "title": "Menu Numérico (On/Off)",
+      "title": "Panda | Menu Departamento 07 - Coluna numérica",
       "props": {
         "visible": true
       },
@@ -14,7 +14,10 @@
           "main-number-column-first"
         ]
       },
-      "children": ["vtex.menu@2.x:menu#number-dep7-col1"]
+      "children": [
+        "vtex.menu@2.x:menu#number-dep7-col1",
+        "link#number-dep7-col1-see-all"
+      ]
     },
     "vtex.menu@2.x:menu#number-dep7-col1": {
       "props": {
@@ -26,7 +29,7 @@
         ],
         "title": {
           "itemProps": {
-            "text": "por tamanho"
+            "text": "tamanhos de chinelos"
           },
           "type": "custom"
         },
@@ -93,6 +96,15 @@
           }
         ]
       }
+    },
+    "link#number-dep7-col1-see-all": {
+      "props": {
+        "href": "#",
+        "tagTitle": "Subcategoria",
+        "label": "todos os tamanhos",
+        "blockClass": "menu-see-all"
+      },
+      "title": "Panda | Link ver todos"
     }
   }
   

@@ -4,7 +4,8 @@
         "children": [
           "flex-layout.row#dep1-1-mobile-nivel-3-head",
           "vtex.menu@2.x:menu#dep1-1-mobile-nivel-3",
-          "flex-layout.row#dep1-1-mobile-nivel-3-footer"
+          "link#dep1-1-mobile-nivel-3",
+          "flex-layout.row#dep1-1-mobile-nivel-1-footer"
         ],
         "blocks": ["drawer-header#header-mobile", "drawer-trigger#dep1-1-mobile-nivel-3"],
         "props": {
@@ -22,7 +23,7 @@
       "rich-text#dep1-1-mobile-nivel-3": {
         "title": "Panda | Menu Departamento 01 - Nivel 03 - Texto",
         "props": {
-          "text": "por tamanho",
+          "text": "feminino",
           "blockClass": "menu-mobile-nivel03"
         }
       },
@@ -33,45 +34,31 @@
         "props": {
           "blockClass": "header__nivel3--mob"
         },
-        "children": ["flex-layout.col#dep1-1-mobile-nivel-3-head", "flex-layout.row#dep1-1-mobile-nivel-3-headsub"]
-      },
-
-      "flex-layout.col#dep1-1-mobile-nivel-3-head": {
-        "title": "Panda | Menu Departamento 01 - Nivel 03 - Header",
-        "props": {
-          "blockClass": "header__nivel3--mob"
-        },
-        "children": ["rich-text#dep1-1-mobile-nivel-3-head"]
+        "children": ["flex-layout.row#dep1-1-mobile-nivel-3-headsub"]
       },
 
       "flex-layout.row#dep1-1-mobile-nivel-3-headsub": {
         "title": "Panda | Menu Departamento 01 - Nivel 03 - Header",
         "props": {
-          "blockClass": "headsub__nivel3--mob"
+          "blockClass": "headsub__nivel3--mob",
+          "colSizing": "auto"
         },
-        "children": ["drawer-close-button", "rich-text#dep1-1-mobile-nivel-3-headsub"]
+        "children": ["drawer-close-button", "rich-text#dep1-1-mobile-nivel-3-head"]
       },
 
       "rich-text#dep1-1-mobile-nivel-3-head": {
         "title": "Panda | Menu Departamento 01 - Nivel 03 - Header Titulo",
         "props": {
-          "text": "Tênis e calçados",
+          "text": "feminino",
           "blockClass": "header__nivel3--mob"
         }
       },
-        
-      "rich-text#dep1-1-mobile-nivel-3-headsub": {
-        "title": "Panda | Menu Departamento 01 - Nivel 03 - Header Subtitulo",
-          "props": {
-            "text": "por tamanho",
-            "blockClass": "headsub__nivel3--mob"
-          }
-        },
+
 
       "vtex.menu@2.x:menu#dep1-1-mobile-nivel-3": {
         "title": "Panda | Menu Departamento 01 - Nivel 03 - Menu",
         "props": {
-          "blockClass": ["menu-mobile", "submenu-mobile-number"],
+          "blockClass": ["menu-mobile", "submenu-mobile-subcategory"],
           "orientation": "vertical",
           "items": [
             {
@@ -81,8 +68,8 @@
               "itemProps": {
                 "type": "internal",
                 "href": "#",
-                "tagTitle": "15",
-                "text": "15"
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
               }
             },
             {
@@ -92,8 +79,8 @@
               "itemProps": {
                 "type": "internal",
                 "href": "#",
-                "tagTitle": "15",
-                "text": "15"
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
               }
             },
             {
@@ -103,8 +90,8 @@
               "itemProps": {
                 "type": "internal",
                 "href": "#",
-                "tagTitle": "15",
-                "text": "15"
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
               }
             },
             {
@@ -114,8 +101,8 @@
               "itemProps": {
                 "type": "internal",
                 "href": "#",
-                "tagTitle": "15",
-                "text": "15"
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
               }
             },
             {
@@ -125,8 +112,8 @@
               "itemProps": {
                 "type": "internal",
                 "href": "#",
-                "tagTitle": "15",
-                "text": "15"
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
               }
             },
             {
@@ -136,11 +123,20 @@
               "itemProps": {
                 "type": "internal",
                 "href": "#",
-                "tagTitle": "15",
-                "text": "15"
+                "tagTitle": "Subcategoria",
+                "text": "Subcategoria"
               }
             }
           ]
+        }
+      },
+
+      "link#dep1-1-mobile-nivel-3": {
+        "title": "Panda | Menu Departamento 01 - Nivel 03 - Ver tudo",
+        "props": {
+          "label": "todos em feminino",
+          "href": "#",
+          "blockClass": ["menu-mobile-nivel01", "menu-see-all-mobile"]
         }
       },
 

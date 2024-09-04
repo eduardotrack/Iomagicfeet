@@ -1,12 +1,12 @@
 {
-  "experimental__visibility-layout#menu-dep1-col1": {
-    "title": "Menu (On/Off)",
+  "experimental__visibility-layout#menu-dep6-col1": {
+    "title": "Panda | Menu Departamento 06 - Coluna 01",
     "props": {
       "visible": true
     },
-    "children": ["flex-layout.col#menu-dep1-col1"]
+    "children": ["flex-layout.col#menu-dep6-col1"]
   },
-  "flex-layout.col#menu-dep1-col1": {
+  "flex-layout.col#menu-dep6-col1": {
     "props": {
       "blockClass": [
         "main-menu-menu-principal",
@@ -14,9 +14,12 @@
         "main-menu-principal-column-first"
       ]
     },
-    "children": ["vtex.menu@2.x:menu#menu-dep1-col1"]
+    "children": [
+      "vtex.menu@2.x:menu#menu-dep6-col1",
+      "link#menu-dep6-col1-see-all"
+    ]
   },
-  "vtex.menu@2.x:menu#menu-dep1-col1": {
+  "vtex.menu@2.x:menu#menu-dep6-col1": {
     "props": {
       "orientation": "vertical",
       "blockClass": [
@@ -26,19 +29,36 @@
       ],
       "title": {
         "itemProps": {
-          "text": "novidades em"
+          "text": "outlet em feminino"
         },
         "type": "custom"
       },
       "items": [
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "roupas e acessórios"
+            "text": "tênis"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "chinelos e sandálias"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "chuteiras"
           }
         },
         {
@@ -48,7 +68,7 @@
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "tênis e calçados"
+            "text": "roupas"
           }
         },
         {
@@ -58,31 +78,18 @@
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "coleções especiais"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "exclusivos magicfeet"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": true,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "ver todas as novidades"
+            "text": "acessórios"
           }
         }
       ]
     }
+  },
+  "link#menu-dep6-col1-see-all": {
+    "props": {
+      "blockClass": "menu-see-all",
+      "href": "#",
+      "label": "todos em feminino"
+    },
+    "title": "Panda | Link ver todos"
   }
 }

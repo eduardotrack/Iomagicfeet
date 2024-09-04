@@ -1,6 +1,6 @@
 {
   "experimental__visibility-layout#banner-dep5-col1": {
-    "title": "Banner (On/Off)",
+    "title": "Panda | Departamento 05 - Banner 01",
     "props": {
       "visible": true
     },
@@ -14,16 +14,58 @@
         "main-menu-column-first"
       ]
     },
-    "children": ["image-new#banner-dep5-col1"]
+    "children": [
+      "image-new#banner-dep5-col1",
+      "rich-text#banner-dep5-col1",
+      "flex-layout.row#banner-dep5-col1-links"
+    ]
   },
   "image-new#banner-dep5-col1": {
-    "title": "Imagem - Banner",
+    "title": "Panda | Imagem Departamento 05 - Banner 1",
     "props": {
       "blockClass": "main-menu-banner",
-      "src": "assets/img/ocasioes-demo-menu.png",
+      "src": "assets/img/banner-menu-demo.png",
       "link": {
         "url": "#"
       }
     }
+  },
+  "rich-text#banner-dep5-col1": {
+    "title": "Panda | Texto Departamento 05 - Banner 1",
+    "props": {
+      "text": "para brincar",
+      "blockClass": ["main-menu-banner", "main-menu-banner-text"]
+    }
+  },
+
+  "flex-layout.row#banner-dep5-col1-links": {
+    "props": {
+      "blockClass": "main-menu-banner-links",
+      "colSizing": "auto",
+      "colGap": 6,
+      "colJustify": "left"
+    },
+    "children": [
+      "link#banner-dep5-col1-link1",
+      "link#banner-dep5-col1-link2"
+    ]
+  },
+
+  "link#banner-dep5-col1-link1": {
+    "props": {
+      "href": "#",
+      "blockClass": ["main-menu-banner-link", "menu-link"],
+      "label": "feminino"
+    },
+    "title": "Panda | Link 01 - Departamento 05 Banner 1"
+  },
+  "link#banner-dep5-col1-link2": {
+    "props": {
+      "href": "#",
+      "blockClass": ["main-menu-banner-link", "menu-link"],
+      "label": "masculino"
+    },
+    "title": "Panda | Link 02 - Departamento 05 Banner 1"
   }
+
 }

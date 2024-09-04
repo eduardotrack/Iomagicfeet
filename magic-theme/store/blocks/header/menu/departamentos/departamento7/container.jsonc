@@ -1,12 +1,12 @@
 {
-  "menu-item#dep7": {
+  "menu-item#dep7-new": {
     "props": {
       "blockClass": ["header__menu", "main-menu-department"],
       "id": "menu-item-dep7",
       "type": "custom",
       "iconId": null,
       "itemProps": {
-        "text": "calçados",
+        "text": "chinelos e sandálias",
         "type": "internal",
         "href": "#"
       }
@@ -14,7 +14,7 @@
     "blocks": ["vtex.menu@2.x:submenu#dep7"]
   },
   "vtex.menu@2.x:submenu#dep7": {
-    "title": "calçados",
+    "title": "Panda | Menu Departamento 07 - Nivel 01",
     "props": {
       "blockClass": ["main-menu-department-submenu"],
       "width": "100%"
@@ -31,13 +31,10 @@
     },
     "children": [
       "experimental__visibility-layout#menu-dep7-col1",
-      "experimental__visibility-layout#number-dep7-col1",
-
+      
       "experimental__visibility-layout#menu-dep7-col2",
-    
-
-      "experimental__visibility-layout#banner-dep7-col3",
-      "experimental__visibility-layout#brands-dep7-col4"
+      
+      "experimental__visibility-layout#number-dep7-col1"
     ]
   }
 }

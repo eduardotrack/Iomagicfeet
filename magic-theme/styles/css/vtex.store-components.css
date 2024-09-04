@@ -29,8 +29,8 @@
 }
 
 .logoImage--header__logo {
-  width: auto;
-  height: 34px;
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -612,4 +612,11 @@
   position: fixed;
   z-index: 999;
   top: 50%;
+}
+
+.logoContainer--header__logo {
+  display: inline-block;
+  max-width: 146px;
+  width: 100%;
+  padding: .75rem 0;
 }

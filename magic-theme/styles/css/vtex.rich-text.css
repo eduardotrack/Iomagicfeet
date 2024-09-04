@@ -336,7 +336,6 @@
   line-height: 80%;
   color: rgb(0, 0, 0);
   margin-top: 0;
-  margin-bottom: 25px;
 }
 
 .paragraph--Panda-drawer__menu--mobile::before {
@@ -391,7 +390,7 @@
 
 .container--menu-mobile-nivel03 {
   width: 100%;
-  padding-left: 75px;
+  padding-left: 30px;
   margin-bottom: 15px;
 }
 
@@ -399,11 +398,10 @@
   font-family: "WorkSans-Bold";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 100%;
   color: #1c1c1c;
   margin: 0;
-  margin-bottom: 12px;
 }
 
 .paragraph--headsub__nivel3--mob {
@@ -449,14 +447,14 @@
   margin-bottom: 5px;
 }
 
+.wrapper--menu-mobile-nivel03 {
+  padding: .25rem .5rem;
+  background-color: #5dff49;
+}
+
 .paragraph--menu-mobile-nivel03 {
-  font-family: "WorkSans-Bold";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 80%;
-  text-align: right;
-  color: #1c1c1c;
+  font-size: 18px;
+  color: #000;
   margin: 0;
   margin-bottom: 20px;
   display: flex;
@@ -471,7 +469,7 @@
 .paragraph--menu-mobile-nivel03::after {
   content: ".";
   color: transparent;
-  background-image: url("data:image/svg+xml,%3Csvg width='9' height='13' viewBox='0 0 9 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.835773 12.218C0.390278 11.8206 0.389901 11.124 0.834964 10.7261L4.7287 7.24555C5.17344 6.848 5.17344 6.152 4.7287 5.75445L0.834965 2.27387C0.389901 1.87603 0.390278 1.17939 0.835772 0.782037L1.04691 0.593711C1.4262 0.255412 1.9989 0.255412 2.37819 0.593711L8.16331 5.75372C8.60913 6.15137 8.60913 6.84863 8.16332 7.24628L2.37819 12.4063C1.99891 12.7446 1.4262 12.7446 1.04691 12.4063L0.835773 12.218Z' fill='%235DFF49'/%3E%3C/svg%3E");
+  background-image: url('data:image/svg+xml,<svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.835773 12.718C0.390278 12.3206 0.389901 11.624 0.834964 11.2261L4.7287 7.74555C5.17344 7.348 5.17344 6.652 4.7287 6.25445L0.834965 2.77387C0.389901 2.37603 0.390278 1.67939 0.835772 1.28204L1.04691 1.09371C1.4262 0.755412 1.9989 0.755412 2.37819 1.09371L8.16331 6.25372C8.60913 6.65137 8.60913 7.34863 8.16332 7.74628L2.37819 12.9063C1.99891 13.2446 1.4262 13.2446 1.04691 12.9063L0.835773 12.718Z" fill="%231C1C1C"/></svg>');
   background-repeat: no-repeat no-repeat;
   background-position: center center;
   background-size: 8px auto;
@@ -1601,4 +1599,28 @@
     margin: 0;
     margin-top: 16px;
   }
+}
+
+.wrapper--list-brands-menu {
+  padding: .25rem 0;
+}
+
+.paragraph--main-menu-banner-text {
+  margin: 9px 0;
+
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000;
+}
+
+.wrapper--header-menu-accordion {
+  p {
+    margin: 0;
+  }
+}
+
+.paragraph--header__menu-title {
+  color: #1c1c1c;
+  margin-bottom: 22px;
+  margin-top: 0;
 }

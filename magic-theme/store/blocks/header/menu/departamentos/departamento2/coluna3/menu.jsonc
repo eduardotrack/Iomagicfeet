@@ -1,6 +1,6 @@
 {
   "experimental__visibility-layout#menu-dep2-col3": {
-    "title": "Menu (On/Off)",
+    "title": "Menu Tênis > Famílias",
     "props": {
       "visible": true
     },
@@ -26,69 +26,487 @@
       ],
       "title": {
         "itemProps": {
-          "text": "coleções especiais"
+          "text": "famílias"
         },
         "type": "custom"
-      },
+      }
+    },
+    "children": ["disclosure-layout-group#menu-dep2-col3"]
+  },
+  "disclosure-layout-group#menu-dep2-col3": {
+    "props": {
+      "blockClass": "header-menu-accordion"
+    },
+    "children": [
+      "disclosure-layout#menu-dep2-col3-1",
+      "disclosure-layout#menu-dep2-col3-2",
+      "disclosure-layout#menu-dep2-col3-3",
+      "disclosure-layout#menu-dep2-col3-4",
+      "disclosure-layout#menu-dep2-col3-5"
+    ],
+    "title": "Menu Tênis > Famílias > Accordion"
+  },
+
+  "disclosure-layout#menu-dep2-col3-1": {
+    "children": [
+      "disclosure-trigger#menu-dep2-col3-1",
+      "disclosure-content#menu-dep2-col3-1"
+    ]
+  },
+  "disclosure-trigger#menu-dep2-col3-1": {
+    "children": [
+      "flex-layout.row#menu-dep2-col3-1"
+    ],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "disclosure-content#menu-dep2-col3-1": {
+    "children": ["vtex.menu@2.x:menu#menu-dep2-col3-1-children"],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "flex-layout.row#menu-dep2-col3-1": {
+    "props": {
+      "blockClass": "header-menu-accordion",
+      "colSizing": "auto",
+      "colGap": 4,
+      "colJustify": "left"
+    },
+    "children": [
+      "image#menu-dep2-col3-1-parent",
+      "rich-text#menu-dep2-col3-1-parent"
+    ],
+    "title": "Menu Tênis > Famílias > Accordion 1"
+  },
+  "image#menu-dep2-col3-1-parent": {
+    "props": {
+      "src": "assets/img/brand-demo.png",
+      "blockClass": "header-menu-accordion"
+    },
+    "title": "Imagem - Accordion 1"
+  },
+  "rich-text#menu-dep2-col3-1-parent": {
+    "props": {
+      "text": "adidas",
+      "blockClass": "header-menu-accordion"
+    },
+    "title": "Título - Accordion 1"
+  },
+  "vtex.menu@2.x:menu#menu-dep2-col3-1-children": {
+    "title": "Menu Tênis > Famílias > Opções Accordion 1",
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": [
+        "header-menu-accordion",
+        "header-menu-accordion-children"
+      ],
       "items": [
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "adidas"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "adidas"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "adidas"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "adidas"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "adidas"
+          }
+        }
+      ]
+    }
+  },
+  
+  "disclosure-layout#menu-dep2-col3-2": {
+    "children": [
+      "disclosure-trigger#menu-dep2-col3-2",
+      "disclosure-content#menu-dep2-col3-2"
+    ],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "disclosure-trigger#menu-dep2-col3-2": {
+    "children": [
+      "flex-layout.row#menu-dep2-col3-2"
+    ],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "disclosure-content#menu-dep2-col3-2": {
+    "children": ["vtex.menu@2.x:menu#menu-dep2-col3-2-children"],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "flex-layout.row#menu-dep2-col3-2": {
+    "props": {
+      "blockClass": "header-menu-accordion",
+      "colSizing": "auto",
+      "colGap": 4,
+      "colJustify": "left"
+    },
+    "children": [
+      "image#menu-dep2-col3-2-parent",
+      "rich-text#menu-dep2-col3-2-parent"
+    ],
+    "title": "Menu Tênis > Famílias > Accordion 2"
+  },
+  "image#menu-dep2-col3-2-parent": {
+    "props": {
+      "src": "assets/img/brand-demo.png",
+      "blockClass": "header-menu-accordion"
+    },
+    "title": "Imagem - Accordion 2"
+  },
+  "rich-text#menu-dep2-col3-2-parent": {
+    "props": {
+      "text": "nike",
+      "blockClass": "header-menu-accordion"
+    },
+    "title": "Título - Accordion 2"
+  },
+  "vtex.menu@2.x:menu#menu-dep2-col3-2-children": {
+    "title": "Menu Tênis > Famílias > Opções Accordion 2",
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": [
+        "header-menu-accordion",
+        "header-menu-accordion-children"
+      ],
+      "items": [
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Nike Air Force"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "Nike Pegasus"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Nike Air Max"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Nike Zoom"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Nike Dunk"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Nike Downshifter"
+          }
+        }
+      ]
+    }
+  },
+  
+  "disclosure-layout#menu-dep2-col3-3": {
+    "children": [
+      "disclosure-trigger#menu-dep2-col3-3",
+      "disclosure-content#menu-dep2-col3-3"
+    ],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "disclosure-trigger#menu-dep2-col3-3": {
+    "children": [
+      "flex-layout.row#menu-dep2-col3-3"
+    ],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "disclosure-content#menu-dep2-col3-3": {
+    "children": ["vtex.menu@2.x:menu#menu-dep2-col3-3-children"],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "flex-layout.row#menu-dep2-col3-3": {
+    "props": {
+      "blockClass": "header-menu-accordion",
+      "colSizing": "auto",
+      "colGap": 4,
+      "colJustify": "left"
+    },
+    "children": [
+      "image#menu-dep2-col3-3-parent",
+      "rich-text#menu-dep2-col3-3-parent"
+    ],
+    "title": "Menu Tênis > Famílias > Accordion 3"
+  },
+  "image#menu-dep2-col3-3-parent": {
+    "props": {
+      "src": "assets/img/brand-demo.png",
+      "blockClass": "header-menu-accordion"
+    },
+    "title": "Imagem - Accordion 3"
+  },
+  "rich-text#menu-dep2-col3-3-parent": {
+    "props": {
+      "text": "puma",
+      "blockClass": "header-menu-accordion"
+    },
+    "title": "Título - Accordion 3"
+  },
+  "vtex.menu@2.x:menu#menu-dep2-col3-3-children": {
+    "title": "Menu Tênis > Famílias > Opções Accordion 3",
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": [
+        "header-menu-accordion",
+        "header-menu-accordion-children"
+      ],
+      "items": [
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Nike Air Force"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Nike Pegasus"
+          }
+        }
+      ]
+    }
+  },
+
+  "disclosure-layout#menu-dep2-col3-4": {
+    "children": [
+      "disclosure-trigger#menu-dep2-col3-4",
+      "disclosure-content#menu-dep2-col3-4"
+    ],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "disclosure-trigger#menu-dep2-col3-4": {
+    "children": [
+      "flex-layout.row#menu-dep2-col3-4"
+    ],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "disclosure-content#menu-dep2-col3-4": {
+    "children": ["vtex.menu@2.x:menu#menu-dep2-col3-4-children"],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "flex-layout.row#menu-dep2-col3-4": {
+    "props": {
+      "blockClass": "header-menu-accordion",
+      "colSizing": "auto",
+      "colGap": 4,
+      "colJustify": "left"
+    },
+    "children": [
+      "image#menu-dep2-col3-4-parent",
+      "rich-text#menu-dep2-col3-4-parent"
+    ],
+    "title": "Menu Tênis > Famílias > Accordion 4"
+  },
+  "image#menu-dep2-col3-4-parent": {
+    "props": {
+      "src": "assets/img/brand-demo.png",
+      "blockClass": "header-menu-accordion"
+    },
+    "title": "Imagem - Accordion 4"
+  },
+  "rich-text#menu-dep2-col3-4-parent": {
+    "props": {
+      "text": "umbro",
+      "blockClass": "header-menu-accordion"
+    },
+    "title": "Título - Accordion 4"
+  },
+  "vtex.menu@2.x:menu#menu-dep2-col3-4-children": {
+    "title": "Menu Tênis > Famílias > Opções Accordion 4",
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": [
+        "header-menu-accordion",
+        "header-menu-accordion-children"
+      ],
+      "items": [
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Nike Air Force"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Nike Pegasus"
+          }
+        }
+      ]
+    }
+  },
+
+  
+  "disclosure-layout#menu-dep2-col3-5": {
+    "children": [
+      "disclosure-trigger#menu-dep2-col3-5",
+      "disclosure-content#menu-dep2-col3-5"
+    ],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "disclosure-trigger#menu-dep2-col3-5": {
+    "children": [
+      "flex-layout.row#menu-dep2-col3-5"
+    ],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "disclosure-content#menu-dep2-col3-5": {
+    "children": ["vtex.menu@2.x:menu#menu-dep2-col3-5-children"],
+    "props": {
+      "blockClass": "header-menu-accordion"
+    }
+  },
+  "flex-layout.row#menu-dep2-col3-5": {
+    "props": {
+      "blockClass": "header-menu-accordion",
+      "colSizing": "auto",
+      "colGap": 4,
+      "colJustify": "left"
+    },
+    "children": [
+      "image#menu-dep2-col3-5-parent",
+      "rich-text#menu-dep2-col3-5-parent"
+    ],
+    "title": "Menu Tênis > Famílias > Accordion 5"
+  },
+  "image#menu-dep2-col3-5-parent": {
+    "props": {
+      "src": "assets/img/brand-demo.png",
+      "blockClass": "header-menu-accordion"
+    },
+    "title": "Imagem - Accordion 5"
+  },
+  "rich-text#menu-dep2-col3-5-parent": {
+    "props": {
+      "text": "penalty",
+      "blockClass": "header-menu-accordion"
+    },
+    "title": "Título - Accordion 5"
+  },
+  "vtex.menu@2.x:menu#menu-dep2-col3-5-children": {
+    "title": "Menu Tênis > Famílias > Opções Accordion 5",
+    "props": {
+      "orientation": "horizontal",
+      "blockClass": [
+        "header-menu-accordion",
+        "header-menu-accordion-children"
+      ],
+      "items": [
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Nike Air Force"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "Nike Pegasus"
           }
         }
       ]

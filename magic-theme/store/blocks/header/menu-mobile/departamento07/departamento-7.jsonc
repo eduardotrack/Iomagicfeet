@@ -1,10 +1,11 @@
 {
-  "drawer#dep7-mobile": {
+  "drawer#dep7-mobile-1": {
     "title": "Panda | Menu Departamento 07 - Nivel 02",
     "children": [
       "flex-layout.row#dep7-1-mobile-nivel-2-head",
-      "vtex.menu@2.x:menu#dep7-mobile",
-      "vtex.menu@2.x:menu#dep7-mobile-nivel-3"
+      "flex-layout.row#dep7-brands-mobile",
+      "link#dep7-4-mobile-nivel-3",
+      "flex-layout.row#dep1-1-mobile-nivel-1-footer"
     ],
     "blocks": ["drawer-header#header-mobile", "drawer-trigger#dep7-mobile"],
     "props": {
@@ -12,35 +13,20 @@
     }
   },
 
-  "flex-layout.row#dep7-1-mobile-nivel-2-head": 
-  {
+  "flex-layout.row#dep7-1-mobile-nivel-2-head": {
     "title": "Panda | Menu Departamento 07 - Nivel 02 - Header",
     "props": {
-      "blockClass": "header__nivel3--mob"
+      "blockClass": "header__nivel3--mob",
+      "colSizing": "auto",
+      "colJustify": "left"
     },
-    "children": ["flex-layout.col#dep7-1-mobile-nivel-2-head", "flex-layout.row#dep7-1-mobile-nivel-2-headsub"]
-  },
-
-  "flex-layout.col#dep7-1-mobile-nivel-2-head": {
-    "title": "Panda | Menu Departamento 07 - Nivel 02 - Header",
-    "props": {
-      "blockClass": "header__nivel3--mob"
-    },
-    "children": ["rich-text#dep7-1-mobile-nivel-2-head"]
-  },
-
-  "flex-layout.row#dep7-1-mobile-nivel-2-headsub": {
-    "title": "Panda | Menu Departamento 07 - Nivel 2 - Header",
-    "props": {
-      "blockClass": "headsub__nivel3--mob"
-    },
-    "children": ["drawer-close-button"]
+    "children": ["drawer-close-button", "rich-text#dep7-1-mobile-nivel-2-head"]
   },
 
   "rich-text#dep7-1-mobile-nivel-2-head": {
     "title": "Panda | Menu Departamento 07 - Nivel 2 - Header Titulo",
     "props": {
-      "text": "Tênis e calçados",
+      "text": "marcas",
       "blockClass": "header__nivel3--mob"
     }
   },
@@ -55,99 +41,268 @@
   "rich-text#dep7-mobile": {
     "title": "Panda | Menu Departamento 07 - Nivel 02 - Texto",
     "props": {
-      "text": "novidades",
+      "text": "marcas",
       "blockClass": "menu-mobile-nivel01"
     }
   },
 
-  "vtex.menu@2.x:menu#dep7-mobile": {
-    "title": "Panda | Menu Departamento 07 - Nivel 02 - Menu",
+  "flex-layout.row#dep7-brands-mobile": {
     "props": {
-      "blockClass": ["menu-mobile", "submenu-mobile-subcategory"],
-      "orientation": "vertical",
-      "items": [
+      "blockClass": ["header-brands-list", "dep7-header-brands-list"]
+    },
+    "children": ["image-list#dep7-header-brands-list"]
+  },
+
+  "image-list#dep7-header-brands-list": {
+    "title": "Panda | Menu Mobile - Marcas",
+    "props": {
+      "blockClass": ["header-brands-list"],
+      "images": [
         {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/adidas",
+            "openNewTab": false,
+            "title": "adidas"
           }
         },
+
         {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/converse",
+            "openNewTab": false,
+            "title": "Converse"
           }
         },
+
         {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/jordan",
+            "openNewTab": false,
+            "title": "Nike Air Jordan"
           }
         },
+
         {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/nike",
+            "openNewTab": false,
+            "title": "Nike"
           }
         },
+
         {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/puma",
+            "openNewTab": false,
+            "title": "Puma"
           }
         },
+
         {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/rider",
+            "openNewTab": false,
+            "title": "Rider"
+          }
+        },
+
+        {
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/stance",
+            "openNewTab": false,
+            "title": "Stance"
+          }
+        },
+
+        {
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/step-defend",
+            "openNewTab": false,
+            "title": "Step Defend"
+          }
+        },
+
+        {
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/under-armour",
+            "openNewTab": false,
+            "title": "Under Armour"
+          }
+        },
+
+        {
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/vans",
+            "openNewTab": false,
+            "title": "Vans"
+          }
+        },
+
+        {
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/fila",
+            "openNewTab": false,
+            "title": "Fila"
+          }
+        },
+
+        {
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/new-balance",
+            "openNewTab": false,
+            "title": "New Balance"
+          }
+        },
+
+        {
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/crocs",
+            "openNewTab": false,
+            "title": "Crocs"
+          }
+        },
+
+        {
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/mizuno",
+            "openNewTab": false,
+            "title": "Mizuno"
+          },
+          "title": "Mizuno"
+        },
+
+        {
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/ous",
+            "openNewTab": false,
+            "title": "Ous"
+          }
+        },
+
+        {
+          "image": "assets/img/brand-demo.png",
+          "link": {
+            "url": "/veja",
+            "openNewTab": false,
+            "title": "Veja"
           }
         }
       ]
     }
   },
 
-  "vtex.menu@2.x:menu#dep7-mobile-nivel-3": {
-    "title": "Panda | Menu Departamento 07 - Nivel 02 - Submenu",
-    "props": {
-      "blockClass": ["menu-mobile-wrapper"],
-      "orientation": "vertical",
-      "experimentalOptimizeRendering": true
-    },
-    "children": [
-      "experimental__visibility-layout#dep7-1-mobile-nivel-3",
-      "experimental__visibility-layout#dep7-2-mobile-nivel-3",
-      "experimental__visibility-layout#dep7-3-mobile-nivel-3",
-      "experimental__visibility-layout#dep7-4-mobile-nivel-3"
-    ]
-  }
+  "link#dep7-4-mobile-nivel-3": {
+      "title": "Panda | Menu Departamento 08 - Nivel 03 - Ver tudo",
+      "props": {
+        "label": "todas as marcas",
+        "href": "#",
+        "blockClass": ["menu-mobile-nivel01", "menu-see-all-mobile"]
+      }
+    }
+
+  // "vtex.menu@2.x:menu#dep7-mobile": {
+  //   "title": "Panda | Menu Departamento 07 - Nivel 02 - Menu",
+  //   "props": {
+  //     "blockClass": ["menu-mobile", "submenu-mobile-subcategory"],
+  //     "orientation": "vertical",
+  //     "items": [
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+
+  // "vtex.menu@2.x:menu#dep7-mobile-nivel-3": {
+  //   "title": "Panda | Menu Departamento 07 - Nivel 02 - Submenu",
+  //   "props": {
+  //     "blockClass": ["menu-mobile-wrapper"],
+  //     "orientation": "vertical",
+  //     "experimentalOptimizeRendering": true
+  //   },
+  //   "children": [
+  //     "experimental__visibility-layout#dep7-1-mobile-nivel-3",
+  //     "experimental__visibility-layout#dep7-2-mobile-nivel-3",
+  //     "experimental__visibility-layout#dep7-3-mobile-nivel-3",
+  //     "experimental__visibility-layout#dep7-4-mobile-nivel-3"
+  //   ]
+  // }
 }

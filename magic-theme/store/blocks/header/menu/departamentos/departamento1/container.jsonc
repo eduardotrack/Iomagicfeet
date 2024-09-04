@@ -1,12 +1,11 @@
 {
-  "menu-item#dep1": {
+  "menu-item#dep1-new": {
     "props": {
       "blockClass": ["header__menu", "main-menu-department"],
       "id": "menu-item-dep1",
       "type": "custom",
-      "iconId": null,
       "itemProps": {
-        "text": "NOVIDADES",
+        "text": "lançamentos",
         "type": "internal",
         "href": "#"
       }
@@ -14,7 +13,7 @@
     "blocks": ["vtex.menu@2.x:submenu#dep1"]
   },
   "vtex.menu@2.x:submenu#dep1": {
-    "title": "NOVIDADES",
+    "title": "Panda | Menu Departamento 01 - Nivel 01",
     "props": {
       "blockClass": ["main-menu-department-submenu"],
       "width": "100%"
@@ -31,12 +30,8 @@
     },
     "children": [
       "experimental__visibility-layout#menu-dep1-col1",
-      "experimental__visibility-layout#number-dep1-col1",
-
       "experimental__visibility-layout#menu-dep1-col2",
-      "experimental__visibility-layout#banner-dep1-col2",
- 
-      "experimental__visibility-layout#brands-dep1-col4"
+      "experimental__visibility-layout#number-dep1-col1"
     ]
   }
 }

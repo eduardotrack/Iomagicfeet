@@ -1,6 +1,6 @@
 {
   "experimental__visibility-layout#banner-dep8-col4": {
-    "title": "Banner (On/Off)",
+    "title": "Panda | Banner Departamento 08 - Coluna 04",
     "props": {
       "visible": true
     },
@@ -14,16 +14,27 @@
         "main-menu-column-fourth"
       ]
     },
-    "children": ["image-new#banner-dep8-col4"]
+    "children": [
+      "image-new#banner-dep8-col4",
+      "link#banner-dep8-col4-see-all"
+    ]
   },
   "image-new#banner-dep8-col4": {
-    "title": "Imagem - Banner",
+    "title": "Panda | Imagem Banner Departamento 08 - Coluna 04",
     "props": {
       "blockClass": "main-menu-banner",
-      "src": "assets/img/menu-demo-banner.png",
+      "src": "assets/img/banner-menu-demo.png",
       "link": {
         "url": "#"
       }
+    }
+  },
+  "link#banner-dep8-col4-see-all": {
+    "title": "Panda | Link Banner Departamento 08 - Coluna 04",
+    "props": {
+      "href": "#",
+      "blockClass": ["main-menu-banner-see-all", "menu-link", "menu-link--acessorios"],
+      "label": "boné"
     }
   }
 }

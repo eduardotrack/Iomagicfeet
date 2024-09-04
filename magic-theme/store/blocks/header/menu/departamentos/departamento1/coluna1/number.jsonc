@@ -1,6 +1,6 @@
 {
     "experimental__visibility-layout#number-dep1-col1": {
-      "title": "Menu Numérico (On/Off)",
+      "title": "Panda | Departamento 01 - Tamanhos",
       "props": {
         "visible": true
       },
@@ -14,7 +14,10 @@
           "main-number-column-first"
         ]
       },
-      "children": ["vtex.menu@2.x:menu#number-dep1-col1"]
+      "children": [
+        "vtex.menu@2.x:menu#number-dep1-col1",
+        "link#menu-dep1-number-see-all"
+      ]
     },
     "vtex.menu@2.x:menu#number-dep1-col1": {
       "props": {
@@ -26,7 +29,7 @@
         ],
         "title": {
           "itemProps": {
-            "text": "por tamanho"
+            "text": "tamanhos de tênis"
           },
           "type": "custom"
         },
@@ -93,6 +96,14 @@
           }
         ]
       }
+    },
+    "link#menu-dep1-number-see-all": {
+      "props": {
+        "blockClass": "menu-see-all",
+        "href": "#",
+        "label": "todos os tamanhos"
+      },
+      "title": "Link ver todos"
     }
-  }
+}
   

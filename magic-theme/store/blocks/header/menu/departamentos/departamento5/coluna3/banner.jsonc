@@ -1,6 +1,6 @@
 {
   "experimental__visibility-layout#banner-dep5-col3": {
-    "title": "Banner (On/Off)",
+    "title": "Panda | Departamento 05 - Banner 03",
     "props": {
       "visible": true
     },
@@ -11,19 +11,61 @@
       "blockClass": [
         "main-menu-banner",
         "main-menu-column",
-        "main-menu-column-third"
+        "main-menu-column-second"
       ]
     },
-    "children": ["image-new#banner-dep5-col3"]
+    "children": [
+      "image-new#banner-dep5-col3",
+      "rich-text#banner-dep5-col3",
+      "flex-layout.row#banner-dep5-col3-links"
+    ]
   },
   "image-new#banner-dep5-col3": {
-    "title": "Imagem - Banner",
+    "title": "Panda | Imagem Departamento 05 - Banner 3",
     "props": {
       "blockClass": "main-menu-banner",
-      "src": "assets/img/ocasioes-demo-menu.png",
+      "src": "assets/img/banner-menu-demo.png",
       "link": {
         "url": "#"
       }
     }
+  },
+  "rich-text#banner-dep5-col3": {
+    "title": "Panda | Texto Departamento 05 - Banner 3",
+    "props": {
+      "text": "para esporte",
+      "blockClass": ["main-menu-banner", "main-menu-banner-text"]
+    }
+  },
+
+  "flex-layout.row#banner-dep5-col3-links": {
+    "props": {
+      "blockClass": "main-menu-banner-links",
+      "colSizing": "auto",
+      "colGap": 6,
+      "colJustify": "left"
+    },
+    "children": [
+      "link#banner-dep5-col3-link1",
+      "link#banner-dep5-col3-link2"
+    ]
+  },
+
+  "link#banner-dep5-col3-link1": {
+    "props": {
+      "href": "#",
+      "blockClass": ["main-menu-banner-link", "menu-link"],
+      "label": "feminino"
+    },
+    "title": "Panda | Link 1 Departamento 05 - Banner 3"
+  },
+  "link#banner-dep5-col3-link2": {
+    "props": {
+      "href": "#",
+      "blockClass": ["main-menu-banner-link", "menu-link"],
+      "label": "masculino"
+    },
+    "title": "Panda | Link 2 Departamento 05 - Banner 3"
   }
+
 }

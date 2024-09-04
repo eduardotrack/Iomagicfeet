@@ -66,3 +66,15 @@
 .openIconContainer--department-bf-temp-submenu {
     display: none;
 }
+
+.opened--menu-mobile-nivel01, .drawer--menu-mobile-nivel03  {
+    width: 100% !important;
+}
+
+.drawer--menu-mobile-nivel01 {
+    background-color: #f2f2f2;
+}
+
+.childrenContainer--menu-mobile-nivel01 {
+    min-height: 90vh;
+}

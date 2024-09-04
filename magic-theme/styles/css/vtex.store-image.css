@@ -1,0 +1,15 @@
+.imageElementLink--header-brands-list {
+  background-color: #fff;
+  width: 96px;
+  max-width: 96px;
+  height: 96px;
+  border-radius: 5.18px;
+  border: 1px solid #e6e8ea;
+  padding: .5rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

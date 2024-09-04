@@ -23,48 +23,34 @@
           "items": [
             {
               "type": "custom",
-              "iconId": null,
               "highlight": false,
               "itemProps": {
                 "type": "internal",
-                "href": "#",
-                "tagTitle": "Subcategoria",
-                "text": "Subcategoria"
+                "href": "/institucional/quem-somos",
+                "tagTitle": "quem somos",
+                "text": "quem somos"
               }
             },
             {
               "type": "custom",
-              "iconId": null,
               "highlight": false,
               "itemProps": {
                 "type": "internal",
-                "href": "#",
-                "tagTitle": "Subcategoria",
-                "text": "Subcategoria"
+                "href": "/institucional/nossas-lojas",
+                "tagTitle": "nossas lojas",
+                "text": "nossas lojas"
               }
             },
             {
               "type": "custom",
-              "iconId": null,
               "highlight": false,
               "itemProps": {
                 "type": "internal",
-                "href": "#",
-                "tagTitle": "Subcategoria",
-                "text": "Subcategoria"
+                "href": "/institucional/seja-um-franqueado",
+                "tagTitle": "seja um franqueado",
+                "text": "seja um franqueado"
               }
-            },
-            {
-              "type": "custom",
-              "iconId": null,
-              "highlight": false,
-              "itemProps": {
-                "type": "internal",
-                "href": "#",
-                "tagTitle": "Subcategoria",
-                "text": "Subcategoria"
-              }
-            } 
+            }
           ]
         }
       },

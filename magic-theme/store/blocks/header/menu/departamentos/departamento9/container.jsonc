@@ -6,7 +6,7 @@
       "type": "custom",
       "iconId": null,
       "itemProps": {
-        "text": "Categoria 9",
+        "text": "chuteiras",
         "type": "internal",
         "href": "#"
       }
@@ -14,7 +14,7 @@
     "blocks": ["vtex.menu@2.x:submenu#dep9"]
   },
   "vtex.menu@2.x:submenu#dep9": {
-    "title": "Categoria 9",
+    "title": "Panda | Menu Departamento 09 - Nivel 01",
     "props": {
       "blockClass": ["main-menu-department-submenu"],
       "width": "100%"
@@ -31,16 +31,9 @@
     },
     "children": [
       "experimental__visibility-layout#menu-dep9-col1",
-      "experimental__visibility-layout#banner-dep9-col1",
-
       "experimental__visibility-layout#menu-dep9-col2",
-      "experimental__visibility-layout#banner-dep9-col2",
-
-      "experimental__visibility-layout#menu-dep9-col3",
-      "experimental__visibility-layout#banner-dep9-col3",
-
-      "experimental__visibility-layout#menu-dep9-col4",
-      "experimental__visibility-layout#banner-dep9-col4"
+      "experimental__visibility-layout#number-dep9-col2",
+      "pd-familiesMenu"
     ]
   }
 }

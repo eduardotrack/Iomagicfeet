@@ -1,6 +1,6 @@
 {
   "experimental__visibility-layout#banner-dep5-col4": {
-    "title": "Banner (On/Off)",
+    "title": "Panda | Departamento 05 - Banner 04",
     "props": {
       "visible": true
     },
@@ -11,19 +11,61 @@
       "blockClass": [
         "main-menu-banner",
         "main-menu-column",
-        "main-menu-column-fourth"
+        "main-menu-column-second"
       ]
     },
-    "children": ["image-new#banner-dep5-col4"]
+    "children": [
+      "image-new#banner-dep5-col4",
+      "rich-text#banner-dep5-col4",
+      "flex-layout.row#banner-dep5-col4-links"
+    ]
   },
   "image-new#banner-dep5-col4": {
-    "title": "Imagem - Banner",
+    "title": "Panda | Imagem Departamento 05 - Banner 04",
     "props": {
       "blockClass": "main-menu-banner",
-      "src": "assets/img/ocasioes-demo-menu.png",
+      "src": "assets/img/banner-menu-demo.png",
       "link": {
         "url": "#"
       }
     }
+  },
+  "rich-text#banner-dep5-col4": {
+    "title": "Panda | Texto Departamento 05 - Banner 04",
+    "props": {
+      "text": "para sair",
+      "blockClass": ["main-menu-banner", "main-menu-banner-text"]
+    }
+  },
+
+  "flex-layout.row#banner-dep5-col4-links": {
+    "props": {
+      "blockClass": "main-menu-banner-links",
+      "colSizing": "auto",
+      "colGap": 6,
+      "colJustify": "left"
+    },
+    "children": [
+      "link#banner-dep5-col4-link1",
+      "link#banner-dep5-col4-link2"
+    ]
+  },
+
+  "link#banner-dep5-col4-link1": {
+    "props": {
+      "href": "#",
+      "blockClass": ["main-menu-banner-link", "menu-link"],
+      "label": "feminino"
+    },
+    "title": "Panda | Link 1 Departamento 05 - Banner 04"
+  },
+  "link#banner-dep5-col4-link2": {
+    "props": {
+      "href": "#",
+      "blockClass": ["main-menu-banner-link", "menu-link"],
+      "label": "masculino"
+    },
+    "title": "Panda | Link 2 Departamento 05 - Banner 04"
   }
+
 }

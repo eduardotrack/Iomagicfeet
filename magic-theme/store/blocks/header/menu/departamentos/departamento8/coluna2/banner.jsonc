@@ -1,8 +1,8 @@
 {
   "experimental__visibility-layout#banner-dep8-col2": {
-    "title": "Banner (On/Off)",
+    "title": "Panda | Banner Departamento 08 - Coluna 02",
     "props": {
-      "visible": false
+      "visible": true
     },
     "children": ["flex-layout.col#banner-dep8-col2"]
   },
@@ -11,19 +11,30 @@
       "blockClass": [
         "main-menu-banner",
         "main-menu-column",
-        "main-menu-column-second"
+        "main-menu-column-first"
       ]
     },
-    "children": ["image-new#banner-dep8-col2"]
+    "children": [
+      "image-new#banner-dep8-col2",
+      "link#banner-dep8-col2-see-all"
+    ]
   },
   "image-new#banner-dep8-col2": {
-    "title": "Imagem - Banner",
+    "title": "Panda | Imagem Banner Departamento 08 - Coluna 02",
     "props": {
       "blockClass": "main-menu-banner",
-      "src": "https://via.placeholder.com/250x350",
+      "src": "assets/img/banner-menu-demo.png",
       "link": {
         "url": "#"
       }
+    }
+  },
+  "link#banner-dep8-col2-see-all": {
+    "title": "Panda | Link Banner Departamento 08 - Coluna 02",
+    "props": {
+      "href": "#",
+      "blockClass": ["main-menu-banner-see-all", "menu-link", "menu-link--acessorios"],
+      "label": "meias"
     }
   }
 }

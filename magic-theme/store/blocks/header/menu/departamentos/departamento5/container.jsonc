@@ -1,5 +1,5 @@
 {
-  "menu-item#dep5": {
+  "menu-item#dep5-new": {
     "props": {
       "blockClass": ["header__menu", "main-menu-department", "main-menu-department-custom"],
       "id": "menu-item-dep5",
@@ -14,7 +14,7 @@
     "blocks": ["vtex.menu@2.x:submenu#dep5"]
   },
   "vtex.menu@2.x:submenu#dep5": {
-    "title": "ocasiões",
+    "title": "Panda | Menu Departamento 05 - Nivel 01",
     "props": {
       "blockClass": ["main-menu-department-submenu"],
       "width": "100%"
@@ -33,8 +33,7 @@
       "experimental__visibility-layout#banner-dep5-col1",
       "experimental__visibility-layout#banner-dep5-col2",
       "experimental__visibility-layout#banner-dep5-col3",
-      "experimental__visibility-layout#banner-dep5-col4",
-      "experimental__visibility-layout#banner-dep5-col4-2"
+      "experimental__visibility-layout#banner-dep5-col4"
     ]
   }
 }

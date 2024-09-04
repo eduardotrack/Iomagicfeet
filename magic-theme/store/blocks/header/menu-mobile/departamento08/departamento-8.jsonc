@@ -1,14 +1,18 @@
 {
-  "drawer#dep8-mobile": {
+  "drawer#dep8-mobile-1": {
     "title": "Panda | Menu Departamento 08 - Nivel 02",
     "children": [
       "flex-layout.row#dep8-1-mobile-nivel-2-head",
-      "vtex.menu@2.x:menu#dep8-mobile",
-      "vtex.menu@2.x:menu#dep8-mobile-nivel-3"
+      "vtex.menu@2.x:menu#dep8-mobile-nivel-3",
+      "link#dep8-1-mobile-nivel-2",
+      "flex-layout.row#dep1-1-mobile-nivel-1-footer"
     ],
-    "blocks": ["drawer-header#header-mobile", "drawer-trigger#dep8-mobile"],
+    "blocks": [
+      "drawer-header#header-mobile",
+      "drawer-trigger#dep8-mobile"
+    ],
     "props": {
-      "blockClass": ["menu-mobile-nivel01"]
+      "blockClass": "menu-mobile-nivel01"
     }
   },
 
@@ -16,31 +20,18 @@
   {
     "title": "Panda | Menu Departamento 08 - Nivel 02 - Header",
     "props": {
-      "blockClass": "header__nivel3--mob"
+      "blockClass": "header__nivel3--mob",
+      "colSizing": "auto",
+      "colJustify": "left",
+      "colGap": 4
     },
-    "children": ["flex-layout.col#dep8-1-mobile-nivel-2-head", "flex-layout.row#dep8-1-mobile-nivel-2-headsub"]
-  },
-
-  "flex-layout.col#dep8-1-mobile-nivel-2-head": {
-    "title": "Panda | Menu Departamento 08 - Nivel 02 - Header",
-    "props": {
-      "blockClass": "header__nivel3--mob"
-    },
-    "children": ["rich-text#dep8-1-mobile-nivel-2-head"]
-  },
-
-  "flex-layout.row#dep8-1-mobile-nivel-2-headsub": {
-    "title": "Panda | Menu Departamento 08 - Nivel 2 - Header",
-    "props": {
-      "blockClass": "headsub__nivel3--mob"
-    },
-    "children": ["drawer-close-button"]
+    "children": ["drawer-close-button", "rich-text#dep8-1-mobile-nivel-2-head"]
   },
 
   "rich-text#dep8-1-mobile-nivel-2-head": {
     "title": "Panda | Menu Departamento 08 - Nivel 2 - Header Titulo",
     "props": {
-      "text": "Tênis e calçados",
+      "text": "outlet",
       "blockClass": "header__nivel3--mob"
     }
   },
@@ -55,84 +46,8 @@
   "rich-text#dep8-mobile": {
     "title": "Panda | Menu Departamento 08 - Nivel 02 - Texto",
     "props": {
-      "text": "novidades",
+      "text": "outlet",
       "blockClass": "menu-mobile-nivel01"
-    }
-  },
-
-  "vtex.menu@2.x:menu#dep8-mobile": {
-    "title": "Panda | Menu Departamento 08 - Nivel 02 - Menu",
-    "props": {
-      "blockClass": ["menu-mobile", "submenu-mobile-subcategory"],
-      "orientation": "vertical",
-      "items": [
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        }
-      ]
     }
   },
 
@@ -144,10 +59,19 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "experimental__visibility-layout#dep8-1-mobile-nivel-3",
-      "experimental__visibility-layout#dep8-2-mobile-nivel-3",
-      "experimental__visibility-layout#dep8-3-mobile-nivel-3",
-      "experimental__visibility-layout#dep8-4-mobile-nivel-3"
+      "drawer#dep8-1-mobile-nivel-3",
+      "drawer#dep8-2-mobile-nivel-3",
+      "drawer#dep8-3-mobile-nivel-3",
+      "drawer#dep8-4-mobile-nivel-3"
     ]
+  },
+
+  "link#dep8-1-mobile-nivel-2": {
+    "title": "Panda | Menu Departamento 08 - Nivel 02 - Ver tudo",
+    "props": {
+      "label": "todos em outlet",
+      "href": "#",
+      "blockClass": ["menu-mobile-nivel01", "menu-see-all-mobile"]
+    }
   }
 }

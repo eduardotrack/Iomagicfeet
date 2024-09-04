@@ -14,7 +14,7 @@
     "blocks": ["vtex.menu@2.x:submenu#dep4"]
   },
   "vtex.menu@2.x:submenu#dep4": {
-    "title": "marcas",
+    "title": "Panda | Menu Departamento 04 - Nivel 01",
     "props": {
       "blockClass": ["main-menu-department-submenu"],
       "width": "100%"

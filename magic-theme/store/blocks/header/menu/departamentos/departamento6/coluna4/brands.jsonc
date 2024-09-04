@@ -1,15 +1,17 @@
 {
     "experimental__visibility-layout#brands-dep6-col6": {
-      "title": "Menu (On/Off)",
+      "title": "Panda | Menu Departamento 06 - Coluna 06 (marcas)",
       "props": {
-        "visible": true
+        "visible": true,
+        "blockClass": "main-menu-brands"
       },
-      "children": ["flex-layout.col#brands-dep6-col6"]
+      "children": ["flex-layout.col#brands-dep6-col6", "link#brands-dep6-col6-see-all"]
     },
     "flex-layout.col#brands-dep6-col6": {
       "props": {
         "blockClass": [
-          "main-menu-brands"
+          "main-menu-brands",
+          "main-menu-brands-outlet"
         ]
       },
       "children": ["rich-text#brands-menu-list-dep6-col6", "list-context.media-list#brands-menu-list-dep6-col6"]
@@ -112,10 +114,19 @@
   
     "list-context-renderer#wrapped-menu-brands-dep6-col6": {
       "props": {
-          "blockClass":["list-brands-menu", "list-brands-menu-outlet"],
+        "blockClass":["list-brands-menu", "list-brands-menu-outlet"],
         "listElement": "ul",
         "itemElement": "li"
       }
+    },
+
+    "link#brands-dep6-col6-see-all": {
+      "props": {
+        "blockClass": "menu-see-all",
+        "href": "#",
+        "label": "todas as marcas"
+      },
+      "title": "Panda | Link ver todos"
     }
-  }
+}
   

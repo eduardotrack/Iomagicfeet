@@ -1,6 +1,6 @@
 {
   "experimental__visibility-layout#brands-dep4-col1": {
-    "title": "Menu (On/Off)",
+    "title": "Panda | Menu Departamento 04 - Coluna 01",
     "props": {
       "visible": true
     },
@@ -9,7 +9,8 @@
   "flex-layout.col#brands-dep4-col1": {
     "props": {
       "blockClass": [
-        "main-menu-brands"
+        "main-menu-brands",
+        "menu-brands-principal"
       ]
     },
     "children": ["list-context.media-list#brands-menu-list"]
@@ -17,7 +18,7 @@
   "list-context.media-list#brands-menu-list": {
     "children": ["list-context-renderer#wrapped-menu-brands"],
     "props": {
-      "blockClass":"list-brands-menu",
+      "blockClass":["list-brands-menu", "list-brands-menu-principal"],
       "mediaList": [
         {
           "image": "assets/img/brand-demo.png",

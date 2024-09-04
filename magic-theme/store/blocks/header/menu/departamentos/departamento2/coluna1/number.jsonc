@@ -1,6 +1,6 @@
 {
     "experimental__visibility-layout#number-dep2-col1": {
-      "title": "Menu Numérico (On/Off)",
+      "title": "Panda | Menu Departamento 02 - Coluna numérica",
       "props": {
         "visible": true
       },
@@ -14,7 +14,10 @@
           "main-number-column-first"
         ]
       },
-      "children": ["vtex.menu@2.x:menu#number-dep2-col1"]
+      "children": [
+        "vtex.menu@2.x:menu#number-dep2-col1",
+        "link#number-dep2-col1-see-all"
+      ]
     },
     "vtex.menu@2.x:menu#number-dep2-col1": {
       "props": {
@@ -90,9 +93,128 @@
               "tagTitle": "Subcategoria",
               "text": "15"
             }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "#",
+              "tagTitle": "Subcategoria",
+              "text": "15"
+            }
           }
         ]
       }
+    },
+    "link#number-dep2-col1-see-all": {
+      "props": {
+        "href": "#",
+        "tagTitle": "Subcategoria",
+        "label": "todos os tamanhos",
+        "blockClass": "menu-see-all"
+      },
+      "title": "Link ver todos"
     }
   }
   

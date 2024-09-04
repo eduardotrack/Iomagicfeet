@@ -1,5 +1,5 @@
 {
-  "menu-item#dep2": {
+  "menu-item#dep2-new": {
     "props": {
       "blockClass": ["header__menu", "main-menu-department"],
       "id": "menu-item-dep2",
@@ -14,7 +14,7 @@
     "blocks": ["vtex.menu@2.x:submenu#dep2"]
   },
   "vtex.menu@2.x:submenu#dep2": {
-    "title": "tênis",
+    "title": "Panda | Menu Departamento 02 - Nivel 01",
     "props": {
       "blockClass": ["main-menu-department-submenu"],
       "width": "100%"
@@ -31,13 +31,9 @@
     },
     "children": [
       "experimental__visibility-layout#menu-dep2-col1",
-      "experimental__visibility-layout#number-dep2-col1",
-
       "experimental__visibility-layout#menu-dep2-col2",
-    
-
-      "experimental__visibility-layout#banner-dep2-col3",
-      "experimental__visibility-layout#brands-dep2-col4"
+      "experimental__visibility-layout#number-dep2-col1",
+      "pd-familiesMenu"
     ]
   }
 }

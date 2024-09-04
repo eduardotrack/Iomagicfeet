@@ -1,97 +1,102 @@
 {
   "experimental__visibility-layout#menu-dep9-col1": {
-    "title": "Menu (On/Off)",
+    "title": "Panda | Menu Departamento 09 - Coluna 01",
     "props": {
-      "visible": false
+      "visible": true
     },
     "children": ["flex-layout.col#menu-dep9-col1"]
   },
   "flex-layout.col#menu-dep9-col1": {
     "props": {
       "blockClass": [
-        "main-menu-menu",
-        "main-menu-column",
-        "main-menu-column-first"
+        "main-menu-menu-principal",
+        "main-menu-principal-column",
+        "main-menu-principal-column-first"
       ]
     },
-    "children": ["vtex.menu@2.x:menu#menu-dep9-col1"]
+    "children": [
+      "vtex.menu@2.x:menu#menu-dep9-col1",
+      "link#menu-dep9-col1-see-all"
+    ]
   },
   "vtex.menu@2.x:menu#menu-dep9-col1": {
     "props": {
       "orientation": "vertical",
       "blockClass": [
-        "main-menu-menu",
-        "main-menu-column",
-        "main-menu-column-first"
+        "main-menu-menu-principal",
+        "main-menu-principal-column",
+        "main-menu-principal-column-first"
       ],
       "title": {
         "itemProps": {
-          "text": ""
+          "text": "feminino"
         },
         "type": "custom"
       },
       "items": [
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "rider"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "nike"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "adidas"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "puma"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "umbro"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "penalty"
           }
         }
       ]
     }
+  },
+  "link#menu-dep9-col1-see-all": {
+    "props": {
+      "blockClass": "menu-see-all",
+      "href": "#",
+      "label": "todos em feminino"
+    },
+    "title": "Panda | Link ver todos"
   }
 }

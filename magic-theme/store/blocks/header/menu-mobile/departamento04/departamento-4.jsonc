@@ -1,12 +1,16 @@
 {
-  "drawer#dep4-mobile": {
+  "drawer#dep4-mobile-1": {
     "title": "Panda | Menu Departamento 04 - Nivel 02",
     "children": [
       "flex-layout.row#dep4-1-mobile-nivel-2-head",
-      "vtex.menu@2.x:menu#dep4-mobile",
-      "vtex.menu@2.x:menu#dep4-mobile-nivel-3"
+      "vtex.menu@2.x:menu#dep4-mobile-nivel-3",
+      "link#dep4-1-mobile-nivel-2",
+      "flex-layout.row#dep1-1-mobile-nivel-1-footer"
     ],
-    "blocks": ["drawer-header#header-mobile", "drawer-trigger#dep4-mobile"],
+    "blocks": [
+      "drawer-header#header-mobile",
+      "drawer-trigger#dep4-mobile"
+    ],
     "props": {
       "blockClass": "menu-mobile-nivel01"
     }
@@ -16,31 +20,18 @@
   {
     "title": "Panda | Menu Departamento 04 - Nivel 02 - Header",
     "props": {
-      "blockClass": "header__nivel3--mob"
+      "blockClass": "header__nivel3--mob",
+      "colSizing": "auto",
+      "colJustify": "left",
+      "colGap": 4
     },
-    "children": ["flex-layout.col#dep4-1-mobile-nivel-2-head", "flex-layout.row#dep4-1-mobile-nivel-2-headsub"]
-  },
-
-  "flex-layout.col#dep4-1-mobile-nivel-2-head": {
-    "title": "Panda | Menu Departamento 04 - Nivel 02 - Header",
-    "props": {
-      "blockClass": "header__nivel3--mob"
-    },
-    "children": ["rich-text#dep4-1-mobile-nivel-2-head"]
-  },
-
-  "flex-layout.row#dep4-1-mobile-nivel-2-headsub": {
-    "title": "Panda | Menu Departamento 04 - Nivel 2 - Header",
-    "props": {
-      "blockClass": "headsub__nivel3--mob"
-    },
-    "children": ["drawer-close-button"]
+    "children": ["drawer-close-button", "rich-text#dep4-1-mobile-nivel-2-head"]
   },
 
   "rich-text#dep4-1-mobile-nivel-2-head": {
     "title": "Panda | Menu Departamento 04 - Nivel 2 - Header Titulo",
     "props": {
-      "text": "Tênis e calçados",
+      "text": "chuteiras",
       "blockClass": "header__nivel3--mob"
     }
   },
@@ -55,86 +46,86 @@
   "rich-text#dep4-mobile": {
     "title": "Panda | Menu Departamento 04 - Nivel 02 - Texto",
     "props": {
-      "text": "novidades",
+      "text": "chuteiras",
       "blockClass": "menu-mobile-nivel01"
     }
   },
 
-  "vtex.menu@2.x:menu#dep4-mobile": {
-    "title": "Panda | Menu Departamento 04 - Nivel 02 - Menu",
-    "props": {
-      "blockClass": ["menu-mobile", "submenu-mobile-subcategory"],
-      "orientation": "vertical",
-      "items": [
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        }
-      ]
-    }
-  },
+  // "vtex.menu@2.x:menu#dep4-mobile": {
+  //   "title": "Panda | Menu Departamento 04 - Nivel 02 - Menu",
+  //   "props": {
+  //     "blockClass": ["menu-mobile", "submenu-mobile-subcategory"],
+  //     "orientation": "vertical",
+  //     "items": [
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
 
   "vtex.menu@2.x:menu#dep4-mobile-nivel-3": {
     "title": "Panda | Menu Departamento 04 - Nivel 02 - Submenu",
@@ -144,10 +135,19 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "experimental__visibility-layout#dep4-1-mobile-nivel-3",
-      "experimental__visibility-layout#dep4-2-mobile-nivel-3",
-      "experimental__visibility-layout#dep4-3-mobile-nivel-3",
-      "experimental__visibility-layout#dep4-4-mobile-nivel-3"
+      "drawer#dep4-1-mobile-nivel-3",
+      "drawer#dep4-2-mobile-nivel-3",
+      "drawer#dep4-3-mobile-nivel-3",
+      "drawer#dep4-4-mobile-nivel-3"
     ]
+  },
+
+  "link#dep4-1-mobile-nivel-2": {
+    "title": "Panda | Menu Departamento 04 - Nivel 02 - Ver tudo",
+    "props": {
+      "label": "todas as chuteiras",
+      "href": "#",
+      "blockClass": ["menu-mobile-nivel01", "menu-see-all-mobile"]
+    }
   }
 }

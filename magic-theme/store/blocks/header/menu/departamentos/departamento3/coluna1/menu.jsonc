@@ -1,6 +1,6 @@
 {
   "experimental__visibility-layout#menu-dep3-col1": {
-    "title": "Menu (On/Off)",
+    "title": "Panda | Menu Departamento 03 - Coluna 01",
     "props": {
       "visible": true
     },
@@ -14,7 +14,10 @@
         "main-menu-principal-column-first"
       ]
     },
-    "children": ["vtex.menu@2.x:menu#menu-dep3-col1"]
+    "children": [
+      "vtex.menu@2.x:menu#menu-dep3-col1",
+      "link#menu-dep3-col1-see-all"
+    ]
   },
   "vtex.menu@2.x:menu#menu-dep3-col1": {
     "props": {
@@ -26,63 +29,101 @@
       ],
       "title": {
         "itemProps": {
-          "text": "novidades em"
+          "text": "feminino"
         },
         "type": "custom"
       },
       "items": [
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "roupas e acessórios"
+            "text": "bermuda e shorts"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "tênis e calçados"
+            "text": "moletom"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "coleções especiais"
+            "text": "body"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "exclusivos magicfeet"
+            "text": "calça"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
-          "highlight": true,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "ver todas as novidades"
+            "text": "camiseta"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "conjunto"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "jaqueta"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "macacão"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "vestido e saia"
           }
         }
       ]
     }
+  },
+  "link#menu-dep3-col1-see-all": {
+    "props": {
+      "blockClass": "menu-see-all",
+      "href": "#",
+      "label": "todos em feminino"
+    },
+    "title": "Panda | Link ver todos"
   }
 }

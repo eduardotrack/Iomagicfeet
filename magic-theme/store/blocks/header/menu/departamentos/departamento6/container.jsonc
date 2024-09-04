@@ -1,5 +1,5 @@
 {
-  "menu-item#dep6": {
+  "menu-item#dep6-new": {
     "props": {
       "blockClass": ["header__menu", "main-menu-department"],
       "id": "menu-item-dep6",
@@ -14,7 +14,7 @@
     "blocks": ["vtex.menu@2.x:submenu#dep6"]
   },
   "vtex.menu@2.x:submenu#dep6": {
-    "title": "OUTLET",
+    "title": "Panda | Menu Departamento 06 - Nivel 01",
     "props": {
       "blockClass": ["main-menu-department-submenu"],
       "width": "100%"
@@ -31,13 +31,11 @@
     },
     "children": [
       "experimental__visibility-layout#menu-dep6-col1",
+      
+      "experimental__visibility-layout#menu-dep6-col2",
+      
       "experimental__visibility-layout#number-dep6-col1",
 
-      "experimental__visibility-layout#menu-dep6-col2",
-
-      "experimental__visibility-layout#menu-dep6-col3",
-
-      "experimental__visibility-layout#menu-dep6-col4",
       "experimental__visibility-layout#brands-dep6-col6"
     ]
   }

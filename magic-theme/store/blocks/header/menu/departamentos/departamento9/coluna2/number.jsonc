@@ -1,101 +1,108 @@
 {
-  "experimental__visibility-layout#menu-dep9-col2": {
-    "title": "Panda | Menu Departamento 09 - Coluna 02",
+  "experimental__visibility-layout#number-dep9-col2": {
+    "title": "Panda | Menu Departamento 09 - Coluna Numérica",
     "props": {
       "visible": true
     },
-    "children": ["flex-layout.col#menu-dep9-col2"]
+    "children": ["flex-layout.col#number-dep9-col2"]
   },
-  "flex-layout.col#menu-dep9-col2": {
+  "flex-layout.col#number-dep9-col2": {
     "props": {
       "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
+        "main-number-menu",
+        "main-number-column",
+        "main-number-column-first"
       ]
     },
     "children": [
-      "vtex.menu@2.x:menu#menu-dep9-col2",
-      "link#menu-dep9-col2-see-all"
+      "vtex.menu@2.x:menu#number-dep9-col2",
+      "link#number-dep9-col2-see-all"
     ]
   },
-  "vtex.menu@2.x:menu#menu-dep9-col2": {
+  "vtex.menu@2.x:menu#number-dep9-col2": {
     "props": {
       "orientation": "vertical",
       "blockClass": [
-        "main-menu-menu-principal",
-        "main-menu-principal-column",
-        "main-menu-principal-column-first"
+        "main-number-menu",
+        "main-number-column",
+        "main-number-column-first"
       ],
       "title": {
         "itemProps": {
-          "text": "masculino"
+          "text": "por tamanho"
         },
         "type": "custom"
       },
       "items": [
         {
           "type": "custom",
+          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "rider"
+            "text": "15"
           }
         },
         {
           "type": "custom",
+          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "nike"
+            "text": "15"
           }
         },
         {
           "type": "custom",
+          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "adidas"
+            "text": "15"
           }
         },
         {
           "type": "custom",
+          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "puma"
+            "text": "15"
           }
         },
         {
           "type": "custom",
+          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "umbro"
+            "text": "15"
           }
         },
         {
           "type": "custom",
+          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "penalty"
+            "text": "15"
           }
         }
       ]
     }
   },
-  "link#menu-dep9-col2-see-all": {
+  "link#number-dep9-col2-see-all": {
     "props": {
-      "blockClass": "menu-see-all",
       "href": "#",
-      "label": "todos em masculino"
+      "tagTitle": "Subcategoria",
+      "label": "todos os tamanhos",
+      "blockClass": "menu-see-all"
     },
     "title": "Panda | Link ver todos"
   }

@@ -1,6 +1,6 @@
 {
   "experimental__visibility-layout#menu-dep2-col2": {
-    "title": "Menu (On/Off)",
+    "title": "Panda | Menu Departamento 02 - Coluna 02",
     "props": {
       "visible": true
     },
@@ -9,138 +9,266 @@
   "flex-layout.col#menu-dep2-col2": {
     "props": {
       "blockClass": [
-        "main-menu-menu",
-        "main-menu-column",
-        "main-menu-column-second"
+        "main-menu-menu-principal",
+        "main-menu-principal-column",
+        "main-menu-principal-column-second"
       ]
     },
-    "children": ["vtex.menu@2.x:menu#menu-dep2-col2-2"]
+    "children": [
+      "vtex.menu@2.x:menu#menu-dep2-col2",
+      "link#menu-dep2-col2-see-all"
+    ]
   },
   "vtex.menu@2.x:menu#menu-dep2-col2": {
     "props": {
       "orientation": "vertical",
       "blockClass": [
-        "main-menu-menu",
-        "main-menu-column",
-        "main-menu-column-second"
+        "main-menu-menu-principal",
+        "main-menu-principal-column",
+        "main-menu-principal-column-first"
       ],
       "title": {
         "itemProps": {
-          "text": "por idade"
+          "text": "masculino"
         },
         "type": "custom"
       },
       "items": [
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "adidas"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "nike"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "jordan"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "puma"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "asics"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "olympikus"
           }
         },
         {
           "type": "custom",
-          "iconId": null,
-          "highlight": true,
           "itemProps": {
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "ver todas"
+            "text": "new balance"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "mizuno"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "under armor"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "skechers"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "tagTitle": "Subcategoria",
+            "text": "on running"
           }
         }
       ]
     }
   },
-  "vtex.menu@2.x:menu#menu-dep2-col2-2": {
+  "link#menu-dep2-col2-see-all": {
     "props": {
-      "orientation": "vertical",
-      "blockClass": [
-        "main-menu-menu",
-        "main-menu-column",
-        "main-menu-column-second"
-      ],
-      "title": {
-        "itemProps": {
-          "text": "por gênero"
-        },
-        "type": "custom"
-      },
-      "items": [
-        {
-          "type": "custom",
-          "iconId": null,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        }
-      ]
-    }
+      "blockClass": "menu-see-all",
+      "href": "#",
+      "label": "todos em masculino"
+    },
+    "title": "Link ver todos"
   }
+  // "vtex.menu@2.x:menu#menu-dep2-col2": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": [
+  //       "main-menu-menu",
+  //       "main-menu-column",
+  //       "main-menu-column-second"
+  //     ],
+  //     "title": {
+  //       "itemProps": {
+  //         "text": "por idade"
+  //       },
+  //       "type": "custom"
+  //     },
+  //     "items": [
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "highlight": true,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "ver todas"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#menu-dep2-col2-2": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": [
+  //       "main-menu-menu",
+  //       "main-menu-column",
+  //       "main-menu-column-second"
+  //     ],
+  //     "title": {
+  //       "itemProps": {
+  //         "text": "por gênero"
+  //       },
+  //       "type": "custom"
+  //     },
+  //     "items": [
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       },
+  //       {
+  //         "type": "custom",
+  //         "iconId": null,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "tagTitle": "Subcategoria",
+  //           "text": "Subcategoria"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // }
 }

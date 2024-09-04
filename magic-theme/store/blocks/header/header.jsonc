@@ -80,7 +80,8 @@
     "title": "Panda | Header - Busca",
     "props": {
       "verticalAlign": "middle",
-      "width": "40%"
+      "width": "40%",
+      "blockClass": "header__search"
     },
     "children": ["search-bar"]
   },
@@ -88,7 +89,8 @@
     "title": "Panda | Header - Logo",
     "props": {
       "verticalAlign": "middle",
-      "width": "20%"
+      "width": "20%",
+      "blockClass": "header__logo"
     },
     "children": ["logo#desktop"]
   },
@@ -97,7 +99,7 @@
     "children": ["flex-layout.row#links-desktop"],
     "props": {
       "verticalAlign": "middle",
-      "width": "30%"
+      "blockClass": "header__links"
     }
   },
   "flex-layout.row#links-desktop": {
@@ -138,7 +140,7 @@
   },
   "search-bar": {
     "props": {
-      "placeholder": "O que você procura hoje?",
+      "placeholder": "o que você procura?",
       "openAutocompleteOnFocus": true,
       "blockClass": "header__search"
     },
@@ -179,7 +181,9 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     },
-    "children": ["vtex.menu@2.x:menu#main-menu"]
+    "children": [
+      "vtex.menu@2.x:menu#main-menu"
+    ]
   },
   // HEADER DESKTOP END
 

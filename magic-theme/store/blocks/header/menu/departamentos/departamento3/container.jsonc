@@ -1,5 +1,5 @@
 {
-  "menu-item#dep3": {
+  "menu-item#dep3-new": {
     "props": {
       "blockClass": ["header__menu", "main-menu-department"],
       "id": "menu-item-dep3",
@@ -14,7 +14,7 @@
     "blocks": ["vtex.menu@2.x:submenu#dep3"]
   },
   "vtex.menu@2.x:submenu#dep3": {
-    "title": "roupas",
+    "title": "Panda | Menu Departamento 03 - Nivel 01",
     "props": {
       "blockClass": ["main-menu-department-submenu"],
       "width": "100%"
@@ -31,16 +31,7 @@
     },
     "children": [
       "experimental__visibility-layout#menu-dep3-col1",
- 
-
-      "experimental__visibility-layout#menu-dep3-col2",
-     
-
-      "experimental__visibility-layout#menu-dep3-col3",
-      "experimental__visibility-layout#menu-dep3-col3-2",
-
-      "experimental__visibility-layout#menu-dep3-col4",
-      "experimental__visibility-layout#banner-dep3-col4"
+      "experimental__visibility-layout#menu-dep3-col2"
     ]
   }
 }

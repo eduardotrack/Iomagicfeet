@@ -1,6 +1,6 @@
 {
   "experimental__visibility-layout#menu-dep1-col2": {
-    "title": "Menu (On/Off)",
+    "title": "Panda | Departamento 01 - Coluna 02",
     "props": {
       "visible": true
     },
@@ -9,24 +9,27 @@
   "flex-layout.col#menu-dep1-col2": {
     "props": {
       "blockClass": [
-        "main-menu-menu",
-        "main-menu-column",
-        "main-menu-column-second"
+        "main-menu-menu-principal",
+        "main-menu-principal-column",
+        "main-menu-principal-column-first"
       ]
     },
-    "children": ["vtex.menu@2.x:menu#menu-dep1-col2", "vtex.menu@2.x:menu#menu-dep1-col2-2"]
+    "children": [
+      "vtex.menu@2.x:menu#menu-dep1-col2",
+      "link#menu-dep1-col2-see-all"
+    ]
   },
   "vtex.menu@2.x:menu#menu-dep1-col2": {
     "props": {
       "orientation": "vertical",
       "blockClass": [
-        "main-menu-menu",
-        "main-menu-column",
-        "main-menu-column-second"
+        "main-menu-menu-principal",
+        "main-menu-principal-column",
+        "main-menu-principal-column-first"
       ],
       "title": {
         "itemProps": {
-          "text": "por idade"
+          "text": "novidades em masculino"
         },
         "type": "custom"
       },
@@ -38,7 +41,7 @@
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "tênis"
           }
         },
         {
@@ -48,7 +51,7 @@
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "chinelos e sandálias"
           }
         },
         {
@@ -58,7 +61,7 @@
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "chuteiras"
           }
         },
         {
@@ -68,7 +71,7 @@
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
+            "text": "roupas"
           }
         },
         {
@@ -78,69 +81,30 @@
             "type": "internal",
             "href": "#",
             "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "highlight": true,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "ver todas"
+            "text": "acessórios"
           }
         }
+        // {
+        //   "type": "custom",
+        //   "iconId": null,
+        //   "highlight": true,
+        //   "itemProps": {
+        //     "type": "internal",
+        //     "href": "#",
+        //     "tagTitle": "Subcategoria",
+        //     "text": "ver todos em masculino"
+        //   },
+        //   "blockClass": ["see-all"]
+        // }
       ]
     }
   },
-  "vtex.menu@2.x:menu#menu-dep1-col2-2": {
+  "link#menu-dep1-col2-see-all": {
     "props": {
-      "orientation": "vertical",
-      "blockClass": [
-        "main-menu-menu",
-        "main-menu-column",
-        "main-menu-column-second"
-      ],
-      "title": {
-        "itemProps": {
-          "text": "por gênero"
-        },
-        "type": "custom"
-      },
-      "items": [
-        {
-          "type": "custom",
-          "iconId": null,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        },
-        {
-          "type": "custom",
-          "iconId": null,
-          "itemProps": {
-            "type": "internal",
-            "href": "#",
-            "tagTitle": "Subcategoria",
-            "text": "Subcategoria"
-          }
-        }
-      ]
-    }
+      "blockClass": "menu-see-all",
+      "href": "#",
+      "label": "todos em masculino"
+    },
+    "title": "Panda | Link ver todos"
   }
 }
