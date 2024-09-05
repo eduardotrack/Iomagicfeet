@@ -63,68 +63,74 @@
         "items": [
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infantil/masculino/bermuda-e-shorts",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "bermuda e shorts"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infantil/masculino/moletom",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "moletom"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infantil/masculino/body",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "body"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infantil/masculino/calca",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "calça"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infantil/masculino/camiseta",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "camiseta"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infantil/masculino/conjunto",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "conjunto"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "type": "internal",
+              "href": "/roupa-infantil/masculino/jaqueta",
+              "tagTitle": "Subcategoria",
+              "text": "jaqueta"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "type": "internal",
+              "href": "/roupa-infantil/masculino/macacao",
+              "tagTitle": "Subcategoria",
+              "text": "macacão"
             }
           }
         ]
@@ -135,7 +141,7 @@
       "title": "Panda | Menu Departamento 05 - Nivel 03 - Ver tudo",
       "props": {
         "label": "todos em masculino",
-        "href": "#",
+        "href": "/roupa-infantil/masculino/",
         "blockClass": ["menu-mobile-nivel01", "menu-see-all-mobile"]
       }
     },

@@ -23,7 +23,7 @@
     "rich-text#dep3-1-mobile-nivel-3": {
       "title": "Panda | Menu Departamento 03 - Nivel 03 - Texto",
       "props": {
-        "text": "feminino",
+        "text": "marcas",
         "blockClass": "menu-mobile-nivel03"
       }
     },
@@ -49,7 +49,7 @@
     "rich-text#dep3-1-mobile-nivel-3-head": {
       "title": "Panda | Menu Departamento 03 - Nivel 03 - Header Titulo",
       "props": {
-        "text": "feminino",
+        "text": "marcas",
         "blockClass": "header__nivel3--mob"
       }
     },
@@ -63,68 +63,74 @@
         "items": [
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/rider",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "rider"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/nike",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "nike"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/adidas",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "adidas"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/vans",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "vans"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/crocs",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "crocs"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/puma",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "puma"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/fila",
+              "tagTitle": "Subcategoria",
+              "text": "fila"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/jordan",
+              "tagTitle": "Subcategoria",
+              "text": "jordan"
             }
           }
         ]
@@ -134,7 +140,7 @@
     "link#dep3-1-mobile-nivel-3": {
       "title": "Panda | Menu Departamento 03 - Nivel 03 - Ver tudo",
       "props": {
-        "label": "todos em feminino",
+        "label": "todos em marcas",
         "href": "#",
         "blockClass": ["menu-mobile-nivel01", "menu-see-all-mobile"]
       }

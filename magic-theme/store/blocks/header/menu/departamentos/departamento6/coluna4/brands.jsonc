@@ -2,7 +2,7 @@
     "experimental__visibility-layout#brands-dep6-col6": {
       "title": "Panda | Menu Departamento 06 - Coluna 06 (marcas)",
       "props": {
-        "visible": true,
+        "visible": false,
         "blockClass": "main-menu-brands"
       },
       "children": ["flex-layout.col#brands-dep6-col6", "link#brands-dep6-col6-see-all"]

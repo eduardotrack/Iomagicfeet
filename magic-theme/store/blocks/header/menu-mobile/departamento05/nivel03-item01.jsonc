@@ -63,68 +63,83 @@
         "items": [
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infantil/feminino/bermuda-e-shorts",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "bermuda e shorts"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infanti/feminino/moletom",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "moletom"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infanti/feminino/body",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "body"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infantil/feminino/calca",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "calça"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infantil/feminino/camiseta",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "camiseta"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/roupa-infantil/feminino/conjunto",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "conjunto"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "type": "internal",
+              "href": "/roupa-infantil/feminino/jaqueta",
+              "tagTitle": "Subcategoria",
+              "text": "jaqueta"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "type": "internal",
+              "href": "/roupa-infantil/feminino/macacao",
+              "tagTitle": "Subcategoria",
+              "text": "macacão"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "type": "internal",
+              "href": "/roupa-infantil/feminino/vestido-e-saia",
+              "tagTitle": "Subcategoria",
+              "text": "vestido e saia"
             }
           }
         ]
@@ -135,7 +150,7 @@
       "title": "Panda | Menu Departamento 05 - Nivel 03 - Ver tudo",
       "props": {
         "label": "todos em feminino",
-        "href": "#",
+        "href": "/roupa-infantil/feminino/",
         "blockClass": ["menu-mobile-nivel01", "menu-see-all-mobile"]
       }
     },

@@ -3911,9 +3911,9 @@ lz-string@^1.4.4:
   resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
   integrity sha512-0ckx7ZHRPqb0oUm8zNr+90mtf9DQB60H1wMCjBtfi62Kl3a7JbHob6gA2bC+xRvZoOL+1hzUK8jeuEIQE8svEQ==
 
-"magicfeet.magicapp@https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.14+build1725301778/public/@types/magicfeet.magicapp":
+"magicfeet.magicapp@https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.14+build1725302234/public/@types/magicfeet.magicapp":
   version "0.3.14"
-  resolved "https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.14+build1725301778/public/@types/magicfeet.magicapp#532bfd8a6510e45a3defb2849948908039e8e792"
+  resolved "https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.14+build1725302234/public/@types/magicfeet.magicapp#d4e5cf2ccac6cb879ac7f27c52a65af16e8c15ee"
 
 make-dir@^3.0.0:
   version "3.1.0"
@@ -5298,9 +5298,9 @@ verror@1.10.0:
   version "0.12.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager#2cf6a9d2a31bc503b783c257695b0d17c09b5696"
 
-"vtex.orders-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.104.1/public/@types/vtex.orders-graphql":
-  version "0.104.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.104.1/public/@types/vtex.orders-graphql#74a4c2f5d1e43bf6e9932ad534dd3aa63477e35d"
+"vtex.orders-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.105.1/public/@types/vtex.orders-graphql":
+  version "0.105.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.105.1/public/@types/vtex.orders-graphql#0066ad17230a55a7d12dd6af7ba329c3988d3b6a"
 
 "vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context":
   version "0.10.1"

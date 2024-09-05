@@ -23,7 +23,7 @@
     "rich-text#dep4-1-mobile-nivel-3": {
       "title": "Panda | Menu Departamento 04 - Nivel 03 - Texto",
       "props": {
-        "text": "feminino",
+        "text": "marcas",
         "blockClass": "menu-mobile-nivel03"
       }
     },
@@ -49,7 +49,7 @@
     "rich-text#dep4-1-mobile-nivel-3-head": {
       "title": "Panda | Menu Departamento 04 - Nivel 03 - Header Titulo",
       "props": {
-        "text": "feminino",
+        "text": "marcas",
         "blockClass": "header__nivel3--mob"
       }
     },
@@ -63,68 +63,47 @@
         "items": [
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chuteiras/nike",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "nike"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chuteiras/adidas",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "adidas"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chuteiras/puma",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "puma"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chuteiras/umbro",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "umbro"
             }
           },
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chuteiras/penalty",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
-            }
-          },
-          {
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-              "type": "internal",
-              "href": "#",
-              "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "penalty"
             }
           }
         ]
@@ -134,7 +113,7 @@
     "link#dep4-1-mobile-nivel-3": {
       "title": "Panda | Menu Departamento 04 - Nivel 03 - Ver tudo",
       "props": {
-        "label": "todos em feminino",
+        "label": "todos em marcas",
         "href": "#",
         "blockClass": ["menu-mobile-nivel01", "menu-see-all-mobile"]
       }

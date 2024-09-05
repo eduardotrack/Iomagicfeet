@@ -232,6 +232,14 @@
     transition: all 0.3s;
 }
 
+.menuItem--main-number-column-size {
+    border: 1.32794px solid #1C1C1C;
+    border-radius: 6.63968px;
+    min-width: 45px;
+    height: 28px;
+    transition: all 0.3s;
+}
+
 .menuItem--submenu-mobile-number:hover,
 .menuItem--main-number-menu:hover {
     background: #5DFF49;

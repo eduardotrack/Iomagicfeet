@@ -2,7 +2,7 @@
     "experimental__visibility-layout#number-dep6-col1": {
       "title": "Panda | Menu Departamento 06 - Coluna numérica",
       "props": {
-        "visible": true
+        "visible": false
       },
       "children": ["flex-layout.col#number-dep6-col1"]
     },

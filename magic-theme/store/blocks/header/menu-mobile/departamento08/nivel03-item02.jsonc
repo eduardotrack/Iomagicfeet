@@ -63,68 +63,49 @@
         "items": [
           {
             "type": "custom",
-            "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/outlet-masculino-tenis",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "tênis"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "type": "internal",
+              "href": "/outlet-masculino-chinelos-e-sandalias",
+              "tagTitle": "Subcategoria",
+              "text": "chinelos e sandálias"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "type": "internal",
+              "href": "/outlet-masculino-chuteiras",
+              "tagTitle": "Subcategoria",
+              "text": "chuteiras"
             }
           },
           {
             "type": "custom",
             "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/outlet-masculino-roupas",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "roupas"
             }
           },
           {
             "type": "custom",
             "iconId": null,
-            "highlight": false,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/outlet-masculino-acessorios",
               "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
-            }
-          },
-          {
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-              "type": "internal",
-              "href": "#",
-              "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
-            }
-          },
-          {
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-              "type": "internal",
-              "href": "#",
-              "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
-            }
-          },
-          {
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-              "type": "internal",
-              "href": "#",
-              "tagTitle": "Subcategoria",
-              "text": "Subcategoria"
+              "text": "acessórios"
             }
           }
         ]

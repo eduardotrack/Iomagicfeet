@@ -1,6 +1,6 @@
 {
     "experimental__visibility-layout#number-dep7-col1": {
-      "title": "Panda | Menu Departamento 07 - Coluna numérica",
+      "title": "Panda | Menu Departamento 07/Coluna numérica",
       "props": {
         "visible": true
       },
@@ -39,9 +39,9 @@
             "iconId": null,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/16_17?map=c,specificationFilter_12",
               "tagTitle": "Subcategoria",
-              "text": "15"
+              "text": "16"
             }
           },
           {
@@ -49,9 +49,9 @@
             "iconId": null,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/16_17?map=c,specificationFilter_12",
               "tagTitle": "Subcategoria",
-              "text": "15"
+              "text": "17"
             }
           },
           {
@@ -59,9 +59,9 @@
             "iconId": null,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/18_19?map=c,specificationFilter_12",
               "tagTitle": "Subcategoria",
-              "text": "15"
+              "text": "18"
             }
           },
           {
@@ -69,9 +69,9 @@
             "iconId": null,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/18_19?map=c,specificationFilter_12",
               "tagTitle": "Subcategoria",
-              "text": "15"
+              "text": "19"
             }
           },
           {
@@ -79,9 +79,9 @@
             "iconId": null,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/20_21?map=c,specificationFilter_12",
               "tagTitle": "Subcategoria",
-              "text": "15"
+              "text": "20"
             }
           },
           {
@@ -89,9 +89,189 @@
             "iconId": null,
             "itemProps": {
               "type": "internal",
-              "href": "#",
+              "href": "/chinelos-e-sandalias/20_21?map=c,specificationFilter_12",
               "tagTitle": "Subcategoria",
-              "text": "15"
+              "text": "21"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/22_23?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "22"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/22_23?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "23"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/24_25?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "24"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/24_25?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "25"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/26_27?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "26"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/26_27?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "27"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/28_29?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "28"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/28_29?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "29"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/30_31?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "30"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/30_31?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "31"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/32_33?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "32"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/32_33?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "33"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/34_35?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "34"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/34_35?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "35"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/36_37?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "36"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/36_37?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "37"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/38_39?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "38"
+            }
+          },
+          {
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+              "type": "internal",
+              "href": "/chinelos-e-sandalias/38_39?map=c,specificationFilter_12",
+              "tagTitle": "Subcategoria",
+              "text": "39"
             }
           }
         ]
