@@ -76,7 +76,7 @@
   "link#menu-dep6-col2-see-all": {
     "props": {
       "blockClass": "menu-see-all",
-      "href": "#",
+      "href": "/outlet-masculino",
       "label": "todos em masculino"
     },
     "title": "Panda | Link ver todos"

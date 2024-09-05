@@ -33,7 +33,8 @@
       "experimental__visibility-layout#menu-dep9-col1",
       // "experimental__visibility-layout#menu-dep9-col2",
       "experimental__visibility-layout#number-dep9-col2",
-      "pd-familiesMenu"
+      "pd-familiesMenu",
+      "flex-layout.row#menu-line-separator"
     ]
   }
 }

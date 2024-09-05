@@ -31,7 +31,8 @@
     "children": [
       "experimental__visibility-layout#menu-dep1-col1",
       "experimental__visibility-layout#menu-dep1-col2",
-      "experimental__visibility-layout#number-dep1-col1"
+      "experimental__visibility-layout#number-dep1-col1",
+      "flex-layout.row#menu-line-separator"
     ]
   }
 }

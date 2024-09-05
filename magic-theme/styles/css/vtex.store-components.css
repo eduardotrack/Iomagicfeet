@@ -36,7 +36,7 @@
 
 @media (max-width: 767px) {
   .logoImage--header__logo {
-    height: 28px;
+    margin-bottom: -10px;
   }
   .imageElement--list-brands-home {
     max-width: 60px;

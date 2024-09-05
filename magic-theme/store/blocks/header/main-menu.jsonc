@@ -17,5 +17,11 @@
       "menu-item#dep4",
       "menu-item#dep6-new"
     ]
+  },
+
+  "flex-layout.row#menu-line-separator": {
+    "props": {
+      "blockClass": "menu-line-separator"
+    }
   }
 }

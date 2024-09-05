@@ -19,7 +19,7 @@
       "blockClass": ["main-menu-department-submenu"],
       "width": "100%"
     },
-    "children": ["flex-layout.row#menu-dep5"]
+    "children": ["flex-layout.row#menu-dep5", "flex-layout.row#menu-line-separator"]
   },
   "flex-layout.row#menu-dep5": {
     "props": {

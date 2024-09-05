@@ -8,14 +8,15 @@
     },
     "children": [
       "rich-text#title-menu",
-      "drawer#dep1-mobile-1",
-      "drawer#dep2-mobile",
-      "drawer#dep3-mobile-1",
-      "drawer#dep4-mobile-1",
-      "drawer#dep5-mobile-1",
-      "drawer#dep6-mobile-1",
-      "drawer#dep7-mobile-1",
-      "drawer#dep8-mobile-1"
+      "drawer#dep1-mobile-1", // lançamentos
+      "drawer#dep2-mobile", // tenis
+      "drawer#dep3-mobile-1", // chinelos e sandálias
+      "drawer#dep4-mobile-1", // chuteiras
+      "drawer#dep5-mobile-1", // roupas
+      "drawer#dep6-mobile-1", // ocasioes
+      "drawer#dep9-mobile-1", //acessórios
+      "drawer#dep7-mobile-1", // marcas
+      "drawer#dep8-mobile-1" // outlet
     ]
   },
   "rich-text#title-menu": {

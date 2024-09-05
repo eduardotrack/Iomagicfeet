@@ -1,15 +1,112 @@
 {
-  "menu-item#dep10-bf": {
+  "drawer#dep9-mobile-1": {
+    "title": "Panda | Menu Departamento 09 - Nivel 02",
+    "children": [
+      "flex-layout.row#dep9-1-mobile-nivel-2-head",
+      "vtex.menu@2.x:menu#dep9-mobile-nivel-3",
+      "link#dep9-1-mobile-nivel-2",
+      "flex-layout.row#dep1-1-mobile-nivel-1-footer"
+    ],
+    "blocks": [
+      "drawer-header#header-mobile",
+      "drawer-trigger#dep9-mobile"
+    ],
     "props": {
-      "blockClass": [ "main-menu-department-bf-mobile"],
-      "id": "menu-item-dep10",
-      "type": "custom",
-      "iconId": null,
-      "itemProps": {
-        "text": "Black Friday",
-        "type": "internal",
-        "href": "/black-friday"
-      }
+      "blockClass": "menu-mobile-nivel01"
+    }
+  },
+
+  "flex-layout.row#dep9-1-mobile-nivel-2-head": 
+  {
+    "title": "Panda | Menu Departamento 09 - Nivel 02 - Header",
+    "props": {
+      "blockClass": "header__nivel3--mob",
+      "colSizing": "auto",
+      "colJustify": "left",
+      "colGap": 4
+    },
+    "children": ["drawer-close-button", "rich-text#dep9-1-mobile-nivel-2-head"]
+  },
+
+  "rich-text#dep9-1-mobile-nivel-2-head": {
+    "title": "Panda | Menu Departamento 09 - Nivel 2 - Header Titulo",
+    "props": {
+      "text": "acessórios",
+      "blockClass": "header__nivel3--mob"
+    }
+  },
+  
+  "drawer-trigger#dep9-mobile": {
+    "children": ["rich-text#dep9-mobile"],
+    "props": {
+      "blockClass": "menu-mobile-nivel01"
+    }
+  },
+  
+  "rich-text#dep9-mobile": {
+    "title": "Panda | Menu Departamento 09 - Nivel 02 - Texto",
+    "props": {
+      "text": "acessórios",
+      "blockClass": "menu-mobile-nivel01"
+    }
+  },
+
+  "vtex.menu@2.x:menu#dep9-mobile-nivel-3": {
+    "title": "Panda | Menu Departamento 06 - Nivel 02 - Menu",
+    "props": {
+      "blockClass": ["menu-mobile", "submenu-mobile-subcategory", "menu-acessorios-mobile"],
+      "orientation": "vertical",
+      "items": [
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/acessorios-infantis/jibbitz",
+            "tagTitle": "Subcategoria",
+            "text": "jibbitz"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/acessorios-infantis/meia-infantil",
+            "tagTitle": "Subcategoria",
+            "text": "meias"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/acessorios-infantis/bolsas-e-mochilas",
+            "tagTitle": "Subcategoria",
+            "text": "bolsas e mochilas"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/acessorios-infantis/bone-infantil",
+            "tagTitle": "Subcategoria",
+            "text": "boné"
+          }
+        }
+      ]
+    }
+  },
+
+  "link#dep9-1-mobile-nivel-2": {
+    "title": "Panda | Menu Departamento 09 - Nivel 02 - Ver tudo",
+    "props": {
+      "label": "todos os acessórios",
+      "href": "#",
+      "blockClass": ["menu-mobile-nivel01", "menu-see-all-mobile"]
     }
   }
 }

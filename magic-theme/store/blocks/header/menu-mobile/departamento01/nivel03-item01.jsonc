@@ -23,7 +23,7 @@
       "rich-text#dep1-1-mobile-nivel-3": {
         "title": "Panda | Menu Departamento 01 - Nivel 03 - Texto",
         "props": {
-          "text": "Novidades feminino",
+          "text": "novidades feminino",
           "blockClass": "menu-mobile-nivel03"
         }
       },
@@ -49,7 +49,7 @@
       "rich-text#dep1-1-mobile-nivel-3-head": {
         "title": "Panda | Menu Departamento 01 - Nivel 03 - Header Titulo",
         "props": {
-          "text": "Novidades feminino",
+          "text": "novidades feminino",
           "blockClass": "header__nivel3--mob"
         }
       },
@@ -67,9 +67,9 @@
               "highlight": false,
               "itemProps": {
                 "type": "internal",
-                "href": "tênis",
+                "href": "/novidades-feminino-tenis",
                 "tagTitle": "tênis",
-                "text": "/novidades-feminino-tenis"
+                "text": "tênis"
               }
             },
             {

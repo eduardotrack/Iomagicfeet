@@ -29,7 +29,7 @@ function familiesMenu(familiesMenu) {
                       <div className={`${style.tab_img}`}>
                         <img src={item.logoImg} />
                       </div>
-                      <p>{item.brand}</p>
+                      <p className={`${style.tab__titleText}`}>{item.brand}</p>
                     </div>
                     <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 11L6 6L1 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
