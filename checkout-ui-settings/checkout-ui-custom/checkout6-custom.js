@@ -879,7 +879,7 @@ $(window).on('orderFormUpdated.vtex', function (evt, orderForm) {
 })
 
 /*
-Alerta sobre entregas
+// Alerta sobre entregas
 $(document).ready(function () {
   setTimeout(function () {
     var boxData = document.querySelectorAll('.srp-data') || null
@@ -908,4 +908,5 @@ $(document).ready(function () {
     }
   }, 2000)
 })
+
 */

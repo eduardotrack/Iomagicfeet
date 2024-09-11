@@ -195,6 +195,18 @@
   bottom: -14%;
 }
 
+@media (max-width: 361px) {
+  .sliderLeftArrow--slider-passos-cashback {
+    left: -5%;
+    width: 30px;
+  }
+
+  .sliderRightArrow--slider-passos-cashback {
+    right: -5%;
+    width: 30px;
+  }
+}
+
 @media (max-width: 767px) {
   .paginationDotsContainer--slider-passos-cashback {
     bottom: -10%;
