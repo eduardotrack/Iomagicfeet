@@ -1407,17 +1407,16 @@
   padding: 0;
   color: #000;
   text-align: center;
-
-  font-size: 25px;
+  font-family: "WorkSans-Bold";
+  font-size: 27px;
   font-style: normal;
   font-weight: 700;
-  line-height: 28px; /* 112% */
   letter-spacing: 0.5px;
+  line-height: normal;
 }
 
 @media screen and (max-width: 768px) {
   .headingLevel1--beneficios-cashback-text-titulo {
-    font-size: 20px;
     margin-bottom: 12px;
     text-align: left;
   }
@@ -1482,7 +1481,7 @@
 .headingLevel2--conteudo-como-usar-cashback {
   color: #000;
   font-family: "WorkSans-Bold";
-  font-size: 25px;
+  font-size: 27px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -1492,7 +1491,6 @@
 
 @media screen and (max-width: 768px) {
   .headingLevel2--conteudo-como-usar-cashback {
-    font-size: 20px;
     margin-left: 0;
     display: block;
     text-align: center;
@@ -1501,21 +1499,19 @@
 
 .headingLevel3--regras-cashback-text {
   color: #fff;
-  font-family: "WorkSans-Regular";
-  font-size: 16px;
+  font-family: "WorkSans-Bold";
+  font-size: 27px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 110%; /* 17.6px */
-  text-transform: uppercase;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  
 }
 
 @media screen and (max-width: 768px) {
   .headingLevel3--regras-cashback-text {
     text-align: center;
     color: #ffffff;
-    font-weight: 700;
-    font-family: "WorkSans-Bold";
-    font-size: 20px;
   }
 }
 
@@ -1591,6 +1587,15 @@
 
 .wrapper--regras-cashback-text {
   padding: 0 26px;
+}
+
+.headingLevel3--accordion-cashback-text{
+  font-family: "WorkSans-Bold";
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.5px;
 }
 
 @media screen and (max-width: 768px) {

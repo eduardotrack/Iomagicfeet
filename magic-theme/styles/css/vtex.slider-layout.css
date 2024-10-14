@@ -184,11 +184,11 @@
 }
 
 .sliderLeftArrow--slider-passos-cashback {
-  left: -4%;
+  left: -1.25rem;
 }
 
 .sliderRightArrow--slider-passos-cashback {
-  right: -4%;
+  right: -1.25rem;
 }
 
 .paginationDotsContainer--slider-passos-cashback {
@@ -197,12 +197,12 @@
 
 @media (max-width: 361px) {
   .sliderLeftArrow--slider-passos-cashback {
-    left: -5%;
+    left: -1.1rem;
     width: 30px;
   }
 
   .sliderRightArrow--slider-passos-cashback {
-    right: -5%;
+    right: -1.1rem;
     width: 30px;
   }
 }
@@ -237,4 +237,13 @@
 }
 .caretIcon--slider-passos-cashback {
   color: #000000;
+}
+
+
+@media screen and (max-width: 450px) {
+  .caretIcon--slider-passos-cashback {
+    width: 20px;
+    height: 20px;
+  }
+
 }
