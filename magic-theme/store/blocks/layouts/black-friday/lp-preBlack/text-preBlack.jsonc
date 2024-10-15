@@ -1,0 +1,27 @@
+{
+  "experimental__visibility-layout#text-Pre-blackFriday": {
+    "title": "Panda | Controle Texto - Pré Black Friday",
+    "children": ["flex-layout.row#text-Pre-blackFriday"],
+    "props": {
+      "visible": true,
+      "blockClass": "text-blackFriday"
+    }
+  },
+
+  "flex-layout.row#text-Pre-blackFriday": {
+    "title": "Panda | Texto - Pré Black Friday",
+    "children": ["rich-text#text-Pre-blackFriday"],
+    "props": {
+      "blockClass": "text-Pre-blackFriday",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#text-Pre-blackFriday": {
+    "title": "Panda | Texto - Pré Black Friday",
+    "props": {
+      "text": "**A Magic Friday está chegando com as melhores ofertas de tênis infantis em promoção!** Aproveite essa oportunidade única para garantir tênis infantis das marcas mais desejadas, como [Nike](/nike), [adidas](/adidas), [Jordan](/jordan), [PUMA](/tenis-infantil/puma), [Converse](/converse), [Vans](/vans), [Fila](/fila) e [CROCS](/crocs) com preços incríveis!\n\nAlém disso, teremos promoções imperdíveis de [roupas infantis](/roupas-infantis), [chuteiras infantis](/chuteiras-infantis), [chinelos e sandálias infantis](/chinelos-e-sandalias-infantis) e [acessórios infantis](/acessorios-infantis), garantindo que seus pequenos estejam prontos para qualquer ocasião.\n\nGaranta peças autênticas e confortáveis para manter seus filhos prontos para qualquer ocasião. Fique atento e prepare-se para fazer suas compras assim que as promoções começarem!E enquanto a Magic Friday não começa, aproveite nossas promoções na página de [outlet](/outlet)!",
+      "blockClass": "text--Pre-blackFrida"
+    }
+  }
+}

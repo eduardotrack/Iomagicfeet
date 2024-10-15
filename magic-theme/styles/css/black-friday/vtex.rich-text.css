@@ -1,65 +1,192 @@
 .paragraph--itemBeneficios--blackFrida03,
 .paragraph--itemBeneficios--blackFrida02,
-.paragraph--itemBeneficios--blackFrida01{
-    display: flex;
-    align-items: center;
+.paragraph--itemBeneficios--blackFrida01 {
+  display: flex;
+  align-items: center;
 }
 
-.paragraph--itemBeneficios--blackFrida01::before{
-    content: '';
-    background-image: url("/arquivos/transitoFreter-black.png");
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: block;
-    width: 22px;
-    height: 22px;
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
+.paragraph--itemBeneficios--blackFrida01::before {
+  content: "";
+  background-image: url("/arquivos/transitoFreter-black.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
 }
 
-.paragraph--itemBeneficios--blackFrida02::before{
-    content: '';
-    background-image: url("/arquivos/cartao-debito-black.png");
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: block;
-    width: 22px;
-    height: 22px;
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
+.paragraph--itemBeneficios--blackFrida02::before {
+  content: "";
+  background-image: url("/arquivos/cartao-debito-black.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
 }
 
-.paragraph--itemBeneficios--blackFrida03::before{
-    content: '';
-    background-image: url("/arquivos/pixBlack-slide.png");
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: cover;
-    display: block;
-    width: 22px;
-    height: 22px;
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
+.paragraph--itemBeneficios--blackFrida03::before {
+  content: "";
+  background-image: url("/arquivos/pixBlack-slide.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
 }
 
-.link--itemBeneficios--blackFrida01{
-    text-decoration: none;
-    color: #3f3f40;;
-    cursor: pointer;
+.link--itemBeneficios--blackFrida01 {
+  text-decoration: none;
+  color: #3f3f40;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
-    .paragraph--itemBeneficios--blackFrida03,
-    .paragraph--itemBeneficios--blackFrida02,
-    .paragraph--itemBeneficios--blackFrida01{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
+  .paragraph--itemBeneficios--blackFrida03,
+  .paragraph--itemBeneficios--blackFrida02,
+  .paragraph--itemBeneficios--blackFrida01 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
+
+/* Pré Black Firday */
+
+.wrapper--itemBeneficios--Pre-blackFrida01,
+.wrapper--itemBeneficios--Pre-blackFrida02,
+.wrapper--itemBeneficios--Pre-blackFrida03,
+.wrapper--itemBeneficios--Pre-blackFrida04 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paragraph--itemBeneficios--Pre-blackFrida01,
+.paragraph--itemBeneficios--Pre-blackFrida02,
+.paragraph--itemBeneficios--Pre-blackFrida03,
+.paragraph--itemBeneficios--Pre-blackFrida04 {
+  font-size: 13px;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+}
+
+.strong--itemBeneficios--Pre-blackFrida01,
+.strong--itemBeneficios--Pre-blackFrida02,
+.strong--itemBeneficios--Pre-blackFrida03,
+.strong--itemBeneficios--Pre-blackFrida04 {
+  font-size: 13px;
+  color: #000;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.wrapper--itemBeneficios--Pre-blackFrida01::before {
+  content: "";
+  background-image: url("/arquivos/truck-02.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+.wrapper--itemBeneficios--Pre-blackFrida02::before {
+  content: "";
+  background-image: url("/arquivos/sale-03.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper--itemBeneficios--Pre-blackFrida03::before {
+  content: "";
+  background-image: url("/arquivos/marker-pin-02.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  width: 24px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper--itemBeneficios--Pre-blackFrida04::before {
+  content: "";
+  background-image: url("/arquivos/refresh-cw-05.png");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+.container--text--Pre-blackFrida {
+  max-width: 1360px;
+}
+
+.paragraph--text--Pre-blackFrida {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: #9c9c9c;
+  line-height: 22.4px;
+}
+
+.strong--text--Pre-blackFrida {
+  font-weight: 800;
+}
+
+.link--text--Pre-blackFrida {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+
+.container--itemBeneficios--Pre-blackFrida01,
+.container--itemBeneficios--Pre-blackFrida02,
+.container--itemBeneficios--Pre-blackFrida03,
+.container--itemBeneficios--Pre-blackFrida04 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container--itemBeneficios--Pre-blackFrida03 {
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid #9c9c9c;
+  border-right: 1px solid #9c9c9c;
+}
+
+.container--itemBeneficios--Pre-blackFrida02 {
+  border-top: none;
+  border-bottom: none;
+  border-left: 1px solid #9c9c9c;
+  border-right: none;
+}
+

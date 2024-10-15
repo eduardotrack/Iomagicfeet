@@ -20,7 +20,9 @@
 }
 
 .slide--sliderMenu-blackFriday[data-index="4"]
-  :global(.vtex-slider-layout-0-x-slideChildrenContainer--sliderMenu-blackFriday) {
+  :global(
+    .vtex-slider-layout-0-x-slideChildrenContainer--sliderMenu-blackFriday
+  ) {
   border-right: none;
 }
 
@@ -32,3 +34,5 @@
 .sliderTrack--beneficios-cashback-slider {
   gap: 40px;
 }
+
+/* Pré black friday */

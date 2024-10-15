@@ -23,7 +23,7 @@
   },
 
   "flex-layout.row#blackFriday--banner-Desk": {
-    "title": "Panda | Slider menu Black Friday",
+    "title": "Panda | Banner Black Friday - Desktop",
     "children": ["image#blackFriday--banner-Desk"],
     "props": {
       "blockClass": "blackFriday--banner",
@@ -32,7 +32,7 @@
   },
 
   "flex-layout.row#blackFriday--banner-Mob": {
-    "title": "Panda | Slider menu Black Friday",
+    "title": "Panda | Banner Black Friday - Mobile",
     "children": ["image#blackFriday--banner-Mob"],
     "props": {
       "blockClass": "blackFriday--banner",
@@ -43,7 +43,7 @@
   "image#blackFriday--banner-Desk": {
     "title": "Panda | Imagem Banner Black friday - Desktop",
     "props": {
-      "src": "/arquivos/bannerBlackFriday-desktop-ful.png",
+      "src": "/arquivos/HeroBanner-preblack-desk.png",
       "maxHeight": 410,
       "blockClass": "blackFriday--banner"
     }
@@ -52,7 +52,7 @@
   "image#blackFriday--banner-Mob": {
     "title": "Panda | Imagem Banner Black friday - Mobile",
     "props": {
-      "src": "/arquivos/bannerBlackFriday-mobile-ful.png",
+      "src": "/arquivos/HeroBanner-preblack-mob.png",
       "maxHeight": 408,
       "width": "100%",
       "blockClass": "blackFriday--banner"

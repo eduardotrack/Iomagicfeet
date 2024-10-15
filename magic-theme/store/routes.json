@@ -10,5 +10,8 @@
   },
   "store.custom#aplicativo-mvp": {
     "path": "/aplicativo-mvp"
+  },
+  "store.custom#LP-preBlackFriday": {
+    "path": "/pre-black-friday"
   }
 }

@@ -1,0 +1,70 @@
+{
+    "experimental__visibility-layout#sliderBeneficios-Pre-blackFriday": {
+      "title": "Panda | Controle Slider beneficios - Pré Black Friday",
+      "children": ["flex-layout.row#sliderBeneficios-Pre-blackFriday"],
+      "props": {
+        "visible": true,
+        "blockClass": "sliderBeneficios-blackFriday"
+      }
+    },
+  
+    "flex-layout.row#sliderBeneficios-Pre-blackFriday": {
+      "title": "Panda | Slider beneficios - Pré Black Friday",
+      "children": ["slider-layout#sliderBeneficios-Pre-blackFriday"],
+      "props": {
+        "blockClass": "sliderBeneficios-blackFriday",
+        "fullWidth": true
+      }
+    },
+  
+  
+    "slider-layout#sliderBeneficios-Pre-blackFriday": {
+      "title": "Panda | Itens slider beneficios - Pré Black Friday",
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 4,
+          "phone": 1
+        },
+        "infinite": false,
+        "showNavigationArrows": "never",
+        "centerMode": "to-the-left",
+        "showPaginationDots": "never",
+        "blockClass": "sliderBeneficios-blackFriday"
+      },
+      "children": [
+        "rich-text#itemBeneficios--Pre-blackFrida01",
+        "rich-text#itemBeneficios--Pre-blackFrida02",
+        "rich-text#itemBeneficios--Pre-blackFrida03",
+        "rich-text#itemBeneficios--Pre-blackFrida04"
+      ]
+    },
+    "rich-text#itemBeneficios--Pre-blackFrida01": {
+      "title": "Panda | Item slider beneficios - Pré Black Friday 01",
+      "props": {
+        "text": "**frete grátis*** \n a partir de R$ 100",
+        "blockClass": "itemBeneficios--Pre-blackFrida01"
+      }
+    },
+    "rich-text#itemBeneficios--Pre-blackFrida02": {
+      "title": "Panda | Item slider beneficios - Pré Black Friday 02",
+      "props": {
+        "text": "**5% de desoncto no pix** \n confira as regras",
+        "blockClass": "itemBeneficios--Pre-blackFrida02"
+      }
+    },
+    "rich-text#itemBeneficios--Pre-blackFrida03": {
+      "title": "Panda | Item slider beneficios - Pré Black Friday 03",
+      "props": {
+        "text": "**+ de 30 lojas pelo Brasil** \n encontre a mais próxima",
+        "blockClass": "itemBeneficios--Pre-blackFrida03"
+      }
+    },
+    "rich-text#itemBeneficios--Pre-blackFrida04": {
+      "title": "Panda | Item slider beneficios - Pré Black Friday 03",
+      "props": {
+        "text": "**solicite sua troca** \n até 30 das após a compra",
+        "blockClass": "itemBeneficios--Pre-blackFrida04"
+      }
+    }
+  }

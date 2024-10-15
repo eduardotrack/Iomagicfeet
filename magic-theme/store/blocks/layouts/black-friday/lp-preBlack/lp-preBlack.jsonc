@@ -1,0 +1,27 @@
+{
+  "store.custom#LP-preBlackFriday": {
+    "blocks": ["flex-layout.row#preblack-row"]
+  },
+
+  "flex-layout.row#preblack-row": {
+    "title": "Panda | Pré Black Friday",
+    "children": ["flex-layout.col#preblack-row"],
+    "props": {
+      "blockClass": "blackFriday",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#preblack-row": {
+    "title": "Panda | PréBlack Friday",
+    "children": [
+      "experimental__visibility-layout#blackFriday--banner",
+      "experimental__visibility-layout#sliderBeneficios-Pre-blackFriday",
+      "experimental__visibility-layout#text-Pre-blackFriday"
+    ],
+    "props": {
+      "blockClass": "blackFriday",
+      "fullWidth": true
+    }
+  }
+}
