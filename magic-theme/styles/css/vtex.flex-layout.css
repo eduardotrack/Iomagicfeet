@@ -452,14 +452,14 @@
   .flexRowContent--home__footer--developed-powered-wrapper {
     display: flex;
     gap: 20px;
-    justify-content: center;
-    padding-bottom: 50px;
+    justify-content: space-around;
+    padding-bottom: 80px;
   }
   .flexRow--footer__menu_mobile {
     background: #1c1c1c;
   }
   .flexRowContent--footer__menu_mobile {
-    padding-bottom: 30px;
+    padding-bottom: 50px;
   }
   .flexRow--calendario-home-row {
     margin-bottom: 40px;
@@ -1585,4 +1585,34 @@
   position: absolute;
   left: 0;
   bottom: 60px;
+}
+
+.flexColChild--footer-menu-mobile-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.flexRowContent--payment-methods-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  > div {
+    align-items: center;
+  }
+}
+
+.flexRow--payment-methods-images {
+  max-width: 245px;
+}
+
+.flexCol--security-badges-mobile {
+  margin-top: 40px;
+}
+
+.flexRowContent--security-badges-images-mob {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }

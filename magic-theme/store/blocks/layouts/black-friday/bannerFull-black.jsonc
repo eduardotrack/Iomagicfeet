@@ -24,7 +24,10 @@
 
   "flex-layout.row#blackFriday--banner-Desk": {
     "title": "Panda | Banner Black Friday - Desktop",
-    "children": ["image#blackFriday--banner-Desk"],
+    "children": [
+      "image#blackFriday--banner-Desk",
+      "rich-text#blackfriday--banner-desk"
+    ],
     "props": {
       "blockClass": "blackFriday--banner",
       "fullWidth": true
@@ -33,18 +36,31 @@
 
   "flex-layout.row#blackFriday--banner-Mob": {
     "title": "Panda | Banner Black Friday - Mobile",
-    "children": ["image#blackFriday--banner-Mob"],
+    "children": [
+      "image#blackFriday--banner-Mob",
+      "rich-text#blackfriday--banner-desk"
+    ],
     "props": {
       "blockClass": "blackFriday--banner",
-      "fullWidth": true
+      "fullWidth": true,
+      "width": "100%"
     }
   },
 
   "image#blackFriday--banner-Desk": {
     "title": "Panda | Imagem Banner Black friday - Desktop",
     "props": {
-      "src": "/arquivos/HeroBanner-preblack-desk.png",
+      "src": "assets/img/black-friday/hero-bf-desk.png",
       "maxHeight": 410,
+      "blockClass": "blackFriday--banner",
+      "width": "100%"
+    }
+  },
+
+  "rich-text#blackfriday--banner-desk": {
+    "title": "Panda | Texto Banner Black friday - Desktop",
+    "props": {
+      "text": "# A melhor **Black *Friday*** de moda infantil é na magicfeet!",
       "blockClass": "blackFriday--banner"
     }
   },
@@ -52,7 +68,7 @@
   "image#blackFriday--banner-Mob": {
     "title": "Panda | Imagem Banner Black friday - Mobile",
     "props": {
-      "src": "/arquivos/HeroBanner-preblack-mob.png",
+      "src": "assets/img/black-friday/hero-bf-mob.png",
       "maxHeight": 408,
       "width": "100%",
       "blockClass": "blackFriday--banner"

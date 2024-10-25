@@ -1,0 +1,39 @@
+{
+  "experimental__visibility-layout#newsletter-preBlack": {
+    "title": "Panda | Newsletter - Pré Black Friday",
+    "children": ["flex-layout.col#newsletter-preBlack"],
+    "props": {
+      "visible": true,
+      "blockClass": "newsletter-blackFriday"
+    }
+  },
+
+  "flex-layout.col#newsletter-preBlack": {
+    "title": "Panda | Newsletter - Pré Black Friday",
+    "children": [
+       "rich-text#newsletter-preBlack-title",
+        "rich-text#newsletter-preBlack-subtitle",
+        "pd-formBlackFriday"
+    ],
+    "props": {
+      "blockClass": "newsletter-preBlackFriday",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#newsletter-preBlack-title": {
+    "title": "Panda | Newsletter - Título",
+    "props": {
+      "text": "## Receba ofertas exclusivas da Black Friday da magicfeet",
+      "blockClass": ["newsletter--Pre-blackFriday", "newsletter--Pre-blackFriday-title"]
+    }
+  },
+
+  "rich-text#newsletter-preBlack-subtitle": {
+    "title": "Panda | Newsletter - Subtítulo",
+    "props": {
+      "text": "Cadastre e-mail e telefone e deixe a gente te avisar quando a Black Friday começar! Assim você garante as melhores ofertas em primeira mão no seu e-mail e whatsapp!",
+      "blockClass": ["newsletter--Pre-blackFriday", "newsletter--Pre-blackFriday-subtitle"]
+    }
+  }
+}

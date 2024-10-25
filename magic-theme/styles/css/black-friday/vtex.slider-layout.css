@@ -36,3 +36,35 @@
 }
 
 /* Pré black friday */
+.sliderTrack--sliderBeneficios-blackFriday {
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .sliderTrack--sliderBeneficios-blackFriday {
+    justify-content: unset;
+  }
+
+  .paginationDotsContainer--sliderBeneficios-blackFriday {
+    bottom: -45px;
+    align-items: center;
+  }
+
+  .paginationDot--sliderBeneficios-blackFriday {
+    width: 7px !important;
+    height: 7px !important;
+    background-color: #000;
+  }
+
+  .paginationDot--sliderBeneficios-blackFriday--isActive {
+    border: 2px solid #000;
+    background: transparent;
+    transform: unset;
+    rotate: 32deg;
+
+    width: 8.44px !important;
+    height: 20.54px !important;
+    padding: 0;
+    margin-top: -3px;
+  }
+}

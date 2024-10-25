@@ -22,10 +22,12 @@
     "blocks": ["gallery", "not-found"]
   },
 
+
+
   // COMMON - TITLE
   "flex-layout.row#searchtitle": {
     "title": "Panda | Título da busca",
-    "children": ["search-title.v2"],
+    "children": ["pd-categoryTitle"],
     "props": {
       "blockClass": "panda-search__main-title"
     }

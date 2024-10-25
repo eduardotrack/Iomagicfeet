@@ -21,6 +21,11 @@
     margin-bottom: 35px;
 }
 
+.imageElement--payment-methods {
+    width: 52px;
+    height: fit-content;
+}
+
 @media (max-width: 767px) {
     .imageElement--image-stepDownload-crm {
         display: none;

@@ -363,18 +363,27 @@
 
 @media (max-width: 767px) {
     .menuContainer--footer-menu-mobile-institucional {
-        margin: 40px 0;
+        margin: 8px 0;
+        gap: 8px;
     }
+
     .styledLinkContainer--footer-menu-mobile-institucional {
         margin: 0;
+        padding: 0;
     }
+
     .styledLinkContent--footer-menu-mobile-institucional {
-        font-family: 'WorkSans-Bold';
+        font-family: 'WorkSans-Regular';
         font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: #000;
+
+        padding: 4px 8px;
+        background-color: #5DFF49;
+        border-radius: 3px;
+        width: fit-content;
     }
 }
 

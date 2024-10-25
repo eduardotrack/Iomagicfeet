@@ -66,6 +66,25 @@
 
 /* Pré Black Firday */
 
+.heading--blackFriday--banner {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 84px;
+  text-align: center;
+  margin: 0;
+  font-family: 'WorkSans-Medium', sans-serif;
+
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.strong--blackFriday--banner {
+  font-weight: 800;
+  font-family: 'WorkSans-ExtraBold';
+}
+
 .wrapper--itemBeneficios--Pre-blackFrida01,
 .wrapper--itemBeneficios--Pre-blackFrida02,
 .wrapper--itemBeneficios--Pre-blackFrida03,
@@ -164,7 +183,8 @@
 
 .link--text--Pre-blackFrida {
   text-decoration: none;
-  color: #9c9c9c;
+  color: blue;
+  /* color: #9c9c9c; */
 }
 
 .container--itemBeneficios--Pre-blackFrida01,
@@ -190,3 +210,71 @@
   border-right: none;
 }
 
+.headingLevel2--faq--Pre-blackFriday {
+  font-size: 2.75rem;
+  font-weight: 800;
+  font-family: 'WorkSans-ExtraBold';
+  color: #171A1C;
+  margin: 0 0 5rem;
+}
+
+.headingLevel3--faq-preBlack-item-pergunta {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #0B0C0C;
+  font-family: 'WorkSans-Bold';
+}
+
+.paragraph--faq-preBlack-item-resposta {
+  padding-top: .5rem;
+  font-size: 1rem;
+  margin: 0;
+  color: #61656B;
+}
+
+.headingLevel2--newsletter--Pre-blackFriday-title {
+  font-size: 2.75rem;
+  color: #fff;
+  font-weight: 800;
+  font-family: 'WorkSans-ExtraBold';
+  margin: 0 0 10px;
+}
+
+.paragraph--newsletter--Pre-blackFriday-subtitle {
+  margin: 0;
+  color: #fff;
+  font-family: 'Nunito-Regular';
+}
+
+.paragraph--itemBeneficios--Pre-blackFriday {
+  font-size:  13px;
+  color: #9c9c9c;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.strong--itemBeneficios--Pre-blackFriday {
+  font-weight: 700;
+  font-family: 'WorkSans-Bold';
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper--text--Pre-blackFrida {
+    padding: 1.25rem 1rem;
+  }
+
+  .paragraph--text--Pre-blackFrida {
+    text-align: start;
+  }
+
+  .headingLevel2--faq--Pre-blackFriday {
+    margin-bottom: 1.25rem;
+    line-height: 52px;
+  }
+
+  .headingLevel1--blackFriday--banner {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}

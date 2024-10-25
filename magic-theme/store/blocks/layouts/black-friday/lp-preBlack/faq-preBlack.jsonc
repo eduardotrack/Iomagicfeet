@@ -1,0 +1,248 @@
+{
+  "experimental__visibility-layout#faq-preBlack": {
+    "title": "Panda | Seção Dúvidas Frequentes - Pré Black Friday",
+    "children": ["flex-layout.col#faq-preBlack"],
+    "props": {
+      "visible": true,
+      "blockClass": "faq-blackFriday"
+    }
+  },
+
+  "flex-layout.col#faq-preBlack": {
+    "title": "Panda | Dúvidas Frequentes - Pré Black Friday",
+    "children": [
+      "rich-text#faq-preBlack",
+      "pd-faqBlackFriday"
+      // "disclosure-layout#faq-preBlack-item01",
+      // "disclosure-layout#faq-preBlack-item02",
+      // "disclosure-layout#faq-preBlack-item03",
+      // "disclosure-layout#faq-preBlack-item04",
+      // "disclosure-layout#faq-preBlack-item05",
+      // "disclosure-layout#faq-preBlack-item06"
+    ],
+    "props": {
+      "blockClass": "faq-Pre-blackFriday",
+      "fullWidth": true
+    }
+  },
+
+  "rich-text#faq-preBlack": {
+    "title": "Panda | Dúvidas Frequentes - Título",
+    "props": {
+      "text": "## Dúvidas sobre a Black Friday",
+      "blockClass": "faq--Pre-blackFriday"
+    }
+  },
+
+  // ITEM 01
+  "disclosure-layout#faq-preBlack-item01": {
+    "children": ["disclosure-trigger#faq-preBlack-item01", "disclosure-content#faq-preBlack-item01"],
+    "title": "Panda | Dúvidas Frequentes - Item 01",
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-trigger#faq-preBlack-item01": {
+    "children": ["rich-text#faq-preBlack-item01-pergunta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-content#faq-preBlack-item01": {
+    "children": ["rich-text#faq-preBlack-item01-resposta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "rich-text#faq-preBlack-item01-pergunta": {
+    "props": {
+      "text": "### O que é a Black Friday?",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-pergunta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 01 - Pergunta"
+  },
+  "rich-text#faq-preBlack-item01-resposta": {
+    "props": {
+      "text": "A Black Friday é um evento anual de promoções que acontece na última sexta-feira de novembro. É uma ótima oportunidade para encontrar diversos produtos com descontos especiais, incluindo tênis infantis e outros itens para crianças.",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-resposta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 01 - Resposta"
+  },
+
+  // ITEM 02
+  "disclosure-layout#faq-preBlack-item02": {
+    "children": ["disclosure-trigger#faq-preBlack-item02", "disclosure-content#faq-preBlack-item02"],
+    "title": "Panda | Dúvidas Frequentes - Item 02",
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-trigger#faq-preBlack-item02": {
+    "children": ["rich-text#faq-preBlack-item02-pergunta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-content#faq-preBlack-item02": {
+    "children": ["rich-text#faq-preBlack-item02-resposta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "rich-text#faq-preBlack-item02-pergunta": {
+    "props": {
+      "text": "### Quando é a Black Friday da magicfeet?",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-pergunta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 02 - Pergunta"
+  },
+  "rich-text#faq-preBlack-item02-resposta": {
+    "props": {
+      "text": "A Black Friday da magicfeet acontece oficialmente no final de novembro, com ofertas imperdíveis durante o mês inteiro em tênis infantis e muito mais. Fique de olho nas promoções!",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-resposta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 02 - Resposta"
+  },
+
+  //ITEM 03
+  "disclosure-layout#faq-preBlack-item03": {
+    "children": ["disclosure-trigger#faq-preBlack-item03", "disclosure-content#faq-preBlack-item03"],
+    "title": "Panda | Dúvidas Frequentes - Item 03",
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-trigger#faq-preBlack-item03": {
+    "children": ["rich-text#faq-preBlack-item03-pergunta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-content#faq-preBlack-item03": {
+    "children": ["rich-text#faq-preBlack-item03-resposta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "rich-text#faq-preBlack-item03-pergunta": {
+    "props": {
+      "text": "### Quais as formas de pagamento na Black Friday da magicfeet?",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-pergunta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 03 - Pergunta"
+  },
+  "rich-text#faq-preBlack-item03-resposta": {
+    "props": {
+      "text": "Na Black Friday da magicfeet, aceitamos pagamentos via cartão de crédito, débito, boleto bancário e Pix. Além disso, oferecemos parcelamento em até 10x sem juros, dependendo do valor da compra.",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-resposta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 03 - Resposta"
+  },
+
+
+  //ITEM 04
+  "disclosure-layout#faq-preBlack-item04": {
+    "children": ["disclosure-trigger#faq-preBlack-item04", "disclosure-content#faq-preBlack-item04"],
+    "title": "Panda | Dúvidas Frequentes - Item 04",
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-trigger#faq-preBlack-item04": {
+    "children": ["rich-text#faq-preBlack-item04-pergunta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-content#faq-preBlack-item04": {
+    "children": ["rich-text#faq-preBlack-item04-resposta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "rich-text#faq-preBlack-item04-pergunta": {
+    "props": {
+      "text": "### Quais são as ofertas disponíveis na Black Friday da magicfeet?",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-pergunta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 04 - Pergunta"
+  },
+  "rich-text#faq-preBlack-item04-resposta": {
+    "props": {
+      "text": "Durante a Black Friday, você encontrará tênis infantis na promoção, [masculinos](/masculino) e [femininos](/feminino), além de descontos em diversos produtos infantis de marcas renomadas como **Nike, adidas, Jordan, PUMA, Converse, Vans, Fila, CROCS e muito mais!**",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-resposta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 04 - Resposta"
+  },
+
+  //ITEM 05
+  "disclosure-layout#faq-preBlack-item05": {
+    "children": ["disclosure-trigger#faq-preBlack-item05", "disclosure-content#faq-preBlack-item05"],
+    "title": "Panda | Dúvidas Frequentes - Item 05",
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-trigger#faq-preBlack-item05": {
+    "children": ["rich-text#faq-preBlack-item05-pergunta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-content#faq-preBlack-item05": {
+    "children": ["rich-text#faq-preBlack-item05-resposta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "rich-text#faq-preBlack-item05-pergunta": {
+    "props": {
+      "text": "### Como se preparar para a Black Friday da magicfeet?",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-pergunta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 05 - Pergunta"
+  },
+  "rich-text#faq-preBlack-item05-resposta": {
+    "props": {
+      "text": "Para aproveitar ao máximo a Magic Friday, siga estas dicas: \n- **Crie uma lista de desejos:** anote os produtos que você quer comprar para não perder nenhuma oferta. \n- **Acompanhe as nossas redes sociais:** fique de olho nas nossas redes sociais para receber informações exclusivas sobre as promoções. \n- **Faça seu cadastro:** se você ainda não é cliente, faça seu cadastro no site para agilizar o processo de compra no dia da promoção.",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-resposta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 05 - Resposta"
+  },
+
+
+  //ITEM 06
+  "disclosure-layout#faq-preBlack-item06": {
+    "children": ["disclosure-trigger#faq-preBlack-item06", "disclosure-content#faq-preBlack-item06"],
+    "title": "Panda | Dúvidas Frequentes - Item 06",
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-trigger#faq-preBlack-item06": {
+    "children": ["rich-text#faq-preBlack-item06-pergunta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "disclosure-content#faq-preBlack-item06": {
+    "children": ["rich-text#faq-preBlack-item06-resposta"],
+    "props": {
+      "blockClass": "faq-preBlack-item"
+    }
+  },
+  "rich-text#faq-preBlack-item06-pergunta": {
+    "props": {
+      "text": "### Onde comprar tênis infantis na Black Friday?",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-pergunta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 06 - Pergunta"
+  },
+  "rich-text#faq-preBlack-item06-resposta": {
+    "props": {
+      "text": "Na Black Friday 2024, as melhores promoções de tênis infantis estão aqui, na magicfeet! Prepare-se para a maior liquidação do ano e garanta os produtos mais estilosos e confortáveis para o seu pequeno aventureiro. Fique de olho nas nossas ofertas e faça suas compras antes que os estoques acabem!",
+      "blockClass": ["faq-preBlack-item", "faq-preBlack-item-resposta"]
+    },
+    "title": "Panda | Dúvidas Frequentes - Item 06 - Resposta"
+  }
+}

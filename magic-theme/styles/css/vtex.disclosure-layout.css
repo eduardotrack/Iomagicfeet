@@ -104,3 +104,13 @@
 .trigger--header-menu-accordion--hidden {
   margin-bottom: 0.5rem;
 }
+
+.trigger--footer-menu-mobile-trigger {
+  background-color: transparent;
+  border: none;
+  padding: 10px 0;
+
+  &:focus {
+    outline: none;
+  }
+}

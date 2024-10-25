@@ -1,0 +1,33 @@
+/* pré black friday */
+
+.trigger--faq-preBlack-item {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  width: 100%;
+
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.trigger--faq-preBlack-item--visible::after {
+  background-image: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.1665 12.4977H17.8333" stroke="%2345494F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+.trigger--faq-preBlack-item--hidden::after {
+  background-image: url('data:image/svg+xml,<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.99989 4.66427V16.331M4.1665 10.4977H15.8333" stroke="%2345494F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}

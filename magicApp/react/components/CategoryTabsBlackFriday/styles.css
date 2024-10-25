@@ -1,0 +1,119 @@
+.tabsContainer {
+  padding: 1rem;
+  width: 100%;
+}
+
+.tabBf {
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+
+  &:not(:first-child) {
+    margin-top: -2rem;
+  }
+
+  &:not(:last-child) {
+    .tabClosed {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.tabBf:last-child {
+  border-radius: 0 0 12px 12px;
+}
+
+.tabBfSpacing {
+  margin-top: 0;
+}
+
+.tabClosed {
+  background-color: #000;
+  border: none;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.tabTitle {
+  font-weight: 700;
+  font-family: 'WorkSans-Bold';
+  color: #fff;
+  font-size: 1.25rem;
+
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  padding: 1.25rem;
+
+  > p {
+    margin: 0;
+  }
+}
+
+.imgTab {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -100%;
+  left: 0;
+
+  opacity: .5;
+}
+
+.tabArrow {
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  border: 1px solid rgba(248, 249, 249, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(8px);
+}
+
+.tabOpened {
+  position: relative;
+  height: 328px;
+  padding: 2rem 1rem;
+  overflow: hidden;
+  width: 100%;
+  border: none;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15.95%, rgba(0, 0, 0, 0.7) 126.43%);
+  }
+
+  .tabTitle {
+    padding: 0;
+  }
+
+  .tabArrow {
+    display: none;
+  }
+
+  .imgTab {
+    opacity: 1;
+    top: -12%;
+  }
+}

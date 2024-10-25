@@ -29,7 +29,7 @@
         "infinite": false,
         "showNavigationArrows": "never",
         "centerMode": "to-the-left",
-        "showPaginationDots": "never",
+        "showPaginationDots": "mobileOnly",
         "blockClass": "sliderBeneficios-blackFriday"
       },
       "children": [
@@ -43,28 +43,28 @@
       "title": "Panda | Item slider beneficios - Pré Black Friday 01",
       "props": {
         "text": "**frete grátis*** \n a partir de R$ 100",
-        "blockClass": "itemBeneficios--Pre-blackFrida01"
+        "blockClass": ["itemBeneficios--Pre-blackFrida01", "itemBeneficios--Pre-blackFriday"]
       }
     },
     "rich-text#itemBeneficios--Pre-blackFrida02": {
       "title": "Panda | Item slider beneficios - Pré Black Friday 02",
       "props": {
-        "text": "**5% de desoncto no pix** \n confira as regras",
-        "blockClass": "itemBeneficios--Pre-blackFrida02"
+        "text": "**5% de desconto no pix** \n confira as regras",
+        "blockClass": ["itemBeneficios--Pre-blackFrida02", "itemBeneficios--Pre-blackFriday"]
       }
     },
     "rich-text#itemBeneficios--Pre-blackFrida03": {
       "title": "Panda | Item slider beneficios - Pré Black Friday 03",
       "props": {
         "text": "**+ de 30 lojas pelo Brasil** \n encontre a mais próxima",
-        "blockClass": "itemBeneficios--Pre-blackFrida03"
+        "blockClass": ["itemBeneficios--Pre-blackFrida03", "itemBeneficios--Pre-blackFriday"]
       }
     },
     "rich-text#itemBeneficios--Pre-blackFrida04": {
       "title": "Panda | Item slider beneficios - Pré Black Friday 03",
       "props": {
         "text": "**solicite sua troca** \n até 30 das após a compra",
-        "blockClass": "itemBeneficios--Pre-blackFrida04"
+        "blockClass": ["itemBeneficios--Pre-blackFrida04", "itemBeneficios--Pre-blackFriday"]
       }
     }
   }

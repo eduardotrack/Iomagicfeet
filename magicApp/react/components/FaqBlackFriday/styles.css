@@ -1,0 +1,322 @@
+.conteiner_faq input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.conteiner_faq .tabsFaq {
+  overflow: hidden;
+}
+.conteiner_faq .tabFaq {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  border-top: 1px solid #E3E6E8;
+}
+.conteiner_faq .tab_labelFaq {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  background: #fff 0% 0% no-repeat padding-box;
+  font-weight: bold;
+  cursor: pointer;
+  font: normal normal bold 16px/19px Lato;
+  letter-spacing: 0px;
+  color: #333;
+  align-items: center;
+  padding-left: 20px;
+  transition: all 0.5s;
+
+  h3 {
+    font-family: 'WorkSans-Bold';
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0;
+    color: #0B0C0C;
+    padding: 32px 0;
+  }
+}
+@media (max-width: 660px) {
+  .conteiner_faq .tab_labelFaq {
+    font: normal normal bold 13px/19px Lato;
+  }
+}
+.conteiner_faq .tab_labelFaq:hover {
+  opacity: 0.8;
+}
+.conteiner_faq .control_close {
+  background: #fff 0% 0% no-repeat padding-box;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.conteiner_faq .control_close::after {
+  content: ' ';
+  text-align: center;
+  transition: all 0.35s;
+  line-height: 40px;
+  font-size: 26px;
+  font-weight: 400;
+  display: inline-block;
+  background-image: url('data:image/svg+xml,<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.99989 4.66427V16.331M4.1665 10.4977H15.8333" stroke="%2345494F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-size: 20px;
+  background-position: center center;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+.conteiner_faq .tab_contentFaq {
+  max-height: 0;
+  color: #61656B;
+  background: white;
+  transition: all 0.35s;
+  word-break: break-word;
+
+  p {
+    margin: 0;
+  }
+}
+.conteiner_faq .tab_contentFaq a {
+  color: #000;
+  text-decoration: underline;
+}
+.conteiner_faq .tab_close {
+  display: none;
+}
+.conteiner_faq .contet-text-center {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.conteiner_faq .contet-text-center h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 30px;
+  margin-bottom: 30px;
+}
+.conteiner_faq .contet-text-center p {
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.conteiner_faq .tab_close:hover {
+  background: transparent;
+}
+.conteiner_faq input:checked + .tab_labelFaq {
+  background: #fff;
+}
+.conteiner_faq input:checked + .tab_labelFaq .control_close::after {
+  background-image: url('data:image/svg+xml,<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.1665 10.4977H15.8333" stroke="%2345494F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+.conteiner_faq input:checked ~ .tab_contentFaq {
+  max-height: 100vh;
+  padding: 0 0 1em 2em;
+}
+
+.seo_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.seo_header h2 {
+  font: normal normal 300 24px/29px Lato;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.seo_header .voltar {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  padding: 6px 14px;
+  font: normal normal bold 10px/15px Lato;
+  letter-spacing: 0px;
+  color: #333333;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+/* Pagina blackky friday */
+
+.seo_headerBlackFriday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.seo_headerBlackFriday h2 {
+  font: normal normal 300 24px/29px Lato;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.seo_headerBlackFriday .voltar {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  padding: 6px 14px;
+  font: normal normal bold 10px/15px Lato;
+  letter-spacing: 0px;
+  color: #333333;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.conteiner_faqBlackFriday {
+  background-color: #212121;
+}
+
+.conteiner_faqBlackFriday .tabsFaq {
+  overflow: hidden;
+}
+
+.conteiner_faqBlackFriday .tabFaq {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  padding: 32px 0;
+  border-top: 1px solid #E3E6E8;
+}
+
+.conteiner_faqBlackFriday .tabFaq input {
+  display: none;
+}
+
+.conteiner_faqBlackFriday .tab_labelFaq {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  background: #212121 0% 0% no-repeat padding-box;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font: normal normal bold 16px/19px Lato;
+  letter-spacing: 0px;
+  color: #fff;
+  align-items: center;
+  padding-left: 20px;
+  transition: all 0.5s;
+}
+@media (max-width: 660px) {
+  .conteiner_faqBlackFriday .tab_labelFaq {
+    font: normal normal bold 13px/19px Lato;
+  }
+}
+.conteiner_faqBlackFriday .tab_labelFaq:hover {
+  opacity: 0.8;
+}
+.conteiner_faqBlackFriday .control_close {
+  background: #fff 0% 0% no-repeat padding-box;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+.conteiner_faqBlackFriday .control_close::after {
+  content: ' ';
+  text-align: center;
+  transition: all 0.35s;
+  line-height: 40px;
+  font-size: 26px;
+  font-weight: 400;
+  display: inline-block;
+  background-image: url('data:image/svg+xml,<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.99989 4.66427V16.331M4.1665 10.4977H15.8333" stroke="%2345494F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-size: 15px;
+  background-position: center center;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  transform: rotate(270deg);
+}
+.conteiner_faqBlackFriday .tab_contentFaq {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+  word-break: break-word;
+}
+.conteiner_faqBlackFriday .tab_contentFaq a {
+  color: #000;
+  text-decoration: underline;
+}
+.conteiner_faqBlackFriday .tab_close {
+  display: none;
+}
+.conteiner_faqBlackFriday .contet-text-center {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.conteiner_faqBlackFriday .contet-text-center h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 30px;
+  margin-bottom: 30px;
+}
+.conteiner_faqBlackFriday .contet-text-center p {
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.conteiner_faqBlackFriday .tab_close:hover {
+  background: transparent;
+}
+.conteiner_faqBlackFriday input:checked + .tab_labelFaq {
+  background: #212121;
+}
+.conteiner_faqBlackFriday input:checked + .tab_labelFaq .control_close::after {
+  transform: rotate(0deg);
+}
+.conteiner_faqBlackFriday input:checked ~ .tab_contentFaq {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+/* Pagina Evento */
+
+.conteiner_faqEvento .tab_labelFaq {
+  background-color: #001943;
+  color: #fff;
+  border-radius: 10px 30px 30px 10px;
+}
+
+.conteiner_faqEvento
+  input:checked
+  + .tab_labelFaq {
+  background-color: #001943;
+}
+
+.conteiner_faqEvento .control_close{
+  border-radius: 0px 10px 10px 0px;
+}

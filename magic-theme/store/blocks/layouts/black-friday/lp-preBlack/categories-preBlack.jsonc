@@ -1,0 +1,112 @@
+{
+  "experimental__visibility-layout#categories-preBlack": {
+    "title": "Panda | Cards de Categoria - Pré Black Friday",
+    "children": [
+      "responsive-layout.desktop#categories-preBlack",
+      "responsive-layout.mobile#categories-preBlack"
+    ],
+    "props": {
+      "visible": true,
+      "blockClass": "categories-blackFriday"
+    }
+  },
+
+  "responsive-layout.desktop#categories-preBlack": {
+    "children": [
+      "flex-layout.row#categories-preBlack-desk"
+    ]
+  },
+
+  "responsive-layout.mobile#categories-preBlack": {
+    "children": [
+      "pd-tabsBlackFriday"
+    ]
+  },
+
+  "flex-layout.row#categories-preBlack-desk": {
+    "title": "Panda | Cards de Categoria - Desktop - Pré Black Friday",
+    "props": {
+      "blockClass": "categories-preBlack-desk",
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.col#cards-col1",
+      "flex-layout.col#cards-col2"
+    ]
+  },
+
+  "flex-layout.col#cards-col1": {
+    "title": "Panda | Coluna de Cards - 01",
+    "props": {
+      "blockClass": "categories-preBlack"
+    },
+    "children": [
+      "info-card#categories-preBlack-card01",
+      "info-card#categories-preBlack-card02"
+    ]
+  },
+
+  "flex-layout.col#cards-col2": {
+
+    "title": "Panda | Coluna de Cards - 02",
+    "props": {
+      "blockClass": "categories-preBlack"
+    },
+    "children": [
+      "info-card#categories-preBlack-card03",
+      "info-card#categories-preBlack-card04"
+    ]
+  },
+
+  "info-card#categories-preBlack-card01": {
+    "props": {
+      "title": "Panda | Card 01 - Col 01",
+      "imageUrl": "assets/img/black-friday/camisetas-prebf.png",
+      "blockClass": ["categories-preBlack-card", "categories-preBlack-card--higher"],
+      "textPosition": "left",
+      "callToActionText": "Camisetas",
+      "textMode": "rich-text",
+      "callToActionUrl": "/novidades?PS=24&O=OrderByReleaseDateDESC",
+      "isFullModeStyle": true
+    }
+  },
+
+  "info-card#categories-preBlack-card02": {
+    "props": {
+      "title": "Panda | Card 02 - Col 01",
+      "imageUrl": "assets/img/black-friday/tenis-prebf.jpg",
+      "blockClass": "categories-preBlack-card",
+      "textPosition": "left",
+      "callToActionText": "Tênis",
+      "textMode": "rich-text",
+      "callToActionUrl": "/novidades?PS=24&O=OrderByReleaseDateDESC",
+      "isFullModeStyle": true
+    }
+  },
+
+  "info-card#categories-preBlack-card03": {
+    "props": {
+      "title": "Panda | Card 01 - Col 02",
+      "imageUrl": "assets/img/black-friday/jaquetas-prebf.jpg",
+      "blockClass": "categories-preBlack-card",
+      "textPosition": "left",
+      "callToActionText": "Jaquetas",
+      "textMode": "rich-text",
+      "callToActionUrl": "/novidades?PS=24&O=OrderByReleaseDateDESC",
+      "isFullModeStyle": true
+    }
+  },
+
+  "info-card#categories-preBlack-card04": {
+    "props": {
+      "title": "Panda | Card 02 - Col 02",
+      "imageUrl": "assets/img/black-friday/jeans-prebf.png",
+      "blockClass": ["categories-preBlack-card", "categories-preBlack-card--higher"],
+      "textPosition": "left",
+      "callToActionText": "Jeans",
+      "textMode": "rich-text",
+      "callToActionUrl": "/novidades?PS=24&O=OrderByReleaseDateDESC",
+      "isFullModeStyle": true
+    }
+  }
+}

@@ -72,6 +72,17 @@
     },
     "pd-familiesMenu": {
       "component": "familiesMenu"
+    },
+    "pd-formBlackFriday": {
+      "component": "FormBlackFriday"
+    },
+    "pd-tabsBlackFriday": {
+      "component": "CategoryTabsBlackFriday"
+    },
+    "pd-faqBlackFriday": {
+      "component": "FaqBlackFriday"
+    },
+    "pd-categoryTitle": {
+      "component": "CategoryTitle"
     }
-
 }

@@ -1,7 +1,23 @@
 @font-face {
+    font-family: 'WorkSans-ExtraBold';
+    src: url('assets/fonts/WorkSans-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'WorkSans-Bold';
     src: url('assets/fonts/WorkSans-Bold.ttf');
     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WorkSans-Medium';
+    src: url('assets/fonts/WorkSans-Medium.ttf');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -34,6 +50,14 @@
     font-family: 'RobotoCondensed-Bold';
     src: url('assets/fonts/RobotoCondensed-Bold.ttf');
     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('assets/fonts/Nunito-Regular.ttf');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }

@@ -17,7 +17,10 @@
     "children": [
       "experimental__visibility-layout#blackFriday--banner",
       "experimental__visibility-layout#sliderBeneficios-Pre-blackFriday",
-      "experimental__visibility-layout#text-Pre-blackFriday"
+      "experimental__visibility-layout#text-Pre-blackFriday",
+      "experimental__visibility-layout#categories-preBlack",
+      "experimental__visibility-layout#newsletter-preBlack",
+      "experimental__visibility-layout#faq-preBlack"
     ],
     "props": {
       "blockClass": "blackFriday",

@@ -1,0 +1,159 @@
+.formSuccess, .formError {
+  color: #fff;
+  text-align: center;
+  margin: 100px 0;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.inputsTop {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-bottom: 60px;
+}
+
+.inputItem {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  width: 100%;
+  max-width: 400px;
+  min-height: 56.484px; /*tamanho com a mensagem de erro*/
+}
+
+.formInput {
+  background-color: transparent;
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+
+  font-size: 18px;
+  font-family: 'Nunito-Regular', sans-serif;
+  color: #fff;
+}
+
+.errorInput {
+  border-color: #9e1b1b;
+}
+
+.errorMsg {
+  color: #9e1b1b;
+  font-family: 'Nunito-Regular', sans-serif;
+  font-size: .75rem;
+  margin: 0;
+}
+
+.checkboxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+
+  margin-bottom: 3.125rem;
+
+  > p {
+    margin: 0;
+    color: #fff;
+    font-family: 'Nunito-Regular', sans-serif;
+    font-size: 1.125rem;
+  }
+}
+
+.checkboxOptions {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+
+  font-family: 'Nunito-Regular', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+
+  > input {
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #FF0000;
+  }
+}
+
+.checkboxBottom {
+  min-height: 37.7px; /* altura com mensagem de erro */
+}
+
+.checkboxBottom label {
+  display: flex;
+  align-items: center;
+  gap: .625rem;
+
+  font-family: 'Nunito-Regular', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+
+  margin-bottom: .25rem;
+  > input {
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #FF0000;
+  }
+}
+
+.formBtn {
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+
+  width: 100%;
+  max-width: 300px;
+  padding: .9rem;
+  margin-top: 3.5rem;
+
+  font-family: 'Nunito-Regular', sans-serif;
+  font-size: 1.125rem;
+  color: #0B0C0C;
+
+  cursor: pointer;
+}
+
+[class="flex-none flex-ns mt0 mb0 pt0 pb0    justify-start vtex-flex-layout-0-x-flexRowContent vtex-flex-layout-0-x-flexRowContent--newsletter-wrapper items-stretch w-100"],
+[class="vtex-flex-layout-0-x-flexRow vtex-flex-layout-0-x-flexRow--newsletter-wrapper"] {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .formContainer {
+    margin-top: 1.25rem;
+  }
+
+  .inputsTop {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .checkboxContainer {
+    margin-bottom: 1.25rem;
+  }
+
+  .formBtn {
+    margin-top: 1.25rem;
+    padding: .625rem 2.5rem;
+    width: fit-content;
+    border-radius: 12px;
+  }
+}

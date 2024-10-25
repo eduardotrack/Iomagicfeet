@@ -4,7 +4,7 @@
 
 @media (max-width: 767px) {
   .container {
-    padding: 0px 15px;
+    padding: 0px 18px;
   }
 }
 
@@ -41,6 +41,10 @@
   .imageElement--list-brands-home {
     max-width: 60px;
     height: auto;
+  }
+
+  .imageElement--security-badges-item-mob {
+    filter: grayscale(1);
   }
 }
 
