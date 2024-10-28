@@ -1,0 +1,345 @@
+{
+  "flex-layout.col#footer-menu-mobile": {
+    "title": "Panda | Footer - Menu Mobile",
+    "props": {
+      "blockClass": "footer-menu-mobile-wrapper"
+    },
+    "children": [
+      "disclosure-layout-group#footer-menu-mobile"
+    ]
+  },
+  "disclosure-layout-group#footer-menu-mobile": {
+    "props": {
+      "maxVisible": "one"
+    },
+    "children": [
+      "disclosure-layout#footer-menu-mobile-01",
+      "disclosure-layout#footer-menu-mobile-02",
+      "disclosure-layout#footer-menu-mobile-03",
+      "disclosure-layout#footer-menu-mobile-04"
+    ]
+  },
+
+  "disclosure-layout#footer-menu-mobile-01": {
+    "title": "Panda | Footer - Accordion 01",
+    "children": [
+      "disclosure-trigger#footer-menu-mobile-01",
+      "disclosure-content#footer-menu-mobile-01"
+    ]
+
+  },
+  "disclosure-trigger#footer-menu-mobile-01": {
+    "title": "Panda | Accordion 01 - Título",
+    "props": {
+      "blockClass": "footer-menu-mobile-trigger"
+    },
+    "children": ["rich-text#footer-menu-mobile-01"]
+  },
+  "rich-text#footer-menu-mobile-01": {
+    "title": "Panda | Título",
+    "props": {
+      "blockClass": "footer-menu-mobile-title",
+      "text": "produtos"
+    }
+  },
+  "disclosure-content#footer-menu-mobile-01": {
+    "title": "Panda | Accordion 01 - Conteúdo",
+    "children": ["vtex.menu@2.x:menu#footer-menu-mobile-01"]
+  },
+  "vtex.menu@2.x:menu#footer-menu-mobile-01": {
+    "title": "Panda | Footer - Menu 01 - Mobile",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "footer-menu-mobile-institucional"
+      ], 
+      "items": [
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/lancamentos",
+            "tagTitle": "novidades",
+            "text": "novidades"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/calcados-infantis/tenis-infantil?map=category-1,category-1",
+            "tagTitle": "tênis e calçados",
+            "text": "tênis e calçados"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/acessorios-infantil/roupas-infantis?map=category-1,category-1",
+            "tagTitle": "roupas e acessórios",
+            "text": "roupas e acessórios"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/marcas",
+            "tagTitle": "marcas",
+            "text": "marcas"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/ocasioes",
+            "tagTitle": "ocasiões",
+            "text": "ocasiões"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/promocao",
+            "tagTitle": "outlet",
+            "text": "outlet"
+          }
+        }
+      ]
+    }
+  },
+
+
+  "disclosure-layout#footer-menu-mobile-02": {
+    "title": "Panda | Footer - Accordion 02",
+    "children": [
+      "disclosure-trigger#footer-menu-mobile-02",
+      "disclosure-content#footer-menu-mobile-02"
+    ]
+
+  },
+  "disclosure-trigger#footer-menu-mobile-02": {
+    "title": "Panda | Accordion 02 - Título",
+    "props": {
+      "blockClass": "footer-menu-mobile-trigger"
+    },
+    "children": ["rich-text#footer-menu-mobile-02"]
+  },
+  "rich-text#footer-menu-mobile-02": {
+    "title": "Panda | Título",
+    "props": {
+      "blockClass": "footer-menu-mobile-title",
+      "text": "institucional"
+    }
+  },
+  "disclosure-content#footer-menu-mobile-02": {
+    "title": "Panda | Accordion 02 - Conteúdo",
+    "children": ["vtex.menu@2.x:menu#footer-menu-mobile-02"]
+  },
+  "vtex.menu@2.x:menu#footer-menu-mobile-02": {
+    "title": "Panda | Footer - Menu 02 - Mobile",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "footer-menu-mobile-institucional"
+      ], 
+      "items": [
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/quem-somos",
+            "tagTitle": "quem somos",
+            "text": "quem somos"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/seja-um-franqueado",
+            "tagTitle": "seja um franqueado",
+            "text": "seja um franqueado"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/nossas-lojas",
+            "tagTitle": "nossas lojas",
+            "text": "nossas lojas"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/termos-de-uso",
+            "tagTitle": "termos de uso",
+            "text": "termos de uso"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/politica-de-privacidade",
+            "tagTitle": "política de privacidade",
+            "text": "política de privacidade"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/regulamentocrm",
+            "tagTitle": "regulamento CRM/Cashback",
+            "text": "regulamento CRM/Cashback"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/cashback",
+            "tagTitle": "regras cashback",
+            "text": "regras cashback"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "external",
+            "href": "https://magicfeet.gupy.io/",
+            "tagTitle": "trabalhe conosco",
+            "text": "trabalhe conosco"
+          }
+        }
+      ]
+    }
+  },
+
+
+  "disclosure-layout#footer-menu-mobile-03": {
+    "title": "Panda | Footer - Accordion 03",
+    "children": [
+      "disclosure-trigger#footer-menu-mobile-03",
+      "disclosure-content#footer-menu-mobile-03"
+    ]
+
+  },
+  "disclosure-trigger#footer-menu-mobile-03": {
+    "title": "Panda | Accordion 03 - Título",
+    "props": {
+      "blockClass": "footer-menu-mobile-trigger"
+    },
+    "children": ["rich-text#footer-menu-mobile-03"]
+  },
+  "rich-text#footer-menu-mobile-03": {
+    "title": "Panda | Título",
+    "props": {
+      "blockClass": "footer-menu-mobile-title",
+      "text": "ajuda"
+    }
+  },
+  "disclosure-content#footer-menu-mobile-03": {
+    "title": "Panda | Accordion 03 - Conteúdo",
+    "children": ["vtex.menu@2.x:menu#footer-menu-mobile-03"]
+  },
+  "vtex.menu@2.x:menu#footer-menu-mobile-03": {
+    "title": "Panda | Footer - Menu 03 - Mobile",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": [
+        "footer-menu-mobile-institucional"
+      ], 
+      "items": [
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/central-de-relacionamento",
+            "tagTitle": "central de atendimento",
+            "text": "central de atendimento"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/tipos-de-entrega",
+            "tagTitle": "tipos de entrega",
+            "text": "tipos de entrega"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/formulario-de-direito",
+            "tagTitle": "solicite seus dados",
+            "text": "solicite seus dados"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/formas-de-pagamento",
+            "tagTitle": "formas de pagamento",
+            "text": "formas de pagamento"
+          }
+        },
+        {
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/institucional/trocas-e-devolucoes",
+            "tagTitle": "solicite sua troca/devolução",
+            "text": "solicite sua troca/devolução"
+          }
+        }
+      ]
+    }
+  },
+
+
+
+  "disclosure-layout#footer-menu-mobile-04": {
+    "title": "Panda | Footer - Accordion 04",
+    "children": [
+      "disclosure-trigger#footer-menu-mobile-04",
+      "disclosure-content#footer-menu-mobile-04"
+    ]
+
+  },
+  "disclosure-trigger#footer-menu-mobile-04": {
+    "title": "Panda | Accordion 04 - Título",
+    "props": {
+      "blockClass": "footer-menu-mobile-trigger"
+    },
+    "children": ["rich-text#footer-menu-mobile-04"]
+  },
+  "rich-text#footer-menu-mobile-04": {
+    "title": "Panda | Título",
+    "props": {
+      "blockClass": "footer-menu-mobile-title",
+      "text": "fique ligado"
+    }
+  },
+  "disclosure-content#footer-menu-mobile-04": {
+    "title": "Panda | Accordion 04 - Conteúdo",
+    "children": ["flex-layout.row#social-networks-wrapper"]
+  }
+}

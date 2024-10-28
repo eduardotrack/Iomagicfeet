@@ -1,0 +1,52 @@
+{
+  "flex-layout.col#security-badges-mobile": {
+    "title": "Panda | Selos de segurança",
+    "children": [
+      "rich-text#security-badges-title1",
+      "flex-layout.row#security-badges-images" 
+    ],
+    "props": {
+      "blockClass": "security-badges-mobile"
+    }
+  },
+  "rich-text#security-badges-title1": {
+    "title": "Panda | Selos de segurança - Título",
+    "props": {
+      "text": "compra 100% segura",
+      "blockClass": "security-badges-title-mob"
+    }
+  },
+  "flex-layout.row#security-badges-images": {
+    "title": "Panda | Selos de segurança - Imagens",
+    "props": {
+      "blockClass": "security-badges-images-mob",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#security-badges-item01",
+      "image#security-badges-item02",
+      "image#security-badges-item03"
+    ]
+  },
+  "image#security-badges-item01": {
+    "title": "Panda | Selo de segurança 01",
+    "props": {
+      "src": "assets/img/footer/sec-badge-1.png",
+      "blockClass": "security-badges-item-mob"
+    }
+  },
+  "image#security-badges-item02": {
+    "title": "Panda | Selo de segurança 02",
+    "props": {
+      "src": "assets/img/footer/sec-badge-2.png",
+      "blockClass": "security-badges-item-mob"
+    }
+  },
+  "image#security-badges-item03": {
+    "title": "Panda | Selo de segurança 03",
+    "props": {
+      "src": "assets/img/footer/sec-badge-3.png",
+      "blockClass": "security-badges-item-mob"
+    }
+  }
+}

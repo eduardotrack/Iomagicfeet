@@ -1,0 +1,70 @@
+{
+  "flex-layout.col#payment-flags-mobile-01": {
+    "title": "Panda | Footer - Selos - Pagamento (mobile)",
+    "children": [
+      "rich-text#footer-payment-title",
+      "flex-layout.row#payment-methods-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-flags-wrapper-mobile"
+    }
+  },
+  "flex-layout.row#payment-methods-mobile": {
+    "title": "Panda | Footer - Selos - Pagamento (mobile)",
+    "props": {
+      "blockClass": "payment-methods-images",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#payment-methods-mobile-01",
+      "image#payment-methods-mobile-02",
+      "image#payment-methods-mobile-03",
+      "image#payment-methods-mobile-04",
+      "image#payment-methods-mobile-05",
+      "image#payment-methods-mobile-06"
+    ]
+  },
+
+  "image#payment-methods-mobile-01": {
+    "title": "Panda | Selo Pagamento Mobile 01",
+    "props": {
+      "blockClass": "payment-methods",
+      "src": "assets/img/footer/visa-mob.png"
+    }
+  },
+  "image#payment-methods-mobile-02": {
+    "title": "Panda | Selo Pagamento Mobile 02",
+    "props": {
+      "blockClass": "payment-methods",
+      "src": "assets/img/footer/master-mob.png"
+    }
+  },
+  "image#payment-methods-mobile-03": {
+    "title": "Panda | Selo Pagamento Mobile 03",
+    "props": {
+      "blockClass": "payment-methods",
+      "src": "assets/img/footer/amex-mob.png"
+    }
+  },
+  "image#payment-methods-mobile-04": {
+    "title": "Panda | Selo Pagamento Mobile 04",
+    "props": {
+      "blockClass": "payment-methods",
+      "src": "assets/img/footer/diners-mob.png"
+    }
+  },
+  "image#payment-methods-mobile-05": {
+    "title": "Panda | Selo Pagamento Mobile 05",
+    "props": {
+      "blockClass": "payment-methods",
+      "src": "assets/img/footer/elo-mob.png"
+    }
+  },
+  "image#payment-methods-mobile-06": {
+    "title": "Panda | Selo Pagamento Mobile 06",
+    "props": {
+      "blockClass": "payment-methods",
+      "src": "assets/img/footer/hipercard-mob.png"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+    "flex-layout.row#footer-2-mobile": {
+      "title": "Panda | Footer - Menu - Mobile",
+      "children": [
+        "flex-layout.col#logo-mobile-footer",
+        "flex-layout.col#footer-menu-mobile",
+        "flex-layout.col#payment-flags-mobile-01",
+        "flex-layout.col#security-badges-mobile"
+      ],
+      "props": {
+        "blockClass": "footer__menu_mobile",
+        "paddingTop": 6,
+        "paddingBottom": 3
+      }
+    },
+
+    "flex-layout.col#logo-mobile-footer": {
+      "title": "Panda | Header - Logo",
+      "props": {
+        "verticalAlign": "middle",
+        "width": "20%"
+      },
+      "children": ["logo#logo-mobile-footer"]
+    },
+
+    "logo#logo-mobile-footer": {
+      "props": {
+        "title": "Logo da Panda Store",
+        "href": "/",
+        "url": "assets/img/footer-mobile-logo.png",
+        "width": "175",
+        "blockClass": "footer__logo"
+      }
+    },
+
+    "flex-layout.row#footer-3-mobile": {
+      "title": "Panda | Footer - Selos",
+      "children": ["flex-layout.col#seo-footer-flags"],
+      "props": {
+        "blockClass": "footer_methods"
+      }
+    }
+  }
+  

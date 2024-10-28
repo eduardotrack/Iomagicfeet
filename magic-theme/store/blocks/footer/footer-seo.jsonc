@@ -3,8 +3,8 @@
     "title": "Panda | Footer - SEO Footer",
     "children": [
       "rich-text#seo-footer-flags-title",
-      "list-context.media-list#seo-footer-logo-list",
-      "rich-text#seo-footer-flags-text"
+      "list-context.media-list#seo-footer-logo-list1",
+      "rich-text#seo-footer-flags-text1"
     ],
     "props": {
       "blockClass": "seo-footer-wrapper",
@@ -28,28 +28,28 @@
     }
   },
 
-  "rich-text#seo-footer-flags-text": {
+  "rich-text#seo-footer-flags-text1": {
     "title": "Panda | Footer - Texto SEO Footer",
     "props": {
-      "text": "__GRUPO AFEET__ \n **©️ Copyright 2020 Afeet Franquias Ltda. TODOS OS DIREITOS RESERVADOS.** \n Rua do Curtume, 499 - Andar 02 \n Lapa de Baixo - SP. CEP: 05065-001 \n CNPJ: 00.267.685/0027-76 relacionamento@magicfeet.com.br",
+      "text": "**grupo afeet** \n **©️ Copyright 2020 Afeet Franquias Ltda.\nTODOS OS DIREITOS RESERVADOS.** \n Rua do Curtume, 499 - Andar 02 \n Lapa de Baixo - SP. CEP: 05065-001 \n CNPJ: 00.267.685/0027-76 relacionamento@magicfeet.com.br",
       "blockClass": "seo-footer-flags-text"
     }
   },
 
-  "list-context.media-list#seo-footer-logo-list": {
+  "list-context.media-list#seo-footer-logo-list1": {
     "title": "Panda | Footer - Bandeiras SEO Footer",
     "children": ["list-context-renderer#seo-footer-logo-list"],
     "props": {
       "blockClass": "list-brands-home",
       "mediaList": [
         {
-          "image": "assets/img/logo-footer-1.png",
-          "mobileImage": "assets/img/logo-footer-1.png"
+          "image": "assets/img/logo-footer-2.png",
+          "mobileImage": "assets/img/footer/aw-preto.png"
         },
 
         {
-          "image": "assets/img/logo-footer-2.png",
-          "mobileImage": "assets/img/logo-footer-2.png"
+          "image": "assets/img/logo-footer-1.png",
+          "mobileImage": "assets/img/footer/afeet-preto.png"
         }
       ]
     }

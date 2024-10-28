@@ -11,14 +11,6 @@
     }
   },
 
-  "flex-layout.row#footer-3-mobile": {
-    "title": "Panda | Footer - Selos",
-    "children": ["flex-layout.col#seo-footer-flags"],
-    "props": {
-      "blockClass": "footer_methods"
-    }
-  },
-
   "rich-text#footer-payment-title": {
     "title": "Panda | Footer - Selos - Pagamento - Título",
     "props": {
@@ -307,7 +299,11 @@
   // POWERED BY AND DEVELOPED BY SECTION
   "flex-layout.row#footer-developed-powered": {
     "title": "Panda |  Developed/Powered",
-    "children": ["flex-layout.col#footer-powered", "flex-layout.col#footer-developed"],
+    "children": [
+      "flex-layout.col#footer-powered",
+      "flex-layout.col#footer-design",
+      "flex-layout.col#footer-developed"
+    ],
     "props": {
       "blockClass": "home__footer--developed-powered-wrapper",
       "colGap": 6,
@@ -342,6 +338,12 @@
       "blockClass": "home__footer--powered"
     }
   },
+  "flex-layout.col#footer-design": {
+    "children": ["rich-text#footer-design", "image#design"],
+    "props": {
+      "blockClass": "home__footer--powered"
+    }
+  },
   "rich-text#footer-developed": {
     "props": {
       "text": "###### Developed by",
@@ -353,9 +355,9 @@
     "props": {
       "src": "assets/img/footer-01.png",
       "link": {
-        "url": "https://wwww.vtex.com",
+        "url": "https://pandanjo.com/",
         "openNewTab": true,
-        "title": "vtex"
+        "title": "pandanjo"
       },
 
       "blockClass": "home__footer-developed--image"
@@ -370,11 +372,29 @@
   },
   "image#powered": {
     "props": {
-      "src": "assets/img/footer-02.png",
+      "src": "assets/img/footer/vtex-logo.png",
       "link": {
         "url": "https://www.vtex.com",
         "openNewTab": true,
         "title": "VTEX"
+      },
+      "blockClass": "home__footer-powered--image"
+    }
+  },
+
+  "rich-text#footer-design": {
+    "props": {
+      "text": "###### Design by",
+      "blockClass": ["footer__developed-powered--title", "footer_methods--title"]
+    }
+  },
+  "image#design": {
+    "props": {
+      "src": "assets/img/footer-02.png",
+      "link": {
+        "url": "https://www.vtex.com",
+        "openNewTab": true,
+        "title": "Colletivo"
       },
       "blockClass": "home__footer-powered--image"
     }
