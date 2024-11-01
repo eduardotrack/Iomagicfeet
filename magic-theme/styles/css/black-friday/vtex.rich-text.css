@@ -3,6 +3,12 @@
 .paragraph--itemBeneficios--blackFrida01 {
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 0px;
 }
 
 .paragraph--itemBeneficios--blackFrida01::before {
@@ -12,8 +18,8 @@
   background-position: center center;
   background-size: cover;
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 26px;
   margin-right: 8px;
   display: flex;
   align-items: center;
@@ -26,8 +32,8 @@
   background-position: center center;
   background-size: cover;
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
   margin-right: 8px;
   display: flex;
   align-items: center;
@@ -40,8 +46,8 @@
   background-position: center center;
   background-size: cover;
   display: block;
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
   margin-right: 8px;
   display: flex;
   align-items: center;
@@ -49,19 +55,12 @@
 
 .link--itemBeneficios--blackFrida01 {
   text-decoration: none;
-  color: #3f3f40;
+  color: #000;
   cursor: pointer;
+  font-size: 15px;
 }
 
 @media (max-width: 767px) {
-  .paragraph--itemBeneficios--blackFrida03,
-  .paragraph--itemBeneficios--blackFrida02,
-  .paragraph--itemBeneficios--blackFrida01 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
 }
 
 /* Pré Black Firday */
@@ -73,7 +72,7 @@
   line-height: 84px;
   text-align: center;
   margin: 0;
-  font-family: 'WorkSans-Medium', sans-serif;
+  font-family: "WorkSans-Medium", sans-serif;
 
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -82,7 +81,7 @@
 
 .strong--blackFriday--banner {
   font-weight: 800;
-  font-family: 'WorkSans-ExtraBold';
+  font-family: "WorkSans-ExtraBold";
 }
 
 .wrapper--itemBeneficios--Pre-blackFrida01,
@@ -213,8 +212,8 @@
 .headingLevel2--faq--Pre-blackFriday {
   font-size: 2.75rem;
   font-weight: 800;
-  font-family: 'WorkSans-ExtraBold';
-  color: #171A1C;
+  font-family: "WorkSans-ExtraBold";
+  color: #171a1c;
   margin: 0 0 5rem;
 }
 
@@ -222,33 +221,33 @@
   margin: 0;
   font-weight: 700;
   font-size: 1.25rem;
-  color: #0B0C0C;
-  font-family: 'WorkSans-Bold';
+  color: #0b0c0c;
+  font-family: "WorkSans-Bold";
 }
 
 .paragraph--faq-preBlack-item-resposta {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   font-size: 1rem;
   margin: 0;
-  color: #61656B;
+  color: #61656b;
 }
 
 .headingLevel2--newsletter--Pre-blackFriday-title {
   font-size: 2.75rem;
   color: #fff;
   font-weight: 800;
-  font-family: 'WorkSans-ExtraBold';
+  font-family: "WorkSans-ExtraBold";
   margin: 0 0 10px;
 }
 
 .paragraph--newsletter--Pre-blackFriday-subtitle {
   margin: 0;
   color: #fff;
-  font-family: 'Nunito-Regular';
+  font-family: "Nunito-Regular";
 }
 
 .paragraph--itemBeneficios--Pre-blackFriday {
-  font-size:  13px;
+  font-size: 13px;
   color: #9c9c9c;
   font-weight: 500;
   margin-bottom: 0;
@@ -256,7 +255,15 @@
 
 .strong--itemBeneficios--Pre-blackFriday {
   font-weight: 700;
-  font-family: 'WorkSans-Bold';
+  font-family: "WorkSans-Bold";
+}
+
+.paragraph--sliderMenu-blackFriday-title {
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 40px;
+  color: #000;
+  font-family: "WorkSans-Bold";
 }
 
 @media screen and (max-width: 767px) {
@@ -276,5 +283,42 @@
   .headingLevel1--blackFriday--banner {
     font-size: 48px;
     line-height: 56px;
+  }
+
+  .paragraph--sliderMenu-blackFriday-title {
+    font-size: 20px;
+    padding-left: 5px;
+  }
+
+  .paragraph--itemBeneficios--blackFrida02::before {
+    content: "";
+    background-image: url(/arquivos/cartao-debito-black.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
+
+  .paragraph--itemBeneficios--blackFrida03,
+  .paragraph--itemBeneficios--blackFrida02,
+  .paragraph--itemBeneficios--blackFrida01 {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 0px;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
   }
 }

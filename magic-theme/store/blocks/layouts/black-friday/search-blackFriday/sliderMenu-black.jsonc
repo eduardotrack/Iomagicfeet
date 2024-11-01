@@ -1,6 +1,6 @@
 {
   "experimental__visibility-layout#sliderMenu-blackFriday": {
-    "title": "Panda | Controle Slider menu Black Friday",
+    "title": "Panda | Controle de visibilidade - Slider menu Black Friday",
     "children": ["flex-layout.row#sliderMenu-blackFriday"],
     "props": {
       "visible": true,
@@ -10,34 +10,53 @@
 
   "flex-layout.row#sliderMenu-blackFriday": {
     "title": "Panda | Slider menu Black Friday",
-    "children": ["slider-layout#sliderMenu-blackFriday"],
+    "children": [
+      "rich-text#sliderMenu-blackFriday-title",
+      "slider-layout#sliderMenu-blackFriday"
+    ],
     "props": {
       "blockClass": "sliderMenu-blackFriday",
       "fullWidth": true
     }
   },
 
+  "rich-text#sliderMenu-blackFriday-title": {
+    "title": "Panda | Texto slider menu Black Friday",
+    "props": {
+      "text": "black friday",
+      "blockClass": "sliderMenu-blackFriday-title"
+    }
+  },
+
   "slider-layout#sliderMenu-blackFriday": {
-    "title": "Panda | Items slider menu Black Friday",
+    "title": "Panda | Itens slider menu Black Friday",
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 2,
+        "desktop": 6,
+        "tablet": 4,
         "phone": 2
       },
-      "infinite": true,
+      "infinite": false,
       "showNavigationArrows": "never",
-      "showPaginationDots": "mobileOnly",
+      "showPaginationDots": "never",
+      "centerModeSlidesGap": 10,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
       "blockClass": "sliderMenu-blackFriday"
     },
     "children": [
       "link#itemMenu--blackFrida01",
       "link#itemMenu--blackFrida02",
       "link#itemMenu--blackFrida03",
-      "link#itemMenu--blackFrida04"
+      "link#itemMenu--blackFrida04",
+      "link#itemMenu--blackFrida05",
+      "link#itemMenu--blackFrida06"
     ]
   },
-  
+
   "link#itemMenu--blackFrida01": {
     "title": "Panda | Item slider menu Black Friday 01",
     "props": {
@@ -50,7 +69,7 @@
     "title": "Panda | Item slider menu Black Friday 02",
     "props": {
       "href": "/busca-generica-black?initialMap=productClusterIds&initialQuery=317&map=category-1,productclusternames&query=/roupas-infantis/black-friday-2023&searchState",
-      "label": "Roupas",
+      "label": "chuteiras",
       "blockClass": "itemMenu--blackFriday"
     }
   },
@@ -58,7 +77,7 @@
     "title": "Panda | Item slider menu Black Friday 03",
     "props": {
       "href": "/busca-generica-black?initialMap=productClusterIds&initialQuery=317&map=category-1,productclusternames&query=/acessorios-infantis/black-friday-2023&searchState",
-      "label": "Acessórios",
+      "label": "chinelos",
       "blockClass": "itemMenu--blackFriday"
     }
   },
@@ -66,7 +85,23 @@
     "title": "Panda | Item slider menu Black Friday 04",
     "props": {
       "href": "/busca-generica-black?initialMap=productClusterIds&initialQuery=317&map=category-1,productclusternames&query=/calcados-infantis/black-friday-2023&searchState",
-      "label": "Calçados",
+      "label": "sandálias",
+      "blockClass": "itemMenu--blackFriday"
+    }
+  },
+  "link#itemMenu--blackFrida05": {
+    "title": "Panda | Item slider menu Black Friday 05",
+    "props": {
+      "href": "/busca-generica-black?initialMap=productClusterIds&initialQuery=317&map=category-1,productclusternames&query=/calcados-infantis/black-friday-2023&searchState",
+      "label": "roupas",
+      "blockClass": "itemMenu--blackFriday"
+    }
+  },
+  "link#itemMenu--blackFrida06": {
+    "title": "Panda | Item slider menu Black Friday 06",
+    "props": {
+      "href": "/busca-generica-black?initialMap=productClusterIds&initialQuery=317&map=category-1,productclusternames&query=/calcados-infantis/black-friday-2023&searchState",
+      "label": "acessórios",
       "blockClass": "itemMenu--blackFriday"
     }
   }

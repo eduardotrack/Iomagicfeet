@@ -5,9 +5,6 @@
   "store.custom#crmbonus": {
     "path": "/crmbonus"
   },
-  "store.custom#busca-generica-black": {
-    "path": "/busca-generica-black"
-  },
   "store.custom#aplicativo-mvp": {
     "path": "/aplicativo-mvp"
   }

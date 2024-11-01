@@ -1,0 +1,128 @@
+{
+  "experimental__visibility-layout#sliderBeneficios-blackFriday": {
+    "title": "Panda | Controle de visibilidade - Slider beneficios Black Friday",
+    "children": ["flex-layout.row#sliderBeneficios-blackFriday"],
+    "props": {
+      "visible": true,
+      "blockClass": "sliderBeneficios-blackFriday"
+    }
+  },
+
+  "flex-layout.row#sliderBeneficios-blackFriday": {
+    "title": "Panda | Slider beneficios Black Friday",
+    "children": [
+      "responsive-layout.desktop#sliderBeneficios-blackFriday",
+      "responsive-layout.phone#sliderBeneficios-blackFriday"
+    ],
+    "props": {
+      "blockClass": "sliderBeneficios-blackFriday",
+      "fullWidth": true,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "responsive-layout.desktop#sliderBeneficios-blackFriday": {
+    "children": ["slider-layout#sliderBeneficios-blackFriday"]
+  },
+
+  "responsive-layout.phone#sliderBeneficios-blackFriday": {
+    "children": ["slider-layout#sliderBeneficios-blackFriday-Mob"]
+  },
+
+  /* Desktop */
+  "slider-layout#sliderBeneficios-blackFriday": {
+    "title": "Panda | Itens slider beneficios Black Friday",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 3
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "mobileOnly",
+      "centerModeSlidesGap": 31,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
+      "blockClass": "sliderBeneficios-blackFriday"
+    },
+    "children": [
+      "rich-text#itemBeneficios--blackFrida01",
+      "rich-text#itemBeneficios--blackFrida03",
+      "rich-text#itemBeneficios--blackFrida02"
+    ]
+  },
+  "rich-text#itemBeneficios--blackFrida01": {
+    "title": "Panda | Item slider beneficios Black Friday 01",
+    "props": {
+      "text": "[frete grátis confira as regras](https://www.magicfeet.com.br/tipos-de-entrega)",
+      "blockClass": "itemBeneficios--blackFrida01"
+    }
+  },
+  "rich-text#itemBeneficios--blackFrida02": {
+    "title": "Panda | Item slider beneficios Black Friday 02",
+    "props": {
+      "text": "pagamento parcelado sem juros",
+      "blockClass": "itemBeneficios--blackFrida02"
+    }
+  },
+  "rich-text#itemBeneficios--blackFrida03": {
+    "title": "Panda | Item slider beneficios Black Friday 03",
+    "props": {
+      "text": "5% off no pix",
+      "blockClass": "itemBeneficios--blackFrida03"
+    }
+  },
+
+  /* Mobile */
+  "slider-layout#sliderBeneficios-blackFriday-Mob": {
+    "title": "Panda | Itens slider beneficios Black Friday - Mobile",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 3
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "mobileOnly",
+      "centerModeSlidesGap": 10,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
+      "blockClass": "sliderBeneficios-blackFriday"
+    },
+    "children": [
+      "rich-text#itemBeneficios--blackFrida01-Mob",
+      "rich-text#itemBeneficios--blackFrida02-Mob",
+      "rich-text#itemBeneficios--blackFrida03-Mob"
+    ]
+  },
+  "rich-text#itemBeneficios--blackFrida01-Mob": {
+    "title": "Panda | Item slider beneficios Black Friday 01 - Mobile",
+    "props": {
+      "text": "[frete grátis \nconfira as regras](https://www.magicfeet.com.br/tipos-de-entrega)",
+      "blockClass": "itemBeneficios--blackFrida01"
+    }
+  },
+  "rich-text#itemBeneficios--blackFrida02-Mob": {
+    "title": "Panda | Item slider beneficios Black Friday 02 - Mobile",
+    "props": {
+      "text": "pagamento \nparcelado \nsem juros",
+      "blockClass": "itemBeneficios--blackFrida02"
+    }
+  },
+  "rich-text#itemBeneficios--blackFrida03-Mob": {
+    "title": "Panda | Item slider beneficios Black Friday 03 - Mobile",
+    "props": {
+      "text": "5% off no pix",
+      "blockClass": "itemBeneficios--blackFrida03"
+    }
+  }
+}

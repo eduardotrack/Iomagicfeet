@@ -1,92 +1,106 @@
-.flexRow--sliderMenu-blackFriday{
-    background-color: #000;
-    height: 60px;
-
+.flexRow--sliderMenu-blackFriday {
+  width: 100%;
+  max-width: 1300px;
 }
 
-.flexRowContent--sliderMenu-blackFriday{
-    height: 60px;
-    display: flex;
-    align-items: center;
-}
-
-.flexRowContent--sliderBeneficios-blackFriday{
-    padding: 35px 0px;
+.flexRowContent--sliderBeneficios-blackFriday {
+  padding: 40px 0px;
+  max-width: 757px;
+  margin: 0 auto;
+  padding-bottom: 25px;
 }
 
 .flexRowContent--blackFriday--banner {
-    position: relative;
+  position: relative;
 }
 
-.flexRowContent--blackFriday--banner :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-    &:nth-child(2) {
-        position: absolute;
-        width: 100% !important;
-        padding: 40px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+.flexRowContent--blackFriday--banner
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  &:nth-child(2) {
+    position: absolute;
+    width: 100% !important;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .flexRow--blackFriday--banner {
-    width: 100%;
+  width: 100%;
 }
 
 /* pré black friday */
 .flexRow--sliderBeneficios-blackFriday {
-    width: 100%;
+  width: 100%;
 }
 
 .flexColChild--blackFriday {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .flexCol--faq-Pre-blackFriday {
-    width: 100%;
-    max-width: 1380px;
-    padding: 60px 20px;
+  width: 100%;
+  max-width: 1380px;
+  padding: 60px 20px;
 }
 
 .flexCol--newsletter-preBlackFriday {
-    background-color: #0B0C0C;
-    padding: 60px 20px;
-    justify-content: center;
-    align-items: center;
+  background-color: #0b0c0c;
+  padding: 60px 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .flexColChild--newsletter-preBlackFriday {
-    width: 100%;
-    max-width: 1360px;
+  width: 100%;
+  max-width: 1360px;
 }
 
 .flexRow--categories-preBlack-desk {
-    width: 100%;
-    padding: 40px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flexRowContent--categories-preBlack-desk {
-    width: 100%;
-    max-width: 1360px;
-    gap: 14.32px;
+  width: 100%;
+  max-width: 1360px;
+  gap: 14.32px;
 }
 
 .flexCol--categories-preBlack {
-    gap: 14.32px;
+  gap: 14.32px;
+}
+
+.flexRowContent--sliderMenu-blackFriday {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--sliderMenu-blackFriday .stretchChildrenWidth {
+  width: 100% !important;
 }
 
 @media screen and (max-width: 767px) {
-    .flexCol--faq-Pre-blackFriday {
-        padding: 1rem;
-    }
+  .flexCol--faq-Pre-blackFriday {
+    padding: 1rem;
+  }
 
-    .flexCol--newsletter-preBlackFriday {
-        padding: 1.875rem 1rem;
-    }
+  .flexCol--newsletter-preBlackFriday {
+    padding: 1.875rem 1rem;
+  }
+
+  .flexRowContent--blackFriday {
+    margin-bottom: 45px;
+  }
+
+  .flexRow--sliderMenu-blackFriday {
+    padding-left: 10px;
+  }
 }

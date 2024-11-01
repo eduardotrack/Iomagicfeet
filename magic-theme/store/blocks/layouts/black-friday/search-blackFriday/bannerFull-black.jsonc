@@ -1,0 +1,45 @@
+{
+  "experimental__visibility-layout#blackFriday--banner": {
+    "title": "Panda | Controle de visibilidade - Banner Black friday ",
+    "children": ["flex-layout.row#bannerFull-plp"],
+    "props": {
+      "visible": true,
+      "blockClass": "blackFriday--banner"
+    }
+  },
+
+  "flex-layout.row#bannerFull-plp": {
+    "title": "Panda | Banner Full",
+    "children": ["list-context.image-list#bannerFull-plp"],
+    "props": {
+      "blockClass": ["blackFriday--banner"],
+      "fullWidth": true
+    }
+  },
+
+  "list-context.image-list#bannerFull-plp": {
+    "title": "Panda | Banner Full - lista de imagens",
+    "children": ["slider-layout#bannerFull-plp"],
+    "props": {
+      "images": [
+        {
+          "image": "/arquivos/bannerPrincipal-BlackFriday.png",
+          "mobileImage": "/arquivos/bannerPrincipal-BlackFriday-Mob.png"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#bannerFull-plp": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "blackFriday--banner"
+    }
+  }
+}

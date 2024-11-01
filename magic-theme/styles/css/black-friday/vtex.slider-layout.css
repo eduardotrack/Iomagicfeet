@@ -12,23 +12,31 @@
 }
 
 .sliderTrack--sliderMenu-blackFriday {
-  height: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .slideChildrenContainer--sliderMenu-blackFriday {
-  border-right: 1px solid #fff;
+  border: 2px solid #1c1c1c;
+  border-radius: 15px;
+  height: 49px;
+  width: 188px;
 }
 
-.slide--sliderMenu-blackFriday[data-index="4"]
-  :global(
-    .vtex-slider-layout-0-x-slideChildrenContainer--sliderMenu-blackFriday
-  ) {
-  border-right: none;
+.slideChildrenContainer--sliderMenu-blackFriday:hover {
+  border: 2px solid #e30613;
+  background-color: #e30613;
 }
 
-.slideChildrenContainer--sliderMenu-blackFriday,
+.slideChildrenContainer--sliderMenu-blackFriday:hover
+  :global(.vtex-store-link-0-x-link--itemMenu--blackFriday) {
+  color: #ffffff;
+  transition: none;
+  opacity: 1;
+}
+
 .slide--sliderMenu-blackFriday {
-  height: 100%;
+  margin: 0px !important;
 }
 
 .sliderTrack--beneficios-cashback-slider {
@@ -37,16 +45,18 @@
 
 /* Pré black friday */
 .sliderTrack--sliderBeneficios-blackFriday {
-  justify-content: center;
+  justify-content: space-around;
+}
+
+
+.sliderTrackContainer--sliderBeneficios-blackFriday {
+  width: 757px;
+  overflow: visible;
 }
 
 @media screen and (max-width: 768px) {
-  .sliderTrack--sliderBeneficios-blackFriday {
-    justify-content: unset;
-  }
-
   .paginationDotsContainer--sliderBeneficios-blackFriday {
-    bottom: -45px;
+    bottom: -35px;
     align-items: center;
   }
 
@@ -67,4 +77,21 @@
     padding: 0;
     margin-top: -3px;
   }
+
+  .sliderTrack--sliderMenu-blackFriday {
+    display: flex;
+    justify-content: unset;
+  }
+
+  .slideChildrenContainer--sliderMenu-blackFriday {
+    height: 40px;
+    border-radius: 13px;
+  }
+
+  .slide--sliderBeneficios-blackFriday {
+    margin: 0px !important;
+    width: auto !important;
+  }
+
+ 
 }
