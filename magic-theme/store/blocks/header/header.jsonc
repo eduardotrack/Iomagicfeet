@@ -16,7 +16,8 @@
       "sticky-layout#4-desktop",
       "experimental__visibility-layout#banner-header-tag",
       "pd-ChangeTagLogin",
-      "pd-popupNewsletter" /* ,
+      "pd-popupNewsletter",
+      "pd-NeoassistScript" /* ,
       "pd-buttonVerNota" */
     ]
   },
@@ -197,7 +198,8 @@
       "sticky-layout#1-mobile",
       "experimental__visibility-layout#banner-header-tag",
       "pd-ChangeTagLogin",
-      "pd-popupNewsletter" /* ,
+      "pd-popupNewsletter",
+      "pd-NeoassistScript" /* ,
       "pd-buttonVerNota" */
     ]
   },
