@@ -4,6 +4,7 @@
   },
   "op-header": {
     "children": [
+      "pd-changePurchaseConfirmationMessage",
       "op-section#confirmation",
       "op-section#notices",
       "op-summary-section",

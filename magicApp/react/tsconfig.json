@@ -18,5 +18,5 @@
     "nossasLojas.jsx",
     "SkuSuggestionCore.jsx",
     "components/SkuSuggestion/SkuSuggestion.jsx"
-  ]
+, "components/ChangePurchaseConfirmationMessage/index.jsx"  ]
 }

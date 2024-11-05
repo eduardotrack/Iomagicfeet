@@ -1260,7 +1260,7 @@
   }
 
   .flexCol--infocard-chances-wrapper-menor :global(.vtex-store-link-0-x-childrenContainer--infocard-chances-wrapper) {
-    width: 46vw;
+    width: 45vw;
   }
 }
 
@@ -1615,4 +1615,9 @@
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.flexRow--block-flags-pdp :global(.vtex-product-highlights-2-x-productHighlightWrapper--collection)[data-highlight-id="331"] {
+  height: 100%;
+  padding: 7px 9px 3.5px;
 }

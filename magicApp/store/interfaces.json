@@ -84,5 +84,11 @@
     },
     "pd-categoryTitle": {
       "component": "CategoryTitle"
+    },
+    "pd-changePurchaseConfirmationMessage": {
+      "component": "ChangePurchaseConfirmationMessage"
+    },
+    "pd-NeoassistScript": {
+      "component": "NeoassistScript"
     }
 }
