@@ -11,7 +11,7 @@
   "flex-layout.row#sliderMenu-blackFriday": {
     "title": "Panda | Slider menu Black Friday",
     "children": [
-      "rich-text#sliderMenu-blackFriday-title",
+
       "slider-layout#sliderMenu-blackFriday"
     ],
     "props": {
@@ -20,13 +20,7 @@
     }
   },
 
-  "rich-text#sliderMenu-blackFriday-title": {
-    "title": "Panda | Texto slider menu Black Friday",
-    "props": {
-      "text": "black friday",
-      "blockClass": "sliderMenu-blackFriday-title"
-    }
-  },
+
 
   "slider-layout#sliderMenu-blackFriday": {
     "title": "Panda | Itens slider menu Black Friday",

@@ -1,6 +1,8 @@
 .flexRow--sliderMenu-blackFriday {
   width: 100%;
   max-width: 1300px;
+
+  margin-top: 16px;
 }
 
 .flexRowContent--sliderBeneficios-blackFriday {
