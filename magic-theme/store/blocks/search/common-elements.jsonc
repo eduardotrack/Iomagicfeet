@@ -29,7 +29,8 @@
     "title": "Panda | Título da busca",
     "children": ["pd-categoryTitle"],
     "props": {
-      "blockClass": "panda-search__main-title"
+      "blockClass": "panda-search__main-title",
+      "htmlId": "search-products"
     }
   },
   // COMMON - SEO TITLE
