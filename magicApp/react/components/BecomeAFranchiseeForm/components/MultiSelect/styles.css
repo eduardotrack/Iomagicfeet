@@ -1,0 +1,117 @@
+.multiSelect {
+}
+
+.multiSelect > span {
+  font: 500 14px/160% 'WorkSans-Medium';
+  color: #121416;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.multiSelect .multiSelect_select_inputContainer {
+  background-color: #f8f9f9;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font: 400 14px/160% 'WorkSans-Regular';
+  color: #aaafb5;
+  padding: 0 16px;
+  min-height: 54px;
+}
+
+.multiSelect .multiSelect_select_inputContainer:hover {
+  background-color: #f2f3f5;
+  border-color: #cdd0d3;
+}
+
+.multiSelect .multiSelect_select_inputContainer.focused {
+  border-color: #171a1c;
+  box-shadow: none;
+}
+
+.multiSelect_select_input_separator {
+  display: none;
+}
+.multiSelect .multiSelect_select_input_arrow {
+  color: #121416;
+}
+.multiSelect .multiSelect_select_input_field {
+  padding-left: 0;
+}
+.multiSelect .multiSelect_select_input_placeholder {
+  font: 400 14px/160% 'WorkSans-Regular';
+  color: #aaafb5;
+}
+.multiSelect_select_menu {
+}
+.multiSelect .multiSelect_select_menuList {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #e3e6e8;
+}
+.multiSelect_select_itemGroup {
+}
+.multiSelect_select_itemGroup_title {
+}
+.multiSelect .multiSelect_select_item {
+  font: 400 14px/160% 'WorkSans-Regular';
+  color: #121416;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.multiSelect[data-isMulti] .multiSelect_select_item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e3e6e8;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.multiSelect .multiSelect_select_item.focused {
+  background-color: #f2f3f5;
+  border-color: #cdd0d3;
+}
+.multiSelect .multiSelect_select_item.active {
+  background-color: #f2f3f5;
+}
+.multiSelect[data-isMulti] .multiSelect_select_item.active {
+  background-color: #fff;
+}
+
+.multiSelect[data-isMulti] .multiSelect_select_item.active::before {
+  background-color: #5dff49;
+  border-color: #5dff49;
+  background-image: url('/assets/vtex.file-manager-graphql/images/13ae179b-ba29-4d37-aa65-f784ef6e018f___6e3ffde6fda04e660790cb62107092f5.svg');
+  background-repeat: no-repeat;
+  background-size: 14px;
+  background-position: center;
+}
+
+.multiSelect .multiSelect_select_input {
+  font: 400 14px/160% 'WorkSans-Regular';
+  color: #121416;
+}
+
+.multiSelect .multiSelect_select_multiValue__item {
+  background-color: #e3e6e8;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.multiSelect .multiSelect_select_multiValue__item svg {
+  color: #7d8187;
+  width: 18px;
+  height: 18px;
+}
+
+.multiSelect .multiSelect_select_multiValue__label {
+  font: 500 14px/160% 'WorkSans-Medium';
+  color: #45494f;
+  padding: 0;
+}

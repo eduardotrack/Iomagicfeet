@@ -91,3 +91,56 @@
     text-decoration: none;
     margin-top: 12px;
 }
+
+.triggerContainer--become-a-franchisee-form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.paper--become-a-franchisee-form {
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    max-height: calc(100% - 32px);
+    margin: 16px;
+    border-radius: 16px;
+    padding: 32px;
+
+    & :global(.vtex-modal-layout-0-x-headerContainer) {
+        border: none;
+    }
+}
+
+.paper--become-a-franchisee-form::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  .paper--become-a-franchisee-form::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+  
+  .paper--become-a-franchisee-form::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+    background-color: #e3e6e8;
+  }
+
+  .closeButton {
+    svg {
+        color: #000;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .paper--become-a-franchisee-form {
+        margin: 0;
+        padding: 20px 16px;
+        border-radius: 0;
+        max-height: none;
+    }
+  }

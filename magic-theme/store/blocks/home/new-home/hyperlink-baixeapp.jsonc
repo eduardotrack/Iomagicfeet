@@ -1,0 +1,45 @@
+{
+  // "flex-layout.row#banner-app-home": {
+  //   "title": "Panda | Banner Baixe App",
+  //   "props": {
+  //     "colSizing": "auto",
+  //     "blockClass": "banner-app-home"
+  //   },
+  //   "children": ["responsive-layout.desktop#banner-app-home", "responsive-layout.mobile#banner-app-home"]
+  // },
+
+  // "responsive-layout.desktop#banner-app-home": {
+  //   "children": ["image#baixe-app-desk"]
+  // },
+
+  // "image#baixe-app-desk": {
+  //   "title": "Panda | Banner Baixe App (Desktop)",
+  //   "props": {
+  //     "src": "assets/img/new-home/banner-app-desk.png",
+  //     "blockClass": "banner-baixe-app"
+  //   }
+  // },
+
+  // "responsive-layout.mobile#banner-app-home": {
+  //   "children": [
+  //     "rich-text#baixe-app-mobile",
+  //     "image#baixe-app-mobile"
+  //   ]
+  // },
+
+  // "rich-text#baixe-app-mobile": {
+  //   "title": "Panda | Título Baixe App (Mobile)",
+  //   "props": {
+  //     "blockClass": "Panda__title",
+  //     "text": "## baixe os **nossos aplicativos**"
+  //   }
+  // },
+
+  // "image#baixe-app-mobile": {
+  //   "title": "Panda | Banner Baixe App (Mobile)",
+  //   "props": {
+  //     "maxHeight": 450,
+  //     "src": "assets/img/new-home/banner-app-mob.png"
+  //   }
+  // }
+}

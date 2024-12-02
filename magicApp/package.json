@@ -46,6 +46,7 @@
     "localeDirectory": "messages"
   },
   "dependencies": {
+    "magicapp": "file:",
     "react-apollo": "^3.1.5"
   }
 }

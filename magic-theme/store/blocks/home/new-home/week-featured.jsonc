@@ -1,0 +1,173 @@
+{
+  // "flex-layout.row#week-featured": {
+  //   "title": "Panda | Destaques da Semana",
+  //   "props": {
+  //     "blockClass": ["container", "home-week-featured"]
+  //   },
+  //   "children": ["flex-layout.col#home-week-featured-sliders"]
+  // },
+
+  // "flex-layout.col#home-week-featured-sliders": {
+  //   "title": "Panda | Destaques da Semana",
+  //   "props": {
+  //     "blockClass": ["home-week-featured-sliders"]
+  //   },
+  //   "children": [
+  //     "handle-week-featured-sliders",
+  //     "flex-layout.row#home-week-featured-top",
+  //     "combined-product-list#home-week-featured-bottom"
+  //   ]
+  // },
+
+  // "flex-layout.row#home-week-featured-top": {
+  //   "title": "Panda | Destaques da Semana - Vitrine + Título",
+  //   "props": {
+  //     "blockClass": ["home-week-featured-top", "title-slider-week-featured"],
+  //     "colSizing": "auto"
+  //   },
+  //   "children": [
+  //     "rich-text#week-featured-title",
+  //     "combined-product-list#home-week-featured-top"
+  //   ]
+  // },
+
+  // "rich-text#week-featured-title": {
+  //   "title": "Panda | Destaques da Semana - Título",
+  //   "props": {
+  //     "text": "## **destaques** da semana",
+  //     "blockClass": ["Panda__title", "week-featured-title"]
+  //   }
+  // },
+
+  // "combined-product-list#home-week-featured-top": {
+  //   "title": "Panda | Destaques da Semana - Vitrine (TOPO)",
+  //   "children": ["slider-layout#home-week-featured-top"],
+  //   "props": {
+  //     "ProductSummary": "product-summary.shelf#mini-solid",
+  //     "items": [
+  //       {
+  //         "textCard": {
+  //           "logo": "assets/img/new-home/vans-featured-shelf.png",
+  //           "title": "vans \n knu skool",
+  //           "textBg": "#F9EBFF"
+  //         },
+  //         "query": {
+  //           "collection": "331",
+  //           "maxItems": 4
+  //         }
+  //       },
+
+  //       {
+  //         "textCard": {
+  //           "logo": "assets/img/new-home/vans-featured-shelf.png",
+  //           "title": "converse \n chuck taylor",
+  //           "textBg": "#EBF7FF"
+  //         },
+  //         "query": {
+  //           "collection": "331",
+  //           "maxItems": 4
+  //         }
+  //       },
+  //       {
+  //         "textCard": {
+  //           "logo": "assets/img/new-home/vans-featured-shelf.png",
+  //           "title": "nike dunk",
+  //           "textBg": "#FFEBEB"
+  //         },
+  //         "query": {
+  //           "collection": "331",
+  //           "maxItems": 3
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+
+  // "slider-layout#home-week-featured-top": {
+  //   "title": "Panda | Destaques da Semana - Slider (TOPO)",
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 4,
+  //       "tablet": 2,
+  //       "phone": 2
+  //     },
+  //     // "navigationStep": 3.5,
+  //     "centerMode": {
+  //       "desktop": "to-the-left",
+  //       "tablet": "disabled",
+  //       "phone": "disabled"
+  //     },
+  //     "centerModeSlidesGap": 4,
+  //     "infinite": true,
+  //     "fullWidth": true,
+  //     "slideTransition": {
+  //       "speed": 800,
+  //       "delay": 0,
+  //       "timing": "ease-out"
+  //     },
+  //     "showNavigationArrows": "always",
+  //     "showPaginationDots": "never",
+  //     "blockClass": ["dark-arrows", "home-week-featured", "slider-top"]
+  //   }
+  // },
+
+  // "combined-product-list#home-week-featured-bottom": {
+  //   "title": "Panda | Destaques da Semana - Vitrine (BAIXO)",
+  //   "children": ["slider-layout#home-week-featured-bottom"],
+  //   "props": {
+  //     "ProductSummary": "product-summary.shelf#mini-solid",
+  //     "items": [
+  //       {
+  //         "query": {
+  //           "collection": "331",
+  //           "maxItems": 3
+  //         },
+  //         "textCard": {
+  //           "logo": "assets/img/new-home/dunk-featured-shelf.png",
+  //           "title": "nike dunk",
+  //           "textBg": "#EBF7FF"
+  //         }
+  //       },
+  //       {
+  //         "textCard": {
+  //           "logo": "assets/img/new-home/dunk-featured-shelf.png",
+  //           "title": "vans \n knu skool",
+  //           "textBg": "#FFF7EB"
+  //         },
+  //         "query": {
+  //           "collection": "331",
+  //           "maxItems": 3
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  
+  // "slider-layout#home-week-featured-bottom": {
+  //   "title": "Panda | Destaques da Semana - Slider (BAIXO)",
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 5,
+  //       "tablet": 2,
+  //       "phone": 2
+  //     },
+  //     "centerMode": {
+  //       "desktop": "to-the-left",
+  //       "tablet": "disabled",
+  //       "phone": "disabled"
+  //     },
+  //     // "navigationStep": "page",
+  //     "centerModeSlidesGap": 8,
+  //     "infinite": true,
+  //     "fullWidth": true,
+  //     "slideTransition": {
+  //       "speed": 800,
+  //       "delay": 0,
+  //       "timing": "ease-out"
+  //     },
+  //     "showNavigationArrows": "always",
+  //     "showPaginationDots": "never",
+  //     "blockClass": ["dark-arrows", "home-week-featured", "slider-bottom"]
+  //   }
+  // }
+}

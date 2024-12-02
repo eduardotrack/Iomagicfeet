@@ -29,11 +29,20 @@
     }
   },
 
+  "retail-rocket-container#pdp-complete-o-look": {
+    "props": {
+      "type": "RELATED_PRODUCT",
+      "markupBlock": "6736581b61278398562a3416"
+    }
+  },
+
+
   "disposition-layout#product": {
     "children": [
       "flex-layout.row#tips-core-pages",
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
+      "retail-rocket-container#pdp-complete-o-look",
       "retail-rocket-container#pdp1",
       "retail-rocket-container#pdp2",
       "flex-layout.row#product-faq"
@@ -73,6 +82,7 @@
       ]
     }
   },
+
 
   "condition-layout.product#availability": {
     "props": {

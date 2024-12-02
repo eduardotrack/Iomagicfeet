@@ -1,0 +1,264 @@
+{
+  "store.home": {
+    "title": "Panda | Home",
+    "blocks": ["disposition-layout#home"]
+ 
+  },
+
+  "retail-rocket-container#home": {
+    "props": {
+      "markupBlock": "635abf00cf114781944b4d29",
+      "type": "HOME"
+    }
+  },
+
+  "disposition-layout#home": {
+    "title": "Panda | Home - Disposição do conteúdo",
+    "children": [
+      "list-context.image-list#slider-full-home",
+      "responsive-layout.desktop#tips-home",
+      "responsive-layout.phone#tips-home",
+ /*      "flex-layout.row#shelf-home-01", */
+      "retail-rocket-container#home",
+
+      "flex-layout.row#chances-home",
+      "flex-layout.row#procura-home",
+     
+      "flex-layout.row#quem-home",
+      
+      "flex-layout.row#novidadesTitle-home",
+      "flex-layout.row#exclusivo-home",
+      "flex-layout.row#calendario-home",
+      "responsive-layout.phone#brands-home-Mob",
+      "responsive-layout.desktop#brands-home-Desk"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        },
+        {
+          "order": 11
+        },
+        {
+          "order": 12
+        } 
+      ]
+    }
+  },
+
+  // SLIDER.JSONC
+  
+  "list-context.image-list#slider-full-home": {
+    "title": "Panda | Banner Home",
+    "children": ["slider-layout#slider-full-home"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/img/banner-desk.png",
+          "mobileImage": "assets/img/banner.png"
+        },
+        {
+          "image": "assets/img/banner-desk.png",
+          "mobileImage": "assets/img/banner.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-full-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }, 
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "autoplay":{
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "blockClass": "home__slider"
+    }
+  },
+  "list-context.image-list#slider-full-home": {
+    "title": "Panda | Banner Home",
+    "children": ["slider-layout#slider-full-home"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/img/banner-desk.png",
+          "mobileImage": "assets/img/banner.png"
+        },
+        {
+          "image": "assets/img/banner-desk.png",
+          "mobileImage": "assets/img/banner.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-full-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }, 
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "autoplay":{
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "blockClass": "home__slider"
+    }
+  },
+  "responsive-layout.phone#brands-home-Mob": {
+    "children": ["flex-layout.row#brands-home-Mob"]
+  },
+
+  "flex-layout.row#brands-home-Mob": {
+    "title": "Panda | Marcas 01",
+    "children": ["flex-layout.col#brands-home-Mob"],
+    "props": {
+      "blockClass": "brands-home-row"
+    }
+  },
+
+  "flex-layout.col#brands-home-Mob": {
+    "children": ["rich-text#brands-home", "flex-layout.row#brands-home-list-Mob"]
+  },
+
+  "flex-layout.row#brands-home-list-Mob": {
+    "title": "Panda | Marcas",
+    "children": ["list-context.media-list#brands-home-list-Mob"]
+  },
+
+  "list-context.media-list#brands-home-list-Mob": {
+    "children": ["slider-layout#brands-home-list_Slider"],
+    "props": {
+      "blockClass": "list-brands-home",
+      "mediaList": [
+        {
+          "image": "/arquivos/nike-brands.png",
+          "mobileImage": "/arquivos/nike-brands.png"
+        },
+
+        {
+          "image": "/arquivos/jordan-brands.png",
+          "mobileImage": "/arquivos/jordan-brands.png"
+        },
+
+        {
+          "image": "/arquivos/adidas-brands.png",
+          "mobileImage": "/arquivos/adidas-brands.png"
+        },
+
+        {
+          "image": "/arquivos/puma-brands.png",
+          "mobileImage": "/arquivos/puma-brands.png"
+        },
+
+        {
+          "image": "/arquivos/converse-brands.png",
+          "mobileImage": "/arquivos/converse-brands.png"
+        },
+
+        {
+          "image": "/arquivos/vans-brands.png",
+          "mobileImage": "/arquivos/vans-brands.png"
+        },
+
+        {
+          "image": "/arquivos/fila-brands.png",
+          "mobileImage": "/arquivos/fila-brands.png"
+        },
+
+        {
+          "image": "/arquivos/crocs-brands.png",
+          "mobileImage": "/arquivos/crocs-brands.png"
+        },
+
+        {
+          "image": "/arquivos/asics-brands.png",
+          "mobileImage": "/arquivos/asics-brands.png"
+        },
+
+        {
+          "image": "/arquivos/skechers-brands.png",
+          "mobileImage": "/arquivos/skechers-brands.png"
+        },
+
+        {
+          "image": "/arquivos/rider-brands.png",
+          "mobileImage": "/arquivos/rider-brands.png"
+        },
+
+        {
+          "image": "/arquivos/Umbro_logo-brands.png",
+          "mobileImage": "/arquivos/Umbro_logo-brands.png"
+        },
+
+        {
+          "image": "/arquivos/olympikus-brands.png",
+          "mobileImage": "/arquivos/olympikus-brands.png"
+        },
+
+        {
+          "image": "/arquivos/nba-brands.png",
+          "mobileImage": "/arquivos/nba-brands.png"
+        },
+
+        {
+          "image": "/arquivos/jansport-brands.png",
+          "mobileImage": "/arquivos/jansport-brands.png"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#brands-home-list_Slider": {
+    "title": "Panda | Marcas - Slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "phone": 5
+      },
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "blockClass": ["list-brands-home", "carousel-exclusivos"]
+    }
+  }
+}

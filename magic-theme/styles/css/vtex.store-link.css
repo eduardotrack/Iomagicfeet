@@ -69,15 +69,6 @@
     text-decoration: underline;
     font-weight: 700;
   }
-
-  .childrenContainer--tips-item-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0px;
-    flex-direction: column;
-    padding: 3px 10px;
-  }
 }
 
 .link--botao-link-cashback {

@@ -70,3 +70,132 @@
     padding-bottom: 0;
     position: relative;
 }
+
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .element {
+    padding: 0;
+    width: 100%;
+}
+
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .containerNormal {
+    border: 1px solid #BDBDBD;
+    max-width: unset !important;
+    border-radius: 15px;
+
+    transition: all .3s ease;
+
+    &:hover {
+        border-color: #1C1C1C;
+    }
+}
+
+
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .listPriceContainer,
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .interestRatePrice,
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .sellingPriceLabel {
+    display: none;
+}
+
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .buyButton {
+    margin: 0 18px 15px;
+}
+
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .buyButton :global(.vtex-button) {
+    background-color: transparent;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+    font-size: 0;
+
+    &::after {
+        content: 'comprar';
+        font-size: 1rem;
+        font-family: WorkSans-Medium;
+        font-weight: 500;
+        color: #000;
+    }
+
+    &:hover {
+        background-color: #5DFF49;
+        border-color: #1C1C1C;
+        opacity: 1;
+    }
+}
+
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .nameContainer {
+    background-color: #F4F4F4;
+    padding: 19px 18px 10px;
+    justify-content: flex-start;
+    width: 100%;
+    
+    .brandName {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #000;
+        text-align: start;
+        display: inline-block;
+    }
+}
+
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .priceContainer {
+    background-color: #F4F4F4;
+    padding: 0 18px 18px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .sellingPriceContainer {
+    display: flex;
+
+    .sellingPrice {
+        padding: 0;
+        font-family: WorkSans-Regular;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+}
+
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .installmentContainer {
+    color: #000;
+    font-size: .875rem;
+    font-family: WorkSans-Regular;
+    font-weight: 400;
+
+    .price_interestRate {
+        display: none;
+    }
+}
+
+.container--shelf-list {
+    max-width: 80% !important;
+}
+
+.imageContainer--shelf-list {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.image--shelf-list {
+    height: 100% !important;
+    width: auto !important;
+}
+
+.brandName--shelf-list {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'WorkSans-Medium';
+    line-height: 14.5px;
+    text-align: start;
+    min-height: unset;
+}
+
+.nameContainer--shelf-list {
+    padding: 0;
+}
+
+.nameContainer--summary-mini {
+    justify-content: flex-start;
+}

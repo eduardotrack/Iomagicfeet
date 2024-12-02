@@ -1,16 +1,16 @@
 {
-    "list-context.image-list#slider-full-home": {
+    "list-context.image-list#slider-full-home-new": {
       "title": "Panda | Banner Home",
       "children": ["slider-layout#slider-full-home"],
       "props": {
         "images": [
           {
-            "image": "assets/img/banner-desk.png",
-            "mobileImage": "assets/img/banner.png"
+            "image": "assets/img/new-home/banner-desk.png",
+            "mobileImage": "assets/img/new-home/banner-mob.png"
           },
           {
-            "image": "assets/img/banner-desk.png",
-            "mobileImage": "assets/img/banner.png"
+            "image": "assets/img/new-home/banner-desk.png",
+            "mobileImage": "assets/img/new-home/banner-mob.png"
           }
         ]
       }

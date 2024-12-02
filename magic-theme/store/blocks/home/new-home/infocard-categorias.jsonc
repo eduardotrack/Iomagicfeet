@@ -1,0 +1,121 @@
+{
+  "flex-layout.row#infocard-categorias": {
+    "title": "Panda | Infocards Categorias",
+    "props": {
+      "blockClass": "infocard-categorias"
+    },
+    "children": [
+      "flex-layout.col#infocard-categorias"
+    ]
+  },
+
+  "flex-layout.col#infocard-categorias": {
+    "title": "Panda | Infocard Categorias",
+    "props": {
+      "blockClass": "infocard-categorias",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#infocard-categorias",
+      "flex-layout.col#infocard-categorias-grid"
+    ]
+  },
+
+  "rich-text#infocard-categorias": {
+    "title": "Panda | Infocard Categorias - Título",
+    "props": {
+      "text": "## o que **você** procura?",
+      "blockClass": "Panda__title"
+    }
+  },
+
+  "flex-layout.col#infocard-categorias-grid": {
+    "title": "Panda | Grid Categorias",
+    "props": {
+      "blockClass": "infocard-categorias-grid"
+    },
+    "children": [
+      "info-card#infocard-categorias-01",
+      "info-card#infocard-categorias-02",
+      "info-card#infocard-categorias-03",
+      "info-card#infocard-categorias-04",
+      "info-card#infocard-categorias-05"
+    ]
+  },
+
+  "info-card#infocard-categorias-01": {
+    "title": "Panda | Infocard Categoria 01",
+    "props": {
+      "id": "info-card-categorias-01",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/img/new-home/infocard-tenis.png",
+      "callToActionText": "tênis",
+      "callToActionUrl": "/tenis",
+      "blockClass": ["infocard-categorias", "infocard-categorias--01"],
+      "textAlignment": "center",
+      "fetchpriority": "auto",
+      "preload": false
+    }
+  },
+  "info-card#infocard-categorias-02": {
+    "title": "Panda | Infocard Categoria 02",
+    "props": {
+      "id": "info-card-categorias-02",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/img/new-home/infocard-camisetas.png",
+      "callToActionText": "camisetas",
+      "callToActionUrl": "/camisetas",
+      "blockClass": ["infocard-categorias", "infocard-categorias--02"],
+      "textAlignment": "center",
+      "fetchpriority": "auto",
+      "preload": false
+    }
+  },
+  "info-card#infocard-categorias-03": {
+    "title": "Panda | Infocard Categoria 03",
+    "props": {
+      "id": "info-card-categorias-03",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/img/new-home/infocard-blusas.jpg",
+      "callToActionText": "blusas",
+      "callToActionUrl": "/blusas",
+      "blockClass": ["infocard-categorias", "infocard-categorias--03"],
+      "textAlignment": "center",
+      "fetchpriority": "auto",
+      "preload": false
+    }
+  },
+  "info-card#infocard-categorias-04": {
+    "title": "Panda | Infocard Categoria 04",
+    "props": {
+      "id": "info-card-categorias-04",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/img/new-home/infocard-acessorios.png",
+      "callToActionText": "acessórios",
+      "callToActionUrl": "/acessorios",
+      "blockClass": ["infocard-categorias", "infocard-categorias--04"],
+      "textAlignment": "center",
+      "fetchpriority": "auto",
+      "preload": false
+    }
+  },
+  "info-card#infocard-categorias-05": {
+    "title": "Panda | Infocard Categoria 05",
+    "props": {
+      "id": "info-card-categorias-05",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/img/new-home/infocard-chuteiras.jpg",
+      "callToActionText": "chuteiras",
+      "callToActionUrl": "/chuteiras",
+      "blockClass": ["infocard-categorias", "infocard-categorias--05"],
+      "textAlignment": "center",
+      "fetchpriority": "auto",
+      "preload": false
+    }
+  }
+}

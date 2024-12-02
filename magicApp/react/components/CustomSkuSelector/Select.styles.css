@@ -1,0 +1,96 @@
+.reactSelect_container {
+}
+
+.reactSelect_container .reactSelect_select_inputContainer {
+  border: 1px solid var(--color-gray-200);
+  border-radius: 4px;
+  padding: 0;
+  background-color: var(--color-white);
+}
+
+.reactSelect_container .reactSelect_select_inputContainer:hover {
+  background-color: var(--color-gray-100);
+  border-color: var(--color-gray-200);
+}
+
+.reactSelect_container .reactSelect_select_inputContainer.focused {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: none;
+}
+
+.reactSelect_container .reactSelect_select_input_separator {
+  display: none;
+}
+
+.reactSelect_container .reactSelect_select_input_arrow {
+  color: var(--color-gray-900);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.reactSelect_container .reactSelect_select_input_field {
+  font: var(--text-xs-medium);
+  color: var(--color-gray-500);
+  text-align: left;
+  padding-left: 12px;
+}
+
+.reactSelect_container .reactSelect_select_input_placeholder {
+  color: var(--color-gray-500);
+}
+
+.reactSelect_menuPortal {
+  z-index: 3000 !important;
+}
+
+.reactSelect_menuPortal .reactSelect_select_menu {
+  margin-top: 0;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid var(--color-gray-200);
+  border-top-width: 0;
+  box-shadow: none;
+  background: var(--color-white);
+}
+
+.reactSelect_menuPortal .reactSelect_select_menuList {
+  padding: 4px;
+  max-height: min(25vh, 300px);
+}
+
+.reactSelect_menuPortal .reactSelect_select_itemGroup {
+  padding: 0 0 10px;
+}
+
+.reactSelect_menuPortal .reactSelect_select_itemGroup_title {
+  font: var(--text-sm-bold);
+  color: var(--color-gray-950);
+  text-transform: none;
+  padding: 12px;
+  margin: 0;
+}
+
+.reactSelect_menuPortal .reactSelect_select_item {
+  font: var(--text-xs-medium);
+  color: var(--color-gray-500);
+  text-transform: none;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.reactSelect_menuPortal .reactSelect_select_item.focused,
+.reactSelect_menuPortal .reactSelect_select_item.active {
+  background-color: var(--color-primary-100);
+  color: var(--color-gray-900);
+}
+
+@media (max-width: 1120px) {
+  .reactSelect_container .reactSelect_select_inputContainer {
+    min-height: 28px;
+  }
+}

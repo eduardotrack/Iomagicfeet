@@ -1,0 +1,21 @@
+.customSkuSelector__container {
+  position: relative;
+}
+
+.customSkuSelector__loader {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  color: var(--color-primary-300);
+}
+
+@media (min-width: 1120px) {
+  :global(.vtex-flex-layout-0-x-flexRow--product-prices-info)
+    .customSkuSelector__container {
+    display: none;
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "modal-trigger#become-a-franchisee-form": {
+    "title": "Modal Formulário",
+    "props": {
+      "blockClass": ["become-a-franchisee-form"],
+      "trigger": "click",
+      "customPixelEventId": "become-a-franchisee-form"
+    },
+    "children": ["modal-layout#become-a-franchisee-form"]
+  },
+  "rich-text#become-a-franchisee-form-trigger": {
+    "title": "Label Benefício 1",
+    "props": {
+      "text": "Quero ser um franqueado",
+      "blockClass": "form-button-cta"
+    }
+  },
+  "modal-layout#become-a-franchisee-form": {
+    "props": {
+      "blockClass": ["become-a-franchisee-form"]
+    },
+    "children": [
+      "modal-header#become-a-franchisee-form",
+      "become-a-franchisee-form"
+    ]
+  },
+  "modal-header#become-a-franchisee-form": {
+    "children": ["rich-text#become-a-franchisee-form-modal-title"]
+  },
+  "rich-text#become-a-franchisee-form-modal-title": {
+    "title": "Título modal",
+    "props": {
+      "blockClass": ["become-a-franchisee-form-modal-title"],
+      "text": "Seja um franqueado"
+    }
+  },
+
+  "become-a-franchisee-form": {
+    "props": {
+      "FormMessage": "rich-text#become-a-franchisee-form-message"
+    }
+  },
+
+  "rich-text#become-a-franchisee-form-message": {
+    "title": "Mensagem Formulário",
+    "props": {
+      "blockClass": ["become-a-franchisee-form-message"],
+      "text": "**Quanto à segurança que envolve a LGPD:** \n O Grupo Afeet reconhece a importância da privacidade pessoal e está comprometido com os princípios da boa-fé, finalidade, adequação, necessidade, livre acesso, qualidade dos dados, transparência, segurança, prevenção, não discriminação, responsabilização e prestação de contas no processamento de dados pessoais.  A solicitação de dados pessoais e de documentos que contém dados pessoais para a participação no processo de seleção de franqueados, bem como para a emissão dos documentos jurídicos de franquia reveste-se da finalidade prevista no artigo 7º, inciso V da Lei Geral de Proteção de Dados Pessoais – LGPD (Lei nº 13.709/2018).  \n\n  Para mais informações sobre como o Grupo Afeet trata os seus dados pessoais, acesse a nossa Política de Privacidade https://www.authenticfeet.com.br/institucional/politica-de-privacidade, https://www.artwalk.com.br/institucional/politica-de-privacidade e https://www.magicfeet.com.br/institucional/politica-de-privacidade ou entre em contato com o nosso DPO através dos e-mails: **lgpd@authenticfeet.com.br;** **lgpd@artwalk.com.br;** **lgpd@magicfeet.com.br.**"
+    }
+  }
+}

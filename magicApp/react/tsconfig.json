@@ -17,6 +17,7 @@
     "defaults.jsx",
     "nossasLojas.jsx",
     "SkuSuggestionCore.jsx",
-    "components/SkuSuggestion/SkuSuggestion.jsx"
-, "components/ChangePurchaseConfirmationMessage/index.jsx"  ]
+    "components/SkuSuggestion/SkuSuggestion.jsx",
+    "components/ChangePurchaseConfirmationMessage/index.jsx"
+  ]
 }

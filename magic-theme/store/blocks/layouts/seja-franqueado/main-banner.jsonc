@@ -10,12 +10,18 @@
 
       "responsive-layout.desktop#main-banner-sejafranqueado": {
         "title": "Panda | Imagem Principal - Desktop",
-        "children": ["image#main-banner-sejafranqueado-desk"]
+        "children": [
+          "image#main-banner-sejafranqueado-desk",
+          "modal-trigger#become-a-franchisee-form"
+        ]
       },
  
       "responsive-layout.phone#main-banner-sejafranqueado": {
         "title": "Panda | Imagem Principal - Mobile",
-        "children": ["image#main-banner-sejafranqueado-mob"]
+        "children": [
+          "image#main-banner-sejafranqueado-mob",
+          "modal-trigger#become-a-franchisee-form"
+        ]
       },
 
       "image#main-banner-sejafranqueado-desk": {

@@ -1,5 +1,5 @@
 {
-  "responsive-layout.phone#brands-home-Mob": {
+  "responsive-layout.mobile#brands-home-Mob": {
     "children": ["flex-layout.row#brands-home-Mob"]
   },
 
@@ -107,15 +107,15 @@
     "title": "Panda | Marcas - Slider",
     "props": {
       "itemsPerPage": {
-        "desktop": 6,
-        "phone": 5
+        "desktop": 8,
+        "phone": 4
       },
       "autoplay": {
         "timeout": 5000,
         "stopOnHover": true
       },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "never",
       "showPaginationDots": "always",
       "blockClass": ["list-brands-home", "carousel-exclusivos"]
     }

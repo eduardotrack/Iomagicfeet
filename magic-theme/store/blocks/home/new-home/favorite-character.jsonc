@@ -1,0 +1,28 @@
+{
+  // "flex-layout.row#favorite-character": {
+  //   "title": "Panda | Personagem Favorito",
+  //   "props": {
+  //     "blockClass": "favorite-character"
+  //   },
+  //   "children": ["flex-layout.col#favorite-character"]
+  // },
+
+  // "flex-layout.col#favorite-character": {
+  //   "title": "Panda | Personagem Favorito",
+  //   "props": {
+  //     "blockClass": "favorite-character"
+  //   },
+  //   "children": [
+  //     "rich-text#favorite-character-title",
+  //     "pd-CharacterShelf"
+  //   ]
+  // },
+
+  // "rich-text#favorite-character-title": {
+  //   "title": "Panda | Título Personagem Favorito",
+  //   "props": {
+  //     "blockClass": "Panda__title",
+  //     "text": "## o seu **personagem favorito**"
+  //   }
+  // }
+}

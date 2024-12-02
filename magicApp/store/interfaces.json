@@ -90,5 +90,38 @@
     },
     "pd-NeoassistScript": {
       "component": "NeoassistScript"
+    },
+    "pd-CharacterShelf": {
+      "component": "CharacterShelf"
+    },
+    "combined-product-list": {
+      "component": "CombinedProductList",
+      "composition": "children"
+    },
+    "combined-product-list.with-grid": {
+      "component": "CombinedProductListWithGrid",
+      "composition": "children"
+    },
+    "combined-product-list.with-image": {
+      "component": "CombinedProductListWithImage",
+      "composition": "children"
+    },
+    "combined-product-list.with-slide": {
+      "component": "CombinedProductListWithSlide",
+      "composition": "children"
+    },
+    "combined-product-list.with-slide-text": {
+      "component": "CombinedProductListWithSlideText",
+      "composition": "children"
+    },
+    "handle-week-featured-sliders": {
+      "component": "HandleOsQueridinhosSliders",
+      "composition": "children"
+    },
+    "custom-sku-selector": {
+      "component": "CustomSkuSelector"
+    },
+    "become-a-franchisee-form": {
+      "component": "BecomeAFranchiseeForm"
     }
 }

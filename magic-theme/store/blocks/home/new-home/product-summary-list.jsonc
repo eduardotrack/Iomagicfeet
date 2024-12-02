@@ -1,0 +1,122 @@
+{
+  // "product-summary.shelf#shelf-list": {
+  //   "title": "Panda | Lista de Produtos",
+  //   "props": {
+  //     "blockClass": ["shelf-list"]
+  //   },
+  //   "children": ["flex-layout.row#shelf-list"]
+  // },
+
+  // "flex-layout.row#shelf-list": {
+  //   "props": {
+  //     "colSizing": "auto",
+  //     "preserveLayoutOnMobile": true,
+  //     "blockClass": ["shelf-list"]
+  //   },
+  //   "children": [
+  //     "product-summary-image#shelf-list",
+  //     "flex-layout.col#shelf-list-info"
+  //   ]
+  // },
+  // "product-summary-image#shelf-list": {
+  //   "props": {
+  //     "showBadge": false,
+  //     "height": 94,
+  //     "blockClass": ["shelf-list"]
+  //   }
+  // },
+
+  // "flex-layout.col#shelf-list-sku-selector-desktop": {
+  //   "props": {
+  //     "blockClass": ["shelf-list-sku-selector-desktop"],
+  //     "preventVerticalStretch": true
+  //   },
+  //   "children": ["responsive-layout.desktop#custom-sku-selector"]
+  // },
+
+  // "responsive-layout.desktop#custom-sku-selector": {
+  //   "children": ["custom-sku-selector#desktop"]
+  // },
+
+  // "custom-sku-selector#desktop": {
+  //   "props": {
+  //     "SkuSelectorBase": "product-summary-sku-selector#shelf-list",
+  //     "buyOnSelection": true
+  //   }
+  // },
+
+  // "custom-sku-selector#mobile": {
+  //   "props": {
+  //     "SkuSelectorBase": "product-summary-sku-selector#shelf-list"
+  //   }
+  // },
+
+  // "product-summary-sku-selector#shelf-list": {
+  //   "props": {
+  //     "displayMode": "default",
+  //     "initialSelection": "empty",
+  //     "showVariationsLabels": "none",
+  //     "disableUnavailableSelectOptions": true,
+  //     "hideImpossibleCombinations": true,
+  //     "maxItems": 999,
+  //     "blockClass": ["shelf-list"]
+  //   }
+  // },
+
+  // "flex-layout.col#shelf-list-info": {
+  //   "props": {
+  //     "width": "grow",
+  //     "blockClass": ["shelf-list-info"],
+  //     "preventVerticalStretch": true
+  //   },
+  //   "children": [
+  //     "product-summary-name#shelf-list",
+  //     "flex-layout.col#shelf-list-product-prices-info"
+  //   ]
+  // },
+
+  //  "flex-layout.col#shelf-list-product-prices-info": {
+  //   "title": "Panda | Valor e parcelamento",
+  //   "props": {
+  //     "blockClass": ["shelf-list-product-prices-info", "shelf-list"]
+  //   },
+  //   "children": ["flex-layout.row#shelf-list-product-prices-info", "product-installments#summary"]
+  //  },
+
+  // "flex-layout.row#shelf-list-product-prices-info": {
+  //   "props": {
+  //     "colSizing": "auto",
+  //     "preserveLayoutOnMobile": true,
+  //     "blockClass": ["product-prices-info"]
+  //   },
+  //   "children": [
+  //     "product-list-price#summary",
+  //     "product-selling-price#summary"
+  //   ]
+  // },
+
+  // "product-summary-name#shelf-list": {
+  //   "props": {
+  //     "blockClass": ["shelf-list"]
+  //   }
+  // },
+
+  // "flex-layout.row#add-to-cart-button-shelf-list": {
+  //   "props": {
+  //     "blockClass": ["add-to-cart-button-shelf-list"]
+  //   },
+  //   "children": ["add-to-cart-button#add-to-cart-shelf-list"]
+  // },
+
+  // "add-to-cart-button#add-to-cart-shelf-list": {
+  //   "props": {
+  //     "blockClass": ["add-to-cart-shelf-list"],
+  //     "text": "Comprar"
+  //   }
+  // },
+  // "vtex.store-components:product-brand#shelf": {
+  //   "props": {
+  //     "displayMode": "text"
+  //   }
+  // }
+}

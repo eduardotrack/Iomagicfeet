@@ -1,0 +1,346 @@
+.becomeAFranchiseeForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 16px;
+}
+
+.becomeAFranchiseeForm :global(.vtex-checkbox__container) {
+  margin-top: 4px;
+  margin-right: 12px;
+}
+
+.becomeAFranchiseeForm :global(.vtex-checkbox__line-container) {
+  margin-top: 24px;
+}
+
+.becomeAFranchiseeForm :global(.vtex-checkbox__inner-container) {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #aaafb5;
+  border-radius: 4px;
+}
+
+.becomeAFranchiseeForm :global(.vtex-checkbox__box) {
+  color: #5dff49;
+}
+
+.becomeAFranchiseeForm
+  :global(.vtex-checkbox__inner-container.b--action-primary) {
+  border-color: #121416;
+  background-color: #121416;
+}
+
+.becomeAFranchiseeForm :global(.vtex-checkbox__label) {
+  font: 500 14px/160% 'WorkSans-Medium';
+  color: #383b3f;
+}
+
+.becomeAFranchiseeForm__multiselectFiled {
+}
+
+.becomeAFranchiseeForm :global(.vtex-input-prefix__group.b--danger),
+.becomeAFranchiseeForm :global(.vtex-textarea__input.b--danger),
+.becomeAFranchiseeForm :global(.vtex-dropdown__container.b--danger) {
+  border-color: #c53429;
+}
+
+.becomeAFranchiseeForm :global(.vtex-input__error),
+.becomeAFranchiseeForm :global(.vtex-dropdown__error),
+.becomeAFranchiseeForm :global(.vtex-textarea__error),
+.becomeAFranchiseeForm-fileUploadErrorMessage {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #c53429;
+  margin: 0;
+  padding: 8px 12px 0;
+}
+
+.becomeAFranchiseeForm-fileSection
+  :global(.vtex-input):has(input[type='file']) {
+  display: none;
+}
+
+.uploaded_file_item {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #f2f3f5;
+  background: #f8f9f9;
+  margin-top: 14px;
+}
+
+.uploaded_file_item > svg:first-child {
+  margin-right: 16px;
+}
+
+.uploaded_file_item > svg:last-child {
+  margin-left: 4px;
+}
+
+.uploaded_file_item > svg {
+  flex-shrink: 0;
+}
+
+.uploaded_file_item_content {
+  width: 100%;
+}
+
+.uploaded_file_name {
+  color: #121416;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  margin: 0;
+}
+
+.uploaded_file_name::first-letter {
+  text-transform: capitalize;
+}
+
+.uploaded_file_size {
+  color: #45494f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 0 0 4px;
+}
+
+.uploaded_file_progress {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.uploaded_file_progress_bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: #fdeb12;
+}
+
+.uploaded_file_progress > p {
+  color: #45494f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  margin: 0;
+}
+
+.becomeAFranchiseeForm-infoText,
+.becomeAFranchiseeForm-modalText {
+  color: #171a1c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-align: left;
+  padding-bottom: 12px;
+  margin: 0;
+}
+
+.becomeAFranchiseeForm-modalText {
+  text-align: center;
+  font-size: 14px;
+}
+
+:global(.vtex-alert) {
+  margin-top: 20px;
+}
+
+.becomeAFranchiseeForm :global(.vtex-button) {
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px 32px;
+  background: #5dff49;
+  transition: 0.3s ease;
+  margin: 0;
+  width: 100%;
+}
+
+.becomeAFranchiseeForm :global(.vtex-button):hover {
+  background: #5dff49;
+}
+
+.becomeAFranchiseeForm :global(.vtex-button__label) {
+  color: #121416;
+  font-size: 14px;
+  font-style: normal;
+  transition: 0.3s ease;
+  font-weight: 500;
+  line-height: 160%;
+  padding: 0 !important;
+  text-transform: initial;
+  margin: 0;
+}
+
+.becomeAFranchiseeForm :global(.vtex-button .vtex__icon-spinner) {
+  color: #121416;
+}
+
+.becomeAFranchiseeForm-userInfoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form_inputs_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.becomeAFranchiseeForm-fileSection {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 48px;
+}
+
+.becomeAFranchiseeForm-modalTitle {
+  color: #0b0c0c;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  margin: 20px 0 6px;
+}
+
+.becomeAFranchiseeForm-fileUploadContainer {
+  margin-top: 16px;
+  border-radius: 8px;
+  border: 1.2px dashed #cdd0d3;
+  flex-direction: column;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 51.5px 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.becomeAFranchiseeForm-fileUploadContainer:hover {
+  border-radius: 8px;
+  border: 1.2px solid #e3e6e8;
+  background: #f8f9f9;
+}
+
+.becomeAFranchiseeForm-fileUploadField :global(.vtex-input-prefix__group) {
+  border: none;
+  display: flex;
+  align-items: center;
+  min-height: initial;
+  padding: 0;
+}
+.becomeAFranchiseeForm-fileUploadField
+  :global(.vtex-input)
+  input::file-selector-button {
+  display: none;
+}
+
+.becomeAFranchiseeForm-fakeFileUploadButton {
+  color: #61656b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 12px 0 4px;
+}
+
+.becomeAFranchiseeForm-fakeFileUploadButton strong {
+  color: #121416;
+  font-weight: 500;
+}
+
+.becomeAFranchiseeForm-filesType {
+  color: #61656b;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.24px;
+  margin: 0;
+}
+
+.becomeAFranchiseeForm :global(.vtex-styleguide-9-x-input),
+.becomeAFranchiseeForm :global(.vtex-textarea__input) {
+  color: #0b0c0c;
+}
+
+.becomeAFranchiseeForm :global(.vtex-dropdown__arrow) {
+  color: #9b9db0;
+}
+
+.becomeAFranchiseeForm textarea {
+  height: 213px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.becomeAFranchiseeForm textarea::placeholder {
+  color: #7d8187;
+}
+
+.message_modal_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+:global(.vtex-modal__overlay) :global(.vtex-modal__modal) {
+  max-width: 480px;
+}
+
+:global(.vtex-modal__overlay) :global(.vtex-styleguide-9-x-scrollBar) {
+  padding: 64px 32px 48px;
+}
+
+.becomeAFranchiseeForm-formMessage {
+}
+
+.becomeAFranchiseeForm-formFooter {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #f2f3f5;
+}
+
+@media screen and (max-width: 1119px) {
+  .becomeAFranchiseeForm {
+    margin-top: 28px;
+    max-width: initial;
+  }
+}
+
+@media (max-width: 640px) {
+  .becomeAFranchiseeForm-formFooter {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .form_inputs_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .becomeAFranchiseeForm textarea {
+    height: 174px;
+  }
+
+  /* .becomeAFranchiseeForm :global(.vtex-button) {
+    max-width: 100%;
+    margin-top: 24px;
+  } */
+
+  .becomeAFranchiseeForm-fileSection {
+    padding: 28px 0 24px;
+  }
+}

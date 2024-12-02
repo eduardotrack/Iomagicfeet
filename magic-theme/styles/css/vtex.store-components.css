@@ -1,10 +1,12 @@
 .container {
   max-width: 1300px;
+  position: relative;
 }
 
 @media (max-width: 767px) {
   .container {
     padding: 0px 18px;
+    overflow: hidden;
   }
 }
 
@@ -623,4 +625,110 @@
   max-width: 146px;
   width: 100%;
   padding: .75rem 0;
+}
+
+/* new home */
+.infoCardContainer--infocard-categorias {
+  height: 100%;
+  border-radius: 15px;
+  transition: filter 0.3s ease;
+
+  &:hover {
+    filter: brightness(.95);
+  }
+}
+
+.infoCardTextContainer--infocard-categorias,
+.infoCardCallActionContainer--infocard-categorias {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.infoCardCallActionContainer--infocard-categorias {
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  background: linear-gradient(180deg, rgba(102, 102, 102, 0) 56.22%, rgba(0, 0, 0, 0.2) 81.72%);
+  border-radius: 15px;
+}
+
+.infoCardCallActionContainer--infocard-categorias :global(.vtex-button) {
+  background-color: transparent;
+  border: none;
+}
+
+.infoCardCallActionContainer--infocard-categorias :global(.vtex-button__label) {
+  color: #fff;
+  font-family: WorkSans-Medium;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 28.8px;
+  padding: 26px !important;
+
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  &::after {
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 15px;
+
+    background-image: url('data:image/svg+xml,<svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.16449 16L9.14113 8.5L1.16449 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.imageElement--banner-baixe-app {
+  width: 100%;
+  border-radius: 15px;
+}
+
+:global(.vtex-slider-layout-0-x-slide--best-sellers-home) .discountInsideContainer {
+  display: none;
+}
+
+.productBrandContainer--pdp-brand-logo {
+  width: 56px !important;
+  height: 56px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productBrandLogoWrapper--pdp-brand-logo {
+  width: 100%;
+  height: auto !important;
+}
+
+.productBrandLogo--pdp-brand-logo {
+  width: 100%;
+  height: auto !important;
+}
+
+.productBrandContainer--pdp-brand-logo-text {
+  height: fit-content;
+}
+
+.productBrandName--pdp-brand-logo-text {
+  font-family: 'WorkSans-Medium';
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: lowercase;
+  color: #171A1C;
+  display: block;
+}
+
+@media screen and (max-width: 770px) {
+  .infoCardCallActionContainer--infocard-categorias :global(.vtex-button__label) {
+    padding: 19px !important;
+  }
 }

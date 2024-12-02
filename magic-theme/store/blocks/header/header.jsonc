@@ -204,7 +204,10 @@
     ]
   },
   "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+    "children": ["flex-layout.row#1-mobile"],
+    "props": {
+      "blockClass": "header-mobile-sticky"
+    }
   },
   "flex-layout.row#0-mobile": {
     "title": "Panda | Header - Topbar - Mobile",

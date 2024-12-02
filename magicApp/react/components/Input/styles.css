@@ -1,0 +1,54 @@
+.input_content {
+  position: relative;
+}
+
+.input_content > span {
+  color: #121416;
+  font: 500 14px/160% 'WorkSans-Medium';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.input_content > textarea,
+.input_content > input {
+  width: 100%;
+  transition: 0.3s ease;
+  padding: 16px 18px 16px 16px;
+  justify-content: space-between;
+  background-color: #f8f9f9;
+  align-items: center;
+  display: flex;
+  color: #121416;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: unset;
+}
+
+.input_content > textarea::placeholder,
+.input_content > input::placeholder {
+  color: #aaafb5;
+}
+
+.input_content > textarea:hover,
+.input_content > input:hover {
+  border-color: #cdd0d3;
+  background-color: #f2f3f5;
+}
+
+.input_disabled {
+  pointer-events: none;
+}
+
+.input_disabled > span,
+.input_disabled > input,
+.input_disabled > input::placeholder {
+  color: #8c8f94;
+}

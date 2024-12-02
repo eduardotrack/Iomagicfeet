@@ -51,6 +51,7 @@
       "shipping-simulator",
 
       "flex-layout.row#description",
+      "flex-layout.row#pdp-description-brand-tag",
 
       "product-reviews",
       "product-questions-and-answers",
@@ -146,7 +147,13 @@
     "props": {
       "blockClass": "mz-product__wishlist"
     },
-    "children": ["vtex.store-components:product-brand", "add-to-list-btn"]
+    "children": ["vtex.store-components:product-brand#pdp-wishlist", "add-to-list-btn"]
+  },
+
+  "vtex.store-components:product-brand#pdp-wishlist": {
+    "props": {
+      "displayMode": "text"
+    }
   },
 
   "flex-layout.row#highlights": {
@@ -212,5 +219,68 @@
 
   "flex-layout.row#buy-button": {
     "children": ["add-to-cart-button#product"]
+  },
+
+  "flex-layout.row#pdp-description-brand-tag": {
+    "title": "Panda | Produto - Selo Marca",
+    "props": {
+      "colSizing": "auto",
+      "blockClass": ["pdp-description-brand-tag"]
+    },
+    "children": [
+      "vtex.store-components:product-brand#pdp-logo",
+      "flex-layout.col#pdp-description-brand-infos"
+    ]
+  },
+  "vtex.store-components:product-brand#pdp-logo": {
+    "props": {
+      "blockClass": ["pdp-brand-logo"],
+      "displayMode": "logo"
+    }
+  },
+
+  "flex-layout.col#pdp-description-brand-infos": {
+    "title": "Panda | Produto - Selo Marca - Informações",
+    "props": {
+      "blockClass": ["pdp-description-brand-infos"]
+    },
+    "children": [
+      "flex-layout.row#pdp-description-brand-name",
+      "rich-text#pdp-sell-by"
+    ]
+  },
+  "flex-layout.row#pdp-description-brand-name": {
+    "title": "Panda | Produto - Selo Marca - Nome",
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "pdp-description-brand-name",
+      "colJustify": "left",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#pdp-brand-name",
+      "vtex.store-components:product-brand#pdp-logo-text"
+    ]
+  },
+  "rich-text#pdp-sell-by": {
+    "title": "Panda | Produto - Selo Marca - Vendido por",
+    "props": {
+      "blockClass": ["pdp-sell-by"],
+      "text": "vendido por magicfeet"
+    }
+  },
+  "rich-text#pdp-brand-name": {
+    "title": "Panda | Produto - Selo Marca - Produto original",
+    "props": {
+      "blockClass": ["pdp-brand-tag-name"],
+      "text": "Produto original"
+    }
+  },
+
+  "vtex.store-components:product-brand#pdp-logo-text": {
+    "props": {
+      "blockClass": ["pdp-brand-logo-text"],
+      "displayMode": "text"
+    }
   }
 }

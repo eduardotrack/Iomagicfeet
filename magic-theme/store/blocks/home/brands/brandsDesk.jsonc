@@ -18,7 +18,7 @@
   "rich-text#brands-home": {
     "title": "Panda | Marcas - Título",
     "props": {
-      "text": "## navegue pelas **marcas**",
+      "text": "## nossas **marcas**",
       "blockClass": "Panda__title"
     }
   },

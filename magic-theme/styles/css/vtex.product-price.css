@@ -157,3 +157,47 @@
 .savingsPercentage--product__price-savings-pdp {
     margin-right: 5px;
 }
+
+.currencyContainer--summary-list {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'WorkSans-Regular';
+}
+
+.sellingPriceValue--summary-list .currencyContainer--summary-list {
+    font-weight: 500;
+    font-family: 'WorkSans-Medium';
+}
+
+.sellingPrice--summary-list {
+    margin-top: -8px;
+}
+
+.installments--summary-list {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'WorkSans-Regular';
+    text-align: start;
+    display: block;
+
+    .currencyContainer--summary-list {
+        font-size: 14px;
+    }
+}
+
+.sellingPrice--summary-mini {
+    font-size: 14px;
+    line-height: 15.12px;
+    font-weight: 600;
+    font-family: 'WorkSans-Medium';
+    display: flex;
+}
+
+.installments--summary-mini {
+    font-size: 14px;
+    line-height: 15.12px;
+    color: #000;
+    font-weight: 400;
+    text-align: start;
+    display: block;
+}

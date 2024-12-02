@@ -1,0 +1,89 @@
+{
+  // "stack-layout#product-summary-mini": {
+  //   "props": {
+  //     "blockClass": ["product-summary"]
+  //   },
+  //   "children": [
+  //     "product-summary-image#shelf-mini",
+  //     // "add-to-list-btn#favorite-button",
+  //     "product-price-savings#summary",
+  //     "flex-layout.row#product-infos-mini"
+  //   ]
+  // },
+
+  // "product-summary.shelf#mini-solid": {
+  //   "props": {
+  //     "blockClass": [
+  //       "shelf-mini",
+  //       "shelf-mini-solid"
+  //     ]
+  //   },
+  //   "children": [
+  //     "stack-layout#product-summary-mini-solid"
+  //   ]
+  // },
+  // "stack-layout#product-summary-mini-solid": {
+  //   "props": {
+  //     "blockClass": [
+  //       "product-summary",
+  //       "summary-mini"
+  //     ]
+  //   },
+  //   "children": [
+  //     "product-summary-image#shelf-mini",
+  //     "flex-layout.row#product-infos-mini"
+  //   ]
+  // },
+
+  // "product-summary-image#shelf-mini": {
+  //   "title": "Imagem do produto",
+  //   "props": {
+  //     "blockClass": "product-summary-image",
+  //     "showBadge": false,
+  //     "aspectRatio": "1:1",
+  //     "height": {
+  //       "desktop": "250"
+  //     },
+  //     "width": {
+  //       "desktop": "250"
+  //     }
+  //     // "hoverImage": {
+  //     //   "criteria": "index",
+  //     //   "index": 1
+  //     // }
+  //   }
+  // },
+
+  // "flex-layout.row#product-infos-mini": {
+  //   "props": {
+  //     "blockClass": ["product-infos", "mini"]
+  //   },
+  //   "children": ["flex-layout.col#product-infos-mini"]
+  // },
+  // "flex-layout.col#product-infos-mini": {
+  //   "props": {},
+  //   "children": [
+  //     "product-summary-name#summary-mini",
+  //     "product-selling-price#summary-mini",
+  //     "product-installments#summary-mini"
+  //     // "flex-layout.row#product-title",
+  //     // "condition-layout.product#is-product-available.shelf-product-info"
+  //   ]
+  // },
+  // "product-summary-name#summary-mini": {
+  //   "props": {
+  //     "blockClass": "summary-mini"
+  //   }
+  // },
+  // "product-selling-price#summary-mini": {
+  //   "props": {
+  //     "blockClass": "summary-mini"
+  //   }
+  // },
+  // "product-installments#summary-mini": {
+  //   "props": {
+  //     "message": "ou {installmentsNumber}x de {installmentValue}",
+  //     "blockClass": "summary-mini"
+  //   }
+  // }
+}

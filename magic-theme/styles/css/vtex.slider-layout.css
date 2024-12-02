@@ -8,6 +8,8 @@
 
 .paginationDot--home__slider {
   background: #fff;
+  width: 5.5px !important;
+  height: 5.5px !important;
 }
 
 .paginationDot--isActive {
@@ -16,11 +18,16 @@
   border-radius: 50px;
   transform: matrix(0.86, 0.49, -0.53, 0.86, 0, 0);
   height: 20px !important;
+  padding: 2.5px;
   margin-top: -6px;
 }
 
 .imageElement--home__slider {
   max-height: 100% !important;
+}
+
+.sliderArrows--home__slider {
+  color: white;
 }
 
 .sliderArrows--carousel-procura {
@@ -46,7 +53,7 @@
 }
 
 .paginationDotsContainer--list-brands-home {
-  bottom: -20px;
+  bottom: -42px;
 }
 
 .paginationDot--carousel-exclusivos,
@@ -246,4 +253,138 @@
     height: 20px;
   }
 
+}
+/*new home*/
+.slide--best-sellers-home :global(.vtex-wish-list-1-x-wishlistIconContainer) {
+  right: 17px !important;
+  top: 3px !important;
+}
+
+.paginationDotsContainer--best-sellers-home {
+  bottom: -32px;
+}
+
+.paginationDotsContainer {
+  align-items: center;
+}
+
+.paginationDot--best-sellers-home,
+.paginationDot--list-brands-home {
+  background-color: #1C1C1C;
+  width: 7px !important;
+  height: 7px !important;
+}
+
+.paginationDot--best-sellers-home--isActive,
+.paginationDot--list-brands-home--isActive {
+  background-color: transparent;
+  border: 2px solid #1C1C1C;
+  width: 5.5px !important;
+  height: 15.5px !important;
+  margin-top: 1px;
+}
+
+.sliderTrackContainer--home-genders-shelf {
+  background-color: #F4F4F4;
+  border-radius: 15px;
+}
+
+.sliderTrack--home-genders-cards {
+  gap: 21px;
+}
+
+.sliderArrows--home-week-featured  {
+  > svg {
+    pointer-events: none;
+  }
+}
+
+.sliderArrows--slider-bottom {
+  display: none;
+}
+
+.sliderLeftArrow--slider-top {
+  left: -157px;
+}
+
+.sliderRightArrow--slider-top {
+  right: unset;
+  left: -100px;
+}
+
+.sliderArrows--slider-top {
+  bottom: 67px;
+
+  > svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.slide--tips-home-row:not(:last-child) {
+  border-right: 1px solid #E6E7E8;
+}
+
+@media screen and (max-width: 990px) {
+  .slide--tips-home-row:not(:last-child) {
+    border-right: none;
+  }
+
+  .sliderArrows--tips-home-row {
+    > svg {
+      width: 12px;
+      height: 16px;
+    }
+  }
+
+  .sliderTrack--home-genders-cards {
+    gap: 0;
+  }
+
+  .paginationDotsContainer--list-brands-home {
+    bottom: -16px;
+  }
+
+  .sliderArrows--home-genders-cards {
+    top: -53px;
+
+    > svg {
+      width: 15px;
+      height: 15px;
+      color: #000;
+    }
+  }
+
+  .sliderRightArrow--home-genders-cards {
+    right: 18px;
+  }
+
+  .sliderLeftArrow--home-genders-cards {
+    left: 75vw;
+  }
+  
+  .sliderLeftArrow--slider-top {
+    left: 71vw;
+  }
+  
+  .sliderRightArrow--slider-top {
+    left: unset;
+    right: 0;
+  }
+  
+  .sliderArrows--slider-top {
+    bottom: unset;
+    top: -38px;
+  
+    > svg {
+      width: 15px;
+      height: 15px;
+      color: #000;
+
+    }
+  }
+
+  .sliderTrack--home-week-featured {
+    gap: 12px;
+  }
 }

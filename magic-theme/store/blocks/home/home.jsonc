@@ -1,76 +1,108 @@
 {
-  "store.home": {
-    "title": "Panda | Home",
-    "blocks": ["disposition-layout#home"]
+  // "store.home": {
+  //   "title": "Panda | Home",
+  //   "blocks": ["disposition-layout#home"]
  
-  },
+  // },
 
-  "retail-rocket-container#home": {
-    "props": {
-      "markupBlock": "635abf00cf114781944b4d29",
-      "type": "HOME"
-    }
-  },
+  // "retail-rocket-container#home": {
+  //   "props": {
+  //     "markupBlock": "635abf00cf114781944b4d29",
+  //     "type": "HOME"
+  //   }
+  // },
 
-  "disposition-layout#home": {
-    "title": "Panda | Home - Disposição do conteúdo",
-    "children": [
-      "list-context.image-list#slider-full-home",
-      "responsive-layout.desktop#tips-home",
-      "responsive-layout.phone#tips-home",
- /*      "flex-layout.row#shelf-home-01", */
-      "retail-rocket-container#home",
+  // "disposition-layout#home": {
+  //   "title": "Panda | Home - Disposição do conteúdo",
+  //   "children": [
+  //     "list-context.image-list#slider-full-home-new",
+  //     "flex-layout.row#tips-slider",
+  //     // "responsive-layout.phone#tips-home",
 
-      "flex-layout.row#chances-home",
-      "flex-layout.row#procura-home",
-     
-      "flex-layout.row#quem-home",
-      
-      "flex-layout.row#novidadesTitle-home",
-      "flex-layout.row#exclusivo-home",
-      "flex-layout.row#calendario-home",
-      "responsive-layout.phone#brands-home-Mob",
-      "responsive-layout.desktop#brands-home-Desk"
-    ],
-    "props": {
-      "disposition": [
-        {
-          "order": 1
-        },
-        {
-          "order": 2
-        },
-        {
-          "order": 3
-        },
-        {
-          "order": 4
-        },
-        {
-          "order": 5
-        },
-        {
-          "order": 6
-        },
-        {
-          "order": 7
-        },
-        {
-          "order": 8
-        },
-        {
-          "order": 9
-        },
-        {
-          "order": 10
-        },
-        {
-          "order": 11
-        },
-        {
-          "order": 12
-        } 
-      ]
-    }
-  } 
+  //     "flex-layout.row#week-featured",
+
+  //     // "retail-rocket-container#home",
+
+  //     "flex-layout.row#genders-shelf-home",
+  //     "flex-layout.row#best-sellers-home",
+  //     "flex-layout.row#favorite-character",
+  //     "flex-layout.row#infocard-categorias",
+
+  //     "responsive-layout.mobile#brands-home-Mob",
+  //     "responsive-layout.desktop#brands-home-Desk",
+
+  //     "flex-layout.row#banner-app-home"
+  //   ],
+  //   "props": {
+  //     "disposition": [
+  //       {
+  //         "order": 1
+  //       },
+  //       {
+  //         "order": 2
+  //       },
+  //       {
+  //         "order": 3
+  //       },
+  //       {
+  //         "order": 4
+  //       },
+  //       {
+  //         "order": 5
+  //       },
+  //       {
+  //         "order": 6
+  //       },
+  //       {
+  //         "order": 7
+  //       },
+  //       {
+  //         "order": 8
+  //       },
+  //       {
+  //         "order": 9
+  //       },
+  //       {
+  //         "order": 10
+  //       },
+  //       {
+  //         "order": 11
+  //       },
+  //       {
+  //         "order": 12
+  //       },
+  //       {
+  //         "order": 13
+  //       }
+  //     ]
+  //   }
+  // },
+
+  // "flex-layout.row#tips-slider": {
+  //   "title": "Panda | Tips Slider",
+  //   "children": ["slider-layout#tips-new-home"],
+  //   "props": {
+  //     "blockClass": "tips-home-row"
+  //   }
+  // },
+
+  // "slider-layout#tips-new-home": {
+  //   "props": {
+  //     "blockClass": ["tips-home-row"],
+  //     "itemsPerPage": {
+  //       "desktop": 4,
+  //       "tablet": 4,
+  //       "phone": 1
+  //     },
+  //     "infinite": false,
+  //     "showNavigationArrows": "mobileOnly",
+  //     "showPaginationDots": "never"
+  //   },
+  //   "children": [
+  //     "flex-layout.col#tips-item-01",
+  //     "flex-layout.col#tips-item-02",
+  //     "flex-layout.col#tips-item-03",
+  //     "flex-layout.col#tips-item-04"
+  //   ]
+  // }
 }

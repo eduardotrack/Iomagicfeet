@@ -201,26 +201,26 @@
 
   "product-selling-price-range": {
     "props": {
-      "blockClass": "summary",
+      "blockClass": ["summary", "summary-list"],
       "message": "{minPriceValue}"
     }
   },
   "product-list-price#summary": {
     "props": {
-      "blockClass": "summary",
+      "blockClass": ["summary", "summary-list"],
       "message": "{listPriceValue}"
     }
   },
   "product-installments#summary": {
     "props": {
       "message": "ou {installmentsNumber}x de {installmentValue}",
-      "blockClass": ["summary", "Panda-summary-price"]
+      "blockClass": ["summary", "Panda-summary-price", "summary-list"]
     }
   },
 
   "product-selling-price#summary": {
     "props": {
-      "blockClass": "summary",
+      "blockClass": ["summary", "summary-list"],
       "message": "{sellingPriceValue}"
     }
   },

@@ -49,7 +49,10 @@
   // INFO
   "flex-layout.row#searchinfomobile": {
     "title": "Panda | Informações da busca - Mobile",
-    "children": ["order-by.v2", "flex-layout.col#filter"],
+    "children": [
+      "order-by.v2",
+      "flex-layout.col#filter"
+    ],
     "props": {
       "blockClass": "panda-search__order--mobile",
       "preserveLayoutOnMobile": true,
