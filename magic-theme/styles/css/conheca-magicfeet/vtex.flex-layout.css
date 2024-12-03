@@ -1,0 +1,74 @@
+.flexRow--conheca-magicfeet-info-1 :global(.vtex-store-components-3-x-container){
+    background-color: #F5F5F5;
+    max-width: 100%;
+}
+
+.flexColChild--conheca-magicfeet-info-1-col-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexColChild--conheca-magicfeet-info-1-col-2{
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-bottom: -4px;
+    margin-right: -4px;
+}
+
+.flexRow--conheca-magicfeet-info-2 :global(.vtex-store-components-3-x-container){
+    max-width: 100%;
+}
+
+.flexColChild--conheca-magicfeet-info-2-col-2{
+    background-color: #0B0C0C;
+    padding: 45px 68px;
+    margin-right: -4px;
+}
+
+
+.flexCol--conheca-magicfeet-info-2-col-1{
+    display: flex;
+    justify-content: center;
+}
+
+.flexColChild--conheca-magicfeet-info-2-col-1{
+    height: fit-content !important;
+
+}
+
+
+.flexColChild--conheca-magicfeet-info-2-col-1{
+    padding: 0 70px;
+}
+
+
+@media (max-width: 767px) {
+
+    
+.flexColChild--conheca-magicfeet-info-2-col-2{
+    padding: 40px 16px;
+    margin-right: 0px;
+}
+
+
+    .flexColChild--conheca-magicfeet-info-2-col-1{
+        padding: 0px;
+    }
+
+    .flexRow--conheca-magicfeet-info-1 :global(.vtex-store-components-3-x-container),
+    .flexRow--conheca-magicfeet-info-2 :global(.vtex-store-components-3-x-container){
+        padding: 0;
+    }
+
+    .flexCol--conheca-magicfeet-info-2-col-1{
+        padding: 40px 16px;
+    }
+
+    .flexColChild--conheca-magicfeet-info-2-col-1{
+        display: flex;
+        justify-content: center;
+    }
+
+}

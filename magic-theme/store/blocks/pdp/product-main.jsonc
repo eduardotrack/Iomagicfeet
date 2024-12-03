@@ -189,6 +189,34 @@
       // "displayMode": "select",
     }
   },
+  "flex-layout.row#panda-compre-junto":{
+    "title": "Panda | Produto - Compre Junto",
+    "props": {
+      "blockClass": "product__main--compre-junto"
+    },
+    "children": ["rich-text#compre-junto"]
+  },
+
+  "rich-text#compre-junto": {
+    "title": "Panda | Produto - Compre Junto",
+    "props": {
+      "text": "Compre junto e ganhe desconto!"
+    }
+  },
+
+  "flex-layout.row#buytogether": {
+    "title": "Panda | Compre Junto",
+    "props": {
+      "blockClass": "row-buytogether"
+    },
+    "children": ["buy-together"]
+  },
+
+  "buy-together": {
+    "title": "Panda | Compre Junto",
+    "children": ["vtex.shelf-components:product-summary.shelf"]
+  },
+
   "flex-layout.row#product-qqt": {
     "title": "Panda | Produto - Quantidade e Botão de compra",
     "props": {

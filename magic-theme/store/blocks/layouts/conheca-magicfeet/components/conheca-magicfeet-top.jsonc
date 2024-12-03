@@ -1,0 +1,11 @@
+{
+    "rich-text#conheca-magicfeet-top": {
+        "title": "Panda - Titulo do topo Conheça a Magic Feet",
+        "props": {
+            "text": "## Conheça a magicfeet\n Balneário Camboriú!",
+            "blockClass": "conheca-magicfeet-top",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    }
+}

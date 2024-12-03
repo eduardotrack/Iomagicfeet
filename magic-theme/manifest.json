@@ -1,7 +1,7 @@
 {
   "vendor": "magicfeet",
   "name": "magictheme",
-  "version": "4.0.40",
+  "version": "4.0.41",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -78,6 +78,7 @@
     "vtex.admin-search": "1.x",
     "vtex.search-resolver": "1.x",
     "vtex.product-availability": "0.x",
+    "vtex.shelf-components": "0.x",
     "magicfeet.magicapp": "0.x",
     "magicfeet.magiccep": "0.x"
   },

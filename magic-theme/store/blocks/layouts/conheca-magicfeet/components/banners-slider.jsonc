@@ -1,0 +1,37 @@
+{
+
+"list-context.image-list#banners-slider":{
+  "title": "Panda - lista de imagens slider",
+  "props": {
+  "blockClass": "list-image-conheca-mf",
+  "preload": false,
+  "images": [
+    {
+      "image": "assets/img/MF-conheca-01.png",
+      "mobileImage": "assets/img/MF-conheca-01-mob.png"
+    },
+    {
+      "image": "assets/img/box-destaque-demo.png",
+      "mobileImage": "assets/img/box-destaque-demo-mobile.png"
+    }
+  ]
+  },
+  "children": ["slider-layout#slider-conheca-magicfeet"]
+},
+
+
+"slider-layout#slider-conheca-magicfeet": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "blockClass": "carousel-conheca-MF"
+    }
+    
+  }
+}

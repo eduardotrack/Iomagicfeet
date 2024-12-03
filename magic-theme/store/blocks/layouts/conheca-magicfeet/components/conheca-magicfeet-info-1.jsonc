@@ -1,0 +1,52 @@
+{
+    "flex-layout.row#conheca-magicfeet-info-1": {
+        "title": "Panda - Conheça a Magic Feet info 1",
+        "props": {
+            "blockClass": "conheca-magicfeet-info-1"
+        },
+        "children": [
+            "flex-layout.col#conheca-magicfeet-info-1-col-1",
+            "flex-layout.col#conheca-magicfeet-info-1-col-2"
+        ]
+    },
+
+    "flex-layout.col#conheca-magicfeet-info-1-col-1": {
+        "title": "Panda - Conheça a Magic Feet info 1 col 1",
+        "props": {
+            "blockClass": "conheca-magicfeet-info-1-col-1"
+        },
+        "children": [
+            "rich-text#conheca-magicfeet-info-1-col-1"
+        ]
+    },
+
+    "rich-text#conheca-magicfeet-info-1-col-1": {
+        "title": "Panda - Texto de informação coluna 1 info 1",
+        "props": {
+            "text": "### Somos especialistas em lifestyle esportivo infantil, mas também em tendências, conforto, criatividade e diversão!\nValorizamos a infância, as brincadeiras, as descobertas e acreditamos que deixando a imaginação fluir tudo é possível. Para nós, é extremamente importante dar poder e autonomia para a garotada usar a criatividade e assim manifestar suas próprias personalidades e estilos.",
+            "blockClass": "description-info-1-col-1",
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER"
+        }
+    },
+
+    "flex-layout.col#conheca-magicfeet-info-1-col-2": {
+        "title": "Panda - Conheça a Magic Feet info 1 col 2",
+        "props": {
+            "blockClass": "conheca-magicfeet-info-1-col-2"
+        },
+        "children": [
+            "image#conheca-magicfeet-info-1-col-2"
+        ]
+    },
+
+    "image#conheca-magicfeet-info-1-col-2": {
+        "title": "Panda - imagem da coluna 2 da info 1",
+        "props": {
+            "src": "assets/img/BC-image-magic.png",
+            "alt": "Conheça a Magic Feet",
+            "blockClass": "image-info-1-col-2",
+            "maxHeight": "650px"
+        }
+    }
+}

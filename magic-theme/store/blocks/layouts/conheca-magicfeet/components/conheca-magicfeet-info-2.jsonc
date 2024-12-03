@@ -1,0 +1,71 @@
+{
+    "flex-layout.row#conheca-magicfeet-info-2": {
+        "title": "Panda - Conheça a Magic Feet info 2",
+        "props": {
+            "blockClass": "conheca-magicfeet-info-2"
+        },
+        "children": [
+            "flex-layout.col#conheca-magicfeet-info-2-col-1",
+            "flex-layout.col#conheca-magicfeet-info-2-col-2"
+        ]
+    },
+
+
+    "flex-layout.col#conheca-magicfeet-info-2-col-1": {
+        "title": "Panda - Conheça a Magic Feet info 2 col 1",
+        "props": {
+            "blockClass": "conheca-magicfeet-info-2-col-1"
+        },
+        "children": [
+            "rich-text#conheca-magicfeet-endereco",
+            "rich-text#conheca-magicfeet-telefone",
+            "link#Fale-com-loja"
+        ]
+    },
+
+    "rich-text#conheca-magicfeet-endereco": {
+        "title": "Panda - informação endereço e telefone",
+        "props": {
+            "blockClass": "informacao-endereco",
+           "text": "**Endereço:** Av. Santa Catarina, 01 - Sala L-240 - Estados, Balneário Camboriú - SC, 88339-005 \n"
+        }
+    },
+    "rich-text#conheca-magicfeet-telefone": {
+        "title": "Panda - informação endereço e telefone",
+        "props": {
+            "blockClass": "informacao-telefone",
+           "text": "**Telefone:** (47) 3263-8429"
+        }
+    },
+
+    "link#Fale-com-loja": {
+        "title": "Fale com a loja",
+        "props": {
+            "blockClass":"link-fale-com",
+            "href": "/login?returnUrl={queryString.returnUrl}",
+            "label": "Fale com a loja"
+        }
+    },
+
+    "flex-layout.col#conheca-magicfeet-info-2-col-2": {
+        "title": "Panda - Conheça a Magic Feet info 2 col 2",
+        "props": {
+            "blockClass": "conheca-magicfeet-info-2-col-2"
+        },
+        "children": [
+            "rich-text#conheca-magicfeet-info-2-col-2"
+        ]
+    },
+
+    "rich-text#conheca-magicfeet-info-2-col-2": {
+        "title": "Panda - Texto de informação coluna 2 info 2",
+        "props": {
+            "text": "### Os principais parceiros estratégicos dos players globais:\n **Nike, Jordan Brand, adidas, Puma, Vans e Converse.**\n Com isso, além da enorme responsabilidade em elevar a moda infantil no Brasil, trazemos sempre em primeira mão todos os lançamentos globais, produtos exclusivos, com a mais alta tecnologia, segurança e qualidade para a galerinha poder sair, brincar e se divertir à vontade.",
+            "blockClass": "description-info-2-col-2",
+            "textAlignment": "LEFT",
+            "textPosition": "CENTER"
+        }
+    }
+
+
+}

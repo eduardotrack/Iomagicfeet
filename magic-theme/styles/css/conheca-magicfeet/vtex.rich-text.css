@@ -1,0 +1,140 @@
+.container--conheca-magicfeet-top{
+    background-color: #5DFF49;
+    padding: 40px 0;
+}
+
+.headingLevel2--conheca-magicfeet-top,
+.paragraph--conheca-magicfeet-top{
+    padding: 0;
+    margin: 0;
+}
+
+.headingLevel2--conheca-magicfeet-top{
+    color: #000;
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 106%;
+    letter-spacing: -1.34px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.paragraph--conheca-magicfeet-top{
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 208%;
+    letter-spacing: -0.56px;
+    margin-top: 10px;
+}
+
+.wrapper--description-info-1-col-1{
+    padding: 0 55px;
+}
+
+.headingLevel3--description-info-1-col-1{
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px; /* 102.5% */
+}
+
+.paragraph--description-info-1-col-1{
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 32px;
+}
+
+.headingLevel3--description-info-2-col-2{
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px; /* 102.5% */
+}
+
+.paragraph--description-info-2-col-2{
+    padding: 0;
+    margin:0 ;
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.strong--description-info-2-col-2{
+    display: inline-block;
+    padding: 30px 0;
+}
+
+.paragraph--informacao-endereco,
+.paragraph--informacao-telefone{
+    margin: 0;
+    padding: 0;
+    color: #0B0C0C;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.strong--informacao-endereco,
+.strong--informacao-telefone{
+    font-size: 40px;
+}
+
+.paragraph--informacao-telefone{
+    margin-top: 25px;
+}
+
+
+@media (max-width: 767px) {
+    .container--conheca-magicfeet-top{
+        padding: 40px 0;
+    }
+    .headingLevel2--conheca-magicfeet-top{
+        font-size: 33px;
+        width: 300px;
+
+    }
+
+    .paragraph--conheca-magicfeet-top{
+        font-size: 18px;
+        line-height: 106%
+    }
+    .wrapper--description-info-1-col-1{
+        padding: 40px 16px;
+    }
+    .headingLevel3--description-info-1-col-1{
+        font-size: 24px;
+        line-height: 30px; /* 135.714% */
+    }
+    .paragraph--description-info-1-col-1{
+        margin-top: 20px;
+    }
+    .strong--informacao-endereco,
+    .strong--informacao-telefone{
+        font-size: 26px;
+    }
+
+
+    .headingLevel3--description-info-2-col-2{
+        font-size: 24px;
+        line-height: 30px; /* 135.714% */
+    }
+
+    .container--informacao-telefone{
+        width: 100%;
+    }
+}

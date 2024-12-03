@@ -1,0 +1,30 @@
+.link--link-fale-com{
+    text-decoration: none;
+    margin-top: 16px;
+    display: inline-block;
+}
+
+.label--link-fale-com{
+    color: #5DFF49;
+    font-size: 19.799px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 29.698px */
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.label--link-fale-com::before{
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-image: url("assets/svg/zapzap-conheca.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}

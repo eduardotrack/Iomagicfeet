@@ -1,0 +1,12 @@
+{
+    "store.custom#conheca-magicfeet": {
+        "blocks": [
+            "rich-text#conheca-magicfeet-top",
+            "flex-layout.row#conheca-magicfeet-info-1",
+            "flex-layout.row#conheca-magicfeet-info-2",
+            "list-context.image-list#banners-slider"
+        ]
+
+    }
+
+}

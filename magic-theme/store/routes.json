@@ -7,5 +7,8 @@
   },
   "store.custom#aplicativo-mvp": {
     "path": "/aplicativo-mvp"
+  },
+  "store.custom#conheca-magicfeet": {
+    "path": "/conheca-magicfeet"
   }
 }
