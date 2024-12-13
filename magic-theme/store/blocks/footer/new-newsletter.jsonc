@@ -1,0 +1,79 @@
+{
+  "flex-layout.row#new-newsletter-wrapper": {
+    "props": {
+      "blockClass": ["new-newsletter-wrapper"]
+    },
+    "children": [
+      "flex-layout.col#news-newsletter-logo",
+      "newsletter-form#new-footer"
+    ]
+  },
+
+  "flex-layout.col#news-newsletter-logo": {
+    "title": "Panda | Footer - Newsletter - Logo + Texto",
+    "props": {
+      "blockClass": "new-newsletter"
+    },
+    "children": [
+      "image#news-newsletter-logo",
+      "rich-text#new-newsletter"
+    ]
+  },
+  "image#news-newsletter-logo": {
+    "title": "Panda | Footer - Newsletter - Logo",
+    "props": {
+      "src": "assets/img/header-logo.png",
+      "blockClass": "new-newsletter"
+    }
+  },
+  "rich-text#new-newsletter": {
+    "title": "Panda | Footer - Newsletter - Texto",
+    "props": {
+      "text": "receba as nossas novidades e saiba antes dos futuros lançamentos!",
+      "blockClass": "new-newsletter"
+    }
+  },
+
+  "newsletter-form#new-footer": {
+    "title": "Panda | Footer - Newsletter",
+    "props": {
+      "blockClass": "footer__newsletter"
+    },
+    "children": [
+      "flex-layout.row#newsletter-email-form",
+      "newsletter-checkbox-confirmation#new-footer"
+    ]
+  },
+
+  "flex-layout.row#newsletter-email-form": {
+    "title": "Panda | Footer - Newsletter - Email Form",
+    "children": [
+      "newsletter-input-email#new-footer",
+      "newsletter-submit#new-footer"
+    ],
+    "props": {
+      "blockClass": "new-newsletter",
+      "colSizing": "auto"
+    }
+  },
+  "newsletter-input-email#new-footer": {
+    "title": "Panda | Campo de email",
+    "props": {
+      "placeholderText": "insira seu e-mail",
+      "blockClass": "new-newsletter"
+    }
+  },
+  "newsletter-checkbox-confirmation#new-footer": {
+    "title": "Panda | Campo de confirmação",
+    "props": {
+      "checkboxLabel": "aceito receber conteúdos da magicfeet e concordo com a política de privacidade"
+    }
+  },
+  "newsletter-submit#new-footer": {
+    "title": "Panda | Botão submit",
+    "props": {
+      "submitButtonLabel": "cadastrar",
+      "blockClass": "new-newsletter"
+    }
+  }
+}

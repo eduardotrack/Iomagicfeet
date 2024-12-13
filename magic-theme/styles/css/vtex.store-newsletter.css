@@ -36,10 +36,15 @@
    margin-left: 5px;
 }
 
-@media (max-width: 767px) {
-    .emailInputContainer--footer__newsletter :global(.vtex-styleguide-9-x-input) {
-        min-width: 50vw;
-    }
+.emailInputContainer--new-newsletter :global(.vtex-input-prefix__group) {
+    border: 1px solid #F2F3F5;
+    height: 100%;
+}
+
+.emailInputContainer--new-newsletter :global(.vtex-styleguide-9-x-input) {
+    padding: 16px;
+    line-height: normal;
+    display: block;
 }
 
 .emailInputContainer--footer__newsletter :global(.vtex-styleguide-9-x-input)::placeholder {
@@ -51,15 +56,12 @@
 }
 
 .formSubmitContainer :global(.vtex-button) {
-    font-size: 0;
-    color: transparent;
-    width: 100%;
-    background: transparent;
-    border: none;
-    margin-top: 1px;
+    font-weight: 500;
+    font-family: 'WorkSans-Regular';
+    height: 100%;
 }
 
-.formSubmitContainer :global(.vtex-button)::after {
+/* .formSubmitContainer :global(.vtex-button)::after {
     content: '.';
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='17' viewBox='0 0 20 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 15.3184L17.8672 9.86285C18.7109 9.00523 18.7109 7.61474 17.8672 6.75712L12.5165 1.31836M0 8.31836L18.5 8.31836' stroke='%231C1C1C' stroke-width='2'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat no-repeat;
@@ -68,23 +70,26 @@
     width: 18px;
     height: 18px;
     display: inline-block;
-}
+} */
 
 .confirmationCheckboxContainer :global(.vtex-checkbox__line-container) {
     display: flex;
     align-items: center;
+    margin-top: 8px;
 }
 
 .confirmationCheckboxContainer :global(.vtex-checkbox__label) {
     font-family: 'WorkSans-Regular';
     font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #1C1C1C;
+    font-size: 12px;
+    line-height: 138%;
+    color: #121416;
 }
 
 .confirmationCheckboxContainer :global(.vtex-checkbox__box) {
-    border: 2px solid #1C1C1C;
+    border: 1px solid #E3E6E8;
+    background-color: #fff;
+    border-radius: 4px;
 }
 
 .confirmationCheckboxContainer :global(.vtex__icon-check) {
@@ -93,4 +98,23 @@
     stroke: #1C1C1C;
     background: #1C1C1C;
     border: 2px solid #1C1C1C;
+}
+
+
+@media (max-width: 767px) {
+    .emailInputContainer--footer__newsletter :global(.vtex-styleguide-9-x-input) {
+        min-width: 50vw;
+    }
+
+    .emailInputContainer--new-newsletter :global(.vtex-styleguide-9-x-input) {
+        padding: 8px 16px;
+    }
+
+    .formSubmitContainer :global(.vtex-button) {
+        width: 100%;
+    }
+
+    .confirmationCheckboxContainer :global(.vtex-checkbox__line-container) {
+        margin-top: 16px;
+    }
 }

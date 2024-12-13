@@ -1,28 +1,36 @@
 {
-  // "flex-layout.row#favorite-character": {
-  //   "title": "Panda | Personagem Favorito",
-  //   "props": {
-  //     "blockClass": "favorite-character"
-  //   },
-  //   "children": ["flex-layout.col#favorite-character"]
-  // },
+  "experimental__visibility-layout#favorite-character": {
+    "title": "Panda | Personagem Favorito (On/Off)",
+    "children": ["flex-layout.row#favorite-character"],
+    "props": {
+      "visible": false
+    }
+  },
 
-  // "flex-layout.col#favorite-character": {
-  //   "title": "Panda | Personagem Favorito",
-  //   "props": {
-  //     "blockClass": "favorite-character"
-  //   },
-  //   "children": [
-  //     "rich-text#favorite-character-title",
-  //     "pd-CharacterShelf"
-  //   ]
-  // },
+  "flex-layout.row#favorite-character": {
+    "title": "Panda | Personagem Favorito",
+    "props": {
+      "blockClass": "favorite-character"
+    },
+    "children": ["flex-layout.col#favorite-character"]
+  },
 
-  // "rich-text#favorite-character-title": {
-  //   "title": "Panda | Título Personagem Favorito",
-  //   "props": {
-  //     "blockClass": "Panda__title",
-  //     "text": "## o seu **personagem favorito**"
-  //   }
-  // }
+  "flex-layout.col#favorite-character": {
+    "title": "Panda | Personagem Favorito",
+    "props": {
+      "blockClass": "favorite-character"
+    },
+    "children": [
+      "rich-text#favorite-character-title",
+      "pd-CharacterShelf"
+    ]
+  },
+
+  "rich-text#favorite-character-title": {
+    "title": "Panda | Título Personagem Favorito",
+    "props": {
+      "blockClass": "Panda__title",
+      "text": "## o seu **personagem favorito**"
+    }
+  }
 }

@@ -6,7 +6,7 @@
   "footer-layout.desktop": {
     "title": "Panda | Footer - Desktop",
     "children": [
-      "flex-layout.row#newsletter-wrapper",
+      "flex-layout.row#new-newsletter-wrapper",
       "flex-layout.row#footer-2-desktop",
       "flex-layout.row#footer-3-desktop"
     ]
@@ -16,7 +16,7 @@
   "footer-layout.mobile": {
     "title": "Panda | Footer - Mobile",
     "children": [
-      "flex-layout.row#newsletter-wrapper",
+      "flex-layout.row#new-newsletter-wrapper",
       "flex-layout.row#footer-2-mobile",
       "flex-layout.row#footer-3-mobile",
       "flex-layout.row#footer-developed-powered"

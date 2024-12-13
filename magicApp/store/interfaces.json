@@ -1,127 +1,130 @@
 {
-    "pd-skuSimilar": {
-        "component": "skuSimilar"
-    },
+  "pd-skuSimilar": {
+    "component": "skuSimilar"
+  },
 
-    "pd-nossasLojas": {
-        "component": "nossasLojas"
-    },
+  "pd-nossasLojas": {
+    "component": "nossasLojas"
+  },
 
-    "pd-coreForm": {
-        "component": "coreForm"
-    },
+  "pd-coreForm": {
+    "component": "coreForm"
+  },
 
-    "pd-newsForm": {
-        "component": "newsForm"
-    },
+  "pd-newsForm": {
+    "component": "newsForm"
+  },
 
-    "pd-NeoassistCentral": {
-        "component": "NeoassistCentral",
-        "render": "server",
-        "hydration": "always"
-    },
+  "pd-NeoassistCentral": {
+    "component": "NeoassistCentral",
+    "render": "server",
+    "hydration": "always"
+  },
 
-    "pd-SkuSuggestion": {
-        "component": "SkuSuggestionCore"
-    },
+  "pd-SkuSuggestion": {
+    "component": "SkuSuggestionCore"
+  },
 
-    "pd-welcomeControl": {
-        "component": "welcomeControl"
-    },
+  "pd-welcomeControl": {
+    "component": "welcomeControl"
+  },
 
-    "pd-skuFormatDesc": {
-        "component": "skuFormatDesc"
-    },
+  "pd-skuFormatDesc": {
+    "component": "skuFormatDesc"
+  },
 
-    "pd-popupFirstBuy": {
-        "component": "popupFirstBuy"
-    },
+  "pd-popupFirstBuy": {
+    "component": "popupFirstBuy"
+  },
 
-    "pd-progressiveBar": {
-        "component": "progressiveBar"
-    },
+  "pd-progressiveBar": {
+    "component": "progressiveBar"
+  },
 
-    "pd-popupNewsletter": {
-        "component": "popupNewsletter"
-    },
+  "pd-popupNewsletter": {
+    "component": "popupNewsletter"
+  },
 
-    "pd-save1": {
-        "component": "save1"
-    },
+  "pd-save1": {
+    "component": "save1"
+  },
 
-    "pd-categoriaFaq": {
-        "component": "categoriaFaq"
-    },
+  "pd-categoriaFaq": {
+    "component": "categoriaFaq"
+  },
 
-    "pd-cupomField": {
-        "component": "cupomField"
-    },
+  "pd-cupomField": {
+    "component": "cupomField"
+  },
 
-    "pd-cupomFieldGrid": {
-        "component": "cupomFieldGrid"
-    },
+  "pd-cupomFieldGrid": {
+    "component": "cupomFieldGrid"
+  },
 
-    "pd-promotionBar": {
-        "component": "promotionBar"
-    },
-    "pd-ChangeTagLogin":{
-        "component": "ChangeTagLogin"
-    },
-    "pd-scrollCashback": {
-      "component": "ScrollCashback"
-    },
-    "pd-familiesMenu": {
-      "component": "familiesMenu"
-    },
-    "pd-formBlackFriday": {
-      "component": "FormBlackFriday"
-    },
-    "pd-tabsBlackFriday": {
-      "component": "CategoryTabsBlackFriday"
-    },
-    "pd-faqBlackFriday": {
-      "component": "FaqBlackFriday"
-    },
-    "pd-categoryTitle": {
-      "component": "CategoryTitle"
-    },
-    "pd-changePurchaseConfirmationMessage": {
-      "component": "ChangePurchaseConfirmationMessage"
-    },
-    "pd-NeoassistScript": {
-      "component": "NeoassistScript"
-    },
-    "pd-CharacterShelf": {
-      "component": "CharacterShelf"
-    },
-    "combined-product-list": {
-      "component": "CombinedProductList",
-      "composition": "children"
-    },
-    "combined-product-list.with-grid": {
-      "component": "CombinedProductListWithGrid",
-      "composition": "children"
-    },
-    "combined-product-list.with-image": {
-      "component": "CombinedProductListWithImage",
-      "composition": "children"
-    },
-    "combined-product-list.with-slide": {
-      "component": "CombinedProductListWithSlide",
-      "composition": "children"
-    },
-    "combined-product-list.with-slide-text": {
-      "component": "CombinedProductListWithSlideText",
-      "composition": "children"
-    },
-    "handle-week-featured-sliders": {
-      "component": "HandleOsQueridinhosSliders",
-      "composition": "children"
-    },
-    "custom-sku-selector": {
-      "component": "CustomSkuSelector"
-    },
-    "become-a-franchisee-form": {
-      "component": "BecomeAFranchiseeForm"
-    }
+  "pd-promotionBar": {
+    "component": "promotionBar"
+  },
+  "pd-ChangeTagLogin": {
+    "component": "ChangeTagLogin"
+  },
+  "pd-scrollCashback": {
+    "component": "ScrollCashback"
+  },
+  "pd-familiesMenu": {
+    "component": "familiesMenu"
+  },
+  "pd-formBlackFriday": {
+    "component": "FormBlackFriday"
+  },
+  "pd-tabsBlackFriday": {
+    "component": "CategoryTabsBlackFriday"
+  },
+  "pd-faqBlackFriday": {
+    "component": "FaqBlackFriday"
+  },
+  "pd-categoryTitle": {
+    "component": "CategoryTitle"
+  },
+  "pd-changePurchaseConfirmationMessage": {
+    "component": "ChangePurchaseConfirmationMessage"
+  },
+  "pd-NeoassistScript": {
+    "component": "NeoassistScript"
+  },
+  "pd-CharacterShelf": {
+    "component": "CharacterShelf"
+  },
+  "combined-product-list": {
+    "component": "CombinedProductList",
+    "composition": "children"
+  },
+  "combined-product-list.with-grid": {
+    "component": "CombinedProductListWithGrid",
+    "composition": "children"
+  },
+  "combined-product-list.with-image": {
+    "component": "CombinedProductListWithImage",
+    "composition": "children"
+  },
+  "combined-product-list.with-slide": {
+    "component": "CombinedProductListWithSlide",
+    "composition": "children"
+  },
+  "combined-product-list.with-slide-text": {
+    "component": "CombinedProductListWithSlideText",
+    "composition": "children"
+  },
+  "handle-week-featured-sliders": {
+    "component": "HandleOsQueridinhosSliders",
+    "composition": "children"
+  },
+  "custom-sku-selector": {
+    "component": "CustomSkuSelector"
+  },
+  "become-a-franchisee-form": {
+    "component": "BecomeAFranchiseeForm"
+  },
+  "pd-sports-shelf": {
+    "component": "SportsShelf"
+  }
 }

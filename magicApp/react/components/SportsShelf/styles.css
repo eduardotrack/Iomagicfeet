@@ -1,0 +1,144 @@
+.sportsShelfSlider {
+  max-width: 100%;
+  height: fit-content;
+  padding-bottom: 30px;
+
+  [class="slick-slider slick-initialized"] {
+    height: fit-content;
+    position: relative;
+  }
+
+  [class="slick-list"] {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  [class="slick-track"] {
+    display: flex;
+  }
+
+  [class~="slick-slide"] {
+    margin: 0 11px;
+  }
+
+  [class="slick-dots"] {
+    display: none !important;
+  }
+}
+
+.sportsShelfCard {
+  display: block;
+  padding: 38px 13px 0;
+  position: relative;
+  border-radius: 15px;
+  text-decoration: none;
+
+  max-height: 400px;
+}
+
+.sportsShelfCardImage {
+  width: 100%;
+  height: 300px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.sportsShelfCardTitle {
+  padding: 12px 13px;
+
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+
+  position: absolute;
+  top: 38px;
+}
+
+.sportsShelfCTA {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  justify-content: flex-end;
+
+  font-size: 24px;
+  color: #000;
+
+  padding: 15px 0 20px;
+  margin: 0;
+
+  span {
+    height: 15px;
+    width: 8.1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sportsShelfSlider {
+    [class~="slick-slide"] {
+      margin: 0;
+    }
+
+    [class="slick-dots"] {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      li {
+        margin: 0;
+        background-color: #000;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        transform: rotate(0deg);
+
+        transition: transform .3s;
+
+        button {
+          display: none;
+        }
+      }
+
+      [class="slick-active"] {
+        transform: rotate(38deg);
+        height: 16px;
+        width: 8px;
+        background-color: transparent;
+        border: 2px solid #000;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .sportsShelfCard {
+    padding: 30px 10px 0;
+    max-height: 380px;
+  }
+
+  .sportsShelfCardTitle {
+    padding: 7px 12px;
+    top: 29px;
+
+    font-size: 18px;
+  }
+
+  .sportsShelfCTA {
+    padding: 10px 0 21px;
+    font-size: 18px;
+  }
+
+
+}

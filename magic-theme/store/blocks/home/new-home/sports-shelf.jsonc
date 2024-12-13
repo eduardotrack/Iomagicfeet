@@ -1,0 +1,30 @@
+{
+  "experimental__visibility-layout#sports-shelf": {
+    "title": "Panda | Navegue por Esportes (On/Off)",
+    "children": ["flex-layout.row#sports-shelf"],
+    "props": {
+      "visible": false
+    }
+  },
+  "flex-layout.row#sports-shelf": {
+    "title": "Panda | Navegue por Esportes",
+    "props": {
+      "blockClass": ["container", "home-sports-shelf"]
+    },
+    "children": ["flex-layout.col#home-sports-shelf"]
+  },
+  "flex-layout.col#home-sports-shelf": {
+    "title": "Panda | Navegue por Esportes",
+    "props": {
+      "blockClass": ["home-sports-shelf"]
+    },
+    "children": ["rich-text#sports-shelf-title", "pd-sports-shelf"]
+  },
+  "rich-text#sports-shelf-title": {
+    "title": "Panda | Navegue por Esportes - Título",
+    "props": {
+      "text": "## navegue por **esportes**",
+      "blockClass": ["Panda__title", "sports-shelf-title"]
+    }
+  }
+}

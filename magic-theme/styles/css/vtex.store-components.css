@@ -1,6 +1,7 @@
 .container {
-  max-width: 1300px;
+  max-width: 1500px;
   position: relative;
+  padding: 0 40px;
 }
 
 @media (max-width: 767px) {

@@ -253,9 +253,37 @@
   gap: 10%;
 }
 
+.flexRow--new-newsletter-wrapper {
+  background-color: #F8F9F9;
+}
+
+.flexRowContent--new-newsletter-wrapper {
+  padding: 48px 0;
+  gap: 20px;
+}
+
+.flexRowContent--new-newsletter {
+  gap: 8px;
+}
+
+.flexRowContent--new-newsletter .stretchChildrenWidth:first-child {
+  width: 100% !important;
+}
+
 @media (max-width: 767px) {
   .flexRowContent--footer_methods {
     flex-wrap: wrap;
+  }
+
+  .flexRowContent--new-newsletter-wrapper,
+  .flexRowContent--new-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flexRowContent--new-newsletter {
+    gap: 7px;
   }
 }
 
@@ -268,7 +296,7 @@
   height: 450px;
   display: flex;
   align-items: flex-end;
-  background-color: #cecfd3;
+  background-color: #F8F9F9;
 }
 
 .flexRowContent--newsletter-wrapper :global(.vtex-store-components-3-x-imageElement--home__footer-powered--image) {
@@ -1667,13 +1695,12 @@
 }
 
 .flexRow--banner-app-home {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .flexRowContent--best-sellers-home {
   margin-top: 65px;
   position: relative;
-  width: calc(100vw - ((100vw - 1300px) / 2));
 }
 
 .flexRow--favorite-character {
@@ -1703,7 +1730,7 @@
 .flexRowContent--home-week-featured {
   margin-top: 40px;
   position: relative;
-  width: calc(100vw - ((100vw - 1300px) / 2));
+  width: calc(100vw - ((100vw - 1400px) / 2));
 }
 
 .flexRowContent--pdp-description-brand-tag {
@@ -1723,7 +1750,15 @@
   gap: 18px;
 }
 
+.flexRowContent--home-sports-shelf {
+  margin-top: 65px;
+}
+
 @media screen and (max-width: 990px) {
+  .flexRow--banner-app-home :global(.vtex-store-components-3-x-container) {
+    overflow: unset;
+  }
+
   .flexCol--infocard-categorias-grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px 175px 175px;
@@ -1746,7 +1781,8 @@
     }
   }
 
-  .flexRowContent--brands-home-row {
+  .flexRowContent--brands-home-row,
+  .flexRowContent--home-sports-shelf {
     margin-top: 40px;
   }
 

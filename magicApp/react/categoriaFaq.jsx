@@ -2,22 +2,22 @@ import React, {useEffect} from "react";
 import style from "./styleFaq.css"
 
 function categoriaFaq(faqCore) {
-    useEffect(() => {   
+    useEffect(() => {
       const appPrefix = "magicfeet-magicapp-0-x-"
-      
+
       const tabLabel = document.querySelectorAll(`.${appPrefix}tab_label`)
 
-      tabLabel.forEach(item => {    
+      tabLabel.forEach(item => {
         item.addEventListener('click', e => {
           e.preventDefault();
-        
+
           var forName = item.getAttribute('for')
           const checkInput = document.querySelector(`.${appPrefix}conteiner_faq .${appPrefix}tabs #${forName}`).checked || null
-  
+
           if(checkInput){
             const tabs = document.querySelectorAll(`.${appPrefix}conteiner_faq .${appPrefix}tabs input`);
 
-            tabs.forEach(item => {  
+            tabs.forEach(item => {
               item.checked = false;
             })
           }else{
@@ -33,9 +33,9 @@ function categoriaFaq(faqCore) {
              <div className={`${style.faq}`}>
              <div className={`${style.seo_header}`}><h2><b>Dúvidas</b> Frequentes</h2></div>
 
-             <div className={`${style.conteiner_faq}`} itemscope='itemscope' itemtype="https://schema.org/FAQPage">    
+             <div className={`${style.conteiner_faq}`} itemscope='itemscope' itemtype="https://schema.org/FAQPage">
                 {
-                    faqCore.departments && faqCore.departments.map((item, index) => {  
+                    faqCore.departments && faqCore.departments.map((item, index) => {
                         return(
                           <>
                            <div className={`${style.tabs}`} itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
@@ -56,7 +56,7 @@ function categoriaFaq(faqCore) {
                       <input type="radio" id="rd30" name="rd" />
                       <label for="rd30" className={`${style.tab_close}`}>Fechar todos</label>
                   </div>
-              
+
              </div>
            </div>
           )}
@@ -103,6 +103,5 @@ categoriaFaq.schema = {
     }
   }
 }
- 
+
 export default categoriaFaq;
- 

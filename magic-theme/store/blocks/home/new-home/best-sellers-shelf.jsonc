@@ -1,59 +1,63 @@
 {
-  // "flex-layout.row#best-sellers-home": {
-  //   "title": "Panda | Best Sellers",
-  //   "props": {
-  //     "blockClass": "best-sellers-home"
-  //   },
-  //   "children": ["flex-layout.col#best-sellers-home"]
-  // },
-  // "flex-layout.col#best-sellers-home": {
-  //   "title": "Panda | Best Sellers",
-  //   "props": {
-  //     "blockClass": ["best-sellers-home"]
-  //   },
-  //   "children": [
-  //     "rich-text#best-sellers-home-title",
-  //     "list-context.product-list#best-sellers-home"
-  //   ]
-  // },
+  "flex-layout.row#best-sellers-home": {
+    "title": "Panda | Best Sellers",
+    "props": {
+      "blockClass": "best-sellers-home"
+    },
+    "children": ["flex-layout.col#best-sellers-home"]
+  },
+  "flex-layout.col#best-sellers-home": {
+    "title": "Panda | Best Sellers",
+    "props": {
+      "blockClass": ["best-sellers-home"]
+    },
+    "children": [
+      "rich-text#best-sellers-home-title",
+      "list-context.product-list#best-sellers-home"
+    ]
+  },
 
-  // "rich-text#best-sellers-home-title": {
-  //   "title": "Panda | Best Sellers - Título",
-  //   "props": {
-  //     "text": "## os **best sellers** do mês",
-  //     "blockClass": ["Panda__title", "best-sellers-home-title"]
-  //   }
-  // },
+  "rich-text#best-sellers-home-title": {
+    "title": "Panda | Best Sellers - Título",
+    "props": {
+      "text": "## **novidades** da semana",
+      "blockClass": ["Panda__title", "best-sellers-home-title"]
+    }
+  },
 
-  // "list-context.product-list#best-sellers-home": {
-  //   "blocks": ["product-summary.shelf#best-sellers"],
-  //   "children": ["slider-layout#best-sellers-home"]
-  // },
+  "list-context.product-list#best-sellers-home": {
+    "blocks": ["product-summary.shelf#best-sellers"],
+    "children": ["slider-layout#best-sellers-home"]
+  },
 
-  // "product-summary.shelf#best-sellers": {
-  //   "children": [
-  //    "product-summary-image",
-  //    "add-to-list-btn",
-  //    "product-summary-buy-button",
-  //    "product-summary-name",
-  //    "product-summary-price"
-  //   ]
-  // },
+  "product-summary.shelf#best-sellers": {
+    "children": [
+     "product-summary-image",
+     "add-to-list-btn",
+     "product-summary-buy-button",
+     "product-summary-name",
+     "product-summary-price"
+    ]
+  },
 
-  // "slider-layout#best-sellers-home": {
-  //   "props": {
-  //     "itemsPerPage": {
-  //       "desktop": 3,
-  //       "tablet": 2,
-  //       "phone": 1
-  //     },
-  //     "centerMode": "to-the-left",
-  //     "centerModeSlidesGap": 20,
-  //     "infinite": false,
-  //     "fullWidth": true,
-  //     "showNavigationArrows": "never",
-  //     "showPaginationDots": "always",
-  //     "blockClass": ["best-sellers-home"]
-  //   }
-  // }
+  "slider-layout#best-sellers-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 20,
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "blockClass": ["best-sellers-home"]
+    }
+  }
 }

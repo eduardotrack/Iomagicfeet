@@ -1,117 +1,119 @@
 {
-  // "flex-layout.row#genders-shelf-home": {
-  //   "title": "Panda | Cards - Para quem?",
-  //   "props": {
-  //     "blockClass": "genders-shelf-home"
-  //   },
-  //   "children": ["flex-layout.col#genders-shelf-home"]
-  // },
-  // "flex-layout.col#genders-shelf-home": {
-  //   "title": "Panda | Cards - Para quem?",
-  //   "props": {
-  //     "blockClass": ["genders-shelf-home"]
-  //   },
-  //   "children": [
-  //     "rich-text#genders-shelf-title",
-  //     "flex-layout.row#home-genders-cards"
-  //   ]
-  // },
+  "flex-layout.row#genders-shelf-home": {
+    "title": "Panda | Cards - Para quem?",
+    "props": {
+      "blockClass": "genders-shelf-home"
+    },
+    "children": ["flex-layout.col#genders-shelf-home"]
+  },
+  "flex-layout.col#genders-shelf-home": {
+    "title": "Panda | Cards - Para quem?",
+    "props": {
+      "blockClass": ["genders-shelf-home"]
+    },
+    "children": [
+      "rich-text#genders-shelf-title",
+      "flex-layout.row#home-genders-cards"
+    ]
+  },
 
-  // "rich-text#genders-shelf-title": {
-  //   "title": "Panda | Para quem? - Título",
-  //   "props": {
-  //     "text": "## para **quem** você compra?",
-  //     "blockClass": ["Panda__title", "genders-shelf-home"]
-  //   }
-  // },
+  "rich-text#genders-shelf-title": {
+    "title": "Panda | Para quem? - Título",
+    "props": {
+      "text": "## para **quem** você compra?",
+      "blockClass": ["Panda__title", "genders-shelf-home"]
+    }
+  },
 
-  // "flex-layout.row#home-genders-cards": {
-  //   "title": "Panda | Para quem? - Cards",
-  //   "props": {
-  //     "blockClass": ["home-genders-cards"]
-  //   },
-  //   "children": [
-  //     "combined-product-list.with-image#home-genders"
-  //   ]
-  // },
+  "flex-layout.row#home-genders-cards": {
+    "title": "Panda | Para quem? - Cards",
+    "props": {
+      "blockClass": ["home-genders-cards"]
+    },
+    "children": [
+      "combined-product-list.with-image#home-genders"
+    ]
+  },
 
-  // "slider-layout#home-genders-cards": {
-  //   "title": "Panda | Cards - Slider",
-  //   "props": {
-  //     "itemsPerPage": {
-  //       "desktop": 2,
-  //       "tablet": 1,
-  //       "phone": 1
-  //     },
-  //     "centerMode": {
-  //       "desktop": "disabled",
-  //       "tablet": "to-the-left",
-  //       "phone": "to-the-left"
-  //     },
-  //     "centerModeSlidesGap": 8,
-  //     "infinite": true,
-  //     "fullWidth": true,
-  //     "showNavigationArrows": "mobileOnly",
-  //     "showPaginationDots": "never",
-  //     "blockClass": ["dark-arrows", "home-genders-cards"]
-  //   }
-  // },
+  "slider-layout#home-genders-cards": {
+    "title": "Panda | Cards - Slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 1,
+        "phone": 1
+      },
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 8,
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "blockClass": ["dark-arrows", "home-genders-cards"]
+    }
+  },
 
-  // "combined-product-list.with-image#home-genders": {
-  //   "title": "Panda | Produtos - Slider",
-  //   // "children": ["slider-layout#home-buy-the-look-cards"],
-  //   "props": {
-  //     "Slider": "slider-layout#home-genders-cards",
-  //     "productCounterIcon": "assets/img/new-home/icons/icon-cart-white.svg",
-  //     "showProductsCounter": true,
-  //     "ProductSummary": "product-summary.shelf#shelf-list",
-  //     "ProductSummaryRenderDesktop": "slider-layout#home-genders-shelf",
-  //     "ProductSummaryRenderMobile": "list-context-renderer#home-genders-shelf",
-  //     "items": [
-  //       {
-  //         "image": "assets/img/new-home/shelf-fem.png",
-  //         "link": "/feminino",
-  //         "linkLabel": "para **meninas**",
-  //         "query": {
-  //           "collection": "331",
-  //           "maxItems": 4
-  //         }
-  //       },
-  //       {
-  //         "image": "assets/img/new-home/shelf-masc.png",
-  //         "link": "/masculino",
-  //         "linkLabel": "para **meninos**",
-  //         "query": {
-  //           "collection": "331",
-  //           "maxItems": 4
-  //         }
-  //       }
-  //     ]
-  //   }
-  // },
+  "combined-product-list.with-image#home-genders": {
+    "title": "Panda | Produtos - Slider",
+    // "children": ["slider-layout#home-buy-the-look-cards"],
+    "props": {
+      "Slider": "slider-layout#home-genders-cards",
+      "productCounterIcon": "assets/img/new-home/icons/icon-cart-white.svg",
+      "showProductsCounter": true,
+      "ProductSummary": "product-summary.shelf#shelf-list",
+      "ProductSummaryRenderDesktop": "slider-layout#home-genders-shelf",
+      "ProductSummaryRenderMobile": "list-context-renderer#home-genders-shelf",
+      "items": [
+        {
+          "image": "assets/img/new-home/home-meninas.webp",
+          "link": "/feminino/todas-as-marcas?initialMap=productClusterIds&initialQuery=298&map=category-2,productclusternames",
+          "linkLabel": "para **meninas**",
+          "query": {
+            "collection": "",
+            "maxItems": 4,
+            "ids": "2005161,2018101"
+          }
+        },
+        {
+          "image": "assets/img/new-home/home-meninos.webp",
+          "link": "/masculino/todas-as-marcas?initialMap=productClusterIds&initialQuery=298&map=category-2,productclusternames",
+          "linkLabel": "para **meninos**",
+          "query": {
+            "collection": "",
+            "maxItems": 4,
+            "ids": "2005501,2016747"
+          }
+        }
+      ]
+    }
+  },
 
-  // "list-context-renderer#home-genders-shelf": {
-  //   "props": {
-  //     "blockClass": ["home-genders-shelf"],
-  //     "listElement": "ul",
-  //     "itemElement": "li"
-  //   }
-  // },
+  "list-context-renderer#home-genders-shelf": {
+    "props": {
+      "blockClass": ["home-genders-shelf"],
+      "listElement": "ul",
+      "itemElement": "li"
+    }
+  },
 
-  // "slider-layout#home-genders-shelf": {
-  //   "title": "Panda | Cards - Slider Vitrine",
-  //   "props": {
-  //     "itemsPerPage": {
-  //       "desktop": 1,
-  //       "tablet": 1,
-  //       "phone": 1
-  //     },
-  //     "centerModeSlidesGap": 16,
-  //     "infinite": true,
-  //     "fullWidth": true,
-  //     "showNavigationArrows": "desktopOnly",
-  //     "showPaginationDots": "never",
-  //     "blockClass": ["dark-arrows", "home-genders-shelf"]
-  //   }
-  // }
+  "slider-layout#home-genders-shelf": {
+    "title": "Panda | Cards - Slider Vitrine",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "centerModeSlidesGap": 16,
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "blockClass": ["dark-arrows", "home-genders-shelf"]
+    }
+  }
 }

@@ -26,6 +26,11 @@
   max-height: 100% !important;
 }
 
+.imageElementLink--home__slider {
+  display: block;
+  width: 100%;
+}
+
 .sliderArrows--home__slider {
   color: white;
 }
@@ -325,9 +330,30 @@
   border-right: 1px solid #E6E7E8;
 }
 
+.slideChildrenContainer--sports-shelf-slider {
+  gap: 22px;
+}
+
+.sliderTrackContainer--best-sellers-home  {
+  margin: 0 40px;
+}
+
+.sliderTrack--best-sellers-home {
+  gap: 15px;
+}
+
 @media screen and (max-width: 990px) {
+  .sliderTrack--best-sellers-home {
+    gap: 0;
+  }
+
   .slide--tips-home-row:not(:last-child) {
     border-right: none;
+  }
+
+  .sliderTrackContainer--best-sellers-home  {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .sliderArrows--tips-home-row {
@@ -387,4 +413,18 @@
   .sliderTrack--home-week-featured {
     gap: 12px;
   }
+
+  .paginationDotsContainer--baixe-app-mobile {
+    bottom: -30px;
+  }
+
+  .paginationDot--baixe-app-mobile {
+    background-color: #000;
+  }
+
+  .paginationDot--baixe-app-mobile--isActive {
+    border-color: #000;
+    background-color: transparent;
+  }
+
 }

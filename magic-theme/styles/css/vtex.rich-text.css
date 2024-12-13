@@ -1770,6 +1770,14 @@
   word-break: break-word;
 }
 
+.paragraph--new-newsletter {
+  margin: 0;
+  color: #61656B;
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+
 @media screen and (max-width: 990px) {
   .wrapper--week-featured-title {
     max-width: unset;

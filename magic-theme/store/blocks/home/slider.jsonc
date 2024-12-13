@@ -5,12 +5,32 @@
       "props": {
         "images": [
           {
-            "image": "assets/img/new-home/banner-desk.png",
-            "mobileImage": "assets/img/new-home/banner-mob.png"
+            "image": "assets/img/new-home/natal-desk.jpg",
+            "mobileImage": "assets/img/new-home/natal-mob.jpg",
+            "link": {
+              "url": "/novidades?utmi_cp=natal_06_11_2024"
+            }
           },
           {
-            "image": "assets/img/new-home/banner-desk.png",
-            "mobileImage": "assets/img/new-home/banner-mob.png"
+            "image": "assets/img/new-home/nfl-desk.png",
+            "mobileImage": "assets/img/new-home/nfl-mob.png",
+            "link": {
+              "url": "/nfl?utmi_cp=nfl_01_11_2024"
+            }
+          },
+          {
+            "image": "assets/img/new-home/adidas-desk.jpg",
+            "mobileImage": "assets/img/new-home/adidas-mob.jpg",
+            "link": {
+              "url": "/adidas?utmi_cp=adidas_01_11_2024"
+            }
+          },
+          {
+            "image": "assets/img/new-home/special-offer-desk.jpg",
+            "mobileImage": "assets/img/new-home/special-offer-mob.jpg",
+            "link": {
+              "url": "/outlet?utmi_cp=special_offer_03_12_2024"
+            }
           }
         ]
       }
