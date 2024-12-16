@@ -266,7 +266,16 @@
   font-family: "WorkSans-Bold";
 }
 
+.heading--title-lp-natal {
+  font-size: 40px;
+  color: #000;
+  margin: 0;
+}
+
 @media screen and (max-width: 767px) {
+  .heading--title-lp-natal {
+    font-size: 20px;
+  }
   .wrapper--text--Pre-blackFrida {
     padding: 1.25rem 1rem;
   }
@@ -320,5 +329,9 @@
     flex-direction: column;
     text-align: center;
     gap: 5px;
+  }
+
+  .paragraph--itemBeneficios--lpNatal {
+    flex-direction: row;
   }
 }

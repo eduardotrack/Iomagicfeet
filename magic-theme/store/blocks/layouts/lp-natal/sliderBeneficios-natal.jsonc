@@ -1,0 +1,73 @@
+{
+  "experimental__visibility-layout#sliderBeneficios-lp-natal": {
+    "title": "Panda | Controle de visibilidade - Slider beneficios",
+    "children": ["flex-layout.row#sliderBeneficios-lpNatal"],
+    "props": {
+      "visible": true,
+      "blockClass": ["lp-natal"]
+    }
+  },
+
+  "flex-layout.row#sliderBeneficios-lpNatal": {
+    "title": "Panda | Slider beneficios - LP Natal",
+    "children": [
+      "slider-layout#sliderBeneficios-lpNatal"
+    ],
+    "props": {
+      "blockClass": ["sliderBeneficios-lp-natal"],
+      "fullWidth": true,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+
+  "slider-layout#sliderBeneficios-lpNatal": {
+    "title": "Panda | Itens slider beneficios - Natal",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 4,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "blockClass": ["sliderBeneficios-lp-natal"]
+    },
+    "children": [
+      "rich-text#itemBeneficios--lpNatal01",
+      "rich-text#itemBeneficios--lpNatal02",
+      "rich-text#itemBeneficios--lpNatal03",
+      "rich-text#itemBeneficios--lpNatal04"
+    ]
+  },
+  "rich-text#itemBeneficios--lpNatal01": {
+    "title": "Panda | Item slider beneficios Natal 01",
+    "props": {
+      "text": "[frete grátis confira as regras](https://www.magicfeet.com.br/tipos-de-entrega)",
+      "blockClass": ["itemBeneficios--blackFrida01", "itemBeneficios--lpNatal"]
+    }
+  },
+  "rich-text#itemBeneficios--lpNatal02": {
+    "title": "Panda | Item slider beneficios Natal 02",
+    "props": {
+      "text": "pagamento parcelado sem juros",
+      "blockClass": ["itemBeneficios--blackFrida02", "itemBeneficios--lpNatal"]
+    }
+  },
+  "rich-text#itemBeneficios--lpNatal03": {
+    "title": "Panda | Item slider beneficios Natal 03",
+    "props": {
+      "text": "5% off no pix",
+      "blockClass": ["itemBeneficios--blackFrida03", "itemBeneficios--lpNatal"]
+    }
+  },
+  "rich-text#itemBeneficios--lpNatal04": {
+    "title": "Panda | Item slider beneficios Natal 04",
+    "props": {
+      "text": "5% off nos pedidos retirados em loja",
+      "blockClass": ["itemBeneficios--blackFrida03", "itemBeneficios--lpNatal"]
+    }
+  }
+}

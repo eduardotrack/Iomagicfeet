@@ -1,0 +1,84 @@
+{
+  "experimental__visibility-layout#sliderMenu-lp-natal": {
+    "title": "Panda | Controle de visibilidade - Slider menu Natal",
+    "children": ["flex-layout.row#sliderMenu-lp-natal"],
+    "props": {
+      "visible": true,
+      "blockClass": ["sliderMenu-blackFriday", "slideMenu-lpNatal"]
+    }
+  },
+
+  "flex-layout.row#sliderMenu-lp-natal": {
+    "title": "Panda | Slider menu Natal",
+    "children": [
+
+      "slider-layout#sliderMenu-lp-natal"
+    ],
+    "props": {
+      "blockClass": ["sliderMenu-blackFriday", "slideMenu-lpNatal"],
+      "fullWidth": true
+    }
+  },
+
+
+
+  "slider-layout#sliderMenu-lp-natal": {
+    "title": "Panda | Itens slider menu Natal",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "centerModeSlidesGap": 10,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
+      "blockClass": ["sliderMenu-blackFriday", "sliderMenu-lpNatal"]
+    },
+    "children": [
+      "link#itemMenu--lpNatal01",
+      "link#itemMenu--lpNatal02",
+      "link#itemMenu--lpNatal03",
+      "link#itemMenu--lpNatal04"
+    ]
+  },
+
+  "link#itemMenu--lpNatal01": {
+    "title": "Panda | Item slider menu Natal 01",
+    "props": {
+      "href": "/",
+      "label": "até R$150",
+      "blockClass": ["itemMenu--blackFriday", "itemMenu--lpNatal"]
+    }
+  },
+  "link#itemMenu--lpNatal02": {
+    "title": "Panda | Item slider menu Natal 02",
+    "props": {
+      "href": "/",
+      "label": "até R$300",
+      "blockClass": ["itemMenu--blackFriday", "itemMenu--lpNatal"]
+    }
+  },
+  "link#itemMenu--lpNatal03": {
+    "title": "Panda | Item slider menu Natal 03",
+    "props": {
+      "href": "/",
+      "label": "até R$450",
+      "blockClass": ["itemMenu--blackFriday", "itemMenu--lpNatal"]
+    }
+  },
+  "link#itemMenu--lpNatal04": {
+    "title": "Panda | Item slider menu Natal 04",
+    "props": {
+      "href": "/",
+      "label": "acima de R$450",
+      "blockClass": ["itemMenu--blackFriday", "itemMenu--lpNatal"]
+    }
+  }
+}

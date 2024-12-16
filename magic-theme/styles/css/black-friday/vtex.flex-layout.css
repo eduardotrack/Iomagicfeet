@@ -89,6 +89,23 @@
   width: 100% !important;
 }
 
+.flexRow--sliderBeneficios-lp-natal {
+  background-color: #F2F2F2;
+  overflow: hidden;
+  width: 100%;
+}
+
+.flexRowContent--sliderBeneficios-lp-natal {
+  padding: 9px 0;
+  justify-content: center;
+}
+
+.flexRow--title-lp-natal {
+  width: 100%;
+  max-width: 1300px;
+  padding: 26px 0;
+}
+
 @media screen and (max-width: 767px) {
   .flexCol--faq-Pre-blackFriday {
     padding: 1rem;
@@ -102,7 +119,15 @@
     margin-bottom: 45px;
   }
 
+  .flexRowContent--lp-natal {
+    margin-bottom: 24px;
+  }
+
   .flexRow--sliderMenu-blackFriday {
     padding-left: 10px;
+  }
+
+  .flexRow--title-lp-natal {
+    padding: 25px 25px 20px;
   }
 }

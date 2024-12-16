@@ -28,12 +28,26 @@
   background-color: #e30613;
 }
 
+.slideChildrenContainer--sliderMenu-lpNatal {
+  border: 1.7px solid #000;
+}
+
 .slideChildrenContainer--sliderMenu-blackFriday:hover
   :global(.vtex-store-link-0-x-link--itemMenu--blackFriday) {
   color: #ffffff;
   transition: none;
   opacity: 1;
 }
+
+.slideChildrenContainer--sliderMenu-lpNatal:hover {
+  border: 1.7px solid #000;
+  background-color: #5DFF49;
+
+  & :global(.vtex-store-link-0-x-link--itemMenu--blackFriday) {
+    color: #000;
+  }
+}
+
 
 .slide--sliderMenu-blackFriday {
   margin: 0px !important;
@@ -54,7 +68,37 @@
   overflow: visible;
 }
 
+.sliderTrack--sliderBeneficios-lp-natal {
+  justify-content: space-around;
+}
+
+
+.sliderTrackContainer--sliderBeneficios-lp-natal {
+  width: 1250px;
+  overflow: visible;
+}
+
+.sliderTrack--sliderMenu-lpNatal {
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.slideChildrenContainer--sliderMenu-lpNatal {
+  width: 100%;
+}
+
+.sliderArrows--sliderBeneficios-lp-natal {
+  svg {
+    color: #000;
+    width: 12px;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .sliderTrackContainer--sliderBeneficios-lp-natal {
+    width: 100%;
+  }
+
   .paginationDotsContainer--sliderBeneficios-blackFriday {
     bottom: -35px;
     align-items: center;
@@ -93,5 +137,14 @@
     width: auto !important;
   }
 
+  .sliderTrack--sliderMenu-lpNatal {
+    gap: 0;
+    margin-bottom: 0;
+  }
+
+  .slideChildrenContainer--sliderMenu-lpNatal {
+    height: 100%;
+    border-radius: 7.5px;
+  }
  
 }

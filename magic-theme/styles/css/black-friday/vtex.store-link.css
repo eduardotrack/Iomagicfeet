@@ -13,8 +13,27 @@
   transition: none;
 }
 
+.link--itemMenu--lpNatal {
+  font-family: 'WorkSans-Bold';
+
+  &::before {
+    content: 'produtos';
+    margin-right: 4px;
+    font-weight: 400;
+    font-family: 'WorkSans-Regular';
+  }
+}
+
 @media screen and (max-width: 767px) {
   .link--itemMenu--blackFriday {
     font-size: 16px;
+  }
+
+  .link--itemMenu--lpNatal {
+    font-size: 11px;
+    padding: 7px;
+    line-height: 10.5px;
+    display: block;
+    height: fit-content;
   }
 }

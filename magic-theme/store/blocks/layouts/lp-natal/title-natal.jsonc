@@ -1,0 +1,26 @@
+{
+  "experimental__visibility-layout#title-lpNatal": {
+    "title": "Panda | Controle de visibilidade - Título",
+    "children": ["flex-layout.row#title-lp-natal"],
+    "props": {
+      "visible": true,
+      "blockClass": ["sliderBeneficios-blackFriday", "lp-natal"]
+    }
+  },
+  "flex-layout.row#title-lp-natal": {
+    "title": "Panda | Título LP Natal",
+    "children": [
+      "rich-text#title-lp-natal"
+    ],
+    "props": {
+      "blockClass": "title-lp-natal"
+    }
+  },
+  "rich-text#title-lp-natal": {
+    "title": "Panda | Título LP Natal",
+    "props": {
+      "text": "## natal na magic",
+      "blockClass": "title-lp-natal"
+    }
+  }
+}

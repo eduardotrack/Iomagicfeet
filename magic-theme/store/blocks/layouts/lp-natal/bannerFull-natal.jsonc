@@ -1,0 +1,10 @@
+{
+  "experimental__visibility-layout#lpNatal--banner": {
+    "title": "Panda | Controle de visibilidade - Banner Natal",
+    "children": ["flex-layout.row#bannerFull-plp"],
+    "props": {
+      "visible": true,
+      "blockClass": ["blackFriday--banner", "lp-natal"]
+    }
+  }
+}

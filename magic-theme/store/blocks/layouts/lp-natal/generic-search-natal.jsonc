@@ -1,0 +1,103 @@
+{
+  "store.custom#busca-generica-natal": {
+    "blocks": [
+      "flex-layout.row#natal-row",
+      "search-result-layout.customQuery#natal"
+    ]
+  },
+
+  "flex-layout.row#natal-row": {
+    "title": "Panda | LP Natal",
+    "children": ["flex-layout.col#natal-row"],
+    "props": {
+      "blockClass": ["blackFriday", "lp-natal"],
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#natal-row": {
+    "title": "Panda | LP Natal",
+    "children": [
+      "experimental__visibility-layout#lpNatal--banner",
+      "experimental__visibility-layout#sliderBeneficios-lp-natal",
+      "experimental__visibility-layout#title-lpNatal",
+      "experimental__visibility-layout#sliderMenu-lp-natal"
+    ],
+    "props": {
+      "blockClass": ["blackFriday", "lp-natal"],
+      "fullWidth": true
+    }
+  },
+
+  "search-result-layout.customQuery#natal": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 24,
+        "queryField": "317",
+        "mapField": "productClusterIds"
+      },
+      "blockClass": ["blackFriday", "lp-natal"]
+    },
+    "blocks": [
+      "search-result-layout.desktop#busca-generica-natalDesktop",
+      "search-result-layout.mobile#busca-generica-natalMobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.desktop#busca-generica-natalDesktop": {
+    "title": "Panda | Layout da Busca Natal - Desktop",
+    "children": [
+      "experimental__visibility-layout#bannerTop-full-sale",
+      "flex-layout.row#banner-one",
+      "flex-layout.row#searchbread",
+      // "flex-layout.row#searchtitle",
+      "experimental__visibility-layout#categories-banner-search",
+      "experimental__visibility-layout#menu-banner-search",
+      "flex-layout.row#search-suggestions",
+      "flex-layout.row#retail-rocket-category-search",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "blockClass": "panda-search",
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid",
+      "hiddenFacets": {
+        "priceRange": false
+      }
+    }
+  },
+
+  "search-result-layout.mobile#busca-generica-natalMobile": {
+    "title": "Panda | Layout da Busca Natal - Mobile",
+    "children": [
+      "experimental__visibility-layout#bannerTop-full-sale",
+      "experimental__visibility-layout#search-banner-top",
+      "flex-layout.row#searchbread",
+      // "flex-layout.row#searchtitle",
+      "experimental__visibility-layout#categories-banner-search",
+      "experimental__visibility-layout#menu-banner-search",
+      "total-products.v2",
+
+      "flex-layout.row#searchinfomobile",
+
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+
+      // "flex-layout.row#search-seo-title",
+      "rich-text#category"
+    ],
+    "props": {
+      "blockClass": "panda-search",
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid",
+      "hiddenFacets": {
+        "priceRange": false
+      }
+    }
+  }
+}
