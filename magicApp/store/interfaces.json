@@ -126,5 +126,8 @@
   },
   "pd-sports-shelf": {
     "component": "SportsShelf"
+  },
+  "pd-remove-cancel-order": {
+    "component": "RemoveCancelOrderBtn"
   }
 }
