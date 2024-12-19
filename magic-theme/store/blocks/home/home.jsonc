@@ -20,9 +20,11 @@
 
       "experimental__visibility-layout#week-featured",
 
-      // "retail-rocket-container#home",
-
+      
       "flex-layout.row#genders-shelf-home",
+      
+      "retail-rocket-container#home",
+
       "flex-layout.row#best-sellers-home",
       "experimental__visibility-layout#favorite-character",
       "flex-layout.row#infocard-categorias",

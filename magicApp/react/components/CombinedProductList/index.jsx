@@ -18,6 +18,17 @@ export function CombinedProductList({
 
   useEffect(() => {
     getCounter?.(productsCounter)
+
+    // fix slider bug
+    const rightArrow = document.querySelector('.vtex-slider-layout-0-x-sliderRightArrow--home-week-featured')
+    const leftArrow = document.querySelector('.vtex-slider-layout-0-x-sliderLeftArrow--home-week-featured')
+
+    if (rightArrow && leftArrow) {
+      leftArrow.click();
+      setTimeout(() => {
+        rightArrow.click();
+      }, 100)
+    }
   }, [getCounter, productsCounter])
 
   if (!items) {
