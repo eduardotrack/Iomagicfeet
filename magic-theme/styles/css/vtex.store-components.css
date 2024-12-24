@@ -28,7 +28,8 @@
 
 .imageElement--list-brands-home {
   max-width: 80px;
-  height: auto;
+  height: 80px;
+
 }
 
 .logoImage--header__logo {
@@ -43,7 +44,7 @@
   }
   .imageElement--list-brands-home {
     max-width: 60px;
-    height: auto;
+    height: 60px;
   }
 
   .imageElement--security-badges-item-mob {
