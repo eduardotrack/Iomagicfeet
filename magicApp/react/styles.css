@@ -240,6 +240,10 @@
      .spanFile {
          font-size: 13px;
      }
+
+    .coreLojas select {
+      margin-top: 65px;
+    }
  }
 
  .welcomeControl {
