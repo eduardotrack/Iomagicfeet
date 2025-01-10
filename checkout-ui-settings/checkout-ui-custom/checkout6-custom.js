@@ -1004,7 +1004,7 @@ $(window).on("orderFormUpdated.vtex", function(evt, orderForm) {
   }
 })
 
-/*
+
 // Alerta sobre entregas
 $(document).ready(function () {
   setTimeout(function () {
@@ -1014,6 +1014,16 @@ $(document).ready(function () {
       boxData.forEach(function (item) {
         $(item).prepend(`
             <div class="boxDataAlert">
+                <div class="boxDataAlert--text">
+                    <p>quando o pedido contiver produtos que serão enviados por <b>lojas diferentes</b>, o <b>valor total do frete será a soma do custo de cada envio</b>.</p>
+                </div>
+            </div>`)
+      })
+    }
+  }, 2000)
+})
+
+/* icone de alerta
                 <div class="boxDataAlert--image">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="12" height="12" fill="url(#pattern0_19_642)"/>
@@ -1025,14 +1035,4 @@ $(document).ready(function () {
                         </defs>
                     </svg>
                 </div>
-
-                <div class="boxDataAlert--text">
-                    <p><strong>Aviso</strong>: Pedidos enviados pelos <strong>Correios</strong> podem sofrer atrasos devido à greve geral, com impacto em todos os estados.</p>
-                </div>
-            </div>`)
-      })
-    }
-  }, 2000)
-})
-
 */
