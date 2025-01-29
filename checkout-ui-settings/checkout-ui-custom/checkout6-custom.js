@@ -915,10 +915,11 @@ function insertMessage(message, container) {
 }
 
 function findDivsAtPaymentPage() {
+  let openDeliveryOptions
   let intervalId = setInterval(function() {
     let pickupContainerAtAuth = $('.pickup-packages')[0];
     let changeDeliveryOption = $('#edit-shipping-data')[0];
-    let openDeliveryOptions = $('#open-shipping')[0];
+    openDeliveryOptions = $('#open-shipping')[0];
 
     if (pickupContainerAtAuth) {
       const message = createPickupMessage();
@@ -972,7 +973,7 @@ $(document).ready(function () {
 $(window).on("orderFormUpdated.vtex", function(evt, orderForm) {
   let isPickup = false;
 
-  orderForm.shippingData.logisticsInfo.forEach(product => {
+  orderForm.shippingData?.logisticsInfo.forEach(product => {
     if (product.selectedDeliveryChannel === 'pickup-in-point') {
       isPickup = true;
     }
