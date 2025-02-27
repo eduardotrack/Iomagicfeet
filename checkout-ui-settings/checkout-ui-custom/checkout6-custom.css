@@ -2999,3 +2999,20 @@ li.progressiveBar_popup--number {
   text-align: center;
   margin-top: 10px;
 }
+
+
+.srp-toggle__pickup:before {
+    content: '-5%';
+    position: absolute;
+    padding: 5px 8px;
+    font-size: 11px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: #41a625;
+    border-radius: 50px;
+    top: 4px;
+    right: 5px;
+    backdrop-filter: 0;
+    display: none !important;
+}
+
