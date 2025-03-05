@@ -3016,3 +3016,6 @@ li.progressiveBar_popup--number {
     display: none !important;
 }
 
+.discount-pickup-message{
+  display: none;
+}
