@@ -1,7 +1,7 @@
 {
   "name": "checkout-ui-settings",
   "vendor": "magicfeet",
-  "version": "0.3.28",
+  "version": "0.3.31",
   "title": "Checkout UI Settings",
   "description": "Declare custom settings to be used by checkout ui",
   "builders": {
