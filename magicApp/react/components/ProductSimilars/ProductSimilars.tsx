@@ -1,6 +1,7 @@
 import { useQuery } from "react-apollo";
 import { useProduct } from "vtex.product-context";
 import ProductSimilarsItem from "./ProductSimilarsItem";
+import React from "react";
 
 import { Product } from "vtex.product-context/react/ProductTypes";
 import GET_PRODUCTS from "../../graphql/products.graphql";
@@ -11,7 +12,7 @@ const ProductSimilars = () => {
     const productContext = useProduct() || null
 
     const refId = productContext?.product?.productReference || '';
-    const corProperty = productContext?.product?.specificationGroups?.[0]?.specifications?.find(spec => spec.name === 'Cor');
+    const corProperty = productContext?.product?.specificationGroups?.[0]?.specifications?.find((spec: any) => spec.name === 'Cor');
     const cor = corProperty?.values || '';
 
     const refFinal = `specificationFilter_15:${refId.trim().replace(/-[0-9a-z]{3}/, "")}`
@@ -40,7 +41,7 @@ const ProductSimilars = () => {
                     similars && similars.map((item) => {
 
                         if(item.items[0].images.length != 0){
-                            let objImg = item.items[0].images.find(o => o.imageLabel === 'Principal') || null;
+                            let objImg = item.items[0].images.find((o: any) => o.imageLabel === 'Principal') || null;
 
                             if(objImg){
                                 return (

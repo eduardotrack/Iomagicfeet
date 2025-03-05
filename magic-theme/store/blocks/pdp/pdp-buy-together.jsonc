@@ -1,0 +1,11 @@
+{
+  "flex-layout.row#buy-together": {
+    "title": "Panda | Compre Junto",
+    "props": {
+      "blockClass": "buy-together"
+    },
+    "children": [
+      "pd-buy-together"
+    ]
+  }
+}

@@ -129,5 +129,8 @@
   },
   "pd-remove-cancel-order": {
     "component": "RemoveCancelOrderBtn"
+  },
+  "pd-buy-together": {
+    "component": "BuyTogether"
   }
 }

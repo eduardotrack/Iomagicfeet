@@ -44,6 +44,7 @@
       "pd-skuSimilar",
       "sku-selector#pdp-core",
       "sizebay",
+      "flex-layout.row#buy-together",
       "flex-layout.row#product-qqt",
       "product-availability",
 
@@ -52,7 +53,7 @@
 
       "flex-layout.row#description",
       "flex-layout.row#pdp-description-brand-tag",
-
+      
       "product-reviews",
       "product-questions-and-answers",
       "share#default"
@@ -204,18 +205,18 @@
     }
   },
 
-  "flex-layout.row#buytogether": {
-    "title": "Panda | Compre Junto",
-    "props": {
-      "blockClass": "row-buytogether"
-    },
-    "children": ["buy-together"]
-  },
+  // "flex-layout.row#buytogether": {
+  //   "title": "Panda | Compre Junto",
+  //   "props": {
+  //     "blockClass": "row-buytogether"
+  //   },
+  //   "children": ["buy-together"]
+  // },
 
-  "buy-together": {
-    "title": "Panda | Compre Junto",
-    "children": ["vtex.shelf-components:product-summary.shelf"]
-  },
+  // "buy-together": {
+  //   "title": "Panda | Compre Junto",
+  //   "children": ["vtex.shelf-components:product-summary.shelf"]
+  // },
 
   "flex-layout.row#product-qqt": {
     "title": "Panda | Produto - Quantidade e Botão de compra",

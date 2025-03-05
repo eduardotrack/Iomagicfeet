@@ -1,0 +1,182 @@
+.buyTogetherMain {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.buyTogetherTitle {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.selectAllContainer {
+  display: flex;
+  align-items: center;
+  input {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 5px;
+      border: 1px solid #000;
+      background-color: #fff;
+    }
+  }
+
+  input[type='checkbox']:checked + label::before {
+    background-image: url('data:image/svg+xml,<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.6 14.0584L14.65 7.0084L13.25 5.6084L7.6 11.2584L4.75 8.4084L3.35 9.8084L7.6 14.0584ZM2 18.8584C1.45 18.8584 0.979167 18.6626 0.5875 18.2709C0.195833 17.8792 0 17.4084 0 16.8584V2.8584C0 2.3084 0.195833 1.83757 0.5875 1.4459C0.979167 1.05423 1.45 0.858398 2 0.858398H16C16.55 0.858398 17.0208 1.05423 17.4125 1.4459C17.8042 1.83757 18 2.3084 18 2.8584V16.8584C18 17.4084 17.8042 17.8792 17.4125 18.2709C17.0208 18.6626 16.55 18.8584 16 18.8584H2Z" fill="%231D1B20"/></svg>');
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+
+.buyTogetherCardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 227px;
+  overflow: auto;
+  padding: 8px 16px 16px 0;
+  margin-bottom: 64px;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(217, 217, 217, 0.50);
+    border: 1px solid rgba(217, 217, 217, 0.50);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #00000073;
+    border-radius: 20px;
+    border: 1px solid #00000073;
+  }
+}
+
+.buyTogetherContainer {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #CCCCCC;
+  position: relative;
+}
+
+.buyTogetherProduct {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.buyTogetherImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  box-shadow: 0px 7.79px 7.79px 0px #0000000D;
+}
+
+.buyTogetherProductInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buyTogetherText {
+  display: flex;
+  flex-direction: column;
+}
+
+.buyTogetherBrand {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'WorkSans-Bold';
+  color: #1E1E1E;
+}
+
+.buyTogetherName,
+.buyTogetherReference {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: #1E1E1E;
+}
+
+.buyTogetherPrice {
+  margin: 4px 0 0;
+  font-size: 20px;
+  color: #000;
+}
+
+.buyTogetherAction {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buyTogetherLabel {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  border: 1px solid #000;
+
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.individualInput {
+  display: none;
+
+  &:checked + .buyTogetherLabel {
+    background-image: url('data:image/svg+xml,<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.6 14.0584L14.65 7.0084L13.25 5.6084L7.6 11.2584L4.75 8.4084L3.35 9.8084L7.6 14.0584ZM2 18.8584C1.45 18.8584 0.979167 18.6626 0.5875 18.2709C0.195833 17.8792 0 17.4084 0 16.8584V2.8584C0 2.3084 0.195833 1.83757 0.5875 1.4459C0.979167 1.05423 1.45 0.858398 2 0.858398H16C16.55 0.858398 17.0208 1.05423 17.4125 1.4459C17.8042 1.83757 18 2.3084 18 2.8584V16.8584C18 17.4084 17.8042 17.8792 17.4125 18.2709C17.0208 18.6626 16.55 18.8584 16 18.8584H2Z" fill="%231D1B20"/></svg>');
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.buyTogetherSelect {
+  background-color: #1E1E1E;
+  color: #fff;
+  padding: 10px !important;
+  width: 94px;
+  border-radius: 5px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 992px) {
+  .buyTogetherMain {
+    margin-top: 32px;
+  }
+
+  .buyTogetherCardsContainer {
+    margin-bottom: 32px;
+    padding-right: 9px;
+  }
+}

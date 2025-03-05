@@ -1,7 +1,7 @@
 {
   "vendor": "magicfeet",
   "name": "magicapp",
-  "version": "0.3.35",
+  "version": "0.3.37",
   "title": "panda + magicApp",
   "description": "panda + magicApp",
   "builders": {
@@ -15,6 +15,7 @@
     "vtex.product-context": "0.x",
     "vtex.search-graphql": "0.x",
     "vtex.orders-graphql": "0.x",
+    "vtex.order-items": "0.x",
     "vtex.device-detector": "0.x",
     "vtex.slider-layout": "0.x",
     "vtex.list-context": "0.x",
