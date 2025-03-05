@@ -4,7 +4,10 @@
     "props": {
       "blockClass": "product"
     },
-    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col"
+    ]
   },
 
   // LEFT
@@ -20,7 +23,8 @@
     "props": {
       "blockClass": "product"
     },
-    "children": ["flex-layout.row#product-image", "product-bookmark"]
+    "children": ["flex-layout.row#product-image", "product-bookmark",
+    "pd-videoPdp" ]
   },
 
   // RIGHT
@@ -148,7 +152,10 @@
     "props": {
       "blockClass": "mz-product__wishlist"
     },
-    "children": ["vtex.store-components:product-brand#pdp-wishlist", "add-to-list-btn"]
+    "children": [
+      "vtex.store-components:product-brand#pdp-wishlist",
+      "add-to-list-btn"
+    ]
   },
 
   "vtex.store-components:product-brand#pdp-wishlist": {
@@ -190,7 +197,7 @@
       // "displayMode": "select",
     }
   },
-  "flex-layout.row#panda-compre-junto":{
+  "flex-layout.row#panda-compre-junto": {
     "title": "Panda | Produto - Compre Junto",
     "props": {
       "blockClass": "product__main--compre-junto"

@@ -4229,7 +4229,7 @@ lz-string@^1.4.4:
   dependencies:
     apollo-client "^2.6.8"
     axios "^0.27.2"
-    magicapp "file:../../../../../../../../AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-9f254619-308f-4799-8da0-555255d888be-1740509067584/node_modules/magicapp"
+    magicapp "file:../../../../../../../../AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-cad863c2-a208-4979-aba5-73e039805d67-1734535660507/node_modules/magicapp"
     react "^16.12.0"
     react-apollo "^3.1.3"
     react-dom "^16.12.0"

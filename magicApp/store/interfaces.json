@@ -132,5 +132,8 @@
   },
   "pd-buy-together": {
     "component": "BuyTogether"
+  },
+  "pd-videoPdp": {
+    "component": "VideoPdp"
   }
 }
