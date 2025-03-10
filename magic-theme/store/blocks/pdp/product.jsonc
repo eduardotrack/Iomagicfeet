@@ -43,6 +43,7 @@
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "retail-rocket-container#pdp-complete-o-look",
+      "__fold__",
       "retail-rocket-container#pdp1",
       "retail-rocket-container#pdp2",
       "flex-layout.row#product-faq"

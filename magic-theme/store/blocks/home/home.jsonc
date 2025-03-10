@@ -19,7 +19,7 @@
       // "responsive-layout.phone#tips-home",
 
       "experimental__visibility-layout#week-featured",
-
+      "__fold__",
       
       "flex-layout.row#genders-shelf-home",
       
@@ -75,6 +75,9 @@
         },
         {
           "order": 13
+        },
+        {
+          "order": 14
         }
       ]
     }
