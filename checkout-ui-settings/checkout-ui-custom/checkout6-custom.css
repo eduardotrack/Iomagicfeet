@@ -3019,3 +3019,8 @@ li.progressiveBar_popup--number {
 .discount-pickup-message{
   display: none;
 }
+
+
+.srp-pickup-info::before{
+  display: none !important;
+}
