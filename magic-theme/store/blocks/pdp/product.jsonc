@@ -6,12 +6,14 @@
 
   "flex-layout.row#tips-core-pages": {
     "title": "Panda | Tips",
-    "children": ["responsive-layout.desktop#tips-home",  "responsive-layout.phone#tips-home"],
+    "children": ["responsive-layout.desktop#tips-home",  "responsive-layout.phone#tips-home","responsive-layout.tablet#tips-home"],
     "props": {
       "width": "100%",
       "rowGap": 0,
       "blockClass": "tips-core-pages",
-      "fullWidth": true
+      "fullWidth": true,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
     }
   },
 

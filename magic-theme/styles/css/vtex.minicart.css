@@ -38,3 +38,11 @@
         padding-right: 5px !important;
     }
 }
+
+/* Tablet */
+@media (max-width: 990px) {
+    .openIconContainer--Panda-cart :global(.vtex-button__label) {
+        padding-left: 0 !important;
+        padding-right: 5px !important;
+    }
+}

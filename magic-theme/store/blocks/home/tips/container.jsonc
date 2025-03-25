@@ -14,7 +14,12 @@
  
       "responsive-layout.phone#tips-home": {
         "title": "Panda | Tips - Mobile",
-        "children": ["slider-layout#tips-home",  "flex-layout.row#tips-home-mobile"]
+        "children": ["slider-layout#tips-home"]
+      },
+
+      "responsive-layout.tablet#tips-home": {
+        "title": "Panda | Tips - Mobile",
+        "children": ["slider-layout#tips-home"]
       },
 
       "flex-layout.row#tips-home-mobile": {
@@ -36,7 +41,7 @@
         "props": {
           "itemsPerPage": {
             "desktop": 1,
-            "tablet": 3,
+            "tablet": 1,
             "phone": 1
           },
           "infinite": false,

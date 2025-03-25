@@ -178,3 +178,11 @@
 .buttonShowMore--layout {
     margin-bottom: 40px;
 }
+
+/* Tablet */
+@media (max-width: 990px) {
+
+  .buttonShowMore {
+    padding-left: 0px;
+  }
+}

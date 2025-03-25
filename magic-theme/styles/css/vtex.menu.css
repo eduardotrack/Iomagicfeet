@@ -361,7 +361,7 @@
     padding-top: 22px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .menuContainer--footer-menu-mobile-institucional {
         margin: 8px 0;
         gap: 8px;
