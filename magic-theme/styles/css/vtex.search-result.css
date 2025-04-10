@@ -186,3 +186,8 @@
     padding-left: 0px;
   }
 }
+
+/* Ocultar filtros */ 
+.filter__container--category-2{
+    display: none;
+}
