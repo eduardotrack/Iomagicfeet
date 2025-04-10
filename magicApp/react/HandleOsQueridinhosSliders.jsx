@@ -1,13 +1,10 @@
-import React from 'react'
-import { useEffect } from 'react'
-import { useRef } from 'react'
+import React, { useEffect } from 'react'
 
-export default function App({ children }) {
+export default function HandleOsQueridinhos() {
   function handleLeftSlideClick() {
     const sliderBottomRightArrow = window?.document.querySelector(
       'button[class*="sliderRightArrow--slider-bottom"]'
     )
-
     sliderBottomRightArrow?.click()
   }
 
@@ -15,23 +12,18 @@ export default function App({ children }) {
     const sliderBottomLeftArrow = window?.document.querySelector(
       'button[class*="sliderLeftArrow--slider-bottom"]'
     )
-
     sliderBottomLeftArrow?.click()
   }
 
   function handleContainerClick(e) {
-    const elementClass = e.target?.classList.value
+    const elementClass = e.target?.classList.value || ''
 
     if (elementClass.includes('sliderLeftArrow--slider-top')) {
       handleLeftSlideClick()
-
-      return
     }
 
     if (elementClass.includes('sliderRightArrow--slider-top')) {
       handleRightSlideClick()
-
-      return
     }
   }
 

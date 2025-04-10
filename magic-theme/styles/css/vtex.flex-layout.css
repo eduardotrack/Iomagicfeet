@@ -1837,6 +1837,11 @@
   margin-top: 65px;
 }
 
+.flexRow--home-week-featured {
+  opacity: 0;
+  overflow: hidden;
+}
+
 .flexRowContent--home-week-featured {
   margin-top: 40px;
   position: relative;

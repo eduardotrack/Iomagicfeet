@@ -79,6 +79,10 @@
     border: 1px solid #BDBDBD;
     border-radius: 15px;
 
+    .stackItem--product-summary :global(.vtex-product-summary-2-x-image--product-summary-image) {
+        height: 250px !important;
+    }
+
     &:hover {
         .stackItem--summary-mini--product-infos {
             transform: translateY(0);
@@ -116,7 +120,7 @@
     .stackItem--summary-mini--product-infos {
         transform: translateY(0);
     }
-    .stackContainer--summary-mini :global(.vtex-product-summary-2-x-image--product-summary-image) {
+    .stackContainer--summary-mini .stackItem--product-summary :global(.vtex-product-summary-2-x-image--product-summary-image) {
         height: 150px !important;
         transition: all .3s;
     }

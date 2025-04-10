@@ -93,6 +93,11 @@
   padding: 0px 25px;
 }
 
+
+.sliderTrack--home-week-featured {
+  gap: 0;
+}
+
 @media (max-width: 767px) {
   .slide--tips_home_slider--firstVisible::after {
     content: "";
@@ -360,6 +365,10 @@
     > svg {
       width: 12px;
       height: 16px;
+      
+      use {
+        color: #000;
+      }
     }
   }
 
