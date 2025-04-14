@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-import React, { useState, useEffect } from 'react'
-
+import React, { useState, useEffect, Profiler, Suspense, lazy } from 'react'
 import style from './styles.css'
+
+const CharacterShelfItem = lazy(() => import('./CharacterShelfItem'));
+
 
 function CharacterShelf(charactersShelfCore) {
   const [characters, setCharacters] = useState(null)
@@ -62,28 +64,37 @@ function CharacterShelf(charactersShelfCore) {
     }
   }, [])
 
+  // Código de onRender do Profiler
+  function onRender(id, phase, actualDuration, baseDuration, startTime, commitTime) {
+    console.log({
+      id,
+      phase,
+      actualDuration,
+      baseDuration,
+      startTime,
+      commitTime
+    })
+  }
+
   return (
-    <div className={style.characterShelfContainer}>
-      <div className={style.characterShelf}>
-        {characters &&
-          characters.map((character, index) => (
-            <div
-              key={index}
-              className={`${style.characterShelfItem} ${
-                openIndex === index ? style.characterShelfItemOpen : ''
-              }`}
-              style={{ backgroundColor: character.color }}
-              onClick={() => setOpenIndex(index)}
-            >
-              <img src={character.image} alt="" />
-              <div className={style.characterShelfInfo}>
-                <p>{character.name}</p>
-                <a href={character.link}>compre agora!</a>
-              </div>
-            </div>
-          ))}
+    <Profiler id="CharacterShelf" onRender={onRender}>
+      <div className={style.characterShelfContainer}>
+        <div className={style.characterShelf}>
+          <Suspense fallback={<p>Carregamento do componente pro usuario</p>}>
+          {characters &&
+            characters.map((character, index) => (
+              <CharacterShelfItem
+                key={index}
+                character={character}
+                index={index}
+                openIndex={openIndex}
+                setOpenIndex={setOpenIndex}
+              />
+            ))}
+            </Suspense>
+        </div>
       </div>
-    </div>
+    </Profiler>
   )
 }
 
