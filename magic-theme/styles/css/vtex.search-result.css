@@ -188,6 +188,7 @@
 }
 
 /* Ocultar filtros */ 
+.filter__container--category-1,
 .filter__container--category-2{
     display: none;
 }
