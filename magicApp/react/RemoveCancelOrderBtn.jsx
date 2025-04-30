@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 
 export default function RemoveCancelOrderBtn() {
   useEffect(() => {
+    // remove botão do my account
     if (window.location.href.includes('account#')) {
       const observer = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
@@ -21,6 +22,34 @@ export default function RemoveCancelOrderBtn() {
 
             if (cancelBtnOrderDetail.length > 0) {
               cancelBtnOrderDetail.forEach((btn) => btn.remove())
+            }
+          }
+        })
+      })
+
+      const targetNode = document.body
+
+      observer.observe(targetNode, {
+        childList: true,
+        subtree: true,
+      })
+
+      return () => {
+        observer.disconnect()
+      }
+    }
+
+    // remove botão do order placed
+    if (window.location.href.includes('checkout/orderPlaced/')) {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.type === 'childList') {
+            const cancelBtn = document.querySelector(
+              '.vtex-order-placed-2-x-cancelOrderButton'
+            )
+
+            if (cancelBtn) {
+              cancelBtn.remove()
             }
           }
         })
