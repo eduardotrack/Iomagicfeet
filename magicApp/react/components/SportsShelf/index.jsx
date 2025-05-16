@@ -47,7 +47,7 @@ function SportsShelf(sportsShelfCore) {
                 style={{ backgroundColor: card.color }}
               >
                 <div className={style.sportsShelfCardImage}>
-                  <img src={card.image} alt={card.title} />
+                  <img src={card.image} alt={card.title} loading='lazy'/>
                 </div>
 
                 <div
