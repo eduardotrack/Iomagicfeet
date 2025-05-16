@@ -4082,7 +4082,7 @@ lz-string@^1.4.4:
   dependencies:
     apollo-client "^2.6.8"
     axios "^0.27.2"
-    magicapp "file:./../../../../../../../AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-dca2a11b-d4ce-4d55-b039-251f29477acc-1747254651218/node_modules/magicapp"
+    magicapp "file:./../../../../../../../../AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-ae90dcce-7d32-4abc-9860-cbca82d787f2-1747406380665/node_modules/magicapp"
     react "19.0.0"
     react-apollo "^3.1.3"
     react-dom "19.0.0"
@@ -4093,9 +4093,9 @@ lz-string@^1.4.4:
     slick-carousel "^1.8.1"
     swiper "6.0.0"
 
-"magicfeet.magicapp@http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.42/public/@types/magicfeet.magicapp":
-  version "0.3.42"
-  resolved "http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.42/public/@types/magicfeet.magicapp#3a0e3dcc39c60f28032ebe8584fc0baf138b478b"
+"magicfeet.magicapp@https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.44+build1747406348/public/@types/magicfeet.magicapp":
+  version "0.3.43"
+  resolved "https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.44+build1747406348/public/@types/magicfeet.magicapp#7756201c660d8470ed155609bb131f38b9d69e5b"
 
 make-dir@^3.0.0:
   version "3.1.0"

@@ -843,6 +843,9 @@
     display: block;
     float: right;
     margin-top: -25px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
  }
 
  .headerModalnews h5{
