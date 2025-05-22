@@ -18,7 +18,8 @@
       },
       "displayThumbnailsArrows": true,
       "showNavigationArrows": true,
-      "showPaginationDots": false
+      "showPaginationDots": false,
+      "zoomMode": "disabled"
     }
   },
   "flex-layout.row#block-flags-pdp": {

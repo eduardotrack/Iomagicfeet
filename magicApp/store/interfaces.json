@@ -135,5 +135,8 @@
   },
   "pd-videoPdp": {
     "component": "VideoPdp"
+  },
+  "pd-pdpZoomModal": {
+    "component": "PDPZoomModal"
   }
 }

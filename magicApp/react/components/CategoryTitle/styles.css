@@ -7,13 +7,13 @@
   text-align: left;
   font-weight: 700;
   width: 100%;
-  margin: 26.8px 0;
+  margin: 26.8px 0 8px;
   padding: 0;
 }
 
 @media (max-width: 650px) {
   .categoryTitle {
-    margin: 16px 0;
+    margin: 16px 0 8px;
     font-size: 24px;
     padding: 0;
   }

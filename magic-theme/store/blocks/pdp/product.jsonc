@@ -42,6 +42,7 @@
   "disposition-layout#product": {
     "children": [
       "flex-layout.row#tips-core-pages",
+      "pd-pdpZoomModal",
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "retail-rocket-container#pdp-complete-o-look",

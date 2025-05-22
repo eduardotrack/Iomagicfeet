@@ -36,8 +36,6 @@ export default function BuyTogetherRender(appCore) {
       return false;
     });
 
-    console.log("AQUI", appCore.buyTogetherItems)
-
     if (matchingItem) {
       setIsPDPMatched(true);
     } else {
