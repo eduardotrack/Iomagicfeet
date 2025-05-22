@@ -26,11 +26,26 @@
 
   // COMMON - TITLE
   "flex-layout.row#searchtitle": {
-    "title": "Panda | Título da busca",
-    "children": ["pd-categoryTitle"],
+    "children": [
+      "flex-layout.col#searchtitle"
+    ],
     "props": {
       "blockClass": "panda-search__main-title",
       "htmlId": "search-products"
+    }
+  },
+  "flex-layout.col#searchtitle": {
+    "title": "Panda | Título da busca",
+    "children": ["pd-categoryTitle", "rich-text#category-description"],
+    "props": {
+      "blockClass": "panda-search__main-title"
+    }
+  },
+  "rich-text#category-description": {
+    "title": "Panda | Descrição da categoria",
+    "props": {
+      "blockClass": "panda-search__description",
+      "text": ""
     }
   },
   // COMMON - SEO TITLE

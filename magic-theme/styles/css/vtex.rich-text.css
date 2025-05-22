@@ -60,6 +60,10 @@
   padding-left: 5rem;
 }
 
+.paragraph--panda-search__description {
+  margin: 0;
+}
+
 .paragraph--footer_methods--title {
   font-family: "WorkSans-Regular";
   font-style: normal;
@@ -72,6 +76,11 @@
 @media (max-width: 767px) {
   .paragraph--footer_methods--title {
     color: #fff;
+  }
+
+  .paragraph--panda-search__description {
+    font-size: 14px;
+    line-height: 120%;
   }
 }
 
