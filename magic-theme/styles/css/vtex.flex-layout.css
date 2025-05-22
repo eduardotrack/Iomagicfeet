@@ -213,6 +213,11 @@
   justify-content: flex-start;
 }
 
+.flexRowContent--panda-search__main-title {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 .flexRowContent--panda-search__main-title--seo {
   padding-left: 5rem;
 }
