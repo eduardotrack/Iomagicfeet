@@ -45,6 +45,7 @@
       "flex-layout.row#list-price-savings",
 
       "product-rating-summary",
+      "condition-layout.product#show-coupon-pdp",
       "pd-skuSimilar",
       "sku-selector#pdp-core",
       "sizebay",
@@ -317,6 +318,111 @@
     "props": {
       "blockClass": ["pdp-brand-logo-text"],
       "displayMode": "text"
+    }
+  },
+
+  "condition-layout.product#show-coupon-pdp": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "hasBestPrice",
+          "arguments": {
+            "value": true
+          }
+        }
+      ],
+      "Then": "flex-layout.row#pdp-product-tips-02",
+      "Else": "flex-layout.col#pdp-product-tips"
+    }
+  },
+  "flex-layout.row#pdp-product-tips": {
+    "title": "Panda | Lista de Dicas",
+    "props": {
+      "blockClass": "pdp-product-tips"
+    },
+    "children": [
+      "flex-layout.col#pdp-product-tips"
+    ]
+  },
+  "flex-layout.col#pdp-product-tips": {
+    "title": "Panda | Lista de Dicas",
+    "props": {
+      "blockClass": "pdp-product-tips"
+    },
+    "children": [
+      "flex-layout.row#pdp-product-tips-01",
+      "flex-layout.row#pdp-product-tips-02"
+    ]
+  },
+  "flex-layout.row#pdp-product-tips-01": {
+    "title": "Panda | Dica 01",
+    "props": {
+      "blockClass": "pdp-product-tips-item",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#pdp-product-tips-01",
+      "flex-layout.col#pdp-product-tips-01-text"
+    ]
+  },
+  "image#pdp-product-tips-01": {
+    "title": "Panda | Dica 01 - Ícone",
+    "props": {
+      "src": "assets/svg/icon-percent.svg",
+      "maxWidth": "24px",
+      "maxHeight": "24px",
+      "alt": "ícone",
+      "blockClass": "pdp-product-tips-icon"
+    }
+  },
+  "flex-layout.col#pdp-product-tips-01-text": {
+    "title": "Panda | Dica 01 - Texto",
+    "props": {
+      "blockClass": "pdp-product-tips-text"
+    },
+    "children": [
+      "rich-text#pdp-product-tips-01",
+      "pd-copyToClipboardText#pdp-product-tips-01"
+    ]
+  },
+  "rich-text#pdp-product-tips-01": {
+    "title": "Panda | Dica 01 - Texto",
+    "props": {
+      "text": "Use o **cupom** de primeira compra no site: ",
+      "blockClass": "pdp-product-tips-text"
+    }
+  },
+  "pd-copyToClipboardText#pdp-product-tips-01": {
+    "props": {
+      "textToCopy": "PRIMEIRACOMPRA"
+    }
+  },
+  "flex-layout.row#pdp-product-tips-02": {
+    "title": "Panda | Dica 02",
+    "props": {
+      "blockClass": "pdp-product-tips-item",
+      "colSizing": "auto"
+    },
+    "children": [
+      "image#pdp-product-tips-02",
+      "rich-text#pdp-product-tips-02"
+    ]
+  },
+  "image#pdp-product-tips-02": {
+    "title": "Panda | Dica 02 - Ícone",
+    "props": {
+      "src": "assets/svg/icon-tablet.svg",
+      "maxWidth": "24px",
+      "maxHeight": "24px",
+      "alt": "ícone",
+      "blockClass": "pdp-product-tips-icon"
+    }
+  },
+  "rich-text#pdp-product-tips-02": {
+    "title": "Panda | Dica 02 - Texto",
+    "props": {
+      "text": "Lançamentos **exclusivos e cashback** para usar nas lojas! \n **[Baixe agora o App MVP](https://onelink.to/jznk4b)**",
+      "blockClass": "pdp-product-tips-text"
     }
   }
 }

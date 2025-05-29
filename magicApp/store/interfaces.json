@@ -138,5 +138,8 @@
   },
   "pd-pdpZoomModal": {
     "component": "PDPZoomModal"
+  },
+  "pd-copyToClipboardText": {
+    "component": "CopyToClipboardText"
   }
 }

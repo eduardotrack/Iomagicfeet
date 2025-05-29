@@ -73,6 +73,15 @@
   color: #1c1c1c;
 }
 
+.paragraph--pdp-product-tips-text,
+.link--pdp-product-tips-text {
+  font-size: 14px;
+  line-height: 160%;
+  color: #000;
+  margin: 0;
+}
+
+
 @media (max-width: 767px) {
   .paragraph--footer_methods--title {
     color: #fff;

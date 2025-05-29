@@ -1,0 +1,69 @@
+.copyTextContainer {
+  position: relative;
+  display: inline-block;
+  max-width: fit-content;
+  text-decoration: underline;
+  color: #000;
+  transition: color 0.2s ease-in-out;
+  margin-right: auto;
+}
+
+.copyTextContainer:hover {
+  color: #383b3f;
+}
+
+.copyableText {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+/* Estilo base do tooltip */
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background-color: #333;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tooltipVisible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-12px);
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+@media screen and (max-width: 990px) {
+  .tooltip {
+    bottom: unset;
+    top: 170%;
+  }
+
+  .tooltip::after {
+    top: unset;
+    bottom: 100%;
+    transform: rotate(180deg);
+  }
+}
