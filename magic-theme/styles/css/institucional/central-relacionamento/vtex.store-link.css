@@ -1,0 +1,11 @@
+.link--apoio-cliente_text01{
+    position: relative;
+}
+
+.label--apoio-cliente_text01{
+    position: absolute;
+    height: 250px;
+    top: -150px;
+    cursor: pointer;
+    color: transparent;
+}

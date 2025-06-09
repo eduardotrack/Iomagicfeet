@@ -1,0 +1,421 @@
+.CR_container {
+  max-width: 1500px;
+  padding: 0 40px;
+  margin: 144px auto auto auto;
+}
+
+/* Header Busca */
+.CR_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 69px;
+  align-items: center;
+  position: relative;
+}
+
+.CR_header_title_desktop {
+  display: block;
+  color: #171718;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+  letter-spacing: -0.8px;
+  text-transform: lowercase;
+  margin: 0;
+  font-family: 'WorkSans-Bold';
+}
+
+.CR_header_title_mobile {
+  display: none;
+}
+
+.CR_input {
+  border-radius: 0px 10px 10px 0px;
+  border: 2px solid #1c1c1c;
+  width: 665px;
+  background: #fff;
+  padding: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #828282;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.CR_input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* .CR_search_label {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26' fill='none'%3E%3Cpath d='M25 25L19.2682 19.1362M22.0786 11.463C22.0786 17.2416 17.36 21.9261 11.5393 21.9261C5.71861 21.9261 1 17.2416 1 11.463C1 5.68447 5.71861 1 11.5393 1C17.36 1 22.0786 5.68447 22.0786 11.463Z' stroke='%231C1C1C' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: auto;
+  width: 70px;
+  height: 101%;
+  max-height: 46px;
+  display: block;
+  border-radius: 10px 0px 0px 10px;
+  border-right: 0;
+  border: 2px solid #1c1c1c;
+  border-right: 0px;
+} */
+
+.CR_search_label {
+  border: 2px solid #1c1c1c;
+  padding: 11px 27px;
+  display: flex;
+  align-items: center;
+  border-right: 0;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.CR_search_label svg {
+  width: 24px;
+  height: 24px;
+}
+
+.CR_header_input {
+  display: flex;
+  height: 46px;
+}
+
+.CR_search_title {
+  color: #1c1c1c;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 160%; /* 38.4px */
+  text-transform: lowercase;
+}
+
+.CR_search_categoria {
+  color: #1c1c1c;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  text-transform: lowercase;
+}
+
+.CR_faqselecionada_search {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.CR_faqselecionada_search img {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+  .CR_search_label svg {
+    width: 15.76px;
+    height: 16px;
+  }
+  .CR_search_label {
+    padding: 11px 15px;
+  }
+
+  .CR_header_input {
+    width: 100%;
+    height: 32.5px;
+  }
+
+  .CR_container {
+    max-width: 1500px;
+    padding: 0 20px;
+    margin: 112px auto auto auto;
+  }
+
+  .CR_header {
+    flex-direction: column;
+    margin-bottom: 16px;
+    align-items: flex-start;
+  }
+
+  .CR_header_title_mobile {
+    display: block;
+    color: #171a1c;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 33.6px */
+    text-transform: lowercase;
+    margin-bottom: 32px;
+  }
+
+  .CR_header_title_desktop {
+    display: none;
+  }
+
+  .CR_input {
+    padding: 5px 15px;
+    width: 100%;
+    color: #696969;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+  }
+
+  .CR_header_input::before {
+    background-size: 14px;
+  }
+
+  .CR_faqselecionada_header {
+    margin-bottom: 36.5px;
+  }
+}
+
+/* Blocos Faq */
+.CR_blocofaq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 16px;
+  border: 1px solid #e3e6eb;
+  width: 100%;
+  height: 223px;
+  justify-content: center;
+  padding: 28px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.CR_blocofaq_title {
+  color: #000;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: lowercase;
+}
+
+.CR_blocofaq_text {
+  margin: 0px;
+  color: #1c1c1c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112%;
+  text-transform: lowercase;
+}
+
+.CR_blocofaq_fixo {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .CR_blocofaq {
+    width: 100%;
+    height: 201px;
+  }
+
+  .CR_blocofaq_fixo {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .CR_blocofaq_title {
+    color: #171a1c;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+    text-transform: lowercase;
+  }
+}
+
+/* Lista de FAQS */
+.CR_blocofaq_listContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.CR_blocofaq_iconContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.CR_blocofaq_iconContainer::after {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 6L15 12L9 18' stroke='%23383B3F' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.CR_blocofaq_artigos {
+  color: #1c1c1c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112%;
+  text-transform: lowercase;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.text_container_fale_conosco {
+  margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+  .text_container_fale_conosco {
+    margin-top: 0px;
+    display: none;
+  }
+
+  .CR_blocofaq_listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .CR_blocofaq_listContainer::before {
+    content: 'fale conosco';
+    color: #171a1c;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 33.6px */
+    text-transform: lowercase;
+    margin-bottom: 34px;
+    margin-top: 34px;
+  }
+}
+
+/* Faq Item */
+.CR_faqselecionada_title {
+  color: #1c1c1c;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  text-transform: lowercase;
+  font-family: 'WorkSans-Bold';
+}
+
+.CR_faqitem {
+  padding: 26px 16px;
+  border-radius: 8px;
+  border: 1px solid #e3e6e8;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-family: 'RobotoCondensed-Bold';
+}
+
+.CR_faqitem_pergunta p {
+  color: #171a1c;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: lowercase;
+  margin: 0;
+}
+
+.CR_faqitem_pergunta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  height: 22px;
+}
+
+.CR_faqselecionada_header {
+  margin-bottom: 42px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+[class*='render-route-vtex-store-2-x-store-custom-institucional-central-de-relacionamento']
+  .paragraph {
+  color: #71747a;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112%;
+  text-transform: lowercase;
+}
+
+.CR_faqitem_resposta ol {
+  padding-left: 16px;
+}
+
+.CR_faqitem_resposta span {
+  font-weight: 700;
+  font-style: normal;
+}
+
+[class*='render-route-vtex-store-2-x-store-custom-institucional-central-de-relacionamento']
+  .listItem {
+  color: #71747a;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112%;
+  text-transform: lowercase;
+}
+
+.CR_faqitem_resposta {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .CR_faqselecionada {
+    margin-top: 36.5px;
+  }
+
+  .CR_faqitem_resposta {
+    margin-top: 24px;
+  }
+}
+
+/* Voltar */
+.CR__voltar {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M5 12H19M5 12L11 18M5 12L11 6' stroke='%23121416' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 24px;
+  height: 24px;
+  display: block;
+  font-size: 0;
+  border: 0px;
+  height: 48px;
+  width: 48px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  position: absolute;
+  top: -95px;
+}
+
+@media (max-width: 768px) {
+  .CR__voltar {
+    top: -80px;
+  }
+}

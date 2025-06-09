@@ -141,5 +141,8 @@
   },
   "pd-copyToClipboardText": {
     "component": "CopyToClipboardText"
+  },
+    "pd-CentralRelacionamento": {
+    "component": "CentralRelacionamento"
   }
 }

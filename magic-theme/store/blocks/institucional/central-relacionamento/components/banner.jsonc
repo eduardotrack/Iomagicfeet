@@ -1,0 +1,43 @@
+{
+  "responsive-layout.mobile#centralRelacionamento-bannerFull": {
+    "title": "Panda | Central de relacionamento - Banner Full - Mobile",
+    "children": [
+      "image#centralRelacionamento-bannerFull_mob"
+    ],
+    "props": {
+      "blockClass": "conteudo-principal-topo-desktop",
+      "fullWidth": true
+    }
+  },
+
+  "responsive-layout.desktop#centralRelacionamento-bannerFull": {
+    "title": "Panda | Central de relacionamento - Banner Full - Desktop",
+    "children": [
+        "image#centralRelacionamento-bannerFull_desk"
+    ],
+    "props": {
+      "blockClass": "conteudo-principal-topo-desktop",
+      "fullWidth": true
+    }
+  },
+
+  
+  "image#centralRelacionamento-bannerFull_desk": {
+    "title": "Panda | Banner Full Desktop",
+    "props": {
+      "src": "/arquivos/bannerPrincipal-centralderelacionamento.png",
+      "alt": "Banner Full - Central de Relacionamento",
+      "blockClass": "banner-principal-topo"
+    }
+  },
+
+  
+  "image#centralRelacionamento-bannerFull_mob": {
+    "title": "Panda | Banner Full Mobile",
+    "props": {
+      "src": "/arquivos/bannerPrincipal-centralderelacionamento.png",
+      "alt": "Banner Full - Central de Relacionamento",
+      "blockClass": "banner-principal-topo"
+    }
+  }
+}

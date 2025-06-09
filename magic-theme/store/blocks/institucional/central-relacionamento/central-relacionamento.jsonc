@@ -1,11 +1,13 @@
 {
   "store.custom#central-relacionamento": {
     "blocks": [
-      "flex-layout.row#central-relacionamento",
-      "experimental__visibility-layout#boasPraticas-TrocaeDevolucoes"
+      "responsive-layout.mobile#centralRelacionamento-bannerFull",
+      "responsive-layout.desktop#centralRelacionamento-bannerFull",
+      "pd-CentralRelacionamento",
+      "flex-layout.row#apoio-cliente"
     ]
-  },
-
+  }
+/* 
   "flex-layout.row#central-relacionamento": {
     "props": {
       "blockClass": "panda-central-relacionamento"
@@ -56,5 +58,5 @@
       "src": "https://www.youtube.com/watch?v=elPiqIQ0kYk",
       "blockClass": "video-BoasPraticas"
     }
-  }
+  } */
 }

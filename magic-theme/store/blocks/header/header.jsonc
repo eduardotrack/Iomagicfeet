@@ -17,7 +17,7 @@
       "experimental__visibility-layout#banner-header-tag",
       "pd-ChangeTagLogin",
       "pd-popupNewsletter",
-      "pd-NeoassistScript",
+
       "pd-remove-cancel-order" /* ,
       "pd-buttonVerNota" */
     ]
@@ -200,7 +200,6 @@
       "experimental__visibility-layout#banner-header-tag",
       "pd-ChangeTagLogin",
       "pd-popupNewsletter",
-      "pd-NeoassistScript",
       "pd-remove-cancel-order" /* ,
       "pd-buttonVerNota" */
     ]

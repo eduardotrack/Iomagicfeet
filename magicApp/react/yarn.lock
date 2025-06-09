@@ -4082,7 +4082,7 @@ lz-string@^1.4.4:
   dependencies:
     apollo-client "^2.6.8"
     axios "^0.27.2"
-    magicapp "file:./../../../../../../../../AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-ae90dcce-7d32-4abc-9860-cbca82d787f2-1747406380665/node_modules/magicapp"
+    magicapp "file:./../../../../../../../AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-789947ea-7356-477b-9c7c-eb6d7a0b0867-1749472094674/node_modules/magicapp"
     react "19.0.0"
     react-apollo "^3.1.3"
     react-dom "19.0.0"
@@ -4093,9 +4093,9 @@ lz-string@^1.4.4:
     slick-carousel "^1.8.1"
     swiper "6.0.0"
 
-"magicfeet.magicapp@https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.44+build1747406348/public/@types/magicfeet.magicapp":
+"magicfeet.magicapp@https://panda--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.43+build1749226640/public/@types/magicfeet.magicapp":
   version "0.3.43"
-  resolved "https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.44+build1747406348/public/@types/magicfeet.magicapp#7756201c660d8470ed155609bb131f38b9d69e5b"
+  resolved "https://panda--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.43+build1749226640/public/@types/magicfeet.magicapp#1cdc61c14a2b94d305cb5e634845ef211bf43b7d"
 
 make-dir@^3.0.0:
   version "3.1.0"
@@ -5603,9 +5603,9 @@ verror@1.10.0:
   version "0.12.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager#2cf6a9d2a31bc503b783c257695b0d17c09b5696"
 
-"vtex.orders-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.110.0/public/@types/vtex.orders-graphql":
-  version "0.110.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.110.0/public/@types/vtex.orders-graphql#6d4d153f13ffba9067ace1a15d47e624873ec18b"
+"vtex.orders-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.111.1/public/@types/vtex.orders-graphql":
+  version "0.111.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.111.1/public/@types/vtex.orders-graphql#9ce632fc912ad26b161d4168891e3cfb46fd0537"
 
 "vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context":
   version "0.10.1"

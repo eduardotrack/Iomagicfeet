@@ -1,0 +1,109 @@
+{
+  "flex-layout.row#apoio-cliente": {
+    "title": "Panda | Central de relacionamento - Apoio ao cliente",
+    "props": {
+      "blockClass": "apoio-cliente"
+    },
+    "children": ["flex-layout.col#apoio-cliente"]
+  },
+
+  "flex-layout.col#apoio-cliente": {
+    "title": "Panda | Conteúdo - Apoio ao cliente",
+    "props": {
+      "blockClass": "apoio-cliente"
+    },
+    "children": [
+      "rich-text#apoio-cliente_title",
+      "flex-layout.row#apoio-cliente_blocks"
+    ]
+  },
+
+  "rich-text#apoio-cliente_title": {
+    "title": "Panda | Conteúdo - Titulo",
+    "props": {
+      "text": "## Apoio ao Cliente",
+      "blockClass": "apoio-cliente_title"
+    }
+  },
+
+  "flex-layout.row#apoio-cliente_blocks": {
+    "title": "Panda | Conteúdo - Blocos",
+    "props": {
+      "blockClass": "apoio-cliente_blocks",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "flex-layout.row#apoio-cliente_blocks01",
+      "flex-layout.row#apoio-cliente_blocks02"
+    ]
+  },
+
+  //Bloco 01
+  "flex-layout.row#apoio-cliente_blocks01": {
+    "title": "Panda | Conteúdo - Bloco 01",
+    "props": {
+      "blockClass": "apoio-cliente_blocksContainer",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#apoio-cliente_image01",
+      "rich-text#apoio-cliente_text01",
+      "link#apoio-cliente_text01"
+    ]
+  },
+
+  "image#apoio-cliente_image01": {
+    "title": "Panda | Conteúdo - Imagem 01",
+    "props": {
+      "src": "/arquivos/IconEmail_apoioCliente.svg",
+      "blockClass": "apoio-cliente_image"
+    }
+  },
+
+  "rich-text#apoio-cliente_text01": {
+    "title": "Panda | Conteúdo - Texto 01",
+    "props": {
+      "text": "**e-mail** \n Se preferir, nos mande sua solicitação através do e-mail. \n",
+      "blockClass": "apoio-cliente_text"
+    }
+  },
+
+     "link#apoio-cliente_text01": {
+      "title": "Panda | Conteúdo - Link formulario",
+      "props": {
+        "href": "https://authenticfeet.neoassist.com/?th=tag_vmagicfeetfixa&openEmail=1",
+        "label": "relacionamento@magicfeet.com.br",
+        "blockClass": "apoio-cliente_text01",
+        "target": "_blank"
+      }
+    },
+
+  //Bloco 02
+  "flex-layout.row#apoio-cliente_blocks02": {
+    "title": "Panda | Conteúdo - Bloco 02",
+    "props": {
+      "blockClass": "apoio-cliente_blocksContainer",
+      "preventHorizontalStretch": true
+    },
+    "children": [
+      "image#apoio-cliente_image02",
+      "rich-text#apoio-cliente_text02"
+    ]
+  },
+
+  "image#apoio-cliente_image02": {
+    "title": "Panda | Conteúdo - Imagem 02",
+    "props": {
+      "src": "/arquivos/IconTelefone_apoioCliente.svg",
+      "blockClass": "apoio-cliente_image"
+    }
+  },
+
+  "rich-text#apoio-cliente_text02": {
+    "title": "Panda | Conteúdo - Texto 02",
+    "props": {
+      "text": "**Telefone** \n Nosso horário de atendimento é de segunda a sexta das 8:00 às 19:00. Esse canal de atendimento pode ter um tempo maior de espera. \n *(11) 2191-8391*",
+      "blockClass": "apoio-cliente_text"
+    }
+  }
+}
