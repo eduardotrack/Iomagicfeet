@@ -144,5 +144,8 @@
   },
     "pd-CentralRelacionamento": {
     "component": "CentralRelacionamento"
+  },
+  "pd-productPricePix": {
+    "component": "ProductPricePix"
   }
 }

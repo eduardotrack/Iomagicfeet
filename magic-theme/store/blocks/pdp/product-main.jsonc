@@ -42,7 +42,8 @@
       "flex-layout.row#wishlist",
       "vtex.store-components:product-name",
       "product-identifier.product",
-      "flex-layout.row#list-price-savings",
+      "pd-productPricePix",
+      "flex-layout.row#list-price-savings#pdp-pix",
 
       "product-rating-summary",
       "condition-layout.product#show-coupon-pdp",

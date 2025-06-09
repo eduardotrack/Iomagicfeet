@@ -13,7 +13,6 @@ const VideoPdp = () => {
   const { product } = useProduct()
 
   useEffect(() => {
-    console.log('product panda', product)
     if (product) {
       insertVideo(product)
     }

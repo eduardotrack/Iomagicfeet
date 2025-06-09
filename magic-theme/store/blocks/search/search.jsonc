@@ -4,7 +4,7 @@
     "blocks": ["flex-layout.row#tips-core-pages", "search-result-layout"],
     "props": {
       "context": {
-        "orderByField": "OrderByReleaseDateDESC",
+        // "orderByField": "OrderByReleaseDateDESC",
         "skusFilter": "ALL",
         "simulationBehavior": "default",
         "maxItemsPerPage": 24

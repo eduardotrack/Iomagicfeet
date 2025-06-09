@@ -1,0 +1,68 @@
+.pixPriceContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 19px;
+  max-width: 82%;
+}
+
+.pixPriceValue {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  font-family: Roboto-Condensed;
+
+  > span {
+    font-weight: 700;
+    font-family: RobotoCondensed-Bold;
+  }
+}
+
+.pixPriceOldValue {
+  font-size: 16px;
+  color: #7D8187;
+  text-decoration: line-through;
+  font-weight: 400;
+  margin: 0;
+  font-family: Roboto-Condensed;
+}
+
+.pixPriceDiscount {
+  display: flex;
+  padding: 4px 8px;
+  background-color: #D8F7D4;
+  border-radius: 4px;
+  margin-left: auto;
+
+  font-size: 14px;
+  line-height: 160%;
+  color: #1A7415;
+
+  font-family: 'WorkSans-Bold';
+}
+
+@media screen and (max-width: 1400px) {
+  .pixPriceContainer {
+    max-width: 92%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .pixPriceContainer {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .pixPriceContainer {
+    max-width: unset;
+  }
+
+  .pixPriceValue {
+    font-size: 18px;
+  }
+
+  .pixPriceOldValue {
+    font-size: 16px;
+  }
+}

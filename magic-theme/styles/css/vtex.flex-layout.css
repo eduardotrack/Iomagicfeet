@@ -1388,6 +1388,21 @@
   margin-top: 32px;
 }
 
+.flexRow--product__price_pix {
+  margin: 8px 0 24px;
+}
+
+.flexRowContent--product__price_pix {
+  max-width: 80%;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1400px) {
+  .flexRowContent--product__price_pix {
+    max-width: 90%;
+  }
+}
+
 @media (max-width: 767px) {
   .flexRow--block-flags-pdp
     :global(
@@ -1410,6 +1425,14 @@
   .flexCol--infocard-chances-wrapper-menor
     :global(.vtex-store-link-0-x-childrenContainer--infocard-chances-wrapper) {
     width: 45vw;
+  }
+
+  .flexRowContent--product__price_pix {
+    max-width: 98%;
+
+    > div:last-child {
+      flex-shrink: 0;
+    }
   }
 }
 

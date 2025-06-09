@@ -158,6 +158,12 @@
     margin-right: 5px;
 }
 
+.savings--product__price-savings-pdp-pix {
+    color: #1A7415;
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .currencyContainer--summary-list {
     font-size: 16px;
     font-weight: 400;
@@ -200,4 +206,19 @@
     font-weight: 400;
     text-align: start;
     display: block;
+}
+
+.installments--pdp_pix {
+    font-size: 16px !important;
+    color: #000 !important;
+    text-align: start !important;
+}
+
+.installmentsTotalValue--pdp_pix .currencyContainer--pdp_pix {
+    font-family: 'RobotoCondensed-Bold';
+    font-weight: 700;
+}
+
+.currencyContainer--pdp_pix {
+    font-size: 16px !important;
 }

@@ -23,6 +23,33 @@
       "product-installments#summary"
     ]
   },
+
+  "flex-layout.row#list-price-savings#pdp-pix": {
+    "title": "Panda | Preço de lista e desconto",
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "product__price_pix",
+      "colGap": 2
+    },
+    "children": [
+      "product-installments#pdp-pix",
+      "product-price-savings#pdp-pix"
+    ]
+  },
+  "product-installments#pdp-pix": {
+    "props": {
+      "message": "ou {installmentsTotalValue} em até {installmentsNumber}x de {installmentValue} sem juros",
+      "blockClass": ["summary", "Panda-summary-price", "summary-list", "pdp_pix"]
+    }
+  },
+  "product-price-savings#pdp-pix": {
+    "props": {
+      "blockClass": "product__price-savings-pdp-pix",
+      "message": "{savingsPercentage} Off"
+    }
+  },
+
   "flex-layout.col#prices-pdp": {
     "children": ["product-list-price#pdp",  "product-selling-price#pdp" /* ,"product-selling-price#pdp" */],
     "props": {}
