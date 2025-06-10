@@ -387,7 +387,8 @@ const CentralRelacionamento = ({
               </a>
 
               <a
-                href="/institucional/trocas-e-devolucoes"
+                href="https://authenticfeet.neoassist.com/?th=tag_vmagicfeetfixa&openEmail=1"
+                target="_blank"
                 className={styles.CR_blocofaq}
               >
                 <img
@@ -417,6 +418,12 @@ const CentralRelacionamento = ({
                   Saiba mais sobre como escolher o seu frete.
                 </p>
               </a>
+            </div>
+
+
+            {/* Exibe o texto de fale conosco */}
+            <div className={styles.text_container_fale_conosco}>
+              <p className={styles.CR_header_title_desktop}>fale conosco</p>
             </div>
 
             {/* Exibe os FAQs por categoria */}
