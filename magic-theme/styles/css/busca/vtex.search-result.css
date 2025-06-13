@@ -8,6 +8,8 @@
 
 .container--layout--panda-search {
     padding: 0 16px;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 

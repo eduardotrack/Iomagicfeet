@@ -27,7 +27,7 @@
     "@vtex/tsconfig": "^0.6.0",
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
-    "magicfeet.magicapp": "https://panda--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.49+build1749494148/public/@types/magicfeet.magicapp",
+    "magicfeet.magicapp": "https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.48+build1749489674/public/@types/magicfeet.magicapp",
     "typescript": "3.9.7",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.1/public/@types/vtex.css-handles",
     "vtex.device-detector": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.6/public/@types/vtex.device-detector",
