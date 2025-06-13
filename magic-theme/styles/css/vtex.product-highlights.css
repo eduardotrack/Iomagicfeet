@@ -84,7 +84,7 @@
     }
 
     &::after {
-        content: 'cupom: ganhe25';
+        content: 'cupom: especial25';
         font-size: 11px;
         color: #000;
         font-weight: 600;
