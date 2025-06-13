@@ -16,6 +16,13 @@
     "children": ["search-fetch-more"]
   },
 
+  "search-fetch-more": {
+    "title": "Ver mais",
+    "props": {
+      "htmlElementForButton": "a"
+    }
+  },
+
   // COMMON - GALLERY
   "search-content": {
     "title": "Panda | Conteúdo da busca",
