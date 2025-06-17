@@ -115,7 +115,7 @@
     .productHighlightWrapper[data-highlight-id="355"],
     .productHighlightWrapper[data-highlight-id="357"] {
         border-radius: 0;
-        height: 28px;
+        height: auto;
 
         &::after {
             font-size: 16px;
