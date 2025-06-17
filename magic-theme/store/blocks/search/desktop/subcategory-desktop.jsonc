@@ -16,7 +16,7 @@
     "props": {
       "blockClass": "panda-search",
       "pagination": "show-more",
-      "preventRouteChange": false,
+      "preventRouteChange": true,
       "defaultGalleryLayout": "grid",
       "hiddenFacets": {
         "priceRange": false

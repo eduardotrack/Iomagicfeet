@@ -144,7 +144,8 @@
   "filter-navigator.v3": {
     "props": {
       "priceRangeLayout": "slider",
-      "appliedFiltersOverview": "hide"
+      "appliedFiltersOverview": "hide",
+      "categoryFiltersMode": "href"
     }
   },
 
