@@ -2,7 +2,7 @@
   "flex-layout.row#footer-2-desktop": {
     "title": "Panda | Footer - Menu - Desktop",
     "children": [
-      "vtex.menu@2.x:menu#footer-all-categories",
+      "vtex.menu@2.x:menu#footer-all-categories-1",
       "vtex.menu@2.x:menu#footer-all-categories-2",
       "vtex.menu@2.x:menu#footer-all-categories-3",
       "flex-layout.col#footer-social",

@@ -18,29 +18,6 @@ export function CombinedProductList({
 
   useEffect(() => {
     getCounter?.(productsCounter)
-
-    // fix slider bug
-    const rightArrow = document.querySelector('.vtex-slider-layout-0-x-sliderRightArrow--home-week-featured')
-    const leftArrow = document.querySelector('.vtex-slider-layout-0-x-sliderLeftArrow--home-week-featured')
-
-    if (rightArrow && leftArrow) {
-      const slidersContainer = window.document.querySelector(
-        '[class*="flexRow--home-week-featured"]'
-      )
-
-      if (slidersContainer) {
-        if (slidersContainer.classList.contains('slider-fixed')) return
-
-        leftArrow.click();
-        setTimeout(() => {
-          rightArrow.click();
-        }, 500)
-        setTimeout(() => {
-          slidersContainer.style.opacity = '1'
-          slidersContainer.classList.add('slider-fixed')
-        }, 600)
-      }
-    }
   }, [getCounter, productsCounter])
 
   if (!items) {

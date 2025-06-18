@@ -1888,8 +1888,13 @@
 }
 
 .flexRow--home-week-featured {
-  opacity: 0;
   overflow: hidden;
+}
+
+.flexRowContent--home-week-featured-top {
+  >div:nth-child(2) {
+    width: 100% !important;
+  }
 }
 
 .flexRowContent--home-week-featured {

@@ -1,11 +1,93 @@
 {
   //  COL 1
-  "vtex.menu@2.x:menu#footer-all-categories": {
+  "vtex.menu@2.x:menu#footer-all-categories-1": {
     "title": "Panda | Footer - Menu - Coluna 1",
     "props": {
       "orientation": "vertical",
-      "blockClass": "footer__menu_main"
-    } 
+      "blockClass": "footer__menu",
+      "items": [
+        {
+          "id": "menu-item-all-categories-1-col-1",
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/lancamentos",
+            "text": "novidades",
+            "tagTitle": "novidades"
+          }
+        },
+        {
+          "id": "menu-item-all-categories-1-col-2",
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/calcados-infantis/tenis-infantis?map=category-1,category-1",
+            "text": "tenis e calçados",
+            "tagTitle": "tenis e calçados"
+          }
+        },
+        {
+          "id": "menu-item-all-categories-1-col-3",
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/acessorios-infantil/roupas-infantis?map=category-1,category-1",
+            "text": "roupas e acessórios",
+            "tagTitle": "roupas e acessórios"
+          }
+        },
+        {
+          "id": "menu-item-all-categories-1-col-4",
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/marcas",
+            "text": "marcas",
+            "tagTitle": "marcas"
+          }
+        },
+        {
+          "id": "menu-item-all-categories-1-col-5",
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/ocasioes",
+            "text": "ocasiões",
+            "tagTitle": "ocasiões"
+          }
+        },
+        {
+          "id": "menu-item-all-categories-1-col-6",
+          "type": "custom",
+          "itemProps": {
+            "type": "internal",
+            "href": "/outlet",
+            "text": "outlet",
+            "tagTitle": "outlet"
+          }
+        }
+      ]
+    },
+    "children": [
+      "menu-item#footer-all-categories-1-col-1"
+    ]
+  },
+
+  "menu-item#footer-all-categories-1-col-1": {
+    "props": {
+      "id": "menu-item-all-categories-1-col-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": true,
+      "blockClass": "footer__menu_title_sub",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "produtos",
+        "text": "produtos"
+      }
+    }
   },
  
   //  COL 2
