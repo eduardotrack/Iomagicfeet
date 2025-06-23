@@ -24,6 +24,16 @@
   left: -16px;
 }
 
+.flexCol--summary-pix-prices-col {
+  align-items: flex-start;
+  padding: 0 8px;
+  margin-bottom: 36px;
+
+  :global(.vtex-product-price-1-x-listPriceValue) {
+    color: #7D8187;
+  }
+}
+
 @media (max-width: 767px) {
   .flexRow--bannerTop-full {
     /* margin-top: 0rem;
@@ -33,5 +43,12 @@
 
   .flexRow--bannerTop-full-sale {
     /* margin-bottom: -61px; */
+  }
+
+
+  .flexCol--summary-pix-prices-col {
+    :global(.vtex-product-price-1-x-listPriceValue) {
+      font-size: 14px;
+    }
   }
 }

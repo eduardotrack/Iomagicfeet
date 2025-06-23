@@ -139,7 +139,8 @@
 @media (max-width: 767px) {
     .savings--product-discount-tag-search {
         font-size: 10px;
-        width: 55px;
+        width: fit-content;
+        height: 15px;
     }
 }
 
@@ -221,4 +222,35 @@
 
 .currencyContainer--pdp_pix {
     font-size: 16px !important;
+}
+
+.installments--summary-pix {
+    font-size: 14px;
+    line-height: 120%;
+    font-family: 'Roboto-Condensed';
+}
+
+.currencyContainer--summary-pix {
+    font-weight: 500;
+    font-family: 'RobotoCondensed-Bold';
+}
+
+.installmentsNumber--summary-pix {
+    font-weight: 500;
+    font-family: 'RobotoCondensed-Bold';
+
+    &::after {
+        content: 'x de ';
+    }
+}
+
+@media (max-width: 990px) {
+    .installments--summary-pix {
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    
+    .currencyContainer--summary-pix {
+        font-size: 12px !important;
+    }
 }

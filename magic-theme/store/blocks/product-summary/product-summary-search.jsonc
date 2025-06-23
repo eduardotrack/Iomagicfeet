@@ -8,13 +8,53 @@
       
       "vtex.store-components:product-brand#brand-search",
       "product-summary-name#name-search",
-      "flex-layout.row#summary-shelf-price-savings-search" ,
+      // "flex-layout.row#summary-shelf-price-savings-search" ,
+      "condition-layout.product#availability-summary-search-pix",
       "product-price-savings#search-discount"
     ],
     "props": {
       "blockClass": ["product__summary-search", "product__summary--shelf-search"],
       "priceBehavior": "default",
       "trackListName": true
+    }
+  },
+
+  "condition-layout.product#availability-summary-search-pix": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.col#summary-pix-prices",
+      "Else": "flex-layout.row#actions-shelf-indisponivel-search"
+    }
+  },
+
+  "flex-layout.col#summary-pix-prices": {
+    "title": "Panda | Preços do Pix - Coluna",
+    "children": [
+      "product-list-price",
+      "pd-productPricePix#summary"
+      // "product-installments#summary-pix"
+    ],
+    "props": {
+      "blockClass": ["summary-pix-prices", "summary-pix-prices-col"],
+      "preventVerticalStretch": true
+    }
+  },
+
+  "pd-productPricePix#summary": {
+    "props": {
+      "isSummary": true,
+      "discountPercentage": 5
+    }
+  },
+  "product-installments#summary-pix": {
+    "title": "Panda | Parcelamento do produto - Pix",
+    "props": {
+      "message": "ou {installmentsTotalValue} em até {installmentsNumber} {installmentValue} sem juros",
+      "blockClass": ["summary", "Panda-summary-price", "summary-list", "summary-pix"]
     }
   },
 

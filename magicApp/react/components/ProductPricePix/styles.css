@@ -42,6 +42,15 @@
   font-family: 'WorkSans-Bold';
 }
 
+.summaryPixPrice {
+  margin: 0;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  font-family: 'RobotoCondensed-Bold';
+}
+
 @media screen and (max-width: 1400px) {
   .pixPriceContainer {
     max-width: 92%;
@@ -64,5 +73,9 @@
 
   .pixPriceOldValue {
     font-size: 16px;
+  }
+
+  .summaryPixPrice {
+    font-size: 14px;
   }
 }

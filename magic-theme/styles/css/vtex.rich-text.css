@@ -81,6 +81,10 @@
   margin: 0;
 }
 
+.wrapper--product__unavaible {
+  padding: 0 8px;
+}
+
 
 @media (max-width: 767px) {
   .paragraph--footer_methods--title {
