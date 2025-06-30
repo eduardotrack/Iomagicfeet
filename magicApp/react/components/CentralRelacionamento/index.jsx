@@ -79,7 +79,7 @@ const FaqCategoriaSelecionada = ({ categoria, faqs, onVoltar }) => {
         : categoria === 'lojasefranquias'
           ? 'Lojas e Franquias'
           : categoria === 'cadastroendereco'
-            ? 'Cadastro e Endereço' //alterado aqui
+            ? 'Cadastro e Endereço'
             : categoria.charAt(0).toLowerCase() + categoria.slice(1)
 
   return (
@@ -94,9 +94,31 @@ const FaqCategoriaSelecionada = ({ categoria, faqs, onVoltar }) => {
           {categoriaFormatada}
         </span>
       </div>
-      {faqs.map((faq, index) => (
-        <FaqItem key={index} pergunta={faq.pergunta} resposta={faq.resposta} />
-      ))}
+
+      <div className={styles.CR_faqselecionada_content}>
+        {faqs.map((faq, index) => (
+          <FaqItem
+            key={index}
+            pergunta={faq.pergunta}
+            resposta={faq.resposta}
+          />
+        ))}
+      </div>
+
+      {categoria === 'devolucaoetroca' && (
+        <div className={styles.CR_videoContainer}>
+          <h3>Assista ao nosso vídeo com dicas de boas práticas para trocas e devoluções:</h3>
+          <iframe
+            width="560" // Adjust as needed
+            height="500" // Adjust as needed
+            src="https://www.youtube.com/embed/elPiqIQ0kYk" // Replace YOUR_VIDEO_ID with the actual YouTube video ID
+            title="YouTube video player - Devolução e Troca"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )}
     </div>
   )
 }
@@ -419,7 +441,6 @@ const CentralRelacionamento = ({
                 </p>
               </a>
             </div>
-
 
             {/* Exibe o texto de fale conosco */}
             <div className={styles.text_container_fale_conosco}>
