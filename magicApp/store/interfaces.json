@@ -147,5 +147,8 @@
   },
   "pd-productPricePix": {
     "component": "ProductPricePix"
+  },
+  "pd-canonicalAdvanced": {
+    "component": "CanonicalAdvanced"
   }
 }
