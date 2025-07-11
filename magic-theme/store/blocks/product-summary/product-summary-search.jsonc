@@ -46,8 +46,7 @@
 
   "pd-productPricePix#summary": {
     "props": {
-      "isSummary": true,
-      "discountPercentage": 5
+      "isSummary": true
     }
   },
   "product-installments#summary-pix": {

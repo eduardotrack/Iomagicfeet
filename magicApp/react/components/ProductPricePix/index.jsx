@@ -1,48 +1,54 @@
 import { useProduct } from "vtex.product-context"
 import styles from "./styles.css"
 
-export function ProductPricePix({ isSummary = false, discountPercentage = 5 }) {
-  const { product } = useProduct()
+const formatCurrency = (value) =>
+  value.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  })
 
-  const commercialOffer = product?.items?.[0]?.sellers?.[0]?.commertialOffer
-  const sellingPrice = commercialOffer?.Price || 0
-  const listPrice = commercialOffer?.ListPrice || 0
 
-  if (!sellingPrice) {
+export function ProductPricePix({ isSummary = false }) {
+  const { selectedItem } = useProduct()
+
+  const {
+    Price: sellingPrice = 0,
+    ListPrice: listPrice = 0,
+    spotPrice,
+    Installments,
+  } = selectedItem?.sellers?.[0]?.commertialOffer || {}
+
+  const pricePix = isSummary
+    ? spotPrice
+    : Installments?.find(
+        (installment) =>
+          installment.Name === 'Pagaleve Pix A Vista Transparente à vista'
+      )?.Value
+
+  if (!sellingPrice || !pricePix) {
     return null
   }
 
-  const isOffer = listPrice > sellingPrice
+  const oldPrice = listPrice > sellingPrice ? listPrice : sellingPrice
+  const oldPriceFormatted = formatCurrency(oldPrice)
+  const pricePixFormatted = formatCurrency(pricePix)
 
-  const pricePix = sellingPrice * (1 - discountPercentage / 100)
-  const pricePixFormatted = pricePix.toFixed(2).replace(".", ",")
-
-  let finalDiscountPercentage
-  let oldPriceFormatted
-
-  if (isOffer) {
-    const preciseOfferDiscount = ((listPrice - sellingPrice) / listPrice) * 100
-    const roundedOfferDiscount = Math.round(preciseOfferDiscount)
-
-    finalDiscountPercentage = roundedOfferDiscount + discountPercentage
-    oldPriceFormatted = listPrice.toFixed(2).replace(".", ",")
-  } else {
-    finalDiscountPercentage = discountPercentage
-    oldPriceFormatted = sellingPrice.toFixed(2).replace(".", ",")
-  }
+  const finalDiscountPercentage = listPrice < sellingPrice
+    ? Math.floor(((sellingPrice - pricePix) / sellingPrice) * 100)
+    : Math.floor(((listPrice - pricePix) / listPrice) * 100)
 
   if (isSummary) {
     return (
       <div className={styles.summaryPixContainer}>
-        <p className={styles.summaryPixPrice}>R$ {pricePixFormatted} no pix à vista</p>
+        <p className={styles.summaryPixPrice}>{pricePixFormatted} no pix à vista</p>
       </div>
     )
   }
 
   return (
     <div className={styles.pixPriceContainer}>
-      <p className={styles.pixPriceValue}>R$ {pricePixFormatted} no <span>pix à vista</span></p>
-      <p className={styles.pixPriceOldValue}>R$ {oldPriceFormatted}</p>
+      <p className={styles.pixPriceValue}>{pricePixFormatted} no <span>pix à vista</span></p>
+      <p className={styles.pixPriceOldValue}>{oldPriceFormatted}</p>
       <span className={styles.pixPriceDiscount}>{finalDiscountPercentage}% OFF</span>
     </div>
   )
@@ -58,12 +64,5 @@ ProductPricePix.schema = {
       type: 'boolean',
       default: false,
     },
-    discountPercentage: {
-      title: 'Desconto percentual para pagamento via Pix',
-      type: 'number',
-      default: 5,
-      minimum: 0,
-      maximum: 100,
-    }
   }
 }
