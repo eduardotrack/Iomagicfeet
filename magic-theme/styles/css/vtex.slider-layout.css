@@ -377,7 +377,7 @@
   }
 
   .paginationDotsContainer--list-brands-home {
-    bottom: -16px;
+    bottom: 0px;
   }
 
   .sliderArrows--home-genders-cards {
@@ -436,4 +436,7 @@
     background-color: transparent;
   }
 
+  .sliderTrackContainer--list-brands-home {
+    padding-bottom: 16px;
+  }
 }

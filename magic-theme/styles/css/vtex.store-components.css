@@ -32,8 +32,8 @@
 }
 
 .imageElement--list-brands-home {
-  max-width: 80px;
-  height: 80px;
+  max-width: 120px;
+  height: 120px;
 }
 
 .logoImage--header__logo {
@@ -47,8 +47,8 @@
     margin-bottom: -10px;
   }
   .imageElement--list-brands-home {
-    max-width: 60px;
-    height: 60px;
+    max-width: 80px;
+    height: 80px;
   }
 
   .imageElement--security-badges-item-mob {

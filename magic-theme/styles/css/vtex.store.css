@@ -10,25 +10,69 @@
     font-size: 32px;
     line-height: 26px;
     color: #000000;
+    text-transform: lowercase;
+}
+
+:global(.vtex-pageHeader__container) {
+    [class*="c-on-base flex flex-wrap flex-row justify-between"] {
+        flex-direction: column;
+    }
+
+    :global(.vtex-button) {
+        max-width: fit-content;
+        margin-top: 20px;
+        border-radius: 999px;
+        padding: 0 8px;
+    }
+
+    [class="newAddressButton"],
+    :global(.vtex-my-cards-1-x-newCardButton) {
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 :global(.vtex-pageHeader-link__container) :global(.vtex-button) {
-    font-family: 'RobotoCondensed-Bold';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    text-decoration-line: underline;
     color: #000000;
+
+    span {
+        font-family: 'WorkSans-Regular';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: #000000;
+    }
+}
+
+:global(.vtex-account__page) {
+    position: relative;
+    height: fit-content;
+    padding-bottom: 32px;
 }
 
 @media (max-width: 768px) {
-     :global(.vtex-pageHeader__container) {
-        padding: 24px 15px;
+    :global(.vtex-account__page) {
+        margin-bottom: 32px;
+    }
+
+    :global(.vtex-pageHeader__container) {
+        padding: 24px 15px 0;
+
+        [class="newAddressButton"],
+        :global(.vtex-my-cards-1-x-newCardButton) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
      :global(.vtex-pageHeader__container) :global(.vtex-pageHeader__title) {
         font-size: 20px;
         line-height: 25px;
+        margin-bottom: 12px;
     }
      :global(.vtex-pageHeader__container) :global(.vtex-button) {
         font-weight: 400;
@@ -38,20 +82,28 @@
         display: flex;
         align-items: center;
     }
-     :global(.vtex-pageHeader__container) :global(.vtex-button)::before {
-        content: '.';
-        font-size: 20px;
-        color: transparent;
-        background-image: url("data:image/svg+xml,%3Csvg width='8' height='15' viewBox='0 0 8 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 13.2812L1 7.1875L7 1.09375' stroke='%23353535' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-        background-repeat: no-repeat no-repeat;
-        background-position: center center;
-        background-size: 8px auto;
-        display: block;
-        width: 14px;
-        margin-right: -5px;
-    }
+     :global(.vtex-pageHeader-link__container) {
+        > :global(.vtex-button)::before {
+            content: '';
+            background-image: url('data:image/svg+xml,<svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.31434 10.3728C6.68976 10.0085 6.69009 9.40612 6.31506 9.04142L3.41061 6.2169C3.00684 5.82425 3.00684 5.17575 3.41061 4.7831L6.31506 1.95859C6.69009 1.59388 6.68976 0.991455 6.31434 0.627162C5.95428 0.277779 5.38175 0.277779 5.0217 0.627161L0.739587 4.78234C0.334774 5.17515 0.334774 5.82485 0.739587 6.21766L5.0217 10.3728C5.38175 10.7222 5.95428 10.7222 6.31434 10.3728Z" fill="%231C1C1C"/></svg>');
+            background-repeat: no-repeat no-repeat;
+            background-position: center center;
+            background-size: 8px auto;
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin-right: -5px;
+        }
+     }
      :global(.vtex-pageHeader__container) :global(.vtex__icon-arrow-back) {
         display: none;
+    }
+
+
+    :global(.vtex-pageHeader__container) {
+        :global(.vtex-button) {
+            margin-top: 8px;
+        }
     }
 }
 

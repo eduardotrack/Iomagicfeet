@@ -13,8 +13,8 @@
       "blockClass": "footer__tooltip--text"
     },
     "children": [
-      "menu-item#contact-footer",
-      "menu-item#contact-time"
+      // "menu-item#contact-footer",
+      "menu-item#contact-time-2"
     ]
   },
   "menu-item#contact-footer": {
@@ -33,7 +33,7 @@
       }
     }
   },
-  "menu-item#contact-time": {
+  "menu-item#contact-time-2": {
     "props": {
       "id": "menu-item-contact",
       "blockClass": ["footer__tooltip--link", "footer__tooltip--link-contato"],
@@ -42,10 +42,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "https://authenticfeet.neoassist.com/?th=tag_vmagicfeetfixa&openEmail=1",
         "noFollow": false,
-        "tagTitle": "(11) 3664-3822",
-        "text": "(11) 3664-3822"
+        "tagTitle": "entre em contato",
+        "text": "entre em contato"
       }
     }
   }

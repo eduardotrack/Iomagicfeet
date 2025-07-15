@@ -230,6 +230,10 @@
      text-align: center;
  }
 
+ .welcomeControlBtn {
+  display: none;
+ }
+
  @media (max-width: 767px) {
      .productLink {
          margin-right: 15px;
@@ -904,4 +908,70 @@
   text-align: center;
   margin: 0;
   margin-top: 2rem;
+ }
+
+ .welcomeControlWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+
+ .welcomeControlLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ }
+
+ .welcomeControlLinkItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 12px;
+  line-height: 14px;
+  color: #e8e8e8;
+  font-family: RobotoCondensed-Bold;
+  font-weight: 700;
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 12px;
+    width: 12px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='7' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 10.207L4.327 6 0 1.793 1.332.5 7 6l-5.668 5.5L0 10.207z' fill='%23E8E8E8'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+ }
+
+
+ @media (max-width: 762px) {
+  .welcomeControlLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .welcomeControlBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    margin-right: 32px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 12px;
+      height: 12px;
+      background-image: url("data:image/svg+xml,%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 10.2075L4.32659 6L0 1.7925L1.33198 0.5L7 6L1.33198 11.5L0 10.2075Z' fill='%23E8E8E8'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+   }
  }

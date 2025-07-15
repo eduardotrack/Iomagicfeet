@@ -59,17 +59,17 @@
             "openNewTab": true,
             "title": "Instagram"
           }
-        },
-        {
-          "image": "assets/svg/spotify-brands.svg",
-          "mobileImage": "assets/svg/spotify-brands.svg",
-          "description": "Spotify",
-          "link": {
-            "url": "https://www.spotify.com/",
-            "openNewTab": true,
-            "title": "Spotify"
-          }
         }
+        // {
+        //   "image": "assets/svg/spotify-brands.svg",
+        //   "mobileImage": "assets/svg/spotify-brands.svg",
+        //   "description": "Spotify",
+        //   "link": {
+        //     "url": "https://www.spotify.com/",
+        //     "openNewTab": true,
+        //     "title": "Spotify"
+        //   }
+        // }
       ]
     }
   },

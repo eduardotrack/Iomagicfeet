@@ -273,7 +273,11 @@
   },
 
   "drawer-header#header-mobile": {
-    "children": ["pd-welcomeControl", "vtex.menu@2.x:menu#account-mobile", "drawer-close-button"],
+    "children": [
+      "pd-welcomeControl",
+      // "vtex.menu@2.x:menu#account-mobile",
+      "drawer-close-button"
+    ],
     "props": {
       "blockClass": "Panda-drawer__menu--mobile"
     }

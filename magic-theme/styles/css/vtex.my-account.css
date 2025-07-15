@@ -26,6 +26,25 @@
     margin-bottom: 20px;
 }
 
+.addressList .boxContainer {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    min-height: 200px;
+
+
+    .boxContainerBody {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        padding: 12px 32px;
+
+        > div {
+            height: fit-content;
+        }
+    }
+}
+
 .dataEntryChildren {
     font-family: 'WorkSans-Regular';
     font-style: normal;
@@ -114,6 +133,22 @@
     flex-wrap: nowrap;
 }
 
+.addressList__header,
+:global(.vtex-account__cards-list__header),
+:global(.vtex.my-authentication_authentication__header),
+:global(.vtex-my-orders-app-3-x-ordersList) {
+    :global(.vtex-pageHeader-link__container) {
+        display: none;
+    }
+}
+
+.menuLink,
+.menuLinks :global(.vtex-account_menu-link) {
+    color: #353535;
+    text-transform: lowercase;
+    padding: 8px 0 8px 16px;
+}
+
 @media (max-width: 768px) {
     .menu {
         text-align: center;
@@ -139,5 +174,24 @@
         font-size: 16px;
         line-height: 24px;
         color: #353535;
+        text-transform: lowercase;
+    }
+
+    .addressBox {
+        flex-direction: column;
+    }
+
+    .addressList__header,
+    :global(.vtex-account__cards-list__header),
+    :global(.vtex.my-authentication_authentication__header),
+    :global(.vtex-my-orders-app-3-x-ordersList) {
+        :global(.vtex-pageHeader-link__container) {
+            display: block;
+        }
+    }    
+
+    .addressList .boxContainer {
+        margin: 0 auto;
+        width: 100%;
     }
 }

@@ -23,10 +23,25 @@ const WelcomeControl = () => {
         fetchProfile();
     }, []);
 
-    return (
-        <a href="/account">
-            <p className={styles.welcomeControl}>olá, <b>{welcome}</b></p>
+    if (welcome !== 'visitante') {
+      return (
+        <a href="/account" className={`${styles.welcomeControlLink} ${styles.welcomeControlLinkLogged}`}>
+          <p className={styles.welcomeControl}>olá, <b>{welcome}</b></p>
+          <span className={styles.welcomeControlBtn}>minha conta</span>
         </a>
+      )
+    }
+
+    return (
+      <div className={styles.welcomeControlWrapper}>
+        <a href="/account" className={`${styles.welcomeControlLink}`}>
+          <p className={styles.welcomeControl}>olá, <b>{welcome}</b></p>
+        </a>
+        <div className={styles.welcomeControlLinks}>
+          <a href="/login" className={styles.welcomeControlLinkItem}>ENTRAR</a>
+          <a href="/account/#/orders" className={styles.welcomeControlLinkItem}>MEUS PEDIDOS</a>
+        </div>
+      </div>
     );
 };
 

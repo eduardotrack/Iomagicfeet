@@ -60,7 +60,10 @@
         "props": {
           "blockClass": "footer__nivel1--mob-2"
         },
-        "children": ["list-context.image-list#social-networks", "rich-text#dep1-1-mobile-nivel-1-footer"]
+        "children": [
+          "list-context.image-list#social-networks"
+          // "rich-text#dep1-1-mobile-nivel-1-footer"
+        ]
       },
     
       "rich-text#dep1-1-mobile-nivel-1-footer": {
