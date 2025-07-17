@@ -11,7 +11,7 @@
       "experimental__visibility-layout#categories-banner-search",
       "experimental__visibility-layout#menu-banner-search",
       "flex-layout.row#search-suggestions",
-      "flex-layout.row#retail-rocket-category",
+      // "flex-layout.row#retail-rocket-category",
       "flex-layout.row#result-category"
     ],
     "props": {

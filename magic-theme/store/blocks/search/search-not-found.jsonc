@@ -1,12 +1,17 @@
 {
   "search-not-found-layout": {
     "title": "Panda | Resultado da busca - Não encontrado",
-    "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound", "flex-layout.row#retail-rocket-category-not-found"]
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#notfound"
+      // "flex-layout.row#retail-rocket-category-not-found"
+    ]
   },
-
   "flex-layout.row#notfound": {
     "title": "Resultado da busca - Não encontrado",
-    "children": ["not-found"],
+    "children": [
+      "not-found"
+    ],
     "props": {
       "blockClass": "panda-search__not-found",
       "fullWidth": true

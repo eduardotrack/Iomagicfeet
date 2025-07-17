@@ -4,12 +4,12 @@
     "blocks": ["disposition-layout#home"]
   },
 
-  "retail-rocket-container#home": {
-    "props": {
-      "markupBlock": "635abf00cf114781944b4d29",
-      "type": "HOME"
-    }
-  },
+  // "retail-rocket-container#home": {
+  //   "props": {
+  //     "markupBlock": "635abf00cf114781944b4d29",
+  //     "type": "HOME"
+  //   }
+  // },
 
   "disposition-layout#home": {
     "title": "Panda | Home - Disposição do conteúdo",
@@ -23,7 +23,7 @@
       
       "flex-layout.row#genders-shelf-home",
       
-      "retail-rocket-container#home",
+      // "retail-rocket-container#home",
 
       // "flex-layout.row#best-sellers-home",
       "experimental__visibility-layout#favorite-character",

@@ -13,8 +13,8 @@
 
       "flex-layout.row#searchinfomobile",
       "rich-text#title-ADD",
-      "flex-layout.row#retail-rocket-category-search",
-      "flex-layout.row#retail-rocket-category",
+      // "flex-layout.row#retail-rocket-category-search",
+      // "flex-layout.row#retail-rocket-category",
 
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore",

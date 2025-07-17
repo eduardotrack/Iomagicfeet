@@ -17,26 +17,26 @@
     }
   },
 
-  "retail-rocket-container#pdp1": {
-    "props": {
-      "type": "SIMILAR_PRODUCT",
-      "markupBlock": "635abf12020e5a151a7eced9"
-    }
-  },
+  // "retail-rocket-container#pdp1": {
+  //   "props": {
+  //     "type": "SIMILAR_PRODUCT",
+  //     "markupBlock": "635abf12020e5a151a7eced9"
+  //   }
+  // },
 
-  "retail-rocket-container#pdp2": {
-    "props": {
-      "type": "RELATED_PRODUCT",
-      "markupBlock": "635abf1c020e5a151a7eceda"
-    }
-  },
+  // "retail-rocket-container#pdp2": {
+  //   "props": {
+  //     "type": "RELATED_PRODUCT",
+  //     "markupBlock": "635abf1c020e5a151a7eceda"
+  //   }
+  // },
 
-  "retail-rocket-container#pdp-complete-o-look": {
-    "props": {
-      "type": "RELATED_PRODUCT",
-      "markupBlock": "6736581b61278398562a3416"
-    }
-  },
+  // "retail-rocket-container#pdp-complete-o-look": {
+  //   "props": {
+  //     "type": "RELATED_PRODUCT",
+  //     "markupBlock": "6736581b61278398562a3416"
+  //   }
+  // },
 
 
   "disposition-layout#product": {
@@ -45,10 +45,10 @@
       "pd-pdpZoomModal",
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "retail-rocket-container#pdp-complete-o-look",
+      // "retail-rocket-container#pdp-complete-o-look",
       "__fold__",
-      "retail-rocket-container#pdp1",
-      "retail-rocket-container#pdp2",
+      // "retail-rocket-container#pdp1",
+      // "retail-rocket-container#pdp2",
       "flex-layout.row#product-faq"
     ],
     "props": {

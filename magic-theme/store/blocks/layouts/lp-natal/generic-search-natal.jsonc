@@ -57,7 +57,7 @@
       "experimental__visibility-layout#categories-banner-search",
       "experimental__visibility-layout#menu-banner-search",
       "flex-layout.row#search-suggestions",
-      "flex-layout.row#retail-rocket-category-search",
+      // "flex-layout.row#retail-rocket-category-search",
       "flex-layout.row#result"
     ],
     "props": {

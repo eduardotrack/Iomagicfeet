@@ -21,11 +21,11 @@
       "flex-layout.row#footer-3-mobile",
       "flex-layout.row#footer-developed-powered"
     ]
-  },
-
-  "retail-rocket-container#global": {
-    "props": {
-      "markupBlock": "635abef6cf114781944b4d28"
-    }
   }
+
+  // "retail-rocket-container#global": {
+  //   "props": {
+  //     "markupBlock": "635abef6cf114781944b4d28"
+  //   }
+  // }
 }

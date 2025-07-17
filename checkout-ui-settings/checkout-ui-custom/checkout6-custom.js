@@ -735,57 +735,57 @@
  */
 //
 
-var rrPartnerId = '6359804a1e03932729115ead'
-var rrApi = {}
-var rrApiOnReady = rrApiOnReady || []
-rrApi.addToBasket =
-  rrApi.order =
-  rrApi.categoryView =
-  rrApi.view =
-  rrApi.recomMouseDown =
-  rrApi.recomAddToCart =
-    function () {}
-;(function (d) {
-  var ref = d.getElementsByTagName('script')[0]
-  var apiJs,
-    apiJsId = 'rrApi-jssdk'
-  if (d.getElementById(apiJsId)) return
-  apiJs = d.createElement('script')
-  apiJs.id = apiJsId
-  apiJs.async = true
-  apiJs.src = '//mcdn.retailrocket.net/content/javascript/trackingm.js'
-  ref.parentNode.insertBefore(apiJs, ref)
-})(document)
+// var rrPartnerId = '6359804a1e03932729115ead'
+// var rrApi = {}
+// var rrApiOnReady = rrApiOnReady || []
+// rrApi.addToBasket =
+//   rrApi.order =
+//   rrApi.categoryView =
+//   rrApi.view =
+//   rrApi.recomMouseDown =
+//   rrApi.recomAddToCart =
+//     function () {}
+// ;(function (d) {
+//   var ref = d.getElementsByTagName('script')[0]
+//   var apiJs,
+//     apiJsId = 'rrApi-jssdk'
+//   if (d.getElementById(apiJsId)) return
+//   apiJs = d.createElement('script')
+//   apiJs.id = apiJsId
+//   apiJs.async = true
+//   apiJs.src = '//mcdn.retailrocket.net/content/javascript/trackingm.js'
+//   ref.parentNode.insertBefore(apiJs, ref)
+// })(document)
 
-$(window).load(function () {
-  $('.empty-cart-content').append('<div data-retailrocket-markup-block="635abf30020e5a151a7ecedc"></div>')
+// $(window).load(function () {
+//   $('.empty-cart-content').append('<div data-retailrocket-markup-block="635abf30020e5a151a7ecedc"></div>')
 
-  function pandaLayer() {
-    for (var i = 0; i < dataLayer.length; i++) {
-      if (dataLayer[i].event == 'cartLoaded') {
-        return dataLayer[i]
-      }
-    }
-  }
+//   function pandaLayer() {
+//     for (var i = 0; i < dataLayer.length; i++) {
+//       if (dataLayer[i].event == 'cartLoaded') {
+//         return dataLayer[i]
+//       }
+//     }
+//   }
 
-  const products = pandaLayer()
-  const arrayProducts = products.ecommerce.checkout.products
+//   const products = pandaLayer()
+//   const arrayProducts = products.ecommerce.checkout.products
 
-  const productsAjust = []
+//   const productsAjust = []
 
-  for (var i = 0, l = arrayProducts.length; i < l; i++) {
-    console.log(arrayProducts[i])
-    productsAjust.push(arrayProducts[i].id)
-  }
+//   for (var i = 0, l = arrayProducts.length; i < l; i++) {
+//     console.log(arrayProducts[i])
+//     productsAjust.push(arrayProducts[i].id)
+//   }
 
-  const arrayCheckout = productsAjust.join(', ')
+//   const arrayCheckout = productsAjust.join(', ')
 
-  $('.cart-active').append(
-    `<div data-retailrocket-markup-block='635abf26020e5a151a7ecedb' data-product-ids='${arrayCheckout}'></div>`
-  )
+//   $('.cart-active').append(
+//     `<div data-retailrocket-markup-block='635abf26020e5a151a7ecedb' data-product-ids='${arrayCheckout}'></div>`
+//   )
 
-  retailrocket.markup.render()
-})
+//   retailrocket.markup.render()
+// })
 
 /**
  * *****************************
