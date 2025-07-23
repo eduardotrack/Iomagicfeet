@@ -51,6 +51,14 @@
   font-family: 'RobotoCondensed-Bold';
 }
 
+.summaryPixPriceDiscount {
+  display: none;
+}
+
+.summaryPixPriceOldValue {
+  display: none;
+}
+
 @media screen and (max-width: 1400px) {
   .pixPriceContainer {
     max-width: 92%;
