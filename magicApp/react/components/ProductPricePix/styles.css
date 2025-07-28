@@ -26,6 +26,8 @@
   font-weight: 400;
   margin: 0;
   font-family: Roboto-Condensed;
+
+  /* display: none; */
 }
 
 .pixPriceDiscount {
@@ -56,7 +58,18 @@
 }
 
 .summaryPixPriceOldValue {
-  display: none;
+  color: #7D8187;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: line-through;
+  margin: 0 0 4px;
+  text-align: start;
+  font-family: 'Roboto-Condensed';
+}
+
+.summaryPixPriceContainer {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 @media screen and (max-width: 1400px) {

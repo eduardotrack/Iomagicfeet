@@ -34,7 +34,7 @@
   "flex-layout.col#summary-pix-prices": {
     "title": "Panda | Preços do Pix - Coluna",
     "children": [
-      "product-list-price",
+      // "product-list-price",
       "pd-productPricePix#summary"
       // "product-installments#summary-pix"
     ],

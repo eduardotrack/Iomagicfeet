@@ -80,6 +80,15 @@ export function ProductPricePix({ isSummary = false }) {
       <p className={isSummary ? styles.summaryPixPrice : styles.pixPriceValue}>
         {pricePixFormatted} no pix <span>à vista</span>
       </p>
+      <p
+        className={
+          isSummary
+            ? styles.summaryPixPriceOldValue
+            : styles.pixPriceOldValue
+        }
+      >
+        {oldPriceFormatted}
+      </p>
       <span
         className={
           isSummary ? styles.summaryPixPriceDiscount : styles.pixPriceDiscount
