@@ -85,6 +85,28 @@
   padding: 0 8px;
 }
 
+.container--franchise-breadcrumb {
+  max-width: 948px;
+  margin: 24px auto;
+}
+
+.paragraph--franchise-breadcrumb {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 160%;
+  letter-spacing: 2%;
+  color: #121416;
+
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+
+.link--franchise-breadcrumb {
+  text-decoration: none;
+  color: #7D8187;
+}
+
 
 @media (max-width: 767px) {
   .paragraph--footer_methods--title {
@@ -222,6 +244,10 @@
     text-transform: uppercase;
     color: #E0E0E0;
     line-height: 30px;
+  }
+
+  .container--franchise-breadcrumb {
+    padding: 0 24px;
   }
 }
 

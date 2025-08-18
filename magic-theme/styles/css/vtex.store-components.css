@@ -42,6 +42,10 @@
   display: block;
 }
 
+.imageElement--sitemap-hero-mob {
+  width: 100%;
+}
+
 @media (max-width: 767px) {
   .logoImage--header__logo {
     margin-bottom: -10px;

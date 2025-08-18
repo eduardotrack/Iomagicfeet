@@ -150,5 +150,8 @@
   },
   "pd-canonicalAdvanced": {
     "component": "CanonicalAdvanced"
+  },
+  "pd-CatalogoControl": {
+    "component": "CatalogoControl"
   }
 }

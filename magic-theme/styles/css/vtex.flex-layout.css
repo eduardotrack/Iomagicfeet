@@ -1946,7 +1946,32 @@
   }
 }
 
+.flexRowContent--sitemap-hero {
+  display: flex;
+  justify-content: center;
+}
+
+.flexRowContent--sitemap-catalog {
+  max-width: 948px;
+  margin: 0 auto;
+
+  > div {
+    width: 100% !important;
+  }
+}
+
+.flexColChild--sitemap-hero-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 0;
+}
+
 @media screen and (max-width: 990px) {
+  .flexCol--sitemap-hero-col {
+    padding: 0 18px;
+  }
+
   .flexRow--banner-app-home :global(.vtex-store-components-3-x-container) {
     overflow: unset;
   }
