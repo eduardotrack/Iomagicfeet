@@ -1,7 +1,12 @@
 {
   "store.home": {
     "title": "Panda | Home",
-    "blocks": ["disposition-layout#home"]
+    "blocks": ["disposition-layout#home",
+        "flex-layout.row#vitrine-position-1",
+      "flex-layout.row#vitrine-position-2",
+      "flex-layout.row#vitrine-position-3",
+      "flex-layout.row#vitrine-position-4",
+      "flex-layout.row#vitrine-position-5"]
   },
 
   // "retail-rocket-container#home": {
@@ -108,6 +113,36 @@
       "flex-layout.col#tips-item-02",
       "flex-layout.col#tips-item-03",
       "flex-layout.col#tips-item-04"
+    ]
+  },
+    "flex-layout.row#vitrine-position-1":{
+    "title": "Smart Vitrine 1",
+    "children": [
+      "smart-shelf"
+    ]
+  },
+  "flex-layout.row#vitrine-position-2":{
+    "title": "Smart Vitrine 2",
+    "children": [
+      "smart-shelf"
+    ]
+  },
+  "flex-layout.row#vitrine-position-3":{
+    "title": "Smart Vitrine 3",
+    "children": [
+      "smart-shelf"
+    ]
+  },
+  "flex-layout.row#vitrine-position-4":{
+    "title": "Smart Vitrine 4",
+    "children": [
+      "smart-shelf"
+    ]
+  },
+  "flex-layout.row#vitrine-position-5":{
+    "title": "Smart Vitrine 5",
+    "children": [
+      "smart-shelf"
     ]
   }
 }

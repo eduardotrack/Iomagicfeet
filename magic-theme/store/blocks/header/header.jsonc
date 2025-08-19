@@ -86,7 +86,7 @@
       "width": "40%",
       "blockClass": "header__search"
     },
-    "children": ["search-bar"]
+    "children": ["smart-search-bar"]
   },
   "flex-layout.col#logo-desktop": {
     "title": "Panda | Header - Logo",
