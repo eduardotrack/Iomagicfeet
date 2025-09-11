@@ -72,6 +72,16 @@
   flex-direction: column-reverse;
 }
 
+.summaryPixPriceContainerSimple {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+
+  .summaryPixPriceOldValue {
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .pixPriceContainer {
     max-width: 92%;
