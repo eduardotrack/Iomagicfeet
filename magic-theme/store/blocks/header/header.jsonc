@@ -247,7 +247,7 @@
       "slideDirection": "horizontal",
       "blockClass": "header__drawer--search"
     },
-    "children": ["search-bar"]
+    "children": ["smart-search-bar"]
   },
 
   "logo#mobile": {

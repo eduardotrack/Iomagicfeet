@@ -1,0 +1,26 @@
+{
+  "store.custom#sn": {
+      "blocks": [
+          "flex-layout.row#search-result",
+          "flex-layout.row#smart-shelf"
+      ]
+  },
+  "store.custom#sh": {
+      "blocks": [
+          "flex-layout.row#search-result",
+          "flex-layout.row#smart-shelf"
+      ]
+  },
+  "flex-layout.row#search-result": {
+      "title": "Search Result Layout",
+      "children": [
+      "pd-smart-result"
+      ]
+  },
+  "flex-layout.row#smart-shelf": {
+      "title": "Shelf Smarthint",
+      "children": [
+      "smart-shelf"
+      ]
+  }
+}

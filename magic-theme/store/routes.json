@@ -10,5 +10,11 @@
   },
   "store.custom#conheca-magicfeet": {
     "path": "/conheca-magicfeet"
+  },
+  "store.custom#sn": {
+    "path": "/sn"
+  },
+  "store.custom#sh": {
+    "path": "/sh"
   }
 }
