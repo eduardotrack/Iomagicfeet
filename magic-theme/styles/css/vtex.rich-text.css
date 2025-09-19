@@ -9,14 +9,13 @@
 }
 
 .heading--header__tooltip--text {
-  font-family: "WorkSans-Bold";
+  font-family: "WorkSans-Regular";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: #000;
   margin: 0;
-  font-weight: 400 !important;
 }
 
 .strong--header__tooltip--text {
@@ -104,9 +103,8 @@
 
 .link--franchise-breadcrumb {
   text-decoration: none;
-  color: #7D8187;
+  color: #7d8187;
 }
-
 
 @media (max-width: 767px) {
   .paragraph--footer_methods--title {
@@ -190,7 +188,7 @@
 @media (max-width: 990px) {
   .paragraph--footer_methods_icon--title {
     text-transform: lowercase;
-    color: #5DFF49;
+    color: #5dff49;
     margin: 0 0 16px;
   }
 
@@ -205,7 +203,7 @@
   }
 
   .container--security-badges-title-mob::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 18.44px;
     height: 20.74px;
@@ -216,7 +214,7 @@
   }
 
   .paragraph--security-badges-title-mob {
-    color: #5DFF49;
+    color: #5dff49;
     margin: 0 0 16px;
   }
 
@@ -229,7 +227,7 @@
     font-size: 18px;
     margin-bottom: 12px;
     text-transform: unset;
-    font-family: 'WorkSans-Bold';
+    font-family: "WorkSans-Bold";
   }
 
   .wrapper--footer__developed-powered--title {
@@ -242,7 +240,7 @@
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
-    color: #E0E0E0;
+    color: #e0e0e0;
     line-height: 30px;
   }
 
@@ -975,7 +973,8 @@
   padding: 0px 5px;
 }
 
-.tableTd--panda-institucional__content :global(.vtex-rich-text-0-x-link--panda-institucional__content) {
+.tableTd--panda-institucional__content
+  :global(.vtex-rich-text-0-x-link--panda-institucional__content) {
   font-family: "WorkSans-Regular";
   font-style: normal;
   font-weight: 400;
@@ -1607,7 +1606,6 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.5px;
-  
 }
 
 @media screen and (max-width: 768px) {
@@ -1691,7 +1689,7 @@
   padding: 0 26px;
 }
 
-.headingLevel3--accordion-cashback-text{
+.headingLevel3--accordion-cashback-text {
   font-family: "WorkSans-Bold";
   font-size: 27px;
   font-style: normal;
@@ -1741,7 +1739,7 @@
   gap: 10px;
 
   &::after {
-    content: '';
+    content: "";
     width: 9px;
     height: 13px;
     display: inline-block;
@@ -1754,12 +1752,12 @@
 
 .paragraph--footer-menu-mobile-title {
   margin: 0;
-  font-family: 'WorkSans-Bold';
+  font-family: "WorkSans-Bold";
   font-weight: 700;
   color: #fff;
 }
 
-/* new home */ 
+/* new home */
 .container--week-featured-title {
   min-width: 195px;
   justify-content: center;
@@ -1780,13 +1778,13 @@
   font-size: 16px;
   font-weight: 500;
   text-transform: lowercase;
-  color: #171A1C;
-  font-family: 'WorkSans-Medium';
+  color: #171a1c;
+  font-family: "WorkSans-Medium";
 }
 
 .paragraph--pdp-sell-by {
   margin: 0;
-  color: #45494F;
+  color: #45494f;
   font-weight: 400;
   font-size: 14px;
 }
@@ -1797,7 +1795,7 @@
   gap: 10px;
 
   &::after {
-    content: '';
+    content: "";
     width: 11.5px;
     height: 11.5px;
     display: inline-block;
@@ -1809,7 +1807,7 @@
 
 .paragraph--become-a-franchisee-form-modal-title {
   margin: 0;
-  font-family: 'WorkSans-Bold';
+  font-family: "WorkSans-Bold";
   font-size: 24px;
   font-weight: 700;
 }
@@ -1820,11 +1818,10 @@
 
 .paragraph--new-newsletter {
   margin: 0;
-  color: #61656B;
+  color: #61656b;
   font-size: 16px;
   margin-top: 24px;
 }
-
 
 @media screen and (max-width: 990px) {
   .wrapper--week-featured-title {
