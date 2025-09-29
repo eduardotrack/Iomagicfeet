@@ -125,6 +125,27 @@
 
 
 
+/* cliente 20 */
+.productHighlightWrapper[data-highlight-id="372"] {
+    /* display: none; */
+    font-size: 0;
+    background-color: #5DFF49;
+    padding: 4px 10px 4px;
+    border-radius: 18px;
+    margin: 2px 8px 0;
+
+    >span {
+        display: none;
+    }
+
+    &::after {
+        content: 'cupom: cliente20';
+        font-size: 11px;
+        color: #000;
+        font-weight: 600;
+    }
+}
+
 /* nike25 */
 .productHighlightWrapper[data-highlight-id="358"] {
     /* display: none; */

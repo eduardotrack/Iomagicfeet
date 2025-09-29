@@ -1,0 +1,376 @@
+.catalogo_control{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.catalogo_control h1{
+  color: #121416;
+  font-family: Inter, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+  margin-bottom: 32px;
+  order: -2;
+  text-transform: lowercase;
+}
+
+@media (max-width: 700px) {
+  .catalogo_control h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+
+.container_catalog{
+  margin-bottom: 40px;
+}
+
+@media (max-width: 700px) {
+  .container_catalog {
+    margin-bottom: 20px;
+  }
+}
+
+
+.catalog_items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 48px;
+}
+@media (max-width: 700px) {
+  .catalog_items {
+    gap: 20px;
+    grid-template-columns: 1fr
+  }
+}
+
+.catalog_items_childrenless {
+  margin: 0;
+  padding: 0;
+  max-width: 379px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px 8px;
+}
+
+
+.title_catalog{
+  margin: 0;
+  color:  #171A1C;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  margin-bottom: 24px;
+  text-transform: lowercase;
+  text-decoration: none;
+  width: fit-content;
+  transition: all 0.3s ease;
+  display: flex;
+
+  &:hover {
+    color: #61656B;
+  }
+}
+
+  @media (max-width: 700px) {
+    .title_catalog{
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+  }
+
+
+
+  .font_bold_catalog{
+    color:  #171A1C;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 25.6px */
+    margin: 0;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-transform: lowercase;
+    text-decoration: none;
+    width: fit-content;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      color:  #61656B;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .font_bold_catalog{
+      margin-bottom: 8px;
+    }
+  }
+.list_catalog{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    max-width: 379px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px 8px;
+}
+
+.list_catalog a,
+.list_catalog_raw a {
+  color:  #61656B;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+  text-decoration: none;
+  text-transform: lowercase;
+  transition: all 0.3s ease;
+}
+.list_catalog a:hover,
+.list_catalog_raw a:hover {
+    color: #171a1c;
+    /* font-weight: 500; */
+}
+
+.icon_catalog{
+  max-width: 100%;
+}
+
+
+/* Marcas logos after */
+
+.font_bold_catalog[data-marca="adidas"]::before {
+  content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/assets/vtex/assets-builder/authenticfeet.authenticfeet-theme/5.10.77/img/logos/sitemap-logo-2___616ab9c52e63340b07f2a718b77ab0c6.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.font_bold_catalog[data-marca="nike"]::before {
+    content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/assets/vtex/assets-builder/authenticfeet.authenticfeet-theme/5.10.77/img/logos/sitemap-logo-1___c85f20df5ad56672ab34794b3d98d514.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.font_bold_catalog[data-marca="puma"]::before{
+  content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/assets/vtex/assets-builder/authenticfeet.authenticfeet-theme/5.10.77/img/logos/sitemap-logo-3___7e464380a968bf0dca68fbbc6ebf7734.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.font_bold_catalog[data-marca="new_balance"]::before {
+   content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/assets/vtex/assets-builder/authenticfeet.authenticfeet-theme/5.10.77/img/logos/sitemap-logo-6___ea42ee03b1074b3630df2653f4824158.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.font_bold_catalog[data-marca="asics"]:before {
+  content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/assets/vtex/assets-builder/authenticfeet.authenticfeet-theme/5.10.77/img/logos/sitemap-logo-8___6d785b134652b4424b0f613911c0dcb9.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.font_bold_catalog[data-marca="mizuno"]::before {
+  content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/assets/vtex/assets-builder/authenticfeet.authenticfeet-theme/5.10.77/img/logos/sitemap-logo-10___3f8f8d7c85be6a001de1558454e00e93.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.font_bold_catalog[data-marca="under_armour"]::before{
+   content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/assets/vtex/assets-builder/authenticfeet.authenticfeet-theme/5.7.6/img/logos/sitemap-logo-5___cc2dc563abae72faed9091aeb65dddd0.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+.font_bold_catalog[data-marca="reebok"] {
+  background-color: cyan;
+}
+.font_bold_catalog[data-marca="converse"]::before {
+  content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/arquivos/ids/443356-auto-100?width=auto&height=100&aspect=true');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.font_bold_catalog[data-marca="vans"]::before {
+  content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/assets/vtex/assets-builder/authenticfeet.authenticfeet-theme/5.10.77/img/logos/sitemap-logo-9___c913d32417c2e2234b097892807b2431.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: -5px;
+}
+.font_bold_catalog[data-marca="fila"]::before {
+    content: '';
+  width: 30px;
+  height: 14px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/assets/vtex/assets-builder/authenticfeet.authenticfeet-theme/5.10.77/img/logos/sitemap-logo-7___53fce568e6b0f90f7784dec2960a8e07.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.font_bold_catalog[data-marca="olympikus"]::before {
+    content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/assets/vtex.file-manager-graphql/images/04989e03-4ecf-4d48-a8af-8d8c173ea95d___d57a7d14e0fae7fcd0699c1b9cc3cc2e.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.font_bold_catalog[data-marca="on"]::before {
+  content: '';
+  width: 10px;
+  height: 20px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/assets/vtex/assets-builder/authenticfeet.authenticfeet-theme/5.10.77/img/logos/sitemap-logo-4___31984516b7e61ca26192ff985dc004df.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.font_bold_catalog[data-marca="jansport"]::before {
+  content: '';
+  width: 60px;
+  height: 20px;
+  display: block;
+  background: url('https://authenticfeet.vtexassets.com/arquivos/ids/443360-auto-100?width=auto&height=100&aspect=true');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: -5px;
+}
+
+.font_bold_catalog[data-marca="umbro"]::before {
+  content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://magicfeet.vteximg.com.br/arquivos/umbro-logo2.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: -5px;
+}
+
+.font_bold_catalog[data-marca="penalty"]::before {
+  content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://magicfeet.vteximg.com.br/arquivos/penalty-logo.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: -5px;
+}
+
+.font_bold_catalog[data-marca="jordan"]::before {
+  content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://magicfeet.vteximg.com.br/arquivos/jordan-logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -5px;
+}
+
+.font_bold_catalog[data-marca="skechers"]::before {
+  content: '';
+  width: 40px;
+  height: 20px;
+  display: block;
+  background: url('https://magicfeet.vteximg.com.br/arquivos/skechers-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: -5px;
+}
+
+.font_bold_catalog[data-marca="nba"]::before {
+  content: '';
+  width: 30px;
+  height: 20px;
+  display: block;
+  background: url('https://magicfeet.vteximg.com.br/arquivos/nba-logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -5px;
+}
+
+.font_bold_catalog[data-marca="nfl"]::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: url('https://magicfeet.vteximg.com.br/arquivos/nfl-logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -5px;
+}
+
+.font_bold_catalog[data-marca="veja"]::before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url('https://magicfeet.vteximg.com.br/arquivos/veja-logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: -5px;
+}
+
+div[data-marcaid="Flowfa"] {
+  display: none;
+}
+
+
+[data-categoria="novidades"]{
+  order: -1;
+}

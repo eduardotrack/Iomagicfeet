@@ -1,0 +1,87 @@
+{
+  "store.custom#sitemap": {
+    "children": ["disposition-layout#sitemap"]
+  },
+
+  "disposition-layout#sitemap": {
+    "title": "Sitemap",
+    "children": [
+      "flex-layout.row#sitemap-hero",
+      "rich-text#sitemap-breadcrumb",
+      "flex-layout.row#sitemap-catalog"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        }
+      ]
+    }
+  },
+
+  "rich-text#sitemap-breadcrumb": {
+    "title": "Breadcrumb",
+    "props": {
+      "text": "[home](/) / **mapa do site**",
+      "blockClass": ["franchise-breadcrumb"]
+    }
+  },
+
+  "flex-layout.row#sitemap-hero": {
+    "children": ["flex-layout.col#sitemap-hero"],
+    "props": {
+      "blockClass": ["sitemap-hero"],
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#sitemap-hero": {
+    "props": {
+      "blockClass": ["sitemap-hero-col"]
+    },
+    "children": [
+      "responsive-layout.desktop#image-sitemap-hero",
+      "responsive-layout.mobile#image-sitemap-hero"
+    ]
+  },
+  "responsive-layout.desktop#image-sitemap-hero": {
+    "children": [
+      "image#sitemap-hero"
+    ]
+  },
+  "responsive-layout.mobile#image-sitemap-hero": {
+    "children": [
+      "image#sitemap-hero-mobile"
+    ]
+  },
+  "image#sitemap-hero": {
+    "title": "Hero Banner (Desktop)",
+    "props": {
+      "src": "assets/img/sitemap-hero.png",
+      "blockClass": "sitemap-hero"
+    }
+  },
+  "image#sitemap-hero-mobile": {
+    "title": "Hero Banner",
+    "props": {
+      "src": "assets/img/sitemap-hero-mob.png",
+      "blockClass": "sitemap-hero-mob"
+    }
+  },
+
+  "flex-layout.row#sitemap-catalog": {
+    "children": [
+      "pd-CatalogoControl"
+    ],
+    "props": {
+      "blockClass": ["container", "sitemap-catalog"],
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    }
+  }
+}

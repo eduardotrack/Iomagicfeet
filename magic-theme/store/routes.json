@@ -16,5 +16,8 @@
   },
   "store.custom#sh": {
     "path": "/sh"
+  },
+  "store.custom#sitemap": {
+    "path": "/catalogo"
   }
 }

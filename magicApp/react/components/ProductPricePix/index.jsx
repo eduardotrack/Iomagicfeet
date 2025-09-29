@@ -43,12 +43,18 @@ export function ProductPricePix({ isSummary = false }) {
       if (totalValueAtInstallments) {
         totalValueAtInstallments.style.display = 'none'
       }
+
+      const percentageDiscountTag = document.querySelector('.vtex-product-price-1-x-savings--product__price-savings-pdp-pix')
+
+      if (percentageDiscountTag) {
+        percentageDiscountTag.style.display = 'none'
+      }
     }, [])
 
     return (
       <div
         className={
-          isSummary ? styles.summaryPixPriceContainer : styles.pixPriceContainer
+          isSummary ? `${styles.summaryPixPriceContainer} ${styles.summaryPixPriceContainerSimple}` : styles.pixPriceContainer
         }
       >
         <p
