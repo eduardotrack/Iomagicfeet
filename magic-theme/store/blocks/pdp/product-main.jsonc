@@ -50,6 +50,7 @@
       "pd-skuSimilar",
       "sku-selector#pdp-core",
       "sizebay",
+      "pd-SizeIndicationPdp",
       "flex-layout.row#buy-together",
       "flex-layout.row#product-qqt",
       "product-availability",

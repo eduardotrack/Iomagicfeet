@@ -1,0 +1,44 @@
+.sizeRecommendation__container {
+  display: flex;
+  background-color: #f8f9f9;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px 5px;
+  border-radius: 8px;
+  border: 1px solid #E3E6E8;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.sizeRecommendation__container::before {
+  content: '';
+  background-image: url("/arquivos/tabler-icon-alert-circle.svg");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  width: 23px;
+  height: 23px;
+  display: block;
+  margin-left: 5px;
+}
+
+.sizeRecommendation__texts {
+  display: block;
+}
+
+.sizeRecommendation__title {
+  font-family: 'RobotoCondensed-Bold';
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0px;
+  margin: 0px 0px 3px;
+}
+
+.sizeRecommendation__subtitle {
+  font-family: 'WorkSans-Regular';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  margin: 0;
+}
