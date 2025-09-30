@@ -12,7 +12,8 @@
       "experimental__visibility-layout#menu-banner-search",
       "flex-layout.row#search-suggestions",
       // "flex-layout.row#retail-rocket-category",
-      "flex-layout.row#result-brand"
+      "flex-layout.row#result-brand",
+      "flex-layout.row#vitrine-position-category"
     ],
     "props": {
       "blockClass": "panda-search",
@@ -25,6 +26,16 @@
     }
   },
 
+      "flex-layout.row#vitrine-position-category":{
+      "title": "Smart Vitrine - category",
+      "props": {
+        "blockClass": "smart-shelf"
+      },
+      "children": [
+        "smart-shelf"
+      ]
+    },
+    
   // RESULT
   "flex-layout.row#result-brand": {
     "title": "Panda | Resultados da busca",

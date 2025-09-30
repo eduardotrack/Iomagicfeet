@@ -78,3 +78,13 @@
 .childrenContainer--menu-mobile-nivel01 {
     min-height: 90vh;
 }
+
+@media screen and (max-width: 1200px) {
+    .childrenContainer--header__drawer--search {
+        padding: 15px;
+    }
+
+    .closeIconButton--header__drawer--search {
+        color: #000;
+    }
+}

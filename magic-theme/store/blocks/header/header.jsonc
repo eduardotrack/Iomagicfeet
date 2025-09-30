@@ -87,7 +87,7 @@
       "width": "40%",
       "blockClass": "header__search"
     },
-    "children": ["search-bar"]
+    "children": ["smart-search-bar"]
   },
   "flex-layout.col#logo-desktop": {
     "title": "Panda | Header - Logo",
@@ -249,7 +249,7 @@
       "slideDirection": "horizontal",
       "blockClass": "header__drawer--search"
     },
-    "children": ["search-bar"]
+    "children": ["smart-search-bar"]
   },
 
   "logo#mobile": {

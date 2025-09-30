@@ -12,7 +12,8 @@
       "experimental__visibility-layout#menu-banner-search",
       "flex-layout.row#search-suggestions",
       // "flex-layout.row#retail-rocket-category",
-      "flex-layout.row#result-department"
+      "flex-layout.row#result-department",
+      "flex-layout.row#vitrine-position-category"
     ],
     "props": {
       "blockClass": "panda-search",

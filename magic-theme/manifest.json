@@ -80,7 +80,9 @@
     "vtex.product-availability": "0.x",
     "vtex.shelf-components": "0.x",
     "magicfeet.magicapp": "0.x",
-    "magicfeet.magiccep": "0.x"
+    "magicfeet.magiccep": "0.x",
+    "magicfeet.resolve-search": "1.x",
+    "magicfeet.search": "1.x"
   },
   "peerDependencies": {
     "vtex.availability-notify": "1.x",
