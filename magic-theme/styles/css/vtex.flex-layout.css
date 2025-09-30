@@ -597,7 +597,8 @@
 
 .flexRowContent--product__main--btn
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-  width: 50% !important;
+  /* width: 50% !important; */
+  max-width: 258px;
   margin: 10px 0;
 }
 
@@ -633,7 +634,7 @@
   line-height: 26px;
   color: #ffffff;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .flexRowContent--product__main--btn
@@ -1965,6 +1966,11 @@
   align-items: center;
   justify-content: center;
   padding: 20px 0 0;
+}
+
+.flexCol--product__main--sku {
+  height: auto;
+  width: fit-content;
 }
 
 @media screen and (max-width: 990px) {

@@ -11,7 +11,8 @@
     "title": "Panda | Header - Desktop",
     "children": [
       "pd-canonicalAdvanced",
-      "cep-controller",
+      "pd-ClearCep",
+      // "cep-controller",
       // "retail-rocket-container#global",
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop",
@@ -195,7 +196,8 @@
     "title": "Panda | Header - Mobile",
     "children": [
       "pd-canonicalAdvanced",
-      "cep-controller",
+      "pd-ClearCep",
+      // "cep-controller",
       // "retail-rocket-container#global",
       /*     "flex-layout.row#0-mobile",  */
       "sticky-layout#1-mobile",

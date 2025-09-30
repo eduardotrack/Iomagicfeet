@@ -156,5 +156,8 @@
   },
   "pd-SizeIndicationPdp": {
     "component": "SizeIndicationPdp"
+  },
+  "pd-ClearCep": {
+    "component": "ClearCep"
   }
 }

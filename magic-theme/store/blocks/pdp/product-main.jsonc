@@ -48,9 +48,8 @@
       "product-rating-summary",
       "condition-layout.product#show-coupon-pdp",
       "pd-skuSimilar",
-      "sku-selector#pdp-core",
-      "sizebay",
-      "pd-SizeIndicationPdp",
+      "flex-layout.col#sku-selector-pdp",
+      
       "flex-layout.row#buy-together",
       "flex-layout.row#product-qqt",
       "product-availability",
@@ -188,6 +187,19 @@
       "blockClass": "shortDescription",
       "text": "[Ver mais](#descricao)"
     }
+  },
+
+  "flex-layout.col#sku-selector-pdp": {
+    "title": "Panda | Produto - Seleção de SKU",
+    "props": {
+      "blockClass": "product__main--sku",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "sku-selector#pdp-core",
+      "sizebay",
+      "pd-SizeIndicationPdp"
+    ]
   },
 
   "sku-selector#pdp-core": {
