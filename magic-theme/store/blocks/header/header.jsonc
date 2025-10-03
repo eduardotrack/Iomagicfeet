@@ -20,6 +20,8 @@
       "pd-ChangeTagLogin",
       "pd-popupNewsletter",
 
+      "pd-OrderPlacedSmarthint",
+      
       "pd-remove-cancel-order" /* ,
       "pd-buttonVerNota" */
     ]
@@ -204,6 +206,7 @@
       "experimental__visibility-layout#banner-header-tag",
       "pd-ChangeTagLogin",
       "pd-popupNewsletter",
+      "pd-OrderPlacedSmarthint",
       "pd-remove-cancel-order" /* ,
       "pd-buttonVerNota" */
     ]

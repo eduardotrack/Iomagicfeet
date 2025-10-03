@@ -159,5 +159,8 @@
   },
   "pd-ClearCep": {
     "component": "ClearCep"
+  },
+  "pd-OrderPlacedSmarthint": {
+    "component": "OrderPlacedSmarthint"
   }
 }
