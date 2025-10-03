@@ -159,6 +159,10 @@
   width: 100%;
 }
 
+.smartLoadingPage .smartLoader {
+  box-shadow: none;
+}
+
 .smartBanners {
   display: flex;
   width: 100%;
