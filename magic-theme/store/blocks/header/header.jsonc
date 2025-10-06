@@ -207,6 +207,7 @@
       "pd-ChangeTagLogin",
       "pd-popupNewsletter",
       "pd-OrderPlacedSmarthint",
+      "pd-MobileHeaderScrollControl",
       "pd-remove-cancel-order" /* ,
       "pd-buttonVerNota" */
     ]
