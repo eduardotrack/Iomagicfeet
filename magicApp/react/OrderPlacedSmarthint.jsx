@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react'
+import { waitForElement } from './utils/waitForElement'
 
 export default function OrderPlacedSmarthint() {
   const [orderId, setOrderId] = useState(null)
 
   useEffect(() => {
     const isOrderPlaced = window.location.href.includes('/orderPlaced')
+
     if (!isOrderPlaced) return
 
     async function getOrderIdFromHTML() {
-      const orderNumberEl = document.querySelector('.vtex-order-placed-2-x-orderNumber')
+      const orderNumberEl = await waitForElement('.vtex-order-placed-2-x-orderNumber')
       const id = orderNumberEl?.textContent?.split('#')[1]?.trim() || null
       setOrderId(id)
     }
@@ -17,11 +19,9 @@ export default function OrderPlacedSmarthint() {
   }, [])
 
   useEffect(() => {
-
     if (!orderId) return
 
     async function fetchOrderData(id) {
-      console.log(id)
       try {
         const res = await fetch(`/api/checkout/pub/orders/${id}`)
 
