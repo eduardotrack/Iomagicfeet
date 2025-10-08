@@ -4082,7 +4082,7 @@ lz-string@^1.4.4:
   dependencies:
     apollo-client "^2.6.8"
     axios "^0.27.2"
-    magicapp "file:./../../../../../../../../AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-75ab6d80-0cdd-4ad4-b73c-d338ffba9620-1759504799342/node_modules/magicapp"
+    magicapp "file:./../../../../../../AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-d5ad9d99-2b1e-42df-984e-7bf2f5076481-1759937892305/node_modules/magicapp"
     react "19.0.0"
     react-apollo "^3.1.3"
     react-dom "19.0.0"
@@ -4093,9 +4093,9 @@ lz-string@^1.4.4:
     slick-carousel "^1.8.1"
     swiper "6.0.0"
 
-"magicfeet.magicapp@https://smart--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.67+build1759504546/public/@types/magicfeet.magicapp":
-  version "0.3.67"
-  resolved "https://smart--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.67+build1759504546/public/@types/magicfeet.magicapp#5d31e643ebffbea7b377bc0180531c4fc71ab181"
+"magicfeet.magicapp@https://ordertest--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.68+build1759937815/public/@types/magicfeet.magicapp":
+  version "0.3.68"
+  resolved "https://ordertest--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.68+build1759937815/public/@types/magicfeet.magicapp#67fb7ae68df6a5f93eaf6cb6fd04719beabc2b67"
 
 make-dir@^3.0.0:
   version "3.1.0"
@@ -5603,6 +5603,10 @@ verror@1.10.0:
   version "0.12.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager#2cf6a9d2a31bc503b783c257695b0d17c09b5696"
 
+"vtex.order-placed-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed-graphql@1.18.5/public/@types/vtex.order-placed-graphql":
+  version "1.18.5"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed-graphql@1.18.5/public/@types/vtex.order-placed-graphql#58d1063ad63c24567ded60668912099e2223e8de"
+
 "vtex.orders-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.113.1/public/@types/vtex.orders-graphql":
   version "0.113.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.113.1/public/@types/vtex.orders-graphql#bf524761a432d5fb9d80d2013da432a5a9734670"
@@ -5643,9 +5647,9 @@ verror@1.10.0:
   version "0.18.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.18.0/public/@types/vtex.store-icons#0ee94d549aa283ce3a13ab987c13eac4fdfd1bba"
 
-"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.13/public/@types/vtex.styleguide":
-  version "9.146.13"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.13/public/@types/vtex.styleguide#f4ccbc54621bf5114ddd115b6032ae320f2eba55"
+"vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.14/public/@types/vtex.styleguide":
+  version "9.146.14"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.14/public/@types/vtex.styleguide#88ebb29e191a947a7be9f500814a7256297c7e60"
 
 w3c-hr-time@^1.0.1:
   version "1.0.2"
