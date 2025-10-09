@@ -103,14 +103,34 @@ export default function OrderPlacedSmarthint() {
   }
 
   const sendDataToSmarthint = (data) => {
-    fetch('https://recs.smarthint.co/track/order?shcode=SH-393768', {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    })
-      .then(() => console.log('Dados enviados para Smarthint:', data))
-      .catch(error => console.error('Erro ao enviar Smarthint:', error))
+    try {
+      const payload = {
+        Date: data.Date || '',
+        anonymousConsumer: data.anonymousConsumer || '',
+        session: data.session || '',
+        Total: data.Total || 0,
+        OrderId: data.OrderId || '',
+        Freight: data.Freight || 0,
+        Items: Array.isArray(data.Items) ? data.Items : [],
+      }
+
+      fetch('https://service.smarthint.co/track/order?key=SH-393768', {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        },
+        body: JSON.stringify(payload),
+      })
+        .then(res => {
+          console.log('Dados enviados para SmartHint com sucesso', res)
+        })
+        .catch(err => {
+          console.error('Erro ao enviar dados para SmartHint:', err)
+        })
+    } catch (err) {
+      console.error('Erro ao montar payload SmartHint:', err)
+    }
   }
 
   return null
