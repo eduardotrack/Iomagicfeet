@@ -19,10 +19,34 @@
       "blockClass": "panda-search",
       "pagination": "show-more",
       "preventRouteChange": true,
-      "defaultGalleryLayout": "grid",
+      "defaultGalleryLayout": "grid4",
       "hiddenFacets": {
-        "priceRange": false
-      }
+        "priceRange": false,
+        "categories": true,
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "name": "Departamento"
+            },
+            {
+              "name": "Categoria"
+            },
+            {
+              "name": "Ocasião de Uso"
+            },
+            {
+              "name": "Assinaturas"
+            },
+            {
+              "name": "Coleção"
+            }
+          ]
+        }
+      },
+      "thresholdForFacetSearch": 1,
+      "showProductsCount": true,
+      "showFacetQuantity": false,
+      "showFacetTitle": false
     }
   },
 
@@ -39,7 +63,7 @@
   // RESULT
   "flex-layout.row#result-brand": {
     "title": "Panda | Resultados da busca",
-    "children": ["flex-layout.col#filter", "flex-layout.col#content-brand"],
+    "children": ["flex-layout.col#content-brand"],
     "props": {
       "blockClass": "panda-search__main",
       "preventHorizontalStretch": false,

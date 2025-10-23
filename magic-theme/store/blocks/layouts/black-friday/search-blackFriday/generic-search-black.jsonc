@@ -60,9 +60,29 @@
       "blockClass": "panda-search",
       "pagination": "show-more",
       "preventRouteChange": true,
-      "defaultGalleryLayout": "grid",
+      "defaultGalleryLayout": "grid4",
       "hiddenFacets": {
-        "priceRange": false
+        "priceRange": false,
+        "categories": true,
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "name": "Departamento"
+            },
+            {
+              "name": "Categoria"
+            },
+            {
+              "name": "Ocasião de Uso"
+            },
+            {
+              "name": "Assinaturas"
+            },
+            {
+              "name": "Coleção"
+            }
+          ]
+        }
       }
     }
   },
@@ -78,7 +98,7 @@
       "experimental__visibility-layout#menu-banner-search",
       "total-products.v2",
 
-      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchinfomobile-new",
 
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore",
@@ -90,9 +110,29 @@
       "blockClass": "panda-search",
       "pagination": "show-more",
       "preventRouteChange": true,
-      "defaultGalleryLayout": "grid",
+      "defaultGalleryLayout": "grid4",
       "hiddenFacets": {
-        "priceRange": false
+        "priceRange": false,
+        "categories": true,
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "name": "Departamento"
+            },
+            {
+              "name": "Categoria"
+            },
+            {
+              "name": "Ocasião de Uso"
+            },
+            {
+              "name": "Assinaturas"
+            },
+            {
+              "name": "Coleção"
+            }
+          ]
+        }
       }
     }
   }

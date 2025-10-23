@@ -588,7 +588,7 @@
 }
 
 .wrapper--panda-search__seo-bottom {
-  padding-left: 80px;
+  /* padding-left: 80px; */
   margin-bottom: 50px;
 }
 
@@ -613,6 +613,10 @@
   line-height: 120%;
   color: #000000;
   padding: 0;
+}
+
+.link--panda-search__seo-bottom {
+  color: #000000;
 }
 
 @media (max-width: 767px) {

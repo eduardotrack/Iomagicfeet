@@ -1,0 +1,102 @@
+.galleryLayoutSwitcher {
+  gap: 8px;
+}
+
+.galleryLayoutOptionButton--grid3 {
+  svg {
+    display: none;
+  }
+
+  &::before {
+    content: url('data:image/svg+xml,<svg width="29" height="17" viewBox="0 0 29 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.01367" y="1" width="7" height="15" rx="1.5" stroke="%23AAAFB5"/><rect x="11.0137" y="1" width="7" height="15" rx="1.5" stroke="%23AAAFB5"/><rect x="21.0137" y="1" width="7" height="15" rx="1.5" stroke="%23AAAFB5"/></svg>');
+  }
+}
+
+.galleryLayoutOptionButton--grid3--selected {
+  &::before {
+    content: url('data:image/svg+xml,<svg width="29" height="17" viewBox="0 0 29 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.01367" y="1" width="7" height="15" rx="1.5" fill="black" stroke="black"/><rect x="11.0137" y="1" width="7" height="15" rx="1.5" fill="black" stroke="black"/><rect x="21.0137" y="1" width="7" height="15" rx="1.5" fill="black" stroke="black"/></svg>');
+  }
+}
+
+.galleryLayoutOptionButton--grid4 {
+  svg {
+    display: none;
+  }
+
+  &::before {
+    content: url('data:image/svg+xml,<svg width="39" height="17" viewBox="0 0 39 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.01367" y="1" width="7" height="15" rx="1.5" stroke="%23AAAFB5"/><rect x="11.0137" y="1" width="7" height="15" rx="1.5" stroke="%23AAAFB5"/><rect x="21.0137" y="1" width="7" height="15" rx="1.5" stroke="%23AAAFB5"/><rect x="31.0137" y="1" width="7" height="15" rx="1.5" stroke="%23AAAFB5"/></svg>');
+  }
+}
+
+.galleryLayoutOptionButton--grid4--selected {
+  &::before {
+    content: url('data:image/svg+xml,<svg width="39" height="17" viewBox="0 0 39 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.01367" y="1" width="7" height="15" rx="1.5" fill="%23171A1C" stroke="black"/><rect x="11.0137" y="1" width="7" height="15" rx="1.5" fill="%23171A1C" stroke="black"/><rect x="21.0137" y="1" width="7" height="15" rx="1.5" fill="%23171A1C" stroke="black"/><rect x="31.0137" y="1" width="7" height="15" rx="1.5" fill="%23171A1C" stroke="black"/></svg>');
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .galleryLayoutOptionButton--grid3 { 
+    padding: 4px;
+     
+    &::before {
+      height: 18px;
+      content: url('data:image/svg+xml,<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="16" transform="translate(0 0.5)" fill="white"/><rect x="0.5" y="1" width="7" height="15" rx="1.5" fill="none" stroke="black"/><rect x="10.5" y="1" width="7" height="15" rx="1.5" fill="none" stroke="black"/></svg>');
+    }
+  }
+  
+  .galleryLayoutOptionButton--grid3--selected {
+    &::before {
+      content: url('data:image/svg+xml,<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="16" transform="translate(0 0.5)" fill="white"/><rect x="0.5" y="1" width="7" height="15" rx="1.5" fill="black" stroke="black"/><rect x="10.5" y="1" width="7" height="15" rx="1.5" fill="black" stroke="black"/></svg>');
+    }
+  }
+  
+  .galleryLayoutOptionButton--grid4 {
+    padding: 4px;
+
+    &::before {
+      height: 18px;
+      content: url('data:image/svg+xml,<svg width="29" height="17" viewBox="0 0 29 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.01367" y="1" width="7" height="15" rx="1.5" stroke="%23AAAFB5"/><rect x="11.0137" y="1" width="7" height="15" rx="1.5" stroke="%23AAAFB5"/><rect x="21.0137" y="1" width="7" height="15" rx="1.5" stroke="%23AAAFB5"/></svg>');
+    }
+  }
+  
+  .galleryLayoutOptionButton--grid4--selected {
+    &::before {
+      content: url('data:image/svg+xml,<svg width="29" height="17" viewBox="0 0 29 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.01367" y="1" width="7" height="15" rx="1.5" fill="black" stroke="black"/><rect x="11.0137" y="1" width="7" height="15" rx="1.5" fill="black" stroke="black"/><rect x="21.0137" y="1" width="7" height="15" rx="1.5" fill="black" stroke="black"/></svg>');
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .galleryLayoutSwitcher {
+    padding: 4px 12px;
+    border-radius: 50px;
+    border: 1px solid #F0F1F2;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .galleryLayoutOptionButton--grid3 {  
+    &::before {
+      content: url('data:image/svg+xml,<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="1" width="17" height="6" rx="1.5" stroke="%2349454F"/><rect x="0.5" y="10" width="17" height="6" rx="1.5" stroke="%2349454F"/></svg>');
+    }
+  }
+  
+  .galleryLayoutOptionButton--grid3--selected {
+    &::before {
+      content: url('data:image/svg+xml,<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="1" width="17" height="6" rx="1.5" fill="black" stroke="%2349454F"/><rect x="0.5" y="10" width="17" height="6" rx="1.5" fill="black" stroke="%2349454F"/></svg>');
+    }
+  }
+  
+  .galleryLayoutOptionButton--grid4 {
+    &::before {
+      content: url('data:image/svg+xml,<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="16" transform="translate(0 0.5)" fill="white"/><rect x="0.5" y="1" width="7" height="15" rx="1.5" fill="none" stroke="black"/><rect x="10.5" y="1" width="7" height="15" rx="1.5" fill="none" stroke="black"/></svg>');
+    }
+  }
+  
+  .galleryLayoutOptionButton--grid4--selected {
+    &::before {
+      content: url('data:image/svg+xml,<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="18" height="16" transform="translate(0 0.5)" fill="white"/><rect x="0.5" y="1" width="7" height="15" rx="1.5" fill="black" stroke="black"/><rect x="10.5" y="1" width="7" height="15" rx="1.5" fill="black" stroke="black"/></svg>');
+    }
+  }
+}

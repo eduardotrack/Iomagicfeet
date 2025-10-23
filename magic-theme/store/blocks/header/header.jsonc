@@ -208,7 +208,8 @@
       "pd-popupNewsletter",
       "pd-OrderPlacedSmarthint",
       "pd-MobileHeaderScrollControl",
-      "pd-remove-cancel-order" /* ,
+      "pd-remove-cancel-order",
+      "pd-BlockZoomOnInput" /* ,
       "pd-buttonVerNota" */
     ]
   },
@@ -253,7 +254,7 @@
       "slideDirection": "horizontal",
       "blockClass": "header__drawer--search"
     },
-    "children": ["smart-search-bar"]
+    "children": ["smart-search-bar", "pd-ControlCloseModalWhenSearching"]
   },
 
   "logo#mobile": {

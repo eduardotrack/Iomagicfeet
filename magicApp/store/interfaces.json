@@ -165,5 +165,20 @@
   },
   "pd-MobileHeaderScrollControl": {
     "component": "MobileHeaderScrollControl"
+  },
+  "pd-LayoutControlForFilters": {
+    "component": "LayoutControlForFilters"
+  },
+  "pd-AppliedFilters": {
+    "component": "AppliedFilters"
+  },
+  "pd-FetchMoreCounter": {
+    "component": "FetchMoreCounter"
+  },
+  "pd-ControlCloseModalWhenSearching": {
+    "component": "ControlCloseModalWhenSearching"
+  },
+  "pd-BlockZoomOnInput": {
+    "component": "BlockZoomOnInput"
   }
 }

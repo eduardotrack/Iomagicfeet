@@ -1,0 +1,31 @@
+.filtersLayoutControl {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background-color: #F7F7F7;
+  border: 1px solid #F0F1F2;
+  border-radius: 28px;
+}
+
+.filtersLayoutControlButton {
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 6px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+   svg {
+    width: 16px;
+    height: 16px;
+   }
+}
+
+.filtersLayoutControlButtonActive {
+  background-color: #fff;
+  border-color: #F0F1F2;
+}

@@ -79,6 +79,13 @@
     min-height: 90vh;
 }
 
+.childrenContainer--search-filter {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 @media screen and (max-width: 1200px) {
     .childrenContainer--header__drawer--search {
         padding: 15px;

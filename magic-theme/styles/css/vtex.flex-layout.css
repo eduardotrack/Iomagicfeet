@@ -81,6 +81,10 @@
     color: transparent;
     margin-left: 5px;
   }
+  
+  .flexRow--panda-search__products {
+    width: calc(100vw - 20px) !important;
+  }
 }
 
 .flexRowContent--shelf__price {
@@ -551,8 +555,24 @@
 
 .flexRowContent--panda-search__count {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.flexRowContent--panda-search__count--left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.flexRow--panda-search__products {
+  width: calc(100vw - 40px);
+  max-width: 1920px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (max-width: 767px) {
@@ -573,7 +593,7 @@
     align-items: center;
   }
   .flexRow--panda-search__products--mobile {
-    margin-top: 30px;
+    margin-top: 16px;
   }
   .flexRowContent--panda-search__main-title--seo {
     padding-left: 0;
@@ -1451,6 +1471,13 @@
   padding-bottom: 42px;
 }
 
+@media screen and (max-width: 1024px) {
+  .flexRow--panda-search__products {
+    padding: 16px 0;
+    width: calc(100vw + 50px);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .flexRow--beneficios-cashback {
     padding-left: 20px;
@@ -2029,6 +2056,10 @@
 
   .flexRowContent--pdp-description-brand-tag {
     margin-bottom: 20px;
+  }
+
+  .flexRow--panda-search__products {
+    width: calc(100vw + 18px);
   }
 }
 

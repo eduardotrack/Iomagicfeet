@@ -11,7 +11,7 @@
       "experimental__visibility-layout#menu-banner-search",
       "total-products.v2",
 
-      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchinfomobile-new",
       "rich-text#title-ADD",
       // "flex-layout.row#retail-rocket-category-search",
       // "flex-layout.row#retail-rocket-category",
@@ -30,9 +30,34 @@
         "mode1": "small",
         "mode2": "normal"
       },
-      "defaultGalleryLayout": "grid",
+      "defaultGalleryLayout": "grid4",
+      "preventRouteChange": true,
+      "thresholdForFacetSearch": 1,
+      "showProductsCount": true,
+      "showFacetQuantity": false,
+      "showFacetTitle": false,
       "hiddenFacets": {
-        "priceRange": false
+        "priceRange": false,
+        "categories": true,
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "name": "Departamento"
+            },
+            {
+              "name": "Categoria"
+            },
+            {
+              "name": "Ocasião de Uso"
+            },
+            {
+              "name": "Assinaturas"
+            },
+            {
+              "name": "Coleção"
+            }
+          ]
+        }
       }
     }
   },
@@ -48,11 +73,21 @@
   },
 
   // INFO
+  "flex-layout.row#searchinfomobile-new": {
+    "title": "Panda | Informações da busca - Mobile",
+    "children": [
+      "flex-layout.col#searchinfomobile-col"
+    ],
+    "props": {
+      "blockClass": "panda-search__order--mobile-new",
+      "preserveLayoutOnMobile": true
+    }
+  },
   "flex-layout.row#searchinfomobile": {
     "title": "Panda | Informações da busca - Mobile",
     "children": [
-      "order-by.v2",
-      "flex-layout.col#filter"
+      "flex-layout.col#filter",
+      "order-by.v2"
     ],
     "props": {
       "blockClass": "panda-search__order--mobile",
@@ -60,6 +95,28 @@
       "colSizing": "auto",
       "colJustify": "around"
     }
+  },
+
+  "flex-layout.col#searchinfomobile-col": {
+    "props": {
+      "blockClass": "panda-search__filter--mobile"
+    },
+    "children": [
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#products-layout-switcher"
+    ]
+  },
+
+  "flex-layout.row#products-layout-switcher": {
+    "props": {
+      "blockClass": "panda-search__products-layout-switcher",
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#productCount",
+      "gallery-layout-switcher"
+    ]
   },
 
   // RESULT

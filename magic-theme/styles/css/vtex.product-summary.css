@@ -201,3 +201,7 @@
 .nameContainer--summary-mini {
     justify-content: flex-start;
 }
+
+.container--product__summary--shelf-search {
+    max-width: unset !important;
+}

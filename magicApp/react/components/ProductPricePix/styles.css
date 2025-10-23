@@ -62,14 +62,21 @@
   font-size: 14px;
   font-weight: 300;
   text-decoration: line-through;
-  margin: 0 0 4px;
+  margin: 0;
   text-align: start;
   font-family: 'Roboto-Condensed';
 }
 
 .summaryPixPriceContainer {
   display: flex;
-  flex-direction: column-reverse;
+  gap: 4px 8px;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+
+  .summaryPixPriceOldValue {
+    font-size: 16px;
+    color: #6A7282;
+  }
 }
 
 .summaryPixPriceContainerSimple {
@@ -103,10 +110,13 @@
   }
 
   .pixPriceOldValue {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .summaryPixPrice {
-    font-size: 14px;
+    font-size: 16px;
+    span {
+      font-size: 14px;
+    }
   }
 }

@@ -13,7 +13,10 @@
     "props": {
       "blockClass": "panda-search__fetch--more"
     },
-    "children": ["search-fetch-more"]
+    "children": [
+      "pd-FetchMoreCounter",
+      "search-fetch-more"
+    ]
   },
 
   "search-fetch-more": {
@@ -123,7 +126,7 @@
   // RESULT
   "flex-layout.row#result": {
     "title": "Panda | Resultados da busca",
-    "children": ["flex-layout.col#filter", "flex-layout.col#content"],
+    "children": ["flex-layout.col#content"],
     "props": {
       "blockClass": "panda-search__main",
       "preventHorizontalStretch": false,
@@ -134,18 +137,75 @@
   // RESULT FILTER
   "flex-layout.col#filter": {
     "title": "Panda | Filtros",
-    "children": ["filter-navigator.v3"],
+    "children": ["filter-navigator.v3", "pd-LayoutControlForFilters", "pd-AppliedFilters"],
     "props": {
-      "width": "15%",
       "blockClass": "panda-search__filter"
     }
   },
 
   "filter-navigator.v3": {
     "props": {
-      "priceRangeLayout": "slider",
+      "layout": "phone",
+      "showClearAllFiltersOnDesktop": true,
+      "initiallyCollapsed": true,
+      "closeOnOutsideClick": false,
+      "updateOnFilterSelectionOnMobile": true,
+      "navigationTypeOnMobile": "collapsible",
+      "blockClass": "filter-navigator",
       "appliedFiltersOverview": "hide",
+      // "totalProductsOnMobile": "show",
+      "showQuantityBadgeOnMobile": false,
+      "priceRangeLayout": "slider",
+      // "truncateFilters": true,
+      // "showClearByFilter": true,
+      "fullWidthOnMobile": true,
       "categoryFiltersMode": "href"
+    },
+    "blocks": [
+      "sidebar-close-button"
+    ]
+  },
+
+  "drawer#filter": {
+    "props": {
+      "blockClass": ["search-filter"],
+      "slideDirection": "rightToLeft",
+      "maxWidth": 600,
+      "isFullWidth": true
+    },
+    "children": ["filter-navigator.v3"],
+    "blocks": ["drawer-trigger#filter", "drawer-header#filter"]
+  },
+
+  "drawer-header#filter": {
+    "children": ["rich-text#filter-title", "drawer-close-button"]
+  },
+  "rich-text#filter-title": {
+    "props": {
+      "text": "Filtros",
+      "blockClass": "panda-search__filter-title"
+    }
+  },
+
+  "drawer-header#filter-bottom": {
+    "children": ["drawer-close-button#applyItems", "drawer-close-button"]
+  },
+
+  "drawer-close-button#applyItems": {
+    "props": {
+      "text": "APLICAR FILTROS",
+      "blockClass": ["fake-apply-filter-button"]
+    }
+  },
+
+  "drawer-trigger#filter": {
+    "children": ["rich-text#filter-trigger"]
+  },
+
+  "rich-text#filter-trigger": {
+    "props": {
+      "text": "Filtrar",
+      "blockClass": "panda-search__filter-trigger"
     }
   },
 
@@ -168,9 +228,28 @@
   // SEARCH INFO
   "flex-layout.row#searchinfo": {
     "title": "Panda | Informações da busca",
-    "children": ["flex-layout.col#productCount", "order-by.v2"],
+    "children": [
+      "flex-layout.col#productCount",
+      "gallery-layout-switcher",
+      "flex-layout.row#searchinfo-left"
+    ],
     "props": {
-      "blockClass": "panda-search__count"
+      "blockClass": "panda-search__count",
+      "preventHorizontalStretch": true,
+      "colSizing": "auto"
+    }
+  },
+
+  "flex-layout.row#searchinfo-left": {
+    "children": [
+      "flex-layout.col#filter",
+      "order-by.v2"
+    ],
+    "props": {
+      "blockClass": "panda-search__count--left",
+      "colSizing": "auto",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
     }
   },
 

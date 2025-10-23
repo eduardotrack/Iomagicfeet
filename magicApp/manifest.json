@@ -1,7 +1,7 @@
 {
   "vendor": "magicfeet",
   "name": "magicapp",
-  "version": "0.3.73",
+  "version": "0.3.75",
   "title": "panda + magicApp",
   "description": "panda + magicApp",
   "builders": {
@@ -28,7 +28,8 @@
     "vtex.modal-layout": "0.x",
     "vtex.styleguide": "9.x",
     "vtex.render-runtime": "8.x",
-    "vtex.order-placed-graphql": "1.x"
+    "vtex.order-placed-graphql": "1.x",
+    "vtex.search-page-context": "0.x"
   },
   "registries": [
     "smartcheckout"

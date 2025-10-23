@@ -4,16 +4,61 @@
     "props": {
       "layouts": [
         {
-          "name": "grid",
-          "component": "GridSummary",
+          "name": "column",
+          "component": "Column",
           "itemsPerRow": {
+            "tablet": 2,
+            "phone": 2
+          }
+        },
+        {
+          "name": "grid3",
+          "component": "GridSummary3",
+          "itemsPerRow": {
+            "(min-width:1300px)": 3,
+            "desktop": 3,
+            "tablet": 2,
+            "phone": 1
+          }
+        },
+        {
+          "name": "grid4",
+          "component": "GridSummary4",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
             "desktop": 4,
-            "tablet": 4,
+            "tablet": 3,
             "phone": 2
           }
         }
       ],
-      "GridSummary": "product-summary.shelf#product-search"
+      "Column": "product-summary.shelf#product-category",
+      "GridSummary3": "product-summary.shelf#product-category",
+      "GridSummary4": "product-summary.shelf#product-category"
     }
+  },
+  "gallery-layout-switcher": {
+    "children": [
+      "gallery-layout-option#grid3",
+      "gallery-layout-option#grid4"
+    ]
+  },
+  "gallery-layout-option#grid3": {
+    "props": {
+      "name": "grid3",
+      "blockClass": "grid3"
+    },
+    "children": [
+      "icon-grid"
+    ]
+  },
+  "gallery-layout-option#grid4": {
+    "props": {
+      "name": "grid4",
+      "blockClass": "grid4"
+    },
+    "children": [
+      "icon-grid"
+    ]
   }
 }

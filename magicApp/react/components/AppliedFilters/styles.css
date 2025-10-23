@@ -1,0 +1,60 @@
+.appliedFiltersContainer {
+  background: #fff;
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+/* Título clicável da aba */
+.appliedFiltersTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #F0F1F2;
+  width: 100%;
+  padding: 16px 0;
+  cursor: pointer;
+
+  font-family: 'WorkSans-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #000;
+}
+
+/* Ícone de seta */
+.arrow {
+  transform: rotate(0deg);
+  width: 12px;
+  transition: transform 0.2s ease;
+}
+
+.open {
+  transform: rotate(180deg);
+}
+
+/* Wrapper dos filtros */
+.appliedFiltersWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+}
+
+/* Botões individuais */
+.appliedFiltersItem {
+  background: #5DFF49;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 8px;
+  font-family: 'WorkSans-Bold', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

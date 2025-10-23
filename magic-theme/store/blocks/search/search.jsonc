@@ -1,7 +1,10 @@
 {
   "store.search": {
     "title": "Panda | Busca",
-    "blocks": ["flex-layout.row#tips-core-pages", "search-result-layout"],
+    "blocks": [
+      // "flex-layout.row#tips-core-pages",
+      "search-result-layout"
+    ],
     "props": {
       "context": {
         // "orderByField": "OrderByReleaseDateDESC",
@@ -14,7 +17,10 @@
 
   "store.search#brand": {
     "title": "Panda | Busca por marca",
-    "blocks": ["flex-layout.row#tips-core-pages", "search-result-layout#brand"],
+    "blocks": [
+      // "flex-layout.row#tips-core-pages",
+      "search-result-layout#brand"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -28,7 +34,10 @@
 
   "store.search#department": {
     "title": "Panda | Busca por departamento",
-    "blocks": ["flex-layout.row#tips-core-pages", "search-result-layout#department"],
+    "blocks": [
+      // "flex-layout.row#tips-core-pages", 
+      "search-result-layout#department"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -42,7 +51,10 @@
   //categoria
   "store.search#category": {
     "title": "Panda | Busca por categoria",
-    "blocks": ["flex-layout.row#tips-core-pages", "search-result-layout#category"],
+    "blocks": [
+      // "flex-layout.row#tips-core-pages",
+      "search-result-layout#category"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -55,7 +67,10 @@
 
   "store.search#subcategory": {
     "title": "Panda | Busca por subcategoria",
-    "blocks": ["flex-layout.row#tips-core-pages", "search-result-layout#subcategory"],
+    "blocks": [
+      // "flex-layout.row#tips-core-pages",
+      "search-result-layout#subcategory"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
