@@ -55,7 +55,7 @@ export function AppliedFilters() {
   const mainCategory = urlParts?.[urlParts.length - 1]?.toLowerCase() || ''
 
   // categorias criadas (vtex trata como filtro)
-  const CUSTOM_CATEGORIES = ['novidades', 'outlet', 'ocasioes']
+  const CUSTOM_CATEGORIES = ['novidades', 'outlet', 'ocasioes', 'marcas']
 
   // se for categoria customizada não a exclui do filtros aplicados (vtex a trata como filtro)
   const breadcrumbs = CUSTOM_CATEGORIES.includes(mainCategory) ?
