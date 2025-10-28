@@ -142,6 +142,7 @@
   width: 100%;
   border-radius: 25px;
   overflow: hidden;
+  flex: 1;
 }
 
 .combinedProductListWithImage__banner img {
@@ -169,11 +170,11 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  flex: 1;
+  flex: auto 0 0;
 }
 
 .combinedProductListWithImage__link {
-  margin-top: 14px;
+  margin: 14px 8px 0;
   color: #000;
   text-decoration: none;
   display: flex;
@@ -189,6 +190,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    flex-shrink: 0;
   }
 }
 
