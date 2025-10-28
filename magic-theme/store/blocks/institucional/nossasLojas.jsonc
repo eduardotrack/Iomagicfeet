@@ -1,31 +1,109 @@
 {
     "store.custom#nossas-lojas": {
       "blocks": [
+        "flex-layout.row#nossas-lojas-breadcrumb",
+        "flex-layout.row#nossas-lojas-hero",
         "flex-layout.row#nossas-lojas-title",
-        "flex-layout.row#nossas-lojas"
+        "flex-layout.row#nossas-lojas",
+        "flex-layout.row#nossas-lojas-diferenciais"
       ]
     },
 
 
+    // BREADCRUMB
+    "flex-layout.row#nossas-lojas-breadcrumb": {
+      "props": {
+        "blockClass": "institucional-breadcrumb" 
+      },
+      "children": [
+        "rich-text#nossas-lojas-breadcrumb"
+      ]
+    },
+    "rich-text#nossas-lojas-breadcrumb": {
+      "title": "Breadcrumb",
+      "props": {
+        "text": "[home](/) **nossas lojas**",
+        "blockClass": ["institucional-breadcrumb"]
+      }
+    },
+
+    // HERO BANNER
+    "flex-layout.row#nossas-lojas-hero": {
+      "props": {
+        "blockClass": ["nossas-lojas-hero-row"]
+      },
+      "children": [
+        "flex-layout.col#nossas-lojas-hero"
+      ]
+    },
+    "flex-layout.col#nossas-lojas-hero": {
+      "props": {
+        "blockClass": ["nossas-lojas-hero-col"]
+      },
+      "children": [
+        "responsive-layout.desktop#image-nossas-lojas-hero",
+        "responsive-layout.mobile#image-nossas-lojas-hero"
+      ]
+    },
+    "responsive-layout.desktop#image-nossas-lojas-hero": {
+      "children": [
+        "image#nossas-lojas-hero"
+      ]
+    },
+    "responsive-layout.mobile#image-nossas-lojas-hero": {
+      "children": [
+        "image#nossas-lojas-hero-mobile"
+      ]
+    },
+    "image#nossas-lojas-hero": {
+      "title": "Hero Banner (Desktop)",
+      "props": {
+        "src": "assets/img/nossas-lojas-hero-desk.png",
+        "blockClass": "nossas-lojas-hero"
+      }
+    },
+    "image#nossas-lojas-hero-mobile": {
+      "title": "Hero Banner",
+      "props": {
+        "src": "assets/img/nossas-lojas-hero-mob.png",
+        "blockClass": "nossas-lojas-hero-mob"
+      }
+    },
+
+    // TITLE
     "flex-layout.row#nossas-lojas-title": {
       "props": {
         "blockClass": "panda-tipo-entrega" 
       },
       "children": [
-        "rich-text#nossas-lojas-title"
+        "flex-layout.col#nossas-lojas-title"
       ]
     },
-
-    "rich-text#nossas-lojas-title": {
+    "flex-layout.col#nossas-lojas-title": {
       "props": {
-        "blockClass": "panda-tipo-entrega__title",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "text": "# NOSSAS **LOJAS** \n Ei, deixa a gente te ajudar, selecione o estado desejado e iremos separar as lojas mais próximas!"
+        "blockClass": "nossas-lojas-title-col"
       },
-      "title": "Título - Nossas Lojas"
+      "children": [
+        "rich-text#nossas-lojas-title",
+        "rich-text#nossas-lojas-subtitle"
+      ]
+    },
+    "rich-text#nossas-lojas-title": {
+      "title": "Título - Nossas Lojas",
+      "props": {
+        "blockClass": "nossas-lojas-title",
+        "text": "# **encontre uma loja**"
+      }
+    },
+    "rich-text#nossas-lojas-subtitle": {
+      "title": "Subtítulo - Nossas Lojas",
+      "props": {
+        "blockClass": "nossas-lojas-subtitle",
+        "text": "preencha os campos abaixo e encontre a loja mais próxima de você."
+      }
     },
 
+    // CONTEÚDO PRINCIPAL
     "flex-layout.row#nossas-lojas": {
       "props": {
         "blockClass": "panda-nossas-lojas" 
@@ -33,6 +111,142 @@
       "children": [
         "pd-nossasLojas"
       ]
+    },
+
+    // BLOCO DIFERENCIAIS
+    "flex-layout.row#nossas-lojas-diferenciais": {
+      "props": {
+        "blockClass": "nossas-lojas-diferenciais-row"
+      },
+      "children": [
+        "flex-layout.col#nossas-lojas-diferenciais"
+      ]
+    },
+    "flex-layout.col#nossas-lojas-diferenciais": {
+      "props": {
+        "blockClass": "nossas-lojas-diferenciais-col"
+      },
+      "children": [
+        "rich-text#nossas-lojas-diferenciais",
+        "flex-layout.row#diferenciais-cards"
+      ]
+    },
+    "rich-text#nossas-lojas-diferenciais": {
+      "title": "Diferenciais - Nossas Lojas",
+      "props": {
+        "blockClass": "nossas-lojas-diferenciais",
+        "text": "**diferenciais**"
+      }
+    },
+
+    "flex-layout.row#diferenciais-cards": {
+      "props": {
+        "blockClass": "diferenciais-cards-row"
+      },
+      "children": [
+        "flex-layout.col#diferenciais-card-01",
+        "flex-layout.col#diferenciais-card-02",
+        "flex-layout.col#diferenciais-card-03"
+      ]
+    },
+    //card 01
+    "flex-layout.col#diferenciais-card-01": {
+      "title": "Diferencial Card 01",
+      "props": {
+        "blockClass": "diferenciais-card"
+      },
+      "children": [
+        "image#diferenciais-card-01",
+        "rich-text#diferenciais-card-01-title",
+        "rich-text#diferenciais-card-01-subtitle"
+      ]
+    },
+    "image#diferenciais-card-01": {
+      "title": "Card 01 - Imagem",
+      "props": {
+        "src": "assets/img/diferenciais-01.png",
+        "blockClass": "diferenciais-card"
+      }
+    },
+    "rich-text#diferenciais-card-01-title": {
+      "title": "Card 01 - Título",
+      "props": {
+        "blockClass": "diferenciais-card-title",
+        "text": "atendimento personalizado"
+      }
+    },
+    "rich-text#diferenciais-card-01-subtitle": {
+      "title": "Card 01 - Subtítulo",
+      "props": {
+        "blockClass": "diferenciais-card-subtitle",
+        "text": "cada estilo é único. em nossas lojas você tem a vantagem de receber toda a ajuda personalizada do nosso time."
+      }
+    },
+    // card 02
+    "flex-layout.col#diferenciais-card-02": {
+      "title": "Diferencial Card 02",
+      "props": {
+        "blockClass": "diferenciais-card"
+      },
+      "children": [
+        "image#diferenciais-card-02",
+        "rich-text#diferenciais-card-02-title",
+        "rich-text#diferenciais-card-02-subtitle"
+      ]
+    },
+    "image#diferenciais-card-02": {
+      "title": "Card 02 - Imagem",
+      "props": {
+        "src": "assets/img/diferenciais-02.png",
+        "blockClass": "diferenciais-card"
+      }
+    },
+    "rich-text#diferenciais-card-02-title": {
+      "title": "Card 02 - Título",
+      "props": {
+        "blockClass": "diferenciais-card-title",
+        "text": "experimente antes de levar"
+      }
+    },
+    "rich-text#diferenciais-card-02-subtitle": {
+      "title": "Card 02 - Subtítulo",
+      "props": {
+        "blockClass": "diferenciais-card-subtitle",
+        "text": "cada detalhe importa e seu conforto também, experimente os tênis mais adequados para você em uma de nossas lojas."
+      }
+    },
+    // card 03
+    "flex-layout.col#diferenciais-card-03": {
+      "title": "Diferencial Card 03",
+      "props": {
+        "blockClass": "diferenciais-card"
+      },
+      "children": [
+        "image#diferenciais-card-03",
+        "rich-text#diferenciais-card-03-title",
+        "rich-text#diferenciais-card-03-subtitle"
+      ]
+    },
+    "image#diferenciais-card-03": {
+      "title": "Card 03 - Imagem",
+      "props": {
+        "src": "assets/img/diferenciais-03.png",
+        "blockClass": "diferenciais-card"
+      }
+    },
+    "rich-text#diferenciais-card-03-title": {
+      "title": "Card 03 - Título",
+      "props": {
+        "blockClass": "diferenciais-card-title",
+        "text": "retirada imediata"
+      }
+    },
+    "rich-text#diferenciais-card-03-subtitle": {
+      "title": "Card 03 - Subtítulo",
+      "props": {
+        "blockClass": "diferenciais-card-subtitle",
+        "text": "sabemos que ninguém gosta de esperar. portanto, achou o que estava procura? pronto, já poderá preparar tudo para retirar na hora."
+      }
     }
   }
   

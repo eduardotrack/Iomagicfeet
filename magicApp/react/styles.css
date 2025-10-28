@@ -80,68 +80,7 @@
      border-radius: 0;
  }
 
- .coreLojas {
-     margin-top: -50px;
-     text-align: center;
- }
 
- .coreLojas select {
-     font-family: 'WorkSans-Regular';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 18px;
-     line-height: 140%;
-     color: rgb(0, 0, 0);
-     padding: 15px;
-     border-radius: 100px;
-     margin-bottom: 30px;
-     -moz-appearance: none;
-     /* Firefox */
-     -webkit-appearance: none;
-     /* Safari and Chrome */
-     appearance: none;
-     cursor: pointer;
-     transition: all 0.5s;
- }
-
- .coreLojas select:hover {
-     opacity: 0.5s;
-     background-color: #5DFF49;
- }
-
- .cardLojas {
-     background: #E8E8E8;
-     border-radius: 0px 100px 0px 0px;
-     height: 100%;
-     padding: 35px;
-     width: 50%;
-     margin: 0 auto;
-     margin-bottom: 30px;
- }
-
- .cardLojas h4 {
-     font-family: 'WorkSans-Bold';
-     font-style: normal;
-     font-weight: 700;
-     font-size: 20px;
-     line-height: 120%;
-     color: #000000;
-     text-align: left;
-     margin: 0;
- }
-
- .cardLojas p,
- .cardLojas h5,
- .cardLojas h6 {
-     font-family: 'WorkSans-Regular';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 140%;
-     color: rgb(0, 0, 0);
-     margin: 0;
-     text-align: left;
- }
 
  .spanFile {
      font-family: 'WorkSans-Regular';
@@ -238,16 +177,9 @@
      .productLink {
          margin-right: 15px;
      }
-     .cardLojas {
-         width: 100%;
-     }
      .spanFile {
          font-size: 13px;
      }
-
-    .coreLojas select {
-      margin-top: 65px;
-    }
  }
 
  .welcomeControl {
