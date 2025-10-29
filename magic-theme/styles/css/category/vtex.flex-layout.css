@@ -91,4 +91,8 @@
   .flexRowContent--panda-search__fetch--more {
     margin: 16px 0;
   }
+
+  .flexCol--product-info-category {
+    padding: 8px;
+  }
 }
