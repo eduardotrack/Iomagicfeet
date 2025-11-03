@@ -1,7 +1,7 @@
 {
   "menu-item#dep9": {
     "props": {
-      "blockClass": ["header__menu", "main-menu-department"],
+      "blockClass": ["header__menu", "main-menu-department", "main-menu-department-sale"],
       "id": "menu-item-dep9",
       "type": "custom",
       "iconId": null,
