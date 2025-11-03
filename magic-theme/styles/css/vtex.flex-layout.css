@@ -2133,6 +2133,10 @@
     width: 100% !important;
   }
 
+  .flexRowContent--block-flags-pdp .stretchChildrenWidth {
+    width: auto !important;
+  }
+
   .flexRowContent--pdp-description-brand-tag .stretchChildrenWidth {
     width: auto !important;
   }
