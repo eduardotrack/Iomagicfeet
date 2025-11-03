@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import api from '../../services/api'
 import styles from './styles.css'
 
@@ -68,6 +68,13 @@ export const NossasLojas = () => {
   const toggleDropdown = (tipo) => {
     setDropdownAberto(dropdownAberto === tipo ? null : tipo)
   }
+
+  useEffect(() => {
+    handleChangeEstado('SP')
+    setTimeout(() => {
+      handleChangeCidade('São Paulo')
+    }, 1000)
+  }, [])
 
   return (
     <div className={styles.coreLojas}>
