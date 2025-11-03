@@ -1,6 +1,7 @@
 .flexRow--sliderMenu-blackFriday {
-  width: 100%;
-  max-width: 1300px;
+  /* max-width: 1300px; */
+  width: calc(100vw - 40px);
+  max-width: 1980px;
 
   margin-top: 16px;
 }
@@ -124,7 +125,8 @@
   }
 
   .flexRow--sliderMenu-blackFriday {
-    padding-left: 10px;
+    width: 100vw;
+    padding-left: 8px;
   }
 
   .flexRow--title-lp-natal {

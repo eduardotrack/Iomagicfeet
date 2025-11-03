@@ -1,6 +1,25 @@
 {
   "store.custom#busca-generica-black": {
-    "blocks": ["flex-layout.row#black-row", "search-result-layout.customQuery#black"]
+    "blocks": [
+      "flex-layout.row#searchbread-blackfriday",
+      "flex-layout.row#black-row",
+      "search-result-layout.customQuery#black"
+    ]
+  },
+  "flex-layout.row#searchbread-blackfriday": {
+    "title": "Panda | BreadCrumb Black Friday",
+    "children": ["rich-text#searchbread-blackfriday"],
+    "props": {
+      "blockClass": "institucional-breadcrumb" 
+    }
+  },
+
+  "rich-text#searchbread-blackfriday": {
+    "title": "Panda | BreadCrumb Black Friday",
+    "props": {
+      "text": "[home](/) **black friday**",
+      "blockClass": ["institucional-breadcrumb"]
+    }
   },
 
   "flex-layout.row#black-row": {
@@ -46,9 +65,9 @@
   "search-result-layout.desktop#busca-generica-blackDesktop": {
     "title": "Panda | Layout da Busca Black Friday - Desktop",
     "children": [
+      // "flex-layout.row#searchbread",
       "experimental__visibility-layout#bannerTop-full-sale",
       "flex-layout.row#banner-one",
-      "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "experimental__visibility-layout#categories-banner-search",
       "experimental__visibility-layout#menu-banner-search",
@@ -61,6 +80,10 @@
       "pagination": "show-more",
       "preventRouteChange": true,
       "defaultGalleryLayout": "grid4",
+      "thresholdForFacetSearch": 1,
+      "showProductsCount": true,
+      "showFacetQuantity": false,
+      "showFacetTitle": false,
       "hiddenFacets": {
         "priceRange": false,
         "categories": true,
@@ -92,7 +115,7 @@
     "children": [
       "experimental__visibility-layout#bannerTop-full-sale",
       "experimental__visibility-layout#search-banner-top",
-      "flex-layout.row#searchbread",
+      // "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
       "experimental__visibility-layout#categories-banner-search",
       "experimental__visibility-layout#menu-banner-search",
@@ -111,6 +134,10 @@
       "pagination": "show-more",
       "preventRouteChange": true,
       "defaultGalleryLayout": "grid4",
+      "thresholdForFacetSearch": 1,
+      "showProductsCount": true,
+      "showFacetQuantity": false,
+      "showFacetTitle": false,
       "hiddenFacets": {
         "priceRange": false,
         "categories": true,

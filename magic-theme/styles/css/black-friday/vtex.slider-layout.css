@@ -14,18 +14,20 @@
 .sliderTrack--sliderMenu-blackFriday {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .slideChildrenContainer--sliderMenu-blackFriday {
   border: 2px solid #1c1c1c;
   border-radius: 15px;
   height: 49px;
-  width: 188px;
+  background-color: #1c1c1c;
+  /* width: 188px; */
 }
 
 .slideChildrenContainer--sliderMenu-blackFriday:hover {
-  border: 2px solid #e30613;
-  background-color: #e30613;
+  border: 2px solid #25ff58;
+  background-color: #25ff58;
 }
 
 .slideChildrenContainer--sliderMenu-lpNatal {
@@ -34,7 +36,7 @@
 
 .slideChildrenContainer--sliderMenu-blackFriday:hover
   :global(.vtex-store-link-0-x-link--itemMenu--blackFriday) {
-  color: #ffffff;
+  color: #1c1c1c;
   transition: none;
   opacity: 1;
 }
@@ -125,6 +127,7 @@
   .sliderTrack--sliderMenu-blackFriday {
     display: flex;
     justify-content: unset;
+    gap: 0;
   }
 
   .slideChildrenContainer--sliderMenu-blackFriday {

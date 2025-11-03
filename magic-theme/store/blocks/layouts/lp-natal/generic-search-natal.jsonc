@@ -65,8 +65,32 @@
       "pagination": "show-more",
       "preventRouteChange": true,
       "defaultGalleryLayout": "grid4",
+      "thresholdForFacetSearch": 1,
+      "showProductsCount": true,
+      "showFacetQuantity": false,
+      "showFacetTitle": false,
       "hiddenFacets": {
-        "priceRange": false
+        "priceRange": false,
+        "categories": true,
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "name": "Departamento"
+            },
+            {
+              "name": "Categoria"
+            },
+            {
+              "name": "Ocasião de Uso"
+            },
+            {
+              "name": "Assinaturas"
+            },
+            {
+              "name": "Coleção"
+            }
+          ]
+        }
       }
     }
   },
@@ -95,8 +119,32 @@
       "pagination": "show-more",
       "preventRouteChange": true,
       "defaultGalleryLayout": "grid4",
+      "thresholdForFacetSearch": 1,
+      "showProductsCount": true,
+      "showFacetQuantity": false,
+      "showFacetTitle": false,
       "hiddenFacets": {
-        "priceRange": false
+        "priceRange": false,
+        "categories": true,
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "name": "Departamento"
+            },
+            {
+              "name": "Categoria"
+            },
+            {
+              "name": "Ocasião de Uso"
+            },
+            {
+              "name": "Assinaturas"
+            },
+            {
+              "name": "Coleção"
+            }
+          ]
+        }
       }
     }
   }

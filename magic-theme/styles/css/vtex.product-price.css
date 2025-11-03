@@ -250,4 +250,8 @@
     .currencyContainer--summary-pix {
         font-size: 12px !important;
     }
+
+    .savings--product__price-savings-pdp {
+        padding: 4px 10px;
+    }
 }

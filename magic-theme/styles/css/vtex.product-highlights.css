@@ -55,7 +55,12 @@
     /* display: none; */
     font-size: 0;
     background-color: #1C1C1C;
-    padding: 4px 9px 2px;
+    padding: 0 9px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 
     >span {
         display: none;
@@ -166,5 +171,12 @@
         font-size: 11px;
         color: #000;
         font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .productHighlightWrapper[data-highlight-id="331"],
+    .productHighlightWrapper[data-highlight-id="392"] {
+        height: 25.2px;
     }
 }
