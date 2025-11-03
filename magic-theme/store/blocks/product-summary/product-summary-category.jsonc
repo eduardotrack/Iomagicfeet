@@ -114,7 +114,7 @@
     "props": {
       "blockClass": "product-discount-tag-category",
       "percentageStyle": "compact",
-      "message": "{savingsPercentage} OFF"
+      "message": "-{savingsPercentage}"
       
     }
   },

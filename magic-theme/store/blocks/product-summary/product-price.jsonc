@@ -67,7 +67,7 @@
   "product-price-savings#pdp": {
     "props": {
       "blockClass": "product__price-savings-pdp",
-      "message": "{savingsPercentage}OFF"
+      "message": "-{savingsPercentage}"
     }
   },
   "product-spot-price#pdp": {
