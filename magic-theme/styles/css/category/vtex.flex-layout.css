@@ -81,6 +81,14 @@
   margin: 64px 0;
 }
 
+.flexCol--highlights-stack-category {
+  width: fit-content !important;
+  height: fit-content;
+  position: absolute;
+  top: 21.5px;
+  left: 84px;
+}
+
 @media screen and (max-width: 990px) {
   .flexRowContent--brand-and-reviews {
     flex-direction: column-reverse;
@@ -94,5 +102,10 @@
 
   .flexCol--product-info-category {
     padding: 8px;
+  }
+
+  .flexCol--highlights-stack-category {
+    top: calc(100% - 220px);
+    left: 8px;
   }
 }
