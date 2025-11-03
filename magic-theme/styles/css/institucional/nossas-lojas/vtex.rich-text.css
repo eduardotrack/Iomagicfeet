@@ -1,0 +1,96 @@
+.paragraph--institucional-breadcrumb {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.link--institucional-breadcrumb {
+  font-family: 'RobotoCondensed-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #9C9C9C;
+  text-decoration: none;
+  transition: all .3s ease;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &:hover {
+    color: #000000;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 8.64px;
+    height: 13.58px;
+    background-image: url('data:image/svg+xml,<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.347662 0.323575C-0.115925 0.773419 -0.116331 1.51732 0.346766 1.96767L3.9333 5.45549C4.4319 5.94036 4.4319 6.74115 3.9333 7.22602L0.346765 10.7138C-0.116331 11.1642 -0.115925 11.9081 0.347662 12.3579C0.792273 12.7894 1.49926 12.7894 1.94387 12.3579L7.23159 7.22696C7.73147 6.74189 7.73147 5.93962 7.23159 5.45456L1.94387 0.323574C1.49926 -0.107858 0.792273 -0.107857 0.347662 0.323575Z" fill="%231C1C1C"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.strong--institucional-breadcrumb {
+  font-family: 'RobotoCondensed-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1C1C1C;
+}
+
+.heading--nossas-lojas-title {
+  margin: 72px 0 0;
+  color: #121416;
+  font-family: 'WorkSans-ExtraBold', sans-serif;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 120%;
+}
+
+.paragraph--nossas-lojas-subtitle {
+  font-size: 16px;
+  line-height: 160%;
+  color: #45494F;
+  margin: 0;
+}
+
+.paragraph--nossas-lojas-diferenciais {
+  margin: 0 0 42px;
+}
+
+.strong--nossas-lojas-diferenciais {
+  font-family: 'WorkSans-ExtraBold', sans-serif;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 120%;
+  color: #121416;
+}
+
+.paragraph--diferenciais-card-title {
+  font-family: 'WorkSans-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #383B3F;
+  margin: 24px 0 16px;
+}
+
+.paragraph--diferenciais-card-subtitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  color: #61656B;
+}
+
+@media screen and (max-width: 767px) {
+  .heading--nossas-lojas-title {
+    font-size: 28px;
+    margin: 32px 0 0;
+  }
+
+  .paragraph--diferenciais-card-title {
+    margin: 16px 0 8px;
+    font-size: 20px;
+  }
+}

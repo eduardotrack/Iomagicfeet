@@ -995,10 +995,7 @@
 
 @media (max-width: 767px) {
   .flexRowContent--panda-tipo-entrega {
-    display: flex;
-    align-items: stretch;
-    gap: 30px;
-    margin-bottom: 0;
+    margin-bottom: 32px;
     flex-direction: column;
   }
 }

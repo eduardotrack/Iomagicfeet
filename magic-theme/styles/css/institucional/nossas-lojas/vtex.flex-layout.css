@@ -1,0 +1,49 @@
+.flexColChild--nossas-lojas-hero-col {
+  width: calc(100vw - 40px);
+  max-width: 1920px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.flexCol--nossas-lojas-title-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.flexRowContent--diferenciais-cards-row {
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.flexRowContent--nossas-lojas-diferenciais-row {
+  margin: 64px 0 160px;
+}
+
+.flexCol--diferenciais-card {
+  max-width: 432px;
+}
+
+.flexRow--panda-nossas-lojas {
+  :global(.vtex-store-components-3-x-container) {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flexRowContent--diferenciais-cards-row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    > div {
+      justify-content: flex-start;
+      width: 100% !important;
+    }
+  }
+
+  .flexCol--diferenciais-card {
+    max-width: unset;
+  }
+}
