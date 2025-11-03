@@ -24,7 +24,7 @@ export const NossasLojas = () => {
     { value: 'SP', text: 'SP' },
   ]
 
-  const handleChangeEstado = async (uf) => {
+  const handleChangeEstado = async (uf, firstLoad = false) => {
     setEstadoSelecionado(uf)
     setCidadeSelecionada('')
     setLojas([])
@@ -46,6 +46,10 @@ export const NossasLojas = () => {
 
       setCidades(cidadesUnicas)
       setLojas(lojasDoEstado)
+
+      if (firstLoad) {
+        handleChangeCidade('São Paulo')
+      }
     } catch (err) {
       console.error('Erro ao buscar lojas:', err)
     } finally {
@@ -70,10 +74,7 @@ export const NossasLojas = () => {
   }
 
   useEffect(() => {
-    handleChangeEstado('SP')
-    setTimeout(() => {
-      handleChangeCidade('São Paulo')
-    }, 1000)
+    handleChangeEstado('SP', true)
   }, [])
 
   return (
