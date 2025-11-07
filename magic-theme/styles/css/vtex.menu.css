@@ -72,11 +72,11 @@
     font-weight: 700;
 }
 
-.menuItem--main-menu-department:last-child {
+/* .menuItem--main-menu-department:last-child {
     .styledLinkContent--main-menu-department {
         color: #ed1c24;
     }
-}
+} */
 
 .styledLink--footer__tooltip--link {
     font-family: 'Roboto-Condensed';

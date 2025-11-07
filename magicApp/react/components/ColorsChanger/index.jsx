@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 
 export function ColorsChanger({
-  desktopTextColor = '#1100ff',
-  mobileBackgoundColor = '#ff00ff',
-  mobileTextColor = '#00ff00',
+  desktopTextColor = '#ed1c24',
+  mobileBackgoundColor = '#1C1C1C',
+  mobileTextColor = '#E8E8E8',
 }) {
   useEffect(() => {
     const hexaForBgImage = mobileTextColor.replace('#', '%23')
@@ -38,19 +38,19 @@ ColorsChanger.schema = {
       title: 'Cor do último item do menu',
       description: 'Cor usada no texto do último item do menu desktop e mobile.',
       type: 'string',
-      default: '#000',
+      default: '#ed1c24',
     },
     mobileBackgoundColor: {
       title: 'Cor de fundo (mobile)',
       description: 'Cor usada no fundo do último item do menu mobile.',
       type: 'string',
-      default: '#fff',
+      default: '#1C1C1C',
     },
     mobileTextColor: {
       title: 'Cor do texto (mobile)',
       description: 'Cor usada no texto do último item do menu mobile.',
       type: 'string',
-      default: '#000',
+      default: '#E8E8E8',
     },
   },
 }
