@@ -22,7 +22,8 @@
 
       "pd-OrderPlacedSmarthint",
       
-      "pd-remove-cancel-order" /* ,
+      "pd-remove-cancel-order",
+      "pd-ColorsChanger" /* ,
       "pd-buttonVerNota" */
     ]
   },
@@ -209,7 +210,8 @@
       "pd-OrderPlacedSmarthint",
       "pd-MobileHeaderScrollControl",
       "pd-remove-cancel-order",
-      "pd-BlockZoomOnInput" /* ,
+      "pd-BlockZoomOnInput",
+      "pd-ColorsChanger" /* ,
       "pd-buttonVerNota" */
     ]
   },

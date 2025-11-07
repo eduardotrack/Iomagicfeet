@@ -180,5 +180,8 @@
   },
   "pd-BlockZoomOnInput": {
     "component": "BlockZoomOnInput"
+  },
+  "pd-ColorsChanger": {
+    "component": "ColorsChanger"
   }
 }
