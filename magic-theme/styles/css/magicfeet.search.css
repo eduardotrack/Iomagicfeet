@@ -750,6 +750,7 @@
     flex-direction: column;
     height: auto;
     flex: 0 0 auto;
+    position: relative;
   }
 
   .imageElement {
@@ -870,6 +871,22 @@
       padding: 0 !important;
     }
   }
+}
+
+/* tag blackfriday */
+.highlightTag[data-highlight-id="392"] {
+  background-color: #1C1C1C;
+  padding: 0 9px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  width: fit-content;
+
+  position: absolute;
+  top: 16.5px;
+  left: 84px;
 }
 
 /* load more */
@@ -1518,6 +1535,13 @@
         font-size: 14px;
       }
     }
+  }
+
+  .highlightTag[data-highlight-id="392"] {
+    top: unset;
+    bottom: 8px;
+    left: 8px;
+    height: 25.2px;
   }
 
   .loadMoreWrapper {
