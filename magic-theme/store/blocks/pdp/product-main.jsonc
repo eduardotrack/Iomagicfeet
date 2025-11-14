@@ -62,7 +62,7 @@
       
       "product-reviews",
       "product-questions-and-answers",
-      "share#default"
+      "responsive-layout.desktop#share-pdp"
     ],
     "props": {
       "disposition": [
@@ -131,6 +131,14 @@
         }
       ]
     }
+  },
+
+  "responsive-layout.desktop#share-pdp": {
+    "children": ["share#default"]
+  },
+
+  "responsive-layout.mobile#share-pdp": {
+    "children": ["share#default"]
   },
 
   "product-availability": {

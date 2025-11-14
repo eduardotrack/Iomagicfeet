@@ -49,7 +49,7 @@
  
       "product-reviews",
       "product-questions-and-answers",
-      "share#default"
+      "responsive-layout.desktop#share-pdp"
     ]
   },
   "flex-layout.row#availability": {

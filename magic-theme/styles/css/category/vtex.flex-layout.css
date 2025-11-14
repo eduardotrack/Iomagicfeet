@@ -89,6 +89,10 @@
   left: 84px;
 }
 
+.flexColChild--panda-search__result {
+  height: fit-content !important;
+}
+
 @media screen and (max-width: 990px) {
   .flexRowContent--brand-and-reviews {
     flex-direction: column-reverse;
@@ -107,5 +111,11 @@
   .flexCol--highlights-stack-category {
     top: calc(100% - 220px);
     left: 8px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .flexCol--highlights-stack-category {
+    top: calc(100% - 246px);
   }
 }

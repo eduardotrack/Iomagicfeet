@@ -216,7 +216,8 @@
       "flex-layout.row#searchinfo",
       "flex-layout.row#products",
       "flex-layout.row#progress-bar",
-      "flex-layout.row#fetchmore"
+      "flex-layout.row#fetchmore",
+      "flex-layout.row#vitrine-plp"
     ],
     "props": {
       "width": "85%",

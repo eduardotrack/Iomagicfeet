@@ -378,6 +378,10 @@
     max-height: unset !important;
     margin-left: 0%;
   }
+
+  .shareContainer {
+    margin: 0 18px 32px;
+  }
 }
 
 .skuSelectorName {

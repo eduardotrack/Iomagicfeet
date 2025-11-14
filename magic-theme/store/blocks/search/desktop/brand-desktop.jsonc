@@ -12,8 +12,7 @@
       "experimental__visibility-layout#menu-banner-search",
       "flex-layout.row#search-suggestions",
       // "flex-layout.row#retail-rocket-category",
-      "flex-layout.row#result-brand",
-      "flex-layout.row#vitrine-position-category"
+      "flex-layout.row#result-brand"
     ],
     "props": {
       "blockClass": "panda-search",
@@ -49,16 +48,6 @@
       "showFacetTitle": false
     }
   },
-
-      "flex-layout.row#vitrine-position-category":{
-      "title": "Smart Vitrine - category",
-      "props": {
-        "blockClass": "smart-shelf"
-      },
-      "children": [
-        "smart-shelf"
-      ]
-    },
     
   // RESULT
   "flex-layout.row#result-brand": {
@@ -80,6 +69,7 @@
       "flex-layout.row#products",
       "flex-layout.row#fetchmore",
       // "flex-layout.row#search-seo-title",
+      "flex-layout.row#vitrine-plp",
       "rich-text#brand"
     ],
     "props": {

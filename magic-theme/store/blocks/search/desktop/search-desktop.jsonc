@@ -15,8 +15,7 @@
       "flex-layout.row#search-suggestions",
       "rich-text#title-ADD",
       // "flex-layout.row#retail-rocket-category-search",
-      "flex-layout.row#result",
-      "flex-layout.row#vitrine-position-category"
+      "flex-layout.row#result"
     ],
     "props": {
       "blockClass": "panda-search",

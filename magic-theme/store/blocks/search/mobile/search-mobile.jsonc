@@ -20,8 +20,8 @@
       "flex-layout.row#fetchmore",
 
       // "flex-layout.row#search-seo-title",
-      "rich-text#category",
-      "flex-layout.row#vitrine-position-category"
+      "flex-layout.row#vitrine-plp",
+      "rich-text#category"
     ],
     "props": {
       "blockClass": "panda-search",

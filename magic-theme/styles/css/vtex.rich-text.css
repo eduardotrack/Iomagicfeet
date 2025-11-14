@@ -1827,6 +1827,20 @@
   margin-top: 24px;
 }
 
+.heading--shelf-title {
+  margin: 0 0 5px 0;
+  font-family: 'WorkSans-Regular', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #1C1C1C;
+  line-height: 24px;
+}
+
+.strong--shelf-title {
+  font-family: 'WorkSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 990px) {
   .wrapper--week-featured-title {
     max-width: unset;
@@ -1838,5 +1852,13 @@
 
   .container--week-featured-title {
     justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .heading--shelf-title {
+    font-size: 20px;
+    padding-left: 18px;
+    margin: 0;
   }
 }

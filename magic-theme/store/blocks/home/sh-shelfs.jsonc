@@ -1,0 +1,72 @@
+{
+  "flex-layout.row#vitrine-position-home":{
+    "title": "Panda | Vitrine Smarthint - Home",
+    "children": [
+      "rich-text#vitrine-shelf-home",
+      "pd-smart-shelf#shelf-home"
+    ],
+    "props": {
+      "blockClass": ["pd-smart-shelf", "pd-smart-shelf-home"],
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#vitrine-shelf-home": {
+    "title": "Panda | Título Vitrine Customizado",
+    "props": {
+      "text": "## os **best sellers** do mês",
+      "blockClass": "shelf-title"
+    }
+  },
+  "flex-layout.row#vitrine-position-pdp":{
+    "title": "Panda | Vitrine Smarthint - PDP",
+    "children": [
+      "rich-text#vitrine-shelf-pdp",
+      "pd-smart-shelf#shelf-pdp"
+    ],
+    "props": {
+      "blockClass": ["pd-smart-shelf", "pd-smart-shelf-pdp"],
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#vitrine-shelf-pdp": {
+    "title": "Panda | Título Vitrine Customizado",
+    "props": {
+      "text": "",
+      "blockClass": "shelf-title"
+    }
+  },
+  "flex-layout.row#vitrine-plp":{
+    "title": "Panda | Vitrine Smarthint - Categoria",
+    "children": [
+      "rich-text#vitrine-shelf-plp",
+      "pd-smart-shelf#shelf-plp"
+    ],
+    "props": {
+      "blockClass": ["pd-smart-shelf", "pd-smart-shelf-plp"],
+      "colSizing": "auto"
+    }
+  },
+  "rich-text#vitrine-shelf-plp": {
+    "title": "Panda | Título Vitrine Customizado",
+    "props": {
+      "text": "",
+      "blockClass": "shelf-title"
+    }
+  },
+  "pd-smart-shelf#shelf-home": {
+    "props": {
+      "position": "1",
+      "showShelfTitle": false
+    }
+  },
+  "pd-smart-shelf#shelf-pdp": {
+    "props": {
+      "position": "1"
+    }
+  },
+  "pd-smart-shelf#shelf-plp": {
+    "props": {
+      "position": "1"
+    }
+  }
+}
