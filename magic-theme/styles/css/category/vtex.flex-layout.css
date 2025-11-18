@@ -84,7 +84,7 @@
 .flexCol--highlights-stack-category {
   width: fit-content !important;
   height: fit-content;
-  position: absolute;
+  position: relative;
   top: 16.5px;
   left: 84px;
 }
@@ -108,14 +108,20 @@
     padding: 8px;
   }
 
-  .flexCol--highlights-stack-category {
-    top: calc(100% - 220px);
-    left: 8px;
-  }
-}
+  .flexRowContent--highlights-stack-wrapper-category-category,
+  .flexRow--highlights-stack-wrapper-category-category {
+    height: 100%;
 
-@media screen and (max-width: 498px) {
+    > div {
+      height: 100%;
+    }
+  }
+
   .flexCol--highlights-stack-category {
-    top: calc(100% - 246px);
+    /* position: absolute; */
+    margin-top: auto;
+    top: unset;
+    bottom: 8px;
+    left: 8px;
   }
 }

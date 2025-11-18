@@ -124,4 +124,8 @@
         height: 150px !important;
         transition: all .3s;
     }
+
+    .stackItem--prodsum-category-stack-shelf-category--highlights-stack-wrapper-category-category {
+        height: 100%;
+    }
 }

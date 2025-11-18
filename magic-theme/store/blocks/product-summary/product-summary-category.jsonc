@@ -4,7 +4,6 @@
     "children": [
       "add-to-list-btn#category",
       "stack-layout#prodsum-category",
-      "flex-layout.row#highlights-wrapper-category",
       "flex-layout.col#product-info-category"
     ],
     "props": {
@@ -126,8 +125,9 @@
   },
 
   "stack-layout#prodsum-category": {
-    "children": [ 
-      "product-summary-image#shelf-category"
+    "children": [
+      "product-summary-image#shelf-category",
+      "flex-layout.row#highlights-wrapper-category" 
     ],
     "props": {
       "blockClass": ["shelf__price-category", "prodsum-category-stack-shelf-category"]
