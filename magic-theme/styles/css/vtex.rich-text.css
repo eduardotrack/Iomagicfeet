@@ -55,6 +55,11 @@
   font-weight: 700;
 }
 
+.wrapper--category-seo-text {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 .paragraph--category-seo-text {
   padding-left: 5rem;
 }
