@@ -17,6 +17,7 @@
       "flex-layout.row#3-desktop",
       "sticky-layout#4-desktop",
       "experimental__visibility-layout#banner-header-tag",
+      "experimental__visibility-layout#bf-countdown",
       "pd-ChangeTagLogin",
       "pd-popupNewsletter",
 
@@ -205,6 +206,7 @@
       /*     "flex-layout.row#0-mobile",  */
       "sticky-layout#1-mobile",
       "experimental__visibility-layout#banner-header-tag",
+      "experimental__visibility-layout#bf-countdown",
       "pd-ChangeTagLogin",
       "pd-popupNewsletter",
       "pd-OrderPlacedSmarthint",
@@ -339,6 +341,16 @@
       "orientation": "vertical",
       "blockClass": "header_menu--mob"
     }
-  }
+  },
   // HEADER MOBILE END
+  "experimental__visibility-layout#bf-countdown": {
+    "title": "Panda | Faixa de Contagem Regressiva (On/Off)",
+    "children": [
+      "pd-Countdown"
+    ],
+    "props": {
+      "visible": false,
+      "blockClass": "countdown-header"
+    }
+  }
 }

@@ -1,0 +1,160 @@
+.contentCronometro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  text-decoration: none;
+  color: #fff;
+}
+
+.cronometroEvento {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 698px;
+  width: 100%;
+  padding: 14px;
+}
+
+.cronometroEventoBlocoEsquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5px;
+
+  svg {
+    max-width: 224px;
+  }
+
+  p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 160%;
+    margin: 0;
+    margin-top: -10px;
+  }
+
+  b {
+    font-family: 'WorkSans-Bold', sans-serif;
+  }
+}
+
+.cronometroContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.containerNumber {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  flex-shrink: 0;
+
+  text-transform: lowercase;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: -0.28px;
+  line-height: 120%;
+
+  width: 72px;
+}
+
+.numberCronometro {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'WorkSans-Bold', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.28px;
+  line-height: 120%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border: 1px solid #25FF58;
+  border-radius: 8px;
+}
+
+.numberSeparator {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.containerNumberLoading {
+  text-align: center;
+  color: #ffff;
+  font-weight: 300;
+  letter-spacing: 0.96px;
+  line-height: 120%;
+}
+
+.numberCronometroLoading {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #333;
+  }
+  50% {
+    background-color: #444;
+  }
+  100% {
+    background-color: #333;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cronometroEvento {
+    padding: 8px 16px;
+  }
+
+  .cronometroEvento {
+    max-width: 930px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .cronometroEventoBlocoEsquerda {
+    svg {
+      max-width: 101px;
+      height: auto;
+    }
+
+    p {
+      font-size: 10px;
+      margin-top: -7px;
+    }
+  }
+  .cronometroContainer {
+    gap: 6px;
+  }
+
+  .numberSeparator {
+    font-size: 10px;
+    height: 24px;
+  }
+
+  .containerNumber {
+    width: 24px;
+    font-size: 8px;
+    gap: 2px;
+  }
+
+  .numberCronometro {
+    width: 26px;
+    height: 26px;
+    font-size: 10px;
+  }
+}

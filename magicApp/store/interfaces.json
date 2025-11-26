@@ -183,5 +183,8 @@
   },
   "pd-ColorsChanger": {
     "component": "ColorsChanger"
+  },
+  "pd-Countdown": {
+    "component": "Countdown"
   }
 }
