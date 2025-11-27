@@ -61,7 +61,8 @@
   },
   "pd-smart-shelf#shelf-pdp": {
     "props": {
-      "position": "1"
+      "position": "1",
+      "pageType": "product"
     }
   },
   "pd-smart-shelf#shelf-plp": {
