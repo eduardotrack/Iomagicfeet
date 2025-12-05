@@ -1,0 +1,75 @@
+{
+  "link#not-found-categories-1-1": {
+    "title": "Panda | Link Topo - Categoria 1",
+    "props": {
+      "label": "tênis",
+      "href": "/tenis-infantis",
+      "blockClass": "panda-search__not-found-link"
+    }
+  },
+
+  "link#not-found-categories-1-2": {
+    "title": "Panda | Link Topo - Categoria 2",
+    "props": {
+      "label": "chinelos e sandálias",
+      "href": "/chinelos-e-sandalias-infantis",
+      "blockClass": "panda-search__not-found-link"
+    }
+  },
+
+  "link#not-found-categories-1-3": {
+    "title": "Panda | Link Topo - Categoria 3",
+    "props": {
+      "label": "roupas",
+      "href": "/roupas-infantis",
+      "blockClass": "panda-search__not-found-link"
+    }
+  },
+
+  "link#not-found-categories-1-4": {
+    "title": "Panda | Link Topo - Categoria 4",
+    "props": {
+      "label": "chuteiras",
+      "href": "/chuteiras-infantis",
+      "blockClass": "panda-search__not-found-link"
+    }
+  },
+
+  "link#not-found-categories-1-5": {
+    "title": "Panda | Link Topo - Categoria 5",
+    "props": {
+      "label": "acessórios",
+      "href": "/acessorios-infantis",
+      "blockClass": "panda-search__not-found-link"
+    }
+  },
+
+  "slider-layout#not-found-categories-1": {
+    "title": "Panda | Categorias - Slider Topo",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 8,
+      "fullWidth": true,
+      "infinite": false,
+      "blockClass": ["list-not-found-categories", "list-not-found-categories-top"]
+    },
+    "children": [
+      "link#not-found-categories-1-1",
+      "link#not-found-categories-1-2",
+      "link#not-found-categories-1-3",
+      "link#not-found-categories-1-4",
+      "link#not-found-categories-1-5"
+    ]
+  }
+}

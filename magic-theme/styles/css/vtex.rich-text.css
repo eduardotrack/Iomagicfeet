@@ -48,6 +48,10 @@
   .heading--Panda__title {
     font-size: 24px;
   }
+
+  .container--not-found-shelf-title {
+    max-width: 78%;
+  }
 }
 
 .strong--Panda__title {

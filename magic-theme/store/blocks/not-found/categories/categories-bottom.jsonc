@@ -1,0 +1,75 @@
+{
+  "link#not-found-categories-2-1": {
+    "title": "Panda | Link Baixo - Categoria 1",
+    "props": {
+      "label": "dunk low",
+      "href": "/nike/dunk",
+      "blockClass": "panda-search__not-found-link"
+    }
+  },
+
+  "link#not-found-categories-2-2": {
+    "title": "Panda | Link Baixo - Categoria 2",
+    "props": {
+      "label": "jordan 1",
+      "href": "/jordan",
+      "blockClass": "panda-search__not-found-link"
+    }
+  },
+
+  "link#not-found-categories-2-3": {
+    "title": "Panda | Link Baixo - Categoria 3",
+    "props": {
+      "label": "nike air force 1",
+      "href": "/nike/air-force",
+      "blockClass": "panda-search__not-found-link"
+    }
+  },
+
+  "link#not-found-categories-2-4": {
+    "title": "Panda | Link Baixo - Categoria 4",
+    "props": {
+      "label": "adidas",
+      "href": "/adidas",
+      "blockClass": "panda-search__not-found-link"
+    }
+  },
+
+  "link#not-found-categories-2-5": {
+    "title": "Panda | Link Baixo - Categoria 5",
+    "props": {
+      "label": "nike",
+      "href": "/nike",
+      "blockClass": "panda-search__not-found-link"
+    }
+  },
+
+  "slider-layout#not-found-categories-2": {
+    "title": "Panda | Categorias - Slider Baixo",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 8,
+      "infinite": false,
+      "fullWidth": true,
+      "blockClass": ["list-not-found-categories", "list-not-found-categories-top"]
+    },
+    "children": [
+      "link#not-found-categories-2-1",
+      "link#not-found-categories-2-2",
+      "link#not-found-categories-2-3",
+      "link#not-found-categories-2-4",
+      "link#not-found-categories-2-5"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "flex-layout.row#not-found-shelf": {
+    "title": "Panda | Best Sellers",
+    "props": {
+      "blockClass": "not-found-shelf"
+    },
+    "children": ["flex-layout.col#not-found-shelf"]
+  },
+  "flex-layout.col#not-found-shelf": {
+    "title": "Panda | Best Sellers",
+    "props": {
+      "blockClass": ["not-found-shelf"]
+    },
+    "children": [
+      "rich-text#not-found-shelf-title",
+      "list-context.product-list#not-found-shelf"
+    ]
+  },
+
+  "rich-text#not-found-shelf-title": {
+    "title": "Panda | Best Sellers - Título",
+    "props": {
+      "text": "## **destaques** da semana",
+      "blockClass": ["Panda__title", "not-found-shelf-title"]
+    }
+  },
+
+  "list-context.product-list#not-found-shelf": {
+    "blocks": ["product-summary.shelf#product-category"],
+    "children": ["slider-layout#not-found-shelf"]
+  },
+
+  "slider-layout#not-found-shelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": ["not-found-shelf"]
+    }
+  }
+}

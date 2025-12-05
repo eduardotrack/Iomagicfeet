@@ -1,0 +1,82 @@
+{
+  "search-not-found-layout": {
+    "title": "Panda | Resultado da busca - Não encontrado",
+    "children": [
+      // "flex-layout.row#searchbread",
+      "flex-layout.row#notfound"
+      // "flex-layout.row#retail-rocket-category-not-found"
+    ]
+  },
+  "flex-layout.row#notfound": {
+    "title": "Resultado da busca - Não encontrado",
+    "children": [
+      "flex-layout.col#page-not-found"
+      // "not-found"
+    ],
+    "props": {
+      "blockClass": "panda-search__not-found",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#page-not-found": {
+    "title": "Panda | Não encontrado - Coluna",
+    "children": [
+      "flex-layout.col#page-not-found-top",
+      "flex-layout.row#not-found-shelf"
+    ],
+    "props": {
+      "blockClass": "panda-search__not-found-col"
+    }
+  },
+  "flex-layout.col#page-not-found-top": {
+    "title": "Panda | Não encontrado - Coluna Topo",
+    "children": [
+      "rich-text#page-not-found-title",
+      "rich-text#page-not-found-subtitle",
+      "flex-layout.col#not-found-categories-sliders",
+      "flex-layout.row#not-found-search-bar"
+    ],
+    "props": {
+      "blockClass": "panda-search__not-found-col-top"
+    }
+  },
+  "rich-text#page-not-found-title": {
+    "title": "Panda | Não encontrado - Título",
+    "props": {
+      "blockClass": "panda-search__not-found-title",
+      "text": "página não encontrada!"
+    }
+  },
+  "rich-text#page-not-found-subtitle": {
+    "title": "Panda | Não encontrado - Subtítulo",
+    "props": {
+      "blockClass": "panda-search__not-found-text",
+      "text": "mas você pode descobrir suas novas chuteiras, tênis de corrida e roupas esportivas na magicfeet [voltar para a home](/) ou explorar coleções."
+    }
+  },
+  
+  "flex-layout.row#not-found-search-bar": {
+    "title": "Panda | Não encontrado - Barra de busca",
+    "children": ["search-bar#not-found"],
+    "props": {
+      "blockClass": "panda-search__not-found-search-bar",
+      "fullWidth": true
+    }
+  },
+  "search-bar#not-found": {
+    "props": {
+      "placeholder": "Buscar",
+      "openAutocompleteOnFocus": true,
+      "blockClass": ["header__search", "header__search--not-found"]
+    }
+    // "blocks": ["autocomplete-result-list.v2"]
+  },
+
+
+
+  "not-found": {
+    "props": {
+      "blockClass": "panda-search__not-found-text"
+    }
+  }
+}

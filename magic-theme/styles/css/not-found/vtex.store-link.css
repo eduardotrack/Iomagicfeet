@@ -1,0 +1,44 @@
+.link--panda-search__not-found-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  border: 2px solid #D1D5DC;
+  border-radius: 9999px;
+  padding: 12px 4px;
+
+  color: #61656B;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+  text-align: center;
+
+  transition: all 0.3s ease;
+}
+
+.link--panda-search__not-found-link:hover {
+  border-color: #000;
+  background-color: #5DFF49;
+  color: #000;
+  font-weight: 700;
+  font-family: 'WorkSans-Bold', sans-serif;
+  opacity: 1;
+}
+
+@media screen and (max-width: 990px) {
+  .link--panda-search__not-found-link {
+    padding: 8px 4px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .label--panda-search__not-found-link {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -37,14 +37,14 @@
 
   "store.not-found#product": {
     "blocks": [
-      "rich-text#not-found"
+      "flex-layout.row#notfound"
       // "flex-layout.row#retail-rocket-category-not-found"
     ]
   },
 
   "store.not-found#search": {
     "blocks": [
-      "rich-text#not-found"
+      "flex-layout.row#notfound"
       // "flex-layout.row#retail-rocket-category-not-found"
     ]
   },

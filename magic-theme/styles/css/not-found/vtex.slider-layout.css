@@ -1,0 +1,69 @@
+.sliderArrows--not-found-shelf {
+  top: -62px;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #CDD0D3;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: #171A1C;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+.sliderRightArrow--not-found-shelf::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.50012 7.00006L14.5002 12.0001L9.50012 17.0002" stroke="%2345494F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sliderLeftArrow--not-found-shelf::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.5002 7.00006L9.50012 12.0001L14.5002 17.0002" stroke="%2345494F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sliderLeftArrow--not-found-shelf {
+  left: unset;
+  right: 60px;
+}
+
+.sliderTrack--not-found-shelf {
+  gap: 8px;
+}
+
+.slideChildrenContainer--list-not-found-categories {
+  padding: 0 4px;
+}
+
+@media screen and (max-width: 990px) {
+  .sliderArrows--not-found-shelf {
+    padding: 6px;
+    top: -56px;
+
+    &::after {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .sliderLeftArrow--not-found-shelf {
+    right: 42px;
+  }
+
+  .slideChildrenContainer--list-not-found-categories {
+    padding: 0;
+  }
+}

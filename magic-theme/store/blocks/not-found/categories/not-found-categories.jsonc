@@ -1,0 +1,13 @@
+{
+  "flex-layout.col#not-found-categories-sliders": {
+    "title": "Panda | Sliders de Categoria",
+    "children": [
+      "slider-layout#not-found-categories-1",
+      "slider-layout#not-found-categories-2"
+    ],
+    "props": {
+      "blockClass": "panda-search__not-found-categories-sliders",
+      "preventVerticalStretch": true
+    }
+  }
+}
