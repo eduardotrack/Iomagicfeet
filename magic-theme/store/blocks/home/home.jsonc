@@ -105,10 +105,10 @@
       "showPaginationDots": "never"
     },
     "children": [
-      "flex-layout.col#tips-item-01",
-      "flex-layout.col#tips-item-02",
-      "flex-layout.col#tips-item-03",
-      "flex-layout.col#tips-item-04"
+      "flex-layout.col#tooltips-item-01",
+      "flex-layout.col#tooltips-item-02",
+      "flex-layout.col#tooltips-item-03",
+      "flex-layout.col#tooltips-item-04"
     ]
   }
 }

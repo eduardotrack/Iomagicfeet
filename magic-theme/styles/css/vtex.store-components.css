@@ -101,7 +101,7 @@
 
 .imageElement--tips-item-img {
   width: auto;
-  height: 30px;
+  height: 44px;
 }
 
 .infoCardTextContainer--info-card-exlusivo {
@@ -114,7 +114,7 @@
 @media (max-width: 767px) {
   .imageElement--tips-item-img {
     width: auto;
-    height: 22px;
+    height: 40px;
   }
   .infoCardTextContainer--info-card-exlusivo {
     padding: 55px 0;

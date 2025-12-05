@@ -15,11 +15,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 16px;
 }
 
 .link--tips-item-link {
   text-decoration: none;
+  &:hover {
+    opacity: 1 !important;
+  }
 }
 
 .link--main-slider-banner {

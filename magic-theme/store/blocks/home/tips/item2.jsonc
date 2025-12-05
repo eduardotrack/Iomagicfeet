@@ -1,5 +1,5 @@
 {
-  "flex-layout.col#tips-item-02": {
+  "flex-layout.col#tooltips-item-02": {
       "title": "Panda | Tips 02",
       "children": ["link#tips-item-02"],
       "props":{
@@ -27,7 +27,7 @@
     "image#tips-item-02": {
       "title": "Panda | Imagem Tips 02",
       "props": {
-        "src": "https://magicfeet.vtexassets.com/assets/vtex.file-manager-graphql/images/7dca9b0d-2b39-4d8b-928a-574cb57b5341___9ead77491c2c8b303ba418116184edf3.png",
+        "src": "assets/img/tooltip-item-02.png",
         "blockClass": "tips-item-img"
       }
     },
@@ -35,7 +35,7 @@
     "rich-text#tips-item-02": {
       "title": "Panda | Texto Tips 02",
       "props": {
-        "text": "**solicite sua troca** \n até 30 dias após a compra",
+        "text": "**retire na loja** \n compre online e retire",
         "blockClass": "tips-item-text"
       }
     }

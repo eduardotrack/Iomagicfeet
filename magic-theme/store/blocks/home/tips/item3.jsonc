@@ -1,5 +1,5 @@
 {
-  "flex-layout.col#tips-item-03": {
+  "flex-layout.col#tooltips-item-03": {
       "title": "Panda | Tips 03",
       "children": ["link#tips-item-03"],
       "props":{
@@ -27,7 +27,7 @@
     "image#tips-item-03": {
       "title": "Panda | Imagem Tips 03",
       "props": {
-        "src": "https://magicfeet.vtexassets.com/assets/vtex.file-manager-graphql/images/0caf9eb4-44bb-43a0-a868-f792ac757097___481732b345c1296c3e2916fec2345879.png",
+        "src": "assets/img/tooltip-item-03.png",
         "blockClass": "tips-item-img"
       }
     },
@@ -35,7 +35,7 @@
     "rich-text#tips-item-03": {
       "title": "Panda | Texto Tips 03",
       "props": {
-        "text": "**+ de 40 lojas pelo brasil** \n encontre a  mais próxima",
+        "text": "**+30 lojas** \n em todo o brasil",
         "blockClass": "tips-item-text"
       }
     }

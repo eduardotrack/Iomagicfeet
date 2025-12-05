@@ -420,18 +420,22 @@
 }
 
 .paragraph--tips-item-text {
-  font-family: "WorkSans-Regular";
+  font-family: Segoe UI Symbol, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #1c1c1c;
+  color: #A1A1A1;
   margin: 0;
+  letter-spacing: 0.6px;
 }
 
 .strong--tips-item-text {
   font-family: "WorkSans-Bold";
   font-weight: 700;
+  line-height: 20px;
+  color: #171717;
+  letter-spacing: 0.35px;
 }
 
 .paragraph--list-brands-menu {
@@ -1803,7 +1807,7 @@
   align-items: center;
   gap: 10px;
 
-  &::after {
+  /* &::after {
     content: "";
     width: 11.5px;
     height: 11.5px;
@@ -1811,7 +1815,7 @@
     background-image: url('data:image/svg+xml,<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.41655 8.91672H6.58322V5.41672H5.41655V8.91672ZM5.99984 0.166748C2.77984 0.166748 0.166504 2.78008 0.166504 6.00008C0.166504 9.22008 2.77984 11.8334 5.99984 11.8334C9.21984 11.8334 11.8332 9.22008 11.8332 6.00008C11.8332 2.78008 9.21984 0.166748 5.99984 0.166748ZM5.99977 10.6667C3.42727 10.6667 1.33311 8.57253 1.33311 6.00003C1.33311 3.42753 3.42727 1.33336 5.99977 1.33336C8.57227 1.33336 10.6664 3.42753 10.6664 6.00003C10.6664 8.57253 8.57227 10.6667 5.99977 10.6667ZM5.41655 4.25003H6.58322V3.08336H5.41655V4.25003Z" fill="%231C1C1C"/></svg>');
     background-size: contain;
     background-repeat: no-repeat;
-  }
+  } */
 }
 
 .paragraph--become-a-franchisee-form-modal-title {

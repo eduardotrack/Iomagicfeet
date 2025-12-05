@@ -105,7 +105,7 @@
         "tablet": "disabled",
         "phone": "disabled"
       },
-      "centerModeSlidesGap": 4,
+      "centerModeSlidesGap": 8,
       "infinite": true,
       "fullWidth": true,
       "slideTransition": {

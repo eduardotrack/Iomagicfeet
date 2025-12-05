@@ -1,7 +1,7 @@
 {
     "flex-layout.row#tips-home": {
         "title": "Panda | Tips",
-        "children": [ "flex-layout.col#tips-item-01", "flex-layout.col#tips-item-02", "flex-layout.col#tips-item-03", "flex-layout.col#tips-item-04"],
+        "children": [ "flex-layout.col#tooltips-item-01", "flex-layout.col#tooltips-item-02", "flex-layout.col#tooltips-item-03", "flex-layout.col#tooltips-item-04"],
         "props":{
           "blockClass":"tips-home-row" 
         } 
