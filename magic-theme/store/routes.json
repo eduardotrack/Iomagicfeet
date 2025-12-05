@@ -19,5 +19,8 @@
   },
   "store.custom#sitemap": {
     "path": "/catalogo"
+  },
+  "store.custom#natal-25": {
+    "path": "/natal-2025"
   }
 }

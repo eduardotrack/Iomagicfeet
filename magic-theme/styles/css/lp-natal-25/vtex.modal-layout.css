@@ -1,0 +1,16 @@
+.headerContainer--home-buy-the-look {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+}
+
+.paper--home-buy-the-look {
+  margin: 12px;
+  height: 100dvh;
+  max-height: 610px;
+}
+
+.triggerContainer--home-buy-the-look {
+  display: flex;
+}

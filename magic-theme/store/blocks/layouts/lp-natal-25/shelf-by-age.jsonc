@@ -1,0 +1,107 @@
+{
+  "flex-layout.row#natal-buy-by-age": {
+    "title": "Panda | Compre por Idade",
+    "children": [
+      "flex-layout.col#natal-buy-by-age"
+    ],
+    "props": {
+      "blockClass": "natal-buy-by-age-row"
+    }
+  },
+  "flex-layout.col#natal-buy-by-age": {
+    "props": {
+      "blockClass": "natal-buy-by-age-col"
+    },
+    "children": [
+      "rich-text#natal-buy-by-age-title",
+      "list-context.image-list#natal-buy-by-age",
+      "image#buy-by-age-mascot-desk",
+      "image#buy-by-age-tape",
+      "image#buy-by-age-mascot-mob"
+    ]
+  },
+  "rich-text#natal-buy-by-age-title": {
+    "title": "Panda | Compre por Idade - Título",
+    "props": {
+      "text": "## COMPRE **POR IDADE**",
+      "blockClass": ["natal-buy-by-age-title", "natal-25-title"]
+    }
+  },
+  "list-context.image-list#natal-buy-by-age":{
+    "title": "Panda | Compre por Idade - Lista de imagens",
+    "props": {
+    "blockClass": "list-image-buy-by-age",
+    "preload": false,
+    "height": 660,
+    "images": [
+      {
+        "image": "assets/img/natal-buy-by-age-01.png",
+        "link": {
+          "url": "/example"
+        }
+      },
+      {
+        "image": "assets/img/natal-buy-by-age-02.png",
+        "link": {
+          "url": "/example"
+        }
+      },
+      {
+        "image": "assets/img/natal-buy-by-age-03.png",
+        "link": {
+          "url": "/example"
+        }
+      },
+      {
+        "image": "assets/img/natal-buy-by-age-04.png",
+        "link": {
+          "url": "/example"
+        }
+      }
+    ]
+    },
+    "children": ["slider-layout#natal-buy-by-age"]
+  },
+  "slider-layout#natal-buy-by-age": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": true,
+      "navigationStep": 1,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": ["shelf", "natal-buy-by-age"],
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 10
+    }
+  },
+  "image#buy-by-age-mascot-desk": {
+    "title": "Panda | Compre por Idade - Mascote Desktop",
+    "props": {
+      "src": "assets/img/buy-by-age-mascot.png",
+      "blockClass": "buy-by-age-mascot-desk"
+    }
+  },
+  "image#buy-by-age-mascot-mob": {
+    "title": "Panda | Compre por Idade - Mascote Mobile",
+    "props": {
+      "src": "assets/img/buy-by-age-mascot-mob.png",
+      "blockClass": "buy-by-age-mascot-mob"
+    }
+  },
+  "image#buy-by-age-tape": {
+    "title": "Panda | Compre por Idade - Tape",
+    "props": {
+      "src": "assets/img/buy-by-age-tape.png",
+      "blockClass": "buy-by-age-tape"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.slide--shelf-natal-25 {
+  padding: 0 4px !important;
+  margin: 0 !important;
+}
+
+.sliderArrows--shelf-natal-25,
+.sliderArrows--natal-buy-by-brands,
+.sliderArrows--ads-buy-the-look-cards {
+  svg {
+    display: none;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 18px;
+  }
+}
+
+.sliderRightArrow--shelf-natal-25 {
+  right: -42px;
+
+  &::before {
+    background-image: url('data:image/svg+xml,<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8577 18L10.2869 16.4725L16.7545 10.1056H0V7.89209H16.7545L10.2869 1.54636L11.8577 0L21 9L11.8577 18Z" fill="black"/></svg>');
+  }
+}
+
+.sliderLeftArrow--shelf-natal-25 {
+  left: -42px;
+
+  &::before {
+    background-image: url('data:image/svg+xml,<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.1423 18L10.7131 16.4725L4.24549 10.1056H21V7.89209H4.24549L10.7131 1.54636L9.1423 0L0 9L9.1423 18Z" fill="black"/></svg>');
+  }
+}
+
+.sliderRightArrow--natal-buy-by-brands {
+  top: -56px;
+  right: 10%;
+
+  &::before {
+    background-image: url('data:image/svg+xml,<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8577 18L10.2869 16.4725L16.7545 10.1056H0V7.89209H16.7545L10.2869 1.54636L11.8577 0L21 9L11.8577 18Z" fill="black"/></svg>');
+  }
+}
+
+.sliderLeftArrow--natal-buy-by-brands {
+  top: -56px;
+  left: unset;
+  right: calc(10% + 50px);
+
+  &::before {
+    background-image: url('data:image/svg+xml,<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.1423 18L10.7131 16.4725L4.24549 10.1056H21V7.89209H4.24549L10.7131 1.54636L9.1423 0L0 9L9.1423 18Z" fill="black"/></svg>');
+  }
+}
+
+.sliderRightArrow--ads-buy-the-look-cards {
+  top: -46px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    background-image: url('data:image/svg+xml,<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8577 18L10.2869 16.4725L16.7545 10.1056H0V7.89209H16.7545L10.2869 1.54636L11.8577 0L21 9L11.8577 18Z" fill="black"/></svg>');
+  }
+}
+
+.sliderLeftArrow--ads-buy-the-look-cards  {
+  top: -46px;
+  left: unset;
+  right: 50px;
+  margin: 0;
+  padding: 0;
+
+  &::before {
+    background-image: url('data:image/svg+xml,<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.1423 18L10.7131 16.4725L4.24549 10.1056H21V7.89209H4.24549L10.7131 1.54636L9.1423 0L0 9L9.1423 18Z" fill="black"/></svg>');
+  }
+}
+
+.sliderTrackContainer--natal-buy-by-brands {
+  /* para sombra dos cards ficar visivel */
+  padding-bottom: 16px; 
+}
+
+.sliderTrack--ads-buy-the-look-cards {
+  gap: 16px;
+}
+
+@media screen and (max-width: 990px) {
+  .sliderArrows--shelf-natal-25 {
+    top: -82px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sliderRightArrow--shelf-natal-25 {
+    right: 0;
+  }
+
+  .sliderLeftArrow--shelf-natal-25 {
+    left: unset;
+    right: 40px;
+  }
+
+  .sliderLayoutContainer--natal-buy-by-age {
+    padding-left: 20px !important;
+  }
+
+  .sliderArrows--natal-buy-by-brands {
+    margin: 0;
+    padding: 0;
+    top: -77px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .sliderArrows--shelf-natal-25 {
+    top: -100px;
+  }
+  .sliderRightArrow--shelf-natal-25 {
+    right: -36vw;
+  }
+
+  .sliderLeftArrow--shelf-natal-25 {
+    left: unset;
+    right: calc(-36vw + 40px);
+  }
+}

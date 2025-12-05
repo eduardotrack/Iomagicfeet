@@ -1,0 +1,161 @@
+{
+  "flex-layout.row#natal-25-shelf": {
+    "title": "Panda | Natal - Vitrine de Produtos",
+    "children": [
+      "flex-layout.row#row-natal-25-shelf-title",
+      "flex-layout.row#row-natal-25-shelf-container"
+    ],
+    "props": {
+      "blockClass": "row-natal-25-shelf",
+      "width": "100%"
+    }
+  },
+
+  // Título
+  "flex-layout.row#row-natal-25-shelf-title": {
+    "children": ["rich-text#natal-25-shelf-title"],
+    "props": {
+      "blockClass": "row-natal-25-shelf-title",
+      "width": "100%"
+    }
+  },
+  "rich-text#natal-25-shelf-title": {
+    "title": "Panda | Vitrine de Produtos - Título",
+    "props": {
+      "text": "## ESCOLHA O **PRESENTE PERFEITO**",
+      "blockClass": ["natal-25-shelf-title", "natal-25-title"]
+    }
+  },
+
+  // Tabs Content
+  "flex-layout.row#row-natal-25-shelf-container": {
+    "children": ["tab-layout#natal-25-shelf-tabs"],
+    "props": {
+      "blockClass": "row-natal-25-shelf-tabs",
+      "width": "100%"
+    }
+  },
+  "tab-layout#natal-25-shelf-tabs": {
+    "children": [
+      "tab-list#natal-25-shelf-tabs",
+      "tab-content#natal-25-shelf-tabs-content"
+    ],
+    "props": {
+      "blockClass": "natal-25-shelf-tabs",
+      "defaultActiveTabId": "tab1"
+    }
+  },
+  "tab-list#natal-25-shelf-tabs": {
+    "children": ["tab-list.item#tab1", "tab-list.item#tab2"],
+    "props": {
+      "blockClass": "natal-25-shelf-tabs"
+    }
+  },
+  "tab-list.item#tab1": {
+    "title": "Panda | Tab 1 - Título",
+    "props": {
+      "tabId": "tab1",
+      "label": "meninos",
+      "blockClass": "natal-25-shelf-tab"
+    }
+  },
+  "tab-list.item#tab2": {
+    "title": "Panda | Tab 2 - Título",
+    "props": {
+      "tabId": "tab2",
+      "label": "meninas",
+      "blockClass": "natal-25-shelf-tab"
+    }
+  },
+
+  // Tabs Content
+  "tab-content#natal-25-shelf-tabs-content": {
+    "children": ["tab-content.item#tab1", "tab-content.item#tab2"],
+    "props": {
+      "blockClass": "natal-25-shelf-tabs-content"
+    }
+  },
+  "tab-content.item#tab1": {
+    "title": "Panda | Tab 1 - Conteúdo",
+    "children": [
+      "flex-layout.row#shelf-natal-25-01"
+    ],
+    "props": {
+      "tabId": "tab1",
+      "blockClass": "tab-item-content"
+    }
+  },
+  "tab-content.item#tab2": {
+    "title": "Panda | Tab 2 - Conteúdo",
+    "children": [
+      "flex-layout.row#shelf-natal-25-02"
+    ],
+    "props": {
+      "tabId": "tab2",
+      "blockClass": "tab-item-content"
+    }
+  },
+
+  "flex-layout.row#shelf-natal-25-01": {
+    "title": "Panda | Vitrine 01 - Produtos",
+    "children": ["list-context.product-list#shelf-natal-25-01"],
+    "props": {
+      "blockClass": "shelf--col"
+    }
+  },
+
+  "list-context.product-list#shelf-natal-25-01": {
+    "blocks": ["product-summary.shelf#new-shelf"],
+    "children": ["slider-layout#shelf-natal-25-01"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "",
+      "category": "",
+      "hideUnavailableItems": true,
+      "maxItems": 10
+    }
+  },
+
+  "flex-layout.row#shelf-natal-25-02": {
+    "title": "Panda | Vitrine 02 - Produtos",
+    "children": ["list-context.product-list#shelf-natal-25-02"],
+    "props": {
+      "blockClass": "shelf--col"
+    }
+  },
+
+  "list-context.product-list#shelf-natal-25-02": {
+    "blocks": ["product-summary.shelf#new-shelf"],
+    "children": ["slider-layout#shelf-natal-25-01"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "",
+      "category": "",
+      "hideUnavailableItems": true,
+      "maxItems": 10
+    }
+  },
+
+  "slider-layout#shelf-natal-25-01": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "navigationStep": 1,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": ["shelf", "shelf-natal-25"]
+    //   "centerMode": {
+    //     "desktop": "disabled",
+    //     "tablet": "disabled",
+    //     "phone": "disabled"
+    // },
+    // "centerModeSlidesGap": "0"
+    }
+  }
+  
+}

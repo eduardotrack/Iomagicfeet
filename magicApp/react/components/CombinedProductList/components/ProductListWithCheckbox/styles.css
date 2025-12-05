@@ -1,0 +1,186 @@
+.productWithCheckbox__wrapper {
+  /* padding: 24px 20px 0; */
+}
+
+.productWithCheckbox__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 24px 20px;
+}
+
+.productWithCheckbox__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 20px 20px;
+  max-height: 390px;
+  overflow-y: auto;
+}
+
+.productWithCheckbox__card {
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid #E5E5E5;
+  padding: 16px 0;
+}
+
+.productWithCheckbox__image {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  background-color: #F2F3F5;
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+}
+
+.productWithCheckbox__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.productWithCheckbox__name {
+  margin: 0;
+  font-size: 14px;
+  line-height: 120%;
+  color: #121416;
+  font-weight: 600;
+}
+
+.productWithCheckbox__price {
+  margin: 0;
+  font-size: 14px;
+  color: #0A0A0A;
+  line-height: 140%;
+}
+
+.productWithCheckbox__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.productWithCheckbox__buttonWrapper {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  padding: 8px 20px 14px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productWithCheckbox__button {
+  background: #9EC428;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+
+
+.nativeCheckbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.customCheckboxWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.customCheckbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nativeCheckbox:checked + .customCheckbox::after {
+  content: "";
+  display: block;
+  width: 9.75px;
+  height: 6.83px;
+  background-image: url('data:image/svg+xml,<svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 3.91667L3.91667 6.83333L9.75 1" stroke="%23171A1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.customSelectWrapper {
+  position: relative;
+  width: 100%;
+}
+
+
+.nativeSelect {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.fakeSelect {
+  background: #F5F5F5;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  position: relative;
+  color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  pointer-events: none; /* evita interferir */
+  width: 100%;
+  min-width: 71px;
+  min-height: 28px;
+}
+
+/* Texto */
+.fakeSelectText {
+  white-space: nowrap;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Setinha */
+/* .fakeArrow {
+  position: absolute;
+  right: 12px;
+  pointer-events: none;
+} */
+
+@media screen and (max-width: 990px) {
+  .productWithCheckbox__list {
+    max-height: 100%;
+  }
+}

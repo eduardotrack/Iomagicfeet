@@ -1,0 +1,199 @@
+{
+  "flex-layout.row#natal-buy-by-brands": {
+    "title": "Panda | Compre por Marca",
+    "children": [
+      "image#natal-buy-by-brands-desk",
+      "image#natal-buy-by-brands-mob",
+      "flex-layout.col#natal-buy-by-brands"
+    ],
+    "props": {
+      "blockClass": "natal-buy-by-brands",
+      // "fullWidth": true,
+      "preventVerticalStretch": true,
+      "colSizing": "auto"
+    }
+  },
+  "image#natal-buy-by-brands-desk": {
+    "title": "Panda | Compre por Marca - Imagem (Desktop)",
+    "props": {
+      "src": "assets/img/buy-by-brands-desk.png",
+      "blockClass": ["natal-buy-by-brands-bg", "natal-buy-by-brands-desk"]
+    }
+  },
+  "image#natal-buy-by-brands-mob": {
+    "title": "Panda | Compre por Marca - Imagem (Mobile)",
+    "props": {
+      "src": "assets/img/buy-by-brands-mob2.png",
+      "blockClass": ["natal-buy-by-brands-bg", "natal-buy-by-brands-mob"]
+    }
+  },
+  "flex-layout.col#natal-buy-by-brands": {
+    "props": {
+      "blockClass": "natal-buy-by-brands-col",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#natal-buy-by-brands-title",
+      "list-context.media-list#natal-buy-by-brands"
+    ]
+  },
+  "rich-text#natal-buy-by-brands-title": {
+    "title": "Panda | Compre por Marca - Título",
+    "props": {
+      "text": "## NAVEGUE POR **MARCAS**",
+      "blockClass": ["natal-buy-by-brands-title", "natal-25-title"]
+    }
+  },
+  "list-context.media-list#natal-buy-by-brands": {
+    "title": "Panda | Compre por Marca - Lista de Marcas",
+    "children": ["slider-layout#natal-buy-by-brands"],
+    "props": {
+      "blockClass": ["list-brands-home", "list-natal-buy-by-brands"],
+      "mediaList": [
+        {
+          "image": "/arquivos/nike-brands.png",
+          "mobileImage": "/arquivos/nike-brands.png",
+          "link": {
+            "url": "/nike"
+          }
+        },
+
+        {
+          "image": "/arquivos/jordan-brands.png",
+          "mobileImage": "/arquivos/jordan-brands.png",
+          "link": {
+            "url": "/jordan"
+          }
+        },
+
+        {
+          "image": "/arquivos/adidas-brands.png",
+          "mobileImage": "/arquivos/adidas-brands.png",
+          "link": {
+            "url": "/adidas"
+          }
+        },
+
+        {
+          "image": "/arquivos/puma-brands.png",
+          "mobileImage": "/arquivos/puma-brands.png",
+          "link": {
+            "url": "/puma"
+          }
+        },
+
+        {
+          "image": "/arquivos/converse-brands.png",
+          "mobileImage": "/arquivos/converse-brands.png",
+          "link": {
+            "url": "/converse"
+          }
+        },
+
+        {
+          "image": "/arquivos/vans-brands.png",
+          "mobileImage": "/arquivos/vans-brands.png",
+          "link": {
+            "url": "/vans"
+          }
+        },
+
+        {
+          "image": "/arquivos/fila-brands.png",
+          "mobileImage": "/arquivos/fila-brands.png",
+          "link": {
+            "url": "/fila"
+          }
+        },
+
+        {
+          "image": "/arquivos/crocs-brands.png",
+          "mobileImage": "/arquivos/crocs-brands.png",
+          "link": {
+            "url": "/crocs"
+          }
+        },
+
+        {
+          "image": "/arquivos/asics-brands.png",
+          "mobileImage": "/arquivos/asics-brands.png",
+          "link": {
+            "url": "/asics"
+          }
+        },
+
+        {
+          "image": "/arquivos/skechers-brands.png",
+          "mobileImage": "/arquivos/skechers-brands.png",
+          "link": {
+            "url": "/skechers"
+          }
+        },
+
+        {
+          "image": "/arquivos/rider-brands.png",
+          "mobileImage": "/arquivos/rider-brands.png",
+          "link": {
+            "url": "/chinelos-e-sandalias-infantis/rider"
+          }
+        },
+
+        {
+          "image": "/arquivos/Umbro_logo-brands.png",
+          "mobileImage": "/arquivos/Umbro_logo-brands.png",
+          "link": {
+            "url": "/umbro"
+          }
+        },
+
+        {
+          "image": "/arquivos/olympikus-brands.png",
+          "mobileImage": "/arquivos/olympikus-brands.png",
+          "link": {
+            "url": "/olympikus"
+          }
+        },
+
+        {
+          "image": "/arquivos/nba-brands.png",
+          "mobileImage": "/arquivos/nba-brands.png",
+          "link": {
+            "url": "/nba"
+          }
+        },
+
+        {
+          "image": "/arquivos/jansport-brands.png",
+          "mobileImage": "/arquivos/jansport-brands.png",
+          "link": {
+            "url": "/jansport"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#natal-buy-by-brands": {
+    "title": "Panda | Marcas - Slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      // "autoplay": {
+      //   "timeout": 5000,
+      //   "stopOnHover": true
+      // },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "centerMode": {
+        "desktop": "to-the-left",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 8,
+      "blockClass": ["list-brands-home", "natal-buy-by-brands"]
+    }
+  }
+}

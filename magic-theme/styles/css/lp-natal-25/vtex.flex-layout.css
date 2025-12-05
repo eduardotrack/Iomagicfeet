@@ -1,0 +1,174 @@
+.flexRow--row-natal-25-shelf {
+  padding: 69px 67px;
+
+  background-image: url('assets/img/shelf-natal-25-desk2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: right;
+}
+
+.flexRowContent--row-natal-25-shelf {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 70%;
+}
+
+.flexCol--natal-buy-by-age-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0 36px;
+  position: relative;
+}
+
+.flexColChild--natal-buy-by-age-col {
+  width: 100%;
+}
+
+.flexRowContent--natal-buy-by-brands {
+  display: flex;
+  background-color: #E8E6E7;
+  border-radius: 8px;
+  overflow: hidden;
+  gap: 24px;
+  align-items: center;
+
+  > div:first-child {
+    width: 40% !important;
+  }
+
+  > div:last-child {
+    width: 60% !important;
+  }
+}
+
+.flexCol--natal-buy-by-brands-col {
+  gap: 31px;
+}
+
+.flexCol--natal-buy-the-look-col {
+  gap: 24px;
+  align-items: center;
+  padding: 48px 0;
+
+  :global(.magicfeet-magicapp-0-x-combinedProductListWithImage__link) {
+    display: none;
+  }
+}
+
+.flexColChild--natal-buy-the-look-col:not(:first-child) {
+  width: 100%;
+}
+
+.flexRowContent--natal-categories {
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 52px 0 32px;
+  background-color: #502962;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-image: url('https://magicfeet.vtexassets.com/assets/vtex.file-manager-graphql/images/63ab5fd3-a019-459b-a534-822fb558df83___30d1e15ec0d9214c4d6f55d378f422bb.png');
+    background-size: contain;
+    background-position: left center;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+  }
+}
+
+.flexCol--product-info-new-shelf {
+  background-color: #fff;
+}
+
+.flexRow--natal-buy-by-age-row {
+  :global(.vtex-store-components-3-x-container) {
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .flexCol--product-info-new-shelf {
+    .flexRowContent--brand-and-reviews {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .flexRow--row-natal-25-shelf {
+    background-image: url('assets/img/shelf-natal-25-mob2.png');
+    padding: 32px 0 22px;
+    background-position-y: bottom;
+  }
+
+  .flexRowContent--natal-categories {
+    padding: 32px 0 28px;
+  }
+
+  .flexRow--natal-buy-by-age-row {
+    overflow-x: hidden;
+
+    :global(.vtex-store-components-3-x-container) {
+      padding: 0;
+    }
+  }
+
+  .flexRow--natal-buy-by-brands {
+    :global(.vtex-store-components-3-x-container) {
+      padding: 0;
+    }
+  }
+
+  .flexRowContent--natal-buy-by-brands {
+    border-radius: 0;
+    min-height: 340px;
+    padding: 50px 0 139px;
+
+    /* imagem desk */
+    > div:first-child {
+      width: auto !important;
+    }
+
+    /* imagem mobile */
+    > div:nth-child(2) {
+      position: absolute;
+      width: 100% !important;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    /* vitrine */
+    > div:last-child {
+      width: 77% !important;
+      max-width: 289px;
+      position: relative;
+    }
+  }
+
+  .flexCol--natal-buy-by-age-col {
+    padding: 24px 0 12px;
+  }
+
+  .flexCol--natal-buy-the-look-col {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .flexRow--shelf--col {
+    max-width: 213px;
+  }
+
+  .flexRowContent--row-natal-25-shelf {
+    width: 75%;
+  }
+}

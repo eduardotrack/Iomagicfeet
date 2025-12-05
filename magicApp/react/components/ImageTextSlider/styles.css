@@ -1,0 +1,206 @@
+.imageTextSlider__container {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.imageTextSlider__title {
+  .paragraph {
+    margin: 0;
+    font-family: "WorkSans-Regular", sans-serif;
+    font-size: 32px;
+    line-height: 17.5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    .strong {
+      font-family: "WorkSans-Bold", sans-serif;
+      font-weight: 700;
+    }
+  }
+}
+
+.imageTextSlider__sliderWrapper {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 18px;
+}
+
+.imageTextSlider__slick {
+  position: relative;
+}
+
+.imageTextSlider__slick :global(.slick-list) {
+  width: 100%;
+  overflow: hidden;
+}
+
+.imageTextSlider__slick :global(.slick-track) {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageTextSlider__slick :global(.slick-slide) {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  opacity: 0.4;
+
+  > div {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.imageTextSlider__slick :global(.slick-center) {
+  opacity: 1;
+}
+
+.imageTextSlider__slick :global(.slick-arrow) {
+  z-index: 5;
+  top: -32px;
+  width: 21px;
+  height: 18px;
+}
+
+.imageTextSlider__slick :global(.slick-prev) {
+  left: unset;
+  right: calc(20% + 40px);
+
+  &::before {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 18px;
+    background-image: url('data:image/svg+xml,<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.1423 18L10.7131 16.4725L4.24549 10.1056H21V7.89209H4.24549L10.7131 1.54636L9.1423 0L0 9L9.1423 18Z" fill="white"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+}
+
+.imageTextSlider__slick :global(.slick-next) {
+  right: 20%;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 21px;
+    height: 18px;
+    background-image: url('data:image/svg+xml,<svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.8577 18L10.2869 16.4725L16.7545 10.1056H0V7.89209H16.7545L10.2869 1.54636L11.8577 0L21 9L11.8577 18Z" fill="white"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+}
+
+/* slide individual */
+.imageTextSlider__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  box-sizing: border-box;
+  outline: none;
+  height: 100%;
+}
+
+/* link que envolve a imagem */
+.imageTextSlider__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+/* imagem do slide */
+.imageTextSlider__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  display: block;
+  object-fit: cover;
+}
+
+/* container do texto (full width) */
+.imageTextSlider__textContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  box-sizing: border-box;
+  height: 60px;
+  max-height: 60px;
+  overflow: visible;
+}
+
+.imageTextSlider__textContent {
+  max-width: 980px;
+  width: 100%;
+  box-sizing: border-box;
+
+  animation: imageTextSlider__fadeIn 350ms ease both;
+
+  .paragraph {
+    font-size: 32px;
+    font-style: italic;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+  }
+}
+
+/* animação de fade/slide-up */
+@keyframes imageTextSlider__fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .imageTextSlider__title {
+    .paragraph {
+      font-size: 24px;
+    }
+  }
+
+  .imageTextSlider__textContent {
+    max-width: 80%;
+
+    .paragraph {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .imageTextSlider__slick :global(.slick-arrow) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .imageTextSlider__slick :global(.slick-prev) {
+    left: 10px;
+    right: unset;
+  }
+
+  .imageTextSlider__slick :global(.slick-next) {
+    right: 10px;
+  }
+}

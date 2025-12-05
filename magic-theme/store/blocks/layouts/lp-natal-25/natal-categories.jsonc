@@ -1,0 +1,45 @@
+{
+  "flex-layout.row#natal-categories": {
+    "title": "Panda | Natal - Categorias",
+    "children": [
+      "pd-ImageTextSlider#natal-categories"
+    ],
+    "props": {
+      "blockClass": "natal-categories",
+      "fullWidth": true
+    }
+  },
+  "pd-ImageTextSlider#natal-categories": {
+    "props": {
+      "slidesToShow": 3,
+      "items": [
+        {
+          "image": "https://cdn.dribbble.com/userupload/19599061/file/original-176230316bdef50651c4b4bf43310aea.gif",
+          "text": "**tênis infantis** que fazem a diferença no dia a dia das crianças",
+          "link": "/example"
+        },
+        {
+          "image": "assets/img/natal-buy-the-look1.png",
+          "text": "lorem ipsum dolor **sit amet**, consectetur adipiscing elit nullam sed ornare nunc",
+          "link": "/example"
+        },
+        {
+          "image": "assets/img/natal-buy-the-look1.png",
+          "text": "nulla ultrices tortor vel purus gravida, in venenatis arcu aliquet. duis imperdiet eu mauris a scelerisque",
+          "link": "/example"
+        },
+        {
+          "image": "assets/img/natal-buy-the-look1.png",
+          "text": "**tênis infantis** que fazem a diferença no dia a dia das crianças",
+          "link": "/example"
+        },
+        {
+          "image": "assets/img/natal-buy-the-look1.png",
+          "text": "nulla ultrices tortor vel purus gravida, in venenatis arcu aliquet. duis imperdiet eu mauris a scelerisque",
+          "link": "/example"
+        }
+      ]
+    }
+  }
+
+}

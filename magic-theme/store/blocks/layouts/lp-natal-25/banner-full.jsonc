@@ -1,0 +1,33 @@
+{
+  "list-context.image-list#banners-slider-natal25":{
+    "title": "Panda | Natal - Lista de imagens slider",
+    "props": {
+    "blockClass": "list-image-conheca-mf",
+    "preload": false,
+    "images": [
+      {
+        "image": "assets/img/banner-natal-25-desk.png",
+        "mobileImage": "assets/img/banner-natal-25-mob.png"
+      }
+    ]
+    },
+    "children": ["slider-layout#slider-natal-25"]
+  },
+  
+  
+  "slider-layout#slider-natal-25": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "fullWidth": true,
+        "blockClass": "carousel-conheca-MF"
+      }
+      
+    }
+  }
