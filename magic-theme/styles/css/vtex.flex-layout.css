@@ -1912,6 +1912,10 @@
   margin-top: 65px;
 }
 
+.flexRow--home-genders-cards {
+  margin-top: 30px;
+}
+
 .flexRow--home-week-featured {
   overflow: hidden;
 }
