@@ -27,6 +27,7 @@
 
       // "flex-layout.row#best-sellers-home",
       "flex-layout.row#vitrine-position-home",
+      "experimental__visibility-layout#home-banner-benefits",
       "experimental__visibility-layout#favorite-character",
       "flex-layout.row#infocard-categorias",
       "experimental__visibility-layout#sports-shelf",

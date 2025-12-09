@@ -1,0 +1,58 @@
+{
+  "experimental__visibility-layout#home-banner-benefits": {
+    "title": "Panda | Slider de Banners (On/Off)",
+    "children": [
+      "flex-layout.row#home-banner-benefits"
+    ],
+    "props": {
+      "visible": true,
+      "blockClass": "home-banner-slider"
+    }
+  },
+  "flex-layout.row#home-banner-benefits": {
+    "props": {
+      "blockClass": "home-banner-row"
+    },
+    "children": [
+      "list-context.image-list#home-banner-benefits"
+    ]
+  },
+  "list-context.image-list#home-banner-benefits": {
+    "title": "Panda | Banner Benefícios",
+    "children": ["slider-layout#home-banner-benefits"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/img/home-benefits-desk.png",
+          "mobileImage": "assets/img/home-benefits-mob.png",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "assets/img/home-benefits-desk.png",
+          "mobileImage": "assets/img/home-benefits-mob.png",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#home-banner-benefits": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }, 
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "autoplay":{
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "blockClass": ["home__slider", "home-banner-slider"]
+    }
+  }
+}

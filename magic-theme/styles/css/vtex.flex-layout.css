@@ -2106,6 +2106,10 @@
   }
 }
 
+.flexRow--home-banner-row {
+  margin: 32px 0;
+}
+
 /* Tablet */
 .flexRowContent--tips-core-pages
   :global(.vtex-flex-layout-0-x-flexRowContent--tips-home-row) {
@@ -2113,6 +2117,10 @@
 }
 
 @media (max-width: 990px) {
+  .flexRow--home-banner-row {
+    margin: 24px 0 12px;
+  }
+
   .flexRowContent--header__main {
     display: flex;
     justify-content: space-between;
