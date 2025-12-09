@@ -5,7 +5,7 @@
       "flex-layout.row#home-banner-benefits"
     ],
     "props": {
-      "visible": true,
+      "visible": false,
       "blockClass": "home-banner-slider"
     }
   },
