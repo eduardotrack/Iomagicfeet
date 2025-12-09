@@ -14,23 +14,21 @@
 }
 
 .imageContainer--shelf__image-category-new-shelf {
-  aspect-ratio: 4 / 5;
   display: flex;
   justify-content: center;
 }
 
 .image--shelf__image-category-new-shelf {
-  width: auto !important;
   max-width: 100%;
   height: 100% !important;
-  object-fit: cover !important;
-  transition: all .4s ease-in-out;
+  /* object-fit: cover !important; */
+  /* margin: auto 0; */
+  transition: all .3s ease-in-out;
 }
 
 @media screen and (max-width: 990px) {
   .imageContainer--shelf__image-category-new-shelf {
     background-color: #D9D9D9;
-    aspect-ratio: unset;
   }
 
   .element--product__summary--new-shelf {

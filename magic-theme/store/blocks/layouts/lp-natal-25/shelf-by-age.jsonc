@@ -93,7 +93,8 @@
   "image#buy-by-age-mascot-mob": {
     "title": "Panda | Compre por Idade - Mascote Mobile",
     "props": {
-      "src": "assets/img/buy-by-age-mascot-mob.png",
+      "src": "assets/img/buy-by-age-mascot2.png",
+      "maxWidth": "162px",
       "blockClass": "buy-by-age-mascot-mob"
     }
   },

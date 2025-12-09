@@ -44,6 +44,7 @@
 
 .contentContainer--natal-25-shelf-tabs-content {
   margin-top: 16px;
+  min-height: 23vw;
 }
 
 @media screen and (max-width: 990px) {

@@ -21,15 +21,15 @@
     "children": [
       "flex-layout.row#brand-and-reviews",
       "product-summary-name#name-category",
-      "condition-layout.product#availability-summary-category-pix",
-      "product-price-savings#category-discount"
+      "condition-layout.product#availability-summary-category-pix"
     ]
   },
 
   "stack-layout#prodsum-category-new-shelf": {
     "children": [
       "product-summary-image#shelf-new-shelf",
-      "flex-layout.col#product-info-new-shelf"
+      "flex-layout.col#product-info-new-shelf",
+      "product-price-savings#category-discount"
       // "flex-layout.col#product-info-new-shelf"
       // "flex-layout.row#highlights-wrapper-category" 
     ],

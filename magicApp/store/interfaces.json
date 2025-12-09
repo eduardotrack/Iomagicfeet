@@ -189,5 +189,9 @@
   },
   "pd-ImageTextSlider": {
     "component": "ImageTextSlider"
+  },
+  "pd-CombinedProductListNatal": {
+    "component": "CombinedProductListNatal",
+    "composition": "children"
   }
 }

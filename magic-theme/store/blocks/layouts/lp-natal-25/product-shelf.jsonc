@@ -109,7 +109,7 @@
     "children": ["slider-layout#shelf-natal-25-01"],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
-      "collection": "",
+      "collection": "400",
       "category": "",
       "hideUnavailableItems": true,
       "maxItems": 10

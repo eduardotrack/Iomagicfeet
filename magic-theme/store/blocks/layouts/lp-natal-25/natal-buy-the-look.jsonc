@@ -15,7 +15,7 @@
     },
     "children": [
       "rich-text#natal-buy-the-look-title",
-      "combined-product-list.with-image#ads-buy-the-look"
+      "pd-CombinedProductListNatal#ads-buy-the-look"
     ]
   },
   "rich-text#natal-buy-the-look-title": {
@@ -25,13 +25,13 @@
       "blockClass": ["natal-buy-the-look-title", "natal-25-title"]
     }
   },
-  "combined-product-list.with-image#ads-buy-the-look": {
+  "pd-CombinedProductListNatal#ads-buy-the-look": {
     "title": "Slider de Produtos",
     "props": {
       "Slider": "slider-layout#ads-buy-the-look-cards",
       // "productCounterIcon": "assets/img/icons/icon-cart-white.svg",
       "showProductsCounter": true,
-      "ProductSummary": "product-summary.shelf#modal-list",
+      // "ProductSummary": "product-summary.shelf#modal-list",
       "ProductSummaryRenderDesktop": "list-context-renderer#ads-buy-the-look-shelf",
       "ProductSummaryRenderMobile": "list-context-renderer#ads-buy-the-look-shelf",
       "ModalTrigger": "modal-trigger#ads-buy-the-look",
