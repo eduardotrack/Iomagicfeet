@@ -1,0 +1,85 @@
+.imageElement--buy-by-age-mascot-desk {
+  position: absolute;
+  top: -90px;
+  left: 0;
+  pointer-events: none;
+}
+
+.imageElement--buy-by-age-tape {
+  position: absolute;
+  top: 46px;
+  right: 16.5%;
+  width: 200px;
+  height: auto;
+  pointer-events: none;
+}
+
+.imageElement--natal-buy-by-brands-desk {
+  width: 100%;
+  height: auto;
+}
+
+.imageElementLink--natal-buy-by-brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border: 1.09px solid #B5B5B5;
+  box-shadow: 0px 3px 4px 0px #0000001A;
+  border-radius: 8px;
+}
+
+.imageElement--natal-buy-by-brands {
+  width: 25% !important;
+  height: auto;
+}
+
+.imageElement--buy-by-age-mascot-mob {
+  display: none;
+  pointer-events: none;
+}
+
+.imageElement--natal-buy-by-brands-mob {
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  .imageElementLink--natal-buy-by-age {
+    width: 100%;
+  }
+
+  .imageElement--buy-by-age-mascot-desk {
+    display: none;
+  }
+
+  .imageElement--buy-by-age-mascot-mob {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+  }
+
+  .imageElement--buy-by-age-tape {
+    right: -28px;
+    transform: rotate(15deg);
+    width: 128px;
+  }
+
+  .imageElement--natal-buy-by-brands-mob {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .imageElement--natal-buy-by-brands-desk {
+    display: none;
+  }
+
+  .imageElement--natal-buy-by-brands {
+    width: 40% !important;
+  }
+}

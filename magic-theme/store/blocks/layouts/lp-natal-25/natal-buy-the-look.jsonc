@@ -1,0 +1,114 @@
+{
+  "flex-layout.row#natal-buy-the-look": {
+    "title": "Panda | Compre o Look",
+    "children": [
+      "flex-layout.col#natal-buy-the-look"
+    ],
+    "props": {
+      "blockClass": "natal-buy-the-look"
+    }
+  },
+  "flex-layout.col#natal-buy-the-look": {
+    "props": {
+      "blockClass": "natal-buy-the-look-col",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#natal-buy-the-look-title",
+      "pd-CombinedProductListNatal#ads-buy-the-look"
+    ]
+  },
+  "rich-text#natal-buy-the-look-title": {
+    "title": "Panda | Compre o Look - Título",
+    "props": {
+      "text": "## O **LOOK** PERFEITO",
+      "blockClass": ["natal-buy-the-look-title", "natal-25-title"]
+    }
+  },
+  "pd-CombinedProductListNatal#ads-buy-the-look": {
+    "title": "Slider de Produtos",
+    "props": {
+      "Slider": "slider-layout#ads-buy-the-look-cards",
+      // "productCounterIcon": "assets/img/icons/icon-cart-white.svg",
+      "showProductsCounter": true,
+      // "ProductSummary": "product-summary.shelf#modal-list",
+      "ProductSummaryRenderDesktop": "list-context-renderer#ads-buy-the-look-shelf",
+      "ProductSummaryRenderMobile": "list-context-renderer#ads-buy-the-look-shelf",
+      "ModalTrigger": "modal-trigger#ads-buy-the-look",
+      "ModalContent": "modal-layout#ads-buy-the-look",
+      "useModal": {
+        "(max-width: 1120px)": true,
+        "desktop": false
+      },
+      "modalTitle": "complete seu look",
+      "showButton": true,
+      "buttonText": "ver look completo",
+      "items": [
+        {
+          "image": "assets/img/natal-buy-the-look1.png",
+          "query": {
+            "collection": "398",
+            "maxItems": 4
+          },
+          "productIds": [
+            "2025477",
+            "2026080",
+            "2012002",
+            "2013530"
+          ]
+        },
+        {
+          "image": "assets/img/natal-buy-the-look1.png",
+          "query": {
+            "collection": "398",
+            "maxItems": 4
+          },
+          "productIds": [
+            "2025477",
+            "2026080",
+            "2012002",
+            "2013530"
+          ]
+        }
+      ]
+    }
+  },
+  "slider-layout#ads-buy-the-look-cards": {
+    "title": "Slider Cards",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      // "centerMode": {
+      //   "desktop": "disabled",
+      //   "tablet": "disabled",
+      //   "phone": "to-the-left"
+      // },
+      // "centerModeSlidesGap": 8,
+      "fullWidth": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "infinite": true,
+      "blockClass": ["dark-arrows", "home-buy-the-look-cards", "ads-buy-the-look-cards"]
+    }
+  },
+  "list-context-renderer#ads-buy-the-look-shelf": {
+    "props": {
+      "blockClass": ["home-buy-the-look"],
+      "listElement": "ul",
+      "itemElement": "li"
+    }
+  },
+  "modal-trigger#ads-buy-the-look": {
+    "props": {
+      "blockClass": ["home-modal", "home-buy-the-look"]
+    }
+  },
+  "modal-layout#ads-buy-the-look": {
+    "props": {
+      "blockClass": ["home-modal", "home-buy-the-look"]
+    }
+  }
+}

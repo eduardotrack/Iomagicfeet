@@ -1,0 +1,56 @@
+.listContainer--natal-25-shelf-tabs {
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.listItem--natal-25-shelf-tab {
+  padding: 0;
+  margin: 0;
+
+  :global(.vtex-button) {
+    border: none;
+    height: fit-content;
+    min-height: unset;
+  }
+
+  :global(.vtex-button__label) {
+    padding: 0 !important;
+    font-family: 'WorkSans-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1C1C1C;
+    border-bottom: 1px solid transparent;
+  }
+
+  &:hover :global(.vtex-button) {
+    background-color: transparent;
+  }
+}
+
+.listItemActive--natal-25-shelf-tab {
+  :global(.vtex-button) {
+    background-color: transparent;
+  }
+
+  :global(.vtex-button__label) {
+    border-color: #1C1C1C;
+  }
+
+  &:hover :global(.vtex-button) {
+    opacity: 1;
+  }
+}
+
+.contentContainer--natal-25-shelf-tabs-content {
+  margin-top: 16px;
+  min-height: 23vw;
+}
+
+@media screen and (max-width: 990px) {
+  .listItem--natal-25-shelf-tab {
+    :global(.vtex-button__label) {
+      font-size: 16px;
+    }
+  }
+}

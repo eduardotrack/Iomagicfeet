@@ -1,0 +1,27 @@
+{
+  "store.custom#natal-25": {
+    "blocks": [
+      "flex-layout.row#banner-natal-25",
+      "flex-layout.row#natal-25-shelf",
+      "flex-layout.row#natal-categories",
+      "flex-layout.row#natal-buy-by-age",
+      "flex-layout.row#natal-buy-by-brands",
+      "flex-layout.row#natal-buy-the-look",
+      "rich-text#category"
+    ]
+  },
+  "flex-layout.row#banner-natal-25": {
+    "children": [
+      "experimental__visibility-layout#natal25--banner"
+    ],
+    "props": {
+      "blockClass": "natal25--banner",
+      "fullWidth": true
+    }
+  },
+  "experimental__visibility-layout#natal25--banner": {
+    "children": [
+      "list-context.image-list#banners-slider-natal25"
+    ]
+  }
+}
