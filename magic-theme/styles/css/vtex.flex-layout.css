@@ -443,12 +443,20 @@
   width: 350px;
 }
 
+.flexRow--home-week-featured-top {
+  margin-bottom: 8px;
+}
+
 @media (max-width: 767px) {
   .flexRowContent--header__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px 20px;
+  }
+
+  .flexRow--home-week-featured-top {
+    margin-bottom: 10px;
   }
 }
 

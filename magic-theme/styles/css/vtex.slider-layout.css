@@ -155,11 +155,11 @@
   }
 
   
-.slideChildrenContainer--slider-top {
-  :global(.magicfeet-magicapp-0-x-combinedProductList__textCard) {
-    margin-right: 0;
+  .slideChildrenContainer--slider-top {
+    :global(.magicfeet-magicapp-0-x-combinedProductList__textCard) {
+      margin-right: 0;
+    }
   }
-}
 }
 
 .sliderLayoutContainer--quemsomos__slider {
@@ -434,8 +434,8 @@
     }
   }
 
-  .sliderTrack--home-week-featured {
-    gap: 12px;
+  .slide--home-week-featured {
+    padding: 0 4px;
   }
 
   .paginationDotsContainer--baixe-app-mobile {

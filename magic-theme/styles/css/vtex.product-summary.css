@@ -11,6 +11,10 @@
     max-width: unset !important;
 }
 
+.element--shelf-mini-solid {
+    padding: 0;
+}
+
 @media (max-width: 767px) {
     .containerNormal {
         margin: 0px;
