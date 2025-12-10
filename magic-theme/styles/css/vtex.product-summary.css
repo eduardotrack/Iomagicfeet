@@ -7,6 +7,10 @@
     margin: 0px;
 }
 
+.containerNormal--shelf-mini {
+    max-width: unset !important;
+}
+
 @media (max-width: 767px) {
     .containerNormal {
         margin: 0px;
