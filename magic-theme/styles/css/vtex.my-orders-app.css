@@ -1,3 +1,4 @@
 .cancelBtn {
     display: none !important;
+    visibility: hidden;
 }
