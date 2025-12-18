@@ -21,7 +21,7 @@
       "pd-ChangeTagLogin",
       "pd-popupNewsletter",
 
-      "pd-OrderPlacedSmarthint",
+      // "pd-OrderPlacedSmarthint",
       
       "pd-remove-cancel-order",
       "pd-ColorsChanger" /* ,
@@ -91,7 +91,7 @@
       "width": "40%",
       "blockClass": "header__search"
     },
-    "children": ["smart-search-bar"]
+    "children": ["search-bar"]
   },
   "flex-layout.col#logo-desktop": {
     "title": "Panda | Header - Logo",
@@ -209,7 +209,7 @@
       "experimental__visibility-layout#bf-countdown",
       "pd-ChangeTagLogin",
       "pd-popupNewsletter",
-      "pd-OrderPlacedSmarthint",
+      // "pd-OrderPlacedSmarthint",
       "pd-MobileHeaderScrollControl",
       "pd-remove-cancel-order",
       "pd-BlockZoomOnInput",
@@ -258,7 +258,7 @@
       "slideDirection": "horizontal",
       "blockClass": "header__drawer--search"
     },
-    "children": ["smart-search-bar", "pd-ControlCloseModalWhenSearching"]
+    "children": ["search-bar", "pd-ControlCloseModalWhenSearching"]
   },
 
   "logo#mobile": {

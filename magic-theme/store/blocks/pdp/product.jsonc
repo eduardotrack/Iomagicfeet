@@ -50,7 +50,7 @@
       // "retail-rocket-container#pdp1",
       // "retail-rocket-container#pdp2",
       "flex-layout.row#product-faq",
-      "flex-layout.row#vitrine-position-pdp",
+      // "flex-layout.row#vitrine-position-pdp",
       "responsive-layout.mobile#share-pdp"
     ],
     "props": {

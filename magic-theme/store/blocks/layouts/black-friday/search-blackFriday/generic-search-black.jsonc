@@ -126,7 +126,7 @@
 
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore",
-      "flex-layout.row#vitrine-plp",
+      // "flex-layout.row#vitrine-plp",
 
       // "flex-layout.row#search-seo-title",
       "rich-text#category"

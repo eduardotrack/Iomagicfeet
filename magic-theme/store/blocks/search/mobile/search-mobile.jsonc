@@ -20,7 +20,7 @@
       "flex-layout.row#fetchmore",
 
       // "flex-layout.row#search-seo-title",
-      "flex-layout.row#vitrine-plp",
+      // "flex-layout.row#vitrine-plp",
       "rich-text#category"
     ],
     "props": {
