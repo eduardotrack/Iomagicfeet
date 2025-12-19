@@ -1,0 +1,26 @@
+.sliderLayoutContainer--crm-slider {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.paginationDot--crm-slider {
+  background-color: #1C1C1C;
+  width: 7px !important;
+  height: 7px !important;
+}
+
+.paginationDot--crm-slider--isActive {
+  background-color: transparent;
+  border: 2px solid #1C1C1C;
+  width: 5.5px !important;
+  height: 15.5px !important;
+  margin-top: 1px;
+}
+
+@media screen and (max-width: 990px) {
+  .sliderLayoutContainer--crm-slider {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+}

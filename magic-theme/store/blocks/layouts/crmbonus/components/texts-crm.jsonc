@@ -14,7 +14,7 @@
         "children": ["rich-text#texto-crm-store-Desk"]
       },
   
-      "responsive-layout.phone#texto-crm-store-Mob": {
+      "responsive-layout.mobile#texto-crm-store-Mob": {
         "title": "Panda | Texto intro loja Desktop Mobile - crm",
         "children": [ "rich-text#texto-crm-store-Mob"]
       },

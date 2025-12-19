@@ -1,0 +1,60 @@
+{
+  "flex-layout.row#store-crm-cards-01": {
+    "children": [
+      "responsive-layout.desktop#store-crm-Desk-01",
+      "responsive-layout.mobile#store-crm-Mob-01"
+    ],
+    "props": {
+      "colSizing": "auto"
+    }
+  },
+  "responsive-layout.desktop#store-crm-Desk-01": {
+    "title": "Panda | Lojas Desktop- crm",
+    "children": ["flex-layout.row#store-crm-Desk-01"]
+  },
+
+  "responsive-layout.mobile#store-crm-Mob-01": {
+    "title": "Panda | Lojas Mobile - crm",
+    "children": ["flex-layout.row#store-crm-Mob-01"]
+  },
+
+  "flex-layout.row#store-crm-Desk-01": {
+    "title": "Panda | Lojas Desktop- crm",
+    "children": ["rich-text#texto-lojas-crm-01", "image#image-loja-crm-01"],
+    "props": {
+      "blockClass": "block-lojas-crm"
+    }
+  },
+
+  "flex-layout.row#store-crm-Mob-01": {
+    "title": "Panda | Lojas Mobile - crm",
+    "children": ["rich-text#texto-lojas-crm-01", "image#image-loja-crm-Mob-01"],
+    "props": {
+      "blockClass": "block-lojas-crm"
+    }
+  },
+
+  "rich-text#texto-lojas-crm-01": {
+    "title": "Panda | Texto lojas - crm",
+    "props": {
+      "text": "## Título \n- shopping ibirapuera \n- BOURBON SHOPPING \n- JOCKEY PLAZA SHOPPING",
+      "blockClass": "texto-lojas-crm",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "image#image-loja-crm-01": {
+    "title": "Panda | Imagem loja Desktop- crm",
+    "props": {
+      "src": "/arquivos/loja-Magicfeet.png",
+      "blockClass": "image-lojas-crm"
+    }
+  },
+  "image#image-loja-crm-Mob-01": {
+    "title": "Panda | Imagem loja Mobile - crm",
+    "props": {
+      "src": "/arquivos/loja-magicFeet-mob.png",
+      "blockClass": "image-lojas-crm"
+    }
+  }
+}

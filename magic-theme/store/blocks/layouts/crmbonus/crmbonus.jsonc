@@ -8,9 +8,8 @@
         "flex-layout.row#passo-04-crm",
         "link#cta-confira-regras-crm",
         "responsive-layout.desktop#texto-crm-store-Desk",
-        "responsive-layout.phone#texto-crm-store-Mob",
-        "responsive-layout.desktop#store-crm-Desk",
-        "responsive-layout.phone#store-crm-Mob"
+        "responsive-layout.mobile#texto-crm-store-Mob",
+        "slider-layout#store-crm"
       ]
     },
 

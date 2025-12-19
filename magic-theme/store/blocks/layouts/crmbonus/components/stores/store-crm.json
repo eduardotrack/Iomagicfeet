@@ -1,0 +1,24 @@
+{
+  "slider-layout#store-crm": {
+    "title": "Panda | Slider CRM",
+    "props": {
+      "blockClass": ["tips-home-row", "crm-slider"],
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly"
+    },
+    "children": [
+      "flex-layout.row#store-crm-cards-01",
+      "flex-layout.row#store-crm-cards-02",
+      "flex-layout.row#store-crm-cards-03",
+      "flex-layout.row#store-crm-cards-04",
+      "flex-layout.row#store-crm-cards-05",
+      "flex-layout.row#store-crm-cards-06"
+    ]
+  }
+}

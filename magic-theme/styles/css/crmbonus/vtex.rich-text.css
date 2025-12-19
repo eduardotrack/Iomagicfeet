@@ -112,15 +112,37 @@
   line-height: 1.2;
 }
 
+.wrapper--texto-lojas-crm {
+  padding: 16px;
+}
+
+.heading--texto-lojas-crm {
+  margin: 0;
+  text-align: left;
+  color: #000;
+  font-size: 20px;
+}
+
 .listItem--texto-lojas-crm {
   text-align: left;
+  margin: 8px 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
 }
 
 .list--texto-lojas-crm {
   color: black;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 900;
+  line-height: 120%;
   text-transform: uppercase;
+  padding: 0;
+
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  list-style-position: inside;
 }
 
 .container--bannerPrincipal-crm{
@@ -140,7 +162,10 @@
   font-weight: 900;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 990px) {
+  .listItem--texto-lojas-crm {
+    font-size: 16px;
+  }
 
   .container--bannerPrincipal-crm{
     width: 100% !important;
@@ -215,7 +240,11 @@
   }
 
   .list--texto-lojas-crm{
-    padding: 20px 0px;
-    font-size: 18px;
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .wrapper--texto-lojas-crm { 
+    padding: 32px 16px 16px;
   }
 }
