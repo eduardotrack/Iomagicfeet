@@ -20,7 +20,7 @@
 
   "flex-layout.row#store-crm-Desk-02": {
     "title": "Panda | Lojas Desktop- crm",
-    "children": ["rich-text#texto-lojas-crm-02", "image#image-loja-crm-02"],
+    "children": ["rich-text#texto-lojas-crm-02"],
     "props": {
       "blockClass": "block-lojas-crm"
     }
@@ -28,7 +28,7 @@
 
   "flex-layout.row#store-crm-Mob-02": {
     "title": "Panda | Lojas Mobile - crm",
-    "children": ["rich-text#texto-lojas-crm-02", "image#image-loja-crm-Mob-02"],
+    "children": ["rich-text#texto-lojas-crm-02"],
     "props": {
       "blockClass": "block-lojas-crm"
     }
