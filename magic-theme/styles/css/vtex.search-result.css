@@ -477,6 +477,12 @@
         justify-content:  center;
     }
 
+    :global(.vtex__icon-check) {
+        color: #fff;
+    }
+}
+
+.accordionFilterOpen--filter-navigator--cor {
     /* INICIO cores para filtro */
     :global(.vtex-checkbox__label) {
         &[for="Amarelo"]::after {
@@ -628,10 +634,6 @@
         }
     }
     /* FIM cores para filtro */
-
-    :global(.vtex__icon-check) {
-        color: #fff;
-    }
 }
 
 .orderByButton {

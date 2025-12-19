@@ -4,16 +4,49 @@ import { waitForElement } from '../../utils/waitForElement'
 import ReactDOM from 'react-dom'
 import styles from './styles.css'
 
-function AppliedFiltersElement({ breadcrumbs, onRemove }) {
+const normalize = (str = '') =>
+  str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+
+const normalizeFilterValue = (str = '') =>
+  normalize(str).replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim()
+
+const CUSTOM_CATEGORIES = [
+  'presentes',
+  'novidades',
+  'roupas',
+  'tênis',
+  'chinelos e sandálias',
+  'acessórios',
+  'marcas',
+  'outlet',
+  'black-friday',
+  'promoções',
+  'lançamentos',
+  'todos produtos',
+  'todos-produtos',
+]
+
+const NORMALIZED_CUSTOM_CATEGORIES = CUSTOM_CATEGORIES.map(normalize)
+
+/* element */
+function AppliedFiltersElement({ filters, onRemove }) {
   const [isOpen, setIsOpen] = useState(true)
 
-  if (!breadcrumbs?.length) return null
+  if (!filters?.length) return null
+
+  const handleClick = (event, filter) => {
+    event.preventDefault()
+    onRemove(filter)
+  }
 
   return (
     <div className={styles.appliedFiltersContainer}>
       <button
         className={styles.appliedFiltersTitle}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpen((prev) => !prev)}
       >
         <span>Filtros atuais</span>
         <svg className={`${styles.arrow} ${isOpen && styles.open}`} width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,16 +56,17 @@ function AppliedFiltersElement({ breadcrumbs, onRemove }) {
 
       {isOpen && (
         <div className={styles.appliedFiltersWrapper}>
-          {breadcrumbs.map((filter, i) => (
+          {filters.map((filter) => (
             <button
-              key={filter.name}
-              onClick={() => onRemove(i)}
+              key={`${filter.map}-${filter.value}`}
+              onClick={(e) => handleClick(e, filter)}
               className={styles.appliedFiltersItem}
             >
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.144531C3.8525 0.144531 0.5 3.49703 0.5 7.64453C0.5 11.792 3.8525 15.1445 8 15.1445C12.1475 15.1445 15.5 11.792 15.5 7.64453C15.5 3.49703 12.1475 0.144531 8 0.144531ZM11.75 10.337L10.6925 11.3945L8 8.70203L5.3075 11.3945L4.25 10.337L6.9425 7.64453L4.25 4.95203L5.3075 3.89453L8 6.58703L10.6925 3.89453L11.75 4.95203L9.0575 7.64453L11.75 10.337Z" fill="black"/>
               </svg>
-              {filter.name}
+
+              {filter.value}
             </button>
           ))}
         </div>
@@ -41,50 +75,69 @@ function AppliedFiltersElement({ breadcrumbs, onRemove }) {
   )
 }
 
+/* insere o elemento */
 export function AppliedFilters() {
   const { searchQuery } = useSearchPage()
 
   if (typeof window === 'undefined') return null
-  if (!searchQuery?.data?.facets?.breadcrumb?.length) return null
 
-  // console.log('panda searchQuery', searchQuery)
+  const mapArray = searchQuery?.variables?.map?.split(',') || []
 
-  // Protege contra pathname indefinido
-  const path = window?.location?.pathname || ''
-  const urlParts = path.split('/').filter(Boolean)
-  const mainCategory = urlParts?.[urlParts.length - 1]?.toLowerCase() || ''
+  const queryArray =
+    searchQuery?.variables?.query?.split('/').filter(Boolean) || []
 
-  // categorias criadas (vtex trata como filtro)
-  const CUSTOM_CATEGORIES = ['novidades', 'outlet', 'ocasioes', 'marcas', 'black-friday']
+  if (!mapArray.length || !queryArray.length) return null
 
-  // se for categoria customizada não a exclui do filtros aplicados (vtex a trata como filtro)
-  const breadcrumbs = CUSTOM_CATEGORIES.includes(mainCategory) ?
-    searchQuery?.data?.facets?.breadcrumb :
-    searchQuery?.data?.facets?.breadcrumb
-      ?.slice(1)
-      ?.filter(item => item?.name?.toLowerCase() !== mainCategory) || []
+  // cria array de filtros aplicados
+  const appliedFilters = mapArray.map((map, index) => ({
+    map,
+    value: normalizeFilterValue(queryArray[index]),
+    index,
+  }))
 
-  function handleRemove(indexToRemove) {
+  // filtra categorias customizadas (vtex traz categoria como filtro) e ft (full text)
+  const visibleFilters = appliedFilters.filter(
+    ({ map, value }) =>
+      map !== 'ft' &&
+      !NORMALIZED_CUSTOM_CATEGORIES.includes(normalize(value))
+  )
+
+  function handleRemove(filter) {
+    const labels = document.querySelectorAll('.vtex-checkbox__label')
+
+    const normalizedValue = normalizeFilterValue(filter.value)
+
+    // tenta encontrar o filtro real na página
+    const realFilterButton = Array.from(labels).find(
+      (label) =>
+        normalizeFilterValue(label.getAttribute('for')) === normalizedValue
+    )
+
+    console.log('Removendo filtro:', filter, '->', realFilterButton)
+
+    if (realFilterButton) {
+      realFilterButton.click()
+      return
+    }
+
+    // se não encontrar o botão pra fazer o click, remove pela URL
     try {
       const searchParams = new URLSearchParams(window.location.search)
-      const query = searchParams.get('query')?.split('/').filter(Boolean) || []
-      const map = searchParams.get('map')?.split(',') || []
-      const initialMap = searchParams.get('initialMap')
-      const initialQuery = searchParams.get('initialQuery')
 
-      const realIndex = indexToRemove + 1
-      query.splice(realIndex, 1)
-      map.splice(realIndex, 1)
+      const query = searchParams.get('query')?.split('/').filter(Boolean) || []
+
+      const map = searchParams.get('map')?.split(',') || []
+
+      query.splice(filter.index, 1)
+      map.splice(filter.index, 1)
 
       const newUrl = new URL(window.location.origin + window.location.pathname)
-      if (initialMap) newUrl.searchParams.set('initialMap', initialMap)
-      if (initialQuery) newUrl.searchParams.set('initialQuery', initialQuery)
+
       newUrl.searchParams.set('map', map.join(','))
       newUrl.searchParams.set('query', '/' + query.join('/'))
 
-      // Mantém outros parâmetros
       for (const [key, value] of searchParams.entries()) {
-        if (!['map', 'query', 'initialMap', 'initialQuery'].includes(key)) {
+        if (!['map', 'query'].includes(key)) {
           newUrl.searchParams.set(key, value)
         }
       }
@@ -99,38 +152,45 @@ export function AppliedFilters() {
     const filtersContainer = await waitForElement(
       '.vtex-search-result-3-x-accordionFilterContainer--filter-navigator'
     )
-    if (filtersContainer?.[0]) {
-      const existingDiv = filtersContainer[0].querySelector('.applied-filters-container')
-      if (existingDiv) existingDiv.remove()
 
-      const container = document.createElement('div')
-      container.className = 'applied-filters-container'
-      filtersContainer[0].prepend(container)
+    const targetContainer = filtersContainer?.[0]
 
-      ReactDOM.render(
-        <AppliedFiltersElement breadcrumbs={breadcrumbs} onRemove={handleRemove} />,
-        container
-      )
-    }
+    if (!targetContainer) return
+
+    removeAppliedFilters()
+
+    const container = document.createElement('div')
+    container.className = 'applied-filters-container'
+    targetContainer.prepend(container)
+
+    ReactDOM.render(
+      <AppliedFiltersElement filters={visibleFilters} onRemove={handleRemove} />,
+      container
+    )
   }
 
-  async function handleClearFilters() {
-    document.addEventListener('click', ev => {
-      const button = ev.target.closest(
-        '.vtex-search-result-3-x-filterClearButtonWrapper--filter-navigator'
-      )
-      if (!button) return
-
-      ev.preventDefault()
-      ev.stopPropagation()
-      window.location.href = window.location.pathname
-    })
+  function removeAppliedFilters() {
+    const existingDiv = document.querySelector('.applied-filters-container')
+    if (existingDiv) existingDiv.remove()
   }
 
   useEffect(() => {
     insertAppliedFilters()
-    // handleClearFilters()
   }, [searchQuery])
+
+  useEffect(() => {
+    // quando clica em "limpar" a vtex não dispara mudança na searchQuery
+    const clearButton = document.querySelector(
+      '.vtex-search-result-3-x-filterClearButtonWrapper--filter-navigator button'
+    )
+
+    if (!clearButton) return
+
+    // remove os filtros aplicados após limpar
+    clearButton.addEventListener('click', () => {
+      setTimeout(removeAppliedFilters, 500)
+    })
+  }, [])
 
   return null
 }
