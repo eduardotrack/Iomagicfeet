@@ -16,9 +16,7 @@
       "flex-layout.row#store-crm-cards-01",
       "flex-layout.row#store-crm-cards-02",
       "flex-layout.row#store-crm-cards-03",
-      "flex-layout.row#store-crm-cards-04",
-      "flex-layout.row#store-crm-cards-05",
-      "flex-layout.row#store-crm-cards-06"
+      "flex-layout.row#store-crm-cards-04"
     ]
   }
 }

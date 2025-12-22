@@ -4082,7 +4082,7 @@ lz-string@^1.4.4:
   dependencies:
     apollo-client "^2.6.8"
     axios "^0.27.2"
-    magicapp "file:./../../../../../../../../AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-c757be30-b5d7-46ff-97af-88284cd19e00-1764854658976/node_modules/magicapp"
+    magicapp "file:./../../../../../AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-5db0ff83-b3f0-4d45-95fc-3eaa1cb5ced4-1766434949838/node_modules/magicapp"
     react "19.0.0"
     react-apollo "^3.1.3"
     react-dom "19.0.0"
@@ -4093,9 +4093,9 @@ lz-string@^1.4.4:
     slick-carousel "^1.8.1"
     swiper "6.0.0"
 
-"magicfeet.magicapp@https://panda--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.82+build1764854015/public/@types/magicfeet.magicapp":
-  version "0.3.82"
-  resolved "https://panda--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.82+build1764854015/public/@types/magicfeet.magicapp#18382d7e2c27b107f7715ed92a9b03bcaf0b1825"
+"magicfeet.magicapp@https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.84+build1766150114/public/@types/magicfeet.magicapp":
+  version "0.3.84"
+  resolved "https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.84+build1766150114/public/@types/magicfeet.magicapp#c2a6a65b3f683931e7b2094423449613315e0646"
 
 make-dir@^3.0.0:
   version "3.1.0"
@@ -5607,9 +5607,9 @@ verror@1.10.0:
   version "1.18.5"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed-graphql@1.18.5/public/@types/vtex.order-placed-graphql#58d1063ad63c24567ded60668912099e2223e8de"
 
-"vtex.orders-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.113.1/public/@types/vtex.orders-graphql":
-  version "0.113.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.113.1/public/@types/vtex.orders-graphql#bf524761a432d5fb9d80d2013da432a5a9734670"
+"vtex.orders-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.114.1/public/@types/vtex.orders-graphql":
+  version "0.114.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.114.1/public/@types/vtex.orders-graphql#8c814e8c620b149c175b03e3ca06d4242b6f499d"
 
 "vtex.pixel-manager@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.pixel-manager@1.9.0/public/@types/vtex.pixel-manager":
   version "1.9.0"
@@ -5635,13 +5635,13 @@ verror@1.10.0:
   version "0.4.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-values@0.4.2/public/@types/vtex.responsive-values#ba7b7a888e931be81d64e8348d99bd6310385ac9"
 
-"vtex.rich-text@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.0/public/@types/vtex.rich-text":
-  version "0.16.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.0/public/@types/vtex.rich-text#0cdcaccffb37ae0d025894ba7055f69bc3c9aa30"
+"vtex.rich-text@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.1/public/@types/vtex.rich-text":
+  version "0.16.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.1/public/@types/vtex.rich-text#26d53b5bdfb7da97a2e884f85167ead458be9e1d"
 
-"vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.69.3/public/@types/vtex.search-graphql":
-  version "0.69.3"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.69.3/public/@types/vtex.search-graphql#ebbeb1e1572e664f0537dda424ad1ee175434249"
+"vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.69.4/public/@types/vtex.search-graphql":
+  version "0.69.4"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.69.4/public/@types/vtex.search-graphql#e1a758806eab8d1cb695e5cb091e722f8a1cd48f"
 
 "vtex.search-page-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-page-context@0.2.0/public/@types/vtex.search-page-context":
   version "0.2.0"

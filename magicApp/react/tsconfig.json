@@ -19,6 +19,7 @@
     "SkuSuggestionCore.jsx",
     "components/SkuSuggestion/SkuSuggestion.jsx",
     "components/ChangePurchaseConfirmationMessage/index.jsx",
-    "components/BuyTogether/BuyTogetherRender.jsx"
-, "components/ImageTextSlider/index.jsx"  ]
+    "components/BuyTogether/BuyTogetherRender.jsx",
+    "components/ImageTextSlider/index.jsx"
+  ]
 }

@@ -2,7 +2,7 @@
     "rich-text#texto-intro-crm": {
         "title": "Panda | Texto intro download - crm",
         "props": {
-          "text": "AGORA VOCÊ PODE CONSULTAR O **CASHBACK** PELO **APP MVP!** \n QUER SABER COMO FUNCIONA?",
+          "text": "Agora Você Pode Consultar O **Cashback** Pelo **App Mvp!** \n Quer Saber Como Funciona?",
           "blockClass": "texto-intro-crm",
           "textAlignment": "CENTER",
           "textPosition": "CENTER"
@@ -22,7 +22,7 @@
       "rich-text#texto-crm-store-Desk": {
         "title": "Panda | Texto intro loja Desktop - crm",
         "props": {
-          "text": "FEZ COMPRA NO **SITE** E **RECEBEU CASHBACK?** \n SAIBA QUAIS SÃO NOSSAS **LOJAS** PARA UTILIZAR O SEU BÔNUS",
+          "text": "Fez Compra No **Site** E **Recebeu Cashback?** \n Saiba Quais São Nossas **Lojas** Para Utilizar Seu Bônus",
           "blockClass": "texto-intro-crm",
           "textAlignment": "CENTER",
           "textPosition": "CENTER"
@@ -32,7 +32,7 @@
       "rich-text#texto-crm-store-Mob": {
         "title": "Panda | Texto intro loja Desktop Mobile - crm",
         "props": {
-          "text": "FEZ COMPRA NO **SITE** E **RECEBEU CASHBACK?** SAIBA QUAIS SÃO NOSSAS **LOJAS** PARA UTILIZAR O SEU BÔNUS",
+          "text": "Fez Compra No **Site** E **Recebeu Cashback?** Saiba Quais São Nossas **Lojas** Para Utilizar Seu Bônus",
           "blockClass": "texto-intro-crm",
           "textAlignment": "CENTER",
           "textPosition": "CENTER"

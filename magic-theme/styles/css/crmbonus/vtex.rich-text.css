@@ -129,6 +129,9 @@
   break-inside: avoid;
   page-break-inside: avoid;
   -webkit-column-break-inside: avoid;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .list--texto-lojas-crm {
@@ -160,6 +163,11 @@
 
 .strong--bannerPrincipal-crm{
   font-weight: 900;
+}
+
+.paragraph--texto-intro-crm{
+  text-transform: capitalize;
+  font-size: 20px;
 }
 
 @media (max-width: 990px) {
