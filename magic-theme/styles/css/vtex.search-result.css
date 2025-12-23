@@ -149,6 +149,7 @@
     border-radius: 8px;
     height: calc(100vh - 32px);
     overflow: hidden;
+    z-index: 9999;
 
     .closeIconButton {
         padding: 32px 16px 0;
@@ -204,6 +205,10 @@
             }
         }
     }
+}
+
+.scrim{
+    z-index: 9999;
 }
 
 .accordionFilterItemTag--filter-navigator :global(.vtex-tag) {
