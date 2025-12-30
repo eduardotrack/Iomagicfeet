@@ -838,7 +838,13 @@ $(window).on('orderFormUpdated.vtex', function (evt, orderForm) {
           console.log(value.children[0]?.children[1]?.childNodes[4])
 
           var LocalInsert = value.children[0]?.children[1]
-          $(LocalInsert).append('<br /><span class="box-delivery">' + textoFinal + '</span>')
+          if (LocalInsert.querySelector('.box-delivery')) {
+            return
+          }
+
+          $(LocalInsert).append(
+            '<span class="box-delivery">' + textoFinal + '</span>'
+          )
         })
       }
 
