@@ -23,8 +23,7 @@
     "props": {
       "blockClass": "product"
     },
-    "children": ["flex-layout.row#product-image", "product-bookmark",
-    "pd-videoPdp" ]
+    "children": ["flex-layout.row#product-image", "product-bookmark"]
   },
 
   // RIGHT

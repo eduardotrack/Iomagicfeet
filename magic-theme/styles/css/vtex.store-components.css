@@ -712,11 +712,6 @@
   border-radius: 15px;
 }
 
-:global(.vtex-slider-layout-0-x-slide--best-sellers-home)
-  .discountInsideContainer {
-  display: none;
-}
-
 .productBrandContainer--pdp-brand-logo {
   width: 56px !important;
   height: 56px;

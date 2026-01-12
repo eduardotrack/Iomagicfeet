@@ -1,23 +1,23 @@
 {
-  "flex-layout.row#best-sellers-home": {
+  "flex-layout.row#best-sellers-pdp": {
     "title": "Panda | Best Sellers",
     "props": {
-      "blockClass": "best-sellers-home"
+      "blockClass": ["best-sellers-home", "native-shelf"]
     },
-    "children": ["flex-layout.col#best-sellers-home"]
+    "children": ["flex-layout.col#best-sellers-pdp"]
   },
-  "flex-layout.col#best-sellers-home": {
+  "flex-layout.col#best-sellers-pdp": {
     "title": "Panda | Best Sellers",
     "props": {
-      "blockClass": ["best-sellers-home"]
+      "blockClass": ["best-sellers-home", "native-shelf"]
     },
     "children": [
-      "rich-text#best-sellers-home-title",
-      "list-context.product-list#best-sellers-home"
+      "rich-text#best-sellers-pdp-title",
+      "list-context.product-list#best-sellers-pdp"
     ]
   },
 
-  "rich-text#best-sellers-home-title": {
+  "rich-text#best-sellers-pdp-title": {
     "title": "Panda | Best Sellers - Título",
     "props": {
       "text": "## **novidades** da semana",
@@ -25,9 +25,9 @@
     }
   },
 
-  "list-context.product-list#best-sellers-home": {
+  "list-context.product-list#best-sellers-pdp": {
     "blocks": ["product-summary.shelf#product-category"],
-    "children": ["slider-layout#best-sellers-home"]
+    "children": ["slider-layout#best-sellers-pdp"]
   },
 
   "product-summary.shelf#best-sellers": {
@@ -40,7 +40,7 @@
     ]
   },
 
-  "slider-layout#best-sellers-home": {
+  "slider-layout#best-sellers-pdp": {
     "props": {
       "itemsPerPage": {
         "desktop": 4,

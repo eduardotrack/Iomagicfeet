@@ -2119,6 +2119,10 @@
   margin: 32px 0;
 }
 
+.flexRowContent--native-shelf {
+  margin-bottom: 80px;
+}
+
 /* Tablet */
 .flexRowContent--tips-core-pages
   :global(.vtex-flex-layout-0-x-flexRowContent--tips-home-row) {

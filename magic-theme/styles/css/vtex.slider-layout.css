@@ -283,10 +283,6 @@
 
 }
 /*new home*/
-.slide--best-sellers-home :global(.vtex-wish-list-1-x-wishlistIconContainer) {
-  right: 17px !important;
-  top: 3px !important;
-}
 
 .paginationDotsContainer--best-sellers-home {
   bottom: -32px;
