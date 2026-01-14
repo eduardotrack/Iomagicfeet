@@ -193,5 +193,8 @@
   "pd-CombinedProductListNatal": {
     "component": "CombinedProductListNatal",
     "composition": "children"
+  },
+  "pd-ApplyPlaceholderToCepInput": {
+    "component": "ApplyPlaceholderToCepInput"
   }
 }

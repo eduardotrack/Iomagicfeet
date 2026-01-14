@@ -56,6 +56,7 @@
 
       "product-separator",
       "shipping-simulator",
+      "flex-layout.col#lista-beneficios-frete",
 
       "flex-layout.row#description",
       "flex-layout.row#pdp-description-brand-tag",
@@ -251,16 +252,44 @@
   "flex-layout.row#product-qqt": {
     "title": "Panda | Produto - Quantidade e Botão de compra",
     "props": {
-      "blockClass": "product__main--btn"
+      "blockClass": "product__main--btn",
+      "colSizing": "auto"
     },
-    "children": ["add-to-cart-button#product"]
+    "children": ["flex-layout.row#buy-now-pdp", "flex-layout.row#add-to-cart-pdp"]
+  },
+
+  "flex-layout.row#add-to-cart-pdp": {
+    "props": {
+      "blockClass": "add-to-cart-pdp"
+    },
+    "children": [
+      "add-to-cart-button#product"
+    ]
+  },
+
+  "flex-layout.row#buy-now-pdp": {
+    "props": {
+      "blockClass": "buy-now-pdp"
+    },
+    "children": [
+      "add-to-cart-button#product-buynow"
+    ]
   },
 
   "add-to-cart-button#product": {
     "props": {
-      "text": "ADICIONAR AO CARRINHO",
+      "text": "adicionar ao carrinho",
       "addToCartFeedback": "customEvent",
-      "customPixelEventId": "add-to-cart-button"
+      "customPixelEventId": "add-to-cart-button",
+      "blockClass": "add-to-cart-button"
+    }
+  },
+
+  "add-to-cart-button#product-buynow": {
+    "props": {
+      "text": "comprar agora",
+      "blockClass": "buy-now-button",
+      "isOneClickBuy": true
     }
   },
 
@@ -445,6 +474,40 @@
     "props": {
       "text": "Lançamentos **exclusivos e cashback** para usar nas lojas! \n **[Baixe agora o App MVP](https://onelink.to/jznk4b)**",
       "blockClass": "pdp-product-tips-text"
+    }
+  },
+
+  "flex-layout.col#lista-beneficios-frete": {
+    "title": "Panda | Lista de Beneficios PDP",
+    "props": {
+      "blockClass": "benefits-cep",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#beneficios-frete-01",
+      "rich-text#beneficios-frete-02",
+      "rich-text#beneficios-frete-03"
+    ]
+  },
+  "rich-text#beneficios-frete-01": {
+    "title": "Panda | Benefício 01",
+    "props": {
+      "blockClass": "benefits-cep-item",
+      "text": "frete grátis [confira as regras](https://www.magicfeet.com.br/tipos-de-entrega)"
+    }
+  },
+    "rich-text#beneficios-frete-02": {
+    "title": "Panda | Benefício 02",
+    "props": {
+      "blockClass": "benefits-cep-item",
+      "text": "compra 100% segura"
+    }
+  },
+  "rich-text#beneficios-frete-03": {
+    "title": "Panda | Benefício 03",
+    "props": {
+      "blockClass": "benefits-cep-item",
+      "text": "vendido e comercializado por **magicfeet**"
     }
   }
 }
