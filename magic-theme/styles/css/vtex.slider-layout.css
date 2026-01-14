@@ -361,6 +361,23 @@
   gap: 15px;
 }
 
+.sliderTrack--native-shelf-plp,
+.sliderTrack--native-shelf-pdp {
+  gap: 2px;
+}
+
+.sliderLayoutContainer--native-shelf-plp {
+  width: calc(100vw - 40px);
+  max-width: 1920px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sliderTrackContainer--native-shelf-plp {
+  margin: 0;
+}
+
 @media screen and (max-width: 990px) {
   .sliderTrack--best-sellers-home {
     gap: 0;

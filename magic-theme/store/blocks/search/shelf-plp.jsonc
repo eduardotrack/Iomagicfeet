@@ -1,13 +1,22 @@
 {
+  "experimental__visibility-layout#best-sellers-plp": {
+    "title": "Panda | Vitrine PLP (On/Off)",
+    "children": [
+      "flex-layout.row#best-sellers-plp"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
   "flex-layout.row#best-sellers-plp": {
-    "title": "Panda | Best Sellers",
+    "title": "Panda | Vitrine PLP",
     "props": {
       "blockClass": ["best-sellers-home", "native-shelf"]
     },
     "children": ["flex-layout.col#best-sellers-plp"]
   },
   "flex-layout.col#best-sellers-plp": {
-    "title": "Panda | Best Sellers",
+    "title": "Panda | Vitrine PLP",
     "props": {
       "blockClass": ["best-sellers-home", "native-shelf"]
     },
@@ -18,7 +27,7 @@
   },
 
   "rich-text#best-sellers-plp-title": {
-    "title": "Panda | Best Sellers - Título",
+    "title": "Panda | Vitrine PLP - Título",
     "props": {
       "text": "## **novidades** da semana",
       "blockClass": ["Panda__title", "best-sellers-home-title"]
@@ -28,16 +37,6 @@
   "list-context.product-list#best-sellers-plp": {
     "blocks": ["product-summary.shelf#product-category"],
     "children": ["slider-layout#best-sellers-plp"]
-  },
-
-  "product-summary.shelf#best-sellers": {
-    "children": [
-     "product-summary-image",
-     "add-to-list-btn",
-     "product-summary-buy-button",
-     "product-summary-name",
-     "product-summary-price"
-    ]
   },
 
   "slider-layout#best-sellers-plp": {
@@ -52,12 +51,12 @@
         "tablet": "disabled",
         "phone": "to-the-left"
       },
-      "centerModeSlidesGap": 20,
+      "centerModeSlidesGap": 2,
       "infinite": true,
       "fullWidth": true,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "never",
       "showPaginationDots": "always",
-      "blockClass": ["best-sellers-home"]
+      "blockClass": ["best-sellers-home", "native-shelf-plp"]
     }
   }
 }

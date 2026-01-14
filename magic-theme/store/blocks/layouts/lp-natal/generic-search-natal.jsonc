@@ -111,7 +111,7 @@
 
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore",
-      "flex-layout.row#best-sellers-plp",
+      "experimental__visibility-layout#best-sellers-plp",
 
       // "flex-layout.row#search-seo-title",
       "rich-text#category"

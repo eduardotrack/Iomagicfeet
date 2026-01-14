@@ -68,7 +68,7 @@
 
       "flex-layout.row#products",
       "flex-layout.row#fetchmore",
-      "flex-layout.row#best-sellers-plp",
+      "experimental__visibility-layout#best-sellers-plp",
       // "flex-layout.row#search-seo-title",
       // "flex-layout.row#vitrine-plp",
       "rich-text#brand"
