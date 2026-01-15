@@ -18,7 +18,10 @@ export function ProductPricePix({ isSummary = false }) {
     Installments,
   } = selectedItem?.sellers?.[0]?.commertialOffer || {}
 
-  const pricePix = isSummary ? spotPrice : Installments?.find((installment) => installment.Name === 'Pagaleve Pix A Vista Transparente à vista')?.Value
+  // console.log('panda installments', Installments)
+  // console.log('panda spotPrice', spotPrice)
+
+  const pricePix = isSummary ? spotPrice : (Installments?.find((installment) => installment.Name === 'Pagaleve Pix A Vista Transparente à vista')?.Value || Installments[0]?.TotalValuePlusInterestRate)
 
   if (!sellingPrice || !pricePix) {
     return null
