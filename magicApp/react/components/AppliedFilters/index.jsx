@@ -14,19 +14,13 @@ const normalizeFilterValue = (str = '') =>
   normalize(str).replace(/[-_]/g, ' ').replace(/\s+/g, ' ').trim()
 
 const CUSTOM_CATEGORIES = [
-  'presentes',
   'novidades',
-  'roupas',
-  'tênis',
-  'chinelos e sandálias',
-  'acessórios',
   'marcas',
   'outlet',
   'black-friday',
   'promoções',
   'lançamentos',
   'todos produtos',
-  'todos-produtos',
 ]
 
 const NORMALIZED_CUSTOM_CATEGORIES = CUSTOM_CATEGORIES.map(normalize)
@@ -95,10 +89,14 @@ export function AppliedFilters() {
     index,
   }))
 
-  // filtra categorias customizadas (vtex traz categoria como filtro) e ft (full text)
+  console.log('Filtros aplicados:', appliedFilters)
+
+  // filtra categorias customizadas (vtex traz categoria como filtro) ft (full text) c (category)
   const visibleFilters = appliedFilters.filter(
     ({ map, value }) =>
       map !== 'ft' &&
+      map !== 'c' &&
+      map !== 'category-1' &&
       !NORMALIZED_CUSTOM_CATEGORIES.includes(normalize(value))
   )
 
