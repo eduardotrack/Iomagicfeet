@@ -2236,6 +2236,10 @@
     left: -18px;
     transform: unset;
   }
+
+  .flexRowContent--native-shelf {
+    width: 100%;
+  }
 }
 
 @media (min-width: 100px) {
@@ -2245,7 +2249,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  .flexRow--pd-smart-shelf :global(.vtex-store-components-3-x-container) {
+  .flexRow--native-shelf :global(.vtex-store-components-3-x-container) {
     padding: 0;
   }
 
