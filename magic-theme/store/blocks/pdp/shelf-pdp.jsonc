@@ -5,7 +5,7 @@
       "flex-layout.row#best-sellers-pdp"
     ],
     "props": {
-      "visible": true
+      "visible": false
     }
   },
   "flex-layout.row#best-sellers-pdp": {
