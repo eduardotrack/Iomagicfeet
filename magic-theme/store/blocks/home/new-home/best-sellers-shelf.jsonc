@@ -1,13 +1,22 @@
 {
+  "experimental__visibility-layout#best-sellers-home": {
+    "title": "Panda | Vitrine Home (On/Off)",
+    "children": [
+      "flex-layout.row#best-sellers-home"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
   "flex-layout.row#best-sellers-home": {
-    "title": "Panda | Best Sellers",
+    "title": "Panda | Vitrine Home",
     "props": {
       "blockClass": "best-sellers-home"
     },
     "children": ["flex-layout.col#best-sellers-home"]
   },
   "flex-layout.col#best-sellers-home": {
-    "title": "Panda | Best Sellers",
+    "title": "Panda | Vitrine Home",
     "props": {
       "blockClass": ["best-sellers-home"]
     },
@@ -18,7 +27,7 @@
   },
 
   "rich-text#best-sellers-home-title": {
-    "title": "Panda | Best Sellers - Título",
+    "title": "Panda | Vitrine Home - Título",
     "props": {
       "text": "## **novidades** da semana",
       "blockClass": ["Panda__title", "best-sellers-home-title"]
@@ -26,7 +35,7 @@
   },
 
   "list-context.product-list#best-sellers-home": {
-    "blocks": ["product-summary.shelf#best-sellers"],
+    "blocks": ["product-summary.shelf#product-category"],
     "children": ["slider-layout#best-sellers-home"]
   },
 

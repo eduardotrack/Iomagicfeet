@@ -45,6 +45,7 @@
       "pd-pdpZoomModal",
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
+      "experimental__visibility-layout#best-sellers-pdp",
       // "retail-rocket-container#pdp-complete-o-look",
       "__fold__",
       // "retail-rocket-container#pdp1",

@@ -283,10 +283,6 @@
 
 }
 /*new home*/
-.slide--best-sellers-home :global(.vtex-wish-list-1-x-wishlistIconContainer) {
-  right: 17px !important;
-  top: 3px !important;
-}
 
 .paginationDotsContainer--best-sellers-home {
   bottom: -32px;
@@ -363,6 +359,23 @@
 
 .sliderTrack--best-sellers-home {
   gap: 15px;
+}
+
+.sliderTrack--native-shelf-plp,
+.sliderTrack--native-shelf-pdp {
+  gap: 2px;
+}
+
+.sliderLayoutContainer--native-shelf-plp {
+  width: calc(100vw - 40px);
+  max-width: 1920px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sliderTrackContainer--native-shelf-plp {
+  margin: 0;
 }
 
 @media screen and (max-width: 990px) {

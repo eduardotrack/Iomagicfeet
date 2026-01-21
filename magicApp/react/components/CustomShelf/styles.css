@@ -1,0 +1,66 @@
+.customShelfWrapper {
+  overflow: hidden;
+  width: calc(100vw - 40px);
+  max-width: 1920px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 38px;
+
+  [class*="slick-track"] {
+    display: flex;
+  }
+
+  [class*="slick-slide"] {
+    padding: 0 1px;
+
+    >div {
+      height: 101%;
+    }
+  }
+
+  .slide {
+    height: 100%;
+  }
+
+  [class*="slick-dots"] {
+    display: flex !important;
+    gap: 8px;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li button {
+      display: none;
+    }
+
+    li {
+      width: 7px;
+      height: 7px;
+      background-color: #1C1C1C;
+      display: block;
+      border-radius: 999px;
+      transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+
+      &[class="slick-active"] {
+        background-color: transparent;
+        border: 2px solid #1C1C1C;
+        width: 8.5px;
+        height: 15.5px;
+        transform: matrix(.86,.49,-.53,.86,0,0);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .customShelfWrapper {
+    width: 100%;
+  }
+}

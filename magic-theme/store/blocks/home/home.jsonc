@@ -25,7 +25,7 @@
       
       // "retail-rocket-container#home",
 
-      // "flex-layout.row#best-sellers-home",
+      "experimental__visibility-layout#best-sellers-home",
       // "flex-layout.row#vitrine-position-home",
       "experimental__visibility-layout#home-banner-benefits",
       "experimental__visibility-layout#favorite-character",

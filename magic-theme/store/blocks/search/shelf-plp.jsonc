@@ -1,0 +1,62 @@
+{
+  "experimental__visibility-layout#best-sellers-plp": {
+    "title": "Panda | Vitrine PLP (On/Off)",
+    "children": [
+      "flex-layout.row#best-sellers-plp"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
+  "flex-layout.row#best-sellers-plp": {
+    "title": "Panda | Vitrine PLP",
+    "props": {
+      "blockClass": ["best-sellers-home", "native-shelf"]
+    },
+    "children": ["flex-layout.col#best-sellers-plp"]
+  },
+  "flex-layout.col#best-sellers-plp": {
+    "title": "Panda | Vitrine PLP",
+    "props": {
+      "blockClass": ["best-sellers-home", "native-shelf"]
+    },
+    "children": [
+      "rich-text#best-sellers-plp-title",
+      "list-context.product-list#best-sellers-plp"
+    ]
+  },
+
+  "rich-text#best-sellers-plp-title": {
+    "title": "Panda | Vitrine PLP - Título",
+    "props": {
+      "text": "## **novidades** da semana",
+      "blockClass": ["Panda__title", "best-sellers-home-title"]
+    }
+  },
+
+  "list-context.product-list#best-sellers-plp": {
+    "blocks": ["product-summary.shelf#product-category"],
+    "children": ["pd-CustomShelf"]
+  },
+
+  "slider-layout#best-sellers-plp": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 2,
+      "infinite": true,
+      "fullWidth": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "blockClass": ["best-sellers-home", "native-shelf-plp"]
+    }
+  }
+}

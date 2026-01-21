@@ -7,7 +7,7 @@
     "props": {
       "blockClass": "block-image__product-pdp"
     },
-    "children": [ "flex-layout.row#highlights-wrapper__flags-pdp" , "product-images"]
+    "children": [ "flex-layout.row#highlights-wrapper__flags-pdp" , "product-images", "pd-videoPdp"]
   },
 
   "product-images": {
@@ -19,7 +19,9 @@
       "displayThumbnailsArrows": true,
       "showNavigationArrows": true,
       "showPaginationDots": false,
-      "zoomMode": "disabled"
+      "zoomMode": "disabled",
+      // "contentOrder": "videos-first",
+      "contentType": "all"
     }
   },
   "flex-layout.row#block-flags-pdp": {
