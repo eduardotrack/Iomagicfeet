@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { EXPERIMENTAL_Modal } from "vtex.styleguide";
 import { useProduct } from "vtex.product-context";
+import styles from "./styles.css";
 
 export function NotifyModal({isOpen, onClose, shelf}) {
   const [email, setEmail] = useState("");
@@ -9,6 +10,7 @@ export function NotifyModal({isOpen, onClose, shelf}) {
   const [acceptTerms, setAcceptTerms] = useState(false);
   const [loading, setLoading] = useState(false);
   const [isAbleToSubmit, setIsAbleToSubmit] = useState(false);
+  const [isSizesOpen, setIsSizesOpen] = useState(false);
 
   const product = useProduct();
 
@@ -44,6 +46,7 @@ export function NotifyModal({isOpen, onClose, shelf}) {
       onClose={onClose}
       title="produto similares"
       closeOnEsc
+      className={styles.notifyUnavailableModal}
     >
       <p>Veja os produtos disponíveis</p>
       {shelf ? (
@@ -51,17 +54,22 @@ export function NotifyModal({isOpen, onClose, shelf}) {
           {shelf}
         </div>
       ) : null}
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="seu nome" value={name} onChange={(e) => setName(e.target.value)} />
-        <input type="email" placeholder="seu email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <div>
-          <p>selecione o seu tamanho</p>
-          <div>
+      <form onSubmit={handleSubmit} className={styles.notifyUnavailableForm}>
+        <input type="text" placeholder="seu nome" value={name} onChange={(e) => setName(e.target.value)} className={styles.notifyUnavailableInput} />
+        <input type="email" placeholder="seu email" value={email} onChange={(e) => setEmail(e.target.value)} className={styles.notifyUnavailableInput} />
+        <div className={styles.notifyUnavailableToggleWrapper}>
+          <button type="button" className={styles.notifyUnavailableToggleSizes} onClick={() => setIsSizesOpen(!isSizesOpen)}>
+            selecione o seu tamanho
+          </button>
+          <div className={`${styles.notifyUnavailableToggleSizesContent} ${isSizesOpen && styles.notifyUnavailableToggleSizesContentOpen}`}>
             {sizes?.map((s, index) => (
               <button
                 key={index}
                 type="button"
                 onClick={() => setSize(s)} disabled={loading || s === size}
+                className={`
+                  ${styles.notifyUnavailableToggleSizesSize} ${s === size && styles.notifyUnavailableToggleSizesSizeActive}
+                `}
               >
                 {s}
               </button>

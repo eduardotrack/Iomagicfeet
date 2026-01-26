@@ -7,15 +7,15 @@
   "shelf.relatedProducts#notifyUnaivalable": {
     "title": "Panda | Vitrine Produtos Relacionados",
     "props": {
-      "recommendation": "similars",
-      "hideOutOfStockItems": true,
-      "productList": {
-        "scroll": "ONE_BY_ONE",
-        "arrows": true,
-        "showTitle": false,
-        "gap": "ph0",
-        "minItemsPerPage": 3.5,
-        "infinite": true
+      // "recommendation": "similars",
+      // "hideOutOfStockItems": true,
+      // "productList": {
+        // "scroll": "ONE_BY_ONE",
+        // "arrows": true,
+        // "showTitle": false,
+        // "gap": "ph0",
+        // "minItemsPerPage": 3.5,
+        // "infinite": true
         // "summary": {
         //   "children": [
         //     "add-to-list-btn#category",
@@ -28,7 +28,7 @@
         //     "trackListName": true
         //   }
         // }
-      }
+      // }
     },
     "blocks": [
       "product-summary.shelf#product-category"
