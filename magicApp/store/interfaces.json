@@ -196,5 +196,9 @@
   },
   "pd-CustomShelf": {
     "component": "CustomShelf"
+  },
+  "pd-NotifyUnavailableSku": {
+    "component": "NotifyUnavailableSku",
+    "composition": "children"
   }
 }
