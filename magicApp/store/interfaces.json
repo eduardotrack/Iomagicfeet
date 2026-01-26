@@ -194,6 +194,9 @@
     "component": "CombinedProductListNatal",
     "composition": "children"
   },
+  "pd-ApplyPlaceholderToCepInput": {
+    "component": "ApplyPlaceholderToCepInput"
+  },
   "pd-CustomShelf": {
     "component": "CustomShelf"
   },

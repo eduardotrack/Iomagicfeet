@@ -44,6 +44,7 @@
       // "flex-layout.row#tips-core-pages",
       "pd-pdpZoomModal",
       "pd-NotifyUnavailableSku#pdp",
+      "pd-ApplyPlaceholderToCepInput",
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "experimental__visibility-layout#best-sellers-pdp",
