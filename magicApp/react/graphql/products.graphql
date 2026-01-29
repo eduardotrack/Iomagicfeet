@@ -1,8 +1,23 @@
-query products($term: String) {
-  products(specificationFilters: [$term]){
+query products($term: [String], $category: String) {
+  products(
+    specificationFilters: $term
+    category: $category
+  ) {
     productName
+    productId
     linkText
     productReference
+    brand
+    priceRange {
+      sellingPrice {
+        highPrice
+        lowPrice
+      }
+      listPrice {
+        highPrice
+        lowPrice
+      }
+    }
     items {
       itemId
       name
@@ -14,4 +29,3 @@ query products($term: String) {
     }
   }
 }
- 

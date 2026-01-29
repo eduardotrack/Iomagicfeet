@@ -5,7 +5,7 @@
       "flex-layout.row#best-sellers-pdp"
     ],
     "props": {
-      "visible": false
+      "visible": true
     }
   },
   "flex-layout.row#best-sellers-pdp": {
@@ -22,7 +22,8 @@
     },
     "children": [
       "rich-text#best-sellers-pdp-title",
-      "list-context.product-list#best-sellers-pdp"
+      // "list-context.product-list#best-sellers-pdp"
+      "pd-SimilarProductsShelf"
     ]
   },
 

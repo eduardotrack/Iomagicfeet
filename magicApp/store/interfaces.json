@@ -196,5 +196,8 @@
   },
   "pd-CustomShelf": {
     "component": "CustomShelf"
+  },
+  "pd-SimilarProductsShelf": {
+    "component": "SimilarProductsShelf"
   }
 }

@@ -1,0 +1,142 @@
+.customShelfWrapper {
+  overflow: hidden;
+  width: calc(100vw - 40px);
+  max-width: 1920px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 38px;
+
+  [class*="slick-track"] {
+    display: flex;
+  }
+
+  [class*="slick-slide"] {
+    padding: 0 1px;
+
+    >div {
+      height: 101%;
+      >div {
+        height: 99%;
+      }
+    }
+  }
+
+  [class*="slick-slider"] {
+    padding: 0 32px !important;
+  }
+
+  [class*="slick-list"] {
+    overflow: hidden;
+    padding-bottom: 4px;
+  }
+
+  .slide {
+    height: 100%;
+  }
+
+  [class*="slick-dots"] {
+    display: flex !important;
+    gap: 8px;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    li button {
+      display: none;
+    }
+
+    li {
+      width: 7px;
+      height: 7px;
+      background-color: #1C1C1C;
+      display: block;
+      border-radius: 999px;
+      transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+
+      &[class="slick-active"] {
+        background-color: transparent;
+        border: 2px solid #1C1C1C;
+        width: 8.5px;
+        height: 15.5px;
+        transform: matrix(.86,.49,-.53,.86,0,0);
+      }
+    }
+  }
+
+  [class*="slick-arrow"] {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px !important;
+    cursor: pointer;
+  }
+
+  [class*="slick-prev"] {
+    left: 0;
+  }
+
+  [class*="slick-next"] {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .customShelfWrapper {
+    width: 100%;
+
+    [class*="slick-slider"] {
+      padding: 0;
+    }
+  }
+}
+
+/* Product Card */
+.productCardCustomLink {
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.productCardCustomInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.productCardCustomInfoFooter {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.productCardCustomBuyButton {
+  background-color: #000;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .08);
+  padding: 21.5px 0 20px;
+  border: 1px solid #000;
+
+  color: #fff;
+  font-family: RobotoCondensed-Bold, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 80%;
+
+  &:hover {
+    opacity: 1 !important;
+    background-color: #5dff49;
+    color: #000;
+    border-color: #000;
+  }
+}
