@@ -77,6 +77,7 @@
   border: 1px solid #F2F3F5;
   width: 100%;
   text-align: left;
+  color: #9AA1AE;
 }
 
 .notifyUnavailableToggleSizesContent {
@@ -91,12 +92,81 @@
 }
 
 .notifyUnavailableToggleSizesSize {
-  background-color: #F8F9F9;
-  padding: 8px 12px;
-  border-radius: 4px;
-  border: 1px solid #F2F3F5;
+  background-color: transparent;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid #000;
+  min-width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  color: #000;
+  font-family: 'WorkSans-Regular', sans-serif;
+
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.notifyUnavailableToggleSizesSelected {
+  color: #000;
 }
 
 .notifyUnavailableToggleSizesSizeActive {
-  border-color: #000;
+  background-color: #5DFF49;
+}
+
+.notifyUnavailableTermsLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.notifyUnavailableTermsInput {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.notifyUnavailableTermsCheckbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: all .3s ease;
+  flex-shrink: 0;
+}
+
+.notifyUnavailableTermsCheckboxActive {
+  background-color: #000;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.8 4.4L9.4 3L5.4 7L3.4 5L2 6.4L5.4 9.8L10.8 4.4Z' fill='%235DFF49'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+}
+
+.notifyUnavailableTermsText {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: lowercase;
+  font-family: 'Nunito-Regular', sans-serif;
+}
+
+.notifyUnavailableSubmitButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #000;
+  padding: 14px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25.5px;
+  font-family: 'Nunito-Bold', sans-serif;
+  color: #fff;
 }

@@ -14,24 +14,52 @@ export function NotifyModal({isOpen, onClose, shelf}) {
 
   const product = useProduct();
 
-  // TODO: pegar todos os tamanhos
   const sizes = product?.product?.skuSpecifications[0]?.values?.map(item => {
     return item?.name
   });
   console.log(product)
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    setLoading(true);
+  function getSkuIdBySize(sizeName) {
+    return product?.product?.items?.find(item =>
+      item?.variations?.some(variation =>
+        variation?.values?.includes(sizeName)
+      )
+    )?.itemId
+  }
 
-    // TODO: conectar com MasterData
-    setTimeout(() => {
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    if (!acceptTerms) return;
+
+    try {
+      setLoading(true);
+
+      const skuId = getSkuIdBySize(size);
+
+      const payload = {
+        name,
+        email,
+        skuId
+      }
+
+      const response = await fetch('/api/dataentities/AS/documents', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      })
+      const data = await response.json();
+      console.log('Success:', data);
+    } catch (error) {
+      console.log('Erro ao enviar dados do Avise-me para o Materdata:', error);
+    } finally {
       setLoading(false);
-      onClose();
       setEmail("");
       setName("");
       setSize("");
-    }, 1000)
+    }
   }
 
   useEffect(() => {
@@ -55,11 +83,11 @@ export function NotifyModal({isOpen, onClose, shelf}) {
         </div>
       ) : null}
       <form onSubmit={handleSubmit} className={styles.notifyUnavailableForm}>
-        <input type="text" placeholder="seu nome" value={name} onChange={(e) => setName(e.target.value)} className={styles.notifyUnavailableInput} />
-        <input type="email" placeholder="seu email" value={email} onChange={(e) => setEmail(e.target.value)} className={styles.notifyUnavailableInput} />
+        <input name="name" type="text" placeholder="seu nome" value={name} onChange={(e) => setName(e.target.value)} className={styles.notifyUnavailableInput} />
+        <input name="email" type="email" placeholder="seu email" value={email} onChange={(e) => setEmail(e.target.value)} className={styles.notifyUnavailableInput} />
         <div className={styles.notifyUnavailableToggleWrapper}>
-          <button type="button" className={styles.notifyUnavailableToggleSizes} onClick={() => setIsSizesOpen(!isSizesOpen)}>
-            selecione o seu tamanho
+          <button type="button" className={`${styles.notifyUnavailableToggleSizes} ${size && styles.notifyUnavailableToggleSizesSelected}`} onClick={() => setIsSizesOpen(!isSizesOpen)}>
+            {size ? size : "selecione o tamanho"}
           </button>
           <div className={`${styles.notifyUnavailableToggleSizesContent} ${isSizesOpen && styles.notifyUnavailableToggleSizesContentOpen}`}>
             {sizes?.map((s, index) => (
@@ -76,15 +104,29 @@ export function NotifyModal({isOpen, onClose, shelf}) {
             ))}
           </div>
         </div>
-        <div>
-          <button
-            type="button"
-            onClick={() => setAcceptTerms(true)}
-          />
-          <p>Aceito receber conteúdos da magicfeet e concordo com a Política de Privacidade</p>
+        <div className={styles.notifyUnavailableTermsWrapper}>
+          <label className={styles.notifyUnavailableTermsLabel}>
+            <input
+              type="checkbox"
+              checked={acceptTerms}
+              onChange={(e) => setAcceptTerms(e.target.checked)}
+              className={styles.notifyUnavailableTermsInput}
+            />
+
+            <span
+              className={`${styles.notifyUnavailableTermsCheckbox} ${
+                acceptTerms && styles.notifyUnavailableTermsCheckboxActive
+              }`}
+            />
+
+            <span className={styles.notifyUnavailableTermsText}>
+              Aceito receber conteúdos da magicfeet e concordo com a Política de Privacidade
+            </span>
+          </label>
         </div>
         <button
           type="submit"
+          className={styles.notifyUnavailableSubmitButton}
           disabled={!isAbleToSubmit || loading}
         >
           avise-me
