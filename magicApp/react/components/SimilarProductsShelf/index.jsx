@@ -46,7 +46,7 @@ export const SimilarProductsShelf = () => {
   }
 
   const productContext = useProduct() || null
-  console.log('productContext', productContext)
+  // console.log('productContext', productContext)
   const sizeSelected = productContext?.selectedItem?.variations[0]?.values[0]
   const useFilter =  productContext?.product?.specificationGroups[0].specifications
   const categoryTree = productContext?.product?.categoryTree || ''
@@ -61,24 +61,24 @@ export const SimilarProductsShelf = () => {
   var categoryList = categoryTree[0]?.id.toString() || ''
 
   const useFilterValues = Object.values(useFilter);
+  // console.log('useFilterValues', useFilterValues)
 
   for (const value of useFilterValues) {
-      if(value.name == "Cor"){
-          for(var i = 0; i < value.values.length; i++){
-              var use = value.values[i]
-              useList.push(`specificationFilter_8:${use}`);
-          }
-      }
       if(value.name == "Ocasião de Uso"){
           for(var i = 0; i < value.values.length; i++){
               var use = value.values[i]
               useList.push(`specificationFilter_6:${use}`);
           }
       }
+      if(value.name == "Tipo de Produto"){
+          for(var i = 0; i < value.values.length; i++){
+              var use = value.values[i]
+              useList.push(`specificationFilter_24:${use}`);
+          }
+      }
   }
 
   useList.push(`specificationFilter_12:${sizeSelected}`)
-  console.log('categoryList', categoryList)
   const {loading, error, data} = useQuery(GET_PRODUCTS, {
       variables: {
           term: useList,
@@ -88,8 +88,7 @@ export const SimilarProductsShelf = () => {
 
   const suggestions = data?.products || []
   const suggestionsFiltered = suggestions?.filter(item => item.productId !== productContext?.product?.productId)
-  console.log('suggestions', suggestions)
-
+  
   if(loading || error) return null
 
   return (
