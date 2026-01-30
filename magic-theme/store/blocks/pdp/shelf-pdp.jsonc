@@ -30,7 +30,7 @@
   "rich-text#best-sellers-pdp-title": {
     "title": "Panda | Vitrine PDP - Título",
     "props": {
-      "text": "## **novidades** da semana",
+      "text": "## você também **pode gostar**",
       "blockClass": ["Panda__title", "best-sellers-home-title"]
     }
   },
