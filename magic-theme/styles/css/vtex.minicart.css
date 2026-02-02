@@ -7,6 +7,10 @@
     height: 28px;
 }
 
+.drawer--Panda-cart {
+    z-index: 9999 !important;
+}
+
 .openIconContainer {
     padding: 0px;
 }
