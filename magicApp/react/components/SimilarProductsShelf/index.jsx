@@ -8,12 +8,14 @@ import { ProductCard } from "./productCard";
 
 import styles from './styles.css'
 
-export const SimilarProductsShelf = () => {
+export const SimilarProductsShelf = ({ slidesToShow, showArrows }) => {
   const { device } = useDevice()
   const isDesktop = device === 'desktop'
 
+  const slidesToShowCount = slidesToShow || (isDesktop ? 4 : 2)
+
   const settings = {
-    arrows: isDesktop ? true : false,
+    arrows: showArrows ?? isDesktop,
     dots: true,
     infinite: true,
     speed: 400,
@@ -25,8 +27,8 @@ export const SimilarProductsShelf = () => {
     draggable: true,
     touchMove: true,
 
-    slidesToShow: isDesktop ? 4 : 2,
-    slidesToScroll: isDesktop ? 4 : 2,
+    slidesToShow: slidesToShowCount,
+    slidesToScroll: slidesToShowCount,
     centerPadding: '2px',
 
     responsive: [
@@ -88,7 +90,7 @@ export const SimilarProductsShelf = () => {
 
   const suggestions = data?.products || []
   const suggestionsFiltered = suggestions?.filter(item => item.productId !== productContext?.product?.productId)
-  
+
   if(loading || error) return null
 
   return (

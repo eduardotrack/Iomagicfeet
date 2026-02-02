@@ -1,10 +1,10 @@
 .customShelfWrapper {
   overflow: hidden;
-  width: calc(100vw - 40px);
+  /* width: calc(100vw - 40px);
   max-width: 1920px;
-  position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
+  position: relative;
   padding-bottom: 38px;
 
   [class*="slick-track"] {
@@ -94,7 +94,7 @@
     width: 100%;
 
     [class*="slick-slider"] {
-      padding: 0;
+      padding: 0 16px !important;
     }
   }
 }

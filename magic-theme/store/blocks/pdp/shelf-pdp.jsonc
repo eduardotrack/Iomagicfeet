@@ -31,7 +31,7 @@
     "title": "Panda | Vitrine PDP - Título",
     "props": {
       "text": "## você também **pode gostar**",
-      "blockClass": ["Panda__title", "best-sellers-home-title"]
+      "blockClass": ["Panda__title", "best-sellers-pdp-title"]
     }
   },
 

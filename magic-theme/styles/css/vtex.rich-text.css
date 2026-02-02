@@ -1907,6 +1907,10 @@
   .container--week-featured-title {
     justify-content: flex-start;
   }
+
+  .wrapper--best-sellers-pdp-title {
+    padding-left: 16px;
+  }
 }
 
 @media screen and (max-width: 640px) {
