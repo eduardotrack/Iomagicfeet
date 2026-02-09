@@ -1805,17 +1805,18 @@
 .paragraph--pdp-brand-tag-name {
   margin: 0;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: lowercase;
-  color: #171a1c;
-  font-family: "WorkSans-Medium";
+  color: #45494F;
+  font-family: "Nunito-Regular", sans-serif;
 }
 
 .paragraph--pdp-sell-by {
+  font-family: "Nunito-Regular", sans-serif;
   margin: 0;
   color: #45494f;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .wrapper--tips-item-01 {

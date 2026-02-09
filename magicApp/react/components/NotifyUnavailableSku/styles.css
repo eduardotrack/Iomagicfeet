@@ -3,7 +3,7 @@
   max-width: 633px;
   margin: auto 16px 16px auto;
   height: fit-content;
-  max-height: 90dvh;
+  max-height: 95dvh;
   overflow: auto;
   background-color: #fff;
   border-radius: 8px;
@@ -28,10 +28,6 @@
     border: 2px solid #fff;
   }
 
-  p {
-    margin: 0;
-  }
-
   [class*="ml8-ns"] {
     display: flex;
     margin: 0;
@@ -52,6 +48,7 @@
 
     [class="ph3-ns pt3-ns pb2-ns ph2 pt2 pb1 br2 hover-b--transparent hover-bg-action-secondary hover-b--action-secondary"] {
       background-color: transparent !important;
+      padding: 0;
     }
   }
 
@@ -65,22 +62,42 @@
 
     [class*="vtex-styleguide-9-x-scrollBar"] {
       padding: 0;
+      margin: 0;
     }
   }
 }
 
+.notifyUnavailableModalClosing {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.notifyUnavailableTitle {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  margin: 0;
+}
+
+.notifyUnavailableSubtitle {
+  margin: 8px 0 24px;
+}
+
 .notifyUnavailableShelf {
   margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
 
   .customShelfWrapper {
-    padding: 50px 0 0;
+    padding: 41px 0 0;
+    width: 100%;
 
     [class="slick-dots"] {
       display: none !important;
     }
 
     [class*="slick-arrow"] {
-      top: 24px;
+      top: 6px;
       display: flex !important;
       align-items: center;
       justify-content: center;
@@ -88,6 +105,7 @@
       svg {
         width: 12px;
         height: 12px;
+        flex-shrink: 0;
       }
     }
 
@@ -109,6 +127,26 @@
       padding: 12px 0;
     }
   }
+}
+
+.notifyUnavailableFormTop {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.notifyUnavailableFormTitle {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+  margin: 0;
+}
+
+.notifyUnavailableFormSubtitle {
+  font-size: 16px;
+  margin: 0;
+  line-height: 20px;
+  color: #383b3f;
 }
 
 .notifyUnavailableForm {
@@ -143,7 +181,7 @@
   display: none;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 
 .notifyUnavailableToggleSizesContentOpen {
@@ -155,7 +193,7 @@
   padding: 8px 10px;
   border-radius: 999px;
   border: 1px solid #000;
-  min-width: 36px;
+  min-width: 62px;
   display: flex;
   align-items: center;
   justify-content: center;

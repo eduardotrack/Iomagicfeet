@@ -1,13 +1,24 @@
+import { useState, useEffect } from "react";
 import { EXPERIMENTAL_Modal } from "vtex.styleguide";
 import styles from "./successModalStyles.css";
 
 export function SuccessModal({ isOpen, onClose }) {
+  const [visible, setVisible] = useState(isOpen)
+
+  useEffect(() => {
+    if (isOpen) {
+      setVisible(true)
+    } else {
+      setTimeout(() => setVisible(false), 200)
+    }
+  }, [isOpen])
+
   return (
     <EXPERIMENTAL_Modal
-      isOpen={isOpen}
+      isOpen={visible}
       onClose={onClose}
       closeOnEsc
-      className={styles.successModal}
+      className={`${styles.successModal} ${!isOpen ? styles.successModalClosing : ''}`}
     >
       <div className={styles.successModalWrapper}>
         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">

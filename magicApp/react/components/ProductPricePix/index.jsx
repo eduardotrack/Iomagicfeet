@@ -8,8 +8,14 @@ const formatCurrency = (value) =>
     currency: 'BRL',
   })
 
-export function ProductPricePix({ isSummary = false }) {
-  const { selectedItem } = useProduct()
+export function ProductPricePix({ isSummary = false, product = null }) {
+  var selectedItem
+  if (product) {
+    selectedItem = product.items[0]
+  } else {
+    const product = useProduct()
+    selectedItem = product.selectedItem
+  }
 
   const {
     Price: sellingPrice = 0,

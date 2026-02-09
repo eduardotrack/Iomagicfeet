@@ -7,25 +7,21 @@
 }
 
 .pixPriceValue {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: #000;
   margin: 0;
-  font-family: Roboto-Condensed;
-
-  > span {
-    font-weight: 700;
-    font-family: RobotoCondensed-Bold;
-  }
+  font-weight: 700;
+  font-family: Nunito-Bold, sans-serif;
 }
 
 .pixPriceOldValue {
-  font-size: 16px;
+  font-size: 18px;
   color: #7D8187;
   text-decoration: line-through;
   font-weight: 400;
   margin: 0;
-  font-family: Roboto-Condensed;
+  font-family: Nunito-Regular, sans-serif;
 
   /* display: none; */
 }
@@ -41,7 +37,7 @@
   line-height: 160%;
   color: #1A7415;
 
-  font-family: 'WorkSans-Bold';
+  font-family: Nunito-Bold, sans-serif;
 }
 
 .summaryPixPrice {

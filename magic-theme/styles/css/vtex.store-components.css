@@ -275,13 +275,15 @@
 }
 
 .productNameContainer {
-  font-family: "WorkSans-Regular";
+  font-family: "Nunito-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
   align-items: center;
+  margin-top: 16px;
   color: #000000;
+  text-transform: lowercase;
 }
 
 .skuSelectorItem,
@@ -385,12 +387,13 @@
 }
 
 .skuSelectorName {
-  font-family: "Roboto-Condensed";
+  font-family: "Nunito-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 80%;
   color: #1c1c1c;
+  text-transform: lowercase;
 }
 
 .shippingContainer {
@@ -507,12 +510,13 @@
 }
 
 .productBrandName {
-  font-family: "RobotoCondensed-Bold";
+  font-family: "WorkSans-Bold";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 100%;
   color: #000000;
+  text-transform: lowercase;
 }
 
 .shippingContainer :global(.vtex-address-form__postalCode-forgottenURL) {
@@ -785,11 +789,11 @@
 }
 
 .productBrandName--pdp-brand-logo-text {
-  font-family: "WorkSans-Medium";
-  font-weight: 500;
+  font-family: "Nunito-Regular", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   text-transform: lowercase;
-  color: #171a1c;
+  color: #45494F;
   display: block;
 }
 

@@ -202,7 +202,7 @@
   :global(.vtex-product-price-1-x-installments--Panda-summary-price),
 .flexRowContent--shelf__price-and-savings-search
   :global(.vtex-product-price-1-x-currencyContainer--summary) {
-  font-family: "Roboto-Condensed";
+  font-family: "Nunito-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

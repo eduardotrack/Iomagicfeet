@@ -32,6 +32,20 @@
   }
 }
 
+[class="vtex-modal__overlay flex fixed z-max overflow-hidden bg-black-70 absolute--fill outline-0 vtex-styleguide-9-x-openAnimation items-center"] {
+  opacity: 1;
+  transition: opacity 200ms ease;
+}
+
+[class*="vtex-modal__overlay--hidden"] {
+  opacity: 0 !important;
+}
+
+.successModalClosing {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
 .successModalWrapper {
   display: flex;
   flex-direction: column;

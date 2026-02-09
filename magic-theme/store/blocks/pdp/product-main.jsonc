@@ -204,8 +204,8 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "sku-selector#pdp-core",
       "sizebay",
+      "sku-selector#pdp-core",
       "pd-SizeIndicationPdp"
     ]
   },
@@ -353,7 +353,7 @@
     "title": "Panda | Produto - Selo Marca - Vendido por",
     "props": {
       "blockClass": ["pdp-sell-by"],
-      "text": "vendido por magicfeet"
+      "text": "vendido por **magicfeet**"
     }
   },
   "rich-text#pdp-brand-name": {

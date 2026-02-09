@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { EXPERIMENTAL_Modal } from "vtex.styleguide";
 import { useProduct } from "vtex.product-context";
 import { useDevice } from "vtex.device-detector";
@@ -13,6 +13,7 @@ export function NotifyModal({isOpen, onClose, onSuccess }) {
   const [loading, setLoading] = useState(false);
   const [isSizesOpen, setIsSizesOpen] = useState(false);
   const [errors, setErrors] = useState({});
+  const [visible, setVisible] = useState(isOpen)
 
   const product = useProduct();
   const { device } = useDevice();
@@ -67,7 +68,8 @@ export function NotifyModal({isOpen, onClose, onSuccess }) {
       const payload = {
         name,
         email,
-        skuId
+        skuId,
+        createdAt: new Date().toISOString(),
       }
 
       await fetch('/api/dataentities/AS/documents', {
@@ -91,19 +93,37 @@ export function NotifyModal({isOpen, onClose, onSuccess }) {
     }
   }
 
+  useEffect(() => {
+    if (isOpen) {
+      setVisible(true)
+    } else {
+      setTimeout(() => setVisible(false), 200)
+    }
+  }, [isOpen])
+
   return (
     <EXPERIMENTAL_Modal
-      isOpen={isOpen}
+      isOpen={visible}
       onClose={onClose}
-      title="produto similares"
       closeOnEsc
-      className={styles.notifyUnavailableModal}
+      className={`${styles.notifyUnavailableModal} ${!isOpen ? styles.notifyUnavailableModalClosing : ''}`}
     >
-      <p>Veja os produtos disponíveis</p>
       <div className={styles.notifyUnavailableShelf}>
-        <SimilarProductsShelf slidesToShow={isDesktop ? 3 : 2} showArrows />
+        <h3 className={styles.notifyUnavailableTitle}>Produtos similares</h3>
+        <p className={styles.notifyUnavailableSubtitle}>
+          Veja os produtos disponíveis
+        </p>
+        <SimilarProductsShelf
+          slidesToShow={isDesktop ? 3 : 2}
+          showArrows
+          isFromNotifyUnavailable
+        />
       </div>
       <form onSubmit={handleSubmit} className={styles.notifyUnavailableForm}>
+        <div className={styles.notifyUnavailableFormTop}>
+          <p className={styles.notifyUnavailableFormTitle}>Avise-me quando chegar</p>
+          <p className={styles.notifyUnavailableFormSubtitle}>Cadastre-se para ser informado quando este produto estiver disponível</p>
+        </div>
         <div className={styles.notifyUnavailableInputWrapper}>
           <input
             name="name"

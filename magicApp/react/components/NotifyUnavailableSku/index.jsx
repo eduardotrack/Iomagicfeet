@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react"
-import { waitForElement } from "../../utils/waitForElement"
 import { NotifyModal } from "./NotifyModal"
 import { SuccessModal } from "./SuccessModal"
 
 const UNAVAILABLE_CLASS = 'vtex-store-components-3-x-unavailable'
-const CONTAINER_CLASS = 'vtex-store-components-3-x-skuSelectorNameContainer'
 
 export function NotifyUnavailableSku() {
   const [isNotifyOpen, setIsNotifyOpen] = useState(false)
@@ -17,22 +15,11 @@ export function NotifyUnavailableSku() {
     setIsNotifyOpen(true)
   }
 
-  async function listenToClickOnContainer() {
-    const container = await waitForElement(`.${CONTAINER_CLASS}`)
-    if (!container) return
-
-    container.addEventListener('click', handleClick)
-  }
-
-  useEffect(() => {
-    listenToClickOnContainer()
+ useEffect(() => {
+    document.addEventListener('click', handleClick)
 
     return () => {
-      waitForElement(`.${CONTAINER_CLASS}`).then(container => {
-        if (container) {
-          container.removeEventListener('click', handleClick)
-        }
-      })
+      document.removeEventListener('click', handleClick)
     }
   }, [])
 
@@ -43,7 +30,10 @@ export function NotifyUnavailableSku() {
         onClose={() => setIsNotifyOpen(false)}
         onSuccess={() => {
           setIsNotifyOpen(false)
-          setIsSuccessOpen(true)
+
+          setTimeout(() => {
+            setIsSuccessOpen(true)
+          }, 150)
         }}
       />
 

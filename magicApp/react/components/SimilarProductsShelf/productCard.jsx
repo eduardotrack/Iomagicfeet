@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { ProductPricePix } from "../ProductPricePix"
 import styles from "./styles.css"
 
 export const ProductCard = ({ product }) => {
@@ -45,16 +46,7 @@ export const ProductCard = ({ product }) => {
           </h3>
 
           <div className={styles.productCardCustomInfoFooter}>
-            <div className="magicfeet-magicapp-0-x-summaryPixPriceContainer">
-              <p className="magicfeet-magicapp-0-x-summaryPixPrice">
-                {product.priceRange?.sellingPrice?.lowPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
-              </p>
-              {product.priceRange?.listPrice?.lowPrice > product.priceRange?.sellingPrice?.lowPrice &&
-                <p className="magicfeet-magicapp-0-x-summaryPixPriceOldValue">
-                  {product.priceRange?.listPrice?.lowPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
-                </p>
-              }
-            </div>
+            <ProductPricePix isSummary product={product} />
 
             {/* Buy Button */}
             <button className={`${styles.productCardCustomBuyButton} vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-regular t-action bg-action-primary b--action-primary c-on-action-primary hover-bg-action-primary hover-b--action-primary hover-c-on-action-primary pointer w-100 `} type="button">
@@ -92,7 +84,7 @@ const Reviews = ({ productId }) => {
         )
         const data = await response.json()
         if (!isMounted) return
-        
+
         if (data?.Element) {
           setRating(data.Element.Rating)
           setTotal(data.Element.TotalRatings || 0)

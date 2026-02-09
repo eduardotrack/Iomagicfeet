@@ -1,7 +1,9 @@
-query products($term: [String], $category: String) {
+query products($term: [String], $category: String, $brand: String, $query: String = null, $map: String = null) {
   products(
     specificationFilters: $term
     category: $category
+    query: $query
+    map: $map
   ) {
     productName
     productId
@@ -25,6 +27,15 @@ query products($term: [String], $category: String) {
         imageUrl
         imageText
         imageLabel
+      }
+      sellers {
+        sellerId
+        commertialOffer {
+          Price
+          ListPrice
+          AvailableQuantity
+          spotPrice
+        }
       }
     }
   }
