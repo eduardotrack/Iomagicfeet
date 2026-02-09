@@ -275,13 +275,15 @@
 }
 
 .productNameContainer {
-  font-family: "WorkSans-Regular";
+  font-family: "Nunito-Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
   align-items: center;
+  margin-top: 16px;
   color: #000000;
+  text-transform: lowercase;
 }
 
 .skuSelectorItem,
@@ -385,27 +387,37 @@
 }
 
 .skuSelectorName {
-  font-family: "Roboto-Condensed";
+  font-family: "Nunito-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 80%;
   color: #1c1c1c;
+  text-transform: lowercase;
 }
 
 .shippingContainer {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
   flex-wrap: nowrap;
   flex-direction: row;
   align-content: center;
 }
 
 .shippingContainer :global(.vtex-input-prefix__group) {
-  border: 2px solid #1c1c1c;
-  border-radius: 10px 0px 0px 10px;
-  border-right: 1px;
+  border: 1px solid #F2F3F5;
+  border-right: 0;
+  border-radius: 8px 0px 0px 8px;
+  height: 54px;
+
+  :global(.vtex-address-form-4-x-input) {
+    background-color: #F8F9F9;
+  }
+
+  span {
+    display: none;
+  }
 }
 
 .shippingContainer :global(.vtex-input__label) {
@@ -414,35 +426,45 @@
 
 .shippingContainer :global(.vtex-address-form__postalCode) {
   width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 18px;
+  padding: 0;
 }
 
 .shippingContainer :global(.vtex-button) {
-  border: 2px solid #1c1c1c;
-  border-radius: 0px 10px 10px 0px;
-  border-left: 1px;
+  border: 1px solid #F2F3F5;
+  border-left: 0;
+  border-radius: 0px 8px 8px 0px;
   max-height: unset;
   height: 30px;
-  min-height: 40px;
-  width: 55%;
+  min-height: 54px;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: #fff;
+  background: #F8F9F9;
+  cursor: pointer;
 }
 
 .shippingContainer :global(.vtex-button__label) {
-  font-family: "RobotoCondensed-Bold";
+  font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16.1616px;
+  font-weight: 500;
+  font-size: 0;
   line-height: 100%;
-  color: #1c1c1c;
+  color: #121416;
   width: auto;
   padding: 0;
+
+  &::before {
+    content: "calcular";
+    font-size: 14px;
+  }
 }
 
-.shippingContainer :global(.vtex-button)::before {
+/* .shippingContainer :global(.vtex-button)::before {
   content: ".";
   color: transparent;
   background-image: url("data:image/svg+xml,%3Csvg width='25' height='20' viewBox='0 0 25 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.41235e-09 2.63635C3.41235e-09 2.00669 0.24693 1.40282 0.686468 0.957578C1.12601 0.51234 1.72215 0.262207 2.34375 0.262207H16.4062C17.0279 0.262207 17.624 0.51234 18.0635 0.957578C18.5031 1.40282 18.75 2.00669 18.75 2.63635V5.0105H20.3438C20.6949 5.01082 21.0415 5.09106 21.3579 5.2453C21.6744 5.39953 21.9525 5.62383 22.1719 5.9016L24.4859 8.82971C24.8189 9.25102 25.0002 9.77466 25 10.3143V13.7157C25 14.3454 24.7531 14.9492 24.3135 15.3945C23.874 15.8397 23.2779 16.0898 22.6562 16.0898H21.875C21.875 16.9294 21.5458 17.7346 20.9597 18.3282C20.3737 18.9219 19.5788 19.2554 18.75 19.2554C17.9212 19.2554 17.1263 18.9219 16.5403 18.3282C15.9542 17.7346 15.625 16.9294 15.625 16.0898H7.8125C7.8134 16.5118 7.73102 16.9297 7.57019 17.3189C7.40937 17.7081 7.17335 18.0608 6.87601 18.3563C6.57868 18.6518 6.22602 18.8841 5.83878 19.0396C5.45154 19.195 5.03753 19.2705 4.62108 19.2615C4.20464 19.2525 3.79417 19.1593 3.4138 18.9873C3.03343 18.8154 2.69084 18.5681 2.40617 18.2601C2.1215 17.952 1.90049 17.5895 1.75615 17.1937C1.6118 16.7979 1.54702 16.3768 1.56562 15.9553C1.10789 15.7921 0.711442 15.489 0.431007 15.0879C0.150571 14.6867 -2.61749e-05 14.2073 3.41235e-09 13.7157L3.41235e-09 2.63635ZM2.02188 14.4374C2.30438 13.9689 2.70236 13.5829 3.17672 13.3174C3.65107 13.0519 4.18547 12.916 4.72739 12.923C5.26931 12.93 5.80009 13.0797 6.26758 13.3575C6.73507 13.6352 7.12318 14.0314 7.39375 14.5071H16.0437C16.3186 14.0264 16.7129 13.6269 17.1875 13.3485V2.63635C17.1875 2.42647 17.1052 2.22517 16.9587 2.07676C16.8122 1.92835 16.6135 1.84497 16.4062 1.84497H2.34375C2.13655 1.84497 1.93784 1.92835 1.79132 2.07676C1.64481 2.22517 1.5625 2.42647 1.5625 2.63635V13.7157C1.56238 13.868 1.60566 14.0172 1.68714 14.1452C1.76863 14.2732 1.88485 14.3747 2.02188 14.4374ZM18.75 12.9243C19.2985 12.9243 19.8374 13.0706 20.3125 13.3484C20.7875 13.6263 21.182 14.0259 21.4563 14.5071H22.6562C22.8635 14.5071 23.0622 14.4237 23.2087 14.2753C23.3552 14.1269 23.4375 13.9256 23.4375 13.7157V10.3128C23.4372 10.1332 23.3766 9.95902 23.2656 9.81894L20.9531 6.89082C20.8801 6.79814 20.7874 6.72327 20.6819 6.67177C20.5764 6.62026 20.4608 6.59343 20.3438 6.59326H18.75V12.9243ZM4.6875 14.5071C4.2731 14.5071 3.87567 14.6738 3.58265 14.9707C3.28962 15.2675 3.125 15.6701 3.125 16.0898C3.125 16.5096 3.28962 16.9122 3.58265 17.209C3.87567 17.5059 4.2731 17.6726 4.6875 17.6726C5.1019 17.6726 5.49933 17.5059 5.79235 17.209C6.08538 16.9122 6.25 16.5096 6.25 16.0898C6.25 15.6701 6.08538 15.2675 5.79235 14.9707C5.49933 14.6738 5.1019 14.5071 4.6875 14.5071ZM18.75 14.5071C18.3356 14.5071 17.9382 14.6738 17.6451 14.9707C17.3521 15.2675 17.1875 15.6701 17.1875 16.0898C17.1875 16.5096 17.3521 16.9122 17.6451 17.209C17.9382 17.5059 18.3356 17.6726 18.75 17.6726C19.1644 17.6726 19.5618 17.5059 19.8549 17.209C20.1479 16.9122 20.3125 16.5096 20.3125 16.0898C20.3125 15.6701 20.1479 15.2675 19.8549 14.9707C19.5618 14.6738 19.1644 14.5071 18.75 14.5071Z' fill='%231C1C1C'/%3E%3C/svg%3E");
@@ -452,7 +474,7 @@
   height: 20px;
   width: 25px;
   display: inline-block;
-}
+} */
 
 .imageElement--end-section-franqueado {
   margin-bottom: 50px;
@@ -488,12 +510,13 @@
 }
 
 .productBrandName {
-  font-family: "RobotoCondensed-Bold";
+  font-family: "WorkSans-Bold";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 100%;
   color: #000000;
+  text-transform: lowercase;
 }
 
 .shippingContainer :global(.vtex-address-form__postalCode-forgottenURL) {
@@ -501,6 +524,29 @@
   font-family: "WorkSans-Regular";
   font-style: normal;
   font-weight: 400;
+
+  width: 128%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &::before {
+    content: "calcule seu frete";
+    color: #121416;
+    font-size: 16px;
+    font-family: "WorkSans-Bold";
+    font-weight: 500;
+  }
+
+  a {
+    font-size: 14px;
+    text-transform: lowercase;
+    color: #61656B;
+
+    span {
+      display: none;
+    }
+  }
 }
 
 .shippingTable {
@@ -583,6 +629,10 @@
     margin-left: -2px;
     margin-top: -10px;
     width: 97% !important;
+  }
+
+  .shippingContainer :global(.vtex-address-form__postalCode-forgottenURL) {
+    width: 180%;
   }
 }
 
@@ -739,11 +789,11 @@
 }
 
 .productBrandName--pdp-brand-logo-text {
-  font-family: "WorkSans-Medium";
-  font-weight: 500;
+  font-family: "Nunito-Regular", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   text-transform: lowercase;
-  color: #171a1c;
+  color: #45494F;
   display: block;
 }
 

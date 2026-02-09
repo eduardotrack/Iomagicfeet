@@ -1805,17 +1805,18 @@
 .paragraph--pdp-brand-tag-name {
   margin: 0;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: lowercase;
-  color: #171a1c;
-  font-family: "WorkSans-Medium";
+  color: #45494F;
+  font-family: "Nunito-Regular", sans-serif;
 }
 
 .paragraph--pdp-sell-by {
+  font-family: "Nunito-Regular", sans-serif;
   margin: 0;
   color: #45494f;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .wrapper--tips-item-01 {
@@ -1864,6 +1865,35 @@
 .strong--shelf-title {
   font-family: 'WorkSans-Bold', sans-serif;
   font-weight: 700;
+}
+
+.paragraph--benefits-cep-item {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #383B3F;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.16669 10.0002L8.33339 14.1669L16.6668 5.8335" stroke="%2341D837" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 4px;
+  }
+}
+
+.link--benefits-cep-item {
+  color: #383B3F;
 }
 
 @media screen and (max-width: 990px) {

@@ -202,7 +202,7 @@
   :global(.vtex-product-price-1-x-installments--Panda-summary-price),
 .flexRowContent--shelf__price-and-savings-search
   :global(.vtex-product-price-1-x-currencyContainer--summary) {
-  font-family: "Roboto-Condensed";
+  font-family: "Nunito-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -619,11 +619,19 @@
   }
 }
 
+.flexRowContent--product__main--btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
 .flexRowContent--product__main--btn
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-  /* width: 50% !important; */
-  max-width: 258px;
-  margin: 10px 0;
+  /* max-width: 258px;
+  margin: 10px 0; */
+  width: 100% !important;
 }
 
 .flexRowContent--product__main--btn :global(.vtex-button):hover {
@@ -631,24 +639,27 @@
 }
 
 .flexRowContent--product__main--btn :global(.vtex-button) {
-  background: #1c1c1c;
+  border: 1px solid #000;
+  background: #000;
   border-radius: 10px;
-  border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 12px 0;
+}
+
+.flexRowContent--product__main--btn .flexRowContent--add-to-cart-pdp :global(.vtex-button) {
+  background: transparent;
 }
 
 .flexRowContent--product__main--btn
   :global(.vtex-button):hover
   :global(.vtex-button__label) {
-  color: #1c1c1c;
+  color: #000;
 }
 
-.flexRowContent--product__main--btn
+/* .flexRowContent--product__main--btn
   :global(.vtex-button):hover
   :global(.vtex-add-to-cart-button-0-x-buttonDataContainer)::before {
   filter: contrast(0) grayscale(1) brightness(0);
-}
+} */
 
 .flexRowContent--product__main--btn :global(.vtex-button__label) {
   font-family: "RobotoCondensed-Bold";
@@ -659,6 +670,13 @@
   color: #ffffff;
   display: flex;
   justify-content: center;
+  padding: 0 !important;
+}
+
+.flexRowContent--product__main--btn .flexRow--add-to-cart-pdp :global(.vtex-button__label) {
+  color: #000;
+  font-weight: 400;
+  font-family: "Roboto-Condensed";
 }
 
 .flexRowContent--product__main--btn
@@ -668,7 +686,7 @@
   gap: 13px;
 }
 
-.flexRowContent--product__main--btn
+/* .flexRowContent--product__main--btn
   :global(.vtex-add-to-cart-button-0-x-buttonDataContainer)::before {
   content: ".";
   background-image: url("data:image/svg+xml,%3Csvg width='17' height='20' viewBox='0 0 17 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.2273 8.99037H14.5852V3.67037C14.5852 1.99125 13.2016 0.630371 11.4943 0.630371H5.50568C3.79844 0.630371 2.41477 1.99125 2.41477 3.67037V8.99037H0.772727C0.345312 8.99037 0 9.33 0 9.75037V18.8704C0 19.2907 0.345312 19.6304 0.772727 19.6304H16.2273C16.6547 19.6304 17 19.2907 17 18.8704V9.75037C17 9.33 16.6547 8.99037 16.2273 8.99037ZM4.15341 3.67037C4.15341 2.9365 4.75952 2.34037 5.50568 2.34037H11.4943C12.2405 2.34037 12.8466 2.9365 12.8466 3.67037V8.99037H4.15341V3.67037ZM15.2614 17.9204H1.73864V10.7004H15.2614V17.9204ZM7.82386 14.6191V15.8779C7.82386 15.9824 7.9108 16.0679 8.01705 16.0679H8.98295C9.0892 16.0679 9.17614 15.9824 9.17614 15.8779V14.6191C9.37547 14.4784 9.52425 14.279 9.60106 14.0498C9.67788 13.8206 9.67877 13.5733 9.6036 13.3436C9.52843 13.1138 9.38108 12.9135 9.18276 12.7714C8.98444 12.6292 8.74539 12.5526 8.5 12.5526C8.25461 12.5526 8.01556 12.6292 7.81724 12.7714C7.61892 12.9135 7.47157 13.1138 7.3964 13.3436C7.32123 13.5733 7.32212 13.8206 7.39893 14.0498C7.47575 14.279 7.62453 14.4784 7.82386 14.6191Z' fill='white'/%3E%3C/svg%3E%0A");
@@ -680,7 +698,7 @@
   display: block;
   height: 19px;
   font-size: 0;
-}
+} */
 
 .flexRowContent--main-menu-department-block-custom {
   display: flex;
@@ -2117,6 +2135,18 @@
 
 .flexRow--home-banner-row {
   margin: 32px 0;
+}
+
+.flexCol--benefits-cep {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.flexRow--product__main--btn {
+  margin: 4px 0 16px;
 }
 
 .flexRowContent--native-shelf {

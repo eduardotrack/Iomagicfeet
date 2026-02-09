@@ -1,3 +1,4 @@
+import React, { useState, useMemo, useEffect } from "react";
 import { useQuery } from "react-apollo";
 import { useProduct } from "vtex.product-context";
 import { useDevice } from "vtex.device-detector";
@@ -8,12 +9,15 @@ import { ProductCard } from "./productCard";
 
 import styles from './styles.css'
 
-export const SimilarProductsShelf = () => {
+export const SimilarProductsShelf = ({ slidesToShow, showArrows, isFromNotifyUnavailable }) => {
+  const [suggestionsFiltered, setSuggestionsFiltered] = useState([])
   const { device } = useDevice()
   const isDesktop = device === 'desktop'
 
+  const slidesToShowCount = slidesToShow || (isDesktop ? 4 : 2)
+
   const settings = {
-    arrows: isDesktop ? true : false,
+    arrows: showArrows ?? isDesktop,
     dots: true,
     infinite: true,
     speed: 400,
@@ -25,8 +29,8 @@ export const SimilarProductsShelf = () => {
     draggable: true,
     touchMove: true,
 
-    slidesToShow: isDesktop ? 4 : 2,
-    slidesToScroll: isDesktop ? 4 : 2,
+    slidesToShow: slidesToShowCount,
+    slidesToScroll: slidesToShowCount,
     centerPadding: '2px',
 
     responsive: [
@@ -49,18 +53,16 @@ export const SimilarProductsShelf = () => {
   // console.log('productContext', productContext)
   const sizeSelected = productContext?.selectedItem?.variations[0]?.values[0]
   const useFilter =  productContext?.product?.specificationGroups[0].specifications
-  const categoryTree = productContext?.product?.categoryTree || ''
+
   var categoryList = ""
 
   var useList = []
 
-   categoryTree && categoryTree.map((item) => {
-        categoryList += '/'+ item.id
-    })
+  const category = useMemo(() => {
+    return productContext?.product?.categoryTree?.[0]?.id?.toString() || ''
+  }, [productContext])
 
-  var categoryList = categoryTree[0]?.id.toString() || ''
-
-  const useFilterValues = Object.values(useFilter);
+  const useFilterValues = Object.values(useFilter || {});
   // console.log('useFilterValues', useFilterValues)
 
   for (const value of useFilterValues) {
@@ -76,20 +78,60 @@ export const SimilarProductsShelf = () => {
               useList.push(`specificationFilter_24:${use}`);
           }
       }
+
+      // só adiciona esse filtro dentro do modal de avise-me
+      if(isFromNotifyUnavailable && value.name == "Família"){
+          for(var i = 0; i < value.values.length; i++){
+              var use = value.values[i]
+              useList.push(`specificationFilter_23:${use}`);
+          }
+      }
   }
+
+  const brand = productContext?.product?.brand
 
   useList.push(`specificationFilter_12:${sizeSelected}`)
   const {loading, error, data} = useQuery(GET_PRODUCTS, {
       variables: {
           term: useList,
-          category: categoryList
+          category,
+          map: isFromNotifyUnavailable ? "brand" : null,
+          query: isFromNotifyUnavailable ? brand : null
       }
   });
 
-  const suggestions = data?.products || []
-  const suggestionsFiltered = suggestions?.filter(item => item.productId !== productContext?.product?.productId)
-  
-  if(loading || error) return null
+  useEffect(() => {
+    if (!data?.products || !productContext) return
+
+    const filtered = data.products.filter(
+      item => item.productId !== productContext.product.productId
+    )
+
+    setSuggestionsFiltered(filtered)
+  }, [data, productContext])
+
+  if (error) return null
+
+  if(loading) {
+    return (
+      <div className={styles.customShelfSkeleton} />
+    )
+  }
+
+  const shelfContainer = isFromNotifyUnavailable
+    ? document.querySelector(
+        '.magicfeet-magicapp-0-x-notifyUnavailableShelf'
+      )
+    : document.querySelector('.vtex-flex-layout-0-x-flexCol--native-shelf-pdp')
+
+  // se as sugestoes forem menos que 2, não mostrar a vitrine
+  if (shelfContainer) {
+    if (!loading && suggestionsFiltered.length < 2) {
+      shelfContainer.style.display = 'none'
+    } else {
+      shelfContainer.style.display = 'flex'
+    }
+  }
 
   return (
     <div className={styles.customShelfWrapper}>

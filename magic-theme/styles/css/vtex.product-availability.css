@@ -3,6 +3,7 @@
     text-align: left;
     margin-bottom: 10px;
     align-items: center;
+    padding-top: 0;
 }
 
 .container--pd_disponibilidade_estoque::before {

@@ -199,3 +199,18 @@
         width: 100%;
     }
 }
+
+:global(.vtex-styleguide-9-x-closeAnimation) {
+  animation-duration: 200ms !important;
+  animation-timing-function: ease !important;
+}
+
+:global(.vtex-modal__overlay) {
+  opacity: 1;
+  transition: opacity 200ms ease;
+}
+
+:global(.vtex-styleguide-9-x-closeAnimation) :global(.vtex-modal__overlay),
+:global(.vtex-modal__overlay.vtex-styleguide-9-x-closeAnimation) {
+  opacity: 0;
+}
