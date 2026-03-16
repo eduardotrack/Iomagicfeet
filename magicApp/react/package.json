@@ -1,6 +1,11 @@
 {
   "name": "magicapp",
   "version": "0.0.0",
+  "resolutions": {
+    "expect": "29.7.0",
+    "jest-matcher-utils": "29.7.0",
+    "pretty-format": "29.7.0"
+  },
   "scripts": {
     "test": "vtex-test-tools test"
   },
@@ -23,11 +28,10 @@
     "@types/jest": "^25.1.4",
     "@types/node": "^13.9.8",
     "@types/react": "^16.9.31",
-    "@vtex/test-tools": "^3.3.2",
     "@vtex/tsconfig": "^0.6.0",
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
-    "magicfeet.magicapp": "https://dev--magicfeet.myvtex.com/_v/private/typings/linked/v1/magicfeet.magicapp@0.3.88+build1769630186/public/@types/magicfeet.magicapp",
+    "magicfeet.magicapp": "http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.91/public/@types/magicfeet.magicapp",
     "typescript": "3.9.7",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.1/public/@types/vtex.css-handles",
     "vtex.device-detector": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.device-detector@0.2.6/public/@types/vtex.device-detector",
@@ -35,19 +39,19 @@
     "vtex.modal-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.modal-layout@0.14.2/public/@types/vtex.modal-layout",
     "vtex.order-items": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.14.0/public/@types/vtex.order-items",
     "vtex.order-manager": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager",
-    "vtex.order-placed-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed-graphql@1.19.0/public/@types/vtex.order-placed-graphql",
-    "vtex.orders-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.114.2/public/@types/vtex.orders-graphql",
+    "vtex.order-placed-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed-graphql@1.19.1/public/@types/vtex.order-placed-graphql",
+    "vtex.orders-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.116.1/public/@types/vtex.orders-graphql",
     "vtex.pixel-manager": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.pixel-manager@1.9.0/public/@types/vtex.pixel-manager",
     "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context",
-    "vtex.product-summary": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.91.1/public/@types/vtex.product-summary",
+    "vtex.product-summary": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.91.2/public/@types/vtex.product-summary",
     "vtex.product-summary-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.13.0/public/@types/vtex.product-summary-context",
-    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.1/public/@types/vtex.render-runtime",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.2/public/@types/vtex.render-runtime",
     "vtex.responsive-values": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-values@0.4.2/public/@types/vtex.responsive-values",
     "vtex.rich-text": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.1/public/@types/vtex.rich-text",
     "vtex.search-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.69.4/public/@types/vtex.search-graphql",
     "vtex.search-page-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-page-context@0.2.0/public/@types/vtex.search-page-context",
-    "vtex.slider-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.24.8/public/@types/vtex.slider-layout",
-    "vtex.store-icons": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.18.0/public/@types/vtex.store-icons",
+    "vtex.slider-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.24.10/public/@types/vtex.slider-layout",
+    "vtex.store-icons": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.19.0/public/@types/vtex.store-icons",
     "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.16/public/@types/vtex.styleguide"
   }
 }

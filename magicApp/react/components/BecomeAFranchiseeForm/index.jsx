@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react'
 import { Alert, Button, Modal, Checkbox } from 'vtex.styleguide'
 
-import Dropdown from '../Dropdown'
 import Input from '../Input'
 import { useRequestYourDataForm } from './useRequestYourDataForm'
 
@@ -38,6 +37,7 @@ const investmentCapacity = [
     label: 'Acima de 1M',
   },
 ]
+
 const haveExperience = [
   {
     value: true,
@@ -46,6 +46,223 @@ const haveExperience = [
   {
     value: false,
     label: 'Não',
+  },
+]
+
+const professionalProfile = [
+  {
+    value: 'Empresário',
+    label: 'Empresário',
+  },
+  {
+    value: 'Investidor',
+    label: 'Investidor',
+  },
+  {
+    value: 'Executivo',
+    label: 'Executivo',
+  },
+  {
+    value: 'C-Level',
+    label: 'C-Level',
+  },
+  {
+    value: 'Gestor / gerente',
+    label: 'Gestor / gerente',
+  },
+  {
+    value: 'Autônomo',
+    label: 'Autônomo',
+  },
+  {
+    value: 'Profissional liberal',
+    label: 'Profissional liberal',
+  },
+  {
+    value: 'Outro',
+    label: 'Outro',
+  },
+]
+
+const operatingModel = [
+  {
+    value: 'Operador',
+    label: 'Operador (vou tocar a loja)',
+  },
+  {
+    value: 'Sócio-operador',
+    label: 'Sócio-operador',
+  },
+  {
+    value: 'Investidor',
+    label: 'Investidor (terei gestor)',
+  },
+]
+
+const equityCapital = [
+  {
+    value: 'Abaixo de R$ 700 mil',
+    label: 'Abaixo de R$ 700 mil',
+  },
+  {
+    value: 'R$ 700 mil – R$ 1 milhãoAcima de R$ 1 milhão',
+    label: 'R$ 700 mil – R$ 1 milhãoAcima de R$ 1 milhão',
+  },
+  {
+    value: 'Acima de R$ 1 milhão',
+    label: 'Acima de R$ 1 milhão',
+  },
+]
+
+const capitalOrigin = [
+  {
+    value: 'Recursos próprios',
+    label: 'Recursos próprios',
+  },
+  {
+    value: 'Venda de ativo',
+    label: 'Venda de ativo',
+  },
+  {
+    value: 'Sociedade',
+    label: 'Sociedade',
+  },
+  {
+    value: 'Financiamento bancário',
+    label: 'Financiamento bancário',
+  },
+  {
+    value: 'Ainda avaliando',
+    label: 'Ainda avaliando',
+  },
+]
+
+const investmentIntention = [
+  {
+    value: 'Imediatamente (0–3 meses)',
+    label: 'Imediatamente (0–3 meses)',
+  },
+  {
+    value: 'Curto prazo (3–6 meses)',
+    label: 'Curto prazo (3–6 meses)',
+  },
+  {
+    value: 'Médioprazo (6–12 meses)',
+    label: 'Médioprazo (6–12 meses)',
+  },
+  {
+    value: 'Apenas pesquisando oportunidades',
+    label: 'Apenas pesquisando oportunidades',
+  },
+]
+
+const businessExperience = [
+  {
+    value: 'openInput - Sim, franquia (quais)',
+    label: 'Sim, franquia (quais)',
+  },
+  {
+    value: 'openInput - Sim, negócio próprio (quais)',
+    label: 'Sim, negócio próprio (quais)',
+  },
+  {
+    value: 'openInput - Sim, gestão em varejo (quais)',
+    label: 'Sim, gestão em varejo (quais)',
+  },
+  {
+    value: 'Não',
+    label: 'Não',
+  },
+]
+
+const leadershipEmployees = [
+  {
+    value: '1–5',
+    label: '1–5',
+  },
+  {
+    value: '5–10',
+    label: '5–10',
+  },
+  {
+    value: '10+',
+    label: '10+',
+  },
+]
+
+const exPhysicalRetail = [
+  {
+    value: 'openInput - Sim (qual)',
+    label: 'Sim (qual)',
+  },
+  {
+    value: 'Não',
+    label: 'Não',
+  },
+  {
+    value: 'openInput - Indireta (qual)',
+    label: 'Indireta (qual)',
+  },
+]
+
+const franchiseRegion = [
+  {
+    value: 'Já possuo ponto comercial',
+    label: 'Já possuo ponto comercial',
+  },
+  {
+    value: 'Shopping center',
+    label: 'Shopping center',
+  },
+  {
+    value: 'Rua / bairro comercial',
+    label: 'Rua / bairro comercial',
+  },
+  {
+    value: 'Ainda avaliando',
+    label: 'Ainda avaliando',
+  },
+]
+
+const visitedOurFranchise = [
+  {
+    value: 'Sim',
+    label: 'Sim',
+  },
+  {
+    value: 'Não',
+    label: 'Não',
+  },
+]
+
+const discoveredOpportunity = [
+  {
+    value: 'LinkedIn',
+    label: 'LinkedIn',
+  },
+  {
+    value: 'Instagram',
+    label: 'Instagram',
+  },
+  {
+    value: 'Indicação',
+    label: 'Indicação',
+  },
+  {
+    value: 'Pesquisa',
+    label: 'Pesquisa',
+  },
+  {
+    value: 'Google',
+    label: 'Google',
+  },
+  {
+    value: 'Evento / feira',
+    label: 'Evento / feira',
+  },
+  {
+    value: 'Outro',
+    label: 'Outro',
   },
 ]
 
@@ -121,6 +338,10 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
     value = value.replace(/(\d{5})(\d)/, '$1-$2')
 
     return value
+  }
+
+ const shouldOpenInput = (value) => {
+    return value?.includes('openInput')
   }
 
   return (
@@ -219,6 +440,162 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
         placeholder="Selecione"
         disabled={isLoading}
         onChange={(option) => handleInputChange('haveExperience', option.value)}
+      />
+
+      <h3 style={{ marginBottom: 0 }}>PERFIL DO CANDIDATO</h3>
+      <MultiSelect
+        name="professionalProfile"
+        isMulti={false}
+        label="Qual seu perfil profissional atualmente?"
+        labelId="professionalProfile"
+        options={professionalProfile}
+        placeholder="Selecione"
+        disabled={isLoading}
+        onChange={(option) => handleInputChange('professionalProfile', option.value)}
+      />
+
+      <MultiSelect
+        name="operatingModel"
+        isMulti={false}
+        label="Você pretende operar a franquia diretamente ou ser investidor?"
+        labelId="operatingModel"
+        options={operatingModel}
+        placeholder="Selecione"
+        disabled={isLoading}
+        onChange={(option) => handleInputChange('operatingModel', option.value)}
+      />
+
+      <h3 style={{ marginBottom: 0 }}>CAPACIDADE DE INVESTIMENTO</h3>
+      <MultiSelect
+        name="equityCapital"
+        isMulti={false}
+        label="Qual capital próprio você possui disponível para investimento imediato?"
+        labelId="equityCapital"
+        options={equityCapital}
+        placeholder="Selecione"
+        disabled={isLoading}
+        onChange={(option) => handleInputChange('equityCapital', option.value)}
+      />
+
+      <MultiSelect
+        name="capitalOrigin"
+        isMulti={false}
+        label="A origem do capital é:"
+        labelId="capitalOrigin"
+        options={capitalOrigin}
+        placeholder="Selecione"
+        disabled={isLoading}
+        onChange={(option) => handleInputChange('capitalOrigin', option.value)}
+      />
+
+      <MultiSelect
+        name="investmentIntention"
+        isMulti={false}
+        label="Quando pretende investir?"
+        labelId="investmentIntention"
+        options={investmentIntention}
+        placeholder="Selecione"
+        disabled={isLoading}
+        onChange={(option) => handleInputChange('investmentIntention', option.value)}
+      />
+
+      <h3 style={{ marginBottom: 0 }}>EXPERIÊNCIA DE GESTÃO</h3>
+      <MultiSelect
+        name="businessExperience"
+        isMulti={false}
+        label="Você já operou algum negócio ou franquia?"
+        labelId="businessExperience"
+        options={businessExperience}
+        placeholder="Selecione"
+        disabled={isLoading}
+        onChange={(option) => {
+          const value = option.value.replace('Openimput - ', '')
+          handleInputChange('businessExperience', value)
+        }}
+      />
+      {shouldOpenInput(formData.businessExperience) && (
+        <Input
+          name="businessExperienceDetail"
+          label="Quais?"
+          placeholder="Descreva aqui"
+          value={formData.businessExperienceDetail || ''}
+          onChange={(value) =>
+            handleInputChange('businessExperienceDetail', value)
+          }
+          disabled={isLoading}
+        />
+      )}
+
+      <MultiSelect
+        name="leadershipEmployees"
+        isMulti={false}
+        label="Quantos funcionários você já liderou diretamente?"
+        labelId="leadershipEmployees"
+        options={leadershipEmployees}
+        placeholder="Selecione"
+        disabled={isLoading}
+        onChange={(option) => handleInputChange('leadershipEmployees', option.value)}
+      />
+
+      <MultiSelect
+        name="exPhysicalRetail"
+        isMulti={false}
+        label="Você possui experiência em varejo físico?"
+        labelId="exPhysicalRetail"
+        options={exPhysicalRetail}
+        placeholder="Selecione"
+        disabled={isLoading}
+        onChange={(option) => {
+          const value = option.value.replace('Openimput - ', '')
+          handleInputChange('exPhysicalRetail', value)
+        }}
+      />
+       {shouldOpenInput(formData.exPhysicalRetail) && (
+        <Input
+          name="exPhysicalRetailDetail"
+          label="Quais?"
+          placeholder="Descreva aqui"
+          value={formData.exPhysicalRetailDetail || ''}
+          onChange={(value) =>
+            handleInputChange('exPhysicalRetailDetail', value)
+          }
+          disabled={isLoading}
+        />
+      )}
+
+      <h3 style={{ marginBottom: 0 }}>GEO EXPANSÃO</h3>
+      <MultiSelect
+        name="franchiseRegion"
+        isMulti={false}
+        label="Onde pretende abrir sua franquia?"
+        labelId="franchiseRegion"
+        options={franchiseRegion}
+        placeholder="Selecione"
+        disabled={isLoading}
+        onChange={(option) => handleInputChange('franchiseRegion', option.value)}
+      />
+
+      <h3 style={{ marginBottom: 0 }}>QUALIFICAÇÃO FINAL</h3>
+       <MultiSelect
+        name="visitedOurFranchise"
+        isMulti={false}
+        label="Você já visitou alguma loja da marca?"
+        labelId="visitedOurFranchise"
+        options={visitedOurFranchise}
+        placeholder="Selecione"
+        disabled={isLoading}
+        onChange={(option) => handleInputChange('visitedOurFranchise', option.value)}
+      />
+
+       <MultiSelect
+        name="discoveredOpportunity"
+        isMulti={false}
+        label="Como conheceu a oportunidade de franquia?"
+        labelId="discoveredOpportunity"
+        options={discoveredOpportunity}
+        placeholder="Selecione"
+        disabled={isLoading}
+        onChange={(option) => handleInputChange('discoveredOpportunity', option.value)}
       />
 
       <div className={styles['becomeAFranchiseeForm-formMessage']}>
