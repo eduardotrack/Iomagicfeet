@@ -4,10 +4,7 @@
     "props": {
       "blockClass": "product"
     },
-    "children": [
-      "flex-layout.col#stack",
-      "flex-layout.col#right-col"
-    ]
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
   },
 
   // LEFT
@@ -48,7 +45,7 @@
       "condition-layout.product#show-coupon-pdp",
       "pd-skuSimilar",
       "flex-layout.col#sku-selector-pdp",
-      
+
       "flex-layout.row#buy-together",
       "flex-layout.row#product-qqt",
       "product-availability",
@@ -59,7 +56,7 @@
 
       "flex-layout.row#description",
       "flex-layout.row#pdp-description-brand-tag",
-      
+
       "product-reviews",
       "product-questions-and-answers",
       "responsive-layout.desktop#share-pdp"
@@ -203,11 +200,7 @@
       "blockClass": "product__main--sku",
       "preventVerticalStretch": true
     },
-    "children": [
-      "sizebay",
-      "sku-selector#pdp-core",
-      "pd-SizeIndicationPdp"
-    ]
+    "children": ["sizebay", "sku-selector#pdp-core", "pd-SizeIndicationPdp"]
   },
 
   "sku-selector#pdp-core": {
@@ -254,25 +247,24 @@
       "blockClass": "product__main--btn",
       "colSizing": "auto"
     },
-    "children": ["flex-layout.row#buy-now-pdp", "flex-layout.row#add-to-cart-pdp"]
+    "children": [
+      "flex-layout.row#buy-now-pdp",
+      "flex-layout.row#add-to-cart-pdp"
+    ]
   },
 
   "flex-layout.row#add-to-cart-pdp": {
     "props": {
       "blockClass": "add-to-cart-pdp"
     },
-    "children": [
-      "add-to-cart-button#product"
-    ]
+    "children": ["add-to-cart-button#product"]
   },
 
   "flex-layout.row#buy-now-pdp": {
     "props": {
       "blockClass": "buy-now-pdp"
     },
-    "children": [
-      "add-to-cart-button#product-buynow"
-    ]
+    "children": ["add-to-cart-button#product-buynow"]
   },
 
   "add-to-cart-button#product": {
@@ -385,25 +377,40 @@
       "Else": "flex-layout.col#pdp-product-tips"
     }
   },
-  "flex-layout.row#pdp-product-tips": {
-    "title": "Panda | Lista de Dicas",
-    "props": {
-      "blockClass": "pdp-product-tips"
-    },
-    "children": [
-      "flex-layout.col#pdp-product-tips"
-    ]
-  },
+
   "flex-layout.col#pdp-product-tips": {
     "title": "Panda | Lista de Dicas",
     "props": {
       "blockClass": "pdp-product-tips"
     },
     "children": [
-      "flex-layout.row#pdp-product-tips-01",
+      "condition-layout.product#filter-sku",
       "flex-layout.row#pdp-product-tips-02"
     ]
   },
+
+  "condition-layout.product#filter-sku": {
+    "title": "Condicional",
+    "props": {
+      "matchType": "none",
+      "conditions": [
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2027911"
+          }
+        },
+        {
+          "subject": "productId",
+          "arguments": {
+            "id": "2027910"
+          }
+        }
+      ],
+      "Then": "flex-layout.row#pdp-product-tips-01"
+    }
+  },
+
   "flex-layout.row#pdp-product-tips-01": {
     "title": "Panda | Dica 01",
     "props": {
@@ -453,10 +460,7 @@
       "blockClass": "pdp-product-tips-item",
       "colSizing": "auto"
     },
-    "children": [
-      "image#pdp-product-tips-02",
-      "rich-text#pdp-product-tips-02"
-    ]
+    "children": ["image#pdp-product-tips-02", "rich-text#pdp-product-tips-02"]
   },
   "image#pdp-product-tips-02": {
     "title": "Panda | Dica 02 - Ícone",
@@ -495,7 +499,7 @@
       "text": "frete grátis [confira as regras](https://www.magicfeet.com.br/tipos-de-entrega)"
     }
   },
-    "rich-text#beneficios-frete-02": {
+  "rich-text#beneficios-frete-02": {
     "title": "Panda | Benefício 02",
     "props": {
       "blockClass": "benefits-cep-item",
