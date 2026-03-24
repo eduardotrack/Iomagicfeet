@@ -147,8 +147,8 @@ const investmentIntention = [
     label: 'Curto prazo (3–6 meses)',
   },
   {
-    value: 'Médioprazo (6–12 meses)',
-    label: 'Médioprazo (6–12 meses)',
+    value: 'Médio prazo (6–12 meses)',
+    label: 'Médio prazo (6–12 meses)',
   },
   {
     value: 'Apenas pesquisando oportunidades',
