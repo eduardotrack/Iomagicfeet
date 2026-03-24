@@ -1,7 +1,7 @@
-import React, { lazy, Suspense } from 'react'
-// import Select from 'react-select'
+import React, { Suspense } from 'react'
+import Select from 'react-select'
 
-const Select = lazy(() => import('react-select'))
+// const Select = lazy(() => import('react-select'))
 
 import styles from './styles.css'
 
