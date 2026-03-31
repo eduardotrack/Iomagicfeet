@@ -40,11 +40,11 @@ const investmentCapacity = [
 
 const haveExperience = [
   {
-    value: true,
+    value: 'openInput - Sim',
     label: 'Sim',
   },
   {
-    value: false,
+    value: 'Não',
     label: 'Não',
   },
 ]
@@ -440,6 +440,19 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
         disabled={isLoading}
         onChange={(option) => handleInputChange('haveExperience', option.value)}
       />
+      {formData?.haveExperience &&
+        shouldOpenInput(formData?.haveExperience) && (
+          <Input
+            name="businessExperienceDetail"
+            label="Descreva"
+            placeholder="Descreva aqui"
+            value={formData.businessExperienceDetail || ''}
+            onChange={(value) =>
+              handleInputChange('businessExperienceDetail', value)
+            }
+            disabled={isLoading}
+          />
+        )}
 
       <MultiSelect
         name="professionalProfile"
