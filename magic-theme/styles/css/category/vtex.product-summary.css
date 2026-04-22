@@ -5,12 +5,15 @@
 
 .element--product__summary-category {
   padding: 0;
-  border: 1px solid #ECEDED;
+  border: 1px solid #eceded;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+  max-width: 339px;
 
-  :global(.vtex-wish-list-1-x-wishlistIconContainer--shelf__add-to-list-category) {
+  :global(
+    .vtex-wish-list-1-x-wishlistIconContainer--shelf__add-to-list-category
+  ) {
     /* background-color: #fff; */
     width: fit-content;
     height: fit-content;
@@ -25,7 +28,7 @@
       min-height: unset;
     }
   }
-  
+
   :global(.vtex-wish-list-1-x-wishlistIcon--shelf__add-to-list-category) {
     background-size: auto 24px !important;
   }
@@ -43,7 +46,7 @@
 
 .imageContainer--shelf__image-category-category {
   width: 100%;
-  background-color: #F2F3F5;
+  background-color: #f2f3f5;
 }
 
 .nameContainer--product__summary-name-category {
@@ -51,8 +54,9 @@
   justify-content: flex-start;
 }
 
-.productNameContainer--product__summary-name-category .brandName--product__summary-name-category {
-  font-family: 'WorkSans-Regular', sans-serif;
+.productNameContainer--product__summary-name-category
+  .brandName--product__summary-name-category {
+  font-family: "WorkSans-Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #101828;
@@ -79,7 +83,7 @@
     border: 1px solid #000;
 
     &:hover {
-      background-color: #5DFF49;
+      background-color: #5dff49;
       opacity: 1;
 
       .buyButtonText--shelf__buy-button-category {
@@ -97,15 +101,17 @@
   line-height: 80%;
 
   &::before {
-    content: 'comprar';
+    content: "comprar";
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 990px) {
   .element--product__summary-category {
-    box-shadow: 0px 4px 4px 0px #0000000A;
-    :global(.vtex-wish-list-1-x-wishlistIconContainer--shelf__add-to-list-category) {
+    box-shadow: 0px 4px 4px 0px #0000000a;
+    :global(
+      .vtex-wish-list-1-x-wishlistIconContainer--shelf__add-to-list-category
+    ) {
       top: 4px !important;
       right: 8px !important;
     }

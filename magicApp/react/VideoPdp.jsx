@@ -38,8 +38,6 @@ const insertVideo = (product, observerRef) => {
   //Pegando a url do video
   const productWithVideo = product?.items?.[0]?.videos?.[0]?.videoUrl ?? ''
 
-  console.log('productWithVideo', productWithVideo)
-
   if (!productWithVideo) return
 
   //função para transformar a url do video em um iframe embed
@@ -138,7 +136,10 @@ const insertVideo = (product, observerRef) => {
   if (videoThumbnail) {
     videoThumbnail.style.display = 'none'
 
-    console.log('document videothumbnail', document.querySelector(`.${styles.videoThumbnail}`))
+    console.log(
+      'document videothumbnail',
+      document.querySelector(`.${styles.videoThumbnail}`)
+    )
 
     if (!document.querySelector(`.${styles.videoThumbnail}`)) {
       console.log('entrou no videothumbnail')

@@ -2875,6 +2875,10 @@ div#delivery-packages-options:after {
   font-size: 12px;
 }
 
+#vtexIdContainer [ng-show='auth.showAccessKeyAuthentication'] {
+  display: none;
+}
+
 @media (max-width: 570px) {
   .srp-toggle__pickup:after {
     font-size: 14px;
