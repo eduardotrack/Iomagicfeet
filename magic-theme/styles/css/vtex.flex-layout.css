@@ -572,7 +572,7 @@
 }
 
 .flexRow--panda-search__products {
-  width: calc(100vw - 40px);
+  /* width: calc(100vw - 40px); */
   max-width: 1920px;
   position: relative;
   left: 50%;

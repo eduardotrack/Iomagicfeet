@@ -16,14 +16,13 @@
     "children": [
       "list-context.image-list#slider-full-home-new",
       "flex-layout.row#tips-slider",
-      // "experimental__visibility-layout#sports-shelf", //-----------
+      "experimental__visibility-layout#sports-shelf",
       "experimental__visibility-layout#week-featured",
       "flex-layout.row#genders-shelf-home",
       "experimental__visibility-layout#best-sellers-home",
       "experimental__visibility-layout#home-banner-benefits",
       "experimental__visibility-layout#favorite-character",
       "flex-layout.row#infocard-categorias",
-      "experimental__visibility-layout#sports-shelf", //---------------
       "responsive-layout.mobile#brands-home-Mob",
       "responsive-layout.desktop#brands-home-Desk",
       "flex-layout.row#banner-app-home"

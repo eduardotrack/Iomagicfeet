@@ -9,7 +9,6 @@
   border-radius: 8px;
   overflow: hidden;
   position: relative;
-  max-width: 339px;
 
   :global(
     .vtex-wish-list-1-x-wishlistIconContainer--shelf__add-to-list-category

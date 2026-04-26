@@ -11,6 +11,7 @@
         "skusFilter": "ALL",
         "simulationBehavior": "default",
         "maxItemsPerPage": 24
+        // "hideUnavailableItems": true
       }
     }
   },
@@ -35,7 +36,7 @@
   "store.search#department": {
     "title": "Panda | Busca por departamento",
     "blocks": [
-      // "flex-layout.row#tips-core-pages", 
+      // "flex-layout.row#tips-core-pages",
       "search-result-layout#department"
     ],
     "props": {
@@ -44,6 +45,7 @@
         "skusFilter": "ALL",
         "simulationBehavior": "default",
         "maxItemsPerPage": 24
+        // "hideUnavailableItems": true
       }
     }
   },
@@ -61,6 +63,7 @@
         "skusFilter": "ALL",
         "simulationBehavior": "default",
         "maxItemsPerPage": 24
+        // "hideUnavailableItems": true
       }
     }
   },
@@ -77,6 +80,7 @@
         "skusFilter": "ALL",
         "simulationBehavior": "default",
         "maxItemsPerPage": 24
+        // "hideUnavailableItems": true
       }
     }
   }
