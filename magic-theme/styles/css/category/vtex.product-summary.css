@@ -33,10 +33,6 @@
   }
 }
 
-.imageContainer--shelf__image-category-category {
-  display: flex;
-}
-
 .image--shelf__image-category-category {
   max-height: unset !important;
   height: auto !important;
@@ -46,6 +42,7 @@
 .imageContainer--shelf__image-category-category {
   width: 100%;
   background-color: #f2f3f5;
+  display: flex;
 }
 
 .nameContainer--product__summary-name-category {
