@@ -23,21 +23,6 @@ const interestBrands = [
   },
 ]
 
-const investmentCapacity = [
-  {
-    value: 'Abaixo 600 Mil',
-    label: 'Abaixo 600 Mil',
-  },
-  {
-    value: 'Entre 600 Mil - 1 Milhão',
-    label: 'Entre 600 Mil - 1 Milhão',
-  },
-  {
-    value: 'Acima de 1 Milhão',
-    label: 'Acima de 1 Milhão',
-  },
-]
-
 const haveExperience = [
   {
     value: 'openInput - Sim',
@@ -522,7 +507,7 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
         placeholder="Selecione"
         disabled={isLoading}
         onChange={(option) => {
-          const value = option.value.replace('Openimput - ', '')
+          const value = option.value.replace('openInput - ', '')
           handleInputChange('businessExperience', value)
         }}
       />
@@ -561,7 +546,7 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
         placeholder="Selecione"
         disabled={isLoading}
         onChange={(option) => {
-          const value = option.value.replace('Openimput - ', '')
+          const value = option.value.replace('openInput - ', '')
           handleInputChange('exPhysicalRetail', value)
         }}
       />

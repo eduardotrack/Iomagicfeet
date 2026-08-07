@@ -41,5 +41,4 @@ export const INITIAL_FORM_STATE = {
   interestState: '',
   interestCity: '',
   interestBrand: '',
-  investmentCapacity: '',
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { INITIAL_FORM_STATE } from './constants'
-import { saveDataRequestFile, sendDataRequest } from './service'
+import { sendDataRequest } from './service'
 
 /**
  * return the object with state and handles to view component
@@ -32,6 +32,10 @@ export const useRequestYourDataForm = () => {
 
     const isFormValid = validateForm()
 
+    if (!isFormValid) {
+      return
+    }
+
     if (!isFormValid) return
 
     setIsLoading(true)
@@ -53,14 +57,25 @@ export const useRequestYourDataForm = () => {
     const formValidation = {}
 
     Object.keys(formData).forEach((field) => {
-      if(['haveExperience'].includes(field)) return
+      if (field === 'haveExperience') return
 
-      const isFieldValid =
-        field === 'acceptTerms'
-          ? Boolean(formData[field])
-          : formData[field]?.trim().length > 0
+      const value = formData[field]
 
-      if (!isFieldValid) formValidation[field] = 'Campo obrigatório!'
+      let isFieldValid = false
+
+      if (field === 'acceptTerms') {
+        isFieldValid = Boolean(value)
+      } else if (typeof value === 'string') {
+        isFieldValid = value.trim().length > 0
+      } else if (Array.isArray(value)) {
+        isFieldValid = value.length > 0
+      } else {
+        isFieldValid = Boolean(value)
+      }
+
+      if (!isFieldValid) {
+        formValidation[field] = 'Campo obrigatório!'
+      }
     })
 
     const isFormValid = Object.keys(formValidation).length === 0
