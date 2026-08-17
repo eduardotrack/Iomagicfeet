@@ -23,235 +23,59 @@ const interestBrands = [
   },
 ]
 
-const haveExperience = [
+const haveExperienceTxt = [
   {
-    value: 'openInput - Sim',
-    label: 'Sim',
+    value: 'Varejo Físico',
+    label: 'Varejo Físico',
   },
   {
-    value: 'Não',
-    label: 'Não',
-  },
-]
-
-const professionalProfile = [
-  {
-    value: 'Empresário',
-    label: 'Empresário',
+    value: 'Gestão de equipes',
+    label: 'Gestão de equipes',
   },
   {
-    value: 'Investidor',
-    label: 'Investidor',
-  },
-  {
-    value: 'Executivo',
-    label: 'Executivo',
-  },
-  {
-    value: 'C-Level',
-    label: 'C-Level',
-  },
-  {
-    value: 'Gestor / gerente',
-    label: 'Gestor / gerente',
-  },
-  {
-    value: 'Autônomo',
-    label: 'Autônomo',
-  },
-  {
-    value: 'Profissional liberal',
-    label: 'Profissional liberal',
-  },
-  {
-    value: 'Outro',
-    label: 'Outro',
+    value: 'Já operou algum negócio ou franquia',
+    label: 'Já operou algum negócio ou franquia',
   },
 ]
 
-const operatingModel = [
+const franchiseModel = [
   {
-    value: 'Operador',
-    label: 'Operador (vou tocar a loja)',
+    value: 'diretamente',
+    label: 'Pretendo operar diretamente a franquia',
   },
   {
-    value: 'Sócio-operador',
-    label: 'Sócio-operador',
-  },
-  {
-    value: 'Investidor',
-    label: 'Investidor (terei gestor)',
+    value: 'investidor',
+    label: 'Pretendo ser investidor (ter um gerente/operador)',
   },
 ]
 
 const equityCapital = [
   {
-    value: 'Abaixo de R$ 700 mil',
-    label: 'Abaixo de R$ 700 mil',
+    value: 'Até R$ 700 mil',
+    label: 'Até R$ 700 mil',
   },
   {
-    value: 'R$ 700 mil – R$ 1 milhão',
-    label: 'R$ 700 mil – R$ 1 milhão',
+    value: 'de 700 mil a 1 milhão',
+    label: 'de 700 mil a 1 milhão',
   },
   {
-    value: 'Acima de R$ 1 milhão',
-    label: 'Acima de R$ 1 milhão',
-  },
-]
-
-const capitalOrigin = [
-  {
-    value: 'Recursos próprios',
-    label: 'Recursos próprios',
-  },
-  {
-    value: 'Venda de ativo',
-    label: 'Venda de ativo',
-  },
-  {
-    value: 'Sociedade',
-    label: 'Sociedade',
-  },
-  {
-    value: 'Financiamento bancário',
-    label: 'Financiamento bancário',
-  },
-  {
-    value: 'Ainda avaliando',
-    label: 'Ainda avaliando',
+    value: 'Acima de 1 milhão',
+    label: 'Acima de 1 milhão',
   },
 ]
 
 const investmentIntention = [
   {
-    value: 'Imediatamente (0–3 meses)',
-    label: 'Imediatamente (0–3 meses)',
+    value: 'Imediato',
+    label: 'Imediato',
   },
   {
-    value: 'Curto prazo (3–6 meses)',
-    label: 'Curto prazo (3–6 meses)',
+    value: 'De 3 a 6 meses',
+    label: 'De 3 a 6 meses',
   },
   {
-    value: 'Médio prazo (6–12 meses)',
-    label: 'Médio prazo (6–12 meses)',
-  },
-  {
-    value: 'Apenas pesquisando oportunidades',
-    label: 'Apenas pesquisando oportunidades',
-  },
-]
-
-const businessExperience = [
-  {
-    value: 'openInput - Sim, franquia (quais)',
-    label: 'Sim, franquia',
-  },
-  {
-    value: 'openInput - Sim, negócio próprio (quais)',
-    label: 'Sim, negócio próprio',
-  },
-  {
-    value: 'openInput - Sim, gestão em varejo (quais)',
-    label: 'Sim, gestão em varejo',
-  },
-  {
-    value: 'Não',
-    label: 'Não',
-  },
-]
-
-const leadershipEmployees = [
-  {
-    value: 'Nenhum',
-    label: 'Nenhum',
-  },
-  {
-    value: '1–5',
-    label: '1–5',
-  },
-  {
-    value: '5–10',
-    label: '5–10',
-  },
-  {
-    value: '10+',
-    label: '10+',
-  },
-]
-
-const exPhysicalRetail = [
-  {
-    value: 'openInput - Sim (qual)',
-    label: 'Sim',
-  },
-  {
-    value: 'Não',
-    label: 'Não',
-  },
-  {
-    value: 'openInput - Indireta (qual)',
-    label: 'Possuo experiência em nível societário/estratégico',
-  },
-]
-
-const franchiseRegion = [
-  {
-    value: 'Já possuo ponto comercial',
-    label: 'Já possuo ponto comercial',
-  },
-  {
-    value: 'Shopping center',
-    label: 'Shopping center',
-  },
-  {
-    value: 'Rua / bairro comercial',
-    label: 'Rua / bairro comercial',
-  },
-  {
-    value: 'Ainda avaliando',
-    label: 'Ainda avaliando',
-  },
-]
-
-const visitedOurFranchise = [
-  {
-    value: 'Sim',
-    label: 'Sim',
-  },
-  {
-    value: 'Não',
-    label: 'Não',
-  },
-]
-
-const discoveredOpportunity = [
-  {
-    value: 'LinkedIn',
-    label: 'LinkedIn',
-  },
-  {
-    value: 'Instagram',
-    label: 'Instagram',
-  },
-  {
-    value: 'Indicação',
-    label: 'Indicação',
-  },
-  {
-    value: 'Pesquisa',
-    label: 'Pesquisa',
-  },
-  {
-    value: 'Google',
-    label: 'Google',
-  },
-  {
-    value: 'Evento / feira',
-    label: 'Evento / feira',
-  },
-  {
-    value: 'Outro',
-    label: 'Outro',
+    value: 'Acima de 6 meses',
+    label: 'Acima de 6 meses',
   },
 ]
 
@@ -268,7 +92,6 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
     isModalOpen,
     hasError,
     isFormSuccessfullySubmitted,
-    handleFileInputChange,
     handleInputChange,
     handleFormSubmit,
     setIsModalOpen,
@@ -337,10 +160,6 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
     return phoneNumber
   }
 
-  const shouldOpenInput = (value) => {
-    return value?.includes('openInput')
-  }
-
   return (
     <form className={styles.becomeAFranchiseeForm} onSubmit={handleFormSubmit}>
       <Input
@@ -357,13 +176,13 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
         name="phone"
         type="tel"
         required
-        label="Telefone"
+        label="Telefone/WhatsApp"
         placeholder="Insira um número de telefone"
         value={formData.phone}
         onChange={(value) =>
           handleInputChange('phone', formatPhoneNumber(value))
         }
-        errorMessage={formErrors?.name}
+        errorMessage={formErrors?.phone}
         disabled={isLoading}
       />
       <Input
@@ -416,51 +235,14 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
       />
 
       <MultiSelect
-        name="haveExperience"
+        name="franchiseModel"
         isMulti={false}
-        label="Possui experiência no varejo?"
-        labelId="haveExperience"
-        options={haveExperience}
+        label="Qual modelo de franquia você tem interesse?"
+        labelId="franchiseModel"
+        options={franchiseModel}
         placeholder="Selecione"
         disabled={isLoading}
-        onChange={(option) => handleInputChange('haveExperience', option.value)}
-      />
-      {formData?.haveExperience &&
-        shouldOpenInput(formData?.haveExperience) && (
-          <Input
-            name="businessExperienceDetail"
-            label="Descreva"
-            placeholder="Descreva aqui"
-            value={formData.businessExperienceDetail || ''}
-            onChange={(value) =>
-              handleInputChange('businessExperienceDetail', value)
-            }
-            disabled={isLoading}
-          />
-        )}
-
-      <MultiSelect
-        name="professionalProfile"
-        isMulti={false}
-        label="Qual seu perfil profissional atualmente?"
-        labelId="professionalProfile"
-        options={professionalProfile}
-        placeholder="Selecione"
-        disabled={isLoading}
-        onChange={(option) =>
-          handleInputChange('professionalProfile', option.value)
-        }
-      />
-
-      <MultiSelect
-        name="operatingModel"
-        isMulti={false}
-        label="Você pretende operar a franquia diretamente ou ser investidor?"
-        labelId="operatingModel"
-        options={operatingModel}
-        placeholder="Selecione"
-        disabled={isLoading}
-        onChange={(option) => handleInputChange('operatingModel', option.value)}
+        onChange={(option) => handleInputChange('franchiseModel', option.value)}
       />
 
       <MultiSelect
@@ -475,20 +257,22 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
       />
 
       <MultiSelect
-        name="capitalOrigin"
+        name="haveExperienceTxt"
         isMulti={false}
-        label="A origem do capital é:"
-        labelId="capitalOrigin"
-        options={capitalOrigin}
+        label="Possui experiência no varejo?"
+        labelId="haveExperienceTxt"
+        options={haveExperienceTxt}
         placeholder="Selecione"
         disabled={isLoading}
-        onChange={(option) => handleInputChange('capitalOrigin', option.value)}
+        onChange={(option) =>
+          handleInputChange('haveExperienceTxt', option.value)
+        }
       />
 
       <MultiSelect
         name="investmentIntention"
         isMulti={false}
-        label="Quando pretende investir?"
+        label="Em quanto tempo você pretende investir na franquia?"
         labelId="investmentIntention"
         options={investmentIntention}
         placeholder="Selecione"
@@ -498,108 +282,15 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
         }
       />
 
-      <MultiSelect
-        name="businessExperience"
-        isMulti={false}
-        label="Você já operou algum negócio ou franquia?"
-        labelId="businessExperience"
-        options={businessExperience}
-        placeholder="Selecione"
+      <Input
+        name="franchiseInterest"
+        required
+        label="O que mais chamou sua atenção na oportunidade de franquia?"
+        placeholder="Descreva sua resposta"
+        value={formData.franchiseInterest}
+        onChange={(value) => handleInputChange('franchiseInterest', value)}
+        errorMessage={formErrors?.franchiseInterest}
         disabled={isLoading}
-        onChange={(option) => {
-          const value = option.value.replace('openInput - ', '')
-          handleInputChange('businessExperience', value)
-        }}
-      />
-      {shouldOpenInput(formData.businessExperience) && (
-        <Input
-          name="businessExperienceDetail"
-          label="Quais?"
-          placeholder="Descreva aqui"
-          value={formData.businessExperienceDetail || ''}
-          onChange={(value) =>
-            handleInputChange('businessExperienceDetail', value)
-          }
-          disabled={isLoading}
-        />
-      )}
-
-      <MultiSelect
-        name="leadershipEmployees"
-        isMulti={false}
-        label="Quantos funcionários você já liderou diretamente?"
-        labelId="leadershipEmployees"
-        options={leadershipEmployees}
-        placeholder="Selecione"
-        disabled={isLoading}
-        onChange={(option) =>
-          handleInputChange('leadershipEmployees', option.value)
-        }
-      />
-
-      <MultiSelect
-        name="exPhysicalRetail"
-        isMulti={false}
-        label="Você possui experiência em varejo físico?"
-        labelId="exPhysicalRetail"
-        options={exPhysicalRetail}
-        placeholder="Selecione"
-        disabled={isLoading}
-        onChange={(option) => {
-          const value = option.value.replace('openInput - ', '')
-          handleInputChange('exPhysicalRetail', value)
-        }}
-      />
-      {shouldOpenInput(formData.exPhysicalRetail) && (
-        <Input
-          name="exPhysicalRetailDetail"
-          label="Quais?"
-          placeholder="Descreva aqui"
-          value={formData.exPhysicalRetailDetail || ''}
-          onChange={(value) =>
-            handleInputChange('exPhysicalRetailDetail', value)
-          }
-          disabled={isLoading}
-        />
-      )}
-
-      <MultiSelect
-        name="franchiseRegion"
-        isMulti={false}
-        label="Onde pretende abrir sua franquia?"
-        labelId="franchiseRegion"
-        options={franchiseRegion}
-        placeholder="Selecione"
-        disabled={isLoading}
-        onChange={(option) =>
-          handleInputChange('franchiseRegion', option.value)
-        }
-      />
-
-      <MultiSelect
-        name="visitedOurFranchise"
-        isMulti={false}
-        label="Você já visitou alguma loja da marca?"
-        labelId="visitedOurFranchise"
-        options={visitedOurFranchise}
-        placeholder="Selecione"
-        disabled={isLoading}
-        onChange={(option) =>
-          handleInputChange('visitedOurFranchise', option.value)
-        }
-      />
-
-      <MultiSelect
-        name="discoveredOpportunity"
-        isMulti={false}
-        label="Como conheceu a oportunidade de franquia?"
-        labelId="discoveredOpportunity"
-        options={discoveredOpportunity}
-        placeholder="Selecione"
-        disabled={isLoading}
-        onChange={(option) =>
-          handleInputChange('discoveredOpportunity', option.value)
-        }
       />
 
       <div className={styles['becomeAFranchiseeForm-formMessage']}>
@@ -607,7 +298,7 @@ export const BecomeAFranchiseeForm = ({ FormMessage }) => {
 
         <Checkbox
           label="Concordo com a Política de Privacidade e em fornecer os meus dados pessoais ao Grupo Afeet."
-          value="acceptedTerms"
+          value="acceptTerms"
           name="acceptTerms"
           id="acceptTerms"
           checked={formData.acceptTerms}

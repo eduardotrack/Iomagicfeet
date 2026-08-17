@@ -1,6 +1,6 @@
 import { useState } from 'react'
+
 import { INITIAL_FORM_STATE } from './constants'
-import { sendDataRequest } from './service'
 
 /**
  * return the object with state and handles to view component
@@ -22,10 +22,8 @@ export const useRequestYourDataForm = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [hasError, setHasError] = useState(false)
-  const [
-    isFormSuccessfullySubmitted,
-    setIsFormSuccessfullySubmitted,
-  ] = useState(false)
+  const [isFormSuccessfullySubmitted, setIsFormSuccessfullySubmitted] =
+    useState(false)
 
   const handleFormSubmit = async (e) => {
     e.preventDefault()
@@ -36,17 +34,14 @@ export const useRequestYourDataForm = () => {
       return
     }
 
-    if (!isFormValid) return
-
     setIsLoading(true)
     setHasError(false)
 
     try {
-      const documentData = await sendDataRequest(formData)
       setIsModalOpen(true)
       setIsFormSuccessfullySubmitted(true)
     } catch (error) {
-      console.error("API ERROR::",{ error })
+      console.error('API ERROR::', { error })
       setHasError(true)
     } finally {
       setIsLoading(false)
@@ -57,7 +52,7 @@ export const useRequestYourDataForm = () => {
     const formValidation = {}
 
     Object.keys(formData).forEach((field) => {
-      if (field === 'haveExperience') return
+      if (field === 'haveExperienceTxt') return
 
       const value = formData[field]
 
@@ -93,6 +88,7 @@ export const useRequestYourDataForm = () => {
 
   const handleFileInputChange = (e) => {
     const [fileData] = e.target.files
+
     setFormData((oldState) => ({ ...oldState, documentFile: fileData }))
   }
 
