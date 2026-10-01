@@ -74,7 +74,8 @@
       "flex-layout.row#search-suggestions",
       // "flex-layout.row#retail-rocket-category-search",
       "flex-layout.row#result",
-      "rich-text#category"
+      "rich-text#category",
+      "pd-categoriaFaq"
     ],
     "props": {
       "blockClass": "panda-search",
@@ -130,7 +131,8 @@
       // "flex-layout.row#vitrine-plp",
 
       // "flex-layout.row#search-seo-title",
-      "rich-text#category"
+      "rich-text#category",
+      "pd-categoriaFaq"
     ],
     "props": {
       "blockClass": "panda-search",

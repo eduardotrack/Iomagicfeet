@@ -1053,7 +1053,7 @@ loose-envify@^1.4.0:
   dependencies:
     apollo-client "^2.6.8"
     axios "^0.27.2"
-    magicapp "file:./C:/Users/pedro/AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-11d86432-42f9-44f6-bf4f-5f88be8f13b7-1773147377578/node_modules/magicapp"
+    magicapp "file:./../../../../../AppData/Local/Yarn/Cache/v6/npm-magicapp-0.0.0-33c327fc-5daf-4286-a28c-dce57719de27-1790882298976/node_modules/magicapp"
     react "19.0.0"
     react-apollo "^3.1.3"
     react-dom "19.0.0"
@@ -1064,9 +1064,9 @@ loose-envify@^1.4.0:
     slick-carousel "^1.8.1"
     swiper "6.0.0"
 
-"magicfeet.magicapp@http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.91/public/@types/magicfeet.magicapp":
-  version "0.3.91"
-  resolved "http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.91/public/@types/magicfeet.magicapp#0e7d84afdb7776f131167e0913df525e60e6233c"
+"magicfeet.magicapp@http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.98/public/@types/magicfeet.magicapp":
+  version "0.3.98"
+  resolved "http://magicfeet.vtexassets.com/_v/public/typings/v1/magicfeet.magicapp@0.3.98/public/@types/magicfeet.magicapp#da02def01886bd4fe07337122092baae7beceb53"
 
 math-intrinsics@^1.1.0:
   version "1.1.0"
@@ -1406,9 +1406,9 @@ use-isomorphic-layout-effect@^1.2.0:
   version "0.14.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.modal-layout@0.14.2/public/@types/vtex.modal-layout#80fb4e73a660d41bc44c7b9265d74dc77e580a95"
 
-"vtex.order-items@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.14.0/public/@types/vtex.order-items":
-  version "0.14.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.14.0/public/@types/vtex.order-items#73d1025ed6231ad4e6914c1896e3e17495b59699"
+"vtex.order-items@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.15.0/public/@types/vtex.order-items":
+  version "0.15.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-items@0.15.0/public/@types/vtex.order-items#d0f6cc573e13fa6824477fdc101238170c83d55f"
 
 "vtex.order-manager@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.12.0/public/@types/vtex.order-manager":
   version "0.12.0"
@@ -1418,29 +1418,29 @@ use-isomorphic-layout-effect@^1.2.0:
   version "1.19.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-placed-graphql@1.19.1/public/@types/vtex.order-placed-graphql#ca44a91350cdbc8cf8ef4d09c659935f5c20f6ce"
 
-"vtex.orders-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.116.1/public/@types/vtex.orders-graphql":
-  version "0.116.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.116.1/public/@types/vtex.orders-graphql#98452fa1af1410d255134f917f48733be9a9e3ea"
+"vtex.orders-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.119.4/public/@types/vtex.orders-graphql":
+  version "0.119.4"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.orders-graphql@0.119.4/public/@types/vtex.orders-graphql#ecac0b1a5d06953e7932ed16f47622ea79ce4ebb"
 
 "vtex.pixel-manager@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.pixel-manager@1.9.0/public/@types/vtex.pixel-manager":
   version "1.9.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.pixel-manager@1.9.0/public/@types/vtex.pixel-manager#eb61e263c4f8024430ef1a19d28bcf608db3d481"
 
-"vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context":
-  version "0.10.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.1/public/@types/vtex.product-context#86ceba68085420edcf54749f07e51a257d2e5d94"
+"vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.11.1/public/@types/vtex.product-context":
+  version "0.11.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.11.1/public/@types/vtex.product-context#810932e5995e2812ab158939518bc69bc4344b00"
 
 "vtex.product-summary-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.13.0/public/@types/vtex.product-summary-context":
   version "0.13.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.13.0/public/@types/vtex.product-summary-context#31ab7966355e4108cf40d2b8edc57c88587a8739"
 
-"vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.91.2/public/@types/vtex.product-summary":
-  version "2.91.2"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.91.2/public/@types/vtex.product-summary#8bea6fd242be1a64f58ede40e30ff5e4445dc262"
+"vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.92.1/public/@types/vtex.product-summary":
+  version "2.92.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.92.1/public/@types/vtex.product-summary#9328794de71d964ae8f1770c81306ff71fed8e9b"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.2/public/@types/vtex.render-runtime":
-  version "8.136.2"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.2/public/@types/vtex.render-runtime#afc85cc43da5ee3fc2f0efa000f31adada482d03"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.3/public/@types/vtex.render-runtime":
+  version "8.136.3"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.136.3/public/@types/vtex.render-runtime#3cc4f3fa3300fbaee4d4ef81a67ffbfd57b155c9"
 
 "vtex.responsive-values@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-values@0.4.2/public/@types/vtex.responsive-values":
   version "0.4.2"
@@ -1450,9 +1450,9 @@ use-isomorphic-layout-effect@^1.2.0:
   version "0.16.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.1/public/@types/vtex.rich-text#26d53b5bdfb7da97a2e884f85167ead458be9e1d"
 
-"vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.69.4/public/@types/vtex.search-graphql":
-  version "0.69.4"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.69.4/public/@types/vtex.search-graphql#e1a758806eab8d1cb695e5cb091e722f8a1cd48f"
+"vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.72.0/public/@types/vtex.search-graphql":
+  version "0.72.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.72.0/public/@types/vtex.search-graphql#d1f63055a613810019b4fe60fcc8bba296dcb934"
 
 "vtex.search-page-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-page-context@0.2.0/public/@types/vtex.search-page-context":
   version "0.2.0"
@@ -1462,9 +1462,9 @@ use-isomorphic-layout-effect@^1.2.0:
   version "0.24.10"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.24.10/public/@types/vtex.slider-layout#a9133e785c07f521b99a57204ff17aa556958ba6"
 
-"vtex.store-icons@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.19.0/public/@types/vtex.store-icons":
-  version "0.19.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.19.0/public/@types/vtex.store-icons#88e8d6ad3380aa61e0c12903d593439282279ea7"
+"vtex.store-icons@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.19.4/public/@types/vtex.store-icons":
+  version "0.19.4"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.19.4/public/@types/vtex.store-icons#6c71efb23b1a80b9c459d761add8996d006cf1aa"
 
 "vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.16/public/@types/vtex.styleguide":
   version "9.146.16"
