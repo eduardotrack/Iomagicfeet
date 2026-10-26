@@ -218,7 +218,8 @@
       "flex-layout.row#progress-bar",
       "flex-layout.row#fetchmore",
       "experimental__visibility-layout#best-sellers-plp",
-      "rich-text#department"
+      "rich-text#department",
+      "pd-categoriaFaq"
       // "flex-layout.row#vitrine-plp"
     ],
     "props": {

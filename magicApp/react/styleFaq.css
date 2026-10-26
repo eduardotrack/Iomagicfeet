@@ -11,6 +11,7 @@
 	color: white;
 	overflow: hidden;
 	margin-bottom: 15px;
+	border: none;
 }
 .conteiner_faq .tab_label {
 	display: flex;

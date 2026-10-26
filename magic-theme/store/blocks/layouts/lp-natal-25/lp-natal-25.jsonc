@@ -7,7 +7,8 @@
       "flex-layout.row#natal-buy-by-age",
       "flex-layout.row#natal-buy-by-brands",
       "flex-layout.row#natal-buy-the-look",
-      "rich-text#category"
+      "rich-text#category",
+      "pd-categoriaFaq"
     ]
   },
   "flex-layout.row#banner-natal-25": {
