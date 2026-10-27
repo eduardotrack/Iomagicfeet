@@ -48,14 +48,19 @@
 }
 
 .flexRow--lp-black-2k26-benefit {
-  flex: 1 1 0;
-  min-width: 0;
+  min-width: 180px;
 }
 
 .flexRowContent--lp-black-2k26-benefit {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.flexCol--lp-black-2k26-information-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* ---------- informação (fundo escuro) ---------- */
@@ -75,7 +80,6 @@
 .flexRowContent--lp-black-2k26-cards {
   display: flex;
   gap: 12px;
-  margin-top: 48px;
 }
 
 .flexCol--lp-black-2k26-card {
@@ -127,11 +131,6 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
-}
-
-.flexRowContent--lp-black-2k26-collage  :last-child {
-  flex: 1 1 0;
-  min-width: 0;
 }
 
 /* ---------- texto corrido ---------- */
@@ -196,6 +195,10 @@
 }
 
 @media screen and (max-width: 990px) {
+  .flexRow--lp-black-2k26-split-container{
+    padding: 0;
+  }
+
   .flexRowContent--lp-black-2k26-benefits,
   .flexRowContent--lp-black-2k26-information,
   .flexRowContent--lp-black-2k26-brands,
@@ -208,14 +211,11 @@
   }
 
   .flexRowContent--lp-black-2k26-benefits {
-    flex-wrap: wrap;
-    gap: 16px 12px;
+    flex-wrap: nowrap;
+    gap: 8px;
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-
-  .flexRow--lp-black-2k26-benefit {
-    flex: 1 1 calc(50% - 12px);
+    overflow-x: auto;
   }
 
   .flexRowContent--lp-black-2k26-information {
@@ -224,16 +224,21 @@
   }
 
   .flexRowContent--lp-black-2k26-cards {
-    flex-direction: column;
-    margin-top: 32px;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  
+  .flexRowContent--lp-black-2k26-cards .stretchChildrenWidth {
+    min-width: 280px !important;
+    height: 312px;
   }
 
   .flexRowContent--lp-black-2k26-split {
     flex-direction: column;
     align-items: stretch;
     gap: 24px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   .flexCol--lp-black-2k26-split-media {
@@ -242,7 +247,6 @@
     width: 100%;
   }
 
-  /* nas seções com texto antes da mídia, a mídia vem primeiro no mobile */
   .flexRowContent--lp-black-2k26-nike {
     flex-direction: column-reverse;
   }
@@ -285,4 +289,116 @@
 
 .flexRow--lp-black-2k26-plain--light {
   background-color: #f7f9f9;
+}
+
+/* ---------- queridinhos (seção isolada: fundo lima + foto + painel) ---------- */
+.flexRow--lp-black-2k26-queridinhos {
+  background-color: #99d600;
+  padding: 24px 0 40px;
+  overflow: hidden;
+  margin-top: 56px;
+}
+
+.flexCol--lp-black-2k26-queridinhos-col {
+  position: relative;
+  width: 100%;
+}
+
+.flexCol--lp-black-2k26-queridinhos-col::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30.5%;
+  right: 0;
+  background-color: #fff;
+  border-radius: 24px 0 0 24px;
+}
+
+.flexRow--lp-black-2k26-queridinhos-body {
+  position: relative;
+  width: 100%;
+}
+
+.flexRowContent--lp-black-2k26-queridinhos-body {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 48px 0;
+  box-sizing: border-box;
+}
+
+.flexRowContent--lp-black-2k26-queridinhos-body .flexColChild--lp-black-2k26-queridinhos-body:first-child {
+  flex: 0 0 62.9%;
+  max-width: 62.9%;
+  margin-left: 2.4%;
+}
+
+/* painel sobreposto à foto; o slider sangra até a borda direita */
+.flexCol--lp-black-2k26-queridinhos-panel {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  margin-left: -11.1%;
+  padding: 32px 0 32px 40px;
+  background-color: #fff;
+  border-radius: 24px 0 0 24px;
+  box-shadow: 0 8px 32px rgba(20, 20, 20, 0.12);
+  box-sizing: border-box;
+}
+
+/* card editorial: imagem (com link) + textos sobrepostos */
+.flexCol--lp-black-2k26-qcard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.flexCol--lp-black-2k26-qcard-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0));
+  pointer-events: none;
+  display: flex;
+  justify-content: end;
+  padding: 16px;
+}
+
+.flexColChild--lp-black-2k26-qcard-text {
+  height: auto !important;
+}
+
+
+@media screen and (max-width: 990px) {
+  .flexColChild--lp-black-2k26-brands-col:last-child,
+  .flexRow--lp-black-2k26-queridinhos {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .flexCol--lp-black-2k26-queridinhos-col::before {
+    display: none;
+  }
+
+  .flexRowContent--lp-black-2k26-queridinhos-body {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .flexRowContent--lp-black-2k26-queridinhos-body .flexColChild--lp-black-2k26-queridinhos-body:first-child {
+    flex: 0 0 auto;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .flexCol--lp-black-2k26-queridinhos-panel {
+    margin-left: 0;
+    padding: 16px;
+    border-radius: 0;
+    box-shadow: none;
+  }
 }

@@ -2,11 +2,13 @@
 
 .listContainer--lp-black-2k26-tabs {
   display: inline-flex;
-  gap: 0;
+  justify-content: flex-start;
+  gap: 4px;
   padding: 3px;
-  margin: 0 0 24px;
-  background-color: #f0f0ee;
-  border-radius: 999px;
+  margin: 0 0 15px;
+  background: #F2F2F2;
+  border-radius: 100px;
+  width: auto;
 }
 
 .listItem--lp-black-2k26-tab {
@@ -25,10 +27,9 @@
 
   :global(.vtex-button__label) {
     display: block;
-    padding: 7px 14px !important;
-    font-family: 'WorkSans-Bold', sans-serif;
+    padding: 8px 16px !important;
     font-weight: 700;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 14px;
     color: #141414;
     text-transform: none;
@@ -47,4 +48,10 @@
 
 .contentContainer--lp-black-2k26-tabs-content {
   width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  .listContainer--lp-black-2k26-tabs {
+    margin: 0 0 20px;
+  }
 }

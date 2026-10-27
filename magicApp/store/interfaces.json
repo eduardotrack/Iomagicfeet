@@ -206,5 +206,8 @@
   },
   "pd-SimilarProductsShelf": {
     "component": "SimilarProductsShelf"
+  },
+  "custom-progress-bar": {
+    "component": "ProgressBar"
   }
 }

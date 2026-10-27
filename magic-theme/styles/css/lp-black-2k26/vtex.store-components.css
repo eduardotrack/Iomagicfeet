@@ -49,6 +49,8 @@
   display: block;
   width: 44px;
   height: 44px;
+  min-width: 40px;
+  min-height: 40px;
 }
 
 .imageElement--lp-black-2k26-arrows {
@@ -59,12 +61,39 @@
     aspect-ratio: 4 / 3;
   }
 
-  .imageElement--lp-black-2k26-benefit-icon {
-    width: 36px;
-    height: 36px;
-  }
-
   .imageElement--lp-black-2k26-brand {
     max-width: 72px;
+  }
+}
+
+/* ---------- queridinhos ---------- */
+.imageElementLink--lp-black-2k26-queridinhos-photo,
+.imageElementLink--lp-black-2k26-qcard {
+  display: block;
+}
+
+.imageElement--lp-black-2k26-queridinhos-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1056 / 840;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.imageElement--lp-black-2k26-qcard {
+  display: block;
+  width: 100%;
+  aspect-ratio: 384 / 460;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 990px) {
+  .imageElement--lp-black-2k26-queridinhos-photo {
+    aspect-ratio: 375 / 273;
+    border-radius: 0;
+  }
+
+  .imageElement--lp-black-2k26-qcard {
+    aspect-ratio: 270 / 323;
   }
 }

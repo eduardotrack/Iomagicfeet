@@ -37,11 +37,6 @@
   color: #0B830F;
 }
 
-
-.wrapper--lp-black-2k26-title--light {
-  margin-bottom: 16px;
-}
-
 .heading--lp-black-2k26-title--large,
 .paragraph--lp-black-2k26-title--large {
   font-size: 40px;
@@ -186,5 +181,47 @@
 
   .container--lp-black-2k26-title--shelf {
     padding-right: 80px;
+  }
+}
+
+/* ---------- queridinhos ---------- */
+.container--lp-black-2k26-queridinhos-title {
+  padding-right: 96px;
+  margin-bottom: 16px;
+}
+
+.heading--lp-black-2k26-queridinhos-title {
+  font-size: 32px;
+  line-height: 120%;
+  font-weight: 700;
+  color: #000000;
+}
+
+.paragraph--lp-black-2k26-qcard-brand {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.paragraph--lp-black-2k26-qcard-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+
+@media screen and (max-width: 990px) {
+  .container--lp-black-2k26-queridinhos-title {
+    padding-right: 88px;
+  }
+
+  .heading--lp-black-2k26-queridinhos-title {
+    font-size: 28px;
+    color: #000000;
+    font-weight: 700;
+    line-height: 120%;
   }
 }

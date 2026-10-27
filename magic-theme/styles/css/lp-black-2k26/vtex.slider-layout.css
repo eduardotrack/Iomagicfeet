@@ -78,3 +78,87 @@
     background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3.5L5.5 8L10 12.5" stroke="black" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   }
 }
+
+/* ---------- queridinhos: setas no topo do painel + barra de progresso (dots) ---------- */
+.sliderLayoutContainer--lp-black-2k26-queridinhos {
+  position: static; /* setas posicionadas em relação ao painel */
+}
+
+.sliderTrackContainer--lp-black-2k26-queridinhos {
+  padding: 0;
+}
+
+.slide--lp-black-2k26-queridinhos {
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.sliderArrows--lp-black-2k26-queridinhos {
+  position: absolute;
+  top: 34px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #141414;
+  border-radius: 4px;
+  cursor: pointer;
+
+  svg {
+    display: none;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #141414;
+    outline-offset: 2px;
+  }
+}
+
+.sliderRightArrow--lp-black-2k26-queridinhos {
+  right: 32px;
+  left: unset;
+
+  &::before {
+    background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 3.5L10.5 8L6 12.5" stroke="black" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  }
+}
+
+.sliderLeftArrow--lp-black-2k26-queridinhos {
+  right: 84px;
+  left: unset;
+
+  &::before {
+    background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3.5L5.5 8L10 12.5" stroke="black" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .sliderArrows--lp-black-2k26-queridinhos {
+    top: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .sliderRightArrow--lp-black-2k26-queridinhos {
+    right: 16px;
+  }
+
+  .sliderLeftArrow--lp-black-2k26-queridinhos {
+    right: 64px;
+  }
+}

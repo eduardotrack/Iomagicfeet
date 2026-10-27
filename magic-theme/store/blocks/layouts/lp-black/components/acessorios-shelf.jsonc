@@ -1,208 +1,208 @@
 {
-  // "experimental__visibility-layout#bf26-acessorios-shelf": {
-  //   "title": "Vitrine Acessórios - On/Off",
-  //   "children": [
-  //     "flex-layout.row#bf26-acessorios-shelf"
-  //   ],
-  //   "props": {
-  //     "visible": true
-  //   }
-  // },
+  "experimental__visibility-layout#bf26-acessorios-shelf": {
+    "title": "Vitrine Acessórios - On/Off",
+    "children": [
+      "flex-layout.row#bf26-acessorios-shelf"
+    ],
+    "props": {
+      "visible": false
+    }
+  },
 
-  // "flex-layout.row#bf26-acessorios-shelf": {
-  //   "title": "Vitrine Acessórios - Container",
-  //   "children": [
-  //     "flex-layout.col#bf26-acessorios-shelf"
-  //   ],
-  //   "props": {
-  //     "blockClass": [
-  //       "lp-black-2k26-shelf"
-  //     ],
-  //     "fullWidth": true
-  //   }
-  // },
+  "flex-layout.row#bf26-acessorios-shelf": {
+    "title": "Vitrine Acessórios - Container",
+    "children": [
+      "flex-layout.col#bf26-acessorios-shelf"
+    ],
+    "props": {
+      "blockClass": [
+        "lp-black-2k26-shelf"
+      ],
+      "fullWidth": true
+    }
+  },
 
-  // "flex-layout.col#bf26-acessorios-shelf": {
-  //   "title": "Vitrine Acessórios - Coluna",
-  //   "children": [
-  //     "rich-text#bf26-acessorios-shelf-title",
-  //     "rich-text#bf26-acessorios-shelf-sub",
-  //     "tab-layout#bf26-acessorios-shelf"
-  //   ],
-  //   "props": {
-  //     "blockClass": "lp-black-2k26-shelf-col"
-  //   }
-  // },
+  "flex-layout.col#bf26-acessorios-shelf": {
+    "title": "Vitrine Acessórios - Coluna",
+    "children": [
+      "rich-text#bf26-acessorios-shelf-title",
+      "rich-text#bf26-acessorios-shelf-sub",
+      "tab-layout#bf26-acessorios-shelf"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-shelf-col"
+    }
+  },
 
-  // "rich-text#bf26-acessorios-shelf-title": {
-  //   "title": "Título",
-  //   "props": {
-  //     "text": "## os melhores acessórios da black friday",
-  //     "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--shelf"]
-  //   }
-  // },
+  "rich-text#bf26-acessorios-shelf-title": {
+    "title": "Título",
+    "props": {
+      "text": "## os melhores acessórios da black friday",
+      "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--shelf"]
+    }
+  },
 
-  // "rich-text#bf26-acessorios-shelf-sub": {
-  //   "title": "Subtítulo",
-  //   "props": {
-  //     "text": "confira as melhores peças que separamos para você",
-  //     "blockClass": ["lp-black-2k26-text", "lp-black-2k26-text--sub"]
-  //   }
-  // },
+  "rich-text#bf26-acessorios-shelf-sub": {
+    "title": "Subtítulo",
+    "props": {
+      "text": "confira as melhores peças que separamos para você",
+      "blockClass": ["lp-black-2k26-text", "lp-black-2k26-text--sub"]
+    }
+  },
 
-  // "tab-layout#bf26-acessorios-shelf": {
-  //   "children": ["tab-list#bf26-acessorios-shelf", "tab-content#bf26-acessorios-shelf"],
-  //   "props": {
-  //     "defaultActiveTabId": "fem",
-  //     "blockClass": "lp-black-2k26-tabs"
-  //   }
-  // },
+  "tab-layout#bf26-acessorios-shelf": {
+    "children": ["tab-list#bf26-acessorios-shelf", "tab-content#bf26-acessorios-shelf"],
+    "props": {
+      "defaultActiveTabId": "fem",
+      "blockClass": "lp-black-2k26-tabs"
+    }
+  },
 
-  // "tab-list#bf26-acessorios-shelf": {
-  //   "title": "Tab - Botões",
-  //   "children": [
-  //     "tab-list.item#bf26-acessorios-shelf-fem",
-  //     "tab-list.item#bf26-acessorios-shelf-masc"
-  //   ],
-  //   "props": {
-  //     "blockClass": "lp-black-2k26-tabs"
-  //   }
-  // },
+  "tab-list#bf26-acessorios-shelf": {
+    "title": "Tab - Botões",
+    "children": [
+      "tab-list.item#bf26-acessorios-shelf-fem",
+      "tab-list.item#bf26-acessorios-shelf-masc"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-tabs"
+    }
+  },
 
-  // "tab-list.item#bf26-acessorios-shelf-fem": {
-  //   "title": "Tab - Feminino",
-  //   "props": {
-  //     "tabId": "fem",
-  //     "label": "feminino",
-  //     "blockClass": "lp-black-2k26-tab"
-  //   }
-  // },
+  "tab-list.item#bf26-acessorios-shelf-fem": {
+    "title": "Tab - Feminino",
+    "props": {
+      "tabId": "fem",
+      "label": "feminino",
+      "blockClass": "lp-black-2k26-tab"
+    }
+  },
 
-  // "tab-list.item#bf26-acessorios-shelf-masc": {
-  //   "title": "Tab - Masculino",
-  //   "props": {
-  //     "tabId": "masc",
-  //     "label": "masculino",
-  //     "blockClass": "lp-black-2k26-tab"
-  //   }
-  // },
+  "tab-list.item#bf26-acessorios-shelf-masc": {
+    "title": "Tab - Masculino",
+    "props": {
+      "tabId": "masc",
+      "label": "masculino",
+      "blockClass": "lp-black-2k26-tab"
+    }
+  },
 
-  // "tab-content#bf26-acessorios-shelf": {
-  //   "title": "Tab - Conteúdo",
-  //   "children": [
-  //     "tab-content.item#bf26-acessorios-shelf-fem",
-  //     "tab-content.item#bf26-acessorios-shelf-masc"
-  //   ],
-  //   "props": {
-  //     "blockClass": "lp-black-2k26-tabs-content"
-  //   }
-  // },
+  "tab-content#bf26-acessorios-shelf": {
+    "title": "Tab - Conteúdo",
+    "children": [
+      "tab-content.item#bf26-acessorios-shelf-fem",
+      "tab-content.item#bf26-acessorios-shelf-masc"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-tabs-content"
+    }
+  },
 
-  // "tab-content.item#bf26-acessorios-shelf-fem": {
-  //   "title": "Conteúdo - Feminino",
-  //   "children": [
-  //     "flex-layout.row#bf26-acessorios-shelf-fem-row"
-  //   ],
-  //   "props": {
-  //     "tabId": "fem",
-  //     "blockClass": "lp-black-2k26-tab"
-  //   }
-  // },
+  "tab-content.item#bf26-acessorios-shelf-fem": {
+    "title": "Conteúdo - Feminino",
+    "children": [
+      "flex-layout.row#bf26-acessorios-shelf-fem-row"
+    ],
+    "props": {
+      "tabId": "fem",
+      "blockClass": "lp-black-2k26-tab"
+    }
+  },
 
-  // "flex-layout.row#bf26-acessorios-shelf-fem-row": {
-  //   "title": "Vitrine - Feminino",
-  //   "children": [
-  //     "list-context.product-list#bf26-acessorios-shelf-fem"
-  //   ],
-  //   "props": {
-  //     "blockClass": [
-  //       "lp-black-2k26-shelf-row"
-  //     ]
-  //   }
-  // },
+  "flex-layout.row#bf26-acessorios-shelf-fem-row": {
+    "title": "Vitrine - Feminino",
+    "children": [
+      "list-context.product-list#bf26-acessorios-shelf-fem"
+    ],
+    "props": {
+      "blockClass": [
+        "lp-black-2k26-shelf-row"
+      ]
+    }
+  },
 
-  // "list-context.product-list#bf26-acessorios-shelf-fem": {
-  //   "title": "Vitrine - Feminino",
-  //   "blocks": [
-  //     "product-summary.shelf#new-shelf"
-  //   ],
-  //   "children": [
-  //     "slider-layout#bf26-acessorios-shelf-fem"
-  //   ],
-  //   "props": {
-  //     "orderBy": "OrderByReleaseDateDESC",
-  //     "collection": "",
-  //     "category": "",
-  //     "hideUnavailableItems": true,
-  //     "maxItems": 12
-  //   }
-  // },
+  "list-context.product-list#bf26-acessorios-shelf-fem": {
+    "title": "Vitrine - Feminino",
+    "blocks": [
+      "product-summary.shelf#new-shelf"
+    ],
+    "children": [
+      "slider-layout#bf26-acessorios-shelf-fem"
+    ],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "",
+      "category": "",
+      "hideUnavailableItems": true,
+      "maxItems": 12
+    }
+  },
 
-  // "slider-layout#bf26-acessorios-shelf-fem": {
-  //   "props": {
-  //     "itemsPerPage": {
-  //       "desktop": 4,
-  //       "tablet": 3,
-  //       "phone": 2
-  //     },
-  //     "infinite": true,
-  //     "showNavigationArrows": "always",
-  //     "showPaginationDots": "never",
-  //     "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
-  //   }
-  // },
+  "slider-layout#bf26-acessorios-shelf-fem": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
+    }
+  },
 
-  // "tab-content.item#bf26-acessorios-shelf-masc": {
-  //   "title": "Conteúdo - Masculino",
-  //   "children": [
-  //     "flex-layout.row#bf26-acessorios-shelf-masc-row"
-  //   ],
-  //   "props": {
-  //     "tabId": "masc",
-  //     "blockClass": "lp-black-2k26-tab"
-  //   }
-  // },
+  "tab-content.item#bf26-acessorios-shelf-masc": {
+    "title": "Conteúdo - Masculino",
+    "children": [
+      "flex-layout.row#bf26-acessorios-shelf-masc-row"
+    ],
+    "props": {
+      "tabId": "masc",
+      "blockClass": "lp-black-2k26-tab"
+    }
+  },
 
-  // "flex-layout.row#bf26-acessorios-shelf-masc-row": {
-  //   "title": "Vitrine - Masculino",
-  //   "children": [
-  //     "list-context.product-list#bf26-acessorios-shelf-masc"
-  //   ],
-  //   "props": {
-  //     "blockClass": [
-  //       "lp-black-2k26-shelf-row"
-  //     ]
-  //   }
-  // },
+  "flex-layout.row#bf26-acessorios-shelf-masc-row": {
+    "title": "Vitrine - Masculino",
+    "children": [
+      "list-context.product-list#bf26-acessorios-shelf-masc"
+    ],
+    "props": {
+      "blockClass": [
+        "lp-black-2k26-shelf-row"
+      ]
+    }
+  },
 
-  // "list-context.product-list#bf26-acessorios-shelf-masc": {
-  //   "title": "Vitrine - Masculino",
-  //   "blocks": [
-  //     "product-summary.shelf#new-shelf"
-  //   ],
-  //   "children": [
-  //     "slider-layout#bf26-acessorios-shelf-masc"
-  //   ],
-  //   "props": {
-  //     "orderBy": "OrderByReleaseDateDESC",
-  //     "collection": "",
-  //     "category": "",
-  //     "hideUnavailableItems": true,
-  //     "maxItems": 12
-  //   }
-  // },
+  "list-context.product-list#bf26-acessorios-shelf-masc": {
+    "title": "Vitrine - Masculino",
+    "blocks": [
+      "product-summary.shelf#new-shelf"
+    ],
+    "children": [
+      "slider-layout#bf26-acessorios-shelf-masc"
+    ],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "collection": "",
+      "category": "",
+      "hideUnavailableItems": true,
+      "maxItems": 12
+    }
+  },
 
-  // "slider-layout#bf26-acessorios-shelf-masc": {
-  //   "props": {
-  //     "itemsPerPage": {
-  //       "desktop": 4,
-  //       "tablet": 3,
-  //       "phone": 2
-  //     },
-  //     "infinite": true,
-  //     "showNavigationArrows": "always",
-  //     "showPaginationDots": "never",
-  //     "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
-  //   }
-  // }
+  "slider-layout#bf26-acessorios-shelf-masc": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
+    }
+  }
 }

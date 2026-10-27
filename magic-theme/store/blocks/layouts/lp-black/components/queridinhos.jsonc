@@ -9,22 +9,51 @@
     }
   },
 
+  // Seção: fundo verde-limão + foto à esquerda + painel (título, abas, slider) sobreposto à direita
   "flex-layout.row#bf26-queridinhos": {
     "title": "Vitrine Queridinhos - Container",
     "children": [
       "flex-layout.col#bf26-queridinhos"
     ],
     "props": {
-      "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-shelf--featured"],
+      "blockClass": ["lp-black-2k26-queridinhos"],
       "fullWidth": true
     }
   },
 
   "flex-layout.col#bf26-queridinhos": {
     "title": "Vitrine Queridinhos - Coluna",
+    "children": ["flex-layout.row#bf26-queridinhos-body"],
+    "props": {
+      "blockClass": "lp-black-2k26-queridinhos-col"
+    }
+  },
+
+  "flex-layout.row#bf26-queridinhos-body": {
+    "title": "Vitrine Queridinhos - Foto + Painel",
+    "children": [
+      "image#bf26-queridinhos-photo",
+      "flex-layout.col#bf26-queridinhos-panel"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-queridinhos-body"
+    }
+  },
+
+  "image#bf26-queridinhos-photo": {
+    "title": "Imagem de destaque",
+    "props": {
+      "src": "assets/img/lp-black/queridinhos-banner.jpg",
+      "alt": "",
+      "blockClass": "lp-black-2k26-queridinhos-photo"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-panel": {
+    "title": "Vitrine Queridinhos - Painel",
     "children": ["rich-text#bf26-queridinhos-title", "tab-layout#bf26-queridinhos"],
     "props": {
-      "blockClass": "lp-black-2k26-shelf-col"
+      "blockClass": "lp-black-2k26-queridinhos-panel"
     }
   },
 
@@ -32,7 +61,7 @@
     "title": "Título",
     "props": {
       "text": "## os queridinhos da black friday",
-      "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--shelf"]
+      "blockClass": ["lp-black-2k26-title", "lp-black-2k26-queridinhos-title"]
     }
   },
 
@@ -78,127 +107,387 @@
     }
   },
 
+  // ---------- Feminino: cada card = imagem + link + marca + título (editáveis no Site Editor) ----------
   "tab-content.item#bf26-queridinhos-fem": {
     "title": "Conteúdo - Feminino",
-    "children": [
-      "flex-layout.row#bf26-queridinhos-fem-row"
-    ],
+    "children": ["slider-layout#bf26-queridinhos-fem"],
     "props": {
       "tabId": "fem",
       "blockClass": "lp-black-2k26-tab"
     }
   },
 
-  "flex-layout.row#bf26-queridinhos-fem-row": {
-    "title": "Vitrine - Feminino",
-    "children": [
-      "image#bf26-queridinhos-fem-photo",
-      "list-context.product-list#bf26-queridinhos-fem"
-    ],
-    "props": {
-      "blockClass": ["lp-black-2k26-shelf-row", "lp-black-2k26-shelf-row--photo"]
-    }
-  },
-
-  "image#bf26-queridinhos-fem-photo": {
-    "title": "Imagem",
-    "props": {
-      "src": "assets/img/lp-black/queridinhos-banner.jpg",
-      "alt": "",
-      "blockClass": "lp-black-2k26-shelf-photo"
-    }
-  },
-
-  "list-context.product-list#bf26-queridinhos-fem": {
-    "title": "Vitrine - Feminino",
-    "blocks": [
-      "product-summary.shelf#new-shelf"
-    ],
-    "children": [
-      "slider-layout#bf26-queridinhos-fem"
-    ],
-    "props": {
-      "orderBy": "OrderByReleaseDateDESC",
-      "collection": "",
-      "category": "",
-      "hideUnavailableItems": true,
-      "maxItems": 12
-    }
-  },
-
   "slider-layout#bf26-queridinhos-fem": {
+    "title": "Slider - Feminino",
+    "children": ["flex-layout.col#bf26-queridinhos-fem-1", "flex-layout.col#bf26-queridinhos-fem-2", "flex-layout.col#bf26-queridinhos-fem-3", "flex-layout.col#bf26-queridinhos-fem-4"],
     "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 2
-      },
-      "infinite": true,
+      "itemsPerPage": { "desktop": 2, "tablet": 2, "phone": 1 },
+      "infinite": false,
+      "centerMode": { "desktop": "to-the-left", "tablet": "to-the-left", "phone": "to-the-left" },
+      "centerModeSlidesGap": 8,
       "showNavigationArrows": "always",
-      "showPaginationDots": "never",
-      "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
+      "showPaginationDots": "always",
+      "blockClass": "lp-black-2k26-queridinhos"
     }
   },
 
+  "flex-layout.col#bf26-queridinhos-fem-1": {
+    "title": "Feminino - Card 1",
+    "children": ["image#bf26-queridinhos-fem-1", "flex-layout.col#bf26-queridinhos-fem-1-text"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "image#bf26-queridinhos-fem-1": {
+    "title": "Feminino - Card 1 - Imagem e link",
+    "props": {
+      "src": "assets/img/lp-black/queridinhos-1.jpg",
+      "alt": "new balance samba og",
+      "link": { "url": "/" },
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-fem-1-text": {
+    "title": "Feminino - Card 1 - Textos",
+    "children": ["rich-text#bf26-queridinhos-fem-1-brand", "rich-text#bf26-queridinhos-fem-1-title"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard-text"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-fem-1-brand": {
+    "title": "Feminino - Card 1 - Marca",
+    "props": {
+      "text": "new balance",
+      "blockClass": "lp-black-2k26-qcard-brand"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-fem-1-title": {
+    "title": "Feminino - Card 1 - Título",
+    "props": {
+      "text": "samba og",
+      "blockClass": "lp-black-2k26-qcard-title"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-fem-2": {
+    "title": "Feminino - Card 2",
+    "children": ["image#bf26-queridinhos-fem-2", "flex-layout.col#bf26-queridinhos-fem-2-text"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "image#bf26-queridinhos-fem-2": {
+    "title": "Feminino - Card 2 - Imagem e link",
+    "props": {
+      "src": "assets/img/lp-black/queridinhos-2.jpg",
+      "alt": "jordan air jordan 1 low se",
+      "link": { "url": "/" },
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-fem-2-text": {
+    "title": "Feminino - Card 2 - Textos",
+    "children": ["rich-text#bf26-queridinhos-fem-2-brand", "rich-text#bf26-queridinhos-fem-2-title"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard-text"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-fem-2-brand": {
+    "title": "Feminino - Card 2 - Marca",
+    "props": {
+      "text": "jordan",
+      "blockClass": "lp-black-2k26-qcard-brand"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-fem-2-title": {
+    "title": "Feminino - Card 2 - Título",
+    "props": {
+      "text": "air jordan 1 low se",
+      "blockClass": "lp-black-2k26-qcard-title"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-fem-3": {
+    "title": "Feminino - Card 3",
+    "children": ["image#bf26-queridinhos-fem-3", "flex-layout.col#bf26-queridinhos-fem-3-text"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "image#bf26-queridinhos-fem-3": {
+    "title": "Feminino - Card 3 - Imagem e link",
+    "props": {
+      "src": "assets/img/lp-black/queridinhos-1.jpg",
+      "alt": "new balance samba og",
+      "link": { "url": "/" },
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-fem-3-text": {
+    "title": "Feminino - Card 3 - Textos",
+    "children": ["rich-text#bf26-queridinhos-fem-3-brand", "rich-text#bf26-queridinhos-fem-3-title"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard-text"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-fem-3-brand": {
+    "title": "Feminino - Card 3 - Marca",
+    "props": {
+      "text": "new balance",
+      "blockClass": "lp-black-2k26-qcard-brand"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-fem-3-title": {
+    "title": "Feminino - Card 3 - Título",
+    "props": {
+      "text": "samba og",
+      "blockClass": "lp-black-2k26-qcard-title"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-fem-4": {
+    "title": "Feminino - Card 4",
+    "children": ["image#bf26-queridinhos-fem-4", "flex-layout.col#bf26-queridinhos-fem-4-text"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "image#bf26-queridinhos-fem-4": {
+    "title": "Feminino - Card 4 - Imagem e link",
+    "props": {
+      "src": "assets/img/lp-black/queridinhos-2.jpg",
+      "alt": "jordan air jordan 1 low se",
+      "link": { "url": "/" },
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-fem-4-text": {
+    "title": "Feminino - Card 4 - Textos",
+    "children": ["rich-text#bf26-queridinhos-fem-4-brand", "rich-text#bf26-queridinhos-fem-4-title"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard-text"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-fem-4-brand": {
+    "title": "Feminino - Card 4 - Marca",
+    "props": {
+      "text": "jordan",
+      "blockClass": "lp-black-2k26-qcard-brand"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-fem-4-title": {
+    "title": "Feminino - Card 4 - Título",
+    "props": {
+      "text": "air jordan 1 low se",
+      "blockClass": "lp-black-2k26-qcard-title"
+    }
+  },
+
+  // ---------- Masculino: cada card = imagem + link + marca + título (editáveis no Site Editor) ----------
   "tab-content.item#bf26-queridinhos-masc": {
     "title": "Conteúdo - Masculino",
-    "children": [
-      "flex-layout.row#bf26-queridinhos-masc-row"
-    ],
+    "children": ["slider-layout#bf26-queridinhos-masc"],
     "props": {
       "tabId": "masc",
       "blockClass": "lp-black-2k26-tab"
     }
   },
 
-  "flex-layout.row#bf26-queridinhos-masc-row": {
-    "title": "Vitrine - Masculino",
-    "children": [
-      "image#bf26-queridinhos-masc-photo",
-      "list-context.product-list#bf26-queridinhos-masc"
-    ],
-    "props": {
-      "blockClass": ["lp-black-2k26-shelf-row", "lp-black-2k26-shelf-row--photo"]
-    }
-  },
-
-  "image#bf26-queridinhos-masc-photo": {
-    "title": "Imagem",
-    "props": {
-      "src": "assets/img/lp-black/queridinhos-banner.jpg",
-      "alt": "",
-      "blockClass": "lp-black-2k26-shelf-photo"
-    }
-  },
-
-  "list-context.product-list#bf26-queridinhos-masc": {
-    "title": "Vitrine - Masculino",
-    "blocks": [
-      "product-summary.shelf#new-shelf"
-    ],
-    "children": [
-      "slider-layout#bf26-queridinhos-masc"
-    ],
-    "props": {
-      "orderBy": "OrderByReleaseDateDESC",
-      "collection": "",
-      "category": "",
-      "hideUnavailableItems": true,
-      "maxItems": 12
-    }
-  },
-
   "slider-layout#bf26-queridinhos-masc": {
+    "title": "Slider - Masculino",
+    "children": ["flex-layout.col#bf26-queridinhos-masc-1", "flex-layout.col#bf26-queridinhos-masc-2", "flex-layout.col#bf26-queridinhos-masc-3", "flex-layout.col#bf26-queridinhos-masc-4"],
     "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 2
-      },
-      "infinite": true,
+      "itemsPerPage": { "desktop": 2, "tablet": 2, "phone": 1 },
+      "infinite": false,
+      "centerMode": { "desktop": "to-the-left", "tablet": "to-the-left", "phone": "to-the-left" },
+      "centerModeSlidesGap": 8,
       "showNavigationArrows": "always",
-      "showPaginationDots": "never",
-      "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
+      "showPaginationDots": "always",
+      "blockClass": "lp-black-2k26-queridinhos"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-masc-1": {
+    "title": "Masculino - Card 1",
+    "children": ["image#bf26-queridinhos-masc-1", "flex-layout.col#bf26-queridinhos-masc-1-text"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "image#bf26-queridinhos-masc-1": {
+    "title": "Masculino - Card 1 - Imagem e link",
+    "props": {
+      "src": "assets/img/lp-black/queridinhos-2.jpg",
+      "alt": "jordan air jordan 1 low se",
+      "link": { "url": "/" },
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-masc-1-text": {
+    "title": "Masculino - Card 1 - Textos",
+    "children": ["rich-text#bf26-queridinhos-masc-1-brand", "rich-text#bf26-queridinhos-masc-1-title"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard-text"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-masc-1-brand": {
+    "title": "Masculino - Card 1 - Marca",
+    "props": {
+      "text": "jordan",
+      "blockClass": "lp-black-2k26-qcard-brand"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-masc-1-title": {
+    "title": "Masculino - Card 1 - Título",
+    "props": {
+      "text": "air jordan 1 low se",
+      "blockClass": "lp-black-2k26-qcard-title"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-masc-2": {
+    "title": "Masculino - Card 2",
+    "children": ["image#bf26-queridinhos-masc-2", "flex-layout.col#bf26-queridinhos-masc-2-text"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "image#bf26-queridinhos-masc-2": {
+    "title": "Masculino - Card 2 - Imagem e link",
+    "props": {
+      "src": "assets/img/lp-black/queridinhos-1.jpg",
+      "alt": "new balance samba og",
+      "link": { "url": "/" },
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-masc-2-text": {
+    "title": "Masculino - Card 2 - Textos",
+    "children": ["rich-text#bf26-queridinhos-masc-2-brand", "rich-text#bf26-queridinhos-masc-2-title"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard-text"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-masc-2-brand": {
+    "title": "Masculino - Card 2 - Marca",
+    "props": {
+      "text": "new balance",
+      "blockClass": "lp-black-2k26-qcard-brand"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-masc-2-title": {
+    "title": "Masculino - Card 2 - Título",
+    "props": {
+      "text": "samba og",
+      "blockClass": "lp-black-2k26-qcard-title"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-masc-3": {
+    "title": "Masculino - Card 3",
+    "children": ["image#bf26-queridinhos-masc-3", "flex-layout.col#bf26-queridinhos-masc-3-text"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "image#bf26-queridinhos-masc-3": {
+    "title": "Masculino - Card 3 - Imagem e link",
+    "props": {
+      "src": "assets/img/lp-black/queridinhos-2.jpg",
+      "alt": "jordan air jordan 1 low se",
+      "link": { "url": "/" },
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-masc-3-text": {
+    "title": "Masculino - Card 3 - Textos",
+    "children": ["rich-text#bf26-queridinhos-masc-3-brand", "rich-text#bf26-queridinhos-masc-3-title"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard-text"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-masc-3-brand": {
+    "title": "Masculino - Card 3 - Marca",
+    "props": {
+      "text": "jordan",
+      "blockClass": "lp-black-2k26-qcard-brand"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-masc-3-title": {
+    "title": "Masculino - Card 3 - Título",
+    "props": {
+      "text": "air jordan 1 low se",
+      "blockClass": "lp-black-2k26-qcard-title"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-masc-4": {
+    "title": "Masculino - Card 4",
+    "children": ["image#bf26-queridinhos-masc-4", "flex-layout.col#bf26-queridinhos-masc-4-text"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "image#bf26-queridinhos-masc-4": {
+    "title": "Masculino - Card 4 - Imagem e link",
+    "props": {
+      "src": "assets/img/lp-black/queridinhos-1.jpg",
+      "alt": "new balance samba og",
+      "link": { "url": "/" },
+      "blockClass": "lp-black-2k26-qcard"
+    }
+  },
+
+  "flex-layout.col#bf26-queridinhos-masc-4-text": {
+    "title": "Masculino - Card 4 - Textos",
+    "children": ["rich-text#bf26-queridinhos-masc-4-brand", "rich-text#bf26-queridinhos-masc-4-title"],
+    "props": {
+      "blockClass": "lp-black-2k26-qcard-text"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-masc-4-brand": {
+    "title": "Masculino - Card 4 - Marca",
+    "props": {
+      "text": "new balance",
+      "blockClass": "lp-black-2k26-qcard-brand"
+    }
+  },
+
+  "rich-text#bf26-queridinhos-masc-4-title": {
+    "title": "Masculino - Card 4 - Título",
+    "props": {
+      "text": "samba og",
+      "blockClass": "lp-black-2k26-qcard-title"
     }
   }
 }

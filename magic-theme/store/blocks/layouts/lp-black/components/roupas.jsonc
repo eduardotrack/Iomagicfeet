@@ -1,73 +1,73 @@
 {
-  // "experimental__visibility-layout#bf26-roupas": {
-  //   "title": "Texto Roupas - On/Off",
-  //   "children": [
-  //     "flex-layout.row#bf26-roupas"
-  //   ],
-  //   "props": {
-  //     "visible": true
-  //   }
-  // },
+  "experimental__visibility-layout#bf26-roupas": {
+    "title": "Texto Roupas - On/Off",
+    "children": [
+      "flex-layout.row#bf26-roupas"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
 
-  // "flex-layout.row#bf26-roupas": {
-  //   "title": "Texto Roupas - Container",
-  //   "children": [
-  //     "flex-layout.col#bf26-roupas"
-  //   ],
-  //   "props": {
-  //     "blockClass": ["lp-black-2k26-plain", "lp-black-2k26-plain--light"],
-  //     "fullWidth": true
-  //   }
-  // },
+  "flex-layout.row#bf26-roupas": {
+    "title": "Texto Roupas - Container",
+    "children": [
+      "flex-layout.col#bf26-roupas"
+    ],
+    "props": {
+      "blockClass": ["lp-black-2k26-plain", "lp-black-2k26-plain--light"],
+      "fullWidth": true
+    }
+  },
 
-  // "flex-layout.col#bf26-roupas": {
-  //   "title": "Texto Roupas - Coluna",
-  //   "children": [
-  //     "rich-text#bf26-roupas-title",
-  //     "rich-text#bf26-roupas-text-1",
-  //     "rich-text#bf26-roupas-text-2",
-  //     "rich-text#bf26-roupas-text-3"
-  //   ],
-  //   "props": {
-  //     "blockClass": "lp-black-2k26-plain-col"
-  //   }
-  // },
+  "flex-layout.col#bf26-roupas": {
+    "title": "Texto Roupas - Coluna",
+    "children": [
+      "rich-text#bf26-roupas-title",
+      "rich-text#bf26-roupas-text-1",
+      "rich-text#bf26-roupas-text-2",
+      "rich-text#bf26-roupas-text-3"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-plain-col"
+    }
+  },
 
-  // "rich-text#bf26-roupas-title": {
-  //   "title": "Título",
-  //   "props": {
-  //     "text": "## black friday de roupa infantil moda e conforto com preços especiais!",
-  //     "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--shelf"]
-  //   }
-  // },
+  "rich-text#bf26-roupas-title": {
+    "title": "Título",
+    "props": {
+      "text": "## black friday de roupa infantil moda e conforto com preços especiais!",
+      "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--shelf"]
+    }
+  },
 
-  // "rich-text#bf26-roupas-text-1": {
-  //   "title": "Texto 1",
-  //   "props": {
-  //     "text": "nós sabemos: você esperou o momento perfeito para garantir aquele guarda-roupa novo e confortável para seus filhos, e ele chegou! na **black friday** de moda infantil da **magicfeet**, a festa de ofertas vai muito além dos **tênis infantis!**",
-  //     "blockClass": [
-  //       "lp-black-2k26-text"
-  //     ]
-  //   }
-  // },
+  "rich-text#bf26-roupas-text-1": {
+    "title": "Texto 1",
+    "props": {
+      "text": "nós sabemos: você esperou o momento perfeito para garantir aquele guarda-roupa novo e confortável para seus filhos, e ele chegou! na **black friday** de moda infantil da **magicfeet**, a festa de ofertas vai muito além dos **tênis infantis!**",
+      "blockClass": [
+        "lp-black-2k26-text"
+      ]
+    }
+  },
 
-  // "rich-text#bf26-roupas-text-2": {
-  //   "title": "Texto 2",
-  //   "props": {
-  //     "text": "temos uma variedade incrível e completa de promoções em **roupas infantis** esperando por você. são peças-chave que unem estilo e funcionalidade em composições lindas e versáteis para todas as idades, do básico ao mais fashionista.",
-  //     "blockClass": [
-  //       "lp-black-2k26-text"
-  //     ]
-  //   }
-  // },
+  "rich-text#bf26-roupas-text-2": {
+    "title": "Texto 2",
+    "props": {
+      "text": "temos uma variedade incrível e completa de promoções em **roupas infantis** esperando por você. são peças-chave que unem estilo e funcionalidade em composições lindas e versáteis para todas as idades, do básico ao mais fashionista.",
+      "blockClass": [
+        "lp-black-2k26-text"
+      ]
+    }
+  },
 
-  // "rich-text#bf26-roupas-text-3": {
-  //   "title": "Texto 3",
-  //   "props": {
-  //     "text": "é o momento de investir em conforto e durabilidade, renovando tudo o que as crianças precisam para brincar, aprender e crescer com bem-estar. aproveite para compor looks especiais e cheios de afeto!",
-  //     "blockClass": [
-  //       "lp-black-2k26-text"
-  //     ]
-  //   }
-  // }
+  "rich-text#bf26-roupas-text-3": {
+    "title": "Texto 3",
+    "props": {
+      "text": "é o momento de investir em conforto e durabilidade, renovando tudo o que as crianças precisam para brincar, aprender e crescer com bem-estar. aproveite para compor looks especiais e cheios de afeto!",
+      "blockClass": [
+        "lp-black-2k26-text"
+      ]
+    }
+  }
 }

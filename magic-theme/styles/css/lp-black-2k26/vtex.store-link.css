@@ -63,5 +63,9 @@
 @media screen and (max-width: 990px) {
   .link--lp-black-2k26-cta {
     width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 0;
   }
 }
