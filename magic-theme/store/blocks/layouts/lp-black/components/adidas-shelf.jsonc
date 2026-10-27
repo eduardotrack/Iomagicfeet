@@ -1,0 +1,221 @@
+{
+//   "experimental__visibility-layout#bf26-adidas-shelf": {
+//     "title": "Vitrine Adidas - On/Off",
+//     "children": [
+//       "flex-layout.row#bf26-adidas-shelf"
+//     ],
+//     "props": {
+//       "visible": true
+//     }
+//   },
+
+//   "flex-layout.row#bf26-adidas-shelf": {
+//     "title": "Vitrine Adidas - Container",
+//     "children": [
+//       "flex-layout.col#bf26-adidas-shelf"
+//     ],
+//     "props": {
+//       "blockClass": [
+//         "lp-black-2k26-shelf"
+//       ],
+//       "fullWidth": true
+//     }
+//   },
+
+//   "flex-layout.col#bf26-adidas-shelf": {
+//     "title": "Vitrine Adidas - Coluna",
+//     "children": [
+//       "rich-text#bf26-adidas-shelf-title",
+//       "rich-text#bf26-adidas-shelf-sub",
+//       "tab-layout#bf26-adidas-shelf"
+//     ],
+//     "props": {
+//       "blockClass": "lp-black-2k26-shelf-col"
+//     }
+//   },
+
+//   "rich-text#bf26-adidas-shelf-title": {
+//     "title": "Título",
+//     "props": {
+//       "text": "## os favoritos da adidas na black friday",
+//       "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--shelf"]
+//     }
+//   },
+
+//   "rich-text#bf26-adidas-shelf-sub": {
+//     "title": "Subtítulo",
+//     "props": {
+//       "text": "tênis infantis adidas com preços especiais do superstar ao runfalcon",
+//       "blockClass": ["lp-black-2k26-text", "lp-black-2k26-text--sub"]
+//     }
+//   },
+
+//   "tab-layout#bf26-adidas-shelf": {
+//     "children": ["tab-list#bf26-adidas-shelf", "tab-content#bf26-adidas-shelf"],
+//     "props": {
+//       "defaultActiveTabId": "fem",
+//       "blockClass": "lp-black-2k26-tabs"
+//     }
+//   },
+
+//   "tab-list#bf26-adidas-shelf": {
+//     "title": "Tab - Botões",
+//     "children": ["tab-list.item#bf26-adidas-shelf-fem", "tab-list.item#bf26-adidas-shelf-masc"],
+//     "props": {
+//       "blockClass": "lp-black-2k26-tabs"
+//     }
+//   },
+
+//   "tab-list.item#bf26-adidas-shelf-fem": {
+//     "title": "Tab - Feminino",
+//     "props": {
+//       "tabId": "fem",
+//       "label": "feminino",
+//       "blockClass": "lp-black-2k26-tab"
+//     }
+//   },
+
+//   "tab-list.item#bf26-adidas-shelf-masc": {
+//     "title": "Tab - Masculino",
+//     "props": {
+//       "tabId": "masc",
+//       "label": "masculino",
+//       "blockClass": "lp-black-2k26-tab"
+//     }
+//   },
+
+//   "tab-content#bf26-adidas-shelf": {
+//     "title": "Tab - Conteúdo",
+//     "children": [
+//       "tab-content.item#bf26-adidas-shelf-fem",
+//       "tab-content.item#bf26-adidas-shelf-masc"
+//     ],
+//     "props": {
+//       "blockClass": "lp-black-2k26-tabs-content"
+//     }
+//   },
+
+//   "tab-content.item#bf26-adidas-shelf-fem": {
+//     "title": "Conteúdo - Feminino",
+//     "children": [
+//       "flex-layout.row#bf26-adidas-shelf-fem-row"
+//     ],
+//     "props": {
+//       "tabId": "fem",
+//       "blockClass": "lp-black-2k26-tab"
+//     }
+//   },
+
+//   "flex-layout.row#bf26-adidas-shelf-fem-row": {
+//     "title": "Vitrine - Feminino",
+//     "children": [
+//       "image#bf26-adidas-shelf-fem-photo",
+//       "list-context.product-list#bf26-adidas-shelf-fem"
+//     ],
+//     "props": {
+//       "blockClass": ["lp-black-2k26-shelf-row", "lp-black-2k26-shelf-row--photo"]
+//     }
+//   },
+
+//   "image#bf26-adidas-shelf-fem-photo": {
+//     "title": "Imagem",
+//     "props": {
+//       "src": "https://placehold.co/600x700",
+//       "alt": "",
+//       "blockClass": "lp-black-2k26-shelf-photo"
+//     }
+//   },
+
+//   "list-context.product-list#bf26-adidas-shelf-fem": {
+//     "title": "Vitrine - Feminino",
+//     "blocks": [
+//       "product-summary.shelf#new-shelf"
+//     ],
+//     "children": [
+//       "slider-layout#bf26-adidas-shelf-fem"
+//     ],
+//     "props": {
+//       "orderBy": "OrderByReleaseDateDESC",
+//       "collection": "",
+//       "category": "",
+//       "hideUnavailableItems": true,
+//       "maxItems": 12
+//     }
+//   },
+
+//   "slider-layout#bf26-adidas-shelf-fem": {
+//     "props": {
+//       "itemsPerPage": {
+//         "desktop": 4,
+//         "tablet": 3,
+//         "phone": 2
+//       },
+//       "infinite": true,
+//       "showNavigationArrows": "always",
+//       "showPaginationDots": "never",
+//       "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
+//     }
+//   },
+
+//   "tab-content.item#bf26-adidas-shelf-masc": {
+//     "title": "Conteúdo - Masculino",
+//     "children": [
+//       "flex-layout.row#bf26-adidas-shelf-masc-row"
+//     ],
+//     "props": {
+//       "tabId": "masc",
+//       "blockClass": "lp-black-2k26-tab"
+//     }
+//   },
+
+//   "flex-layout.row#bf26-adidas-shelf-masc-row": {
+//     "title": "Vitrine - Masculino",
+//     "children": [
+//       "image#bf26-adidas-shelf-masc-photo",
+//       "list-context.product-list#bf26-adidas-shelf-masc"
+//     ],
+//     "props": {
+//       "blockClass": ["lp-black-2k26-shelf-row", "lp-black-2k26-shelf-row--photo"]
+//     }
+//   },
+
+//   "image#bf26-adidas-shelf-masc-photo": {
+//     "title": "Imagem",
+//     "props": {
+//       "src": "https://placehold.co/600x700",
+//       "alt": "",
+//       "blockClass": "lp-black-2k26-shelf-photo"
+//     }
+//   },
+
+//   "list-context.product-list#bf26-adidas-shelf-masc": {
+//     "title": "Vitrine - Masculino",
+//     "blocks": [
+//       "product-summary.shelf#new-shelf"
+//     ],
+//     "children": [
+//       "slider-layout#bf26-adidas-shelf-masc"
+//     ],
+//     "props": {
+//       "orderBy": "OrderByReleaseDateDESC",
+//       "collection": "",
+//       "category": "",
+//       "hideUnavailableItems": true,
+//       "maxItems": 12
+//     }
+//   },
+
+//   "slider-layout#bf26-adidas-shelf-masc": {
+//     "props": {
+//       "itemsPerPage": {
+//         "desktop": 4,
+//         "tablet": 3,
+//         "phone": 2
+//       },
+//       "infinite": true,
+//       "showNavigationArrows": "always",
+//       "showPaginationDots": "never",
+//       "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
+//     }
+//   }
+}

@@ -1,0 +1,171 @@
+{
+  "experimental__visibility-layout#bf26-information": {
+    "title": "Informação e Cards - On/Off",
+    "children": [
+      "flex-layout.row#bf26-information"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
+
+  "flex-layout.row#bf26-information": {
+    "title": "Informação - Container",
+    "children": [
+      "flex-layout.col#bf26-information"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-information",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#bf26-information": {
+    "title": "Informação - Coluna",
+    "children": [
+      "rich-text#bf26-info-title",
+      "rich-text#bf26-info-sub",
+      "rich-text#bf26-info-text-1",
+      "rich-text#bf26-info-text-2",
+      "rich-text#bf26-info-text-3",
+      "flex-layout.row#bf26-cards"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-information-col"
+    }
+  },
+
+  "rich-text#bf26-info-title": {
+    "title": "Título",
+    "props": {
+      "text": "## a melhor black friday de tênis infantil \n está na **magicfeet!**",
+      "blockClass": [
+        "lp-black-2k26-title",
+        "lp-black-2k26-title--large",
+        "lp-black-2k26-title--light"
+      ]
+    }
+  },
+
+  "rich-text#bf26-info-sub": {
+    "title": "Subtítulo",
+    "props": {
+      "text": "não perca tempo: vista seus filhos com o melhor do universo infantil!",
+      "blockClass": ["lp-black-2k26-text", "lp-black-2k26-text--light","lp-black-2k26-text--wide"]
+    }
+  },
+
+  "rich-text#bf26-info-text-1": {
+    "title": "Texto 1",
+    "props": {
+      "text": "a espera acabou! a **black friday** da **magicfeet** já começou, e com ela, a chance de garantir os itens mais desejados para o universo dos seus pequenos: se prepare para uma temporada de descontos incríveis em todo o site!",
+      "blockClass": ["lp-black-2k26-text", "lp-black-2k26-text--light"]
+    }
+  },
+
+  "rich-text#bf26-info-text-2": {
+    "title": "Texto 2",
+    "props": {
+      "text": "nossa seleção especial traz ofertas de tênis infantis das marcas favoritas que você já confia, como **nike, adidas, jordan, puma, converse, vans, fila** e muito mais. é a chance de garantir passos seguros e cheios de atitude para a criançada!",
+      "blockClass": ["lp-black-2k26-text", "lp-black-2k26-text--light"]
+    }
+  },
+
+  "rich-text#bf26-info-text-3": {
+    "title": "Texto 3",
+    "props": {
+      "text": "mas não paramos por aí! você também encontra **promoções imperdíveis em roupas infantis**, chuteiras, mochilas chinelos, sandálias e acessórios infantis. são produtos autênticos para compor looks versáteis para qualquer ocasião.",
+      "blockClass": ["lp-black-2k26-text", "lp-black-2k26-text--light"]
+    }
+  },
+
+  "flex-layout.row#bf26-cards": {
+    "title": "Cards - Lista",
+    "children": [
+      "flex-layout.col#bf26-card-1",
+      "flex-layout.col#bf26-card-2",
+      "flex-layout.col#bf26-card-3"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-cards"
+    }
+  },
+
+  "flex-layout.col#bf26-card-1": {
+    "title": "Card 1",
+    "children": ["image#bf26-card-img-1", "link#bf26-card-link-1"],
+    "props": {
+      "blockClass": "lp-black-2k26-card"
+    }
+  },
+
+  "image#bf26-card-img-1": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/lp-black/information-1.jpg",
+      "alt": "tênis",
+      "blockClass": "lp-black-2k26-card"
+    }
+  },
+
+  "link#bf26-card-link-1": {
+    "title": "Link do card",
+    "props": {
+      "label": "tênis",
+      "href": "/tenis",
+      "blockClass": "lp-black-2k26-card"
+    }
+  },
+
+  "flex-layout.col#bf26-card-2": {
+    "title": "Card 2",
+    "children": ["image#bf26-card-img-2", "link#bf26-card-link-2"],
+    "props": {
+      "blockClass": "lp-black-2k26-card"
+    }
+  },
+
+  "image#bf26-card-img-2": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/lp-black/information-2.jpg",
+      "alt": "roupas",
+      "blockClass": "lp-black-2k26-card"
+    }
+  },
+
+  "link#bf26-card-link-2": {
+    "title": "Link do card",
+    "props": {
+      "label": "roupas",
+      "href": "/roupas",
+      "blockClass": "lp-black-2k26-card"
+    }
+  },
+
+  "flex-layout.col#bf26-card-3": {
+    "title": "Card 3",
+    "children": ["image#bf26-card-img-3", "link#bf26-card-link-3"],
+    "props": {
+      "blockClass": "lp-black-2k26-card"
+    }
+  },
+
+  "image#bf26-card-img-3": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/lp-black/information-3.jpg",
+      "alt": "acessórios",
+      "blockClass": "lp-black-2k26-card"
+    }
+  },
+
+  "link#bf26-card-link-3": {
+    "title": "Link do card",
+    "props": {
+      "label": "acessórios",
+      "href": "/acessorios",
+      "blockClass": "lp-black-2k26-card"
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "experimental__visibility-layout#bf26-benefits": {
+    "title": "Benefícios - On/Off",
+    "children": [
+      "flex-layout.row#bf26-benefits"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
+
+  "flex-layout.row#bf26-benefits": {
+    "title": "Benefícios - Container",
+    "children": [
+      "flex-layout.row#bf26-benefit-1",
+      "flex-layout.row#bf26-benefit-2",
+      "flex-layout.row#bf26-benefit-3",
+      "flex-layout.row#bf26-benefit-4"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-benefits",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.row#bf26-benefit-1": {
+    "title": "Benefício 1",
+    "children": ["image#bf26-benefit-icon-1", "rich-text#bf26-benefit-text-1"],
+    "props": {
+      "blockClass": "lp-black-2k26-benefit",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "image#bf26-benefit-icon-1": {
+    "title": "Ícone",
+    "props": {
+      "src": "assets/img/lp-black/benefits - 1.svg",
+      "alt": "frete grátis",
+      "blockClass": "lp-black-2k26-benefit-icon"
+    }
+  },
+
+  "rich-text#bf26-benefit-text-1": {
+    "title": "Texto",
+    "props": {
+      "text": "**frete grátis**\n\nconfira as regras",
+      "blockClass": "lp-black-2k26-benefit"
+    }
+  },
+
+  "flex-layout.row#bf26-benefit-2": {
+    "title": "Benefício 2",
+    "children": ["image#bf26-benefit-icon-2", "rich-text#bf26-benefit-text-2"],
+    "props": {
+      "blockClass": "lp-black-2k26-benefit",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "image#bf26-benefit-icon-2": {
+    "title": "Ícone",
+    "props": {
+      "src": "assets/img/lp-black/benefits - 2.svg",
+      "alt": "retire na loja",
+      "blockClass": "lp-black-2k26-benefit-icon"
+    }
+  },
+
+  "rich-text#bf26-benefit-text-2": {
+    "title": "Texto",
+    "props": {
+      "text": "**retire na loja**\n\ncompre online e retire",
+      "blockClass": "lp-black-2k26-benefit"
+    }
+  },
+
+  "flex-layout.row#bf26-benefit-3": {
+    "title": "Benefício 3",
+    "children": ["image#bf26-benefit-icon-3", "rich-text#bf26-benefit-text-3"],
+    "props": {
+      "blockClass": "lp-black-2k26-benefit",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "image#bf26-benefit-icon-3": {
+    "title": "Ícone",
+    "props": {
+      "src": "assets/img/lp-black/benefits - 3.svg",
+      "alt": "+30 lojas",
+      "blockClass": "lp-black-2k26-benefit-icon"
+    }
+  },
+
+  "rich-text#bf26-benefit-text-3": {
+    "title": "Texto",
+    "props": {
+      "text": "**+30 lojas**\n\nem todo o brasil",
+      "blockClass": "lp-black-2k26-benefit"
+    }
+  },
+
+  "flex-layout.row#bf26-benefit-4": {
+    "title": "Benefício 4",
+    "children": ["image#bf26-benefit-icon-4", "rich-text#bf26-benefit-text-4"],
+    "props": {
+      "blockClass": "lp-black-2k26-benefit",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "image#bf26-benefit-icon-4": {
+    "title": "Ícone",
+    "props": {
+      "src": "assets/img/lp-black/benefits - 4.svg",
+      "alt": "5% de desconto",
+      "blockClass": "lp-black-2k26-benefit-icon"
+    }
+  },
+
+  "rich-text#bf26-benefit-text-4": {
+    "title": "Texto",
+    "props": {
+      "text": "**5% de desconto**\n\npagamento via pix",
+      "blockClass": "lp-black-2k26-benefit"
+    }
+  }
+}

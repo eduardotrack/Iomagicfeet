@@ -1,0 +1,50 @@
+/* LP Black Friday 2026 - abas feminino / masculino */
+
+.listContainer--lp-black-2k26-tabs {
+  display: inline-flex;
+  gap: 0;
+  padding: 3px;
+  margin: 0 0 24px;
+  background-color: #f0f0ee;
+  border-radius: 999px;
+}
+
+.listItem--lp-black-2k26-tab {
+  padding: 0;
+  margin: 0;
+
+  :global(.vtex-button) {
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    border: none;
+    border-radius: 999px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  :global(.vtex-button__label) {
+    display: block;
+    padding: 7px 14px !important;
+    font-family: 'WorkSans-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 14px;
+    color: #141414;
+    text-transform: none;
+  }
+}
+
+.listItemActive--lp-black-2k26-tab {
+  :global(.vtex-button) {
+    background-color: #141414;
+  }
+
+  :global(.vtex-button__label) {
+    color: #fff;
+  }
+}
+
+.contentContainer--lp-black-2k26-tabs-content {
+  width: 100%;
+}

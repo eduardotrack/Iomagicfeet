@@ -1,0 +1,119 @@
+{
+  "experimental__visibility-layout#bf26-brands": {
+    "title": "Marcas - On/Off",
+    "children": [
+      "flex-layout.row#bf26-brands"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
+
+  "flex-layout.row#bf26-brands": {
+    "title": "Marcas - Container",
+    "children": [
+      "flex-layout.col#bf26-brands"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-brands"
+    }
+  },
+
+  "flex-layout.col#bf26-brands": {
+    "title": "Marcas - Coluna",
+    "children": ["rich-text#bf26-brands-title", "list-context.image-list#bf26-brands"],
+    "props": {
+      "blockClass": "lp-black-2k26-brands-col"
+    }
+  },
+
+  "rich-text#bf26-brands-title": {
+    "title": "Título",
+    "props": {
+      "text": "## nossas marcas",
+      "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--shelf"]
+    }
+  },
+
+  "list-context.image-list#bf26-brands": {
+    "title": "Marcas - Logos",
+    "children": [
+      "slider-layout#bf26-brands"
+    ],
+    "props": {
+      "height": 120,
+      "images": [
+        {
+          "image": "assets/img/lp-black/brands-nike.svg",
+          "mobileImage": "assets/img/lp-black/brands-nike.svg",
+          "link": {
+            "url": "/nike"
+          }
+        },
+        {
+          "image": "assets/img/lp-black/brands-jordan.svg",
+          "mobileImage": "assets/img/lp-black/brands-jordan.svg",
+          "link": {
+            "url": "/jordan"
+          }
+        },
+        {
+          "image": "assets/img/lp-black/brands-adidas.svg",
+          "mobileImage": "assets/img/lp-black/brands-adidas.svg",
+          "link": {
+            "url": "/adidas"
+          }
+        },
+        {
+          "image": "assets/img/lp-black/brands-puma.svg",
+          "mobileImage": "assets/img/lp-black/brands-puma.svg",
+          "link": {
+            "url": "/puma"
+          }
+        },
+        {
+          "image": "assets/img/lp-black/brands-converse.svg",
+          "mobileImage": "assets/img/lp-black/brands-converse.svg",
+          "link": {
+            "url": "/converse"
+          }
+        },
+        {
+          "image": "assets/img/lp-black/brands-vans.svg",
+          "mobileImage": "assets/img/lp-black/brands-vans.svg",
+          "link": {
+            "url": "/vans"
+          }
+        },
+        {
+          "image": "assets/img/lp-black/brands-fila.svg",
+          "mobileImage": "assets/img/lp-black/brands-fila.svg",
+          "link": {
+            "url": "/fila"
+          }
+        },
+        {
+          "image": "assets/img/lp-black/brands-crocs.svg",
+          "mobileImage": "assets/img/lp-black/brands-crocs.svg",
+          "link": {
+            "url": "/crocs"
+          }
+        }
+      ]
+    }
+  },
+
+  "slider-layout#bf26-brands": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 4,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": ["lp-black-2k26-brands", "lp-black-2k26-arrows"]
+    }
+  }
+}

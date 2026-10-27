@@ -1,0 +1,190 @@
+/* LP Black Friday 2026 - tipografia */
+
+/* títulos */
+.heading--lp-black-2k26-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.15;
+  color: #141414;
+}
+
+.strong--lp-black-2k26-title {
+  font-weight: 700;
+  color: #0B830F;
+}
+
+.heading--lp-black-2k26-title--light {
+  color: #fff;
+}
+
+.wrapper--lp-black-2k26-ofertas-title  {
+  font-weight: 700;
+  font-size: 72px;
+  margin-bottom: 0;
+  color: #141414;
+}
+
+.container--lp-black-2k26-text .paragraph--lp-black-2k26-text {
+  margin-top: 0;
+}
+
+.wrapper--lp-black-2k26-ofertas-title .heading--lp-black-2k26-ofertas-title {
+  margin: 0;
+}
+
+.wrapper--lp-black-2k26-ofertas-title .heading--lp-black-2k26-ofertas-title .strong {
+  color: #0B830F;
+}
+
+
+.wrapper--lp-black-2k26-title--light {
+  margin-bottom: 16px;
+}
+
+.heading--lp-black-2k26-title--large,
+.paragraph--lp-black-2k26-title--large {
+  font-size: 40px;
+  margin: 0;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1%;
+  color: #FFFFFF;
+}
+
+.heading--lp-black-2k26-title--small,
+.heading--lp-black-2k26-title--shelf {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+  color: #141414;
+}
+
+.container--lp-black-2k26-title--shelf {
+  padding-right: 96px;
+}
+
+/* destaque verde sobre fundo escuro (introdução) e lima (seção de acessórios) */
+.container--lp-black-2k26-title--light .strong--lp-black-2k26-title {
+  color: #2fb52f;
+}
+
+.container--lp-black-2k26-title--lime .strong--lp-black-2k26-title {
+  color: #99d600;
+}
+
+/* texto corrido */
+.paragraph--lp-black-2k26-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #141414;
+}
+
+.paragraph--lp-black-2k26-text:last-child {
+  margin-bottom: 0;
+}
+
+.strong--lp-black-2k26-text {
+  font-family: 'WorkSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+.paragraph--lp-black-2k26-text--light {
+  color: #fff;
+}
+
+.paragraph--lp-black-2k26-text--wide {
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-bottom: 16px;
+}
+
+.container--lp-black-2k26-text--wide {
+  max-width: 880px;
+}
+
+.container--lp-black-2k26-text--sub {
+  margin-bottom: 16px;
+}
+
+.paragraph--lp-black-2k26-text--sub {
+  font-size: 12px;
+  line-height: 16px;
+  color: #5d5f62;
+}
+
+.link--lp-black-2k26-text {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* benefícios */
+.paragraph--lp-black-2k26-benefit {
+  margin: 0;
+  font-size: 11px;
+  line-height: 14px;
+  color: #9a9c9f;
+}
+
+.strong--lp-black-2k26-benefit {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #141414;
+}
+
+/* FAQ */
+.headingLevel3--lp-black-2k26-faq-q {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #141414;
+  text-align: left;
+}
+
+.paragraph--lp-black-2k26-faq-a {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #45494f;
+}
+
+.container--lp-black-2k26-faq-a {
+  padding: 0 12px 20px;
+}
+
+.listItem--lp-black-2k26-faq-a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #45494f;
+}
+
+@media screen and (max-width: 990px) {
+  .heading--lp-black-2k26-title {
+    font-size: 24px;
+  }
+
+  .heading--lp-black-2k26-title--large {
+    font-size: 28px;
+  }
+
+  .heading--lp-black-2k26-title--medium {
+    font-size: 22px;
+  }
+
+  .heading--lp-black-2k26-title--small,
+  .heading--lp-black-2k26-title--shelf {
+    font-size: 20px;
+  }
+
+  .container--lp-black-2k26-title--shelf {
+    padding-right: 80px;
+  }
+}

@@ -1,0 +1,138 @@
+{
+  // "experimental__visibility-layout#bf26-nike": {
+  //   "title": "Nike - On/Off",
+  //   "children": [
+  //     "flex-layout.row#bf26-nike"
+  //   ],
+  //   "props": {
+  //     "visible": true
+  //   }
+  // },
+
+  // "flex-layout.row#bf26-nike": {
+  //   "title": "Nike - Container",
+  //   "children": [
+  //     "flex-layout.row#bf26-nike-inner"
+  //   ],
+  //   "props": {
+  //     "blockClass": ["lp-black-2k26-split", "lp-black-2k26-split--gray"],
+  //     "fullWidth": true
+  //   }
+  // },
+
+  // "flex-layout.row#bf26-nike-inner": {
+  //   "title": "Conteúdo",
+  //   "children": ["flex-layout.col#bf26-nike-text", "flex-layout.col#bf26-nike-media"],
+  //   "props": {
+  //     "blockClass": ["lp-black-2k26-split", "lp-black-2k26-nike"]
+  //   }
+  // },
+
+  // "flex-layout.col#bf26-nike-text": {
+  //   "title": "Texto - Coluna",
+  //   "children": [
+  //     "rich-text#bf26-nike-title",
+  //     "rich-text#bf26-nike-text-1",
+  //     "rich-text#bf26-nike-text-2",
+  //     "rich-text#bf26-nike-text-3"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-split-text"
+  //   }
+  // },
+
+  // "rich-text#bf26-nike-title": {
+  //   "title": "Título",
+  //   "props": {
+  //     "text": "## black friday da **nike** na **magicfeet** o tênis infantil favorito com preço especial!",
+  //     "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--medium"]
+  //   }
+  // },
+
+  // "rich-text#bf26-nike-text-1": {
+  //   "title": "Texto 1",
+  //   "props": {
+  //     "text": "a gente sabe que são os detalhes que completam o look e trazem ainda mais praticidade e alegria para o dia a dia, não é mesmo? o cuidado de escolher o acessório perfeito faz toda a diferença para o bem-estar dos pequenos.",
+  //     "blockClass": "lp-black-2k26-text"
+  //   }
+  // },
+
+  // "rich-text#bf26-nike-text-2": {
+  //   "title": "Texto 2",
+  //   "props": {
+  //     "text": "pensando nisso, a magicfeet preparou ofertas especiais em acessórios infantis que você não pode perder! seja para as aventuras na escola ou para os momentos de lazer, temos tudo o que seu filho precisa.",
+  //     "blockClass": "lp-black-2k26-text"
+  //   }
+  // },
+
+  // "rich-text#bf26-nike-text-3": {
+  //   "title": "Texto 3",
+  //   "props": {
+  //     "text": "nesta black friday, você encontra de tudo: aquela mochila infantil funcional para a volta às aulas, bonés cheios de estilo, meias confortáveis e chinelos super versáteis na **black friday!**",
+  //     "blockClass": "lp-black-2k26-text"
+  //   }
+  // },
+
+  // "flex-layout.col#bf26-nike-media": {
+  //   "title": "Mídia - Coluna",
+  //   "children": [
+  //     "flex-layout.row#bf26-nike-collage"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-split-media"
+  //   }
+  // },
+
+  // "flex-layout.row#bf26-nike-collage": {
+  //   "title": "Colagem",
+  //   "children": ["flex-layout.col#bf26-nike-collage-1", "flex-layout.col#bf26-nike-collage-2"],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-collage"
+  //   }
+  // },
+
+  // "flex-layout.col#bf26-nike-collage-1": {
+  //   "title": "Colagem - Coluna 1",
+  //   "children": ["image#bf26-nike-img-1", "image#bf26-nike-img-2"],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-collage-col"
+  //   }
+  // },
+
+  // "image#bf26-nike-img-1": {
+  //   "title": "Imagem",
+  //   "props": {
+  //     "src": "https://placehold.co/374x350",
+  //     "alt": "",
+  //     "blockClass": "lp-black-2k26-collage-img"
+  //   }
+  // },
+
+  // "image#bf26-nike-img-2": {
+  //   "title": "Imagem",
+  //   "props": {
+  //     "src": "https://placehold.co/374x350",
+  //     "alt": "",
+  //     "blockClass": "lp-black-2k26-collage-img"
+  //   }
+  // },
+
+  // "flex-layout.col#bf26-nike-collage-2": {
+  //   "title": "Colagem - Coluna 2",
+  //   "children": [
+  //     "image#bf26-nike-img-3"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-collage-col"
+  //   }
+  // },
+
+  // "image#bf26-nike-img-3": {
+  //   "title": "Imagem",
+  //   "props": {
+  //     "src": "https://placehold.co/374x707",
+  //     "alt": "",
+  //     "blockClass": "lp-black-2k26-collage-img"
+  //   }
+  // }
+}

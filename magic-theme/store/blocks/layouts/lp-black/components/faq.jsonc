@@ -1,0 +1,414 @@
+{
+  // "experimental__visibility-layout#bf26-faq": {
+  //   "title": "FAQ - On/Off",
+  //   "children": [
+  //     "flex-layout.row#bf26-faq"
+  //   ],
+  //   "props": {
+  //     "visible": true
+  //   }
+  // },
+
+  // "flex-layout.row#bf26-faq": {
+  //   "title": "FAQ - Container",
+  //   "children": [
+  //     "flex-layout.col#bf26-faq"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq"
+  //   }
+  // },
+
+  // "flex-layout.col#bf26-faq": {
+  //   "title": "FAQ - Coluna",
+  //   "children": ["rich-text#bf26-faq-title", "disclosure-layout-group#bf26-faq"],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-col"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-title": {
+  //   "title": "Título",
+  //   "props": {
+  //     "text": "## faq",
+  //     "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--small"]
+  //   }
+  // },
+
+  // "disclosure-layout-group#bf26-faq": {
+  //   "title": "FAQ - Grupo",
+  //   "children": [
+  //     "disclosure-layout#bf26-faq-1",
+  //     "disclosure-layout#bf26-faq-2",
+  //     "disclosure-layout#bf26-faq-3",
+  //     "disclosure-layout#bf26-faq-4",
+  //     "disclosure-layout#bf26-faq-5",
+  //     "disclosure-layout#bf26-faq-6",
+  //     "disclosure-layout#bf26-faq-7",
+  //     "disclosure-layout#bf26-faq-8"
+  //   ],
+  //   "props": {
+  //     "maxVisible": "one"
+  //   }
+  // },
+
+  // "disclosure-layout#bf26-faq-1": {
+  //   "title": "FAQ 1",
+  //   "children": ["disclosure-trigger#bf26-faq-1", "disclosure-content#bf26-faq-1"],
+  //   "props": {
+  //     "initialVisibility": "hidden",
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "disclosure-trigger#bf26-faq-1": {
+  //   "title": "FAQ 1 - Pergunta",
+  //   "children": [
+  //     "rich-text#bf26-faq-q-1"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-q-1": {
+  //   "title": "Pergunta",
+  //   "props": {
+  //     "text": "o que é a black friday?",
+  //     "blockClass": "lp-black-2k26-faq-q"
+  //   }
+  // },
+
+  // "disclosure-content#bf26-faq-1": {
+  //   "title": "FAQ 1 - Resposta",
+  //   "children": [
+  //     "rich-text#bf26-faq-a-1"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-a-1": {
+  //   "title": "Resposta",
+  //   "props": {
+  //     "text": "Resposta a definir.",
+  //     "blockClass": "lp-black-2k26-faq-a"
+  //   }
+  // },
+
+  // "disclosure-layout#bf26-faq-2": {
+  //   "title": "FAQ 2",
+  //   "children": ["disclosure-trigger#bf26-faq-2", "disclosure-content#bf26-faq-2"],
+  //   "props": {
+  //     "initialVisibility": "hidden",
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "disclosure-trigger#bf26-faq-2": {
+  //   "title": "FAQ 2 - Pergunta",
+  //   "children": [
+  //     "rich-text#bf26-faq-q-2"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-q-2": {
+  //   "title": "Pergunta",
+  //   "props": {
+  //     "text": "quando é a black friday da magicfeet?",
+  //     "blockClass": "lp-black-2k26-faq-q"
+  //   }
+  // },
+
+  // "disclosure-content#bf26-faq-2": {
+  //   "title": "FAQ 2 - Resposta",
+  //   "children": [
+  //     "rich-text#bf26-faq-a-2"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-a-2": {
+  //   "title": "Resposta",
+  //   "props": {
+  //     "text": "Resposta a definir.",
+  //     "blockClass": "lp-black-2k26-faq-a"
+  //   }
+  // },
+
+  // "disclosure-layout#bf26-faq-3": {
+  //   "title": "FAQ 3",
+  //   "children": ["disclosure-trigger#bf26-faq-3", "disclosure-content#bf26-faq-3"],
+  //   "props": {
+  //     "initialVisibility": "hidden",
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "disclosure-trigger#bf26-faq-3": {
+  //   "title": "FAQ 3 - Pergunta",
+  //   "children": [
+  //     "rich-text#bf26-faq-q-3"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-q-3": {
+  //   "title": "Pergunta",
+  //   "props": {
+  //     "text": "quais as formas de pagamento na black friday da magicfeet?",
+  //     "blockClass": "lp-black-2k26-faq-q"
+  //   }
+  // },
+
+  // "disclosure-content#bf26-faq-3": {
+  //   "title": "FAQ 3 - Resposta",
+  //   "children": [
+  //     "rich-text#bf26-faq-a-3"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-a-3": {
+  //   "title": "Resposta",
+  //   "props": {
+  //     "text": "Resposta a definir.",
+  //     "blockClass": "lp-black-2k26-faq-a"
+  //   }
+  // },
+
+  // "disclosure-layout#bf26-faq-4": {
+  //   "title": "FAQ 4",
+  //   "children": ["disclosure-trigger#bf26-faq-4", "disclosure-content#bf26-faq-4"],
+  //   "props": {
+  //     "initialVisibility": "hidden",
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "disclosure-trigger#bf26-faq-4": {
+  //   "title": "FAQ 4 - Pergunta",
+  //   "children": [
+  //     "rich-text#bf26-faq-q-4"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-q-4": {
+  //   "title": "Pergunta",
+  //   "props": {
+  //     "text": "quais são as ofertas disponíveis na black friday da magicfeet?",
+  //     "blockClass": "lp-black-2k26-faq-q"
+  //   }
+  // },
+
+  // "disclosure-content#bf26-faq-4": {
+  //   "title": "FAQ 4 - Resposta",
+  //   "children": [
+  //     "rich-text#bf26-faq-a-4"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-a-4": {
+  //   "title": "Resposta",
+  //   "props": {
+  //     "text": "Resposta a definir.",
+  //     "blockClass": "lp-black-2k26-faq-a"
+  //   }
+  // },
+
+  // "disclosure-layout#bf26-faq-5": {
+  //   "title": "FAQ 5",
+  //   "children": ["disclosure-trigger#bf26-faq-5", "disclosure-content#bf26-faq-5"],
+  //   "props": {
+  //     "initialVisibility": "hidden",
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "disclosure-trigger#bf26-faq-5": {
+  //   "title": "FAQ 5 - Pergunta",
+  //   "children": [
+  //     "rich-text#bf26-faq-q-5"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-q-5": {
+  //   "title": "Pergunta",
+  //   "props": {
+  //     "text": "como se preparar para a black friday da magicfeet?",
+  //     "blockClass": "lp-black-2k26-faq-q"
+  //   }
+  // },
+
+  // "disclosure-content#bf26-faq-5": {
+  //   "title": "FAQ 5 - Resposta",
+  //   "children": [
+  //     "rich-text#bf26-faq-a-5"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-a-5": {
+  //   "title": "Resposta",
+  //   "props": {
+  //     "text": "Resposta a definir.",
+  //     "blockClass": "lp-black-2k26-faq-a"
+  //   }
+  // },
+
+  // "disclosure-layout#bf26-faq-6": {
+  //   "title": "FAQ 6",
+  //   "children": ["disclosure-trigger#bf26-faq-6", "disclosure-content#bf26-faq-6"],
+  //   "props": {
+  //     "initialVisibility": "hidden",
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "disclosure-trigger#bf26-faq-6": {
+  //   "title": "FAQ 6 - Pergunta",
+  //   "children": [
+  //     "rich-text#bf26-faq-q-6"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-q-6": {
+  //   "title": "Pergunta",
+  //   "props": {
+  //     "text": "vale a pena comprar tênis infantis na black friday?",
+  //     "blockClass": "lp-black-2k26-faq-q"
+  //   }
+  // },
+
+  // "disclosure-content#bf26-faq-6": {
+  //   "title": "FAQ 6 - Resposta",
+  //   "children": [
+  //     "rich-text#bf26-faq-a-6"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-a-6": {
+  //   "title": "Resposta",
+  //   "props": {
+  //     "text": "Resposta a definir.",
+  //     "blockClass": "lp-black-2k26-faq-a"
+  //   }
+  // },
+
+  // "disclosure-layout#bf26-faq-7": {
+  //   "title": "FAQ 7",
+  //   "children": ["disclosure-trigger#bf26-faq-7", "disclosure-content#bf26-faq-7"],
+  //   "props": {
+  //     "initialVisibility": "hidden",
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "disclosure-trigger#bf26-faq-7": {
+  //   "title": "FAQ 7 - Pergunta",
+  //   "children": [
+  //     "rich-text#bf26-faq-q-7"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-q-7": {
+  //   "title": "Pergunta",
+  //   "props": {
+  //     "text": "onde comprar tênis infantis na black friday?",
+  //     "blockClass": "lp-black-2k26-faq-q"
+  //   }
+  // },
+
+  // "disclosure-content#bf26-faq-7": {
+  //   "title": "FAQ 7 - Resposta",
+  //   "children": [
+  //     "rich-text#bf26-faq-a-7"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-a-7": {
+  //   "title": "Resposta",
+  //   "props": {
+  //     "text": "Resposta a definir.",
+  //     "blockClass": "lp-black-2k26-faq-a"
+  //   }
+  // },
+
+  // "disclosure-layout#bf26-faq-8": {
+  //   "title": "FAQ 8",
+  //   "children": ["disclosure-trigger#bf26-faq-8", "disclosure-content#bf26-faq-8"],
+  //   "props": {
+  //     "initialVisibility": "hidden",
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "disclosure-trigger#bf26-faq-8": {
+  //   "title": "FAQ 8 - Pergunta",
+  //   "children": [
+  //     "rich-text#bf26-faq-q-8"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-q-8": {
+  //   "title": "Pergunta",
+  //   "props": {
+  //     "text": "qual numeração de tênis infantil comprar na black friday?",
+  //     "blockClass": "lp-black-2k26-faq-q"
+  //   }
+  // },
+
+  // "disclosure-content#bf26-faq-8": {
+  //   "title": "FAQ 8 - Resposta",
+  //   "children": [
+  //     "rich-text#bf26-faq-a-8"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-faq-item"
+  //   }
+  // },
+
+  // "rich-text#bf26-faq-a-8": {
+  //   "title": "Resposta",
+  //   "props": {
+  //     "text": "Resposta a definir.",
+  //     "blockClass": "lp-black-2k26-faq-a"
+  //   }
+  // }
+}

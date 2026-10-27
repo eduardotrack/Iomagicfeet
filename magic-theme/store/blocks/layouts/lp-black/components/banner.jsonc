@@ -1,0 +1,59 @@
+{
+  "experimental__visibility-layout#bf26-banner": {
+    "title": "Banner - On/Off",
+    "children": [
+      "flex-layout.row#bf26-banner"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
+
+  "flex-layout.row#bf26-banner": {
+    "title": "Banner - Container",
+    "children": [
+      "list-context.image-list#bf26-banner"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-banner",
+      "fullWidth": true
+    }
+  },
+
+  "list-context.image-list#bf26-banner": {
+    "title": "Banner - Imagens",
+    "children": [
+      "slider-layout#bf26-banner"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-banner",
+      "preload": true,
+      "height": 720,
+      "images": [
+        {
+          "image": "assets/img/lp-black/banner - desktop.jpg",
+          "mobileImage": "https://placehold.co/750x900",
+          "description": "Black Friday 2026 na magicfeet",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+
+  "slider-layout#bf26-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "lp-black-2k26-banner",
+      "fullWidth": true
+    }
+  }
+}

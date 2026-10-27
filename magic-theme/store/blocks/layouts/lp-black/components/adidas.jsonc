@@ -1,0 +1,105 @@
+{
+//   "experimental__visibility-layout#bf26-adidas": {
+//     "title": "Adidas - On/Off",
+//     "children": [
+//       "flex-layout.row#bf26-adidas"
+//     ],
+//     "props": {
+//       "visible": true
+//     }
+//   },
+
+//   "flex-layout.row#bf26-adidas": {
+//     "title": "Adidas - Container",
+//     "children": [
+//       "flex-layout.row#bf26-adidas-inner"
+//     ],
+//     "props": {
+//       "blockClass": ["lp-black-2k26-split", "lp-black-2k26-split--gray"],
+//       "fullWidth": true
+//     }
+//   },
+
+//   "flex-layout.row#bf26-adidas-inner": {
+//     "title": "Conteúdo",
+//     "children": ["flex-layout.col#bf26-adidas-media", "flex-layout.col#bf26-adidas-text"],
+//     "props": {
+//       "blockClass": [
+//         "lp-black-2k26-split"
+//       ]
+//     }
+//   },
+
+//   "flex-layout.col#bf26-adidas-media": {
+//     "title": "Mídia - Coluna",
+//     "children": [
+//       "image#bf26-adidas-img"
+//     ],
+//     "props": {
+//       "blockClass": "lp-black-2k26-split-media"
+//     }
+//   },
+
+//   "image#bf26-adidas-img": {
+//     "title": "Imagem",
+//     "props": {
+//       "src": "https://placehold.co/896x572",
+//       "alt": "",
+//       "blockClass": "lp-black-2k26-adidas-img"
+//     }
+//   },
+
+//   "flex-layout.col#bf26-adidas-text": {
+//     "title": "Texto - Coluna",
+//     "children": [
+//       "rich-text#bf26-adidas-title",
+//       "rich-text#bf26-adidas-text-1",
+//       "rich-text#bf26-adidas-text-2",
+//       "rich-text#bf26-adidas-text-3",
+//       "rich-text#bf26-adidas-text-4"
+//     ],
+//     "props": {
+//       "blockClass": "lp-black-2k26-split-text"
+//     }
+//   },
+
+//   "rich-text#bf26-adidas-title": {
+//     "title": "Título",
+//     "props": {
+//       "text": "## adidas na black friday **magicfeet** tradição para todos os passos!",
+//       "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--medium"]
+//     }
+//   },
+
+//   "rich-text#bf26-adidas-text-1": {
+//     "title": "Texto 1",
+//     "props": {
+//       "text": "se tem uma marca que une tradição, conforto e estilo atemporal que a gente ama, é a adidas! e nesta **black friday** da **magicfeet**, sua chance de garantir os favoritos da marca das três listras com preços imperdíveis finalmente chegou!",
+//       "blockClass": "lp-black-2k26-text"
+//     }
+//   },
+
+//   "rich-text#bf26-adidas-text-2": {
+//     "title": "Texto 2",
+//     "props": {
+//       "text": "nossa promoção de tênis infantis adidas está imbatível, com modelos que são verdadeiros clássicos e garantem a funcionalidade que a rotina das crianças precisa!",
+//       "blockClass": "lp-black-2k26-text"
+//     }
+//   },
+
+//   "rich-text#bf26-adidas-text-3": {
+//     "title": "Texto 3",
+//     "props": {
+//       "text": "encontre o **superstar**, o **forum**, o **grand court**, o **samba**, o **campus**, o **tensaur**, o **vl court**, o **break start**, o **courtblock** e o **runfalcon**. são tênis infantis que proporcionam segurança e durabilidade em todas as brincadeiras!",
+//       "blockClass": "lp-black-2k26-text"
+//     }
+//   },
+
+//   "rich-text#bf26-adidas-text-4": {
+//     "title": "Texto 4",
+//     "props": {
+//       "text": "e para completar o visual, temos ofertas especiais em conjuntos, roupas infantis, bonés e acessórios adidas. aproveite para renovar o guarda-roupa dos seus filhos com o melhor da moda infantil!",
+//       "blockClass": "lp-black-2k26-text"
+//     }
+//   }
+}

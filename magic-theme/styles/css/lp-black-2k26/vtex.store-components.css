@@ -1,0 +1,70 @@
+/* LP Black Friday 2026 - imagens */
+.imageElement--lp-black-2k26-collage-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.imageElementLink--lp-black-2k26-banner,
+.imageElement--lp-black-2k26-card,
+.imageElement--lp-black-2k26-shelf-photo,
+.imageElement--lp-black-2k26-adidas-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imageElement--lp-black-2k26-collage-img,
+.imageElement--lp-black-2k26-shelf-photo,
+.imageElement--lp-black-2k26-adidas-img {
+  border-radius: 12px;
+}
+
+/* fotos que dividem a altura com a vitrine */
+.imageElement--lp-black-2k26-shelf-photo {
+  aspect-ratio: 366 / 425;
+  object-fit: cover;
+}
+
+.imageElementLink--lp-black-2k26-card {
+  display: block;
+}
+
+/* logos das marcas */
+.imageElement--lp-black-2k26-brand {
+  display: block;
+  width: 100%;
+  max-width: 96px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.imageElementLink--lp-black-2k26-brand {
+  display: block;
+  padding: 16px 8px;
+}
+
+/* ícones de benefícios */
+.imageElement--lp-black-2k26-benefit-icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+}
+
+.imageElement--lp-black-2k26-arrows {
+  height: 120px;
+}
+@media screen and (max-width: 990px) {
+  .imageElement--lp-black-2k26-shelf-photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  .imageElement--lp-black-2k26-benefit-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .imageElement--lp-black-2k26-brand {
+    max-width: 72px;
+  }
+}

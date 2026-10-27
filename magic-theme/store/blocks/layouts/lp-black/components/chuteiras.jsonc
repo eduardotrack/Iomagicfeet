@@ -1,0 +1,73 @@
+{
+  // "experimental__visibility-layout#bf26-chuteiras": {
+  //   "title": "Texto Chuteiras - On/Off",
+  //   "children": [
+  //     "flex-layout.row#bf26-chuteiras"
+  //   ],
+  //   "props": {
+  //     "visible": true
+  //   }
+  // },
+
+  // "flex-layout.row#bf26-chuteiras": {
+  //   "title": "Texto Chuteiras - Container",
+  //   "children": [
+  //     "flex-layout.col#bf26-chuteiras"
+  //   ],
+  //   "props": {
+  //     "blockClass": ["lp-black-2k26-plain", "lp-black-2k26-plain--light"],
+  //     "fullWidth": true
+  //   }
+  // },
+
+  // "flex-layout.col#bf26-chuteiras": {
+  //   "title": "Texto Chuteiras - Coluna",
+  //   "children": [
+  //     "rich-text#bf26-chuteiras-title",
+  //     "rich-text#bf26-chuteiras-text-1",
+  //     "rich-text#bf26-chuteiras-text-2",
+  //     "rich-text#bf26-chuteiras-text-3"
+  //   ],
+  //   "props": {
+  //     "blockClass": "lp-black-2k26-plain-col"
+  //   }
+  // },
+
+  // "rich-text#bf26-chuteiras-title": {
+  //   "title": "Título",
+  //   "props": {
+  //     "text": "## chuteiras infantis com **descontos** especiais!",
+  //     "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--shelf"]
+  //   }
+  // },
+
+  // "rich-text#bf26-chuteiras-text-1": {
+  //   "title": "Texto 1",
+  //   "props": {
+  //     "text": "se você é mãe ou pai de um futuro craque, sabe que a chuteira perfeita é a peça-chave para a diversão e o bem-estar em campo. é onde a esperança e o comprometimento com o esporte começam!",
+  //     "blockClass": [
+  //       "lp-black-2k26-text"
+  //     ]
+  //   }
+  // },
+
+  // "rich-text#bf26-chuteiras-text-2": {
+  //   "title": "Texto 2",
+  //   "props": {
+  //     "text": "nesta **black friday**, preparamos ofertas imperdíveis de chuteiras infantis para você investir no talento do seu filho ou filha. temos modelos lindos e funcionais das marcas mais queridinhas e confiáveis do esporte.",
+  //     "blockClass": [
+  //       "lp-black-2k26-text"
+  //     ]
+  //   }
+  // },
+
+  // "rich-text#bf26-chuteiras-text-3": {
+  //   "title": "Texto 3",
+  //   "props": {
+  //     "text": "encontre a aposta certeira da nike, adidas, umbro, puma e penalty, com descontos incríveis. são chuteiras infantis confortáveis e com a qualidade que garantem segurança e durabilidade em qualquer tipo de jogo: seja para campo, society ou quadra!",
+  //     "blockClass": [
+  //       "lp-black-2k26-text"
+  //     ]
+  //   }
+  // }
+}

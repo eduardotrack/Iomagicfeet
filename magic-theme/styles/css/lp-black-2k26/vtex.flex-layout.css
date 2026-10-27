@@ -1,0 +1,288 @@
+/* LP Black Friday 2026 - layout (largura de referência do Figma: 1600px, gutter 32px) */
+.flexRow--lp-black-2k26-brands :global(.vtex-store-components-3-x-container),
+.flexRow--lp-black-2k26-benefits :global(.vtex-store-components-3-x-container) {
+  max-width: 100%;
+  padding: 0;
+}
+
+.flexCol--lp-black-2k26 {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+/* conteúdo centralizado */
+.flexRowContent--lp-black-2k26-information,
+.flexRowContent--lp-black-2k26-brands,
+.flexRowContent--lp-black-2k26-plain,
+.flexRowContent--lp-black-2k26-shelf,
+.flexRowContent--lp-black-2k26-faq {
+  width: 100%;
+  max-width: 1568px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}
+
+.flexRow--lp-black-2k26-split-container{
+  width: 100%;
+  max-width: 1568px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ---------- banner ---------- */
+.flexRow--lp-black-2k26-banner {
+  line-height: 0;
+}
+
+/* ---------- benefícios ---------- */
+.flexRowContent--lp-black-2k26-benefits {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 16px;
+  max-width: 1568px;
+  padding: 16px;
+}
+
+.flexRow--lp-black-2k26-benefit {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.flexRowContent--lp-black-2k26-benefit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ---------- informação (fundo escuro) ---------- */
+.flexRow--lp-black-2k26-information {
+  background-color: #141414;
+}
+
+.flexRowContent--lp-black-2k26-information {
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+
+.flexCol--lp-black-2k26-information-col {
+  width: 100%;
+}
+
+.flexRowContent--lp-black-2k26-cards {
+  display: flex;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.flexCol--lp-black-2k26-card {
+  flex: 1 1 0;
+  min-width: 0;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ---------- marcas ---------- */
+.flexCol--lp-black-2k26-brands-col {
+  position: relative;
+}
+
+.flexColChild--lp-black-2k26-brands-col:first-child {
+  padding: 30px 0 32px 0;
+}
+.flexColChild--lp-black-2k26-brands-col:last-child {
+  padding-bottom: 32px;
+}
+
+/* ---------- blocos texto + mídia ---------- */
+.flexRow--lp-black-2k26-split--gray {
+  background-color: #f1f3f4;
+}
+
+.flexRowContent--lp-black-2k26-split {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.flexCol--lp-black-2k26-split-text {
+  flex: 1 1 0;
+  min-width: 0;
+  gap: 24px;
+}
+
+.flexRowContent--lp-black-2k26-collage {
+  display: flex;
+  gap: 7px;
+  align-items: stretch;
+}
+
+.flexCol--lp-black-2k26-collage-col {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.flexRowContent--lp-black-2k26-collage  :last-child {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* ---------- texto corrido ---------- */
+.flexRow--lp-black-2k26-plain--dark {
+  background-color: #141414;
+  border-bottom: 12px solid #99d600;
+}
+
+.flexRowContent--lp-black-2k26-plain {
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+
+/* ---------- vitrines ---------- */
+.flexRow--lp-black-2k26-shelf--featured {
+  background-color: #99d600;
+  padding: 20px 0;
+}
+
+.flexRow--lp-black-2k26-shelf--featured .flexCol--lp-black-2k26-shelf-col {
+  background-color: #fff;
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
+
+.flexCol--lp-black-2k26-shelf-col {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.flexRow--lp-black-2k26-shelf-row {
+  width: 100%;
+}
+
+.flexRowContent--lp-black-2k26-shelf-row {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.flexRowContent--lp-black-2k26-shelf-row--photo {
+  gap: 0;
+}
+
+.flexRow--lp-black-2k26-shelf-row--photo  .flexRowContent--lp-black-2k26-shelf-row--photo  :first-child {
+  flex: 0 0 37%;
+  max-width: 37%;
+}
+
+.flexRow--lp-black-2k26-shelf-row--photo  .flexRowContent--lp-black-2k26-shelf-row--photo  :last-child {
+  flex: 1 1 0;
+  min-width: 0;
+  margin-left: -5.4%;
+  margin-top: 24px;
+}
+
+/* ---------- FAQ ---------- */
+.flexCol--lp-black-2k26-faq-col {
+  padding-top: 56px;
+  padding-bottom: 72px;
+}
+
+@media screen and (max-width: 990px) {
+  .flexRowContent--lp-black-2k26-benefits,
+  .flexRowContent--lp-black-2k26-information,
+  .flexRowContent--lp-black-2k26-brands,
+  .flexRowContent--lp-black-2k26-split,
+  .flexRowContent--lp-black-2k26-plain,
+  .flexRowContent--lp-black-2k26-shelf,
+  .flexRowContent--lp-black-2k26-faq {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .flexRowContent--lp-black-2k26-benefits {
+    flex-wrap: wrap;
+    gap: 16px 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .flexRow--lp-black-2k26-benefit {
+    flex: 1 1 calc(50% - 12px);
+  }
+
+  .flexRowContent--lp-black-2k26-information {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .flexRowContent--lp-black-2k26-cards {
+    flex-direction: column;
+    margin-top: 32px;
+  }
+
+  .flexRowContent--lp-black-2k26-split {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .flexCol--lp-black-2k26-split-media {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* nas seções com texto antes da mídia, a mídia vem primeiro no mobile */
+  .flexRowContent--lp-black-2k26-nike {
+    flex-direction: column-reverse;
+  }
+
+  .flexRowContent--lp-black-2k26-plain {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  .flexRow--lp-black-2k26-shelf--featured {
+    padding: 12px 0;
+  }
+
+  .flexCol--lp-black-2k26-shelf-col {
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  .flexRowContent--lp-black-2k26-shelf-row--photo {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flexRow--lp-black-2k26-shelf-row--photo  .flexRowContent--lp-black-2k26-shelf-row--photo  :first-child {
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .flexRow--lp-black-2k26-shelf-row--photo  .flexRowContent--lp-black-2k26-shelf-row--photo  :last-child {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+
+  .flexCol--lp-black-2k26-faq-col {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+}
+
+.flexRow--lp-black-2k26-plain--light {
+  background-color: #f7f9f9;
+}

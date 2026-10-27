@@ -1,0 +1,24 @@
+{
+  "store.custom#lp-black-2k26": {
+    "title": "LP Black Friday 2026",
+    "blocks": [
+      "experimental__visibility-layout#bf26-banner",
+      "experimental__visibility-layout#bf26-benefits",
+      "experimental__visibility-layout#bf26-information",
+      "experimental__visibility-layout#bf26-brands",
+      "experimental__visibility-layout#bf26-ofertas",
+      "experimental__visibility-layout#bf26-queridinhos"
+      // "experimental__visibility-layout#bf26-roupas",
+      // "experimental__visibility-layout#bf26-roupas-shelf",
+      // "experimental__visibility-layout#bf26-acessorios",
+      // "experimental__visibility-layout#bf26-acessorios-shelf",
+      // "experimental__visibility-layout#bf26-chuteiras",
+      // "experimental__visibility-layout#bf26-chuteiras-shelf",
+      // "experimental__visibility-layout#bf26-nike",
+      // "experimental__visibility-layout#bf26-nike-shelf",
+      // "experimental__visibility-layout#bf26-adidas",
+      // "experimental__visibility-layout#bf26-adidas-shelf",
+      // "experimental__visibility-layout#bf26-faq"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+//   "experimental__visibility-layout#bf26-acessorios": {
+//     "title": "Texto Acessórios - On/Off",
+//     "children": [
+//       "flex-layout.row#bf26-acessorios"
+//     ],
+//     "props": {
+//       "visible": true
+//     }
+//   },
+
+//   "flex-layout.row#bf26-acessorios": {
+//     "title": "Texto Acessórios - Container",
+//     "children": [
+//       "flex-layout.col#bf26-acessorios"
+//     ],
+//     "props": {
+//       "blockClass": ["lp-black-2k26-plain", "lp-black-2k26-plain--dark"],
+//       "fullWidth": true
+//     }
+//   },
+
+//   "flex-layout.col#bf26-acessorios": {
+//     "title": "Texto Acessórios - Coluna",
+//     "children": [
+//       "rich-text#bf26-acessorios-title",
+//       "rich-text#bf26-acessorios-text-1",
+//       "rich-text#bf26-acessorios-text-2",
+//       "rich-text#bf26-acessorios-text-3"
+//     ],
+//     "props": {
+//       "blockClass": "lp-black-2k26-plain-col"
+//     }
+//   },
+
+//   "rich-text#bf26-acessorios-title": {
+//     "title": "Título",
+//     "props": {
+//       "text": "## black friday **mochilas infantis**, chinelos, bonés e muito mais",
+//       "blockClass": [
+//         "lp-black-2k26-title",
+//         "lp-black-2k26-title--shelf",
+//         "lp-black-2k26-title--light"
+//       ]
+//     }
+//   },
+
+//   "rich-text#bf26-acessorios-text-1": {
+//     "title": "Texto 1",
+//     "props": {
+//       "text": "a gente sabe que são os detalhes que completam o look e trazem ainda mais praticidade e alegria para o dia a dia, não é mesmo? o cuidado de escolher o acessório perfeito faz toda a diferença para o bem-estar dos pequenos.",
+//       "blockClass": ["lp-black-2k26-text", "lp-black-2k26-text--light"]
+//     }
+//   },
+
+//   "rich-text#bf26-acessorios-text-2": {
+//     "title": "Texto 2",
+//     "props": {
+//       "text": "pensando nisso, a magicfeet preparou ofertas especiais em acessórios infantis que você não pode perder! seja para as aventuras na escola ou para os momentos de lazer, temos tudo o que seu filho precisa.",
+//       "blockClass": ["lp-black-2k26-text", "lp-black-2k26-text--light"]
+//     }
+//   },
+
+//   "rich-text#bf26-acessorios-text-3": {
+//     "title": "Texto 3",
+//     "props": {
+//       "text": "nesta **black friday,** você encontra de tudo: aquela mochila infantil funcional para a volta às aulas, bonés cheios de estilo, meias confortáveis e chinelos super versáteis!",
+//       "blockClass": ["lp-black-2k26-text", "lp-black-2k26-text--light"]
+//     }
+//   }
+}

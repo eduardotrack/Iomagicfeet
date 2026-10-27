@@ -1,0 +1,152 @@
+{
+  "experimental__visibility-layout#bf26-ofertas": {
+    "title": "Ofertas - On/Off",
+    "children": [
+      "flex-layout.row#bf26-ofertas"
+    ],
+    "props": {
+      "visible": true
+    }
+  },
+
+  "flex-layout.row#bf26-ofertas": {
+    "title": "Ofertas - Container",
+    "children": [
+      "flex-layout.row#bf26-ofertas-inner"
+    ],
+    "props": {
+      "blockClass": [
+        "lp-black-2k26-split-container"
+      ],
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#bf26-ofertas-inner": {
+    "title": "Conteúdo",
+    "children": ["flex-layout.col#bf26-ofertas-media", "flex-layout.col#bf26-ofertas-text"],
+    "props": {
+      "blockClass": [
+        "lp-black-2k26-split"
+      ]
+    }
+  },
+
+  "flex-layout.col#bf26-ofertas-media": {
+    "title": "Mídia - Coluna",
+    "children": [
+      "flex-layout.row#bf26-ofertas-collage"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-split-media"
+    }
+  },
+
+  "flex-layout.row#bf26-ofertas-collage": {
+    "title": "Colagem",
+    "children": ["flex-layout.col#bf26-ofertas-collage-1", "flex-layout.col#bf26-ofertas-collage-2"],
+    "props": {
+      "blockClass": "lp-black-2k26-collage"
+    }
+  },
+
+  "flex-layout.col#bf26-ofertas-collage-1": {
+    "title": "Colagem - Coluna 1",
+    "children": ["image#bf26-ofertas-img-1", "image#bf26-ofertas-img-2"],
+    "props": {
+      "blockClass": "lp-black-2k26-collage-col"
+    }
+  },
+
+  "image#bf26-ofertas-img-1": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/lp-black/ofertas-1.jpg",
+      "alt": "",
+      "blockClass": "lp-black-2k26-collage-img"
+    }
+  },
+
+  "image#bf26-ofertas-img-2": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/lp-black/ofertas-2.jpg",
+      "alt": "",
+      "blockClass": "lp-black-2k26-collage-img"
+    }
+  },
+
+  "flex-layout.col#bf26-ofertas-collage-2": {
+    "title": "Colagem - Coluna 2",
+    "children": [
+      "image#bf26-ofertas-img-3"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-collage-col"
+    }
+  },
+
+  "image#bf26-ofertas-img-3": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/lp-black/ofertas-3.jpg",
+      "alt": "",
+      "blockClass": "lp-black-2k26-collage-img"
+    }
+  },
+
+  "flex-layout.col#bf26-ofertas-text": {
+    "title": "Texto - Coluna",
+    "children": [
+      "rich-text#bf26-ofertas-title",
+      "rich-text#bf26-ofertas-text-1",
+      "rich-text#bf26-ofertas-text-2",
+      "rich-text#bf26-ofertas-text-3",
+      "link#bf26-ofertas-cta"
+    ],
+    "props": {
+      "blockClass": "lp-black-2k26-split-text"
+    }
+  },
+
+  "rich-text#bf26-ofertas-title": {
+    "title": "Título",
+    "props": {
+      "text": "## **ofertas** imperdíveis em tênis femininos e tênis masculinos",
+      "blockClass": ["lp-black-2k26-ofertas-title"]
+    }
+  },
+
+  "rich-text#bf26-ofertas-text-1": {
+    "title": "Texto 1",
+    "props": {
+      "text": "sabemos o quanto você se dedica para escolher o melhor para o seu pequeno. aquela busca por um tênis que una conforto, durabilidade e o estilo que a criançada adora, não é? sua jornada fica mais fácil agora!",
+      "blockClass": "lp-black-2k26-text"
+    }
+  },
+
+  "rich-text#bf26-ofertas-text-2": {
+    "title": "Texto 2",
+    "props": {
+      "text": "na **black friday** da **magicfeet**, queremos que você encontre o **tênis feminino** mais charmoso ou o **tênis masculino** mais funcional e bonito, com a qualidade que você confia!",
+      "blockClass": "lp-black-2k26-text"
+    }
+  },
+
+  "rich-text#bf26-ofertas-text-3": {
+    "title": "Texto 3",
+    "props": {
+      "text": "é a oportunidade perfeita para garantir tênis infantis em promoção que proporcionam segurança e bem-estar em todos os passos. venha descobrir a magia da nossa **black friday!**",
+      "blockClass": "lp-black-2k26-text"
+    }
+  },
+
+  "link#bf26-ofertas-cta": {
+    "title": "Botão",
+    "props": {
+      "label": "comprar",
+      "href": "/tenis",
+      "blockClass": "lp-black-2k26-cta"
+    }
+  }
+}

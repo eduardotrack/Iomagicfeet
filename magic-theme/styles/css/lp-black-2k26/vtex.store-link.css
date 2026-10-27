@@ -1,0 +1,67 @@
+/* LP Black Friday 2026 - links e CTAs */
+
+/* rótulo dos cards de categoria */
+.link--lp-black-2k26-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #141414;
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3Csvg width='44' height='44' viewBox='0 0 44 44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='44' height='44' rx='22' fill='white'/%3E%3Crect width='44' height='44' rx='22' fill='black'/%3E%3Cpath d='M21.9987 11.334L20.1187 13.214L27.5587 20.6673H11.332V23.334H27.5587L20.1187 30.7873L21.9987 32.6673L32.6654 22.0007L21.9987 11.334Z' fill='%23202325'/%3E%3Cmask id='stroke0_200_25508' fill='white'%3E%3Cpath d='M21.9987 11.334L20.1187 13.214L27.5587 20.6673H11.332V23.334H27.5587L20.1187 30.7873L21.9987 32.6673L32.6654 22.0007L21.9987 11.334Z'/%3E%3C/mask%3E%3Cpath d='M21.9987 11.334L20.1187 13.214L27.5587 20.6673H11.332V23.334H27.5587L20.1187 30.7873L21.9987 32.6673L32.6654 22.0007L21.9987 11.334Z' stroke-width='4.8' stroke='white' mask='url(%23stroke0_200_25508)'/%3E%3C/svg%3E%0A");
+  }
+
+  &:focus-visible {
+    outline: 2px solid #141414;
+    outline-offset: -2px;
+  }
+
+  &:hover {
+    background: rgb(185, 207, 187);
+  }
+}
+
+/* botão "comprar" */
+.link--lp-black-2k26-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 228px;
+  height: 36px;
+  margin-top: 24px;
+  padding: 0 24px;
+  border-radius: 4px;
+  background-color: #000;
+  font-family: 'WorkSans-Bold', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #141414;
+    outline-offset: 2px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .link--lp-black-2k26-cta {
+    width: 100%;
+  }
+}
