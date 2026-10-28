@@ -5,7 +5,7 @@
   justify-content: flex-start;
   gap: 4px;
   padding: 3px;
-  margin: 0 0 15px;
+  margin: 0 0 24px;
   background: #F2F2F2;
   border-radius: 100px;
   width: auto;
@@ -50,8 +50,13 @@
   width: 100%;
 }
 
+
 @media screen and (max-width: 990px) {
   .listContainer--lp-black-2k26-tabs {
     margin: 0 0 20px;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--lp-black-2k26-shelf--roupas) .container--lp-black-2k26-tabs {
+    position: relative;
   }
 }

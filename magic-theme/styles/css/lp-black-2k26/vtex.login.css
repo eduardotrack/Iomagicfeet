@@ -1,0 +1,65 @@
+
+
+:global(.vtex-render__container-id-bf26-acessorios),
+:global(.vtex-render__container-id-bf26-chuteiras),
+:global(.vtex-render__container-id-bf26-roupas) {
+    position: relative;
+}
+
+:global(.vtex-render__container-id-bf26-acessorios) :global(.vtex-flex-layout-0-x-flexCol--lp-black-2k26-shelf-col .vtex-flex-layout-0-x-flexColChild--lp-black-2k26-shelf-col:first-child) {
+    display: block;
+    margin-top: 32px;
+}
+
+:global(.vtex-render__container-id-bf26-acessorios) 
+:global(.vtex-flex-layout-0-x-flexRow--lp-black-2k26-plain--dark) 
+:global(.vtex-rich-text-0-x-container--lp-black-2k26-title--light) {
+    padding-right: 0;
+}
+:global(.vtex-render__container-id-bf26-acessorios) 
+:global(.vtex-flex-layout-0-x-flexRow--lp-black-2k26-plain--dark) 
+:global(.vtex-flex-layout-0-x-flexCol--lp-black-2k26-plain-col) {
+    gap: 16px;
+}
+
+@media screen and (min-width: 990px) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--lp-black-2k26-shelf-row--photo) 
+    > :global(.vtex-flex-layout-0-x-stretchChildrenWidth:first-child) {
+        width: auto !important;
+    }
+    
+    :global(.vtex-flex-layout-0-x-flexRowContent--lp-black-2k26-shelf-row--photo) 
+    > :global(.vtex-flex-layout-0-x-stretchChildrenWidth:last-child) {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -40%);
+        right: 0;
+        width: 60% !important;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--lp-black-2k26-shelf--acessorios) > :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+        width: 100% !important;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--lp-black-2k26-shelf--acessorios) > :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child {
+        width: auto !important;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    :global(.vtex-render__container-id-bf26-acessorios .vtex-flex-layout-0-x-flexRowContent .vtex-flex-layout-0-x-flexRowContent--lp-black-2k26-shelf-row) {
+        padding-bottom: 52px;
+    }
+    :global(.vtex-render__container-id-bf26-acessorios) :global(.vtex-flex-layout-0-x-flexCol--lp-black-2k26-shelf-col .vtex-flex-layout-0-x-flexColChild--lp-black-2k26-shelf-col:first-child) {
+        margin-top: 20px;
+    }
+
+    :global(.vtex-render__container-id-bf26-acessorios) :global(.vtex-slider-layout-0-x-slide--lp-black-2k26-shelf),
+    :global(.vtex-render__container-id-bf26-roupas) :global(.vtex-slider-layout-0-x-slide--lp-black-2k26-shelf) {
+        padding: 0 4px;
+        margin-left: 0 !important;
+        box-sizing: border-box;
+        margin-right: 0 !important;
+        width: 250px !important;
+    }
+}

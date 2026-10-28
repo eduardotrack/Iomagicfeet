@@ -147,7 +147,19 @@
   }
 }
 
+.paginationDotsContainer--lp-black-2k26-queridinhos {
+  bottom: 46px;
+  left: 40px;
+  right: 16px;
+}
+
 @media screen and (max-width: 990px) {
+  .paginationDotsContainer--lp-black-2k26-queridinhos {
+    bottom: 0;
+    left: 16px;
+    right: 16px;
+  }
+
   .sliderArrows--lp-black-2k26-queridinhos {
     top: 16px;
     width: 40px;

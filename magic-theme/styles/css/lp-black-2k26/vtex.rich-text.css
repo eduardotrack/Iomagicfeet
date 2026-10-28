@@ -47,6 +47,11 @@
   color: #FFFFFF;
 }
 
+:global(.vtex-flex-layout-0-x-flexRow--lp-black-2k26-plain--dark) .heading--lp-black-2k26-title--light {
+  color: white;
+  font-size: 40px;
+}
+
 .heading--lp-black-2k26-title--small,
 .heading--lp-black-2k26-title--shelf {
   font-weight: 700;
@@ -104,6 +109,7 @@
 }
 
 .container--lp-black-2k26-text--sub {
+  margin-top: 8px;
   margin-bottom: 16px;
 }
 
@@ -176,7 +182,7 @@
 
   .heading--lp-black-2k26-title--small,
   .heading--lp-black-2k26-title--shelf {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .container--lp-black-2k26-title--shelf {
@@ -223,5 +229,9 @@
     color: #000000;
     font-weight: 700;
     line-height: 120%;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--lp-black-2k26-plain--dark) .heading--lp-black-2k26-title--light {
+    font-size: 28px;
   }
 }

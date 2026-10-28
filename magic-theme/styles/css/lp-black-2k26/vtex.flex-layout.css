@@ -140,7 +140,7 @@
 }
 
 .flexRowContent--lp-black-2k26-plain {
-  padding-top: 40px;
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 
@@ -158,7 +158,6 @@
 
 .flexCol--lp-black-2k26-shelf-col {
   position: relative;
-  padding-top: 24px;
   padding-bottom: 40px;
 }
 
@@ -176,17 +175,10 @@
   gap: 0;
 }
 
-.flexRow--lp-black-2k26-shelf-row--photo  .flexRowContent--lp-black-2k26-shelf-row--photo  :first-child {
-  flex: 0 0 37%;
-  max-width: 37%;
+.flexRowContent--lp-black-2k26-shelf-row--photo .flexCol--product-info-category {
+  background: white;
 }
 
-.flexRow--lp-black-2k26-shelf-row--photo  .flexRowContent--lp-black-2k26-shelf-row--photo  :last-child {
-  flex: 1 1 0;
-  min-width: 0;
-  margin-left: -5.4%;
-  margin-top: 24px;
-}
 
 /* ---------- FAQ ---------- */
 .flexCol--lp-black-2k26-faq-col {
@@ -194,7 +186,129 @@
   padding-bottom: 72px;
 }
 
+.flexCol--lp-black-2k26-plain-col {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.flexCol--lp-black-2k26-shelf-col .flexColChild--lp-black-2k26-shelf-col:first-child {
+  display: none;
+}
+
+/* ---------- queridinhos (seção isolada: fundo lima + foto + painel) ---------- */
+.flexRow--lp-black-2k26-queridinhos {
+  background-color: #99d600;
+  padding: 24px 0 40px;
+  overflow: hidden;
+  margin-top: 56px;
+}
+
+.flexCol--lp-black-2k26-queridinhos-col {
+  position: relative;
+  width: 100%;
+}
+
+.flexCol--lp-black-2k26-queridinhos-col::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30.5%;
+  right: 0;
+  background-color: #fff;
+  border-radius: 24px 0 0 24px;
+}
+
+.flexRow--lp-black-2k26-queridinhos-body {
+  position: relative;
+  width: 100%;
+}
+
+.flexRowContent--lp-black-2k26-queridinhos-body {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 48px 0 48px 40px;
+  box-sizing: border-box;
+}
+
+.flexRowContent--lp-black-2k26-queridinhos-body .flexColChild--lp-black-2k26-queridinhos-body:first-child {
+  flex: 0 0 62.9%;
+  max-width: 62.9%;
+  margin-left: 2.4%;
+}
+
+/* painel sobreposto à foto; o slider sangra até a borda direita */
+.flexCol--lp-black-2k26-queridinhos-panel {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  margin-left: -11.1%;
+  padding: 32px 0 65px 40px;
+  background-color: #fff;
+  border-radius: 24px 0 0 24px;
+  box-shadow: 0 8px 32px rgba(20, 20, 20, 0.12);
+  box-sizing: border-box;
+}
+
+/* card editorial: imagem (com link) + textos sobrepostos */
+.flexCol--lp-black-2k26-qcard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.flexCol--lp-black-2k26-qcard-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0));
+  pointer-events: none;
+  display: flex;
+  justify-content: end;
+  padding: 16px;
+}
+
+.flexColChild--lp-black-2k26-qcard-text {
+  height: auto !important;
+}
+
+.flexRow--lp-black-2k26-shelf-row--photo :global(.vtex-slider-layout-0-x-sliderArrows) {
+  top: -84% ;
+}
+
+@media screen and (max-width: 1550px) {
+  .flexRow--lp-black-2k26-shelf-row--photo :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: -448px;
+  }
+}
+
+@media screen and (max-width: 1222px) {
+  .flexRow--lp-black-2k26-shelf-row--photo :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: -496px;
+  }
+}
+
 @media screen and (max-width: 990px) {
+  .flexRow--lp-black-2k26-shelf-row--photo :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: -110px;
+  }
+
+  :global(.vtex-slider-layout-0-x-paginationDotsContainer) {
+    bottom: 32px;
+  }
+
+  .flexRow--lp-black-2k26-shelf-row--photo :global(.vtex-slider-layout-0-x-sliderTrack--lp-black-2k26-arrows) {
+    padding-bottom: 52px;
+  }
+
+  .flexCol--lp-black-2k26-shelf-col .flexColChild--lp-black-2k26-shelf-col:first-child {
+    display: block;
+    margin-bottom: 16px;
+  }
+
   .flexRow--lp-black-2k26-split-container{
     padding: 0;
   }
@@ -261,117 +375,24 @@
   }
 
   .flexCol--lp-black-2k26-shelf-col {
-    padding-top: 16px;
-    padding-bottom: 32px;
+    padding-bottom: 0;
+  }
+
+  .flexRowContent--lp-black-2k26-shelf-row--photo .stretchChildrenWidth:first-child {
+    display: none;
   }
 
   .flexRowContent--lp-black-2k26-shelf-row--photo {
     flex-direction: column;
     align-items: stretch;
-  }
-
-  .flexRow--lp-black-2k26-shelf-row--photo  .flexRowContent--lp-black-2k26-shelf-row--photo  :first-child {
-    flex: 0 0 auto;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .flexRow--lp-black-2k26-shelf-row--photo  .flexRowContent--lp-black-2k26-shelf-row--photo  :last-child {
-    margin-left: 0;
-    margin-top: 16px;
+    gap: 16px;
   }
 
   .flexCol--lp-black-2k26-faq-col {
     padding-top: 32px;
     padding-bottom: 40px;
   }
-}
 
-.flexRow--lp-black-2k26-plain--light {
-  background-color: #f7f9f9;
-}
-
-/* ---------- queridinhos (seção isolada: fundo lima + foto + painel) ---------- */
-.flexRow--lp-black-2k26-queridinhos {
-  background-color: #99d600;
-  padding: 24px 0 40px;
-  overflow: hidden;
-  margin-top: 56px;
-}
-
-.flexCol--lp-black-2k26-queridinhos-col {
-  position: relative;
-  width: 100%;
-}
-
-.flexCol--lp-black-2k26-queridinhos-col::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 30.5%;
-  right: 0;
-  background-color: #fff;
-  border-radius: 24px 0 0 24px;
-}
-
-.flexRow--lp-black-2k26-queridinhos-body {
-  position: relative;
-  width: 100%;
-}
-
-.flexRowContent--lp-black-2k26-queridinhos-body {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 48px 0;
-  box-sizing: border-box;
-}
-
-.flexRowContent--lp-black-2k26-queridinhos-body .flexColChild--lp-black-2k26-queridinhos-body:first-child {
-  flex: 0 0 62.9%;
-  max-width: 62.9%;
-  margin-left: 2.4%;
-}
-
-/* painel sobreposto à foto; o slider sangra até a borda direita */
-.flexCol--lp-black-2k26-queridinhos-panel {
-  position: relative;
-  flex: 1 1 0;
-  min-width: 0;
-  margin-left: -11.1%;
-  padding: 32px 0 32px 40px;
-  background-color: #fff;
-  border-radius: 24px 0 0 24px;
-  box-shadow: 0 8px 32px rgba(20, 20, 20, 0.12);
-  box-sizing: border-box;
-}
-
-/* card editorial: imagem (com link) + textos sobrepostos */
-.flexCol--lp-black-2k26-qcard {
-  position: relative;
-  overflow: hidden;
-  border-radius: 16px;
-}
-
-.flexCol--lp-black-2k26-qcard-text {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0));
-  pointer-events: none;
-  display: flex;
-  justify-content: end;
-  padding: 16px;
-}
-
-.flexColChild--lp-black-2k26-qcard-text {
-  height: auto !important;
-}
-
-
-@media screen and (max-width: 990px) {
   .flexColChild--lp-black-2k26-brands-col:last-child,
   .flexRow--lp-black-2k26-queridinhos {
     padding: 0;

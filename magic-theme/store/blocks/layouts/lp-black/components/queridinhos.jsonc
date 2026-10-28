@@ -110,7 +110,10 @@
   // ---------- Feminino: cada card = imagem + link + marca + título (editáveis no Site Editor) ----------
   "tab-content.item#bf26-queridinhos-fem": {
     "title": "Conteúdo - Feminino",
-    "children": ["slider-layout#bf26-queridinhos-fem"],
+    "children": [
+      "slider-layout#bf26-queridinhos-fem",
+      "custom-progress-bar"
+    ],
     "props": {
       "tabId": "fem",
       "blockClass": "lp-black-2k26-tab"
@@ -302,7 +305,10 @@
   // ---------- Masculino: cada card = imagem + link + marca + título (editáveis no Site Editor) ----------
   "tab-content.item#bf26-queridinhos-masc": {
     "title": "Conteúdo - Masculino",
-    "children": ["slider-layout#bf26-queridinhos-masc"],
+    "children": [
+      "slider-layout#bf26-queridinhos-masc",
+      "custom-progress-bar"
+    ],
     "props": {
       "tabId": "masc",
       "blockClass": "lp-black-2k26-tab"

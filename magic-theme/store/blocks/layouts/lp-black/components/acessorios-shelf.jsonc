@@ -1,14 +1,4 @@
 {
-  "experimental__visibility-layout#bf26-acessorios-shelf": {
-    "title": "Vitrine Acessórios - On/Off",
-    "children": [
-      "flex-layout.row#bf26-acessorios-shelf"
-    ],
-    "props": {
-      "visible": false
-    }
-  },
-
   "flex-layout.row#bf26-acessorios-shelf": {
     "title": "Vitrine Acessórios - Container",
     "children": [
@@ -112,11 +102,12 @@
   "flex-layout.row#bf26-acessorios-shelf-fem-row": {
     "title": "Vitrine - Feminino",
     "children": [
-      "list-context.product-list#bf26-acessorios-shelf-fem"
+      "list-context.product-list#bf26-acessorios-shelf-fem",
+      "custom-progress-bar"
     ],
     "props": {
       "blockClass": [
-        "lp-black-2k26-shelf-row"
+        "lp-black-2k26-shelf-row", "lp-black-2k26-shelf--acessorios"
       ]
     }
   },
@@ -124,10 +115,10 @@
   "list-context.product-list#bf26-acessorios-shelf-fem": {
     "title": "Vitrine - Feminino",
     "blocks": [
-      "product-summary.shelf#new-shelf"
+      "product-summary.shelf#product-category"
     ],
     "children": [
-      "slider-layout#bf26-acessorios-shelf-fem"
+      "slider-layout#bf26-acessorios-shelf"
     ],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
@@ -135,20 +126,6 @@
       "category": "",
       "hideUnavailableItems": true,
       "maxItems": 12
-    }
-  },
-
-  "slider-layout#bf26-acessorios-shelf-fem": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 2
-      },
-      "infinite": true,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never",
-      "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
     }
   },
 
@@ -166,11 +143,12 @@
   "flex-layout.row#bf26-acessorios-shelf-masc-row": {
     "title": "Vitrine - Masculino",
     "children": [
-      "list-context.product-list#bf26-acessorios-shelf-masc"
+      "list-context.product-list#bf26-acessorios-shelf-masc",
+      "custom-progress-bar"
     ],
     "props": {
       "blockClass": [
-        "lp-black-2k26-shelf-row"
+        "lp-black-2k26-shelf-row", "lp-black-2k26-shelf--acessorios"
       ]
     }
   },
@@ -178,10 +156,10 @@
   "list-context.product-list#bf26-acessorios-shelf-masc": {
     "title": "Vitrine - Masculino",
     "blocks": [
-      "product-summary.shelf#new-shelf"
+      "product-summary.shelf#product-category"
     ],
     "children": [
-      "slider-layout#bf26-acessorios-shelf-masc"
+      "slider-layout#bf26-acessorios-shelf"
     ],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
@@ -192,16 +170,22 @@
     }
   },
 
-  "slider-layout#bf26-acessorios-shelf-masc": {
+  "slider-layout#bf26-acessorios-shelf": {
     "props": {
       "itemsPerPage": {
         "desktop": 4,
-        "tablet": 3,
-        "phone": 2
+        "tablet": 2,
+        "phone": 1
       },
-      "infinite": true,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
+      "infinite": false,
+      "centerModeSlidesGap": 0,
       "showNavigationArrows": "always",
-      "showPaginationDots": "never",
+      "showPaginationDots": "mobileOnly",
       "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
     }
   }

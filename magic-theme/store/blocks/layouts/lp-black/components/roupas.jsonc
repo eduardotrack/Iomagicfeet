@@ -2,7 +2,8 @@
   "experimental__visibility-layout#bf26-roupas": {
     "title": "Texto Roupas - On/Off",
     "children": [
-      "flex-layout.row#bf26-roupas"
+      "flex-layout.row#bf26-roupas",
+      "flex-layout.row#bf26-roupas-shelf"
     ],
     "props": {
       "visible": true

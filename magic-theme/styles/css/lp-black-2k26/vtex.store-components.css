@@ -5,6 +5,10 @@
   height: 100%;
 }
 
+.imageElement--lp-black-2k26-shelf-photo {
+  display: none;
+}
+
 .imageElementLink--lp-black-2k26-banner,
 .imageElement--lp-black-2k26-card,
 .imageElement--lp-black-2k26-shelf-photo,
@@ -22,7 +26,8 @@
 
 /* fotos que dividem a altura com a vitrine */
 .imageElement--lp-black-2k26-shelf-photo {
-  aspect-ratio: 366 / 425;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 

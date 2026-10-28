@@ -2,10 +2,11 @@
   "experimental__visibility-layout#bf26-acessorios": {
     "title": "Texto Acessórios - On/Off",
     "children": [
-      "flex-layout.row#bf26-acessorios"
+      "flex-layout.row#bf26-acessorios",
+      "flex-layout.row#bf26-acessorios-shelf"
     ],
     "props": {
-      "visible": false
+      "visible": true
     }
   },
 
@@ -15,7 +16,11 @@
       "flex-layout.col#bf26-acessorios"
     ],
     "props": {
-      "blockClass": ["lp-black-2k26-plain", "lp-black-2k26-plain--dark"],
+      "blockClass": [
+        "lp-black-2k26-plain", 
+        "lp-black-2k26-plain--dark",
+        "bf26-acessorios"
+    ],
       "fullWidth": true
     }
   },
