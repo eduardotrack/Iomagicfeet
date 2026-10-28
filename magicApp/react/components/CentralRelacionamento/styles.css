@@ -52,21 +52,6 @@
   box-shadow: none;
 }
 
-/* .CR_search_label {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26' fill='none'%3E%3Cpath d='M25 25L19.2682 19.1362M22.0786 11.463C22.0786 17.2416 17.36 21.9261 11.5393 21.9261C5.71861 21.9261 1 17.2416 1 11.463C1 5.68447 5.71861 1 11.5393 1C17.36 1 22.0786 5.68447 22.0786 11.463Z' stroke='%231C1C1C' stroke-width='2'/%3E%3C/svg%3E");
-  background-repeat: no-repeat no-repeat;
-  background-position: center center;
-  background-size: auto;
-  width: 70px;
-  height: 101%;
-  max-height: 46px;
-  display: block;
-  border-radius: 10px 0px 0px 10px;
-  border-right: 0;
-  border: 2px solid #1c1c1c;
-  border-right: 0px;
-} */
-
 .CR_search_label {
   border: 2px solid #1c1c1c;
   padding: 11px 27px;

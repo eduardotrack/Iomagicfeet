@@ -33,5 +33,6 @@
   .vtex-slider-layout-0-x-paginationDotsContainer[data-progress-bar='true']
   .vtex-slider-layout-0-x-paginationDot--isActive
 ) {
-  background-color: #FF4F00 ;
+  background-color: #94D000;
+  transform: inherit;
 }

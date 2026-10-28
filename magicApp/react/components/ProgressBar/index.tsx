@@ -18,6 +18,8 @@ const sliderObservers = new WeakMap<HTMLElement, ObserverState>()
 const findSlider = (element: HTMLElement): HTMLElement | null => {
   const ownCustomList = element.closest<HTMLElement>(CUSTOM_LIST_SELECTOR)
 
+  console.log('ccccccccccccccccc-->', ownCustomList);
+
   if (ownCustomList) {
     const slider = ownCustomList.querySelector<HTMLElement>(SLIDER_SELECTOR)
 
