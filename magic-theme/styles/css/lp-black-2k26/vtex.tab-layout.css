@@ -56,7 +56,8 @@
     margin: 0 0 20px;
   }
 
-  :global(.vtex-flex-layout-0-x-flexRow--lp-black-2k26-shelf--roupas) .container--lp-black-2k26-tabs {
+  :global(.vtex-flex-layout-0-x-flexRow--lp-black-2k26-shelf--roupas) .container--lp-black-2k26-tabs,
+  :global(.vtex-flex-layout-0-x-flexRow--lp-black-2k26-shelf--chuteiras) .container--lp-black-2k26-tabs {
     position: relative;
   }
 }

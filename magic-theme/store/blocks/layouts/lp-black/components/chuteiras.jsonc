@@ -2,11 +2,11 @@
   "experimental__visibility-layout#bf26-chuteiras": {
     "title": "Texto Chuteiras - On/Off",
     "children": [
-      "flex-layout.row#bf26-roupas",
-      "flex-layout.row#bf26-roupas-shelf"
+      "flex-layout.row#bf26-chuteiras",
+      "flex-layout.row#bf26-chuteiras-shelf"
     ],
     "props": {
-      "visible": false
+      "visible": true
     }
   },
 

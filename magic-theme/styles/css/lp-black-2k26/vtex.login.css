@@ -55,7 +55,8 @@
     }
 
     :global(.vtex-render__container-id-bf26-acessorios) :global(.vtex-slider-layout-0-x-slide--lp-black-2k26-shelf),
-    :global(.vtex-render__container-id-bf26-roupas) :global(.vtex-slider-layout-0-x-slide--lp-black-2k26-shelf) {
+    :global(.vtex-render__container-id-bf26-roupas) :global(.vtex-slider-layout-0-x-slide--lp-black-2k26-shelf),
+    :global(.vtex-render__container-id-bf26-chuteiras) :global(.vtex-slider-layout-0-x-slide--lp-black-2k26-shelf) {
         padding: 0 4px;
         margin-left: 0 !important;
         box-sizing: border-box;

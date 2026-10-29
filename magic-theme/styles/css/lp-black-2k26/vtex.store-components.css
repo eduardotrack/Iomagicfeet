@@ -61,6 +61,23 @@
 .imageElement--lp-black-2k26-arrows {
   height: 120px;
 }
+
+@media screen and (min-width: 990px) {
+  .imageElement--lp-black-2k26-shelf-photo {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .imageElement--lp-black-2k26-shelf-photo {
+    height: 100%;
+    max-width: 100%;
+    width: 728px;
+    object-fit: cover;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 990px) {
   .imageElement--lp-black-2k26-shelf-photo {
     aspect-ratio: 4 / 3;

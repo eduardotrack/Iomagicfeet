@@ -1,14 +1,4 @@
 {
-  "experimental__visibility-layout#bf26-chuteiras-shelf": {
-    "title": "Vitrine Chuteiras - On/Off",
-    "children": [
-      "flex-layout.row#bf26-chuteiras-shelf"
-    ],
-    "props": {
-      "visible": false
-    }
-  },
-
   "flex-layout.row#bf26-chuteiras-shelf": {
     "title": "Vitrine Chuteiras - Container",
     "children": [
@@ -16,7 +6,7 @@
     ],
     "props": {
       "blockClass": [
-        "lp-black-2k26-shelf"
+        "lp-black-2k26-shelf", "lp-black-2k26-shelf--chuteiras"
       ],
       "fullWidth": true
     }
@@ -25,6 +15,7 @@
   "flex-layout.col#bf26-chuteiras-shelf": {
     "title": "Vitrine Chuteiras - Coluna",
     "children": [
+      "image#bf26-chuteiras-shelf-photo-mobile",
       "rich-text#bf26-chuteiras-shelf-title",
       "rich-text#bf26-chuteiras-shelf-sub",
       "tab-layout#bf26-chuteiras-shelf"
@@ -101,7 +92,8 @@
   "tab-content.item#bf26-chuteiras-shelf-fem": {
     "title": "Conteúdo - Feminino",
     "children": [
-      "flex-layout.row#bf26-chuteiras-shelf-fem-row"
+      "flex-layout.row#bf26-chuteiras-shelf-fem-row",
+      "custom-progress-bar"
     ],
     "props": {
       "tabId": "fem",
@@ -123,7 +115,7 @@
   "image#bf26-chuteiras-shelf-fem-photo": {
     "title": "Imagem",
     "props": {
-      "src": "https://placehold.co/600x700",
+      "src": "assets/img/lp-black/bf26-chuteiras-shelf-desktop.jpg",
       "alt": "",
       "blockClass": "lp-black-2k26-shelf-photo"
     }
@@ -132,10 +124,10 @@
   "list-context.product-list#bf26-chuteiras-shelf-fem": {
     "title": "Vitrine - Feminino",
     "blocks": [
-      "product-summary.shelf#new-shelf"
+      "product-summary.shelf#product-category"
     ],
     "children": [
-      "slider-layout#bf26-chuteiras-shelf-fem"
+      "slider-layout#bf26-chuteiras-shelf"
     ],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
@@ -146,16 +138,22 @@
     }
   },
 
-  "slider-layout#bf26-chuteiras-shelf-fem": {
+  "slider-layout#bf26-chuteiras-shelf": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 2
+        "desktop": 3,
+        "tablet": 2,
+        "mobile": 1
       },
-      "infinite": true,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+        "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 0,
+      "infinite": false,
       "showNavigationArrows": "always",
-      "showPaginationDots": "never",
+      "showPaginationDots": "mobileOnly",
       "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
     }
   },
@@ -163,7 +161,8 @@
   "tab-content.item#bf26-chuteiras-shelf-masc": {
     "title": "Conteúdo - Masculino",
     "children": [
-      "flex-layout.row#bf26-chuteiras-shelf-masc-row"
+      "flex-layout.row#bf26-chuteiras-shelf-masc-row",
+      "custom-progress-bar"
     ],
     "props": {
       "tabId": "masc",
@@ -178,26 +177,36 @@
       "list-context.product-list#bf26-chuteiras-shelf-masc"
     ],
     "props": {
-      "blockClass": ["lp-black-2k26-shelf-row", "lp-black-2k26-shelf-row--photo"]
+      "blockClass": ["lp-black-2k26-shelf-row", "lp-black-2k26-shelf-row--photo"],
+      "preventVerticalStretch": true
     }
   },
 
   "image#bf26-chuteiras-shelf-masc-photo": {
     "title": "Imagem",
     "props": {
-      "src": "https://placehold.co/600x700",
+      "src": "assets/img/lp-black/bf26-chuteiras-shelf-desktop.jpg",
       "alt": "",
       "blockClass": "lp-black-2k26-shelf-photo"
+    }
+  },
+
+  "image#bf26-chuteiras-shelf-photo-mobile": {
+    "title": "Imagem Mobile",
+    "props": {
+      "src": "assets/img/lp-black/bf26-chuteiras-shelf-desktop.jpg",
+      "alt": "",
+      "blockClass": ["lp-black-2k26-shelf-photo--mobile"]
     }
   },
 
   "list-context.product-list#bf26-chuteiras-shelf-masc": {
     "title": "Vitrine - Masculino",
     "blocks": [
-      "product-summary.shelf#new-shelf"
+      "product-summary.shelf#product-category"
     ],
     "children": [
-      "slider-layout#bf26-chuteiras-shelf-masc"
+      "slider-layout#bf26-roupas-shelf"
     ],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
@@ -205,20 +214,6 @@
       "category": "",
       "hideUnavailableItems": true,
       "maxItems": 12
-    }
-  },
-
-  "slider-layout#bf26-chuteiras-shelf-masc": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 2
-      },
-      "infinite": true,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never",
-      "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
     }
   }
 }
