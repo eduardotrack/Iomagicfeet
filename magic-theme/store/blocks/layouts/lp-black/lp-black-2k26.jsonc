@@ -10,14 +10,10 @@
       "experimental__visibility-layout#bf26-queridinhos",
       "experimental__visibility-layout#bf26-roupas",
       "experimental__visibility-layout#bf26-acessorios",
-      //-----------------------------------------------
-      "experimental__visibility-layout#bf26-chuteiras"
-      //-----------------------------------------------
-      // "experimental__visibility-layout#bf26-nike",
-      // "experimental__visibility-layout#bf26-nike-shelf",
-      // "experimental__visibility-layout#bf26-adidas",
-      // "experimental__visibility-layout#bf26-adidas-shelf",
-      // "experimental__visibility-layout#bf26-faq"
+      "experimental__visibility-layout#bf26-chuteiras",
+      "experimental__visibility-layout#bf26-nike",
+      "experimental__visibility-layout#bf26-adidas",
+      "experimental__visibility-layout#bf26-faq"
     ]
   }
 }

@@ -5,7 +5,7 @@
       "flex-layout.row#bf26-faq"
     ],
     "props": {
-      "visible": false
+      "visible": true
     }
   },
 
@@ -31,7 +31,7 @@
     "title": "Título",
     "props": {
       "text": "## faq",
-      "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--small"]
+      "blockClass": "lp-black-2k26-faq-title"
     }
   },
 
@@ -48,7 +48,8 @@
       "disclosure-layout#bf26-faq-8"
     ],
     "props": {
-      "maxVisible": "one"
+      "maxVisible": "one",
+      "blockClass": "lp-black-2k26-faq-list"
     }
   },
 
@@ -57,7 +58,7 @@
     "children": ["disclosure-trigger#bf26-faq-1", "disclosure-content#bf26-faq-1"],
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -67,7 +68,7 @@
       "rich-text#bf26-faq-q-1"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -85,7 +86,7 @@
       "rich-text#bf26-faq-a-1"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -102,7 +103,7 @@
     "children": ["disclosure-trigger#bf26-faq-2", "disclosure-content#bf26-faq-2"],
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -112,7 +113,7 @@
       "rich-text#bf26-faq-q-2"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -130,7 +131,7 @@
       "rich-text#bf26-faq-a-2"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -147,7 +148,7 @@
     "children": ["disclosure-trigger#bf26-faq-3", "disclosure-content#bf26-faq-3"],
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -157,7 +158,7 @@
       "rich-text#bf26-faq-q-3"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -175,7 +176,7 @@
       "rich-text#bf26-faq-a-3"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -192,7 +193,7 @@
     "children": ["disclosure-trigger#bf26-faq-4", "disclosure-content#bf26-faq-4"],
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -202,7 +203,7 @@
       "rich-text#bf26-faq-q-4"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -220,7 +221,7 @@
       "rich-text#bf26-faq-a-4"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -237,7 +238,7 @@
     "children": ["disclosure-trigger#bf26-faq-5", "disclosure-content#bf26-faq-5"],
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -247,7 +248,7 @@
       "rich-text#bf26-faq-q-5"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -265,7 +266,7 @@
       "rich-text#bf26-faq-a-5"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -282,7 +283,7 @@
     "children": ["disclosure-trigger#bf26-faq-6", "disclosure-content#bf26-faq-6"],
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -292,7 +293,7 @@
       "rich-text#bf26-faq-q-6"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -310,7 +311,7 @@
       "rich-text#bf26-faq-a-6"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -327,7 +328,7 @@
     "children": ["disclosure-trigger#bf26-faq-7", "disclosure-content#bf26-faq-7"],
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -337,7 +338,7 @@
       "rich-text#bf26-faq-q-7"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -355,7 +356,7 @@
       "rich-text#bf26-faq-a-7"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -372,7 +373,7 @@
     "children": ["disclosure-trigger#bf26-faq-8", "disclosure-content#bf26-faq-8"],
     "props": {
       "initialVisibility": "hidden",
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -382,7 +383,7 @@
       "rich-text#bf26-faq-q-8"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 
@@ -400,7 +401,7 @@
       "rich-text#bf26-faq-a-8"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-faq-item"
+      "blockClass": ["lp-black-2k26-faq-item", "lp-black-2k26-faq-item--last"]
     }
   },
 

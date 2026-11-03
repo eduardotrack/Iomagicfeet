@@ -2,10 +2,11 @@
   "experimental__visibility-layout#bf26-nike": {
     "title": "Nike - On/Off",
     "children": [
-      "flex-layout.row#bf26-nike"
+      "flex-layout.row#bf26-nike",
+      "flex-layout.row#bf26-nike-shelf"
     ],
     "props": {
-      "visible": false
+      "visible": true
     }
   },
 
@@ -15,7 +16,10 @@
       "flex-layout.row#bf26-nike-inner"
     ],
     "props": {
-      "blockClass": ["lp-black-2k26-split", "lp-black-2k26-split--gray"],
+      "blockClass": [
+        "lp-black-2k26-split--gray",
+        "lp-black-2k26-split--nike"
+      ],
       "fullWidth": true
     }
   },
@@ -24,7 +28,11 @@
     "title": "Conteúdo",
     "children": ["flex-layout.col#bf26-nike-text", "flex-layout.col#bf26-nike-media"],
     "props": {
-      "blockClass": ["lp-black-2k26-split", "lp-black-2k26-nike"]
+      "blockClass": [
+        "lp-black-2k26-split-container",
+        "lp-black-2k26-split",
+        "lp-black-2k26-nike"
+      ]
     }
   },
 
@@ -45,7 +53,7 @@
     "title": "Título",
     "props": {
       "text": "## black friday da **nike** na **magicfeet** o tênis infantil favorito com preço especial!",
-      "blockClass": ["lp-black-2k26-title", "lp-black-2k26-title--medium"]
+      "blockClass": ["lp-black-2k26-ofertas-title"]
     }
   },
 
@@ -102,18 +110,18 @@
   "image#bf26-nike-img-1": {
     "title": "Imagem",
     "props": {
-      "src": "https://placehold.co/374x350",
+      "src": "assets/img/lp-black/nike-1.jpg",
       "alt": "",
-      "blockClass": "lp-black-2k26-collage-img"
+      "blockClass": ["lp-black-2k26-collage-img", "lp-black-2k26-collage-img--half"]
     }
   },
 
   "image#bf26-nike-img-2": {
     "title": "Imagem",
     "props": {
-      "src": "https://placehold.co/374x350",
+      "src": "assets/img/lp-black/nike-2.jpg",
       "alt": "",
-      "blockClass": "lp-black-2k26-collage-img"
+      "blockClass": ["lp-black-2k26-collage-img", "lp-black-2k26-collage-img--half"]
     }
   },
 
@@ -130,7 +138,7 @@
   "image#bf26-nike-img-3": {
     "title": "Imagem",
     "props": {
-      "src": "https://placehold.co/374x707",
+      "src": "assets/img/lp-black/nike-3.jpg",
       "alt": "",
       "blockClass": "lp-black-2k26-collage-img"
     }

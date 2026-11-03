@@ -3,6 +3,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .imageElement--lp-black-2k26-shelf-photo {
@@ -62,16 +63,28 @@
   height: 120px;
 }
 
+@media screen and (min-width: 1440px) {
+  .imageElement--lp-black-2k26-adidas-img {
+    min-width: 896px;
+    height: 571px;
+    aspect-ratio: initial;
+    object-fit: cover;
+  }
+}
 @media screen and (min-width: 990px) {
   .imageElement--lp-black-2k26-shelf-photo {
-    max-width: 600px;
-    width: 100%;
+    width: 600px;
+    max-height: 728px;
+  }
+
+  .imageElement--lp-black-2k26-adidas-img {
+    min-width: 600px;
+    height: 600px;
   }
 }
 @media screen and (min-width: 1350px) {
   .imageElement--lp-black-2k26-shelf-photo {
     height: 100%;
-    max-width: 100%;
     width: 728px;
     object-fit: cover;
     margin-right: auto;
@@ -79,6 +92,10 @@
 }
 
 @media screen and (max-width: 990px) {
+  .imageElement--lp-black-2k26-adidas-img {
+    min-width: initial;
+    height: initial;
+  }
   .imageElement--lp-black-2k26-shelf-photo {
     aspect-ratio: 4 / 3;
   }

@@ -21,7 +21,7 @@
       "tab-layout#bf26-roupas-shelf"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-shelf-col"
+      "blockClass": ["lp-black-2k26-shelf-col", "lp-black-2k26-shelf-col--photo"]
     }
   },
 

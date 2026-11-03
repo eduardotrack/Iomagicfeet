@@ -63,7 +63,7 @@
     "props": {
       "src": "assets/img/lp-black/ofertas-1.jpg",
       "alt": "",
-      "blockClass": "lp-black-2k26-collage-img"
+      "blockClass": ["lp-black-2k26-collage-img", "lp-black-2k26-collage-img--half"]
     }
   },
 
@@ -72,7 +72,7 @@
     "props": {
       "src": "assets/img/lp-black/ofertas-2.jpg",
       "alt": "",
-      "blockClass": "lp-black-2k26-collage-img"
+      "blockClass": ["lp-black-2k26-collage-img", "lp-black-2k26-collage-img--half"]
     }
   },
 

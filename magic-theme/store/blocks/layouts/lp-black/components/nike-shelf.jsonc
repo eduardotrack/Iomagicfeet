@@ -1,14 +1,4 @@
 {
-  "experimental__visibility-layout#bf26-nike-shelf": {
-    "title": "Vitrine Nike - On/Off",
-    "children": [
-      "flex-layout.row#bf26-nike-shelf"
-    ],
-    "props": {
-      "visible": false
-    }
-  },
-
   "flex-layout.row#bf26-nike-shelf": {
     "title": "Vitrine Nike - Container",
     "children": [
@@ -16,7 +6,8 @@
     ],
     "props": {
       "blockClass": [
-        "lp-black-2k26-shelf"
+        "lp-black-2k26-shelf",
+        "lp-black-2k26-shelf--nike"
       ],
       "fullWidth": true
     }
@@ -25,12 +16,13 @@
   "flex-layout.col#bf26-nike-shelf": {
     "title": "Vitrine Nike - Coluna",
     "children": [
+      // "image#bf26-nike-shelf-photo-mobile",
       "rich-text#bf26-nike-shelf-title",
       "rich-text#bf26-nike-shelf-sub",
       "tab-layout#bf26-nike-shelf"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-shelf-col"
+      "blockClass": ["lp-black-2k26-shelf-col", "lp-black-2k26-shelf-col--photo","lp-black-2k26--nike"]
     }
   },
 
@@ -86,7 +78,10 @@
 
   "tab-content#bf26-nike-shelf": {
     "title": "Tab - Conteúdo",
-    "children": ["tab-content.item#bf26-nike-shelf-fem", "tab-content.item#bf26-nike-shelf-masc"],
+    "children": [
+      "tab-content.item#bf26-nike-shelf-fem",
+      "tab-content.item#bf26-nike-shelf-masc"
+    ],
     "props": {
       "blockClass": "lp-black-2k26-tabs-content"
     }
@@ -95,7 +90,8 @@
   "tab-content.item#bf26-nike-shelf-fem": {
     "title": "Conteúdo - Feminino",
     "children": [
-      "flex-layout.row#bf26-nike-shelf-fem-row"
+      "flex-layout.row#bf26-nike-shelf-fem-row",
+      "custom-progress-bar"
     ],
     "props": {
       "tabId": "fem",
@@ -105,7 +101,10 @@
 
   "flex-layout.row#bf26-nike-shelf-fem-row": {
     "title": "Vitrine - Feminino",
-    "children": ["image#bf26-nike-shelf-fem-photo", "list-context.product-list#bf26-nike-shelf-fem"],
+    "children": [
+      "image#bf26-nike-shelf-fem-photo",
+      "list-context.product-list#bf26-nike-shelf-fem"
+    ],
     "props": {
       "blockClass": ["lp-black-2k26-shelf-row", "lp-black-2k26-shelf-row--photo"]
     }
@@ -114,7 +113,7 @@
   "image#bf26-nike-shelf-fem-photo": {
     "title": "Imagem",
     "props": {
-      "src": "https://placehold.co/600x700",
+      "src": "assets/img/lp-black/bf26-nike-shelf-desktop.jpg",
       "alt": "",
       "blockClass": "lp-black-2k26-shelf-photo"
     }
@@ -123,10 +122,10 @@
   "list-context.product-list#bf26-nike-shelf-fem": {
     "title": "Vitrine - Feminino",
     "blocks": [
-      "product-summary.shelf#new-shelf"
+      "product-summary.shelf#product-category"
     ],
     "children": [
-      "slider-layout#bf26-nike-shelf-fem"
+      "slider-layout#bf26-nike-shelf"
     ],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
@@ -137,24 +136,11 @@
     }
   },
 
-  "slider-layout#bf26-nike-shelf-fem": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 2
-      },
-      "infinite": true,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never",
-      "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
-    }
-  },
-
   "tab-content.item#bf26-nike-shelf-masc": {
     "title": "Conteúdo - Masculino",
     "children": [
-      "flex-layout.row#bf26-nike-shelf-masc-row"
+      "flex-layout.row#bf26-nike-shelf-masc-row",
+      "custom-progress-bar"
     ],
     "props": {
       "tabId": "masc",
@@ -176,19 +162,29 @@
   "image#bf26-nike-shelf-masc-photo": {
     "title": "Imagem",
     "props": {
-      "src": "https://placehold.co/600x700",
+      "src": "assets/img/lp-black/bf26-nike-shelf-desktop.jpg",
       "alt": "",
       "blockClass": "lp-black-2k26-shelf-photo"
+    }
+  },
+
+
+  "image#bf26-nike-shelf-photo-mobile": {
+    "title": "Imagem Mobile",
+    "props": {
+      "src": "assets/img/lp-black/bf26-nike-shelf-desktop.jpg",
+      "alt": "",
+      "blockClass": ["lp-black-2k26-shelf-photo--mobile"]
     }
   },
 
   "list-context.product-list#bf26-nike-shelf-masc": {
     "title": "Vitrine - Masculino",
     "blocks": [
-      "product-summary.shelf#new-shelf"
+      "product-summary.shelf#product-category"
     ],
     "children": [
-      "slider-layout#bf26-nike-shelf-masc"
+      "slider-layout#bf26-nike-shelf"
     ],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
@@ -199,16 +195,22 @@
     }
   },
 
-  "slider-layout#bf26-nike-shelf-masc": {
+  "slider-layout#bf26-nike-shelf": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 2
+        "desktop": 3,
+        "tablet": 2,
+        "mobile": 1
       },
-      "infinite": true,
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+         "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 0,
+      "infinite": false,
       "showNavigationArrows": "always",
-      "showPaginationDots": "never",
+      "showPaginationDots": "mobileOnly",
       "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
     }
   }

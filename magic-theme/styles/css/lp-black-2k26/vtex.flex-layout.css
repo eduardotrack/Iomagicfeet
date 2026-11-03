@@ -12,6 +12,8 @@
 }
 
 /* conteúdo centralizado */
+.flexRow--lp-black-2k26-split--gray,
+.flexRow--lp-black-2k26-split-container,
 .flexRowContent--lp-black-2k26-information,
 .flexRowContent--lp-black-2k26-brands,
 .flexRowContent--lp-black-2k26-plain,
@@ -23,13 +25,6 @@
   padding-left: 32px;
   padding-right: 32px;
   box-sizing: border-box;
-}
-
-.flexRow--lp-black-2k26-split-container{
-  width: 100%;
-  max-width: 1568px;
-  margin: 0 auto;
-  padding: 0 32px;
 }
 
 /* ---------- banner ---------- */
@@ -105,6 +100,15 @@
 /* ---------- blocos texto + mídia ---------- */
 .flexRow--lp-black-2k26-split--gray {
   background-color: #f1f3f4;
+  padding: 40px 0;
+}
+
+.flexRow--lp-black-2k26-split--lg {
+  padding: 16px 0;
+}
+
+.flexCol--lp-black-2k26-split-media--wide {
+  min-width: 0;
 }
 
 .flexRowContent--lp-black-2k26-split {
@@ -126,11 +130,34 @@
 }
 
 .flexCol--lp-black-2k26-collage-col {
-  flex: 1 1 0;
+  /* flex: 1 1 0; */
   min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+
+/* desktop: bloco com no máximo 720px (640px da colagem + 2 × 40px de padding do split--gray) */
+@media screen and (min-width: 991px) {
+  .flexRowContent--lp-black-2k26-collage {
+    height: clamp(420px, 44vw, 640px);
+    max-height: 640px;
+  }
+
+  .flexCol--lp-black-2k26-collage-col {
+    height: 100%;
+    min-height: 0;
+  }
+
+  .flexColChild--lp-black-2k26-collage-col {
+    flex: 1 1 0;
+    min-height: 0;
+  }
+
+  .flexColChild--lp-black-2k26-collage-col .imageElement--lp-black-2k26-collage-img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 /* ---------- texto corrido ---------- */
@@ -181,9 +208,19 @@
 
 
 /* ---------- FAQ ---------- */
+.flexRowContent--lp-black-2k26-faq {
+  max-width: 1680px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .flexCol--lp-black-2k26-faq-col {
-  padding-top: 56px;
-  padding-bottom: 72px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.flexCol--lp-black-2k26-faq-col .container--lp-black-2k26-faq-title {
+  margin-bottom: 40px;
 }
 
 .flexCol--lp-black-2k26-plain-col {
@@ -192,7 +229,8 @@
   flex-direction: column;
 }
 
-.flexCol--lp-black-2k26-shelf-col .flexColChild--lp-black-2k26-shelf-col:first-child {
+/* só nas vitrines com foto mobile como primeiro filho (roupas, chuteiras) */
+.flexCol--lp-black-2k26-shelf-col--photo .flexColChild--lp-black-2k26-shelf-col--photo:first-child {
   display: none;
 }
 
@@ -279,6 +317,23 @@
   top: -84% ;
 }
 
+.flexCol--lp-black-2k26--adidas {
+  margin-top: 32px;
+}
+
+.flexColChild--lp-black-2k26--nike:first-child {
+  display: block !important;
+}
+
+@media screen and (min-width: 990px) {
+  .flexCol--lp-black-2k26--nike {
+    margin-top: 32px;
+  }
+  .flexCol--lp-black-2k26--nike .flexRow--lp-black-2k26-shelf-row--photo :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: -250px;
+  }
+}
+
 @media screen and (max-width: 1550px) {
   .flexRow--lp-black-2k26-shelf-row--photo :global(.vtex-slider-layout-0-x-sliderArrows) {
     top: -448px;
@@ -291,7 +346,44 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .flexCol--lp-black-2k26--nike {
+    position: relative;
+  }
+  
+  .flexCol--lp-black-2k26--adidas .flexRow--lp-black-2k26-shelf-row--photo :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: -137px;
+    margin-right: 16px;
+  }
+}
+
 @media screen and (max-width: 990px) {
+  .flexCol--lp-black-2k26--nike .flexRow--lp-black-2k26-shelf-row--photo :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: 0;
+  }
+  .flexRow--lp-black-2k26-split--gray {
+    padding: 16px 0;
+  }
+
+  .flexRow--lp-black-2k26-split--gray,
+  .flexColChild--lp-black-2k26--adidas {
+    position: relative;
+  }
+  
+  .flexRowContent--lp-black-2k26-split--adidas :global(.vtex-store-components-3-x-imageElement) {
+    border-radius: 0;
+  }
+
+  .flexCol--lp-black-2k26--adidas {
+    margin-top: 0;
+  }
+
+  .flexColChild--lp-black-2k26--chuteiras:not(:first-child),
+  .flexCol--lp-black-2k26--adidas .flexColChild--lp-black-2k26--adidas:not(:first-child),
+  .flexCol--lp-black-2k26--adidas .flexColChild--lp-black-2k26--adidas :global(.vtex-slider-layout-0-x-paginationDotsContainer--lp-black-2k26-arrows) {
+    padding: 0 16px;
+  }
+
   .flexRow--lp-black-2k26-shelf-row--photo :global(.vtex-slider-layout-0-x-sliderArrows) {
     top: -110px;
   }
@@ -304,9 +396,26 @@
     padding-bottom: 52px;
   }
 
-  .flexCol--lp-black-2k26-shelf-col .flexColChild--lp-black-2k26-shelf-col:first-child {
+  .flexRow--lp-black-2k26-shelf--chuteiras .flexRowContent--lp-black-2k26-shelf--chuteiras {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .flexCol--lp-black-2k26-shelf-col--photo .flexColChild--lp-black-2k26-shelf-col--photo:first-child {
     display: block;
     margin-bottom: 16px;
+  }
+  
+  .flexRowContent--lp-black-2k26-shelf--chuteiras :global(.vtex-slider-layout-0-x-sliderArrows){
+    top: -150px;
+  }
+  
+  .flexRowContent--lp-black-2k26-shelf--chuteiras :global(.vtex-rich-text-0-x-container--lp-black-2k26-title--shelf){
+    min-height: 84px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
   }
 
   .flexRow--lp-black-2k26-split-container{
@@ -361,10 +470,6 @@
     width: 100%;
   }
 
-  .flexRowContent--lp-black-2k26-nike {
-    flex-direction: column-reverse;
-  }
-
   .flexRowContent--lp-black-2k26-plain {
     padding-top: 32px;
     padding-bottom: 24px;
@@ -372,6 +477,10 @@
 
   .flexRow--lp-black-2k26-shelf--featured {
     padding: 12px 0;
+  }
+
+  .flexCol--lp-black-2k26--nike {
+    margin-top: 16px;
   }
 
   .flexCol--lp-black-2k26-shelf-col {
@@ -388,9 +497,18 @@
     gap: 16px;
   }
 
+  .flexRowContent--lp-black-2k26-faq {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .flexCol--lp-black-2k26-faq-col {
-    padding-top: 32px;
-    padding-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .flexCol--lp-black-2k26-faq-col .container--lp-black-2k26-faq-title {
+    margin-bottom: 24px;
   }
 
   .flexColChild--lp-black-2k26-brands-col:last-child,
@@ -421,5 +539,57 @@
     padding: 16px;
     border-radius: 0;
     box-shadow: none;
+  }
+}
+
+
+
+/* Arrows */ 
+
+/* --- Roupas --- */
+@media screen and (min-width: 1350px) {
+  .flexRow--lp-black-2k26-shelf--roupas :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: -107%;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .flexRow--lp-black-2k26-shelf--roupas :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: -510px;
+  }
+}
+@media screen and (min-width: 1460px) {
+  .flexRow--lp-black-2k26-shelf--roupas :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: -97%;
+  }
+}
+
+/* --- Chuteiras --- */
+@media screen and (min-width: 990px) {
+  .flexRow--lp-black-2k26-shelf--chuteiras :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: -440px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flexRow--lp-black-2k26-shelf--chuteiras :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: -450px;
+  }
+}
+
+@media screen and (min-width: 1370px) {
+  .flexRow--lp-black-2k26-shelf--chuteiras :global(.vtex-slider-layout-0-x-sliderArrows) {
+    top: -510px;
+  }
+}
+    
+@media screen and (min-width: 1440px) {
+  .flexRow--lp-black-2k26-shelf--chuteiras :global(.vtex-slider-layout-0-x-sliderArrows) {
+     top: -480px;
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  .flexRow--lp-black-2k26-shelf--chuteiras :global(.vtex-slider-layout-0-x-sliderArrows) {
+     top: -450px;
   }
 }

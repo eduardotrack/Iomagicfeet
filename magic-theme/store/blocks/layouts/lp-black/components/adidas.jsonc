@@ -2,10 +2,11 @@
   "experimental__visibility-layout#bf26-adidas": {
     "title": "Adidas - On/Off",
     "children": [
-      "flex-layout.row#bf26-adidas"
+      "flex-layout.row#bf26-adidas",
+      "flex-layout.row#bf26-adidas-shelf"
     ],
     "props": {
-      "visible": false
+      "visible": true
     }
   },
 
@@ -15,7 +16,7 @@
       "flex-layout.row#bf26-adidas-inner"
     ],
     "props": {
-      "blockClass": ["lp-black-2k26-split", "lp-black-2k26-split--gray"],
+      "blockClass": ["lp-black-2k26-split--gray", "lp-black-2k26-split--lg"],
       "fullWidth": true
     }
   },
@@ -25,8 +26,11 @@
     "children": ["flex-layout.col#bf26-adidas-media", "flex-layout.col#bf26-adidas-text"],
     "props": {
       "blockClass": [
-        "lp-black-2k26-split"
-      ]
+        "lp-black-2k26-split-container",
+        "lp-black-2k26-split",
+        "lp-black-2k26-split--adidas"
+      ],
+      "preventHorizontalStretch": true
     }
   },
 
@@ -36,14 +40,14 @@
       "image#bf26-adidas-img"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-split-media"
+      "blockClass": ["lp-black-2k26-split-media", "lp-black-2k26-split-media--wide"]
     }
   },
 
   "image#bf26-adidas-img": {
     "title": "Imagem",
     "props": {
-      "src": "https://placehold.co/896x572",
+      "src": "assets/img/lp-black/adidas-1.jpg",
       "alt": "",
       "blockClass": "lp-black-2k26-adidas-img"
     }

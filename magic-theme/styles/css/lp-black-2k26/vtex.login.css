@@ -46,6 +46,13 @@
     }
 }
 
+@media screen and (min-width: 991px) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--lp-black-2k26-collage) > :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        height: 100%;
+        min-width: 0;
+    }
+}
+
 @media screen and (max-width: 990px) {
     :global(.vtex-render__container-id-bf26-acessorios .vtex-flex-layout-0-x-flexRowContent .vtex-flex-layout-0-x-flexRowContent--lp-black-2k26-shelf-row) {
         padding-bottom: 52px;
@@ -54,6 +61,18 @@
         margin-top: 20px;
     }
 
+    :global(.vtex-render__container-id-bf26-adidas) :global(.vtex-flex-layout-0-x-flexCol--lp-black-2k26-split-text) {
+        padding: 0 16px;
+    }
+    
+    :global(.vtex-render__container-id-bf26-adidas) :global(.vtex-flex-layout-0-x-flexRowContent--lp-black-2k26-shelf),
+    :global(.vtex-render__container-id-bf26-adidas) :global(.vtex-flex-layout-0-x-flexRowContent--lp-black-2k26-split) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    :global(.vtex-render__container-id-bf26-adidas) :global(.vtex-slider-layout-0-x-slide--lp-black-2k26-shelf),
+    :global(.vtex-render__container-id-bf26-nike) :global(.vtex-slider-layout-0-x-slide--lp-black-2k26-shelf),
     :global(.vtex-render__container-id-bf26-acessorios) :global(.vtex-slider-layout-0-x-slide--lp-black-2k26-shelf),
     :global(.vtex-render__container-id-bf26-roupas) :global(.vtex-slider-layout-0-x-slide--lp-black-2k26-shelf),
     :global(.vtex-render__container-id-bf26-chuteiras) :global(.vtex-slider-layout-0-x-slide--lp-black-2k26-shelf) {

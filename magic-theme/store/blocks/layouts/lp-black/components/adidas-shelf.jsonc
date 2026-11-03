@@ -1,14 +1,4 @@
 {
-  "experimental__visibility-layout#bf26-adidas-shelf": {
-    "title": "Vitrine Adidas - On/Off",
-    "children": [
-      "flex-layout.row#bf26-adidas-shelf"
-    ],
-    "props": {
-      "visible": false
-    }
-  },
-
   "flex-layout.row#bf26-adidas-shelf": {
     "title": "Vitrine Adidas - Container",
     "children": [
@@ -25,12 +15,13 @@
   "flex-layout.col#bf26-adidas-shelf": {
     "title": "Vitrine Adidas - Coluna",
     "children": [
+      "responsive-layout.mobile#bf26-adidas-img",
       "rich-text#bf26-adidas-shelf-title",
       "rich-text#bf26-adidas-shelf-sub",
       "tab-layout#bf26-adidas-shelf"
     ],
     "props": {
-      "blockClass": "lp-black-2k26-shelf-col"
+      "blockClass": ["lp-black-2k26-shelf-col", "lp-black-2k26-shelf-col--photo", "lp-black-2k26--adidas"]
     }
   },
 
@@ -98,7 +89,8 @@
   "tab-content.item#bf26-adidas-shelf-fem": {
     "title": "Conteúdo - Feminino",
     "children": [
-      "flex-layout.row#bf26-adidas-shelf-fem-row"
+      "flex-layout.row#bf26-adidas-shelf-fem-row",
+      "custom-progress-bar"
     ],
     "props": {
       "tabId": "fem",
@@ -120,7 +112,7 @@
   "image#bf26-adidas-shelf-fem-photo": {
     "title": "Imagem",
     "props": {
-      "src": "https://placehold.co/600x700",
+      "src": "assets/img/lp-black/bf26-adidas-shelf-desktop.jpg",
       "alt": "",
       "blockClass": "lp-black-2k26-shelf-photo"
     }
@@ -129,10 +121,10 @@
   "list-context.product-list#bf26-adidas-shelf-fem": {
     "title": "Vitrine - Feminino",
     "blocks": [
-      "product-summary.shelf#new-shelf"
+      "product-summary.shelf#product-category"
     ],
     "children": [
-      "slider-layout#bf26-adidas-shelf-fem"
+      "slider-layout#bf26-adidas-shelf"
     ],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
@@ -143,24 +135,11 @@
     }
   },
 
-  "slider-layout#bf26-adidas-shelf-fem": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 2
-      },
-      "infinite": true,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never",
-      "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
-    }
-  },
-
   "tab-content.item#bf26-adidas-shelf-masc": {
     "title": "Conteúdo - Masculino",
     "children": [
-      "flex-layout.row#bf26-adidas-shelf-masc-row"
+      "flex-layout.row#bf26-adidas-shelf-masc-row",
+      "custom-progress-bar"
     ],
     "props": {
       "tabId": "masc",
@@ -171,7 +150,7 @@
   "flex-layout.row#bf26-adidas-shelf-masc-row": {
     "title": "Vitrine - Masculino",
     "children": [
-      "image#bf26-adidas-shelf-masc-photo",
+      "responsive-layout.desktop#bf26-adidas-img",
       "list-context.product-list#bf26-adidas-shelf-masc"
     ],
     "props": {
@@ -179,22 +158,43 @@
     }
   },
 
+  "responsive-layout.desktop#bf26-adidas-img": {
+    "children": [
+      "image#bf26-adidas-shelf-masc-photo"
+    ]
+  },
+
   "image#bf26-adidas-shelf-masc-photo": {
     "title": "Imagem",
     "props": {
-      "src": "https://placehold.co/600x700",
+      "src": "assets/img/lp-black/bf26-adidas-shelf-desktop.jpg",
       "alt": "",
-      "blockClass": "lp-black-2k26-shelf-photo"
+      "blockClass": ["lp-black-2k26-shelf-photo", "lp-black-2k26-shelf-photo--desktop"]
+    }
+  },
+
+  "responsive-layout.mobile#bf26-adidas-img": {
+    "children": [
+      "image#bf26-adidas-shelf-photo-mobile"
+    ]
+  },
+
+  "image#bf26-adidas-shelf-photo-mobile": {
+    "title": "Imagem Mobile",
+    "props": {
+      "src": "assets/img/lp-black/bf26-adidas-shelf-desktop.jpg",
+      "alt": "",
+      "blockClass": ["lp-black-2k26-shelf-photo--mobile"]
     }
   },
 
   "list-context.product-list#bf26-adidas-shelf-masc": {
     "title": "Vitrine - Masculino",
     "blocks": [
-      "product-summary.shelf#new-shelf"
+      "product-summary.shelf#product-category"
     ],
     "children": [
-      "slider-layout#bf26-adidas-shelf-masc"
+      "slider-layout#bf26-adidas-shelf"
     ],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
@@ -205,16 +205,22 @@
     }
   },
 
-  "slider-layout#bf26-adidas-shelf-masc": {
+  "slider-layout#bf26-adidas-shelf": {
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
-        "phone": 2
+        "desktop": 3,
+        "tablet": 2,
+        "mobile": 1
       },
-      "infinite": true,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never",
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "disabled",
+         "phone": "to-the-left"
+      },
+      "centerModeSlidesGap": 0,
+      "infinite": false,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "mobileOnly",
       "blockClass": ["lp-black-2k26-shelf", "lp-black-2k26-arrows"]
     }
   }
