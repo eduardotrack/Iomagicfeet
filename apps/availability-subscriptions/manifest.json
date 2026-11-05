@@ -1,0 +1,23 @@
+{
+  "vendor": "magicfeet",
+  "name": "availability-subscriptions",
+  "version": "0.0.1",
+  "title": "Avise-me Magicfeet",
+  "description": "Cadastro validado de avisos de disponibilidade em AS",
+  "builders": {
+    "node": "7.x"
+  },
+  "policies": [
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/dataentities/AS/documents*"
+      },
+      "name": "outbound-access"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

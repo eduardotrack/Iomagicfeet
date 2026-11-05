@@ -1,0 +1,19 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 10,
+  "minReplicas": 2,
+  "maxReplicas": 5,
+  "workers": 1,
+  "routes": {
+    "subscribeAvailability": {
+      "path": "/_v/avise-me",
+      "public": true,
+      "smartcache": false,
+      "rateLimitPerReplica": {
+        "perMinute": 120,
+        "concurrent": 4
+      }
+    }
+  }
+}

@@ -2,3 +2,6 @@
 magic-theme/assets/img/:main-sejafranqueado-mob.png
 magic-theme/assets/img/:main-sejafranqueado-mob.png
 magic-theme/assets/img/:main-sejafranqueado-mob.png
+
+# Dependências locais do serviço Avise-me
+/apps/availability-subscriptions/node/node_modules/
