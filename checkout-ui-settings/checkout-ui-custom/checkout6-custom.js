@@ -1043,3 +1043,46 @@ $(document).ready(function () {
                     </svg>
                 </div>
 */
+
+/**
+ * *****************************
+ * Bloqueia edição do CPF quando já cadastrado
+ * *****************************
+ */
+;(function () {
+  'use strict'
+
+  function hasDocument(orderForm) {
+    var doc = orderForm && orderForm.clientProfileData && orderForm.clientProfileData.document
+
+    return typeof doc === 'string' && doc.trim() !== ''
+  }
+
+  function applyLock(orderForm) {
+    var input = document.querySelector('#client-document')
+
+    if (!input) return
+
+    var shouldLock = hasDocument(orderForm)
+
+    input.disabled = shouldLock
+    input.title = shouldLock ? 'CPF já cadastrado e não pode ser alterado' : ''
+  }
+
+  function refresh() {
+    var checkout = window.vtexjs && window.vtexjs.checkout
+
+    applyLock(checkout && checkout.orderForm)
+  }
+
+  $(window).on('orderFormUpdated.vtex', function (_, orderForm) {
+    applyLock(orderForm)
+  })
+  $(window).on('hashchange', function () {
+    setTimeout(refresh, 300)
+  })
+
+  // O formulário de perfil é renderizado/re-renderizado dinamicamente pelo checkout
+  new MutationObserver(refresh).observe(document.body, { childList: true, subtree: true })
+  refresh()
+})()

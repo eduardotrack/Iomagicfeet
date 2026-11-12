@@ -209,5 +209,9 @@
   },
   "custom-progress-bar": {
     "component": "ProgressBar"
+  },
+  "my-account-lock-document": {
+    "component": "MyAccountLockDocument",
+    "composition": "children"
   }
 }

@@ -15,7 +15,14 @@
   "store.account": {
     "blocks": ["my-account"],
     "parent": {
-      "challenge": "challenge.profile"
+      "challenge": "challenge.profile",
+      "storeWrapper": "storeWrapper#my-account"
+    }
+  },
+
+  "storeWrapper#my-account": {
+    "props": {
+      "CustomContext": "my-account-lock-document"
     }
   },
 
