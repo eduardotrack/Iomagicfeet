@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="56" height="8" viewBox="0 0 56 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Dots">
+<path id="Dots 01" d="M0 4C0 1.79086 1.79086 0 4 0H20C22.2091 0 24 1.79086 24 4V4C24 6.20914 22.2091 8 20 8H4C1.79086 8 0 6.20914 0 4V4Z" fill="#16DD05"/>
+<circle id="Dots 04" cx="36" cy="4" r="4" fill="black"/>
+<circle id="Dots 03" cx="52" cy="4" r="4" fill="black"/>
+</g>
+</svg>

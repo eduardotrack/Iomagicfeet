@@ -1,62 +1,52 @@
 {
   "store.custom#central-relacionamento": {
+    "title": "Magic Feet | Atendimento",
+    "parent": {
+      "header": "header#faq"
+    },
     "blocks": [
-      "responsive-layout.mobile#centralRelacionamento-bannerFull",
-      "responsive-layout.desktop#centralRelacionamento-bannerFull",
-      "pd-CentralRelacionamento",
-      "flex-layout.row#apoio-cliente"
+      "pd-CentralRelacionamento"
     ]
+  },
+  "pd-CentralRelacionamento": {
+    "title": "Magic Feet | Atendimento · Conteúdo",
+    "props": {
+      "staticAssets": {
+        "bannerDesktop": "assets/img/faq/banner-desktop-composed.png",
+        "bannerMobile": "assets/img/faq/banner-mobile.jpg",
+        "bannerMobileOverlay": "assets/img/faq/banner-mobile-overlay.jpg",
+        "storeIcon": "assets/img/faq/store.svg",
+        "orderIcon": "assets/img/faq/order.svg",
+        "exchangeIcon": "assets/img/faq/exchange.svg",
+        "searchIcon": "assets/img/faq/search.svg",
+        "registrationIcon": "assets/img/faq/category-registration.svg",
+        "cancellationIcon": "assets/img/faq/category-cancellation.svg",
+        "exchangesIcon": "assets/img/faq/category-exchanges.svg",
+        "deliveryIcon": "assets/img/faq/category-delivery.svg",
+        "storesIcon": "assets/img/faq/category-stores.svg",
+        "paymentsIcon": "assets/img/faq/category-payments.svg",
+        "paymentsMobileIcon": "assets/img/faq/category-payments.svg",
+        "productIcon": "assets/img/faq/category-product.svg",
+        "trackingIcon": "assets/img/faq/category-tracking.svg",
+        "pickupIcon": "assets/img/faq/category-pickup.svg",
+        "categoryChevron": "assets/img/faq/category-chevron.svg",
+        "categoryChevronActive": "assets/img/faq/category-chevron-active.svg",
+        "categoryChevronMobileActive": "assets/img/faq/category-chevron-mobile-active.svg",
+        "questionChevron": "assets/img/faq/chevron.svg",
+        "questionChevronOpen": "assets/img/faq/chevron-open.svg",
+        "questionChevronMobile": "assets/img/faq/chevron.svg",
+        "plusIcon": "assets/img/faq/chevron.svg",
+        "minusIcon": "assets/img/faq/chevron-open.svg",
+        "mailIcon": "assets/img/faq/mail.svg",
+        "mailMobileIcon": "assets/img/faq/mail-mobile.svg",
+        "chatIcon": "assets/img/faq/chat.svg",
+        "phoneIcon": "assets/img/faq/phone.svg",
+        "chatMobileIcon": "assets/img/faq/chat-mobile.svg",
+        "phoneMobileIcon": "assets/img/faq/phone-mobile.svg",
+        "slidersIcon": "assets/img/faq/faq-sliders.svg",
+        "paginationActiveIcon": "assets/img/faq/carousel-dot-active.svg",
+        "paginationInactiveIcon": "assets/img/faq/carousel-dot-inactive.svg"
+      }
+    }
   }
-/* 
-  "flex-layout.row#central-relacionamento": {
-    "props": {
-      "blockClass": "panda-central-relacionamento"
-    },
-    "children": ["pd-NeoassistCentral"]
-  },
-
-  //controle de visibilidade do video
-  "experimental__visibility-layout#boasPraticas-TrocaeDevolucoes": {
-    "title": "Controle de visibilidade - Video boas práticas para troca e devouluções",
-    "children": ["flex-layout.row#boasPraticas-TrocaeDevolucoes"],
-    "props": {
-      "visible": true,
-      "blockClass": "boasPraticas-TrocaeDevolucoes"
-    }
-  },
-
-  "flex-layout.row#boasPraticas-TrocaeDevolucoes": {
-    "props": {
-      "blockClass": "boasPraticas-TrocaeDevolucoes"
-    },
-    "children": ["flex-layout.col#boasPraticas-TrocaeDevolucoes"]
-  },
-
-  "flex-layout.col#boasPraticas-TrocaeDevolucoes": {
-    "props": {
-      "blockClass": "boasPraticas-TrocaeDevolucoes"
-    },
-    "children": ["rich-text#boasPraticas-TrocaeDevolucoes","video#boasPraticas-TrocaeDevolucoes"]
-  },
-
-  "rich-text#boasPraticas-TrocaeDevolucoes": {
-    "props": {
-      "text": "## Boas práticas para troca e devouluções",
-      "blockClass": "boasPraticas-TrocaeDevolucoes",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-
-  "video#boasPraticas-TrocaeDevolucoes": {
-    "props": {
-      "width": "100%",
-      "height": "380px",
-      "loop": false,
-      "autoPlay": true,
-      "muted": false,
-      "src": "https://www.youtube.com/watch?v=elPiqIQ0kYk",
-      "blockClass": "video-BoasPraticas"
-    }
-  } */
 }

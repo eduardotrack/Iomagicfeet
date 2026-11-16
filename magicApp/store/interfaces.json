@@ -2,65 +2,50 @@
   "pd-skuSimilar": {
     "component": "skuSimilar"
   },
-
   "pd-nossasLojas": {
     "component": "nossasLojas"
   },
-
   "pd-coreForm": {
     "component": "coreForm"
   },
-
   "pd-newsForm": {
     "component": "newsForm"
   },
-
   "pd-NeoassistCentral": {
     "component": "NeoassistCentral",
     "render": "server",
     "hydration": "always"
   },
-
   "pd-SkuSuggestion": {
     "component": "SkuSuggestionCore"
   },
-
   "pd-welcomeControl": {
     "component": "welcomeControl"
   },
-
   "pd-skuFormatDesc": {
     "component": "skuFormatDesc"
   },
-
   "pd-popupFirstBuy": {
     "component": "popupFirstBuy"
   },
-
   "pd-progressiveBar": {
     "component": "progressiveBar"
   },
-
   "pd-popupNewsletter": {
     "component": "popupNewsletter"
   },
-
   "pd-save1": {
     "component": "save1"
   },
-
   "pd-categoriaFaq": {
     "component": "categoriaFaq"
   },
-
   "pd-cupomField": {
     "component": "cupomField"
   },
-
   "pd-cupomFieldGrid": {
     "component": "cupomFieldGrid"
   },
-
   "pd-promotionBar": {
     "component": "promotionBar"
   },
@@ -142,8 +127,9 @@
   "pd-copyToClipboardText": {
     "component": "CopyToClipboardText"
   },
-    "pd-CentralRelacionamento": {
-    "component": "CentralRelacionamento"
+  "pd-CentralRelacionamento": {
+    "component": "CentralRelacionamento",
+    "title": "Magic Feet | Atendimento"
   },
   "pd-productPricePix": {
     "component": "ProductPricePix"

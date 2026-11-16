@@ -1,0 +1,30 @@
+.menuContainerNav.menuContainerNav--faq-header-menu { background: #fff; margin: 0; min-width: 0; padding: 0; width: 100%; }
+.menuContainer.menuContainer--faq-header-menu { align-items: center; background: #fff; display: flex; flex-wrap: nowrap; gap: 0; margin: 0; min-height: 48px; padding: 0; width: 100%; }
+.menuItem.menuItem--faq-header-menu-item { flex: 0 0 auto; height: 48px; margin: 0; padding: 0; }
+.styledLinkContainer.styledLinkContainer--faq-header-menu-item { margin: 0 8px; padding: 0; }
+.styledLink.styledLink--faq-header-menu-item { align-items: center; display: flex; height: 48px; padding: 0; text-decoration: none; }
+.styledLinkContent.styledLinkContent--faq-header-menu-item { color: #363636; font-family: 'MagicFaqWorkSans', sans-serif; font-size: 14px; font-weight: 400; line-height: 16px; text-transform: lowercase; white-space: nowrap; }
+.styledLinkContent.styledLinkContent--faq-header-menu-item-outlet { font-weight: 700; }
+.styledLinkContent.styledLinkContent--faq-header-menu-item:hover { font-weight: 700; text-decoration: underline; }
+.menuContainer.menuContainer--faq-header-shortcuts { align-items: center; display: flex; flex-wrap: nowrap; gap: 20px; margin: 0; padding: 0; }
+.menuContainer--faq-header-shortcuts .menuItem { margin: 0; padding: 0; }
+.styledLinkContainer.styledLinkContainer--faq-header-shortcut { margin: 0; padding: 0; }
+.styledLinkContent.styledLinkContent--faq-header-shortcut { align-items: center; color: #000; display: flex; font-family: 'MagicFaqWorkSans', sans-serif; font-size: 12px; font-weight: 400; line-height: 14px; white-space: nowrap; }
+.styledLinkContent.styledLinkContent--faq-header-franchise::before { background: url(assets/img/faq/header-franchise.svg) center / 15px 15px no-repeat; content: ''; display: block; flex: 0 0 15px; height: 15px; margin-right: 4px; width: 15px; }
+.styledLinkContent.styledLinkContent--faq-header-franchise { width: 135.8px; }
+.styledLinkContent.styledLinkContent--faq-header-stores { width: 169.331px; }
+.menuContainerNav.menuContainerNav--faq-header-wishlist,
+.menuContainer.menuContainer--faq-header-wishlist { align-items: center; display: flex; height: 40px; margin: 0; padding: 0; width: 28px; }
+.styledLinkContainer.styledLinkContainer--faq-header-wishlist { margin: 0; padding: 0; }
+.styledLinkContent.styledLinkContent--faq-header-wishlist { background: url(assets/img/faq/header-user-desktop.svg) center / 22px 19.25px no-repeat; display: block; height: 40px; margin: 0; padding: 0; width: 28px; }
+.styledLinkContent--faq-header-wishlist::before,
+.styledLinkContent--faq-header-wishlist::after { display: none; }
+.styledLink--faq-header-menu-item:focus,
+.styledLink--faq-header-shortcut:focus,
+.styledLink--faq-header-wishlist:focus { outline: 2px solid #1c1c1c; outline-offset: 3px; }
+@media (min-width: 1025px) and (max-width: 1519px) {
+  .menuContainer.menuContainer--faq-header-menu { flex-wrap: wrap; min-height: 24px; row-gap: 0; }
+  .menuItem.menuItem--faq-header-menu-item,
+  .styledLink.styledLink--faq-header-menu-item { height: 24px; }
+  .styledLinkContainer.styledLinkContainer--faq-header-menu-item { margin: 0 6px; }
+}

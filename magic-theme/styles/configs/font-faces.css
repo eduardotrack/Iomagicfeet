@@ -69,3 +69,47 @@
     font-style: normal;
     font-display: swap;
 }
+
+/* FAQ-only aliases; retain the storefront's existing font declarations. */
+@font-face {
+  font-family: 'MagicFaqWorkSans';
+  src: url('assets/fonts/WorkSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MagicFaqWorkSans';
+  src: url('assets/fonts/WorkSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MagicFaqWorkSans';
+  src: url('assets/fonts/WorkSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MagicFaqWorkSans';
+  src: url('assets/fonts/WorkSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MagicFaqWorkSans';
+  src: url('assets/fonts/WorkSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MagicFaqInter';
+  src: url('assets/fonts/MagicFaq-Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

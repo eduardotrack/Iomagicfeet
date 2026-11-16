@@ -1,0 +1,7 @@
+.openIconContainer.openIconContainer--faq-header-search-mobile { align-items: center; background: transparent; display: flex; height: 20px; justify-content: center; margin: 0; padding: 0; width: 20px; }
+.openIconContainer.openIconContainer--faq-header-search-mobile::after { display: none; }
+.openIconContainer.openIconContainer--faq-header-menu-mobile { align-items: center; background: transparent; display: flex; height: 24px; justify-content: center; margin: 0; padding: 0; width: 24px; }
+.drawerTriggerContainer.drawerTriggerContainer--faq-header-search-trigger { align-items: center; display: flex; height: 20px; justify-content: center; margin: 0; padding: 0; width: 20px; }
+.drawerTriggerContainer.drawerTriggerContainer--faq-header-menu-trigger { align-items: center; display: flex; height: 24px; justify-content: center; margin: 0; padding: 0; width: 24px; }
+.openIconContainer--faq-header-search-mobile:focus,
+.openIconContainer--faq-header-menu-mobile:focus { outline: 2px solid #1c1c1c; outline-offset: 3px; }

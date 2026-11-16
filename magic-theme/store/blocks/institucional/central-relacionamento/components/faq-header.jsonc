@@ -1,0 +1,680 @@
+{
+  "header#faq": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Layout",
+    "blocks": [
+      "header-layout.desktop#faq",
+      "header-layout.mobile#faq"
+    ]
+  },
+  "header-layout.desktop#faq": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Layout desktop",
+    "children": [
+      "flex-layout.row#faq-header-root",
+      "pd-canonicalAdvanced",
+      "pd-ClearCep",
+      "pd-ChangeTagLogin",
+      "pd-popupNewsletter",
+      "pd-remove-cancel-order",
+      "pd-ColorsChanger#faq"
+    ]
+  },
+  "header-layout.mobile#faq": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Layout mobile",
+    "children": [
+      "flex-layout.row#faq-header-root",
+      "pd-canonicalAdvanced",
+      "pd-ClearCep",
+      "pd-ChangeTagLogin",
+      "pd-popupNewsletter",
+      "pd-remove-cancel-order",
+      "pd-ColorsChanger#faq",
+      "pd-MobileHeaderScrollControl",
+      "pd-BlockZoomOnInput"
+    ]
+  },
+  "pd-ColorsChanger#faq": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Cores do destaque do menu",
+    "props": {
+      "desktopTextColor": "#FE0000",
+      "mobileBackgoundColor": "#1C1C1C",
+      "mobileTextColor": "#E8E8E8"
+    }
+  },
+  "flex-layout.col#faq-header-body": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Faixas e navegação",
+    "props": {
+      "blockClass": "faq-header-body",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#faq-header-top",
+      "flex-layout.row#faq-header-desktop",
+      "flex-layout.row#faq-header-mobile",
+      "flex-layout.row#faq-header-cart"
+    ]
+  },
+  "flex-layout.row#faq-header-root": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Estrutura",
+    "props": {
+      "blockClass": "faq-header-root",
+      "fullWidth": true,
+      "preventHorizontalStretch": false
+    },
+    "children": [
+      "flex-layout.col#faq-header-body"
+    ]
+  },
+  "rich-text#faq-header-description": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Texto da faixa superior",
+    "props": {
+      "blockClass": "faq-header-description",
+      "text": "magicfeet: Roupas Infantis com Estilo da Cabeça aos Pés"
+    }
+  },
+  "flex-layout.col#faq-header-description": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Descrição da loja",
+    "props": {
+      "blockClass": "faq-header-description",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "rich-text#faq-header-description"
+    ]
+  },
+  "flex-layout.col#faq-header-shortcuts": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Atalhos institucionais",
+    "props": {
+      "blockClass": "faq-header-shortcuts",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#faq-header-shortcuts"
+    ]
+  },
+  "flex-layout.row#faq-header-top": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Faixa superior",
+    "props": {
+      "blockClass": "faq-header-top",
+      "fullWidth": true,
+      "preventHorizontalStretch": false
+    },
+    "children": [
+      "flex-layout.col#faq-header-description",
+      "flex-layout.col#faq-header-shortcuts"
+    ]
+  },
+  "vtex.menu@2.x:menu#faq-header-shortcuts": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Links institucionais",
+    "props": {
+      "blockClass": "faq-header-shortcuts"
+    },
+    "children": [
+      "menu-item#faq-header-franchise",
+      "menu-item#faq-header-stores"
+    ]
+  },
+  "menu-item#faq-header-franchise": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · seja um franqueado",
+    "props": {
+      "id": "faq-header-franchise",
+      "type": "custom",
+      "blockClass": [
+        "faq-header-shortcut",
+        "faq-header-franchise"
+      ],
+      "itemProps": {
+        "type": "internal",
+        "href": "/seja-franqueado",
+        "tagTitle": "seja um franqueado",
+        "text": "seja um franqueado"
+      }
+    }
+  },
+  "menu-item#faq-header-stores": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Encontre uma loja magicfeet",
+    "props": {
+      "id": "faq-header-stores",
+      "type": "custom",
+      "blockClass": [
+        "faq-header-shortcut",
+        "faq-header-stores"
+      ],
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/nossas-lojas",
+        "tagTitle": "Encontre uma loja magicfeet",
+        "text": "Encontre uma loja magicfeet"
+      }
+    }
+  },
+  "flex-layout.col#faq-header-logo-desktop": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Logo desktop",
+    "props": {
+      "blockClass": "faq-header-logo-desktop",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "logo#faq-desktop"
+    ]
+  },
+  "flex-layout.col#faq-header-menu-desktop": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Menu desktop",
+    "props": {
+      "blockClass": "faq-header-menu-desktop",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#faq-header"
+    ]
+  },
+  "flex-layout.col#faq-header-search-desktop": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Busca desktop",
+    "props": {
+      "blockClass": "faq-header-search-desktop",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "search-bar#faq-desktop"
+    ]
+  },
+  "flex-layout.col#faq-header-cart-space-desktop": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Espaço do carrinho desktop",
+    "props": {
+      "blockClass": "faq-header-cart-space-desktop",
+      "preventVerticalStretch": true
+    },
+    "children": []
+  },
+  "flex-layout.col#faq-header-actions-desktop": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Ações desktop",
+    "props": {
+      "blockClass": "faq-header-actions-desktop",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "login#faq",
+      "vtex.menu@2.x:menu#faq-wishlist",
+      "flex-layout.col#faq-header-cart-space-desktop"
+    ]
+  },
+  "flex-layout.row#faq-header-desktop": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Navegação desktop",
+    "props": {
+      "blockClass": "faq-header-desktop",
+      "fullWidth": true,
+      "preventHorizontalStretch": false
+    },
+    "children": [
+      "flex-layout.col#faq-header-logo-desktop",
+      "flex-layout.col#faq-header-menu-desktop",
+      "flex-layout.col#faq-header-search-desktop",
+      "flex-layout.col#faq-header-actions-desktop"
+    ]
+  },
+  "logo#faq-desktop": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Logo desktop",
+    "props": {
+      "blockClass": "faq-header-logo-desktop",
+      "title": "Magic Feet",
+      "href": "/",
+      "url": "assets/img/faq/header-logo-desktop.png",
+      "width": 146,
+      "height": 33.06
+    }
+  },
+  "logo#faq-mobile": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Logo mobile",
+    "props": {
+      "blockClass": "faq-header-logo-mobile",
+      "title": "Magic Feet",
+      "href": "/",
+      "url": "assets/img/faq/header-logo-mobile.svg",
+      "width": 132.867,
+      "height": 30
+    }
+  },
+  "search-bar#faq-desktop": {
+    "props": {
+      "placeholder": "o que você procura?",
+      "openAutocompleteOnFocus": true,
+      "blockClass": [
+        "header__search",
+        "faq-header-search-desktop"
+      ],
+      "displayMode": "search-button"
+    },
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "title": "Magic Feet | Atendimento · Cabeçalho · Busca de produtos desktop"
+  },
+  "search-bar#faq-mobile-drawer": {
+    "props": {
+      "placeholder": "o que você procura?",
+      "openAutocompleteOnFocus": true,
+      "blockClass": [
+        "header__search",
+        "faq-header-search-drawer"
+      ],
+      "displayMode": "search-button"
+    },
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "title": "Magic Feet | Atendimento · Cabeçalho · Busca de produtos mobile"
+  },
+  "login#faq": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Entrar na conta",
+    "props": {
+      "showIconProfile": false,
+      "blockClass": [
+        "header__login",
+        "faq-header-login"
+      ]
+    }
+  },
+  "vtex.menu@2.x:menu#faq-wishlist": {
+    "children": [
+      "menu-item#faq-wishlist"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "faq-header-wishlist"
+    },
+    "title": "Magic Feet | Atendimento · Cabeçalho · Favoritos"
+  },
+  "menu-item#faq-wishlist": {
+    "props": {
+      "id": "faq-header-wishlist",
+      "blockClass": "faq-header-wishlist",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "href": "/account/#/wishlist",
+        "noFollow": false,
+        "tagTitle": "Favoritos",
+        "text": ""
+      },
+      "iconId": null
+    },
+    "title": "Magic Feet | Atendimento · Cabeçalho · Favoritos"
+  },
+  "vtex.menu@2.x:menu#faq-header": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Categorias",
+    "props": {
+      "blockClass": [
+        "main-menu-wrapper",
+        "header__menu",
+        "faq-header-menu"
+      ],
+      "experimentalOptimizeRendering": false
+    },
+    "children": [
+      "menu-item#faq-navigation-1",
+      "menu-item#faq-navigation-2",
+      "menu-item#faq-navigation-3",
+      "menu-item#faq-navigation-4",
+      "menu-item#faq-navigation-5",
+      "menu-item#faq-navigation-6",
+      "menu-item#faq-navigation-7",
+      "menu-item#faq-navigation-8",
+      "menu-item#faq-navigation-9"
+    ]
+  },
+  "menu-item#faq-navigation-1": {
+    "props": {
+      "blockClass": [
+        "header__menu",
+        "main-menu-department",
+        "faq-header-menu-item"
+      ],
+      "id": "faq-header-navigation-1",
+      "type": "custom",
+      "itemProps": {
+        "text": "novidades",
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "novidades"
+      },
+      "__editorItemTitle": "novidades"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#dep1"
+    ],
+    "title": "Magic Feet | Atendimento · Cabeçalho · Categoria · novidades"
+  },
+  "menu-item#faq-navigation-2": {
+    "props": {
+      "blockClass": [
+        "header__menu",
+        "main-menu-department",
+        "faq-header-menu-item"
+      ],
+      "id": "faq-header-navigation-2",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "tênis",
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "tênis"
+      },
+      "__editorItemTitle": "tênis"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#dep2"
+    ],
+    "title": "Magic Feet | Atendimento · Cabeçalho · Categoria · tênis"
+  },
+  "menu-item#faq-navigation-3": {
+    "props": {
+      "blockClass": [
+        "header__menu",
+        "main-menu-department",
+        "faq-header-menu-item"
+      ],
+      "id": "faq-header-navigation-3",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "chinelos e sandálias",
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "chinelos e sandálias"
+      },
+      "__editorItemTitle": "chinelos e sandálias"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#dep7"
+    ],
+    "title": "Magic Feet | Atendimento · Cabeçalho · Categoria · chinelos e sandálias"
+  },
+  "menu-item#faq-navigation-4": {
+    "props": {
+      "blockClass": [
+        "header__menu",
+        "main-menu-department",
+        "main-menu-department-sale",
+        "faq-header-menu-item"
+      ],
+      "id": "faq-header-navigation-4",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "chuteiras",
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "chuteiras"
+      },
+      "__editorItemTitle": "chuteiras"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#dep9"
+    ],
+    "title": "Magic Feet | Atendimento · Cabeçalho · Categoria · chuteiras"
+  },
+  "menu-item#faq-navigation-5": {
+    "props": {
+      "blockClass": [
+        "header__menu",
+        "main-menu-department",
+        "faq-header-menu-item"
+      ],
+      "id": "faq-header-navigation-5",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "roupas",
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "roupas"
+      },
+      "__editorItemTitle": "roupas"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#dep3"
+    ],
+    "title": "Magic Feet | Atendimento · Cabeçalho · Categoria · roupas"
+  },
+  "menu-item#faq-navigation-6": {
+    "props": {
+      "blockClass": [
+        "header__menu",
+        "main-menu-department",
+        "main-menu-department-custom",
+        "faq-header-menu-item"
+      ],
+      "id": "faq-header-navigation-6",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "ocasiões",
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "ocasiões"
+      },
+      "__editorItemTitle": "ocasiões"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#dep5"
+    ],
+    "title": "Magic Feet | Atendimento · Cabeçalho · Categoria · ocasiões"
+  },
+  "menu-item#faq-navigation-7": {
+    "props": {
+      "blockClass": [
+        "header__menu",
+        "main-menu-department",
+        "main-menu-department-custom",
+        "faq-header-menu-item"
+      ],
+      "id": "faq-header-navigation-7",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "acessórios",
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "acessórios"
+      },
+      "__editorItemTitle": "acessórios"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#dep8"
+    ],
+    "title": "Magic Feet | Atendimento · Cabeçalho · Categoria · acessórios"
+  },
+  "menu-item#faq-navigation-8": {
+    "props": {
+      "blockClass": [
+        "header__menu",
+        "main-menu-department",
+        "faq-header-menu-item"
+      ],
+      "id": "faq-header-navigation-8",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "marcas",
+        "type": "internal",
+        "href": "#",
+        "tagTitle": "marcas"
+      },
+      "__editorItemTitle": "marcas"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#dep4"
+    ],
+    "title": "Magic Feet | Atendimento · Cabeçalho · Categoria · marcas"
+  },
+  "menu-item#faq-navigation-9": {
+    "props": {
+      "blockClass": [
+        "header__menu",
+        "main-menu-department",
+        "faq-header-menu-item",
+        "faq-header-menu-item-outlet"
+      ],
+      "id": "faq-header-navigation-9",
+      "type": "custom",
+      "iconId": null,
+      "itemProps": {
+        "text": "outlet",
+        "type": "internal",
+        "href": "/outlet",
+        "tagTitle": "outlet"
+      },
+      "__editorItemTitle": "outlet"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#dep6"
+    ],
+    "title": "Magic Feet | Atendimento · Cabeçalho · Categoria · outlet"
+  },
+  "flex-layout.col#faq-header-logo-mobile": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Logo mobile",
+    "props": {
+      "blockClass": "faq-header-logo-mobile",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "logo#faq-mobile"
+    ]
+  },
+  "flex-layout.col#faq-header-cart-space-mobile": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Espaço do carrinho mobile",
+    "props": {
+      "blockClass": "faq-header-cart-space-mobile",
+      "preventVerticalStretch": true
+    },
+    "children": []
+  },
+  "flex-layout.col#faq-header-actions-mobile": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Ações mobile",
+    "props": {
+      "blockClass": "faq-header-actions-mobile",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "drawer#faq-search-mobile",
+      "flex-layout.col#faq-header-cart-space-mobile",
+      "drawer#faq-menu-mobile"
+    ]
+  },
+  "flex-layout.row#faq-header-mobile": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Navegação mobile",
+    "props": {
+      "blockClass": "faq-header-mobile",
+      "fullWidth": true,
+      "preventHorizontalStretch": false
+    },
+    "children": [
+      "flex-layout.col#faq-header-logo-mobile",
+      "flex-layout.col#faq-header-actions-mobile"
+    ]
+  },
+  "drawer#faq-search-mobile": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Abrir busca mobile",
+    "props": {
+      "isFullWidth": true,
+      "slideDirection": "horizontal",
+      "blockClass": [
+        "header__drawer--search",
+        "faq-header-search-mobile"
+      ],
+      "customPixelEventId": "faq-header-search-mobile"
+    },
+    "children": [
+      "search-bar#faq-mobile-drawer",
+      "pd-ControlCloseModalWhenSearching"
+    ],
+    "blocks": [
+      "drawer-trigger#faq-search-mobile"
+    ]
+  },
+  "drawer#faq-menu-mobile": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Abrir menu mobile",
+    "props": {
+      "isFullWidth": true,
+      "backdropMode": "none",
+      "slideDirection": "horizontal",
+      "blockClass": [
+        "footer__nivel1--mob",
+        "faq-header-menu-mobile"
+      ],
+      "customPixelEventId": "faq-header-menu-mobile"
+    },
+    "blocks": [
+      "drawer-header#header-mobile",
+      "drawer-trigger#faq-menu-mobile"
+    ],
+    "children": [
+      "menu#drawer-nv1-mobile",
+      "flex-layout.row#dep1-1-mobile-nivel-1-footer"
+    ]
+  },
+  "image#faq-header-search-icon": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Abrir busca",
+    "props": {
+      "blockClass": "faq-header-search-icon",
+      "src": "assets/img/faq/header-search-mobile.svg",
+      "alt": "Abrir busca",
+      "width": 20,
+      "height": 20
+    }
+  },
+  "drawer-trigger#faq-search-mobile": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Abrir busca",
+    "props": {
+      "blockClass": "faq-header-search-trigger",
+      "customPixelEventId": "faq-header-search-mobile"
+    },
+    "children": [
+      "image#faq-header-search-icon"
+    ]
+  },
+  "image#faq-header-menu-icon": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Abrir menu",
+    "props": {
+      "blockClass": "faq-header-menu-icon",
+      "src": "assets/img/faq/header-menu-mobile.svg",
+      "alt": "Abrir menu",
+      "width": 20,
+      "height": 20
+    }
+  },
+  "drawer-trigger#faq-menu-mobile": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Abrir menu",
+    "props": {
+      "blockClass": "faq-header-menu-trigger",
+      "customPixelEventId": "faq-header-menu-mobile"
+    },
+    "children": [
+      "image#faq-header-menu-icon"
+    ]
+  },
+  "flex-layout.row#faq-header-cart": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Carrinho compartilhado",
+    "props": {
+      "blockClass": "faq-header-cart",
+      "fullWidth": true,
+      "preventHorizontalStretch": false
+    },
+    "children": [
+      "minicart.v2#faq"
+    ]
+  },
+  "minicart.v2#faq": {
+    "title": "Magic Feet | Atendimento · Cabeçalho · Carrinho",
+    "props": {
+      "customPixelEventId": "add-to-cart-button",
+      "blockClass": [
+        "Panda-cart",
+        "faq-header-cart"
+      ]
+    },
+    "children": [
+      "minicart-base-content#main-header"
+    ]
+  }
+}

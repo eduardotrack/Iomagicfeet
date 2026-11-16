@@ -1,0 +1,53 @@
+.flexRow.flexRow--faq-header-root {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+.flexRowContent.flexRowContent--faq-header-root {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.flexRowContent--faq-header-root .stretchChildrenWidth { min-width: 0; width: 100% !important; }
+.flexCol.flexCol--faq-header-body { gap: 0; position: relative; width: 100%; }
+.flexColChild.flexColChild--faq-header-body { height: auto !important; width: 100%; }
+.flexRow.flexRow--faq-header-top { background: #5dff49; width: 100%; }
+.flexRowContent.flexRowContent--faq-header-top { align-items: center; display: flex; height: 39px; justify-content: space-between; margin: 0 auto; max-width: 1420px; width: calc(100% - 80px); }
+.flexRowContent--faq-header-top .stretchChildrenWidth { width: auto !important; }
+.flexCol.flexCol--faq-header-description { justify-content: center; width: auto; }
+.flexCol.flexCol--faq-header-shortcuts { box-sizing: border-box; justify-content: center; padding-left: 10px; width: 344.8px; }
+.flexRowContent.flexRowContent--faq-header-desktop { align-items: center; display: grid; grid-template-columns: 146px minmax(0, 1fr) 190px 197.73px; height: 62px; margin: 0 auto; max-width: 1420px; overflow: visible; width: calc(100% - 80px); }
+.flexRowContent--faq-header-desktop .stretchChildrenWidth { min-width: 0; width: 100% !important; }
+.flexCol.flexCol--faq-header-logo-desktop { align-items: flex-start; justify-content: center; transform: translateY(2.8px); width: 146px; }
+.flexCol.flexCol--faq-header-menu-desktop { box-sizing: border-box; justify-content: center; min-width: 0; padding: 0 83.76px 0 83.73px; width: 100%; }
+.flexCol.flexCol--faq-header-search-desktop { justify-content: center; min-width: 0; width: 190px; }
+.flexCol.flexCol--faq-header-actions-desktop { align-items: center; display: flex; flex-direction: row; gap: 8px; justify-content: flex-start; margin-left: 75.73px; width: 122px; }
+.flexColChild.flexColChild--faq-header-actions-desktop { flex: 0 0 auto; height: auto !important; }
+.flexCol.flexCol--faq-header-cart-space-desktop { height: 40px; width: 44px; }
+.flexRow.flexRow--faq-header-cart { height: 40px; margin: 0; padding: 0; position: absolute; right: max(40px, calc((100% - 1420px) / 2)); top: 50px; width: 44px; z-index: 5; }
+.flexRowContent.flexRowContent--faq-header-cart { align-items: center; display: flex; height: 40px; justify-content: flex-start; margin: 0; padding: 0; width: 44px; }
+.flexRowContent--faq-header-cart .stretchChildrenWidth { width: 44px !important; }
+.flexRow.flexRow--faq-header-mobile { display: none; }
+.flexRowContent.flexRowContent--faq-header-mobile { align-items: center; display: grid; grid-template-columns: minmax(0, 1fr) 84px; height: 59px; margin: 0 16px; width: calc(100% - 32px); }
+.flexRowContent--faq-header-mobile .stretchChildrenWidth { min-width: 0; width: 100% !important; }
+.flexCol.flexCol--faq-header-logo-mobile { align-items: flex-start; justify-content: center; transform: translateY(0.46px); }
+.flexCol.flexCol--faq-header-actions-mobile { align-items: center; display: flex; flex-direction: row; gap: 8px; justify-content: flex-end; transform: translateY(0.46px); width: 84px; }
+.flexColChild.flexColChild--faq-header-actions-mobile { flex: 0 0 auto; height: auto !important; }
+.flexCol.flexCol--faq-header-cart-space-mobile { height: 24px; width: 24px; }
+@media (min-width: 1025px) and (max-width: 1519px) {
+  .flexRowContent.flexRowContent--faq-header-desktop { column-gap: 16px; grid-template-columns: 146px minmax(0, 1fr) 160px 108px; }
+  .flexCol.flexCol--faq-header-menu-desktop { padding: 0; }
+  .flexCol.flexCol--faq-header-search-desktop { width: 160px; }
+  .flexCol.flexCol--faq-header-actions-desktop { gap: 1px; margin: 0; width: 108px; }
+}
+@media (max-width: 1024px) {
+  .flexRow.flexRow--faq-header-top,
+  .flexRow.flexRow--faq-header-desktop { display: none; }
+  .flexRow.flexRow--faq-header-mobile { display: block; }
+  .flexRow.flexRow--faq-header-cart { height: 24px; right: 48px; top: 17.96px; width: 24px; }
+  .flexRowContent.flexRowContent--faq-header-cart { height: 24px; width: 24px; }
+  .flexRowContent--faq-header-cart .stretchChildrenWidth { width: 24px !important; }
+}
